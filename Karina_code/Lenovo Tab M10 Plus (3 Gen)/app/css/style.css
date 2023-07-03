@@ -1,0 +1,1032 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#lenovotab10m a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#lenovotab10m ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lenovotab10m .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#lenovotab10m .bc-description__content h3 {
+  text-align: left;
+}
+
+#lenovotab10m p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#lenovotab10m h1,
+#lenovotab10m h2,
+#lenovotab10m h3,
+#lenovotab10m h4,
+#lenovotab10m h5,
+#lenovotab10m h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  font-weight: bold;
+}
+
+#lenovotab10m {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#lenovotab10m p::first-letter {
+  padding-left: 0;
+}
+
+[class*=__container] {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#lenovotab10m img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#lenovotab10m img:hover {
+  opacity: 1;
+}
+
+#lenovotab10m .header-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg1.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+#lenovotab10m .header-lenovotab10m__logo {
+  position: absolute;
+  z-index: 5;
+  top: 7%;
+  right: 0;
+  left: 96%;
+}
+#lenovotab10m .header-lenovotab10m__logo img {
+  margin: 0;
+}
+#lenovotab10m .header-lenovotab10m__tab {
+  position: absolute;
+  z-index: 5;
+  top: 7%;
+  left: 3%;
+  right: 75%;
+}
+#lenovotab10m .header-lenovotab10m__box {
+  padding-top: 180px;
+  width: 70%;
+  margin: 0 auto;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .header-lenovotab10m__box {
+    padding-top: -webkit-calc(80px + 100 * ((100vw - 320px) / 1310));
+    padding-top: -moz-calc(80px + 100 * ((100vw - 320px) / 1310));
+    padding-top: calc(80px + 100 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .header-lenovotab10m__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .header-lenovotab10m__title h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .header-lenovotab10m__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+     -moz-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 15px;
+}
+#lenovotab10m .header-lenovotab10m__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+#lenovotab10m .header-lenovotab10m__icon img {
+  margin: 0;
+}
+#lenovotab10m .header-lenovotab10m__text p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .header-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 8 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1310));
+  }
+}
+
+#lenovotab10m .video-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg2.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#lenovotab10m .video-lenovotab10m__text {
+  padding: 20px 15px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab10m .video-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .video-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .video-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .video-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .video-lenovotab10m__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+     -moz-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 15px 30px;
+}
+#lenovotab10m .video-lenovotab10m__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+#lenovotab10m .video-lenovotab10m__icon img {
+  margin: 0;
+}
+#lenovotab10m .video-lenovotab10m__text-sm p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .video-lenovotab10m__text-sm p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 8 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1310));
+  }
+}
+
+#lenovotab10m .learn-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg3.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#lenovotab10m .learn-lenovotab10m__box {
+  padding: 40px 15px 0;
+}
+#lenovotab10m .learn-lenovotab10m__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__title h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab10m .learn-lenovotab10m__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab10m .learn-lenovotab10m__item-text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__item-text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__item-text span {
+  font-size: 25px;
+  line-height: 1.2;
+  color: #fff;
+  display: block;
+  padding-top: 20px;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__item-text span {
+    font-size: -webkit-calc(14px + 11 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(14px + 11 * ((100vw - 320px) / 1310));
+    font-size: calc(14px + 11 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__media {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab10m .learn-lenovotab10m__image-md_1 {
+  position: relative;
+  z-index: 2;
+}
+#lenovotab10m .learn-lenovotab10m__image-md_2 {
+  position: relative;
+  z-index: 5;
+  margin-top: -200px;
+}
+#lenovotab10m .learn-lenovotab10m__text {
+  width: 90%;
+  margin: 0 auto 40px;
+}
+#lenovotab10m .learn-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+#lenovotab10m .learn-lenovotab10m__inner:not(:last-child) {
+  margin-bottom: 10px;
+}
+#lenovotab10m .learn-lenovotab10m__text-sm p {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .learn-lenovotab10m__text-sm p {
+    font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .learn-lenovotab10m__item-image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#lenovotab10m .google-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg4.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding-bottom: 40px;
+}
+#lenovotab10m .google-lenovotab10m__box {
+  padding: 40px 15px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab10m .google-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .google-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .google-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .google-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .google-lenovotab10m__row {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+#lenovotab10m .google-lenovotab10m__row_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#lenovotab10m .google-lenovotab10m__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab10m .google-lenovotab10m__list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+#lenovotab10m .google-lenovotab10m__list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+#lenovotab10m .google-lenovotab10m__list li img {
+  margin: 0;
+}
+#lenovotab10m .google-lenovotab10m__list li p {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .google-lenovotab10m__list li p {
+    font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .google-lenovotab10m__item-text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .google-lenovotab10m__item-text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+
+#lenovotab10m .android-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg5.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: relative;
+  z-index: 3;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#lenovotab10m .android-lenovotab10m__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#lenovotab10m .android-lenovotab10m__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 45%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+#lenovotab10m .android-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .android-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .android-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .android-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .android-lenovotab10m__item-image {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 2%;
+  left: 50%;
+}
+
+#lenovotab10m .size-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg6.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .size-lenovotab10m__bg {
+    padding-top: -webkit-calc(20px + 80 * ((100vw - 320px) / 1310));
+    padding-top: -moz-calc(20px + 80 * ((100vw - 320px) / 1310));
+    padding-top: calc(20px + 80 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .size-lenovotab10m__box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#lenovotab10m .size-lenovotab10m__text {
+  margin-bottom: 80px;
+}
+#lenovotab10m .size-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .size-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .size-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .size-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .size-lenovotab10m__media {
+  position: relative;
+  z-index: 2;
+}
+#lenovotab10m .size-lenovotab10m__item {
+  position: absolute;
+  z-index: 5;
+}
+#lenovotab10m .size-lenovotab10m__item h4 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .size-lenovotab10m__item h4 {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .size-lenovotab10m__item p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .size-lenovotab10m__item p {
+    font-size: -webkit-calc(15px + 9 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(15px + 9 * ((100vw - 320px) / 1310));
+    font-size: calc(15px + 9 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .size-lenovotab10m__item_1 {
+  top: 23%;
+  left: 5%;
+  right: 95%;
+}
+#lenovotab10m .size-lenovotab10m__item_2 {
+  top: -5%;
+  right: 0;
+  left: 82%;
+}
+#lenovotab10m .size-lenovotab10m__item_3 {
+  top: 71%;
+  left: 68%;
+  right: 13%;
+}
+
+#lenovotab10m .apps-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg7.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#lenovotab10m .apps-lenovotab10m__box {
+  padding: 40px 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab10m .apps-lenovotab10m__text {
+  margin-bottom: 80px;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .apps-lenovotab10m__text {
+    margin-bottom: -webkit-calc(30px + 50 * ((100vw - 320px) / 1310));
+    margin-bottom: -moz-calc(30px + 50 * ((100vw - 320px) / 1310));
+    margin-bottom: calc(30px + 50 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .apps-lenovotab10m__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .apps-lenovotab10m__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .apps-lenovotab10m__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .apps-lenovotab10m__text p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 14 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .port-lenovotab10m__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2150763/bg8.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#lenovotab10m .port-lenovotab10m__box {
+  padding: 40px 15px 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab10m .port-lenovotab10m__title {
+  margin-bottom: 50px;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .port-lenovotab10m__title {
+    margin-bottom: -webkit-calc(20px + 30 * ((100vw - 320px) / 1310));
+    margin-bottom: -moz-calc(20px + 30 * ((100vw - 320px) / 1310));
+    margin-bottom: calc(20px + 30 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .port-lenovotab10m__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .port-lenovotab10m__title h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1310));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .port-lenovotab10m__image {
+  margin-bottom: 50px;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .port-lenovotab10m__image {
+    margin-bottom: -webkit-calc(20px + 30 * ((100vw - 320px) / 1310));
+    margin-bottom: -moz-calc(20px + 30 * ((100vw - 320px) / 1310));
+    margin-bottom: calc(20px + 30 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .port-lenovotab10m__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1060px;
+  margin: 0 auto;
+  gap: 30px;
+}
+#lenovotab10m .port-lenovotab10m__col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab10m .port-lenovotab10m__item p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .port-lenovotab10m__item p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1310));
+  }
+}
+#lenovotab10m .port-lenovotab10m__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+#lenovotab10m .port-lenovotab10m__snoska {
+  padding-top: 80px;
+}
+#lenovotab10m .port-lenovotab10m__snoska p {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1630px) {
+  #lenovotab10m .port-lenovotab10m__snoska p {
+    font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: -moz-calc(16px + 10 * ((100vw - 320px) / 1310));
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1310));
+  }
+}
+
+@media screen and (max-width: 1483px) {
+  #lenovotab10m .size-lenovotab10m__item_1 {
+    left: -8px;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  #lenovotab10m .size-lenovotab10m__item_1 {
+    top: 18%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #lenovotab10m .learn-lenovotab10m__row,
+  #lenovotab10m .google-lenovotab10m__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lenovotab10m .learn-lenovotab10m__item-text p,
+  #lenovotab10m .learn-lenovotab10m__item-text span,
+  #lenovotab10m .google-lenovotab10m__item-text p {
+    text-align: center;
+  }
+  #lenovotab10m .learn-lenovotab10m__item-image {
+    padding-top: 50px;
+  }
+  #lenovotab10m .google-lenovotab10m__row {
+    padding-top: 0;
+  }
+  #lenovotab10m .google-lenovotab10m__list {
+    padding-top: 20px;
+  }
+  #lenovotab10m .android-lenovotab10m__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  #lenovotab10m .android-lenovotab10m__item-image {
+    position: unset;
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #lenovotab10m .android-lenovotab10m__text h2, #lenovotab10m .android-lenovotab10m__text p {
+    text-align: center;
+  }
+  #lenovotab10m .android-lenovotab10m__bg {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #lenovotab10m .size-lenovotab10m__item_1 {
+    top: 15%;
+  }
+}
+@media screen and (max-width: 568px) {
+  #lenovotab10m .size-lenovotab10m__item_2 {
+    top: -11%;
+    left: 78%;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #lenovotab10m .header-lenovotab10m__box {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #lenovotab10m .header-lenovotab10m__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  #lenovotab10m .header-lenovotab10m__tab {
+    top: 5%;
+    right: 67%;
+  }
+  #lenovotab10m .header-lenovotab10m__logo {
+    top: 5%;
+    left: 93%;
+  }
+  #lenovotab10m .header-lenovotab10m__icon {
+    width: 57px;
+  }
+  #lenovotab10m .header-lenovotab10m__icon img {
+    margin: 0 auto;
+  }
+  #lenovotab10m .video-lenovotab10m__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lenovotab10m .video-lenovotab10m__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lenovotab10m .video-lenovotab10m__text-sm p {
+    text-align: center;
+  }
+  #lenovotab10m .learn-lenovotab10m__row,
+  #lenovotab10m .learn-lenovotab10m__text,
+  #lenovotab10m .google-lenovotab10m__box,
+  #lenovotab10m .size-lenovotab10m__box,
+  #lenovotab10m .apps-lenovotab10m__box,
+  #lenovotab10m .port-lenovotab10m__box {
+    width: auto;
+  }
+  #lenovotab10m .learn-lenovotab10m__icon img {
+    width: 41px;
+  }
+  #lenovotab10m .android-lenovotab10m__row {
+    width: auto;
+    padding: 0;
+  }
+  #lenovotab10m .size-lenovotab10m__item_1 {
+    top: 10%;
+  }
+  #lenovotab10m .size-lenovotab10m__item_2 {
+    top: -25%;
+    left: 58%;
+  }
+  #lenovotab10m .size-lenovotab10m__item_3 {
+    top: 76%;
+    left: 65%;
+  }
+  #lenovotab10m .port-lenovotab10m__row {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
