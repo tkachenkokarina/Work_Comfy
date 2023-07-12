@@ -286,7 +286,12 @@ li {
     background: none;
     background-color: #000;
   }
+  #maincontent .row-maincontent__bg_rtx {
+    background-image: url(../img/bg04.png);
+  }
   #maincontent .row-maincontent__bg_keyboard {
+    background-image: url(../img/bg05.png);
+    background-position: top;
     padding-right: 5%;
   }
   #maincontent .row-maincontent__img {
