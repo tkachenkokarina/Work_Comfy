@@ -1,0 +1,341 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1080
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#ergotv a
+    color: inherit
+    text-decoration: none
+
+#ergotv ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#ergotv .bc-description__content p
+    margin-bottom: 0
+
+#ergotv .bc-description__content h3
+    text-align: left
+
+#ergotv p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#ergotv h1,
+#ergotv h2,
+#ergotv h3,
+#ergotv h4,
+#ergotv h5,
+#ergotv h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#ergotv
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#ergotv p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1080px
+    margin: 0 auto
+    padding: 0 15px
+
+#ergotv img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#ergotv img:hover
+    opacity: 1
+
+//========================================================================================================================================================
+#ergotv .header-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 8%
+        left: 5%
+        right: 53%
+
+#ergotv .title-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__title
+        position: absolute
+        z-index: 5
+        top: 65%
+        left: 0
+        right: 0
+        h2
+            @include adaptiv-value("font-size", 70, 22, 1)
+            line-height: 1.2
+            color: #fff
+            text-align: center
+        span
+            text-transform: uppercase
+            color: #0066ff
+
+#ergotv .neo-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+        &_1
+        &_2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 45%
+        transform: translateY(-50%)
+        left: 5%
+        width: 50%
+        h2
+            @include adaptiv-value("font-size", 40, 18, 1)
+            line-height: 1.2
+            color: #fff
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+        img
+            margin: 0
+            padding-bottom: 20px
+
+#ergotv .androidtv-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 40%
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+        img
+            margin: 0
+            padding-bottom: 20px
+
+#ergotv .dbx-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__row
+        position: absolute
+        z-index: 5
+        top: 3%
+        left: 5%
+        right: 5%
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 15px
+    &__icon
+        flex: 0 0 175px
+    &__text
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+
+#ergotv .okgoogle-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 5%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 40, 18, 1)
+            line-height: 1.2
+            color: #fff
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+        img
+            margin: 0
+            padding-bottom: 20px
+
+#ergotv .chrome-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 40%
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+        img
+            margin: 0
+            padding-bottom: 20px
+
+#ergotv .bluetooth-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 5%
+        width: 40%
+        p
+            @include adaptiv-value("font-size", 26, 14, 1)
+            line-height: 1.2
+            color: #fff
+            padding-bottom: 20px
+        img
+            margin: 0
+            &:not(:last-child)
+                padding-bottom: 20px
+
+//===========MEDIA=============================================================================================================================================
+
+    //@media screen and (max-width: 1300px)
+    //@media screen and (max-width: 1024.98px)
+    //@media screen and (max-width: 991.98px)
+@media screen and (max-width: 767.98px)
+    #ergotv .bluetooth-ergotv__text img
+        max-width: 180px
+    #ergotv .chrome-ergotv__text img
+        max-width: 200px
+    #ergotv .okgoogle-ergotv__text img
+        max-width: 180px
+    #ergotv .dbx-ergotv__icon
+        flex: 0 0 100px
+    #ergotv .neo-ergotv__text img
+        max-width: 105px
+    #ergotv .androidtv-ergotv__text img
+        max-width: 160px
+
+@media screen and (max-width: 610px)
+    #ergotv .bluetooth-ergotv__text
+        width: 50%
+    #ergotv .bluetooth-ergotv__text img:not(:last-child)
+        padding-bottom: 10px
+    #ergotv .bluetooth-ergotv__text p
+        padding-bottom: 10px
+    #ergotv .bluetooth-ergotv__text img
+        max-width: 130px
+    #ergotv .neo-ergotv__text
+        width: 65%
+    #ergotv .androidtv-ergotv__text
+        width: 46%
+    #ergotv .okgoogle-ergotv__text
+        width: 46%
+    #ergotv .chrome-ergotv__text img
+        max-width: 150px
+
+@media screen and (max-width: 511px)
+    #ergotv .dbx-ergotv__text p
+        text-align: center
+    #ergotv .dbx-ergotv__icon
+        flex: 0 1 auto
+        max-width: 80px
+    #ergotv .dbx-ergotv__row
+        flex-direction: column
+        gap: 10px
+    #ergotv .chrome-ergotv__text
+        width: 46%
+
+@media screen and (max-width: 479.98px)
+    #ergotv .androidtv-ergotv__text
+        width: 60%
+
+@media screen and (max-width: 400px)
+    #ergotv .neo-ergotv__text img
+        max-width: 80px
+        padding-bottom: 10px
+    #ergotv .androidtv-ergotv__text img
+        padding-bottom: 10px
+        max-width: 100px
+    #ergotv .okgoogle-ergotv__text img
+        max-width: 110px
+    #ergotv .chrome-ergotv__text img
+        max-width: 120px
+    #ergotv .chrome-ergotv__text
+        width: 50%

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #ergotv ul,ol,li{list-style:none;padding:0;margin:0}#ergotv .bc-description__content p{margin-bottom:0}#ergotv .bc-description__content h3{text-align:left}#ergotv p{margin:0;padding:0;text-align:left}#ergotv h1,#ergotv h2,#ergotv h3,#ergotv h4,#ergotv h5,#ergotv h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#ergotv{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#ergotv p::first-letter{padding-left:0}[class*=__container]{max-width:1080px;margin:0 auto;padding:0 15px}#ergotv img{opacity:1;max-width:100%;display:block;margin:0 auto}#ergotv img:hover{opacity:1}#ergotv .header-ergotv__bg{position:relative;z-index:2}#ergotv .header-ergotv__logo{position:absolute;z-index:5;top:8%;left:5%;right:53%}#ergotv .title-ergotv__bg{position:relative;z-index:2}#ergotv .title-ergotv__title{position:absolute;z-index:5;top:65%;left:0;right:0}#ergotv .title-ergotv__title h2{font-size:70px;line-height:1.2;color:#fff;text-align:center}@media(max-width: 1080px){#ergotv .title-ergotv__title h2{font-size:-webkit-calc(22px + 48 * ((100vw - 320px) / 760));font-size:-moz-calc(22px + 48 * ((100vw - 320px) / 760));font-size:calc(22px + 48 * ((100vw - 320px) / 760))}}#ergotv .title-ergotv__title span{text-transform:uppercase;color:#06f}#ergotv .neo-ergotv__bg{position:relative;z-index:2}#ergotv .neo-ergotv__text{position:absolute;z-index:5;top:45%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:5%;width:50%}#ergotv .neo-ergotv__text h2{font-size:40px;line-height:1.2;color:#fff;margin-bottom:10px}@media(max-width: 1080px){#ergotv .neo-ergotv__text h2{font-size:-webkit-calc(18px + 22 * ((100vw - 320px) / 760));font-size:-moz-calc(18px + 22 * ((100vw - 320px) / 760));font-size:calc(18px + 22 * ((100vw - 320px) / 760))}}#ergotv .neo-ergotv__text p{font-size:26px;line-height:1.2;color:#fff}@media(max-width: 1080px){#ergotv .neo-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .neo-ergotv__text img{margin:0;padding-bottom:20px}#ergotv .androidtv-ergotv__bg{position:relative;z-index:2}#ergotv .androidtv-ergotv__text{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:5%;width:40%}#ergotv .androidtv-ergotv__text p{font-size:26px;line-height:1.2;color:#fff}@media(max-width: 1080px){#ergotv .androidtv-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .androidtv-ergotv__text img{margin:0;padding-bottom:20px}#ergotv .dbx-ergotv__bg{position:relative;z-index:2}#ergotv .dbx-ergotv__row{position:absolute;z-index:5;top:3%;left:5%;right:5%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:15px}#ergotv .dbx-ergotv__icon{-webkit-box-flex:0;-webkit-flex:0 0 175px;-moz-box-flex:0;-ms-flex:0 0 175px;flex:0 0 175px}#ergotv .dbx-ergotv__text p{font-size:26px;line-height:1.2;color:#fff}@media(max-width: 1080px){#ergotv .dbx-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .okgoogle-ergotv__bg{position:relative;z-index:2}#ergotv .okgoogle-ergotv__text{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:5%;width:40%}#ergotv .okgoogle-ergotv__text h2{font-size:40px;line-height:1.2;color:#fff;margin-bottom:10px}@media(max-width: 1080px){#ergotv .okgoogle-ergotv__text h2{font-size:-webkit-calc(18px + 22 * ((100vw - 320px) / 760));font-size:-moz-calc(18px + 22 * ((100vw - 320px) / 760));font-size:calc(18px + 22 * ((100vw - 320px) / 760))}}#ergotv .okgoogle-ergotv__text p{font-size:26px;line-height:1.2;color:#fff}@media(max-width: 1080px){#ergotv .okgoogle-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .okgoogle-ergotv__text img{margin:0;padding-bottom:20px}#ergotv .chrome-ergotv__bg{position:relative;z-index:2}#ergotv .chrome-ergotv__text{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:5%;width:40%}#ergotv .chrome-ergotv__text p{font-size:26px;line-height:1.2;color:#fff}@media(max-width: 1080px){#ergotv .chrome-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .chrome-ergotv__text img{margin:0;padding-bottom:20px}#ergotv .bluetooth-ergotv__bg{position:relative;z-index:2}#ergotv .bluetooth-ergotv__text{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:5%;width:40%}#ergotv .bluetooth-ergotv__text p{font-size:26px;line-height:1.2;color:#fff;padding-bottom:20px}@media(max-width: 1080px){#ergotv .bluetooth-ergotv__text p{font-size:-webkit-calc(14px + 12 * ((100vw - 320px) / 760));font-size:-moz-calc(14px + 12 * ((100vw - 320px) / 760));font-size:calc(14px + 12 * ((100vw - 320px) / 760))}}#ergotv .bluetooth-ergotv__text img{margin:0}#ergotv .bluetooth-ergotv__text img:not(:last-child){padding-bottom:20px}@media screen and (max-width: 767.98px){#ergotv .bluetooth-ergotv__text img{max-width:180px}#ergotv .chrome-ergotv__text img{max-width:200px}#ergotv .okgoogle-ergotv__text img{max-width:180px}#ergotv .dbx-ergotv__icon{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#ergotv .neo-ergotv__text img{max-width:105px}#ergotv .androidtv-ergotv__text img{max-width:160px}}@media screen and (max-width: 610px){#ergotv .bluetooth-ergotv__text{width:50%}#ergotv .bluetooth-ergotv__text img:not(:last-child){padding-bottom:10px}#ergotv .bluetooth-ergotv__text p{padding-bottom:10px}#ergotv .bluetooth-ergotv__text img{max-width:130px}#ergotv .neo-ergotv__text{width:65%}#ergotv .androidtv-ergotv__text{width:46%}#ergotv .okgoogle-ergotv__text{width:46%}#ergotv .chrome-ergotv__text img{max-width:150px}}@media screen and (max-width: 511px){#ergotv .dbx-ergotv__text p{text-align:center}#ergotv .dbx-ergotv__icon{-webkit-box-flex:0;-webkit-flex:0 1 auto;-moz-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;max-width:80px}#ergotv .dbx-ergotv__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#ergotv .chrome-ergotv__text{width:46%}}@media screen and (max-width: 479.98px){#ergotv .androidtv-ergotv__text{width:60%}}@media screen and (max-width: 400px){#ergotv .neo-ergotv__text img{max-width:80px;padding-bottom:10px}#ergotv .androidtv-ergotv__text img{padding-bottom:10px;max-width:100px}#ergotv .okgoogle-ergotv__text img{max-width:110px}#ergotv .chrome-ergotv__text img{max-width:120px}#ergotv .chrome-ergotv__text{width:50%}}
+    </style>
+
+    <div id="ergotv">
+        <div class="ergotv__container">
+            <div class="ergotv__header header-ergotv">
+                <div class="header-ergotv__bg">
+                    <div class="header-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/1.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/1-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/1.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="header-ergotv__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ergo-android-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__title title-ergotv">
+                <div class="title-ergotv__bg">
+                    <div class="title-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/2.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/2-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/2.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="title-ergotv__title">
+                        <h2><span>Роскошь </span>– это твое!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__neo neo-ergotv">
+                <div class="neo-ergotv__bg neo-ergotv__bg_1">
+                    <div class="neo-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/3.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/3-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/3.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="neo-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ergo-nv-logo.png" alt="">
+                        <p>Функция улучшения изображения телевизора на процессорном уровне, сочетающая алгоритмы
+                            интеллектуальной обработки видеопотока</p>
+                    </div>
+                </div>
+                <div class="neo-ergotv__bg neo-ergotv__bg_2">
+                    <div class="neo-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/4.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/4-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/4.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="neo-ergotv__text">
+                        <h2>Безрамочный дизайн</h2>
+                        <p>Дизайн телевизора с ультратонкой рамкой идеально впишется в ваш интерьер</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__androidtv androidtv-ergotv">
+                <div class="androidtv-ergotv__bg">
+                    <div class="androidtv-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/5.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/5-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/5.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="androidtv-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/android-logo.png" alt="androidtv">
+                        <p>Официальная и самая популярная операционная система в мире от Google уже в вашем телевизоре
+                            ERGO. Безграничные возможности просмотра мировых стриминговых сервисов, новейшие премьеры,
+                            музыка, игры и путешествия в интернете на кнопке вашего пульта</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__dbx dbx-ergotv">
+                <div class="dbx-ergotv__bg">
+                    <div class="dbx-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/6.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/6-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/6.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="dbx-ergotv__row">
+                        <div class="dbx-ergotv__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/dbx-logo.png" alt="">
+                        </div>
+                        <div class="dbx-ergotv__text">
+                            <p>Восхищайтесь лучшей динамикой звучания от dbx-tv – эта технология обработки звука
+                                разработана именно для компактных акустических систем телевизоров и позволяет получить
+                                чистые высокие и глубокие низкие частоты для более комфортного восприятия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__okgoogle okgoogle-ergotv">
+                <div class="okgoogle-ergotv__bg">
+                    <div class="okgoogle-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/7.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/7-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/7.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="okgoogle-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ok-google-logo.png" alt="">
+                        <h2>Голосовое управление</h2>
+                        <p>Выполняйте поиск любимых фильмов и телепередач с помощью голоса</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__chrome chrome-ergotv">
+                <div class="chrome-ergotv__bg">
+                    <div class="chrome-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/8.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/8-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/8.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="chrome-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/_homecast-logo.png" alt="">
+                        <p>Мгновенно транслируйте изображение со своего смарт-устройства на большой экран телевизора:
+                            это может быть семейный просмотр вашего фотоархива или любимое видео</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__bluetooth bluetooth-ergotv">
+                <div class="bluetooth-ergotv__bg">
+                    <div class="bluetooth-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/9.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/9-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/9.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="bluetooth-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/bluetooth-logo.png" alt="">
+                        <p>Подключайте беспроводные наушники, чтобы смотреть любимые шоу и не беспокоить своих близких
+                        </p>
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/icons_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__footer footer-ergotv">
+                <div class="footer-ergotv__image">
+                    <picture>
+                        <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/10.png">
+                        <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/10-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/10.png" style="width:auto;">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="ergotv">
+        <div class="ergotv__container">
+            <div class="ergotv__header header-ergotv">
+                <div class="header-ergotv__bg">
+                    <div class="header-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/1.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/1-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/1.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="header-ergotv__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ergo-android-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__title title-ergotv">
+                <div class="title-ergotv__bg">
+                    <div class="title-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/2.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/2-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/2.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="title-ergotv__title">
+                        <h2><span>РОЗКІШ </span>– це твоє!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__neo neo-ergotv">
+                <div class="neo-ergotv__bg neo-ergotv__bg_1">
+                    <div class="neo-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/3.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/3-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/3.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="neo-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ergo-nv-logo.png" alt="">
+                        <p>Функція покращення зображення телевізора на процесорному рівні, яка поєднує алгоритми інтелектуальної обробки відеопотоку</p>
+                    </div>
+                </div>
+                <div class="neo-ergotv__bg neo-ergotv__bg_2">
+                    <div class="neo-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/4.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/4-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/4.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="neo-ergotv__text">
+                        <h2>Безрамковий дизайн</h2>
+                        <p>Дизайн телевізора з ультратонкою рамкою ідеально впишеться в ваш інтер'єр</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__androidtv androidtv-ergotv">
+                <div class="androidtv-ergotv__bg">
+                    <div class="androidtv-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/5.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/5-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/5.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="androidtv-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/android-logo.png" alt="androidtv">
+                        <p>Офіційна та найпопулярніша операційна система в світі від Google вже у вашому телевізорі ERGO. Безмежні можливості з перегляду світових стрімінгових сервісів, найновіші прем'єри, музика, ігри та мандрівки в інтернеті на кнопці вашого пульта</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__dbx dbx-ergotv">
+                <div class="dbx-ergotv__bg">
+                    <div class="dbx-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/6.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/6-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/6.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="dbx-ergotv__row">
+                        <div class="dbx-ergotv__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/dbx-logo.png" alt="">
+                        </div>
+                        <div class="dbx-ergotv__text">
+                            <p>Захоплюйтеся найкращою динамікою звучанням від dbx-tv – ця технологія обробки звуку розроблена саме для компактних акустичних систем телевізорів та дозволяє отримати чисті високі та глибокі низькі частоти для більш комфортного сприйняття</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__okgoogle okgoogle-ergotv">
+                <div class="okgoogle-ergotv__bg">
+                    <div class="okgoogle-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/7.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/7-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/7.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="okgoogle-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/ok-google-logo.png" alt="">
+                        <h2>Голосове керування</h2>
+                        <p>Виконуйте пошук улюблених фільмів та телепередач за допомогою голосу</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__chrome chrome-ergotv">
+                <div class="chrome-ergotv__bg">
+                    <div class="chrome-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/8.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/8-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/8.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="chrome-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/_homecast-logo.png" alt="">
+                        <p>Миттєво транслюйте зображення зі свого смарт-пристрою на великий екран телевізора: це може бути сімейний перегляд вашого фотоархіву або улюблене відео</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__bluetooth bluetooth-ergotv">
+                <div class="bluetooth-ergotv__bg">
+                    <div class="bluetooth-ergotv__image">
+                        <picture>
+                            <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/9.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/9-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2296281/9.png" style="width:auto;">
+                        </picture>
+                    </div>
+                    <div class="bluetooth-ergotv__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/bluetooth-logo.png" alt="">
+                        <p>Під'єднуйте свої бездротові навушники, щоб дивитися улюблені шоу та не турбувати своїх близьких</p>
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/icons_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ergotv__footer footer-ergotv">
+                <div class="footer-ergotv__image">
+                    <picture>
+                        <source media="(min-width: 511px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/10.png">
+                        <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2296281/10-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2296281/10.png" style="width:auto;">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
