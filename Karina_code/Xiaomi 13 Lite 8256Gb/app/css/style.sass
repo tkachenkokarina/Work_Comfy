@@ -1,0 +1,931 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1300
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+/* ------------------ */
+// .block__body {
+//   @include adaptiv-value("padding", 50, 20, 0);
+//   // padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320)));
+// }
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#xiaomi13lite a
+    color: inherit
+    text-decoration: none
+
+#xiaomi13lite ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#xiaomi13lite .bc-description__content p
+    margin-bottom: 0
+
+#xiaomi13lite .bc-description__content h3
+    text-align: left
+
+#xiaomi13lite p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#xiaomi13lite h1,
+#xiaomi13lite h2,
+#xiaomi13lite h3,
+#xiaomi13lite h4,
+#xiaomi13lite h5,
+#xiaomi13lite h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#xiaomi13lite
+    max-width: 1920px
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#xiaomi13lite p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1300px
+    margin: 0 auto
+    padding: 0 15px
+
+#xiaomi13lite img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#xiaomi13lite img:hover
+    opacity: 1
+
+//========================================================================================================================================================
+#xiaomi13lite .header-xiaomi13lite
+    padding-top: 30px
+    &__row
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        justify-content: start
+    &__item
+        flex: 0 1 30%
+        margin-left: -100px
+        position: relative
+        z-index: 5
+    &__text
+        h2
+            @include adaptiv-value("font-size", 60, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        span
+            display: block
+            @include adaptiv-value("font-size", 45, 18, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 20, 16, 0)
+            line-height: 1.2
+            text-align: center
+            color: #898989
+            &:not(:last-child)
+                @include adaptiv-value("margin-bottom", 10, 5, 0)
+    &__image
+        flex: 0 1 70%
+        position: relative
+        z-index: 1
+        img
+            margin: 0
+
+#xiaomi13lite .ultra-xiaomi13lite
+    &__bg
+        // max-width: 1600px
+        // margin: 0 auto
+        // padding: 0 15px
+    &__row
+        display: flex
+        justify-content: flex-end
+        position: relative
+        z-index: 2
+    &__item
+        position: absolute
+        z-index: 5
+        top: 8%
+        left: 8%
+    &__body
+        max-width: 700px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__list
+        padding-top: 100px
+    &__list-item
+        &:not(:last-child)
+            margin-bottom: 30px
+            padding-bottom: 30px
+            position: relative
+            z-index: 2
+            &::after
+                content: ''
+                position: absolute
+                z-index: 5
+                bottom: 0
+                left: 0
+                width: 70px
+                height: 2px
+                background-color: #898989
+        h4
+            @include adaptiv-value("font-size", 28, 13, 0)
+            line-height: 1.2
+            font-weight: normal
+            margin-bottom: 8px
+        p
+            @include adaptiv-value("font-size", 50, 15, 0)
+            line-height: 1.2
+            -webkit-text-fill-color: #0000
+            background: linear-gradient(-25deg,#aed5ee,#81bbe7)
+            -webkit-background-clip: text
+            background-clip: text
+
+    &__image
+        padding-left: 560px
+
+#xiaomi13lite .dual-xiaomi13lite
+    &__bg
+        background-color: #000
+        padding: 60px 15px 0
+    &__box
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+            color: #fff
+            text-align: center
+    &__row
+        display: flex
+        align-items: flex-end
+        padding-top: 80px
+    &__col
+        flex: 0 1 33.3333%
+        &_1
+        &_2
+        &_3
+            align-self: start
+    &__item
+        width: 70%
+        margin: 0 auto
+        padding-bottom: 40px
+        // &:not(:last-child)
+        //     margin-bottom: 40px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 30, 16, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 24, 15, 0)
+            line-height: 1.2
+            color: #fff
+    &__image
+
+#xiaomi13lite .bright-xiaomi13lite
+    @include adaptiv-value("padding-top", 50, 20, 0)
+    &__body
+        max-width: 1500px
+        margin: 0 auto
+        padding: 0 15px
+    &__title
+        width: 80%
+        margin-bottom: 20px
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__row
+        display: flex
+        gap: 10px
+    &__item
+        flex: 0 1 50%
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        bottom: 4%
+        left: 6%
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 50, 20, 0)
+            line-height: 1.2
+
+#xiaomi13lite .dynamic-xiaomi13lite
+    &__bg
+        background-color: #f2f2f2
+        padding: 100px 15px
+    &__row
+        max-width: 1500px
+        margin: 0 auto
+        display: flex
+        gap: 50px
+    &__item
+        flex: 0 1 50%
+    &__text
+        // padding-bottom: 200px
+        @include adaptiv-value("padding-bottom", 200, 50, 0)
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__item-image
+    &__image
+        padding-top: 50px
+        flex: 0 1 50%
+
+#xiaomi13lite .portret-xiaomi13lite
+    &__body
+        max-width: 1500px
+        margin: 0 auto
+        padding: 100px 15px
+    &__top
+    &__text
+        max-width: 1000px
+        margin-bottom: 20px
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+        &_1
+            img
+                margin: 0
+                max-width: 1100px
+                width: 100%
+    &__bottom
+        padding-top: 80px
+    &__inner
+        display: flex
+        gap: 15px
+    &__media
+        position: relative
+        z-index: 2
+    &__snoska
+        position: absolute
+        z-index: 5
+        bottom: 4%
+        left: 6%
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 50, 20, 0)
+            line-height: 1.2
+            font-weight: bold
+
+#xiaomi13lite .mirror-xiaomi13lite
+    &__row
+        display: flex
+        flex-direction: row-reverse
+        gap: 20px
+    &__item
+        flex: 0 1 50%
+        background-color: #f5dbec
+        display: flex
+        align-items: center
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#xiaomi13lite .upgrade-xiaomi13lite
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2369860/bg.jpg') 0 0 no-repeat
+        background-size: cover
+        padding: 100px 15px
+    &__row
+        display: flex
+        align-items: center
+        gap: 20px
+        max-width: 1500px
+        margin: 0 auto
+    &__item
+        flex: 0 1 50%
+    &__title
+        width: 90%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+    &__text
+        width: 90%
+        margin: 0 auto
+        padding-top: 30px
+        h2
+            @include adaptiv-value("font-size", 40, 18, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#xiaomi13lite .sensor-xiaomi13lite
+    &__bg
+        position: relative
+        z-index: 2
+    &__box
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        right: 7%
+        width: 35%
+    &__text
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 20px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+        span
+            display: block
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+            padding-top: 50px
+    &__image
+    &__image-mob
+        display: none
+
+#xiaomi13lite .camera-xiaomi13lite
+    padding-top: 50px
+    &__body
+    &__box
+        max-width: 1500px
+        margin: 0 auto
+        padding: 0 15px
+    &__text
+        width: 80%
+        margin-bottom: 20px
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+    &__row
+
+#xiaomi13lite .row-camera-xiaomi13lite
+    padding: 0 15px
+    &__inner
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+            padding: 50px 0
+    &__item
+        flex: 0 1 40%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+        flex: 0 1 60%
+
+#xiaomi13lite .experience-xiaomi13lite
+    &__bg
+        position: relative
+        z-index: 2
+        //min-height: 1600px
+        // padding-bottom: 100px
+    &__title
+        position: absolute
+        z-index: 5
+        top: 20%
+        right: 8%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            color: #fff
+    &__media
+    &__image
+    &__image-mob
+        display: none
+    &__row
+        width: 80%
+        //max-width: 1500px
+        margin: 0 auto
+        position: absolute
+        z-index: 5
+        top: 55%
+        left: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        gap: 15px
+    &__inner
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 15px
+        &_1
+            grid-template-columns: 1.2fr 0.8fr 1fr
+            align-items: start
+    &__col
+        display: flex
+        flex-direction: column
+        gap: 15px
+    &__item
+        border-radius: 18px
+        // box-shadow: 0.019531rem 0.019531rem 0.058594rem #ccc
+        box-shadow: rgb(204, 204, 204) 3.9062px 3.9062px 11.7188px 0px
+        //border: 1px solid #000
+        background-color: #fff
+        min-height: 217px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &_ps
+            position: relative
+            z-index: 2
+        &_smn
+            display: none
+    &__text
+        h2
+            @include adaptiv-value("font-size", 30, 16, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 0)
+            line-height: 1.2
+            text-align: center
+        &_ps
+            position: absolute
+            z-index: 5
+            bottom: 8%
+            left: 0
+            right: 0
+            h2
+                -webkit-text-fill-color: #0000
+                background: linear-gradient(65deg,#0b55bd,#29ade3)
+                -webkit-background-clip: text
+                background-clip: text
+        &_1
+            h2
+                -webkit-text-fill-color: #0000
+                background: linear-gradient(60deg,#e94b25 34%,#e1871d 38%,#77a753 40%,#257185 50%)
+                -webkit-background-clip: text
+                background-clip: text
+    &__item-image
+        img
+            border-radius: 18px
+        &_sm
+            width: 80%
+            margin: 0 auto
+
+#xiaomi13lite .snap-xiaomi13lite
+    &__top
+    &__bottom
+
+#xiaomi13lite .top-snap-xiaomi13lite
+    position: relative
+    z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 8%
+        left: 10%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 46, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+    &__mob
+        display: none
+
+#xiaomi13lite .bottom-snap-xiaomi13lite
+    position: relative
+    z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: -80px
+        left: 10%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 46, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+    &__image
+    &__mob
+        display: none
+
+#xiaomi13lite .vacuum-xiaomi13lite
+    &__body
+        padding: 30px 15px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 56, 20, 0)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+            text-align: center
+
+    &__image
+    &__snoska
+        p
+            @include adaptiv-value("font-size", 26, 16, 0)
+            line-height: 1.2
+            text-align: center
+
+//===========MEDIA=============================================================================================================================================
+
+// calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320)))
+
+@media screen and (max-width: 1920px)
+    #xiaomi13lite .experience-xiaomi13lite__item
+        min-height: calc(112px + (217 - 112) * ((100vw - 1024.98px) / (1920 - 1024.98)))
+
+@media screen and (max-width: 1300px)
+    #xiaomi13lite .header-xiaomi13lite__item
+        margin-left: -50px
+    #xiaomi13lite .ultra-xiaomi13lite__item
+        left: 3%
+        top: 5%
+    #xiaomi13lite .ultra-xiaomi13lite__image
+        padding-left: 490px
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        padding-top: 40px
+
+    //@media screen and (max-width: 1024.98px)
+
+@media screen and (max-width: 991.98px)
+    #xiaomi13lite .bottom-snap-xiaomi13lite__text
+        position: unset
+        width: auto
+        padding: 30px 15px 20px
+        background-color: #f2f2f2
+        h2,p
+            text-align: center
+    #xiaomi13lite .top-snap-xiaomi13lite__text
+        position: unset
+        padding: 30px 15px 10px
+        width: auto
+        h2,p
+            text-align: center
+    #xiaomi13lite .top-snap-xiaomi13lite__image,
+    #xiaomi13lite .bottom-snap-xiaomi13lite__image
+        display: none
+    #xiaomi13lite .top-snap-xiaomi13lite__mob,
+    #xiaomi13lite .bottom-snap-xiaomi13lite__mob
+        display: block
+    #xiaomi13lite .experience-xiaomi13lite__row
+        position: unset
+        margin-top: -80px
+    #xiaomi13lite .experience-xiaomi13lite__title h2
+        color: #000
+        text-align: center
+        padding: 30px 15px 10px
+    #xiaomi13lite .experience-xiaomi13lite__title
+        position: unset
+        width: auto
+    #xiaomi13lite .experience-xiaomi13lite__inner_1
+        display: flex
+    #xiaomi13lite .experience-xiaomi13lite__item_smm
+        display: none
+    #xiaomi13lite .experience-xiaomi13lite__item_smn
+        display: flex
+    #xiaomi13lite .experience-xiaomi13lite__item_sm,
+    #xiaomi13lite .experience-xiaomi13lite__item_smn
+        flex: 0 1 33.3333%
+    #xiaomi13lite .experience-xiaomi13lite__col_sm
+        grid-column: span 2
+        flex-direction: row
+    #xiaomi13lite .experience-xiaomi13lite__item
+        //min-height: 165px
+        min-height: calc(80px + (165 - 80) * ((100vw - 479.98px) / (991 - 479.98)))
+    #xiaomi13lite .experience-xiaomi13lite__inner
+        grid-template-columns: 1fr 1fr
+    #xiaomi13lite .experience-xiaomi13lite__image
+        display: none
+    #xiaomi13lite .experience-xiaomi13lite__image-mob
+        display: block
+    #xiaomi13lite .header-xiaomi13lite__row
+        flex-direction: column
+    #xiaomi13lite .header-xiaomi13lite__item
+        margin-left: 0
+    #xiaomi13lite .header-xiaomi13lite__text
+        padding: 0 15px
+    #xiaomi13lite .ultra-xiaomi13lite__row
+        flex-direction: column
+    #xiaomi13lite .ultra-xiaomi13lite__item
+        position: unset
+    #xiaomi13lite .ultra-xiaomi13lite__image
+        padding-left: 270px
+    #xiaomi13lite .ultra-xiaomi13lite__body
+        max-width: 100%
+    #xiaomi13lite .ultra-xiaomi13lite__text
+        padding: 10px 15px 20px
+        h2,p
+            text-align: center
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        padding-top: 0
+        position: absolute
+        z-index: 5
+        top: 20%
+        left: 4%
+    #xiaomi13lite .ultra-xiaomi13lite__list-item:not(:last-child)
+        padding-bottom: 20px
+        margin-bottom: 20px
+    #xiaomi13lite .dual-xiaomi13lite__row
+        flex-direction: column
+        align-items: stretch
+    #xiaomi13lite .dual-xiaomi13lite__col
+        &_1
+            order: 2
+            background-color: #161616
+        &_2
+            order: 1
+        &_3
+            order: 3
+            align-self: auto
+            background-color: #161616
+            padding-bottom: 30px
+    #xiaomi13lite .dual-xiaomi13lite__item
+        width: auto
+        padding-bottom: 0
+    #xiaomi13lite .dual-xiaomi13lite__bg
+        padding: 60px 0 0
+    #xiaomi13lite .dual-xiaomi13lite__text
+        margin: 30px 40px 0
+        background-color: #222325
+        display: flex
+        align-items: center
+        gap: 20px
+        min-height: 80px
+        padding: 10px 40px
+        border-radius: 10px
+        h2,p
+            flex: 0 1 50%
+            margin-bottom: 0
+    #xiaomi13lite .dynamic-xiaomi13lite__bg
+        padding: 50px 15px
+    #xiaomi13lite .portret-xiaomi13lite__body
+        padding: 50px 15px
+
+@media screen and (max-width: 767.98px)
+    #xiaomi13lite .experience-xiaomi13lite__row,
+    #xiaomi13lite .experience-xiaomi13lite__inner,
+    #xiaomi13lite .experience-xiaomi13lite__col
+        gap: 10px
+    #xiaomi13lite .camera-xiaomi13lite
+        padding-top: 0
+    #xiaomi13lite .row-camera-xiaomi13lite__inner_rev
+        padding: 0
+    #xiaomi13lite .row-camera-xiaomi13lite__text,
+    #xiaomi13lite .camera-xiaomi13lite__text
+        width: auto
+        padding: 20px 0 10px
+        margin-bottom: 0
+        h2,p
+            text-align: center
+    #xiaomi13lite .row-camera-xiaomi13lite__inner
+        flex-direction: column
+        align-items: stretch
+    #xiaomi13lite .upgrade-xiaomi13lite__title,
+    #xiaomi13lite .upgrade-xiaomi13lite__text
+        width: auto
+        h2,p
+            text-align: center
+    #xiaomi13lite .upgrade-xiaomi13lite__bg
+        padding: 50px 15px
+    #xiaomi13lite .upgrade-xiaomi13lite__row
+        flex-direction: column
+    #xiaomi13lite .sensor-xiaomi13lite__text
+        h2,p,span
+            text-align: center
+    #xiaomi13lite .sensor-xiaomi13lite__box
+        position: unset
+        transform: translateY(0)
+        // right: 0
+        // left: 0
+        width: auto
+        padding: 20px 15px 0
+        background: url('https://cdn.comfy.ua/media/x/img3/2369860/img9-2.jpg') 0 0 no-repeat
+        background-size: cover
+    #xiaomi13lite .sensor-xiaomi13lite__image-mob
+        display: block
+    #xiaomi13lite .sensor-xiaomi13lite__image
+        display: none
+    #xiaomi13lite .ultra-xiaomi13lite__list-item:not(:last-child)
+        padding-bottom: 15px
+        margin-bottom: 15px
+    #xiaomi13lite .ultra-xiaomi13lite__list-item:not(:last-child)::after
+        height: 1px
+        width: 30px
+    #xiaomi13lite .ultra-xiaomi13lite__image
+        padding-left: 160px
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        top: 23%
+    #xiaomi13lite .dual-xiaomi13lite__text
+        padding: 10px 20px
+    #xiaomi13lite .bright-xiaomi13lite__row
+        flex-direction: column
+        gap: 5px
+    #xiaomi13lite .bright-xiaomi13lite__title
+        width: auto
+        h2,p
+            text-align: center
+    #xiaomi13lite .dynamic-xiaomi13lite__row
+        flex-direction: column
+        gap: 10px
+    #xiaomi13lite .dynamic-xiaomi13lite__image
+        display: none
+    #xiaomi13lite .dynamic-xiaomi13lite__text
+        padding-bottom: 0
+    #xiaomi13lite .dynamic-xiaomi13lite__text
+        margin-bottom: 20px
+        h2,p
+            text-align: center
+    #xiaomi13lite .portret-xiaomi13lite__text
+        h2,p
+            text-align: center
+    #xiaomi13lite .portret-xiaomi13lite__bottom
+        padding-top: 20px
+    #xiaomi13lite .mirror-xiaomi13lite__row
+        flex-direction: column
+        background-color: #f5dbec
+    #xiaomi13lite .mirror-xiaomi13lite__text
+        width: auto
+        padding: 20px 15px
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 601px)
+    #xiaomi13lite .ultra-xiaomi13lite__image
+        padding-left: 124px
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        top: 27%
+
+@media screen and (max-width: 479.98px)
+    #xiaomi13lite .upgrade-xiaomi13lite__bg,
+    #xiaomi13lite .portret-xiaomi13lite__body,
+    #xiaomi13lite .dynamic-xiaomi13lite__bg
+        padding: 20px 15px
+    #xiaomi13lite .experience-xiaomi13lite__col
+        flex-direction: row
+        &:nth-child(1)
+            grid-column: span 2
+    #xiaomi13lite .experience-xiaomi13lite__item_1,
+    #xiaomi13lite .experience-xiaomi13lite__item_2
+        flex: 0 1 50%
+    #xiaomi13lite .experience-xiaomi13lite__row
+        width: 90%
+    #xiaomi13lite .experience-xiaomi13lite__inner
+        grid-template-columns: 1fr
+    #xiaomi13lite .experience-xiaomi13lite__item
+        min-height: 86px
+        //min-height: calc(112px + (86 - 112) * ((100vw - 1024.98px) / (1920 - 1024.98)))
+    #xiaomi13lite .experience-xiaomi13lite__text
+        padding: 10px
+    #xiaomi13lite .experience-xiaomi13lite__text_ps
+        h2
+            font-size: 20px !important
+        p
+            font-size: 15px !important
+    #xiaomi13lite .experience-xiaomi13lite__text h2
+        font-size: 15px
+        margin-bottom: 5px
+    #xiaomi13lite .experience-xiaomi13lite__text p
+        font-size: 12px
+    #xiaomi13lite .sensor-xiaomi13lite__text span
+        padding-top: 20px
+    #xiaomi13lite .sensor-xiaomi13lite__box
+        top: 5%
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        top: 38%
+    #xiaomi13lite .ultra-xiaomi13lite__list-item h4
+        margin-bottom: 0
+    #xiaomi13lite .ultra-xiaomi13lite__list-item:not(:last-child)
+        padding-bottom: 10px
+        margin-bottom: 10px
+    #xiaomi13lite .dual-xiaomi13lite__text
+        flex-direction: column
+        justify-content: center
+        gap: 10px
+        h2,p
+            text-align: center
+    #xiaomi13lite .dual-xiaomi13lite__text
+        margin: 15px 20px 0
+    #xiaomi13lite .dual-xiaomi13lite__bg
+        padding-top: 20px
+    #xiaomi13lite .portret-xiaomi13lite__inner
+        flex-direction: column
+    #xiaomi13lite .portret-xiaomi13lite__text
+        margin-bottom: 10px
+
+// @media screen and (max-width: 401px)
+//     #xiaomi13lite .bottom-snap-xiaomi13lite__text
+//         top: 1%
+//         width: auto
+//         padding: 0 15px
+
+@media screen and (max-width: 351px)
+    #xiaomi13lite .ultra-xiaomi13lite__list
+        top: 42%
