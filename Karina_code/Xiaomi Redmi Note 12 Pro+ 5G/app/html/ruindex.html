@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #note125g ul,ol,li{list-style:none;padding:0;margin:0}#note125g .bc-description__content p{margin-bottom:0}#note125g .bc-description__content h3{text-align:left}#note125g p{margin:0;padding:0;text-align:left}#note125g h1,#note125g h2,#note125g h3,#note125g h4,#note125g h5,#note125g h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#note125g{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#note125g p::first-letter{padding-left:0}[class*=__container]{max-width:1430px;margin:0 auto;padding:0 15px}#note125g img{opacity:1;max-width:100%;display:block;margin:0 auto}#note125g img:hover{opacity:1}#note125g .head-note125g__media{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#note125g .head-note125g__text{padding-left:100px}@media(max-width: 1430px){#note125g .head-note125g__text{padding-left:-webkit-calc(0px + 100 * ((100vw - 320px) / 1110));padding-left:-moz-calc(0px + 100 * ((100vw - 320px) / 1110));padding-left:calc(0px + 100 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text h2{font-size:40px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#note125g .head-note125g__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 20 * ((100vw - 320px) / 1110));font-size:calc(20px + 20 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text p{font-size:20px;line-height:1.2}@media(max-width: 1430px){#note125g .head-note125g__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1110));font-size:calc(16px + 4 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text p:not(:last-child){margin-bottom:5px}#note125g .head-note125g__logo{margin-bottom:15px}#note125g .spec-note125g__row{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}#note125g .spec-note125g__col{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#note125g .spec-note125g__item_pos{position:relative;z-index:2}#note125g .spec-note125g__item_bg-1{background:url("https://cdn.comfy.ua/media/x/img3/2449517/bg1.jpg") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:168px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 10px}@media(max-width: 1430px){#note125g .spec-note125g__item_bg-1{min-height:-webkit-calc(8px + 160 * ((100vw - 320px) / 1110));min-height:-moz-calc(8px + 160 * ((100vw - 320px) / 1110));min-height:calc(8px + 160 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__item_bg-2{background:url("https://cdn.comfy.ua/media/x/img3/2449517/bg2.jpg") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:156px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 10px}@media(max-width: 1430px){#note125g .spec-note125g__item_bg-2{min-height:-webkit-calc(13px + 143 * ((100vw - 320px) / 1110));min-height:-moz-calc(13px + 143 * ((100vw - 320px) / 1110));min-height:calc(13px + 143 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__text h4{font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .spec-note125g__text h4{font-size:-webkit-calc(8px + 16 * ((100vw - 320px) / 1110));font-size:-moz-calc(8px + 16 * ((100vw - 320px) / 1110));font-size:calc(8px + 16 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__text_pos{position:absolute;z-index:5;top:5%;left:0;right:0;padding:0 10px}#note125g .spec-note125g__image-ibg{padding-bottom:147%}#note125g .camera-note125g__bg{background-color:#000}#note125g .camera-note125g__media{position:relative;z-index:2}#note125g .camera-note125g__title{position:absolute;z-index:5;top:10%;left:12%;right:50%}#note125g .camera-note125g__title h2{font-size:60px;line-height:1.2;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:-webkit-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:-moz-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:-o-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5)}@media(max-width: 1430px){#note125g .camera-note125g__title h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1110));font-size:calc(20px + 40 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__box h4{color:#fff;text-align:center;font-size:35px;line-height:1.2;padding:20px 15px}@media(max-width: 1430px){#note125g .camera-note125g__box h4{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__bgtitle h2{font-size:200px;line-height:1;text-align:center;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:url("https://cdn.comfy.ua/media/x/img3/2449517/img8.png");background-position:50% 50%;background-repeat:no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}@media(max-width: 1430px){#note125g .camera-note125g__bgtitle h2{font-size:-webkit-calc(80px + 120 * ((100vw - 320px) / 1110));font-size:-moz-calc(80px + 120 * ((100vw - 320px) / 1110));font-size:calc(80px + 120 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__text p{color:#fff;text-align:center;font-size:24px;line-height:1.2;max-width:1200px;margin:0 auto;padding:20px 15px}@media(max-width: 1430px){#note125g .camera-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__bg{background-color:#000;padding:30px 0;position:relative;z-index:2}#note125g .procut-note125g__imagebg{position:absolute;z-index:-1;top:50%;left:0;right:0}#note125g .procut-note125g__row{max-width:1200px;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:15px}#note125g .procut-note125g__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#note125g .procut-note125g__text{padding-top:50px}#note125g .procut-note125g__text h2{font-size:30px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .procut-note125g__text h2{font-size:-webkit-calc(20px + 10 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 10 * ((100vw - 320px) / 1110));font-size:calc(20px + 10 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .procut-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#note125g .fullcam-note125g__bg{padding-top:100px;position:relative;z-index:50;background-color:#000}@media(max-width: 1430px){#note125g .fullcam-note125g__bg{padding-top:-webkit-calc(0px + 100 * ((100vw - 320px) / 1110));padding-top:-moz-calc(0px + 100 * ((100vw - 320px) / 1110));padding-top:calc(0px + 100 * ((100vw - 320px) / 1110))}}#note125g .fullcam-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;padding:0 15px;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .fullcam-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__bg{background-color:#000}#note125g .engine-note125g__media{position:relative;z-index:2}#note125g .engine-note125g__media::after{content:"";position:absolute;z-index:5;background:rgba(0,0,0,.4235294118);top:0;left:0;right:0;width:100%;height:100%}#note125g .engine-note125g__text_pos{position:absolute;z-index:6;bottom:0;left:0;right:0;max-width:1200px;margin:0 auto;padding:0 15px}#note125g .engine-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:-webkit-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:-moz-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:-o-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa)}@media(max-width: 1430px){#note125g .engine-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__text p{font-size:24px;line-height:1.2;color:#fff;text-align:center;max-width:1000px;margin:0 auto 20px}@media(max-width: 1430px){#note125g .engine-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__box{padding-top:50px}@media(max-width: 1430px){#note125g .engine-note125g__box{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:calc(20px + 30 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__bg{background-color:#000}#note125g .film-note125g__media{position:relative;z-index:2}#note125g .film-note125g__text{position:absolute;z-index:5;top:5%;left:0;right:55%}#note125g .film-note125g__text h2{color:#61abff;font-size:35px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#note125g .film-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__text p{color:#fff;font-size:35px;line-height:1.2}@media(max-width: 1430px){#note125g .film-note125g__text p{font-size:-webkit-calc(16px + 19 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 19 * ((100vw - 320px) / 1110));font-size:calc(16px + 19 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__box{padding:20px 0}#note125g .film-note125g__box p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .film-note125g__box p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .ultra-note125g__bg{background-color:#000;padding:30px 0 50px}#note125g .ultra-note125g__text{margin-bottom:20px}#note125g .ultra-note125g__text h2{color:#fff;font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .ultra-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .ultra-note125g__text p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .ultra-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g{padding-top:30px;padding-bottom:100px}@media(max-width: 1430px){#note125g .comfort-note125g{padding-top:-webkit-calc(0px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(0px + 30 * ((100vw - 320px) / 1110));padding-top:calc(0px + 30 * ((100vw - 320px) / 1110))}}@media(max-width: 1430px){#note125g .comfort-note125g{padding-bottom:-webkit-calc(20px + 80 * ((100vw - 320px) / 1110));padding-bottom:-moz-calc(20px + 80 * ((100vw - 320px) / 1110));padding-bottom:calc(20px + 80 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g__box{padding-top:30px}#note125g .comfort-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .comfort-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g__text p{font-size:24px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .comfort-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box{padding-top:50px}@media(max-width: 1430px){#note125g .amoled-note125g__box{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:calc(20px + 30 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .amoled-note125g__box h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box p{font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .amoled-note125g__box p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .audio-note125g__text{padding:30px 0}#note125g .audio-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .audio-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .audio-note125g__text p{font-size:24px;line-height:1.2;text-align:center;margin-bottom:15px}@media(max-width: 1430px){#note125g .audio-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__media{position:relative;z-index:2}#note125g .speed-note125g__media::after{content:"";position:absolute;z-index:3;top:0;left:0;width:100%;height:100%;background:-webkit-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:-moz-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:-o-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:linear-gradient(106deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%)}#note125g .speed-note125g__box{position:absolute;z-index:5;top:13%;left:12%;right:80%;width:35%}#note125g .speed-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .speed-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .speed-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__row{padding-top:80px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:15px}@media(max-width: 1430px){#note125g .speed-note125g__row{padding-top:-webkit-calc(20px + 60 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 60 * ((100vw - 320px) / 1110));padding-top:calc(20px + 60 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__item h4{color:#61abff;font-size:28px;line-height:1.2;margin-bottom:5px}@media(max-width: 1430px){#note125g .speed-note125g__item h4{font-size:-webkit-calc(15px + 13 * ((100vw - 320px) / 1110));font-size:-moz-calc(15px + 13 * ((100vw - 320px) / 1110));font-size:calc(15px + 13 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__item p{color:#fff;font-size:24px;line-height:1.2}@media(max-width: 1430px){#note125g .speed-note125g__item p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__image img{margin-right:0}#note125g .mediatek-note125g__media{position:relative;z-index:2}#note125g .mediatek-note125g__box{position:absolute;z-index:5;top:10%;left:0;right:0;max-width:1300px;margin:0 auto;padding:0 15px}#note125g .mediatek-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .mediatek-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .mediatek-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px;padding-top:80px}#note125g .mediatek-note125g__item{border:1px solid #fff;padding:2%}#note125g .mediatek-note125g__item h4{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .mediatek-note125g__item h4{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__item p{font-size:24px;line-height:1.2;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .mediatek-note125g__item p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__bg{background-color:#000;padding:50px 0}#note125g .system-note125g__title h2{color:#fff;font-size:35px;line-height:1.2;text-align:center;margin-bottom:20px}@media(max-width: 1430px){#note125g .system-note125g__title h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__text{padding-top:30px}#note125g .system-note125g__text p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .system-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__text p:not(:last-child){margin-bottom:15px}#note125g .color-note125g__title h2{font-size:35px;line-height:1.2;text-align:center;margin-bottom:20px}@media(max-width: 1430px){#note125g .color-note125g__title h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .color-note125g__media{position:relative;z-index:2}#note125g .color-note125g__media::after{content:"";position:absolute;z-index:-2;top:23.5%;right:0;width:35%;height:60%;background-color:#ebebeb}#note125g .big-color-note125g{width:70%}#note125g .big-color-note125g__item{position:relative;z-index:2}#note125g .big-color-note125g__text{position:absolute;z-index:50;top:15%;right:60%;padding-left:15px}#note125g .big-color-note125g__text p{color:#fff;font-size:26px;line-height:1.2}@media(max-width: 1430px){#note125g .big-color-note125g__text p{font-size:-webkit-calc(15px + 11 * ((100vw - 320px) / 1110));font-size:-moz-calc(15px + 11 * ((100vw - 320px) / 1110));font-size:calc(15px + 11 * ((100vw - 320px) / 1110))}}#note125g .big-color-note125g__image{position:relative;z-index:10}#note125g .big-color-note125g .swiper-pagination{bottom:auto;top:8%;width:auto;right:0;left:auto;right:31%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#note125g .big-color-note125g .swiper-pagination-bullet{-webkit-border-radius:unset;border-radius:unset;width:4px;height:44px;opacity:.7;background-color:#fff}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#fff;opacity:1}#note125g .sm-color-note125g{margin-top:-525px}#note125g .sm-color-note125g__image img{margin-right:0;width:47%;padding-top:100px;padding-right:200px}@media(max-width: 1430px){#note125g .sm-color-note125g__image img{padding-right:-webkit-calc(0px + 200 * ((100vw - 320px) / 1110));padding-right:-moz-calc(0px + 200 * ((100vw - 320px) / 1110));padding-right:calc(0px + 200 * ((100vw - 320px) / 1110))}}@media screen and (max-width: 1810px){#note125g .sm-color-note125g{margin-top:-400px}#note125g .color-note125g__media::after{top:25.5%}}@media screen and (max-width: 1400px){#note125g .sm-color-note125g{margin-top:-295px}#note125g .color-note125g__media::after{top:31.5%;height:55%}}@media screen and (max-width: 1024.98px){#note125g .big-color-note125g .swiper-pagination{top:5%}#note125g .big-color-note125g .swiper-pagination-bullet{height:34px}#note125g .sm-color-note125g{margin-top:-248px}#note125g .camera-note125g__title{left:5%}#note125g .procut-note125g__imagebg{top:65%}#note125g .speed-note125g__box{left:3%;width:40%}}@media screen and (max-width: 991.98px){#note125g .head-note125g__media{padding-top:20px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#note125g .head-note125g__text{padding:0 15px}#note125g .head-note125g__text h2,#note125g .head-note125g__text p{text-align:center}#note125g .camera-note125g__title{left:2%}#note125g .mediatek-note125g__box{top:4%}#note125g .mediatek-note125g__row{padding-top:30px}}@media screen and (max-width: 767.98px){#note125g .camera-note125g__title{right:35%;left:0;padding-left:15px}#note125g .procut-note125g__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#note125g .procut-note125g__text{padding-top:0}#note125g .procut-note125g__text h2,#note125g .procut-note125g__text p{text-align:center}#note125g .procut-note125g__imagebg{display:none}#note125g .speed-note125g__box{position:unset;padding:20px 15px;width:auto}#note125g .speed-note125g__media::after{display:none}#note125g .speed-note125g__media{background:#0b0b0b}#note125g .speed-note125g__text h2,#note125g .speed-note125g__text p,#note125g .mediatek-note125g__text h2,#note125g .mediatek-note125g__text p{text-align:center}#note125g .speed-note125g__item h4,#note125g .speed-note125g__item p{text-align:center}#note125g .mediatek-note125g__row{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#note125g .mediatek-note125g__box{position:unset;background-color:#000;padding:20px 15px}#note125g .big-color-note125g{width:auto}#note125g .sm-color-note125g{display:none}#note125g .big-color-note125g__text{top:7%;right:73%}#note125g .big-color-note125g .swiper-pagination{right:5%;top:8%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row}#note125g .big-color-note125g .swiper-pagination-bullet{width:10px;height:10px;-webkit-border-radius:50%;border-radius:50%;border:1px solid #fff;background-color:rgba(0,0,0,0)}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#fff}#note125g .big-color-note125g__text{padding-left:0;left:5%;right:0}}@media screen and (max-width: 479.98px){#note125g .spec-note125g__row{grid-template-columns:1fr}#note125g .spec-note125g__text h4{font-size:18px}#note125g .spec-note125g__item_bg-1,#note125g .spec-note125g__item_bg-2{min-height:100px}#note125g .film-note125g__text{position:unset;padding:20px 0}#note125g .film-note125g__text h2,#note125g .film-note125g__text p{text-align:center}#note125g .comfort-note125g__text h2,#note125g .comfort-note125g__text p{text-align:center}#note125g .big-color-note125g .swiper-pagination{top:auto;bottom:2%}#note125g .swiper{padding-bottom:30px}#note125g .big-color-note125g .swiper-pagination-bullet{border:1px solid #505050}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#505050}#note125g .big-color-note125g__text{top:auto;bottom:-25px;left:3%;right:60%}#note125g .big-color-note125g__text p{color:#000}#note125g .engine-note125g__text_pos{position:unset}#note125g .engine-note125g__media::after{display:none}}@media screen and (max-width: 400px){#note125g .mediatek-note125g__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div id="note125g">
+        <div class="note125g__head head-note125g">
+            <div class="head-note125g__media">
+                <div class="head-note125g__text">
+                    <div class="head-note125g__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img2.png" alt="">
+                    </div>
+                    <h2>Redmi Note 12 Pro+ 5G</h2>
+                    <p>Делайте впечатляющие кадры с камерой 200 Мп</p>
+                    <p>Заряжайте смартфон с супер-быстрой зарядкой 120 Вт</p>
+                    <p>Наслаждайтесь четким изображением с AMOLED дисплеем</p>
+                </div>
+                <div class="head-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__spec spec-note125g">
+            <div class="spec-note125g__container">
+                <div class="spec-note125g__row">
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Качественная камера с OIS</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Долгая автономность благодаря аккумулятору 5000 мАч</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_bg-1">
+                            <div class="spec-note125g__text">
+                                <h4>Поддержка Dolby Vision® и Dolby Atmos®</h4>
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Яркий дисплей с частотой 120 Гц</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_bg-2">
+                            <div class="spec-note125g__text">
+                                <h4>Мощный процессор с поддержкой 5G</h4>
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Умная быстрая зарядка</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__camera camera-note125g">
+            <div class="camera-note125g__bg">
+                <div class="camera-note125g__media">
+                    <div class="camera-note125g__title">
+                        <h2>Лучшее разрешение камеры</h2>
+                    </div>
+                    <div class="camera-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="camera-note125g__box">
+                    <div class="camera-note125g__bgtitle">
+                        <h2>200 Мп</h2>
+                    </div>
+                    <div class="camera-note125g__text">
+                        <p>Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb оснащен сверхмощной камерой, которая есть сейчас на
+                            рынке смартфонов. Она обладает большим датчиком изображения разрешения 200 Мп со
+                            стабилизацией OIS и объективом 7Р. Благодаря современным алгоритмам вы можете делать
+                            невероятные и качественные кадры!</p>
+                    </div>
+                </div>
+                <div class="camera-note125g__box">
+                    <div class="camera-note125g__text">
+                        <h4>Делайте максимально детализированные кадры</h4>
+                    </div>
+                    <div class="camera-note125g__image-sm">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__procut procut-note125g">
+            <div class="procut-note125g__bg">
+                <div class="procut-note125g__container">
+                    <div class="procut-note125g__row">
+                        <div class="procut-note125g__item">
+                            <div class="procut-note125g__text">
+                                <h2>Один клик — 5 фото</h2>
+                                <p>Благодаря режиму ProCut камера смартфона Xiaomi Redmi Note 12 Pro 5G 8/256Gb может
+                                    сделать один кадр и разделить его на 5 самостоятельных фото. При этом каждое фото
+                                    будет четкое и детализированное.</p>
+                            </div>
+                        </div>
+                        <div class="procut-note125g__image">
+                            <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img27.png" alt=""> -->
+                            <picture>
+                                <source media="(min-width: 767.98px)"
+                                    srcset="https://cdn.comfy.ua/media/x/img3/2449517/img27.png">
+                                <source media="(min-width: 320px)"
+                                    srcset="https://cdn.comfy.ua/media/x/img3/2449517/img28.png">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img27.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="procut-note125g__imagebg">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__fullcam fullcam-note125g">
+            <div class="fullcam-note125g__bg">
+                <div class="fullcam-note125g__text">
+                    <h2>Яркие снимки днем и ночью благодаря технологии стабилизации OIS</h2>
+                </div>
+                <div class="fullcam-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__engine engine-note125g">
+            <div class="engine-note125g__bg">
+                <div class="engine-note125g__media">
+                    <div class="engine-note125g__text engine-note125g__text_pos">
+                        <p>Камера Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb улавливает больше света, чем все камеры прошлых
+                            поколений, благодаря чему вы получаете новый уровень яркости. Особенно это касается ночных
+                            съемок — теперь вам не нужна вспышка, чтобы поймать вечернюю атмосферу города.</p>
+                    </div>
+                    <div class="engine-note125g__image engine-note125g__image_bg">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="engine-note125g__container">
+                    <div class="engine-note125g__box">
+                        <div class="engine-note125g__text">
+                            <h2>Цвета, максимально приближенные к реальным</h2>
+                            <p>Xiaomi Imaging Engine — это поддержка, которая позволяет получать реалистичные цвета на
+                                ваших фото, а также улучшает качество изображения.</p>
+                        </div>
+                        <div class="engine-note125g__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img13.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__film film-note125g">
+            <div class="film-note125g__bg">
+                <div class="film-note125g__container">
+                    <div class="film-note125g__media">
+                        <div class="film-note125g__text">
+                            <h2>Пленочная фотография</h2>
+                            <p>На смартфон Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb</p>
+                        </div>
+                        <div class="film-note125g__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img14.jpg" alt="">
+                        </div>
+                        <div class="film-note125g__box">
+                            <p>В вашем распоряжении 7 пленочных фильтров, которые добавят винтажную атмосферу и стиль
+                                вашим фотографиям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__ultra ultra-note125g">
+            <div class="ultra-note125g__bg">
+                <div class="ultra-note125g__container">
+                    <div class="ultra-note125g__text">
+                        <h2>Широкоугольная камера</h2>
+                        <p>Смотрите на привычные пейзажи под необычным углом и фиксируйте хорошие моменты!</p>
+                    </div>
+                    <div class="ultra-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img15.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__comfort comfort-note125g">
+            <div class="comfort-note125g__container">
+                <div class="comfort-note125g__box">
+                    <div class="comfort-note125g__text">
+                        <h2>Яркий дизайн премиум-класса</h2>
+                        <p>Камера смартфона имеет металлическое оформление, которое обеспечивает изысканность и
+                            долговечность, а задняя панель сделана из стекла, что придает элегантности.</p>
+                    </div>
+                    <div class="comfort-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img16.png" alt="">
+                    </div>
+                </div>
+                <div class="comfort-note125g__box">
+                    <div class="comfort-note125g__text">
+                        <h2>Яркий дизайн премиум-класса</h2>
+                        <p>Камера смартфона имеет металлическое оформление, которое обеспечивает изысканность и
+                            долговечность, а задняя панель сделана из стекла, что придает элегантности.</p>
+                    </div>
+                    <div class="comfort-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__color color-note125g">
+            <div class="color-note125g__title">
+                <h2>Выбирайте один из трех потрясающих цветов</h2>
+            </div>
+            <div class="color-note125g__media">
+                <div class="color-note125g__big big-color-note125g">
+                    <div class="big-color-note125g__slider swiper">
+                        <div class="big-color-note125g__wrapper swiper-wrapper">
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Северный черный</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img18mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Полярный белый</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img19mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Голубое небо</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img20mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="color-note125g__sm sm-color-note125g">
+                    <div class="sm-color-note125g__slider swiper">
+                        <div class="sm-color-note125g__wrapper swiper-wrapper">
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__amoled amoled-note125g">
+            <div class="amoled-note125g__container">
+                <div class="amoled-note125g__box">
+                    <h2>Дисплей AMOLED<br>Больше контраста и яркости</h2>
+                    <p>Дисплей диагональю 6.67 дюйма, с частотой обновления 120 Гц изготовлен из гибких материалов,
+                        значительно повышающих яркость, контрастность и отображающих большую палитру цветов. Режим
+                        солнечного света позволяет вам комфортно просматривать ленту соцсетей даже на улице, а режим
+                        чтения как на бумаге улучшит ваш опыт с электронными книгами. Материал Flow AMOLED реализует
+                        меньшую нижнюю рамку, что дает вам больший экран.</p>
+                </div>
+                <div class="amoled-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img21.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__audio audio-note125g">
+            <div class="audio-note125g__container">
+                <div class="audio-note125g__text">
+                    <h2>Новый аудиовизуальный опыт</h2>
+                    <p>Благодаря Dolby Vision и HDR10+ вы получите впечатляющую картинку, что бы вы ни смотрели, а с
+                        Dolby Atmos и двойными динамиками звук станет более объемным и четким. Наслаждайтесь фильмами,
+                        сериалами и разными видео в лучшем качестве!</p>
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img22.png" alt="">
+                </div>
+            </div>
+            <div class="audio-note125g__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img23.png" alt="">
+            </div>
+        </div>
+        <div class="note125g__speed speed-note125g">
+            <div class="speed-note125g__media">
+                <div class="speed-note125g__box">
+                    <div class="speed-note125g__text">
+                        <h2>20 минут на 100% зарядку</h2>
+                        <p>Чипсет Xiaomi Surge P1 в аккумуляторе на 5000 мАч делает быструю зарядку по-настоящему
+                            быстрой — всего 19 минут нужно смартфону, чтобы зарядиться на 100%. А интеллектуальная
+                            технология HyperCharge в свою очередь сохраняет длительный срок службы аккумулятора.</p>
+                    </div>
+                    <div class="speed-note125g__row">
+                        <div class="speed-note125g__item">
+                            <h4>8,9 часа</h4>
+                            <p>игр</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>39 часов</h4>
+                            <p>звонков</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>19 часов</h4>
+                            <p>видео</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>149 часов</h4>
+                            <p>музыки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speed-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img24.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__mediatek mediatek-note125g">
+            <div class="mediatek-note125g__media">
+                <div class="mediatek-note125g__box">
+                    <div class="mediatek-note125g__text">
+                        <h2>Производительность с MediaTek Dimensity 1080 с 5G</h2>
+                        <p>Передовой чипсет делает много важной работы, чтобы ваш опыт со смартфоном Xiaomi Redmi Note
+                            12 Pro+ 5G 8/256Gb был максимально комфортным: он повышает общую скорость смартфона,
+                            обеспечивает производительность в создании контента, снижает энергопотребление, хорошо
+                            показывает себя в играх и соединении 5G.</p>
+                    </div>
+                    <div class="mediatek-note125g__row">
+                        <div class="mediatek-note125g__item">
+                            <h4>A78</h4>
+                            <p>высокопроизводительный <br>процессор</p>
+                        </div>
+                        <div class="mediatek-note125g__item">
+                            <h4>G68</h4>
+                            <p>эффективный GPU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediatek-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img25.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__system system-note125g">
+            <div class="system-note125g__bg">
+                <div class="system-note125g__container">
+                    <div class="system-note125g__title">
+                        <h2>Мощная система охлаждения</h2>
+                    </div>
+                    <div class="system-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img26.png" alt="">
+                    </div>
+                    <div class="system-note125g__text">
+                        <p>Многомерная система охлаждения имеет площадь 3000 мм², благодаря чему смартфон охлаждается
+                            гораздо быстрее. А контроль температуры позитивно влияет на производительность!</p>
+                        <p>Купить смартфон Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb в Украине можно на сайте или в фирменных
+                            магазинах Comfy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let bigColor = new Swiper('.big-color-note125g__slider', {
+                speed: 600,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+
+            let smColor = new Swiper('.sm-color-note125g__slider', {
+                speed: 600,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+
+            smColor.controller.control = bigColor;
+            bigColor.controller.control = smColor;
+        });
+    </script>
+
+    UA
+    <style>
+        #note125g ul,ol,li{list-style:none;padding:0;margin:0}#note125g .bc-description__content p{margin-bottom:0}#note125g .bc-description__content h3{text-align:left}#note125g p{margin:0;padding:0;text-align:left}#note125g h1,#note125g h2,#note125g h3,#note125g h4,#note125g h5,#note125g h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#note125g{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#note125g p::first-letter{padding-left:0}[class*=__container]{max-width:1430px;margin:0 auto;padding:0 15px}#note125g img{opacity:1;max-width:100%;display:block;margin:0 auto}#note125g img:hover{opacity:1}#note125g .head-note125g__media{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#note125g .head-note125g__text{padding-left:100px}@media(max-width: 1430px){#note125g .head-note125g__text{padding-left:-webkit-calc(0px + 100 * ((100vw - 320px) / 1110));padding-left:-moz-calc(0px + 100 * ((100vw - 320px) / 1110));padding-left:calc(0px + 100 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text h2{font-size:40px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#note125g .head-note125g__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 20 * ((100vw - 320px) / 1110));font-size:calc(20px + 20 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text p{font-size:20px;line-height:1.2}@media(max-width: 1430px){#note125g .head-note125g__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1110));font-size:calc(16px + 4 * ((100vw - 320px) / 1110))}}#note125g .head-note125g__text p:not(:last-child){margin-bottom:5px}#note125g .head-note125g__logo{margin-bottom:15px}#note125g .spec-note125g__row{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}#note125g .spec-note125g__col{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#note125g .spec-note125g__item_pos{position:relative;z-index:2}#note125g .spec-note125g__item_bg-1{background:url("https://cdn.comfy.ua/media/x/img3/2449517/bg1.jpg") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:168px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 10px}@media(max-width: 1430px){#note125g .spec-note125g__item_bg-1{min-height:-webkit-calc(8px + 160 * ((100vw - 320px) / 1110));min-height:-moz-calc(8px + 160 * ((100vw - 320px) / 1110));min-height:calc(8px + 160 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__item_bg-2{background:url("https://cdn.comfy.ua/media/x/img3/2449517/bg2.jpg") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:156px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 10px}@media(max-width: 1430px){#note125g .spec-note125g__item_bg-2{min-height:-webkit-calc(13px + 143 * ((100vw - 320px) / 1110));min-height:-moz-calc(13px + 143 * ((100vw - 320px) / 1110));min-height:calc(13px + 143 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__text h4{font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .spec-note125g__text h4{font-size:-webkit-calc(8px + 16 * ((100vw - 320px) / 1110));font-size:-moz-calc(8px + 16 * ((100vw - 320px) / 1110));font-size:calc(8px + 16 * ((100vw - 320px) / 1110))}}#note125g .spec-note125g__text_pos{position:absolute;z-index:5;top:5%;left:0;right:0;padding:0 10px}#note125g .spec-note125g__image-ibg{padding-bottom:147%}#note125g .camera-note125g__bg{background-color:#000}#note125g .camera-note125g__media{position:relative;z-index:2}#note125g .camera-note125g__title{position:absolute;z-index:5;top:10%;left:12%;right:50%}#note125g .camera-note125g__title h2{font-size:60px;line-height:1.2;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:-webkit-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:-moz-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:-o-linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5);background-image:linear-gradient(45deg, #ea8b25, #df3017, #8e20af, #4034fa, #01caa5)}@media(max-width: 1430px){#note125g .camera-note125g__title h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1110));font-size:calc(20px + 40 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__box h4{color:#fff;text-align:center;font-size:35px;line-height:1.2;padding:20px 15px}@media(max-width: 1430px){#note125g .camera-note125g__box h4{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__bgtitle h2{font-size:200px;line-height:1;text-align:center;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:url("https://cdn.comfy.ua/media/x/img3/2449517/img8.png");background-position:50% 50%;background-repeat:no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}@media(max-width: 1430px){#note125g .camera-note125g__bgtitle h2{font-size:-webkit-calc(80px + 120 * ((100vw - 320px) / 1110));font-size:-moz-calc(80px + 120 * ((100vw - 320px) / 1110));font-size:calc(80px + 120 * ((100vw - 320px) / 1110))}}#note125g .camera-note125g__text p{color:#fff;text-align:center;font-size:24px;line-height:1.2;max-width:1200px;margin:0 auto;padding:20px 15px}@media(max-width: 1430px){#note125g .camera-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__bg{background-color:#000;padding:30px 0;position:relative;z-index:2}#note125g .procut-note125g__imagebg{position:absolute;z-index:-1;top:50%;left:0;right:0}#note125g .procut-note125g__row{max-width:1200px;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:15px}#note125g .procut-note125g__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#note125g .procut-note125g__text{padding-top:50px}#note125g .procut-note125g__text h2{font-size:30px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .procut-note125g__text h2{font-size:-webkit-calc(20px + 10 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 10 * ((100vw - 320px) / 1110));font-size:calc(20px + 10 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .procut-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .procut-note125g__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#note125g .fullcam-note125g__bg{padding-top:100px;position:relative;z-index:50;background-color:#000}@media(max-width: 1430px){#note125g .fullcam-note125g__bg{padding-top:-webkit-calc(0px + 100 * ((100vw - 320px) / 1110));padding-top:-moz-calc(0px + 100 * ((100vw - 320px) / 1110));padding-top:calc(0px + 100 * ((100vw - 320px) / 1110))}}#note125g .fullcam-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;padding:0 15px;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .fullcam-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__bg{background-color:#000}#note125g .engine-note125g__media{position:relative;z-index:2}#note125g .engine-note125g__media::after{content:"";position:absolute;z-index:5;background:rgba(0,0,0,.4235294118);top:0;left:0;right:0;width:100%;height:100%}#note125g .engine-note125g__text_pos{position:absolute;z-index:6;bottom:0;left:0;right:0;max-width:1200px;margin:0 auto;padding:0 15px}#note125g .engine-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:-webkit-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:-moz-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:-o-linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa);background-image:linear-gradient(45deg, #e4571e, #df3017, #8e20af, #4034fa)}@media(max-width: 1430px){#note125g .engine-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__text p{font-size:24px;line-height:1.2;color:#fff;text-align:center;max-width:1000px;margin:0 auto 20px}@media(max-width: 1430px){#note125g .engine-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .engine-note125g__box{padding-top:50px}@media(max-width: 1430px){#note125g .engine-note125g__box{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:calc(20px + 30 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__bg{background-color:#000}#note125g .film-note125g__media{position:relative;z-index:2}#note125g .film-note125g__text{position:absolute;z-index:5;top:5%;left:0;right:55%}#note125g .film-note125g__text h2{color:#61abff;font-size:35px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#note125g .film-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__text p{color:#fff;font-size:35px;line-height:1.2}@media(max-width: 1430px){#note125g .film-note125g__text p{font-size:-webkit-calc(16px + 19 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 19 * ((100vw - 320px) / 1110));font-size:calc(16px + 19 * ((100vw - 320px) / 1110))}}#note125g .film-note125g__box{padding:20px 0}#note125g .film-note125g__box p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .film-note125g__box p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .ultra-note125g__bg{background-color:#000;padding:30px 0 50px}#note125g .ultra-note125g__text{margin-bottom:20px}#note125g .ultra-note125g__text h2{color:#fff;font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .ultra-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .ultra-note125g__text p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .ultra-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g{padding-top:30px;padding-bottom:100px}@media(max-width: 1430px){#note125g .comfort-note125g{padding-top:-webkit-calc(0px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(0px + 30 * ((100vw - 320px) / 1110));padding-top:calc(0px + 30 * ((100vw - 320px) / 1110))}}@media(max-width: 1430px){#note125g .comfort-note125g{padding-bottom:-webkit-calc(20px + 80 * ((100vw - 320px) / 1110));padding-bottom:-moz-calc(20px + 80 * ((100vw - 320px) / 1110));padding-bottom:calc(20px + 80 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g__box{padding-top:30px}#note125g .comfort-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .comfort-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .comfort-note125g__text p{font-size:24px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .comfort-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box{padding-top:50px}@media(max-width: 1430px){#note125g .amoled-note125g__box{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 30 * ((100vw - 320px) / 1110));padding-top:calc(20px + 30 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .amoled-note125g__box h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .amoled-note125g__box p{font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .amoled-note125g__box p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .audio-note125g__text{padding:30px 0}#note125g .audio-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#note125g .audio-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .audio-note125g__text p{font-size:24px;line-height:1.2;text-align:center;margin-bottom:15px}@media(max-width: 1430px){#note125g .audio-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__media{position:relative;z-index:2}#note125g .speed-note125g__media::after{content:"";position:absolute;z-index:3;top:0;left:0;width:100%;height:100%;background:-webkit-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:-moz-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:-o-linear-gradient(344deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%);background:linear-gradient(106deg, rgb(11, 11, 11) 36%, rgba(11, 11, 11, 0.6694542254) 45%, rgba(11, 11, 11, 0) 100%)}#note125g .speed-note125g__box{position:absolute;z-index:5;top:13%;left:12%;right:80%;width:35%}#note125g .speed-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .speed-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .speed-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__row{padding-top:80px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:15px}@media(max-width: 1430px){#note125g .speed-note125g__row{padding-top:-webkit-calc(20px + 60 * ((100vw - 320px) / 1110));padding-top:-moz-calc(20px + 60 * ((100vw - 320px) / 1110));padding-top:calc(20px + 60 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__item h4{color:#61abff;font-size:28px;line-height:1.2;margin-bottom:5px}@media(max-width: 1430px){#note125g .speed-note125g__item h4{font-size:-webkit-calc(15px + 13 * ((100vw - 320px) / 1110));font-size:-moz-calc(15px + 13 * ((100vw - 320px) / 1110));font-size:calc(15px + 13 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__item p{color:#fff;font-size:24px;line-height:1.2}@media(max-width: 1430px){#note125g .speed-note125g__item p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .speed-note125g__image img{margin-right:0}#note125g .mediatek-note125g__media{position:relative;z-index:2}#note125g .mediatek-note125g__box{position:absolute;z-index:5;top:10%;left:0;right:0;max-width:1300px;margin:0 auto;padding:0 15px}#note125g .mediatek-note125g__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1430px){#note125g .mediatek-note125g__text h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__text p{font-size:24px;line-height:1.2;color:#fff}@media(max-width: 1430px){#note125g .mediatek-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px;padding-top:80px}#note125g .mediatek-note125g__item{border:1px solid #fff;padding:2%}#note125g .mediatek-note125g__item h4{font-size:35px;line-height:1.2;margin-bottom:10px;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .mediatek-note125g__item h4{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .mediatek-note125g__item p{font-size:24px;line-height:1.2;color:#fff;text-align:center}@media(max-width: 1430px){#note125g .mediatek-note125g__item p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__bg{background-color:#000;padding:50px 0}#note125g .system-note125g__title h2{color:#fff;font-size:35px;line-height:1.2;text-align:center;margin-bottom:20px}@media(max-width: 1430px){#note125g .system-note125g__title h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__text{padding-top:30px}#note125g .system-note125g__text p{color:#fff;font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#note125g .system-note125g__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:-moz-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#note125g .system-note125g__text p:not(:last-child){margin-bottom:15px}#note125g .color-note125g__title h2{font-size:35px;line-height:1.2;text-align:center;margin-bottom:20px}@media(max-width: 1430px){#note125g .color-note125g__title h2{font-size:-webkit-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:-moz-calc(20px + 15 * ((100vw - 320px) / 1110));font-size:calc(20px + 15 * ((100vw - 320px) / 1110))}}#note125g .color-note125g__media{position:relative;z-index:2}#note125g .color-note125g__media::after{content:"";position:absolute;z-index:-2;top:23.5%;right:0;width:35%;height:60%;background-color:#ebebeb}#note125g .big-color-note125g{width:70%}#note125g .big-color-note125g__item{position:relative;z-index:2}#note125g .big-color-note125g__text{position:absolute;z-index:50;top:15%;right:60%;padding-left:15px}#note125g .big-color-note125g__text p{color:#fff;font-size:26px;line-height:1.2}@media(max-width: 1430px){#note125g .big-color-note125g__text p{font-size:-webkit-calc(15px + 11 * ((100vw - 320px) / 1110));font-size:-moz-calc(15px + 11 * ((100vw - 320px) / 1110));font-size:calc(15px + 11 * ((100vw - 320px) / 1110))}}#note125g .big-color-note125g__image{position:relative;z-index:10}#note125g .big-color-note125g .swiper-pagination{bottom:auto;top:8%;width:auto;right:0;left:auto;right:31%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#note125g .big-color-note125g .swiper-pagination-bullet{-webkit-border-radius:unset;border-radius:unset;width:4px;height:44px;opacity:.7;background-color:#fff}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#fff;opacity:1}#note125g .sm-color-note125g{margin-top:-525px}#note125g .sm-color-note125g__image img{margin-right:0;width:47%;padding-top:100px;padding-right:200px}@media(max-width: 1430px){#note125g .sm-color-note125g__image img{padding-right:-webkit-calc(0px + 200 * ((100vw - 320px) / 1110));padding-right:-moz-calc(0px + 200 * ((100vw - 320px) / 1110));padding-right:calc(0px + 200 * ((100vw - 320px) / 1110))}}@media screen and (max-width: 1810px){#note125g .sm-color-note125g{margin-top:-400px}#note125g .color-note125g__media::after{top:25.5%}}@media screen and (max-width: 1400px){#note125g .sm-color-note125g{margin-top:-295px}#note125g .color-note125g__media::after{top:31.5%;height:55%}}@media screen and (max-width: 1024.98px){#note125g .big-color-note125g .swiper-pagination{top:5%}#note125g .big-color-note125g .swiper-pagination-bullet{height:34px}#note125g .sm-color-note125g{margin-top:-248px}#note125g .camera-note125g__title{left:5%}#note125g .procut-note125g__imagebg{top:65%}#note125g .speed-note125g__box{left:3%;width:40%}}@media screen and (max-width: 991.98px){#note125g .head-note125g__media{padding-top:20px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#note125g .head-note125g__text{padding:0 15px}#note125g .head-note125g__text h2,#note125g .head-note125g__text p{text-align:center}#note125g .camera-note125g__title{left:2%}#note125g .mediatek-note125g__box{top:4%}#note125g .mediatek-note125g__row{padding-top:30px}}@media screen and (max-width: 767.98px){#note125g .camera-note125g__title{right:35%;left:0;padding-left:15px}#note125g .procut-note125g__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#note125g .procut-note125g__text{padding-top:0}#note125g .procut-note125g__text h2,#note125g .procut-note125g__text p{text-align:center}#note125g .procut-note125g__imagebg{display:none}#note125g .speed-note125g__box{position:unset;padding:20px 15px;width:auto}#note125g .speed-note125g__media::after{display:none}#note125g .speed-note125g__media{background:#0b0b0b}#note125g .speed-note125g__text h2,#note125g .speed-note125g__text p,#note125g .mediatek-note125g__text h2,#note125g .mediatek-note125g__text p{text-align:center}#note125g .speed-note125g__item h4,#note125g .speed-note125g__item p{text-align:center}#note125g .mediatek-note125g__row{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#note125g .mediatek-note125g__box{position:unset;background-color:#000;padding:20px 15px}#note125g .big-color-note125g{width:auto}#note125g .sm-color-note125g{display:none}#note125g .big-color-note125g__text{top:7%;right:73%}#note125g .big-color-note125g .swiper-pagination{right:5%;top:8%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-moz-box-orient:horizontal;-moz-box-direction:normal;-ms-flex-direction:row;flex-direction:row}#note125g .big-color-note125g .swiper-pagination-bullet{width:10px;height:10px;-webkit-border-radius:50%;border-radius:50%;border:1px solid #fff;background-color:rgba(0,0,0,0)}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#fff}#note125g .big-color-note125g__text{padding-left:0;left:5%;right:0}}@media screen and (max-width: 479.98px){#note125g .spec-note125g__row{grid-template-columns:1fr}#note125g .spec-note125g__text h4{font-size:18px}#note125g .spec-note125g__item_bg-1,#note125g .spec-note125g__item_bg-2{min-height:100px}#note125g .film-note125g__text{position:unset;padding:20px 0}#note125g .film-note125g__text h2,#note125g .film-note125g__text p{text-align:center}#note125g .comfort-note125g__text h2,#note125g .comfort-note125g__text p{text-align:center}#note125g .big-color-note125g .swiper-pagination{top:auto;bottom:2%}#note125g .swiper{padding-bottom:30px}#note125g .big-color-note125g .swiper-pagination-bullet{border:1px solid #505050}#note125g .big-color-note125g .swiper-pagination-bullet-active{background-color:#505050}#note125g .big-color-note125g__text{top:auto;bottom:-25px;left:3%;right:60%}#note125g .big-color-note125g__text p{color:#000}#note125g .engine-note125g__text_pos{position:unset}#note125g .engine-note125g__media::after{display:none}}@media screen and (max-width: 400px){#note125g .mediatek-note125g__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div id="note125g">
+        <div class="note125g__head head-note125g">
+            <div class="head-note125g__media">
+                <div class="head-note125g__text">
+                    <div class="head-note125g__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img2.png" alt="">
+                    </div>
+                    <h2>Redmi Note 12 Pro+ 5G</h2>
+                    <p>Робіть вражаючі кадри з камерою 200 Мп</p>
+                    <p>Заряджайте смартфон з супер-швидкою зарядкою 120 Вт</p>
+                    <p>Насолоджуйтеся чітким зображенням з AMOLED дисплеєм</p>
+                </div>
+                <div class="head-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__spec spec-note125g">
+            <div class="spec-note125g__container">
+                <div class="spec-note125g__row">
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Якісна камера зі стабілізацією OIS</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Довга автономність завдяки акумулятору 5000 мАг</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_bg-1">
+                            <div class="spec-note125g__text">
+                                <h4>Підтримка Dolby Vision® і Dolby Atmos®</h4>
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Яскравий дисплей з частотою 120 Гц</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-note125g__col">
+                        <div class="spec-note125g__item spec-note125g__item_bg-2">
+                            <div class="spec-note125g__text">
+                                <h4>Потужний процесор з підтримкою 5G</h4>
+                            </div>
+                        </div>
+                        <div class="spec-note125g__item spec-note125g__item_pos">
+                            <div class="spec-note125g__text spec-note125g__text_pos">
+                                <h4>Розумна швидка зарядка</h4>
+                            </div>
+                            <div class="spec-note125g__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__camera camera-note125g">
+            <div class="camera-note125g__bg">
+                <div class="camera-note125g__media">
+                    <div class="camera-note125g__title">
+                        <h2>Найкраща роздільна здатність камери</h2>
+                    </div>
+                    <div class="camera-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="camera-note125g__box">
+                    <div class="camera-note125g__bgtitle">
+                        <h2>200 Мп</h2>
+                    </div>
+                    <div class="camera-note125g__text">
+                        <p>Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb оснащений найпотужнішою камерою, яка є зараз на ринку
+                            смартфонів. Вона має великий датчик зображення надвисокої роздільної здатності 200 Мп зі
+                            стабілізацією OIS і об'єктивом 7Р. Завдяки сучасним алгоритмам, ви можете робити неймовірні
+                            і якісні кадри!</p>
+                    </div>
+                </div>
+                <div class="camera-note125g__box">
+                    <div class="camera-note125g__text">
+                        <h4>Робіть максимально деталізовані кадри</h4>
+                    </div>
+                    <div class="camera-note125g__image-sm">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__procut procut-note125g">
+            <div class="procut-note125g__bg">
+                <div class="procut-note125g__container">
+                    <div class="procut-note125g__row">
+                        <div class="procut-note125g__item">
+                            <div class="procut-note125g__text">
+                                <h2>Один клік — 5 фото</h2>
+                                <p>Завдяки режиму ProCut камера смартфона Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb може
+                                    зробити один кадр і розділити його на 5 самостійних фото. При цьому кожне фото буде
+                                    мати надзвичайну різкість.</p>
+                            </div>
+                        </div>
+                        <div class="procut-note125g__image">
+                            <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img27.png" alt=""> -->
+                            <picture>
+                                <source media="(min-width: 767.98px)"
+                                    srcset="https://cdn.comfy.ua/media/x/img3/2449517/img27.png">
+                                <source media="(min-width: 320px)"
+                                    srcset="https://cdn.comfy.ua/media/x/img3/2449517/img28.png">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img27.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="procut-note125g__imagebg">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__fullcam fullcam-note125g">
+            <div class="fullcam-note125g__bg">
+                <div class="fullcam-note125g__text">
+                    <h2>Яскраві знімки вдень і вночі завдяки технології стабілізації OIS</h2>
+                </div>
+                <div class="fullcam-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__engine engine-note125g">
+            <div class="engine-note125g__bg">
+                <div class="engine-note125g__media">
+                    <div class="engine-note125g__text engine-note125g__text_pos">
+                        <p>Камера Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb вловлює більше світла, аніж всі камери минулих
+                            поколінь, завдяки чому ви отримуєте новий рівень яскравості. Особливо це стосується нічних
+                            зйомок — тепер вам не потрібен спалах, щоб зловити вечірню атмосферу міста.</p>
+                    </div>
+                    <div class="engine-note125g__image engine-note125g__image_bg">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="engine-note125g__container">
+                    <div class="engine-note125g__box">
+                        <div class="engine-note125g__text">
+                            <h2>Кольори, максимально наближені до реальних</h2>
+                            <p>Xiaomi Imaging Engine — це підтримка, яка дозволяє отримувати реалістичні кольори на
+                                ваших фото, а також покращуює якість і швидкість зображення.</p>
+                        </div>
+                        <div class="engine-note125g__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img13.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__film film-note125g">
+            <div class="film-note125g__bg">
+                <div class="film-note125g__container">
+                    <div class="film-note125g__media">
+                        <div class="film-note125g__text">
+                            <h2>Плівкова фотографія</h2>
+                            <p>На смартфон Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb</p>
+                        </div>
+                        <div class="film-note125g__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img14.jpg" alt="">
+                        </div>
+                        <div class="film-note125g__box">
+                            <p>У вашому розпорядженні 7 класичних плівкових фільтрів, які додадуть вінтажної атмосфери
+                                та стиль вашим фотографіям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__ultra ultra-note125g">
+            <div class="ultra-note125g__bg">
+                <div class="ultra-note125g__container">
+                    <div class="ultra-note125g__text">
+                        <h2>Ширококутна камера</h2>
+                        <p>Дивіться на світ під будь-яким кутом і фіксуйте гарні моменти!</p>
+                    </div>
+                    <div class="ultra-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img15.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__comfort comfort-note125g">
+            <div class="comfort-note125g__container">
+                <div class="comfort-note125g__box">
+                    <div class="comfort-note125g__text">
+                        <h2>Яскравий дизайн преміум-класу</h2>
+                        <p>Камера смартфона має металеве оформлення, яке забезпечує вишуканість і довговічність, а задня
+                            панель зроблена зі скла, що додає елегантності.</p>
+                    </div>
+                    <div class="comfort-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img16.png" alt="">
+                    </div>
+                </div>
+                <div class="comfort-note125g__box">
+                    <div class="comfort-note125g__text">
+                        <h2>Зручніше для довгої роботи</h2>
+                        <p>Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb має покращений 3D дизайн з повною дугою, завдяки чому
+                            смартфон набагато комфортніше тримати в руці.</p>
+                    </div>
+                    <div class="comfort-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__color color-note125g">
+            <div class="color-note125g__title">
+                <h2>Обирайте один з трьох приголомшливих кольорів</h2>
+            </div>
+            <div class="color-note125g__media">
+                <div class="color-note125g__big big-color-note125g">
+                    <div class="big-color-note125g__slider swiper">
+                        <div class="big-color-note125g__wrapper swiper-wrapper">
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Північний чорний</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img18mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Полярний білий</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img19mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big-color-note125g__slide swiper-slide">
+                                <div class="big-color-note125g__item">
+                                    <div class="big-color-note125g__text">
+                                        <p>Блакитне небо</p>
+                                    </div>
+                                    <div class="big-color-note125g__image">
+                                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg" alt=""> -->
+                                        <picture>
+                                            <source media="(min-width: 767.98px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg">
+                                            <source media="(min-width: 320px)"
+                                                srcset="https://cdn.comfy.ua/media/x/img3/2449517/img20mob.jpg">
+                                            <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="color-note125g__sm sm-color-note125g">
+                    <div class="sm-color-note125g__slider swiper">
+                        <div class="sm-color-note125g__wrapper swiper-wrapper">
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img18-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img19-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sm-color-note125g__slide swiper-slide">
+                                <div class="sm-color-note125g__image">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img20-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note125g__amoled amoled-note125g">
+            <div class="amoled-note125g__container">
+                <div class="amoled-note125g__box">
+                    <h2>Дисплей AMOLED<br>Більше контрасту та яскравості</h2>
+                    <p>Дисплей має діагональ 6.67 дюйма, частоту оновлення 120 Гц і виготовлений з передових гнучких
+                        матеріалів, які значно підвищують яскравість, контрастність і відображають більший діапазон
+                        кольорів. Режим сонячного світла дозволяє вам комфортно переглядати стрічку соц.мереж навіть на
+                        вулиці, а режим читання як на папері покращить ваш досвід з електронними книгами. Матеріал Flow
+                        AMOLED реалізує меншу нижню рамку, що дає вам більший дисплей.</p>
+                </div>
+                <div class="amoled-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img21.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__audio audio-note125g">
+            <div class="audio-note125g__container">
+                <div class="audio-note125g__text">
+                    <h2>Новий аудіовізуальний досвід</h2>
+                    <p>Завдяки Dolby Vision і HDR10+ ви отримаєте вражаючу картинку, що б ви не дивилися, а з Dolby
+                        Atmos і подвійними динаміками звук стане більш об'ємним та чітким. Насолоджуйтеся фільмами,
+                        серіалами та різними відео в кращій якості!</p>
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img22.png" alt="">
+                </div>
+            </div>
+            <div class="audio-note125g__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2449517/img23.png" alt="">
+            </div>
+        </div>
+        <div class="note125g__speed speed-note125g">
+            <div class="speed-note125g__media">
+                <div class="speed-note125g__box">
+                    <div class="speed-note125g__text">
+                        <h2>20 хвилин на 100% зарядку</h2>
+                        <p>Чипсет Xiaomi Surge P1 в акумуляторі на 5000 мАг робить швидку зарядку по-справжньому швидкою
+                            — всього 19 хвилин потрібно смартфону, щоб зарядитися на 100%. А інтелектуальна технологія
+                            HyperCharge своєю чергою зберігає тривалий термін служби акумулятора.</p>
+                    </div>
+                    <div class="speed-note125g__row">
+                        <div class="speed-note125g__item">
+                            <h4>8,9 години</h4>
+                            <p>ігор</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>39 годин</h4>
+                            <p>дзвінків</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>19 годин</h4>
+                            <p>відео</p>
+                        </div>
+                        <div class="speed-note125g__item">
+                            <h4>149 годин</h4>
+                            <p>музики</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="speed-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img24.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__mediatek mediatek-note125g">
+            <div class="mediatek-note125g__media">
+                <div class="mediatek-note125g__box">
+                    <div class="mediatek-note125g__text">
+                        <h2>Продуктивність з MediaTek Dimensity 1080 з 5G</h2>
+                        <p>Передовий чипсет робить багато важливої роботи, щоб ваш досвід зі смартфоном Xiaomi Redmi
+                            Note 12 Pro+ 5G 8/256Gb був максимально комфортні: він підвищує загальну швидкість, знижує
+                            енергоспоживання, забезпечує продуктивність у створенні відео та зображень, в іграх і
+                            з'єднанні 5G.</p>
+                    </div>
+                    <div class="mediatek-note125g__row">
+                        <div class="mediatek-note125g__item">
+                            <h4>A78</h4>
+                            <p>високопродуктивний <br>процесор</p>
+                        </div>
+                        <div class="mediatek-note125g__item">
+                            <h4>G68</h4>
+                            <p>ефективний GPU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediatek-note125g__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2449517/img25.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="note125g__system system-note125g">
+            <div class="system-note125g__bg">
+                <div class="system-note125g__container">
+                    <div class="system-note125g__title">
+                        <h2>Потужна система охолодження</h2>
+                    </div>
+                    <div class="system-note125g__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2449517/img26.png" alt="">
+                    </div>
+                    <div class="system-note125g__text">
+                        <p>Багатовимірна система охолодження має площу 3000 мм², завдяки чому смартфон охолоджується
+                            набагато швидше. А контроль температури позитивно впливає на продуктивність!</p>
+                        <p>Купити смартфон Xiaomi Redmi Note 12 Pro+ 5G 8/256Gb в Україні можна на сайті або у фірмових
+                            магазинах Comfy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let bigColor = new Swiper('.big-color-note125g__slider', {
+                speed: 600,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+
+            let smColor = new Swiper('.sm-color-note125g__slider', {
+                speed: 600,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+            });
+
+            smColor.controller.control = bigColor;
+            bigColor.controller.control = smColor;
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

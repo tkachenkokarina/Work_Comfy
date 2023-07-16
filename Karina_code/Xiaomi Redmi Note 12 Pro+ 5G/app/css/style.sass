@@ -1,0 +1,801 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1430
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#note125g a
+    color: inherit
+    text-decoration: none
+
+#note125g ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#note125g .bc-description__content p
+    margin-bottom: 0
+
+#note125g .bc-description__content h3
+    text-align: left
+
+#note125g p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#note125g h1,
+#note125g h2,
+#note125g h3,
+#note125g h4,
+#note125g h5,
+#note125g h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#note125g
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#note125g p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1430px
+    margin: 0 auto
+    padding: 0 15px
+
+#note125g img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#note125g img:hover
+    opacity: 1
+
+//========================================================================================================================================================
+
+#note125g .head-note125g
+    &__media
+        display: flex
+        align-items: center
+    &__text
+        @include adaptiv-value("padding-left", 100, 0, 1)
+        h2
+            @include adaptiv-value("font-size", 40, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 20, 16, 1)
+            line-height: 1.2
+            &:not(:last-child)
+                margin-bottom: 5px
+    &__logo
+        margin-bottom: 15px
+    &__image
+
+#note125g .spec-note125g
+    &__container
+    &__row
+        // display: flex
+        display: grid
+        grid-template-columns: 1.2fr 1fr 1fr
+        gap: 10px
+    &__col
+        // flex: 0 1 33.3333%
+        display: flex
+        flex-direction: column
+        gap: 10px
+    &__item
+        &_pos
+            position: relative
+            z-index: 2
+        &_bg-1
+            background: url('https://cdn.comfy.ua/media/x/img3/2449517/bg1.jpg') 0 0 no-repeat
+            background-size: cover
+            //min-height: 168px
+            @include adaptiv-value("min-height", 168, 8, 1)
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 0 10px
+        &_bg-2
+            background: url('https://cdn.comfy.ua/media/x/img3/2449517/bg2.jpg') 0 0 no-repeat
+            background-size: cover
+            //min-height: 156px
+            @include adaptiv-value("min-height", 156, 13, 1)
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 0 10px
+    &__text
+        h4
+            @include adaptiv-value("font-size", 24, 8, 1)
+            line-height: 1.2
+            text-align: center
+        &_pos
+            position: absolute
+            z-index: 5
+            top: 5%
+            left: 0
+            right: 0
+            padding: 0 10px
+    &__image
+    &__image-ibg
+        padding-bottom: 147%
+
+#note125g .camera-note125g
+    &__bg
+        background-color: #000
+    &__media
+        position: relative
+        z-index: 2
+    &__title
+        position: absolute
+        z-index: 5
+        top: 10%
+        left: 12%
+        right: 50%
+        h2
+            @include adaptiv-value("font-size", 60, 20, 1)
+            line-height: 1.2
+            color: transparent
+            -webkit-background-clip: text
+            background-clip: text
+            background-image: linear-gradient(45deg,#ea8b25,#df3017,#8e20af,#4034fa,#01caa5)
+    &__image
+    &__box
+        h4
+            color: #fff
+            text-align: center
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            padding: 20px 15px
+    &__bgtitle
+        h2
+            @include adaptiv-value("font-size", 200, 80, 1)
+            line-height: 1
+            text-align: center
+            color: transparent
+            -webkit-background-clip: text
+            background-clip: text
+            background-image: url('https://cdn.comfy.ua/media/x/img3/2449517/img8.png')
+            background-position: 50% 50%
+            background-repeat: no-repeat
+            background-size: cover
+    &__text
+        p
+            color: #fff
+            text-align: center
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            max-width: 1200px
+            margin: 0 auto
+            padding: 20px 15px
+    &__image-sm
+
+#note125g .procut-note125g
+    &__bg
+        background-color: #000
+        padding: 30px 0
+        position: relative
+        z-index: 2
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: -1
+        //     background: url('https://cdn.comfy.ua/media/x/img3/2449517/img10.jpg') 0 0 no-repeat
+        //     background-size: cover
+        //     width: 100%
+        //     min-height: 350px
+        //     bottom: 0px
+        //     left: 0
+        //     right: 0
+    &__imagebg
+        position: absolute
+        z-index: -1
+        top: 50%
+        // transform: translateY(-10%)
+        left: 0
+        right: 0
+    &__container
+    &__row
+        max-width: 1200px
+        margin: 0 auto
+        display: flex
+        gap: 15px
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding-top: 50px
+        h2
+            @include adaptiv-value("font-size", 30, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #fff
+    &__image
+        flex: 0 1 50%
+
+#note125g .fullcam-note125g
+    &__bg
+        @include adaptiv-value("padding-top", 100, 0, 1)
+        position: relative
+        z-index: 50
+        background-color: #000
+    &__text
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            padding: 0 15px
+            color: #fff
+            text-align: center
+    &__image
+
+#note125g .engine-note125g
+    &__bg
+        background-color: #000
+    &__media
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: 5
+            background: #0000006c
+            top: 0
+            left: 0
+            right: 0
+            width: 100%
+            height: 100%
+    &__text
+        &_pos
+            position: absolute
+            z-index: 6
+            bottom: 0
+            left: 0
+            right: 0
+            max-width: 1200px
+            margin: 0 auto
+            padding: 0 15px
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+            color: transparent
+            -webkit-background-clip: text
+            background-clip: text
+            background-image: linear-gradient(45deg,#e4571e,#df3017,#8e20af,#4034fa)
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #fff
+            text-align: center
+            max-width: 1000px
+            margin: 0 auto 20px
+    &__image
+        &_bg
+    &__container
+    &__box
+        @include adaptiv-value("padding-top", 50, 20, 1)
+
+#note125g .film-note125g
+    &__bg
+        background-color: #000
+    &__container
+    &__media
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 55%
+        h2
+            color: #61abff
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 35, 16, 1)
+            line-height: 1.2
+    &__image
+    &__box
+        padding: 20px 0
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+
+#note125g .ultra-note125g
+    &__bg
+        background-color: #000
+        padding: 30px 0 50px
+    &__container
+    &__text
+        margin-bottom: 20px
+        h2
+            color: #fff
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+    &__image
+
+#note125g .comfort-note125g
+    @include adaptiv-value("padding-top", 30, 0, 1)
+    @include adaptiv-value("padding-bottom", 100, 20, 1)
+    &__container
+    &__box
+        padding-top: 30px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+    &__image
+
+#note125g .amoled-note125g
+    &__container
+    &__box
+        @include adaptiv-value("padding-top", 50, 20, 1)
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+    &__image
+
+#note125g .audio-note125g
+    &__container
+    &__text
+        padding: 30px 0
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+            margin-bottom: 15px
+    &__image
+
+#note125g .speed-note125g
+    &__media
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: 3
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(106deg, rgba(11,11,11,1) 36%, rgba(11,11,11,0.6694542253521127) 45%, rgba(11,11,11,0) 100%)
+
+    &__box
+        position: absolute
+        z-index: 5
+        top: 13%
+        left: 12%
+        right: 80%
+        //@include adaptiv-value("left", 300, 15, 1)
+        width: 35%
+    &__text
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #fff
+    &__row
+        //padding-top: 80px
+        @include adaptiv-value("padding-top", 80, 20, 1)
+        display: flex
+        justify-content: space-between
+        gap: 15px
+    &__item
+        h4
+            color: #61abff
+            @include adaptiv-value("font-size", 28, 15, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__image
+        img
+            margin-right: 0
+
+#note125g .mediatek-note125g
+    &__media
+        position: relative
+        z-index: 2
+    &__box
+        position: absolute
+        z-index: 5
+        top: 10%
+        left: 0
+        right: 0
+        max-width: 1300px
+        margin: 0 auto
+        padding: 0 15px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #fff
+    &__row
+        display: flex
+        gap: 20px
+        padding-top: 80px
+    &__item
+        border: 1px solid #fff
+        padding: 2%
+        h4
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #fff
+            text-align: center
+    &__image
+
+#note125g .system-note125g
+    &__bg
+        background-color: #000
+        padding: 50px 0
+    &__container
+    &__title
+        h2
+            color: #fff
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            text-align: center
+            margin-bottom: 20px
+    &__image
+    &__text
+        padding-top: 30px
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+            &:not(:last-child)
+                margin-bottom: 15px
+
+#note125g .color-note125g
+    &__title
+        h2
+            @include adaptiv-value("font-size", 35, 20, 1)
+            line-height: 1.2
+            text-align: center
+            margin-bottom: 20px
+    &__media
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -2
+            top: 23.5%
+            right: 0
+            width: 35%
+            height: 60%
+            background-color: #ebebeb
+    &__big
+    &__sm
+
+#note125g .big-color-note125g
+    width: 70%
+    &__slider
+    &__wrapper
+    &__slide
+    &__item
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 50
+        top: 15%
+        //left: 20%
+        right: 60%
+        padding-left: 15px
+        p
+            color: #fff
+            @include adaptiv-value("font-size", 26, 15, 1)
+            line-height: 1.2
+    &__image
+        position: relative
+        z-index: 10
+
+#note125g .swiper
+    &-wrapper
+    &-slide
+
+#note125g .big-color-note125g .swiper-pagination
+    bottom: auto
+    top: 8%
+    width: auto
+    right: 0
+    left: auto
+    right: 31%
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+#note125g .big-color-note125g .swiper-pagination-bullet
+    border-radius: unset
+    width: 4px
+    height: 44px
+    opacity: 0.7
+    background-color: #fff
+
+#note125g .big-color-note125g .swiper-pagination-bullet-active
+    background-color: #fff
+    opacity: 1
+
+#note125g .sm-color-note125g
+    // margin-top: -400px
+    margin-top: -525px
+    &__slider
+    &__wrapper
+    &__slide
+    &__image
+        // background-color: #ebebeb
+        // position: relative
+        // z-index: 5
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: -2
+        //     top: 0
+        //     right: 0
+        //     width: 36%
+        //     height: 80%
+        //     background-color: #ebebeb
+        img
+            margin-right: 0
+            // max-width: 700px
+            // width: 37%
+            width: 47%
+            //padding-right: 200px
+            padding-top: 100px
+            @include adaptiv-value("padding-right", 200, 0, 1)
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1810px)
+    #note125g .sm-color-note125g
+        margin-top: -400px
+    #note125g .color-note125g__media::after
+        top: 25.5%
+
+@media screen and (max-width: 1400px)
+    #note125g .sm-color-note125g
+        margin-top: -295px
+    #note125g .color-note125g__media::after
+        top: 31.5%
+        height: 55%
+    //#note125g .sm-color-note125g__image img
+        //padding-right: 150px
+
+@media screen and (max-width: 1024.98px)
+    #note125g .big-color-note125g .swiper-pagination
+        top: 5%
+    #note125g .big-color-note125g .swiper-pagination-bullet
+        height: 34px
+    #note125g .sm-color-note125g
+        margin-top: -248px
+    #note125g .camera-note125g__title
+        left: 5%
+    #note125g .procut-note125g__imagebg
+        top: 65%
+    #note125g .speed-note125g__box
+        left: 3%
+        width: 40%
+
+@media screen and (max-width: 991.98px)
+    #note125g .head-note125g__media
+        padding-top: 20px
+        flex-direction: column
+    #note125g .head-note125g__text
+        padding: 0 15px
+        h2,p
+            text-align: center
+    #note125g .camera-note125g__title
+        left: 2%
+    #note125g .mediatek-note125g__box
+        top: 4%
+    #note125g .mediatek-note125g__row
+        padding-top: 30px
+
+@media screen and (max-width: 767.98px)
+    #note125g .camera-note125g__title
+        right: 35%
+        left: 0
+        padding-left: 15px
+    #note125g .procut-note125g__row
+        flex-direction: column
+    #note125g .procut-note125g__text
+        padding-top: 0
+        h2,p
+            text-align: center
+    #note125g .procut-note125g__imagebg
+        display: none
+    #note125g .speed-note125g__box
+        position: unset
+        padding: 20px 15px
+        width: auto
+    #note125g .speed-note125g__media::after
+        display: none
+    #note125g .speed-note125g__media
+        background: rgb(11,11,11)
+    #note125g .speed-note125g__text,
+    #note125g .mediatek-note125g__text
+        h2,p
+            text-align: center
+    #note125g .speed-note125g__item
+        h4,p
+            text-align: center
+    #note125g .mediatek-note125g__row
+        justify-content: center
+    #note125g .mediatek-note125g__box
+        position: unset
+        background-color: #000
+        padding: 20px 15px
+    #note125g .big-color-note125g
+        width: auto
+    #note125g .sm-color-note125g
+        display: none
+    #note125g .big-color-note125g__text
+        top: 7%
+        right: 73%
+    #note125g .big-color-note125g .swiper-pagination
+        right: 5%
+        top: 8%
+        // top: auto
+        // bottom: 0
+        flex-direction: row
+    #note125g .big-color-note125g .swiper-pagination-bullet
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        border: 1px solid #fff
+        background-color: transparent
+    #note125g .big-color-note125g .swiper-pagination-bullet-active
+        background-color: #fff
+    #note125g .big-color-note125g__text
+        padding-left: 0
+        left: 5%
+        right: 0
+
+@media screen and (max-width: 479.98px)
+    #note125g .spec-note125g__row
+        grid-template-columns: 1fr
+    #note125g .spec-note125g__text h4
+        font-size: 18px
+    #note125g .spec-note125g__item_bg-1,
+    #note125g .spec-note125g__item_bg-2
+        min-height: 100px
+    #note125g .film-note125g__text
+        position: unset
+        padding: 20px 0
+        h2,p
+            text-align: center
+    #note125g .comfort-note125g__text
+        h2,p
+            text-align: center
+    #note125g .big-color-note125g .swiper-pagination
+        top: auto
+        bottom: 2%
+    #note125g .swiper
+        padding-bottom: 30px
+    #note125g .big-color-note125g .swiper-pagination-bullet
+        border: 1px solid #505050
+    #note125g .big-color-note125g .swiper-pagination-bullet-active
+        background-color: #505050
+    #note125g .big-color-note125g__text
+        top: auto
+        bottom: -25px
+        left: 3%
+        right: 60%
+    #note125g .big-color-note125g__text p
+        color: #000
+    #note125g .engine-note125g__text_pos
+        position: unset
+    #note125g .engine-note125g__media::after
+        display: none
+
+@media screen and (max-width: 400px)
+    #note125g .mediatek-note125g__row
+        flex-direction: column
