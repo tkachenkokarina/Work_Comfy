@@ -90,7 +90,7 @@ li
             margin-bottom: 10px
 #maincontent .top-box
     &__bg
-        background-image: url(../img/bg01.png)
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg01.png)
         background-repeat: no-repeat
         background-position: center top
         background-size: cover
@@ -111,32 +111,51 @@ li
     &__image
         flex: 0 1 65%
 #maincontent .row-maincontent
+    margin-top: -2px
     &__bg
-        background-image: url(../img/bg02.png)
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg02.png)
         background-repeat: no-repeat
         background-position: center top
-        background-size: cover        
+        background-size: cover
         padding: 330px 0 250px 130px
     &__text
         h2
             margin: 60px 0
         p
             max-width: 630px
+            padding-bottom: 30px
+            &:last-child
+                padding-bottom: 0
     &__image
         display: none
     &__bg_screen
-        background-image: url(../img/bg03.png)
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg03.png)
+    &__bg_rtx
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg04.png)
+        padding: 200px 95px 140px 15px
+    &__bg_keyboard
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg05.png)
+        padding-top: 50px
+        padding-bottom: 80px    
 #maincontent .screen
     &__text
         h2
             width: 340px
             margin-top: 0
         p
-            width: 670px
+            width: 40%
             margin-bottom: 60px
+#maincontent .rtx
+    &__text
+        p
+            margin-bottom: 60px
+#maincontent .keyboard
+    &__text
+        p
+            &:last-child
+                margin-bottom: 60px
 
-
-
+                
 
 //===========MEDIA=============================================================================================================================================
 
@@ -159,17 +178,20 @@ li
     #maincontent .row-maincontent
         &__bg
             padding: 5%
+        &__bg_keyboard
+            padding: 5% 0 5% 5%
+
 @media screen and (max-width: 1300px)
     #maincontent .top-box
         &__logo_pos
             top: 5%
+        &__flex
+            align-items: center
 
 @media screen and (max-width: 1024.98px)
     #maincontent .top-box
         &__bg
-            padding: 5% 0 5% 20px
-        &__flex
-            align-items: center
+            padding: 5% 0 5% 20px        
         &__text
             min-width: 400px
 
@@ -184,8 +206,6 @@ li
 
 @media screen and (max-width: 767.98px)
     #maincontent .top-box
-        &__bg
-            padding-right: 20px
         &__logo
             img
                 margin: 0 auto
@@ -193,17 +213,28 @@ li
             top: 88%
         &__flex
             flex-direction: column
+        &__flex_rev
+            flex-direction: column-reverse
         &__text
             margin: 4% 0 2% 0
             min-width: auto
             h2, p
                 text-align: center
+    #maincontent .top-box
+        &__text
+            padding-right: 20px
+
     #maincontent .row-maincontent
         &__bg
             background: none
             background-color: #000
+        &__bg_rtx
+            background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg04.png)
+        &__bg_keyboard
+            background-image: url(https://cdn.comfy.ua/media/x/img3/2238555/bg05.png)
+            background-position: top
         &__img
-            margin: 0 auto                 
+            margin: 0 auto
         &__text
             h2
                 margin: 3% 0
@@ -217,7 +248,29 @@ li
             h2
                 width: 100%
             p
-                margin-bottom: 3%                
-                width: 100%                
+                margin-bottom: 3%
+                width: 100%
+    #maincontent .rtx
+        &__item
+            margin-bottom: 3%
+        &__text
+            p
+                margin-bottom: 3%
+    #maincontent .keyboard
+        &__item
+            margin-bottom: 3%
+        &__text
+            padding-right: 5%
+            p
+                &:last-child
+                    margin-bottom: 3%
 
-//@media screen and (max-width: 479.98px)
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__logo_pos
+                max-width: 9%
+
+                    
+
+
+
