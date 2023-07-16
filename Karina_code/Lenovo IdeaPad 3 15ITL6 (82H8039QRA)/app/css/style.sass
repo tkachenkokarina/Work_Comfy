@@ -1,0 +1,349 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1530
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#ideapad3i a
+    color: inherit
+    text-decoration: none
+
+#ideapad3i ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#ideapad3i .bc-description__content p
+    margin-bottom: 0
+
+#ideapad3i .bc-description__content h3
+    text-align: left
+
+#ideapad3i p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#ideapad3i h1,
+#ideapad3i h2,
+#ideapad3i h3,
+#ideapad3i h4,
+#ideapad3i h5,
+#ideapad3i h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#ideapad3i
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#ideapad3i p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1530px
+    margin: 0 auto
+    padding: 0 15px
+
+#ideapad3i img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#ideapad3i img:hover
+    opacity: 1
+
+//========================================================================================================================================================
+#ideapad3i .header
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-1.png') 0 0 no-repeat
+        background-size: cover
+        //min-height: 1700px
+        height: auto
+        padding-top: 150px
+        padding-bottom: 200px
+        //@include adaptiv-value("padding-top", 150, 100, 1)
+        @include adaptiv-value("padding-bottom", 200, 50, 1)
+    &__bg-image
+    &__image
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 6%
+        right: 0
+        left: 95%
+    &__name
+        display: flex
+        align-items: center
+        gap: 15px
+        position: absolute
+        z-index: 5
+        top: 6%
+        left: 6%
+        right: 60%
+        span
+            color: #fff
+            @include adaptiv-value("font-size", 50, 12, 1)
+            line-height: 1.2
+            opacity: 0.6
+            flex: 0 0 auto
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 80, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #fff
+    &__body
+        width: 80%
+        margin: 0 auto
+        padding-top: 100px
+        // position: absolute
+        // z-index: 5
+        // top: 16%
+        // left: 0
+        // right: 0
+
+#ideapad3i .optima
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-2.png') 0 0 no-repeat
+        background-size: cover
+        min-height: auto
+        //padding: 100px 0
+        @include adaptiv-value("padding-top", 100, 50, 1)
+        @include adaptiv-value("padding-bottom", 100, 50, 1)
+    &__bg-image
+    &__body
+        // position: absolute
+        // z-index: 5
+        // top: 0
+        // left: 0
+        // right: 0
+        // width: 90%
+        // margin: 0 auto
+    &__title
+        width: 80%
+        margin: 0 auto 20px
+        h2
+            @include adaptiv-value("font-size", 80, 20, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+    &__image
+    &__text
+        padding-top: 20px
+        width: 80%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #fff
+
+#ideapad3i .seen
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-3.png') 0 0 no-repeat
+        background-size: cover
+        min-height: auto
+        @include adaptiv-value("padding-top", 100, 50, 1)
+        @include adaptiv-value("padding-bottom", 100, 50, 1)
+    &__body
+        width: 80%
+        margin: 0 auto
+    &__text
+        h2
+            @include adaptiv-value("font-size", 80, 20, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+            margin-bottom: 20px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #fff
+            padding-top: 30px
+    &__image
+        position: relative
+        z-index: 2
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: 3
+        //     top: 60%
+        //     right: 5%
+        //     left: 76%
+        //     background: url('https://cdn.comfy.ua/media/x/img3/2362818/img5.png') 0 0 no-repeat
+        //     width: 304px
+        //     height: 12px
+    &__icon
+        position: absolute
+        z-index: 5
+        top: 60%
+        right: 2%
+        left: 80%
+
+#ideapad3i .youneed
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-5.png') right 0 no-repeat
+        background-size: cover
+        //min-height: auto
+        //@include adaptiv-value("padding-top", 100, 50, 1)
+        //@include adaptiv-value("padding-bottom", 100, 50, 1)
+        position: relative
+        z-index: 2
+        min-height: 811px
+    &__row
+    &__box
+    &__bg-image
+        display: none
+
+#ideapad3i .row-youneed
+    position: absolute
+    z-index: 5
+    top: 8%
+    right: 2%
+    max-width: 800px
+    &__text
+        // width: 45%
+        // margin-left: auto
+        // padding-right: 30px
+        h2
+            @include adaptiv-value("font-size", 60, 20, 1)
+            line-height: 1.2
+            color: #fff
+            margin-bottom: 20px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #fff
+
+#ideapad3i .box-youneed
+    background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-6.png') 0 0 no-repeat
+    background-size: cover
+    padding: 100px 0
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 80, 20, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+            margin-bottom: 20px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #fff
+            padding-top: 30px
+    &__image
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1360px)
+    #ideapad3i .row-youneed__text
+        width: 80%
+        margin: 0 auto
+        h2
+            text-align: center
+    #ideapad3i .youneed__bg-image
+        display: block
+    #ideapad3i .youneed__bg
+        min-height: auto
+        background: none
+    #ideapad3i .row-youneed
+        padding: 20px 0
+        max-width: 100%
+        position: unset
+        background: url('https://cdn.comfy.ua/media/x/img3/2362818/bg1-6.png') 0 0 no-repeat
+        background-size: cover
+
+// @media screen and (max-width: 1024.98px)
+//     #ideapad3i .row-youneed__text
+//         position: absolute
+//         z-index: 5
+//         top: 20%
+//         left: 0
+//         width: auto
+
+@media screen and (max-width: 991.98px)
+    // #ideapad3i .youneed__bg
+    //     min-height: 800px
+    // #ideapad3i .row-youneed__text
+    //     position: absolute
+    //     z-index: 5
+    //     bottom: 0
+    //     left: 0
+    //     right: 0
+    //     width: auto
+    //     padding: 0 15px
+
+    //@media screen and (max-width: 767.98px)
+
+@media screen and (max-width: 479.98px)
+    #ideapad3i .header__body,
+    #ideapad3i .optima__title,
+    #ideapad3i .seen__body,
+    #ideapad3i .row-youneed__text
+        width: auto
+        padding: 0 15px
+    #ideapad3i .optima__text
+        padding: 20px 15px 0
+        width: auto

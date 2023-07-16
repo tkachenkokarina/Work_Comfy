@@ -1,0 +1,455 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#ideapad3i a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#ideapad3i ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#ideapad3i .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#ideapad3i .bc-description__content h3 {
+  text-align: left;
+}
+
+#ideapad3i p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#ideapad3i h1,
+#ideapad3i h2,
+#ideapad3i h3,
+#ideapad3i h4,
+#ideapad3i h5,
+#ideapad3i h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  font-weight: bold;
+}
+
+#ideapad3i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#ideapad3i p::first-letter {
+  padding-left: 0;
+}
+
+[class*=__container] {
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#ideapad3i img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#ideapad3i img:hover {
+  opacity: 1;
+}
+
+#ideapad3i .header__bg {
+  position: relative;
+  z-index: 2;
+  background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-1.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  padding-bottom: 200px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .header__bg {
+    padding-bottom: -webkit-calc(50px + 150 * ((100vw - 320px) / 1210));
+    padding-bottom: -moz-calc(50px + 150 * ((100vw - 320px) / 1210));
+    padding-bottom: calc(50px + 150 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .header__logo {
+  position: absolute;
+  z-index: 5;
+  top: 6%;
+  right: 0;
+  left: 95%;
+}
+#ideapad3i .header__name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 5;
+  top: 6%;
+  left: 6%;
+  right: 60%;
+}
+#ideapad3i .header__name span {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.2;
+  opacity: 0.6;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .header__name span {
+    font-size: -webkit-calc(12px + 38 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(12px + 38 * ((100vw - 320px) / 1210));
+    font-size: calc(12px + 38 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .header__text {
+  padding-top: 20px;
+}
+#ideapad3i .header__text h2 {
+  font-size: 80px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .header__text h2 {
+    font-size: -webkit-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: calc(20px + 60 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .header__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .header__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .header__body {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#ideapad3i .optima__bg {
+  position: relative;
+  z-index: 2;
+  background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-2.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .optima__bg {
+    padding-top: -webkit-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-top: -moz-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-top: calc(50px + 50 * ((100vw - 320px) / 1210));
+  }
+}
+@media (max-width: 1530px) {
+  #ideapad3i .optima__bg {
+    padding-bottom: -webkit-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-bottom: -moz-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-bottom: calc(50px + 50 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .optima__title {
+  width: 80%;
+  margin: 0 auto 20px;
+}
+#ideapad3i .optima__title h2 {
+  font-size: 80px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .optima__title h2 {
+    font-size: -webkit-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: calc(20px + 60 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .optima__text {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+#ideapad3i .optima__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .optima__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1210));
+  }
+}
+
+#ideapad3i .seen__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-3.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .seen__bg {
+    padding-top: -webkit-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-top: -moz-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-top: calc(50px + 50 * ((100vw - 320px) / 1210));
+  }
+}
+@media (max-width: 1530px) {
+  #ideapad3i .seen__bg {
+    padding-bottom: -webkit-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-bottom: -moz-calc(50px + 50 * ((100vw - 320px) / 1210));
+    padding-bottom: calc(50px + 50 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .seen__body {
+  width: 80%;
+  margin: 0 auto;
+}
+#ideapad3i .seen__text h2 {
+  font-size: 80px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .seen__text h2 {
+    font-size: -webkit-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: calc(20px + 60 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .seen__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+  padding-top: 30px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .seen__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .seen__image {
+  position: relative;
+  z-index: 2;
+}
+#ideapad3i .seen__icon {
+  position: absolute;
+  z-index: 5;
+  top: 60%;
+  right: 2%;
+  left: 80%;
+}
+
+#ideapad3i .youneed__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-5.png") right 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  position: relative;
+  z-index: 2;
+  min-height: 811px;
+}
+#ideapad3i .youneed__bg-image {
+  display: none;
+}
+
+#ideapad3i .row-youneed {
+  position: absolute;
+  z-index: 5;
+  top: 8%;
+  right: 2%;
+  max-width: 800px;
+}
+#ideapad3i .row-youneed__text h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .row-youneed__text h2 {
+    font-size: -webkit-calc(20px + 40 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(20px + 40 * ((100vw - 320px) / 1210));
+    font-size: calc(20px + 40 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .row-youneed__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .row-youneed__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1210));
+  }
+}
+
+#ideapad3i .box-youneed {
+  background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-6.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding: 100px 0;
+}
+#ideapad3i .box-youneed__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#ideapad3i .box-youneed__text h2 {
+  font-size: 80px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .box-youneed__text h2 {
+    font-size: -webkit-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(20px + 60 * ((100vw - 320px) / 1210));
+    font-size: calc(20px + 60 * ((100vw - 320px) / 1210));
+  }
+}
+#ideapad3i .box-youneed__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+  padding-top: 30px;
+}
+@media (max-width: 1530px) {
+  #ideapad3i .box-youneed__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: -moz-calc(16px + 12 * ((100vw - 320px) / 1210));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1210));
+  }
+}
+@media screen and (max-width: 1360px) {
+  #ideapad3i .row-youneed__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #ideapad3i .row-youneed__text h2 {
+    text-align: center;
+  }
+  #ideapad3i .youneed__bg-image {
+    display: block;
+  }
+  #ideapad3i .youneed__bg {
+    min-height: auto;
+    background: none;
+  }
+  #ideapad3i .row-youneed {
+    padding: 20px 0;
+    max-width: 100%;
+    position: unset;
+    background: url("https://cdn.comfy.ua/media/x/img3/2362818/bg1-6.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #ideapad3i .header__body,
+  #ideapad3i .optima__title,
+  #ideapad3i .seen__body,
+  #ideapad3i .row-youneed__text {
+    width: auto;
+    padding: 0 15px;
+  }
+  #ideapad3i .optima__text {
+    padding: 20px 15px 0;
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
