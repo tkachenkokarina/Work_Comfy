@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #saecosm ul,ol,li{list-style:none;padding:0;margin:0}#saecosm .bc-description__content p{margin-bottom:0}#saecosm .bc-description__content h3{text-align:left}#saecosm p{margin:0;padding:0;text-align:left}#saecosm h1,#saecosm h2,#saecosm h3,#saecosm h4,#saecosm h5,#saecosm h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#saecosm{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#saecosm p::first-letter{padding-left:0}[class*=__container]{max-width:1490px;margin:0 auto;padding:0 15px}#saecosm img{opacity:1;max-width:100%;display:block;margin:0 auto}#saecosm img:hover{opacity:1}#saecosm .header-saecosm__bg{position:relative;z-index:2}#saecosm .header-saecosm__text{position:absolute;z-index:5;top:5%;left:5%;width:45%}#saecosm .header-saecosm__text h2{font-size:45px;line-height:1.2;margin-bottom:15px;color:#fff}@media(max-width: 1490px){#saecosm .header-saecosm__text h2{font-size:-webkit-calc(15px + 30 * ((100vw - 320px) / 1170));font-size:-moz-calc(15px + 30 * ((100vw - 320px) / 1170));font-size:calc(15px + 30 * ((100vw - 320px) / 1170))}}#saecosm .header-saecosm__text p{font-size:35px;line-height:1.2;color:#fff}@media(max-width: 1490px){#saecosm .header-saecosm__text p{font-size:-webkit-calc(14px + 21 * ((100vw - 320px) / 1170));font-size:-moz-calc(14px + 21 * ((100vw - 320px) / 1170));font-size:calc(14px + 21 * ((100vw - 320px) / 1170))}}#saecosm .col-saecosm{padding-top:-webkit-calc(20px + 50 * ((100vw - 320px) / 1600));padding-top:-moz-calc(20px + 50 * ((100vw - 320px) / 1600));padding-top:calc(20px + 50 * ((100vw - 320px) / 1600));padding-bottom:-webkit-calc(20px + 50 * ((100vw - 320px) / 1600));padding-bottom:-moz-calc(20px + 50 * ((100vw - 320px) / 1600));padding-bottom:calc(20px + 50 * ((100vw - 320px) / 1600));padding-left:-webkit-calc(0px + 80 * ((100vw - 320px) / 1600));padding-left:-moz-calc(0px + 80 * ((100vw - 320px) / 1600));padding-left:calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:-webkit-calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:-moz-calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:calc(0px + 80 * ((100vw - 320px) / 1600))}#saecosm .col-saecosm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#saecosm .col-saecosm__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:15px}#saecosm .col-saecosm__image{-webkit-box-flex:0;-webkit-flex:0 0 190px;-moz-box-flex:0;-ms-flex:0 0 190px;flex:0 0 190px}#saecosm .col-saecosm__text p{font-size:30px;line-height:1.2}@media(max-width: 1490px){#saecosm .col-saecosm__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1170));font-size:-moz-calc(16px + 14 * ((100vw - 320px) / 1170));font-size:calc(16px + 14 * ((100vw - 320px) / 1170))}}#saecosm .row-saecosm{padding-bottom:-webkit-calc(20px + 50 * ((100vw - 320px) / 1600));padding-bottom:-moz-calc(20px + 50 * ((100vw - 320px) / 1600));padding-bottom:calc(20px + 50 * ((100vw - 320px) / 1600));padding-left:-webkit-calc(0px + 80 * ((100vw - 320px) / 1600));padding-left:-moz-calc(0px + 80 * ((100vw - 320px) / 1600));padding-left:calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:-webkit-calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:-moz-calc(0px + 80 * ((100vw - 320px) / 1600));padding-right:calc(0px + 80 * ((100vw - 320px) / 1600))}#saecosm .row-saecosm__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#saecosm .row-saecosm__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#saecosm .row-saecosm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#saecosm .row-saecosm__text{width:90%;margin:0 auto;padding:10px 0}#saecosm .row-saecosm__text h2{font-size:35px;line-height:1.2;margin-bottom:10px}@media(max-width: 1490px){#saecosm .row-saecosm__text h2{font-size:-webkit-calc(18px + 17 * ((100vw - 320px) / 1170));font-size:-moz-calc(18px + 17 * ((100vw - 320px) / 1170));font-size:calc(18px + 17 * ((100vw - 320px) / 1170))}}#saecosm .row-saecosm__text p{font-size:30px;line-height:1.2}@media(max-width: 1490px){#saecosm .row-saecosm__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1170));font-size:-moz-calc(16px + 14 * ((100vw - 320px) / 1170));font-size:calc(16px + 14 * ((100vw - 320px) / 1170))}}#saecosm .row-saecosm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 767.98px){#saecosm .col-saecosm__image{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#saecosm .row-saecosm__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#saecosm .row-saecosm__text{width:auto;padding:15px 0 10px}#saecosm .row-saecosm__text h2,#saecosm .row-saecosm__text p{text-align:center}}@media screen and (max-width: 479.98px){#saecosm .col-saecosm__image{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#saecosm .header-saecosm__text{width:50%;left:3%}#saecosm .header-saecosm__text h2{margin-bottom:5px}}
+    </style>
+
+    <div id="saecosm">
+        <div class="saecosm__container">
+            <div class="saecosm__header header-saecosm">
+                <div class="header-saecosm__bg">
+                    <div class="header-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img1.jpg" alt="">
+                    </div>
+                    <div class="header-saecosm__text">
+                        <h2>КАВА, ЩО ЗВАРЕНА САМЕ НА ВАШ СМАК</h2>
+                        <p>Saeco GranAroma Deluxe SM6685/00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="saecosm__col col-saecosm">
+                <div class="col-saecosm__row">
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img2.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>Coffee Equalizer Touch</b> для легкості налаштування напоїв на свій смак</p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img3.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>Вбудований Wi-Fi</b> для повноцінного підключення​ та персональних рекомендацій</p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img4.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p>Інтуїтивно зрозумілий <b>5-дюймовий сенсорний дисплей</b></p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img5.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>18 видів смачних кавових напоїв</b></p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img6.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>6 профілів користувача</b> для збереження персоналізованих напоїв</p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img7.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p>Функція <b>LatteDuo</b> для приготування 2 молочних напоїв одночасно</p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img8.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p>Персоналізуйте свою чашку кави за допомогою <b>CoffeeMaestro</b></p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img9.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>100% керамічні жорна</b> для приготування не менше 20 тис. чашок кави</p>
+                        </div>
+                    </div>
+                    <div class="col-saecosm__item">
+                        <div class="col-saecosm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2206434/img10.jpg" alt="">
+                        </div>
+                        <div class="col-saecosm__text">
+                            <p><b>Фільтр AquaClean</b> для стабільно високої якості кави за допомогою очищеної води.
+                                До 50001 чашок кави без видалення накипу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="saecosm__row row-saecosm">
+                <div class="row-saecosm__inner row-saecosm__inner_rev">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>CoffeeEqualizer Touch</h2>
+                            <p>Приготуйте каву за власним рецептом за допомогою CoffeeEqualizer Touch. Створіть свій
+                                рецепт, налаштувавши міцність, об’єм кави та молока, температуру, смак, кількість
+                                молочної піни і навіть порядок подачі кави і молока.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>5-дюймовий сенсорний дисплей та вбудований​ Wi-Fi</h2>
+                            <p>Кавомашина має 5-дюймовий інтуїтивно зрозумілий сенсорний дисплей та вбудований Wi-Fi із
+                                вдосконаленими функціями, якими легко керувати з дисплея і дізнаватися про наявність
+                                витратних матеріалів у магазинах, а також отримувати персоналізовані рекомендації.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner row-saecosm__inner_rev">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>LatteDuo – насолоджуйтесь 18 смачними напоями із можливістю приготування 2 порцій
+                                одночасно</h2>
+                            <p>За допомогою LatteDuo приготуйте та насолоджуйтесь однією або подвійною порцією улюбленої
+                                кави одним дотиком, від більш знайомих рецептів, таких як еспресо та капучино, до
+                                особливих кавових напоїв, як італійський еспресо макіато.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>CoffeeMaestro</h2>
+                            <p>Персоналізуйте свою чашку кави за допомогою CoffeeMaestro вибравши потрібний смак з-поміж
+                                3 попередньо встановлених налаштувань – Delicato, Intenso, Forte.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner row-saecosm__inner_rev">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>6 профілів користувачів</h2>
+                            <p>Одного разу налаштуйте приготування улюбленої кави і надалі щоразу з легкістю відтворюйте
+                                процес завдяки збереженню налаштувань у персональному профілі. Створіть свій профіль та
+                                профілі для близьких людей. У кавомашині передбачено 6 профілів користувачів.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>Повністю керамічні жорна</h2>
+                            <p>Заваріть щонайменше 20 000 чашок з однаково точним еталонним помелом за допомогою наших
+                                найміцніших керамічних жорен.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner row-saecosm__inner_rev">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>HygieSteam</h2>
+                            <p>Наша інноваційна програма автоматичного
+                                очищення HygieSteam усуває 99,9%
+                                мікроорганізмів на частинах молочної системи</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-saecosm__inner">
+                    <div class="row-saecosm__item">
+                        <div class="row-saecosm__text">
+                            <h2>Фільтр AquaClean</h2>
+                            <p>Зробіть до 50001 чашок без видалення накипу, регулярно замінюючи фільтр.</p>
+                        </div>
+                    </div>
+                    <div class="row-saecosm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2206434/img18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
