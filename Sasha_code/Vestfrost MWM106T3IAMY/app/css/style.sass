@@ -1,0 +1,825 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+//========================================================================================================================================================
+#maincontent .box
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bg01.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+#maincontent .top-box
+    width: 85%
+    margin: 0 auto
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: flex-start)
+        flex-direction: row
+        gap: 20px
+        padding-top: 25px
+    &__item
+        flex: 0 1 60%
+    &__image
+        img
+            vertical-align: top
+    &__item_row
+        @include flex-box($justifyContent: center, $alignItems: flex-end)
+        flex-direction: row
+    &__image_sm
+        img
+            vertical-align: bottom
+    &__image_b
+        margin-left: 19px
+    &__item_col
+        @include flex-box($justifyContent: flex-start, $alignItems: flex-end)
+        flex-direction: column
+    &__title
+        margin-top: 20%
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+        span:first-child
+            @include fonts($fontSize: 50px, $lineHeight: 1.2)
+            color: #FFFFFF
+            display: inline-block
+            margin-bottom: 34px
+        span:last-child
+            @include fonts($fontSize: 48px, $lineHeight: 1.2)
+            font-weight: 700
+            color: #FFFFFF
+            display: inline-block
+            background: #00AFFF
+            padding: 11px 29px
+            border-top-left-radius: 44px
+            border-bottom-right-radius: 44px
+#maincontent .box-text
+    margin: 90px 20px
+    p
+        text-align: center
+        @include fonts($fontSize: 32px, $lineHeight: 1.2)
+#maincontent .letter__box
+    position: relative
+#maincontent .box-letter
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bg02.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &__wrapper
+        @include flex-box($justifyContent: center, $alignItems: center)
+    &__inner
+        @include flex-box($justifyContent: flex-start, $alignItems: center)
+        background-color: #FFFFFF
+        border-radius: 20px
+        width: 100%
+        margin: 75px 0
+        padding: 0 5%
+    &__text
+        flex: 0 1 50%
+        p
+            font-size: 20px
+            line-height: 1.2
+    &__media
+        position: relative
+    &__icon
+        position: absolute
+        width: 65px
+        height: 65px
+        top: 40%
+        bottom: 0
+    &__icon_1
+        left: 77%
+        right: 80% 
+    &__icon_2
+        left: 98%
+        right: 85%
+    &__icon_3
+        left: 119%
+        right: 85% 
+#maincontent .antibac
+    &__box
+        margin-top: 90px
+#maincontent .box-antibac
+    &__text
+        padding: 10px 10% 10px 20px
+#maincontent .row-maincontent
+    &__wrapper
+        margin-bottom: 90px
+    &__inner
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+        z-index: 2
+    &__image
+        position: relative
+        flex: 0 1 60%
+        z-index: 0
+    &__text
+        h2
+            font-size: 32px
+            line-height: 1.2
+            margin-bottom: 15px
+            text-transform: uppercase
+            color: #002C5C
+        p
+            font-size: 20px
+            line-height: 1.2
+#maincontent .antiallergic
+    &__box
+        margin-top: 115px
+#maincontent .box-antiallergic
+    &__wrapper
+        position: relative
+    &__inner
+        display: flex
+        flex-direction: row
+    &__image
+        position: relative
+        z-index: 3
+    &__bg
+        position: absolute
+        left: 14%
+        right: 50%
+        top: 0
+        bottom: 0
+    &__item
+        flex: 0 1 70%
+    &__text
+        position: relative
+        margin-left: 8%
+        margin-right: 8%
+        z-index: 2
+        h2
+            font-size: 32px
+            line-height: 1.2
+            text-transform: uppercase
+            color: #002C5C
+            margin-bottom: 15px
+        p
+            font-size: 20px
+            line-height: 1.2
+            margin-bottom: 15px
+    &__pos
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bacteria-b.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 103px
+            height: 102px
+            top: 93%
+            left: 84%
+            right: 16%
+            bottom: 0
+        &::after
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bacteria-s.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 60px
+            height: 51px
+            top: 115%
+            left: 97%
+            right: 5%
+            bottom: 0
+#maincontent .box-eco
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bg03.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: stretch)
+        flex-direction: row
+        padding-top: 5%
+        padding-bottom: 5%
+    &__item
+        flex: 0 1 50%
+    &__item_left
+        flex: 0 1 35%
+    &__text
+        h2
+            font-size: 32px
+            line-height: 1.2
+            text-transform: uppercase
+            color: #00AFFF
+            text-align: left
+            margin-bottom: 15px
+        p
+            font-size: 20px
+            line-height: 1.2
+            color: #FFFFFF
+            text-align: left
+    &__text_left
+        h2
+            min-height: 100px
+            text-align: right
+        p
+            text-align: right
+    &__img
+        margin-bottom: 15px
+#maincontent .tech
+    &__box
+        margin-top: 90px
+#maincontent .box-tech
+    &__image
+        flex: 0 1 35%
+        margin-right: 20px
+    &__item
+        flex: 0 1 65%
+    &__text
+        color: #002C5C
+#maincontent .box-indicator
+    &__inner
+        align-items: stretch
+    &__item
+        flex: 0 1 40%
+        margin-right: 15px
+        padding: 20px 30px 20px 20px
+    &__image
+        flex: 0 1 75%
+    &__text
+        p
+            span
+                color: #00AFFF
+    &__text_line
+        min-height: 165px
+        position: relative
+        img
+            position: absolute
+    &__text_line-dn
+        &::before
+            content: ""
+            position: absolute
+            background-color: #00AFFF
+            width: 100%
+            height: 2px
+            top: 14%
+            left: 0
+        img
+            width: calc(95px * 100vw / 1440px)
+            top: 13%
+            left: 100%
+    &__text_line-up
+        &::before
+            content: ""
+            position: absolute
+            background-color: #00AFFF
+            width: 100%
+            height: 2px
+            top: 13%
+            left: 0
+        img
+            width: 95px
+            top: -26%
+            left: 100%
+#maincontent .programs
+    &__box
+        margin-bottom: 180px
+#maincontent .box-programs
+    &__top
+        @include flex-box($justifyContent: space-around, $alignItems: center)
+        margin-bottom: 121px
+    &__bottom
+        @include flex-box($justifyContent: space-around, $alignItems: stretch)
+        margin-top: 45px
+    &__item
+        flex: 0 1 40%
+        max-height: 140px
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            color: #002C5C
+            text-transform: uppercase
+            margin-bottom: 6px
+            max-height: 77px
+        p
+            @include fonts($fontSize: 20px, $lineHeight: 1.2)
+            background: #F0F0F0
+            padding: 5%
+        hr
+            border-color: #00AFFF
+    &__media
+        position: relative
+    &__image
+        position: relative
+    &__bg_right
+        &::before
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 5%
+            height: 18%
+            top: 19%
+            left: 9%
+        &::after
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 8%
+            height: 8%
+            top: 59%
+            left: 9%
+    &__bg_left
+        &::before
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 54%
+            height: 78%
+            top: 19%
+            left: 40.5%
+            right: 0
+            bottom: 0
+        &::after
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 12%
+            height: 22%
+            top: 69%
+            left: 76%
+    &__line-down_left
+        &::before
+            content: ""
+            position: absolute
+            background-color: #00AFFF
+            width: 2px
+            height: 290px
+            top: 46px
+            left: -3px
+            right: 88%
+            bottom: 0
+            z-index: 5
+    &__line-down_right
+        &::before
+            content: ""
+            position: absolute
+            background-color: #00AFFF
+            width: 2px
+            height: 290px
+            top: 21%
+            left: 0
+            z-index: 5
+    &__line-up_left
+        &::before
+            content: ""
+            position: absolute
+            background-color: #00AFFF
+            width: 2px
+            height: 219px
+            top: -86%
+            left: 0
+            z-index: 5
+    &__arrow-up_right
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/arrow-up.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 16px
+            height: 127px
+            top: -80px
+            left: 98%
+            right: 88%
+            bottom: 0
+#maincontent .box-save
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2124989/bg05.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        flex-direction: column
+        padding-top: 5%
+        padding-bottom: 5%
+    &__img
+        margin-bottom: 15px
+    &__text
+        width: 75%
+    &__text
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            text-transform: uppercase
+            color: #00AFFF
+            text-align: center
+            margin-bottom: 15px
+        p
+            @include fonts($fontSize: 20px, $lineHeight: 1.2)
+            color: #FFFFFF
+            text-align: center
+
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1435.98px)
+    #maincontent .box-programs
+        &__line-up_left
+            &::before
+                height: 214px
+                top: -75%
+
+@media screen and (max-width: 1300px)
+    #maincontent .top-box
+        &__title
+            span:first-child
+                @include fonts($fontSize: 40px, $lineHeight: 1.2)
+            span:last-child
+                @include fonts($fontSize: 28px, $lineHeight: 1.2)
+    #maincontent .box-letter
+        &__icon
+            width: 55px
+            height: 55px
+        &__icon_1
+            left: 75%
+        &__icon_2
+            left: 95%
+        &__icon_3
+            left: 115%
+    #maincontent .box-programs
+        &__line-down_left
+            &::before
+                height: 284px
+        &__line-down_right
+            &::before
+                height: 276px
+                top: 20%
+        &__line-up_left::before
+            height: 203px
+            top: -72%
+
+@media screen and (max-width: 1234.98px)
+    #maincontent .box-programs
+        &__arrow-up_right
+            &::before
+                height: 158px
+                top: -71px
+                left: 98%
+
+@media screen and (max-width: 1245px)
+    #maincontent .box-letter
+        &__icon
+            width: 45px
+            height: 45px
+            top: 45%
+        &__icon_1
+            left: 69%
+        &__icon_2
+            left: 83%
+        &__icon_3
+            left: 97%
+
+@media screen and (max-width: 1190.98px)
+    #maincontent .box-programs
+        &__line-down_left
+            &::before
+                height: 278px
+        &__line-up_left::before
+            height: 195px
+            top: -69%
+
+@media screen and (max-width: 1160.98px)
+    #maincontent .box-antiallergic
+        &__inner
+            flex-direction: column-reverse
+            align-items: flex-start
+        &__media
+            position: relative
+            width: 100%
+        &__text
+            margin-left: 0
+            margin-right: 0
+            h2, p
+                text-align: center
+        &__bg
+            left: 48%
+            right: 17%
+        &__pos
+            &::before
+                top: 174%
+                left: 77%
+            &::after
+                top: 220%
+                left: 89%
+    #maincontent .box-indicator
+        &__text_line-up
+            img
+                top: -31%
+                left: 97%
+                transform: rotate(-12deg)
+    #maincontent .box-programs
+        &__line-down_left, &__line-down_right, &__line-up_left, &__arrow-up_right
+            &::before
+                display: none
+
+@media screen and (max-width: 1110.98px)
+    #maincontent .box-indicator
+        &__text_line-up
+            img
+                top: -27%
+                transform: rotate(-16deg)
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .row-maincontent
+        &__text
+            h2
+                font-size: 28px
+    #maincontent .programs
+        &__box
+            margin-bottom: 3%
+    #maincontent .box-programs
+        &__top
+            flex-direction: column
+            align-items: stretch
+            max-height: 100%
+            margin-bottom: 1%
+        &__item
+            max-height: 100%
+            p
+                padding: 2%
+                background-color: #fff
+        &__bottom
+            flex-direction: column
+            align-items: stretch
+            max-height: 100%
+            margin-top: 3%
+        &__item_down
+            margin-top: 0
+
+@media screen and (max-width: 991.98px)
+    #maincontent .top-box
+        &__inner
+            flex-direction: column-reverse
+            align-items: center
+        &__img
+            margin: 0 auto
+        &__title
+            align-items: center
+    #maincontent .box-letter
+        &__inner
+            flex-direction: column-reverse
+            padding: 15px
+        &__text
+            p
+                text-align: center
+        &__img
+            max-width: 80%
+        &__icon_2
+            left: 87%
+        &__icon_3
+            left: 105%
+    #maincontent .row-maincontent
+        &__wrapper
+            margin-bottom: 5%
+        &__inner
+            flex-direction: column
+        &__text
+            padding-left: 10px
+            padding-right: 10px
+            h2
+                font-size: 32px
+                text-align: center
+            p
+                text-align: center
+    #maincontent .box-tech
+        &__image
+            margin-right: 0
+        &__text
+            padding-top: 10px
+            padding-bottom: 10px
+
+    #maincontent .box-indicator
+        &__inner
+            flex-direction: column-reverse
+        &__text_line
+            min-height: auto
+            &::before
+                display: none
+            img
+                display: none
+        &__image
+            position: relative
+            img
+                margin: 0 auto
+        &__border
+            &::before
+                content: ""
+                position: absolute
+                border: 2px solid #00AFFF
+                width: 20%
+                height: 16%
+                top: 25%
+                left: 6%
+    #maincontent .box-programs
+        &__line-down_left, &__line-down_right, &__line-up_left, &__arrow-up_right
+            h2, p
+                text-align: center
+
+@media screen and (max-width: 767.98px)
+    #maincontent .top-box
+        width: 95%
+        &__image_b
+            margin-left: 8px
+    #maincontent .top-box01
+        width: auto
+    #maincontent .box-text
+        margin: 5% 2%
+        p
+            font-size: 25px
+    #maincontent .box-letter
+        &__img
+            max-width: 70%
+        &__icon_1
+            left: 57%
+        &__icon_2
+            left: 74%
+        &__icon_3
+            left: 91%
+    #maincontent .antibac
+        &__box
+            margin-top: 5%
+    #maincontent .antiallergic
+        &__box
+            margin-top: 5%
+    #maincontent .box-antiallergic
+        &__text
+            font-size: 30px
+        &__pos
+            display: none
+    #maincontent .box-eco
+        &__inner
+            padding-left: 15px
+            padding-right: 15px
+            flex-direction: column
+        &__text
+            width: 100%
+            margin-bottom: 3%
+            h2, p
+                text-align: center
+        &__img
+            img
+                margin: 0 auto
+        &__text_left
+            h2
+                min-height: auto
+    #maincontent .tech
+        &__box
+            margin-top: 5%
+    #maincontent .indicator
+        &__box
+            margin-top: -5%
+    #maincontent .box-indicator
+        &__item
+            margin-right: 0        
+    #maincontent .box-save
+        &__inner
+            padding-left: 15px
+            padding-right: 15px
+        &__text
+            width: 100%
+
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__image_sm
+            flex: 0 1 30%
+        &__title
+            span:first-child
+                font-size: 25px
+            span:last-child
+                font-size: 16px
+    #maincontent .box-text
+        p
+            font-size: 16px
+    #maincontent .box-letter
+        &__text
+            p
+                font-size: 16px
+        &__img
+            max-width: 50%
+        &__icon
+            width: 40px
+            height: 40px
+            top: 40%
+        &__icon_1
+            left: 45%
+        &__icon_2
+            left: 66%
+        &__icon_3
+            left: 87%
+    #maincontent .row-maincontent
+        &__text
+            h2
+                font-size: 22px
+            p
+                font-size: 16px
+    #maincontent .box-antiallergic
+        &__text
+            h2
+                font-size: 22px
+            p
+                font-size: 16px
+    #maincontent .box-eco
+        &__text
+            h2
+                font-size: 22px
+            p
+                font-size: 16px
+        &__img
+            img
+                max-width: 60px
+    #maincontent .box-programs
+        &__item
+            h2
+                font-size: 22px
+            p
+                font-size: 16px
+    #maincontent .box-save
+        &__img
+            img
+                max-width: 60px
+                margin: 0 auto
+        &__text
+            h2
+                font-size: 22px
+            p
+                font-size: 16px

@@ -1,0 +1,709 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+//========================================================================================================================================================
+
+#maincontent .box
+    margin-bottom: 90px
+    &__bg 
+        background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/header_bg.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+#maincontent .top-box
+    width: 85%
+    margin: 0 auto
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 20px
+    &__item
+        display: flex
+        flex: 0 1 70%
+    &__text
+        max-width: 600px
+        margin-top: 66px        
+        margin-right: 200px
+        p
+            font-size: 24px
+            line-height: 1.2
+            color: #BCBBBB
+        img
+            margin-bottom: 20px
+    &__image
+        flex: 0 1 30%
+        img
+            margin: 0 auto
+    &__img
+        flex: 0 1 70%
+        margin-right: 20px
+    &__title
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__header
+        font-size: 34px
+        line-height: 50px
+        color:#FFFFFF
+        display: inline-block
+        margin-bottom: 34px
+    &__art
+        font-size: 26px
+        line-height: 40px
+        font-weight: 700
+        color:#FFFFFF
+        display: inline-block
+        background: #00AFFF
+        padding: 11px 29px
+        border-top-left-radius: 44px
+        border-bottom-right-radius: 44px
+
+#maincontent .row-maincontent
+    &__wrapper
+        margin-bottom: 90px   
+    &__inner
+        display: flex
+        align-items: center
+          
+    &__item
+        flex: 0 1 50%
+        z-index: 2
+    &__media
+        position: relative
+    &__image
+        position: relative
+        flex: 0 1 60%
+        z-index: 0
+    &__bg
+        position: absolute
+        top: 43%
+        left: -29%
+        right: 52%
+    &__text
+        padding: 10px 135px 10px 20px        
+        h2
+            font-size: 32px
+            line-height: 1.2
+            margin-bottom: 15px
+            text-transform: uppercase
+            color: #002C5C
+        p
+            font-size: 20px
+            line-height: 1.2
+        span
+            font-weight: 700    
+
+#maincontent .letter__box
+    position: relative
+    
+#maincontent .box-letter
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/bg_02.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &__wrapper
+        display: flex
+        justify-content: center
+    &__inner
+        display: flex
+        align-items: center
+        background-color: #FFFFFF
+        border-radius: 20px
+        width: 85%
+        margin: 75px 0
+        padding: 0 70px
+    &__text
+        flex: 0 1 70%        
+        p
+            font-size: 20px
+            line-height: 1.2
+    &__img      
+        position: relative
+        &::before
+            content: ""
+            position: absolute 
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/plus.png)        
+            background-repeat: no-repeat
+            background-size: cover           
+            width: 65px
+            height: 65px
+            top: 45%
+            left: 71%
+            right: 80%
+            bottom: 0  
+        &::after
+            content: ""
+            position: absolute  
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/plus.png)        
+            background-repeat: no-repeat
+            background-size: cover          
+            width: 65px
+            height: 65px
+            top: 45%
+            left: 97%
+            right: 85%
+            bottom: 0   
+
+#maincontent .antiallergic__box
+    margin-top: 115px
+
+#maincontent .box-antiallergic
+    &__wrapper
+        position: relative
+    &__inner
+        display: flex
+        flex-direction: row 
+    &__image
+        position: relative
+        z-index: 3
+
+    &__bg
+        position: absolute 
+        left: 14%
+        right: 50%
+        top: 0
+        bottom: 0  
+    &__item
+        flex: 0 1 70%
+    &__text
+        position: relative
+        margin-left: 8%
+        margin-right: 8%
+        z-index: 2
+        h2
+            font-size: 32px
+            line-height: 1.2
+            text-transform: uppercase
+            color: #002C5C
+            margin-bottom: 15px
+        p
+            font-size: 20px
+            line-height: 1.2
+            margin-bottom: 15px
+    &__pos
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/corona_b.png)
+            background-repeat: no-repeat
+            background-size: cover 
+            width: 103px
+            height: 102px
+            top: 93%
+            left: 84%
+            right: 16%
+            bottom: 0 
+        &::after
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/corona_s.png)
+            background-repeat: no-repeat
+            background-size: cover 
+            width: 60px
+            height: 51px
+            top: 115%
+            left: 97%
+            right: 5%
+            bottom: 0 
+
+#maincontent .box-eco
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/bg_03.png)
+        background-repeat: no-repeat
+        background-position: center   
+        background-size: cover
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 5%
+        padding-bottom: 5%
+    &__text
+        width: 75%
+        h2
+            font-size: 32px
+            line-height: 1.2
+            text-transform: uppercase
+            color: #00AFFF
+            text-align: center
+            margin-bottom: 15px
+        p
+            font-size: 20px
+            line-height: 1.2
+            color: #FFFFFF
+            text-align: center
+    &__img
+        margin-bottom: 15px
+
+#maincontent .antibac
+    &__box
+        margin-top: 90px
+
+#maincontent .box-antibac    
+    &__text
+        padding-right: 10%
+
+#maincontent .box-save
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/footer_bg.png)
+        background-repeat: no-repeat
+        background-position: center   
+        background-size: cover
+
+#maincontent .programs
+    &__box  
+        margin-bottom: 180px 
+#maincontent .box-programs
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 121px
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+        margin-top: 45px
+    &__item
+        flex: 0 1 40%
+        max-height: 140px
+        h2
+            font-size: 32px
+            line-height: 1.2
+            color: #002C5C
+            text-transform: uppercase
+            margin-bottom: 6px
+            max-height: 77px
+        p
+            font-size: 20px
+            line-height: 1.2
+            background: #F0F0F0
+            padding: 5%
+        hr
+            border-color: #00AFFF
+    &__media
+        position: relative
+    &__image
+        position: relative
+    &__bg_right
+        &::before
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 4%
+            height: 18%
+            top: 19%
+            left: 5%
+        &::after
+            &::before
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 8%
+            height: 8%
+            top: 59%
+            left: 4%
+    &__bg_left
+        &::before
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 50%
+            height: 85%
+            top: 13%
+            left: 47.5%
+            right: 0
+            bottom: 0
+        &::after            
+            content: ""
+            position: absolute
+            border: 2px solid #00AFFF
+            width: 13%
+            height: 29%
+            top: 63%
+            left: 68%
+    &__arrow-down_left
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/arrow_down.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 16px
+            height: 290px
+            top: 45px
+            left: -9px
+            right: 88%
+            bottom: 0
+            z-index: 5
+    &__arrow-down_right
+        &::before                        
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/arrow_down.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 16px
+            height: 290px
+            top: 26%
+            left: 98%
+            z-index: 5
+    &__arrow-up_left
+        &::before
+            content: ""
+            position: absolute
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/arrow_up.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 16px
+            height: 290px
+            top: -241px
+            left: -13px
+            right: 88%
+            bottom: 0
+    &__arrow-up_right
+        &::before                        
+            content: ""
+            position: absolute
+            //background-image: url(../img/arrow_left.png)
+            background-image: url(https://cdn.comfy.ua/media/x/img3/1870614/arrow_left.png)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 155px
+            height: 16px
+            top: -213px
+            left: 67%
+            right: 88%
+            bottom: 0
+        &::after
+            content: ""
+            position: absolute
+            height: 250px
+            border: 1px solid #00AFFF
+            top: -205px
+            left: 100%
+            right: 0
+    &__item_down
+        margin-top: 75px
+    
+
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1440px) 
+    #maincontent .box-programs
+        &__arrow-up_right
+            &::before 
+                width: calc(155px * 100vw / 1440px) 
+
+@media screen and (max-width: 1240px) 
+    #maincontent .box-programs
+        &__arrow-down_left, &__arrow-down_right, &__arrow-up_left, &__arrow-up_right
+            &::before                
+                display: none
+            &::after
+                display: none
+
+@media screen and (max-width: 1160px)
+    #maincontent .top-box
+        &__header
+            font-size: 25px
+            line-height: 30px
+        &__art
+            font-size: 20px
+            line-height: 30px
+    #maincontent .box-antiallergic
+        &__inner
+            flex-direction: column-reverse
+            align-items: flex-start
+        &__media
+            position: relative
+            width: 100%
+        &__text
+            margin-left: 0
+            margin-right: 0
+            h2, p
+                text-align: center
+        &__bg
+            left: 48%
+            right: 17%
+        &__pos
+            &::before
+                top: 174%
+                left: 77%
+            &::after
+                top: 220%
+                left: 89%
+
+
+@media screen and (max-width: 1023.98px)
+    #maincontent .box-letter
+        &__img      
+        
+            &::before
+                width: 50px
+                height: 50px
+            &::after
+                width: 50px
+                height: 50px
+
+    #maincontent .programs
+        &__box
+            margin-bottom: 3%
+    #maincontent .box-programs        
+        &__top
+            flex-direction: column
+            align-items: stretch
+            max-height: 100%
+            margin-bottom: 1%
+        &__item
+            max-height: 100%
+            p
+                padding: 2%
+                background-color: #fff
+        &__bottom
+            flex-direction: column
+            align-items: stretch
+            max-height: 100%
+            margin-top: 3%
+        &__item_down
+            margin-top: 0
+            
+        
+@media screen and (max-width: 991.98px)
+    #maincontent .top-box
+        &__text
+            p
+                font-size: 20px
+        &__header            
+            font-size: 20px
+        &__art
+            font-size: 13px
+            line-height: 15px        
+
+    #maincontent .row-maincontent
+        &__text
+            padding-left: 5px
+            padding-right: 35px
+            h2
+                font-size: 20px
+            p
+                font-size: 15px
+        &__bg
+            max-width: 60%
+            top: 58%
+            left: -13%
+
+    #maincontent .box-letter
+        &__inner
+            padding-top: 15px
+            padding-bottom: 15px
+            padding-left: 30px
+        &__text
+            flex: 0 1 100%
+        &__img
+            max-width: 50%
+
+    #maincontent .box-programs
+        &__item
+            h2
+                font-size: 20px
+            p
+                font-size: 15px
+
+    #maincontent .box-programs
+        &__arrow-down_left, &__arrow-down_right, &__arrow-up_left, &__arrow-up_right
+            h2, p 
+                text-align: center
+            
+
+@media screen and (max-width: 767.98px)
+    
+    #maincontent .box
+        margin-bottom: 3% 
+    #maincontent .top-box01        
+        width: auto
+    #maincontent .top-box
+        &__item
+            flex-direction: column-reverse
+        &__text
+            margin-top: 20px
+            margin-right: 0
+        &__image
+            margin-left: 80%
+        &__title
+            flex-direction: row
+            justify-content: space-evenly
+        &__header 
+            margin-bottom: 0        
+        &__img
+            margin-right: 0 
+
+    #maincontent .row-maincontent
+        &__wrapper
+            margin-bottom: 5%
+        &__inner
+            flex-direction: column
+        &__media
+            margin-bottom: 25px
+        &__text
+            padding-left: 10px
+            padding-right: 10px 
+            h2
+                font-size: 30px
+                text-align: center
+            p
+                font-size: 20px
+                text-align: center
+        &__bg
+            left: -9%
+
+    #maincontent .box-letter
+        &__inner
+            flex-direction: column-reverse
+            width: 100%
+            padding-left: 15px
+            padding-right: 15px
+        &__text
+            p
+                text-align: center
+
+    #maincontent .antiallergic
+        &__box
+            margin-top: 5%
+    #maincontent .box-antiallergic
+        &__text
+            font-size: 30px
+        &__pos
+            display: none
+
+    #maincontent .box-eco
+        &__inner
+            padding-left: 15px
+            padding-right: 15px
+        &__text
+            width: 100%
+
+    #maincontent .antibac
+        &__box
+            margin-top: 3%
+
+    
+@media screen and (max-width: 569.98px)
+    #maincontent .box-letter
+        &__img
+            &::after
+                left: 105%   
+    
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__text p 
+            font-size: 17px
+        &__art
+            padding-left: 17px
+            padding-right: 17px
+        &__header
+            font-size: 13px
+
+    #maincontent .row-maincontent
+        &__text
+            h2
+                font-size: 25px
+    #maincontent .box-letter
+        &__img
+            &::before                
+                max-width: 25%
+                max-height: 25%
+            &::after
+                max-width: 25%
+                max-height: 25%                 
+
+    #maincontent .box-antiallergic
+        &__text
+            h2
+                font-size: 25px
+
+    #maincontent .box-eco
+        &__text
+            h2
+                font-size: 25px                
+        &__img
+            img
+                max-width: 60px
+                margin: 0 auto
+
+
+
+
+
+        
+
