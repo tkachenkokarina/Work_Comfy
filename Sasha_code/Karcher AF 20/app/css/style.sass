@@ -1,0 +1,269 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1920px
+    margin: 0 auto
+    padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+            &:last-child
+                margin-bottom: 30px
+
+#maincontent .slider
+    &__card
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            z-index: 5
+            background-color: #00000043
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+
+    &__item
+        img
+            position: absolute
+            left: 50%
+            top: 10%
+            transform: translate(-50%, -50%)
+            z-index: 8
+        &_text
+            position: absolute
+            color: #fff
+            left: 0
+            right: 0
+            top: 50%
+            transform: translate(0, -50%)
+            width: 50%
+            margin: 0 auto
+            z-index: 8
+
+#maincontent .swiper-pagination-bullet-active
+    background-color: #ffed00
+#maincontent .swiper-button-prev, .swiper-button-next
+    color: #ffed00
+#maincontent .maincontent
+    &__row        
+        padding-top: 2em
+        // margin-bottom: 70px        
+        
+#maincontent .row-maincontent
+    &__bg
+        @include bg-image($url: url(../img/bg03.png))
+    &__inner        
+        margin: 0 auto
+        max-width: 80%
+    &__item
+        margin-bottom: 20px
+
+    // // .row-maincontent__text
+
+    // &__text
+
+    &__images
+        @include flex-box($justifyContent: center, $alignItems: stretch)
+        gap: 2rem
+    &__image
+        padding: 15px
+        flex: 0 1 30%
+        img
+            margin: 0 auto
+            width: 50%
+
+#maincontent .images-box
+    &__image
+        background: #fbfaf8
+        padding: 0
+        img
+            width: 100%
+    &__text
+        position: relative
+        padding: 15px
+            &::before
+                content: ""
+                @include @include bg-image($url: "../img/arrow.png")
+                position: absolute
+                width: 30px
+                height: 10px
+                top: 0
+                left: 10%
+            
+    
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1540px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (32 - 22) * ((100vw - 320px)/(1540 - 320)))
+            h3
+                font-size: calc( 20px + (28 - 20) * ((100vw - 320px)/(1540 - 320)))
+            p
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1540 - 320)))
+    
+
+// @media screen and (max-width: 1300px)
+
+@media screen and (max-width: 1024.98px)
+    // #maincontent .slider
+    //     &__item            
+    //         h3
+    //             top: 30%
+    //         h2
+    //             top: 40%
+    //         p
+    //             top: 50%
+
+@media screen and (max-width: 991.98px)
+    #maincontent .slider
+        &__item
+            img
+                max-width: 90px
+
+@media screen and (max-width: 767.98px)
+    #maincontent .slider
+        &__item
+            &_text
+                width: 75%
+            h3
+                font-size: 18px
+            h2
+                font-size: 20px
+            p
+                font-size: 16px
+    #maincontent .maincontent
+        &__row
+            padding-top: 1em
+    #maincontent .row-maincontent
+        &__inner
+            max-width: 100%
+            padding-left: 15px
+            padding-right: 15px
+        &__images
+            flex-direction: column
+            gap: 0
+        &__image
+            p
+                &:last-child                    
+                    margin-bottom: 10px
+
+@media screen and (max-width: 479.98px)
+    #maincontent .slider
+        &__item
+            img
+                max-width: 60px
+            h3
+                font-size: 14px
+                margin-top: 2%
+                margin-bottom: 2%
+            h2
+                font-size: 16px
+                margin-top: 2%
+                margin-bottom: 2%
+            p
+                font-size: 12px
+                margin-top: 2%
+                margin-bottom: 2%
+            &_text
+                width: 85%
+    #maincontent .swiper-button-prev, .swiper-button-next
+        display: none
