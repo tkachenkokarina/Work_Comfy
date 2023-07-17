@@ -1,0 +1,452 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1570
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#lg43uq81006lb a
+    color: inherit
+    text-decoration: none
+
+#lg43uq81006lb
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#lg43uq81006lb .bc-description__content p
+    margin-bottom: 0
+
+#lg43uq81006lb .bc-description__content h3
+    text-align: left
+
+#lg43uq81006lb
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#lg43uq81006lb
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#lg43uq81006lb p::first-letter
+    padding-left: 0
+
+#lg43uq81006lb img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#lg43uq81006lb img:hover
+    opacity: 1
+
+[class*="__container"]
+    max-width: 1570px
+    margin: 0 auto
+    padding: 0 15px
+
+//========================================================================================================================================================
+#lg43uq81006lb .lg43uq81006lb__small-title
+    @include adaptiv-value("font-size", 36, 20, 1)
+    line-height: 1.2
+    margin-bottom: 10px
+    text-align: center
+#lg43uq81006lb .lg43uq81006lb__text
+    @include adaptiv-value("font-size", 26, 16, 1)
+    line-height: 1.2
+    text-align: center
+
+#lg43uq81006lb .head-lg43uq81006lb
+    position: relative
+    z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        p
+            color: #fff
+    &__title
+        @include adaptiv-value("font-size", 36, 20, 1)
+        line-height: 1.2
+        margin-bottom: 10px
+        text-align: center
+        color: #fff
+    &__image
+
+#lg43uq81006lb .procesor-lg43uq81006lb
+    &__media
+        position: relative
+        z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+
+#lg43uq81006lb .block-lg43uq81006lb
+    position: relative
+    z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+
+#lg43uq81006lb .thinq-lg43uq81006lb
+    &__media
+        position: relative
+        z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+
+#lg43uq81006lb .smart-lg43uq81006lb
+    &__madia
+        position: relative
+        z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+
+#lg43uq81006lb .profile-lg43uq81006lb
+    position: relative
+    z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+
+#lg43uq81006lb .sport-lg43uq81006lb
+    &__content
+        width: 90%
+        margin: 0 auto
+        padding: 20px 0px
+    &__image
+
+#lg43uq81006lb .greener-lg43uq81006lb
+    &__media
+        position: relative
+        z-index: 2
+    &__content
+        width: 90%
+        margin: 0 auto
+        padding: 20px 0px
+    &__content-st
+    &__block
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+    &__image
+
+#lg43uq81006lb .bground-lg43uq81006lb
+    &__item
+        padding-top: 20px
+        background-color: #000
+        &_1
+        &_2
+    &__slider
+        padding-top: 170px
+    &__wrapper
+    &__slide
+    &__body
+        background-color: #000
+    &__text
+        padding: 20px 10px 20px
+        width: 90%
+        margin: 0 auto
+        h4,p
+            color: #fff
+    &__image
+    &__pagination
+        &_1
+
+#lg43uq81006lb .swiper
+    &-wrapper
+    &-slide
+    &-pagination
+        padding-top: 42px
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination
+    top: 0
+    bottom: auto
+    display: flex
+    justify-content: space-around
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet:nth-child(1)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image01.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet:nth-child(2)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image02.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet:nth-child(3)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image03.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet
+    position: relative
+    z-index: 2
+    transition: all .3s ease 0s
+    width: 122px
+    height: 122px
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::before,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::before
+    content: ""
+    position: absolute
+    z-index: 5
+    border: 1.5px solid #535353
+    width: 132px
+    height: 132px
+    top: -5px
+    left: -5px
+    border-radius: 50%
+    animation-name: circle-wawes
+    animation-duration: 3s
+    animation-delay: 1.5s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::after,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::after
+    content: ""
+    position: absolute
+    z-index: 5
+    border: 1.5px solid #535353
+    width: 132px
+    height: 132px
+    top: -5px
+    left: -5px
+    border-radius: 50%
+    animation-name: circle-wawes
+    animation-duration: 3s
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet-active::after,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet-active::after,
+#lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet-active::before,
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet-active::before
+    content: ""
+    border: 2.5px solid #c4064e
+
+@keyframes circle-wawes
+    0%
+        transform: scale(0.9)
+    100%
+        transform: scale(1.4)
+        opacity: 0
+
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet:nth-child(1)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image04.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet:nth-child(2)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image05.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet:nth-child(3)
+    background: url(https://cdn.comfy.ua/media/x/img3/2191934/image06.png) 0 0 no-repeat
+    display: block
+    background-size: cover
+    opacity: 1
+
+#lg43uq81006lb .bground-lg43uq81006lb-2
+    &__slider
+        padding-top: 170px
+
+#lg43uq81006lb .dynamic-lg43uq81006lb
+    &__media
+    &__content
+        width: 90%
+        margin: 0 auto
+        padding: 20px 0px
+
+#lg43uq81006lb .planet-lg43uq81006lb
+    &__media
+        position: relative
+        z-index: 2
+    &__content
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        padding: 0 15px
+        width: 90%
+        margin: 0 auto
+    &__image
+    &__snoska
+        position: absolute
+        z-index: 5
+        bottom: 4%
+        right: 0
+        left: 0
+        padding: 0 10px
+        p
+            @include adaptiv-value("font-size", 20, 15, 1)
+            line-height: 1.2
+            text-align: center
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+//@media screen and (max-width: 991.98px)
+
+@media screen and (max-width: 767.98px)
+    #lg43uq81006lb .swiper-pagination
+        padding-top: 20px
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet
+        width: 61px
+        height: 61px
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::after,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::after,
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::before,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::before
+        width: 71px
+        height: 71px
+    #lg43uq81006lb .bground-lg43uq81006lb__slider,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider
+        padding-top: 100px
+
+@media screen and (max-width: 479.98px)
+    #lg43uq81006lb .bground-lg43uq81006lb__slider,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider
+        padding-top: 78px
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet
+        width: 41px
+        height: 41px
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::after,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::after,
+    #lg43uq81006lb .bground-lg43uq81006lb__slider .swiper-pagination-bullet::before,
+    #lg43uq81006lb .bground-lg43uq81006lb-2__slider .swiper-pagination-bullet::before
+        width: 51px
+        height: 51px
+    #lg43uq81006lb .planet-lg43uq81006lb__content,
+    #lg43uq81006lb .dynamic-lg43uq81006lb__content,
+    #lg43uq81006lb .bground-lg43uq81006lb__text,
+    #lg43uq81006lb .greener-lg43uq81006lb__content,
+    #lg43uq81006lb .greener-lg43uq81006lb__block,
+    #lg43uq81006lb .sport-lg43uq81006lb__content,
+    #lg43uq81006lb .profile-lg43uq81006lb__content,
+    #lg43uq81006lb .smart-lg43uq81006lb__content,
+    #lg43uq81006lb .thinq-lg43uq81006lb__content,
+    #lg43uq81006lb .block-lg43uq81006lb__content,
+    #lg43uq81006lb .procesor-lg43uq81006lb__content,
+    #lg43uq81006lb .head-lg43uq81006lb__content
+        width: auto
