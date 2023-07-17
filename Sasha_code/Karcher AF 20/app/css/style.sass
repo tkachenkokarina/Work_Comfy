@@ -105,6 +105,11 @@ li
             text-align: center
             &:last-child
                 margin-bottom: 30px
+            span
+                font-weight: 700
+        ul, li
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin-bottom: 10px
 
 #maincontent .slider
     &__card
@@ -139,26 +144,40 @@ li
 
 #maincontent .swiper-pagination-bullet-active
     background-color: #ffed00
-#maincontent .swiper-button-prev, .swiper-button-next
-    color: #ffed00
+
+#maincontent .swiper-button-prev
+    &::after
+        display: none
+
+#maincontent .swiper-button-next
+    &::after
+        display: none
+
+#maincontent .slider-button-prev    
+    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/arrow-prev.png)) 
+    width: calc(40px/ 40 * 23)
+    height: 42px   
+    z-index: 8
+    
+#maincontent .slider-buton-next    
+    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/arrow-next.png))
+    width: calc(40px/ 40 * 23)
+    height: 42px    
+    z-index: 8
 #maincontent .maincontent
-    &__row        
-        padding-top: 2em
-        // margin-bottom: 70px        
-        
+    &__row
+        padding-top: 2em  
+
 #maincontent .row-maincontent
     &__bg
-        @include bg-image($url: url(../img/bg03.png))
-    &__inner        
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/bg02.png))
+    &__inner
         margin: 0 auto
         max-width: 80%
     &__item
         margin-bottom: 20px
-
-    // // .row-maincontent__text
-
-    // &__text
-
+    &__use
+        margin-bottom: 20px
     &__images
         @include flex-box($justifyContent: center, $alignItems: stretch)
         gap: 2rem
@@ -168,6 +187,23 @@ li
         img
             margin: 0 auto
             width: 50%
+
+#maincontent .images-box
+    &__grid
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        gap: 10px
+    &__item
+        padding: 15px
+        img
+            margin: 0 auto
+    &__img
+        height: 62px
+        margin-bottom: 15px
+        display: flex
+        align-items: center
+    &__header
+        margin-top: auto
 
 #maincontent .images-box
     &__image
@@ -180,14 +216,52 @@ li
         padding: 15px
         &::before
             content: ""
-            @include @include bg-image($url: "../img/arrow.png")
             position: absolute
-            width: 30px
-            height: 10px
-            top: 0
-            left: 10%
-            
-    
+            width: 0
+            height: 0
+            border-left: 30px solid transparent
+            border-right: 30px solid transparent
+            border-bottom: 20px solid #fbfaf8
+            top: -9px
+            left: 24px
+            margin-right: -10px
+    &__header
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 70px
+            height: 2px
+            background: #555555
+            top: 80px
+            left: 50%
+            transform: translate(-50%, -50%)
+
+#maincontent .filter
+    padding-top: 0
+    &__bg
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2259215/bg03.png)
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        gap: 20px
+    &__image
+        flex: 0 1 693px
+        padding-top: 0
+        padding-bottom: 0
+        img
+            width: 100%
+    &__item
+
+        flex: 0 1 70%
+    &__text
+
+        h3
+            text-align: left
+            padding-left: 15px
+            margin-bottom: 2em
+        li
+            list-style-image: url(https://cdn.comfy.ua/media/x/img3/2259215/list-arr.png)
+            padding-left: 15px
 
 //===========MEDIA=============================================================================================================================================
 @media screen and (max-width: 1540px)
@@ -199,25 +273,59 @@ li
                 font-size: calc( 20px + (28 - 20) * ((100vw - 320px)/(1540 - 320)))
             p
                 font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1540 - 320)))
-    
+            ul, li
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1540 - 320)))
 
 // @media screen and (max-width: 1300px)
 
 @media screen and (max-width: 1024.98px)
-    // #maincontent .slider
-    //     &__item            
-    //         h3
-    //             top: 30%
-    //         h2
-    //             top: 40%
-    //         p
-    //             top: 50%
+    #maincontent .images-box
+        &__grid
+            grid-template-columns: repeat(3, 1fr)
+        &__header
+            &::after
+                top: 60px
+
+    #maincontent .filter
+        &__image
+            img
+                width: 100%
 
 @media screen and (max-width: 991.98px)
     #maincontent .slider
         &__item
             img
                 max-width: 90px
+
+    #maincontent .row-maincontent
+        &__images
+            gap: 1rem
+        &__image
+            flex: 0 1 33%
+    #maincontent .filter
+        &__image
+            flex: 0 1 693px
+            padding-left: 0
+            padding-right: 0
+        &__item
+            flex: 0 1 100%
+        &__text
+            h3
+                margin-bottom: 1em
+
+@media screen and (max-width: 889.98px)
+    #maincontent .filter
+        &__inner
+            flex-direction: column
+        &__image
+            max-width: 50%
+            flex-basis: 100px
+        &__text
+            h3
+                text-align: center
+                padding-left: 0
+            ul
+                padding-left: 15px
 
 @media screen and (max-width: 767.98px)
     #maincontent .slider
@@ -243,8 +351,28 @@ li
             gap: 0
         &__image
             p
-                &:last-child                    
+                &:last-child
                     margin-bottom: 10px
+    #maincontent .images-box
+        &__text
+            padding-top: 0
+            padding-bottom: 0
+            &::before
+                top: -39px
+        &__header
+            p
+                &:last-child
+                    margin-bottom: 10px
+            &::after
+                top: 40px
+    #maincontent .text-box
+        p
+            &:last-child
+                margin-bottom: 0
+    #maincontent .filter
+        padding-top: 0
+        &__item
+            padding-left: 30px
 
 @media screen and (max-width: 479.98px)
     #maincontent .slider
@@ -267,3 +395,16 @@ li
                 width: 85%
     #maincontent .swiper-button-prev, .swiper-button-next
         display: none
+    #maincontent .images-box
+        &__text
+            &::before
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                border-bottom: 10px solid #fbfaf8
+                top: -28px
+    #maincontent .images-box
+        &__grid
+            grid-template-columns: repeat(2, 1fr)
+    #maincontent .filter
+        &__item
+            padding-left: 15px
