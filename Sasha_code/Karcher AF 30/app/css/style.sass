@@ -153,24 +153,24 @@ li
     &::after
         display: none
 
-#maincontent .slider-button-prev    
-    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/arrow-prev.png)) 
+#maincontent .slider-button-prev
+    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259214/arrow-prev.png))
     width: calc(40px/ 40 * 23)
-    height: 42px   
+    height: 42px
     z-index: 8
-    
-#maincontent .slider-buton-next    
-    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/arrow-next.png))
+
+#maincontent .slider-buton-next
+    @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259214/arrow-next.png))
     width: calc(40px/ 40 * 23)
-    height: 42px    
+    height: 42px
     z-index: 8
 #maincontent .maincontent
     &__row
-        padding-top: 2em  
+        padding-top: 2em
 
 #maincontent .row-maincontent
     &__bg
-        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259215/bg02.png))
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2259214/bg02.png))
     &__inner
         margin: 0 auto
         max-width: 80%
@@ -240,7 +240,7 @@ li
 #maincontent .filter
     padding-top: 0
     &__bg
-        background-image: url(https://cdn.comfy.ua/media/x/img3/2259215/bg03.png)
+        background-image: url(https://cdn.comfy.ua/media/x/img3/2259214/bg03.png)
     &__inner
         @include flex-box($justifyContent: center, $alignItems: center)
         gap: 20px
@@ -260,8 +260,42 @@ li
             padding-left: 15px
             margin-bottom: 2em
         li
-            list-style-image: url(https://cdn.comfy.ua/media/x/img3/2259215/list-arr.png)
+            list-style-image: url(https://cdn.comfy.ua/media/x/img3/2259214/list-arr.png)
             padding-left: 15px
+#maincontent .link
+    padding-top: 0
+    &__inner
+        position: relative
+    &__image
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            z-index: 5
+            background-color: #00000043
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+    &__button
+        
+        a
+            display: inline-block
+            @include fonts($fontSize: 18px, $lineHeight: 1.2)            
+            position: absolute
+            top: 15%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 8
+            background: #ffed00
+            color: #000
+            padding: 15px
+            text-transform: uppercase
+            font-weight: 700
+            transition: all .5s
+            &:hover
+                background-color: #d9cc12
+                
 
 //===========MEDIA=============================================================================================================================================
 @media screen and (max-width: 1540px)
@@ -275,6 +309,11 @@ li
                 font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1540 - 320)))
             ul, li
                 font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1540 - 320)))
+    #maincontent .link
+        &__button            
+            a
+                font-size: calc( 6px + (18 - 6) * ((100vw - 320px)/(1540 - 320)))
+                line-height: calc( 12px + (24 - 12) * ((100vw - 320px)/(1540 - 320)))
 
 // @media screen and (max-width: 1300px)
 
@@ -298,10 +337,15 @@ li
                 max-width: 90px
 
     #maincontent .row-maincontent
+        &__inner
+            max-width: 100%
+            padding: 0 15px
+            margin: 0 auto
         &__images
             gap: 1rem
         &__image
             flex: 0 1 33%
+
     #maincontent .filter
         &__image
             flex: 0 1 693px
@@ -325,7 +369,7 @@ li
                 text-align: center
                 padding-left: 0
             ul
-                padding-left: 15px
+                padding-left: 30px
 
 @media screen and (max-width: 767.98px)
     #maincontent .slider
@@ -342,13 +386,9 @@ li
         &__row
             padding-top: 1em
     #maincontent .row-maincontent
-        &__inner
-            max-width: 100%
-            padding-left: 15px
-            padding-right: 15px
         &__images
             flex-direction: column
-            gap: 0
+            gap: 15px
         &__image
             p
                 &:last-child
@@ -364,7 +404,7 @@ li
                 &:last-child
                     margin-bottom: 10px
             &::after
-                top: 40px
+                top: 50px
     #maincontent .text-box
         p
             &:last-child
@@ -372,7 +412,15 @@ li
     #maincontent .filter
         padding-top: 0
         &__item
-            padding-left: 30px
+            padding-left: 15px
+        &__text
+            ul
+                padding-left: 15px
+    #maincontent .link
+        padding-top: 0
+        &__button
+            a
+                padding: 10px
 
 @media screen and (max-width: 479.98px)
     #maincontent .slider
@@ -399,9 +447,8 @@ li
         display: none
     #maincontent .slider-button-prev
         display: none
-    #maincontent .slider-button-next     
+    #maincontent .slider-button-next
         display: none
-    
     #maincontent .images-box
         &__text
             &::before
@@ -415,3 +462,8 @@ li
     #maincontent .filter
         &__item
             padding-left: 15px
+    #maincontent .link
+        &__button
+            p
+                span
+                    line-height: 24px
