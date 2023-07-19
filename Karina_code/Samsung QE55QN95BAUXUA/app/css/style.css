@@ -1,0 +1,768 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#samsungtv a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#samsungtv ul,
+#samsungtv ol,
+#samsungtv li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#samsungtv .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#samsungtv .bc-description__content h3 {
+  text-align: left;
+}
+
+#samsungtv h1, #samsungtv h2, #samsungtv h3, #samsungtv h4, #samsungtv h5, #samsungtv h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#samsungtv {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#samsungtv h1, #samsungtv h2, #samsungtv h3, #samsungtv h4, #samsungtv h5, #samsungtv h6, #samsungtv p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#samsungtv p::first-letter {
+  padding-left: 0;
+}
+
+#samsungtv img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#samsungtv img:hover {
+  opacity: 1;
+}
+
+[class*=__container] {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#samsungtv .header-samsungtv__media {
+  position: relative;
+  z-index: 2;
+}
+#samsungtv .header-samsungtv__text {
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+  width: 50%;
+}
+#samsungtv .header-samsungtv__text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungtv .header-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .spec-samsungtv__bg {
+  background-color: #313131;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 84px;
+  padding-right: 84px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .spec-samsungtv__bg {
+    padding-left: -webkit-calc(20px + 64 * ((100vw - 320px) / 1090));
+    padding-left: -moz-calc(20px + 64 * ((100vw - 320px) / 1090));
+    padding-left: calc(20px + 64 * ((100vw - 320px) / 1090));
+  }
+}
+@media (max-width: 1410px) {
+  #samsungtv .spec-samsungtv__bg {
+    padding-right: -webkit-calc(20px + 64 * ((100vw - 320px) / 1090));
+    padding-right: -moz-calc(20px + 64 * ((100vw - 320px) / 1090));
+    padding-right: calc(20px + 64 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .spec-samsungtv__title h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .spec-samsungtv__title h2 {
+    font-size: -webkit-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .spec-samsungtv__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+#samsungtv .spec-samsungtv__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding: 20px 15px;
+  min-height: 140px;
+}
+#samsungtv .spec-samsungtv__icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 56px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 56px;
+          flex: 0 0 56px;
+}
+#samsungtv .spec-samsungtv__text h4 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1410px) {
+  #samsungtv .spec-samsungtv__text h4 {
+    font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .spec-samsungtv__text p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+#samsungtv .matrix-samsungtv__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2075086/img6-1.jpg") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#samsungtv .matrix-samsungtv__bg_1 {
+  background: url("https://cdn.comfy.ua/media/x/img3/2075086/img7-1.jpg") 0 0 no-repeat;
+}
+#samsungtv .matrix-samsungtv__bg_2 {
+  background: url("https://cdn.comfy.ua/media/x/img3/2075086/img8-1.jpg") 0 0 no-repeat;
+}
+#samsungtv .matrix-samsungtv__bg_3 {
+  background: url("https://cdn.comfy.ua/media/x/img3/2075086/img9-1.jpg") 0 0 no-repeat;
+}
+#samsungtv .matrix-samsungtv__text {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+#samsungtv .matrix-samsungtv__text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1410px) {
+  #samsungtv .matrix-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .matrix-samsungtv__text span {
+  display: block;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1410px) {
+  #samsungtv .matrix-samsungtv__text span {
+    font-size: -webkit-calc(18px + 10 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 10 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 10 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .matrix-samsungtv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 1410px) {
+  #samsungtv .matrix-samsungtv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .picture-samsungtv__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding: 50px 60px 0 80px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .picture-samsungtv__title h2 {
+    font-size: -webkit-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: calc(22px + 38 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .picture-samsungtv__slider {
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+#samsungtv .picture-samsungtv__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#samsungtv .picture-samsungtv__text {
+  padding-top: 20px;
+}
+#samsungtv .picture-samsungtv__text h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .picture-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .picture-samsungtv__text span {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .picture-samsungtv__text span {
+    font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .picture-samsungtv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungtv .picture-samsungtv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungtv .swiper-pagination {
+  border: 1px solid #000;
+  max-width: 110px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+#samsungtv .swiper-pagination-bullet {
+  background-color: #757575;
+  width: 10px;
+  height: 10px;
+}
+
+#samsungtv .swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+#samsungtv .swiper-button-prev:after,
+#samsungtv .swiper-button-next:after {
+  content: "";
+  background: url("https://cdn.comfy.ua/media/x/img3/2075086/arrow.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  width: 30px;
+  height: 46px;
+}
+
+#samsungtv .picture-samsungtv-button-prev {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#samsungtv .picture-samsungtv-button-next {
+  right: 28%;
+}
+
+#samsungtv .picture-samsungtv-button-prev,
+#samsungtv .picture-samsungtv-button-next {
+  top: 30%;
+  background-color: #fff;
+  padding: 15px 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+#samsungtv .games-samsungtv__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding: 50px 60px 0 80px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .games-samsungtv__title h2 {
+    font-size: -webkit-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: calc(22px + 38 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .games-samsungtv__slider {
+  padding-left: 80px;
+  padding-bottom: 60px;
+}
+#samsungtv .games-samsungtv__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#samsungtv .games-samsungtv__text {
+  padding-top: 20px;
+}
+#samsungtv .games-samsungtv__text h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .games-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .games-samsungtv__text span {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .games-samsungtv__text span {
+    font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .games-samsungtv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungtv .games-samsungtv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungtv .sound-samsungtv__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding: 50px 60px 0 80px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .sound-samsungtv__title h2 {
+    font-size: -webkit-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: calc(22px + 38 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .sound-samsungtv__slider {
+  padding-left: 80px;
+  padding-bottom: 60px;
+}
+#samsungtv .sound-samsungtv__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#samsungtv .sound-samsungtv__text {
+  padding-top: 20px;
+}
+#samsungtv .sound-samsungtv__text h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .sound-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .sound-samsungtv__text span {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .sound-samsungtv__text span {
+    font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .sound-samsungtv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungtv .sound-samsungtv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungtv .smart-samsungtv {
+  margin-bottom: 50px;
+}
+#samsungtv .smart-samsungtv__title h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  padding: 50px 60px 0 80px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .smart-samsungtv__title h2 {
+    font-size: -webkit-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(22px + 38 * ((100vw - 320px) / 1090));
+    font-size: calc(22px + 38 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .smart-samsungtv__slider {
+  padding-left: 80px;
+  padding-bottom: 60px;
+}
+#samsungtv .smart-samsungtv__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#samsungtv .smart-samsungtv__text {
+  padding-top: 20px;
+}
+#samsungtv .smart-samsungtv__text h2 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .smart-samsungtv__text h2 {
+    font-size: -webkit-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(20px + 18 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .smart-samsungtv__text span {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungtv .smart-samsungtv__text span {
+    font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(18px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungtv .smart-samsungtv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungtv .smart-samsungtv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: -moz-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungtv .swiper-button-next.swiper-button-disabled,
+#samsungtv .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+#samsungtv .swiper-button-next, #samsungtv .swiper-button-prev {
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1215px) {
+  #samsungtv .spec-samsungtv__row {
+    grid-template-columns: 1fr 1fr;
+  }
+  #samsungtv .spec-samsungtv__item {
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+       -moz-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+}
+@media screen and (max-width: 1125px) {
+  #samsungtv .picture-samsungtv__title h2,
+  #samsungtv .games-samsungtv__title h2,
+  #samsungtv .sound-samsungtv__title h2,
+  #samsungtv .smart-samsungtv__title h2 {
+    padding: 30px 15px 0 50px;
+  }
+  #samsungtv .picture-samsungtv__slider,
+  #samsungtv .games-samsungtv__slider,
+  #samsungtv .sound-samsungtv__slider,
+  #samsungtv .smart-samsungtv__slider {
+    padding-left: 55px;
+  }
+  #samsungtv .picture-samsungtv-button-prev {
+    left: 0;
+  }
+  #samsungtv .picture-samsungtv-button-prev,
+  #samsungtv .picture-samsungtv-button-next {
+    top: 30%;
+  }
+  #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after {
+    width: 20px;
+    height: 31px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    padding: 5px 12px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    top: 25%;
+  }
+  #samsungtv .picture-samsungtv-button-next {
+    right: 0;
+  }
+  #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after {
+    width: 15px;
+    height: 22px;
+  }
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    padding: 0px 8px;
+  }
+  #samsungtv .picture-samsungtv__slider,
+  #samsungtv .games-samsungtv__slider,
+  #samsungtv .sound-samsungtv__slider,
+  #samsungtv .smart-samsungtv__slider {
+    padding-left: 30px;
+  }
+  #samsungtv .picture-samsungtv__title h2,
+  #samsungtv .games-samsungtv__title h2,
+  #samsungtv .sound-samsungtv__title h2,
+  #samsungtv .smart-samsungtv__title h2 {
+    padding: 30px 15px 0 27px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #samsungtv .header-samsungtv__text {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 15px;
+  }
+  #samsungtv .header-samsungtv__text h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 601px) {
+  #samsungtv .swiper-button-next.swiper-button-disabled,
+  #samsungtv .swiper-button-prev.swiper-button-disabled {
+    opacity: 0.35;
+  }
+  #samsungtv .picture-samsungtv__slider,
+  #samsungtv .games-samsungtv__slider,
+  #samsungtv .sound-samsungtv__slider,
+  #samsungtv .smart-samsungtv__slider {
+    padding-left: 0;
+  }
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    top: 30%;
+  }
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    padding: 0px 8px;
+  }
+  #samsungtv .picture-samsungtv__title h2,
+  #samsungtv .games-samsungtv__title h2,
+  #samsungtv .sound-samsungtv__title h2,
+  #samsungtv .smart-samsungtv__title h2 {
+    text-align: center;
+    padding: 20px 15px 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  #samsungtv .spec-samsungtv__row {
+    grid-template-columns: 1fr;
+  }
+  #samsungtv .spec-samsungtv__item {
+    min-height: 80px;
+    -webkit-box-pack: stretch;
+    -webkit-justify-content: stretch;
+       -moz-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after {
+    display: none;
+  }
+  #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next {
+    display: none;
+  }
+  #samsungtv .spec-samsungtv__bg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #samsungtv .picture-samsungtv__title h2,
+  #samsungtv .games-samsungtv__title h2,
+  #samsungtv .sound-samsungtv__title h2,
+  #samsungtv .smart-samsungtv__title h2 {
+    margin-bottom: 10px;
+  }
+  #samsungtv .picture-samsungtv__text,
+  #samsungtv .games-samsungtv__text,
+  #samsungtv .sound-samsungtv__text,
+  #samsungtv .smart-samsungtv__text {
+    padding-top: 10px;
+  }
+  #samsungtv .picture-samsungtv__text h2, #samsungtv .picture-samsungtv__text span, #samsungtv .picture-samsungtv__text p,
+  #samsungtv .games-samsungtv__text h2,
+  #samsungtv .games-samsungtv__text span,
+  #samsungtv .games-samsungtv__text p,
+  #samsungtv .sound-samsungtv__text h2,
+  #samsungtv .sound-samsungtv__text span,
+  #samsungtv .sound-samsungtv__text p,
+  #samsungtv .smart-samsungtv__text h2,
+  #samsungtv .smart-samsungtv__text span,
+  #samsungtv .smart-samsungtv__text p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

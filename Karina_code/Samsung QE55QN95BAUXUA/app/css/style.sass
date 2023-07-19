@@ -1,0 +1,499 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1410
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#samsungtv a
+    color: inherit
+    text-decoration: none
+
+#samsungtv
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#samsungtv .bc-description__content p
+    margin-bottom: 0
+
+#samsungtv .bc-description__content h3
+    text-align: left
+
+#samsungtv
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#samsungtv
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#samsungtv p::first-letter
+    padding-left: 0
+
+#samsungtv img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#samsungtv img:hover
+    opacity: 1
+
+[class*="__container"]
+    max-width: 1410px
+    margin: 0 auto
+    padding: 0 15px
+
+//========================================================================================================================================================
+#samsungtv .header-samsungtv
+    &__media
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 5%
+        width: 50%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+    &__image
+
+#samsungtv .spec-samsungtv
+    &__bg
+        background-color: #313131
+        //padding: 48px 84px
+        padding-top: 48px
+        padding-bottom: 48px
+        @include adaptiv-value("padding-left", 84, 20, 1)
+        @include adaptiv-value("padding-right", 84, 20, 1)
+    &__title
+        h2
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+            margin-bottom: 20px
+    &__row
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 20px
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        background: rgba(255,255,255,0.1)
+        border: 1px solid rgba(255,255,255,0.26)
+        border-radius: 15px
+        padding: 20px 15px
+        min-height: 140px
+    &__icon
+        flex: 0 0 56px
+    &__text
+        h4
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+        p
+            font-size: 14px
+            line-height: 1.2
+            color: #fff
+
+#samsungtv .matrix-samsungtv
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2075086/img6-1.jpg') 0 0 no-repeat
+        background-size: cover
+        &_1
+            background: url('https://cdn.comfy.ua/media/x/img3/2075086/img7-1.jpg') 0 0 no-repeat
+        &_2
+            background: url('https://cdn.comfy.ua/media/x/img3/2075086/img8-1.jpg') 0 0 no-repeat
+        &_3
+            background: url('https://cdn.comfy.ua/media/x/img3/2075086/img9-1.jpg') 0 0 no-repeat
+    &__text
+        max-width: 600px
+        margin: 0 auto
+        padding: 30px 15px
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+            color: #fff
+        span
+            display: block
+            @include adaptiv-value("font-size", 28, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+    &__media
+        // video
+        //     max-width: 100%
+
+#samsungtv .picture-samsungtv
+    &__title
+        h2
+            @include adaptiv-value("font-size", 60, 22, 1)
+            line-height: 1.2
+            margin-bottom: 30px
+            padding: 50px 60px 0 80px
+    &__slider
+        padding-left: 80px
+        padding-bottom: 50px
+    &__wrapper
+    &__slide
+    &__item
+        display: flex
+        flex-direction: column
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        span
+            display: block
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#samsungtv .swiper
+    &-wrapper
+    &-slide
+    &-pagination
+
+#samsungtv .picture-samsungtv-pagination
+
+#samsungtv .swiper-pagination
+    border: 1px solid #000
+    // width: 8%
+    max-width: 110px
+    margin: 0 auto
+    right: 0
+    left: 0
+    padding: 5px
+    border-radius: 10px
+
+#samsungtv .swiper-pagination-bullet
+    background-color: #757575
+    width: 10px
+    height: 10px
+
+#samsungtv .swiper-pagination-bullet-active
+    background-color: #000
+
+#samsungtv .swiper-button-prev
+
+#samsungtv .swiper-button-next
+
+#samsungtv .swiper-button-prev:after,
+#samsungtv .swiper-button-next:after
+    content: ""
+    background: url('https://cdn.comfy.ua/media/x/img3/2075086/arrow.png') 0 0 no-repeat
+    background-size: cover
+    width: 30px
+    height: 46px
+
+#samsungtv .picture-samsungtv-button-prev
+    transform: rotate(180deg)
+
+#samsungtv .picture-samsungtv-button-prev
+    // background: url('https://cdn.comfy.ua/media/x/img3/2075086/arrow.png') 0 0 no-repeat
+    // background-size: cover
+    // transform: rotate(180deg)
+
+#samsungtv .picture-samsungtv-button-next
+    // background: url('https://cdn.comfy.ua/media/x/img3/2075086/arrow.png') 0 0 no-repeat
+    // background-size: cover
+    right: 28%
+
+#samsungtv .picture-samsungtv-button-prev,
+#samsungtv .picture-samsungtv-button-next
+    top: 30%
+    background-color: #fff
+    padding: 15px 20px
+    border-radius: 50%
+
+#samsungtv .games-samsungtv
+    &__title
+        h2
+            @include adaptiv-value("font-size", 60, 22, 1)
+            line-height: 1.2
+            margin-bottom: 30px
+            padding: 50px 60px 0 80px
+    &__slider
+        padding-left: 80px
+        padding-bottom: 60px
+    &__wrapper
+    &__slide
+    &__item
+        display: flex
+        flex-direction: column
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        span
+            display: block
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#samsungtv .swiper
+    &-wrapper
+    &-slide
+
+#samsungtv .sound-samsungtv
+    &__title
+        h2
+            @include adaptiv-value("font-size", 60, 22, 1)
+            line-height: 1.2
+            margin-bottom: 30px
+            padding: 50px 60px 0 80px
+    &__slider
+        padding-left: 80px
+        padding-bottom: 60px
+    &__wrapper
+    &__slide
+    &__item
+        display: flex
+        flex-direction: column
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        span
+            display: block
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#samsungtv .smart-samsungtv
+    margin-bottom: 50px
+    &__title
+        h2
+            @include adaptiv-value("font-size", 60, 22, 1)
+            line-height: 1.2
+            margin-bottom: 30px
+            padding: 50px 60px 0 80px
+    &__slider
+        padding-left: 80px
+        padding-bottom: 60px
+    &__wrapper
+    &__slide
+    &__item
+        display: flex
+        flex-direction: column
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        span
+            display: block
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#samsungtv .swiper-button-next.swiper-button-disabled,
+#samsungtv .swiper-button-prev.swiper-button-disabled
+    opacity: 0
+
+#samsungtv .swiper-button-next, #samsungtv .swiper-button-prev
+    width: auto
+    height: auto
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1215px)
+    #samsungtv .spec-samsungtv__row
+        grid-template-columns: 1fr 1fr
+    #samsungtv .spec-samsungtv__item
+        justify-content: stretch
+
+@media screen and (max-width: 1125px)
+    #samsungtv .picture-samsungtv__title h2,
+    #samsungtv .games-samsungtv__title h2,
+    #samsungtv .sound-samsungtv__title h2,
+    #samsungtv .smart-samsungtv__title h2
+        padding: 30px 15px 0 50px
+    #samsungtv .picture-samsungtv__slider,
+    #samsungtv .games-samsungtv__slider,
+    #samsungtv .sound-samsungtv__slider,
+    #samsungtv .smart-samsungtv__slider
+        padding-left: 55px
+    #samsungtv .picture-samsungtv-button-prev
+        left: 0
+    #samsungtv .picture-samsungtv-button-prev,
+    #samsungtv .picture-samsungtv-button-next
+        top: 30%
+    #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after
+        width: 20px
+        height: 31px
+
+//@media screen and (max-width: 1024.98px)
+
+@media screen and (max-width: 991.98px)
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        padding: 5px 12px
+
+@media screen and (max-width: 767.98px)
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        top: 25%
+    #samsungtv .picture-samsungtv-button-next
+        right: 0
+    #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after
+        width: 15px
+        height: 22px
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        padding: 0px 8px
+    #samsungtv .picture-samsungtv__slider,
+    #samsungtv .games-samsungtv__slider,
+    #samsungtv .sound-samsungtv__slider,
+    #samsungtv .smart-samsungtv__slider
+        padding-left: 30px
+    #samsungtv .picture-samsungtv__title h2,
+    #samsungtv .games-samsungtv__title h2,
+    #samsungtv .sound-samsungtv__title h2,
+    #samsungtv .smart-samsungtv__title h2
+        padding: 30px 15px 0 27px
+
+@media screen and (max-width: 720px)
+    #samsungtv .header-samsungtv__text
+        left: 0
+        right: 0
+        margin: 0 auto
+        width: auto
+        padding: 0 15px
+        h2
+            text-align: center
+
+@media screen and (max-width: 601px)
+    #samsungtv .swiper-button-next.swiper-button-disabled,
+    #samsungtv .swiper-button-prev.swiper-button-disabled
+        opacity: 0.35
+    #samsungtv .picture-samsungtv__slider,
+    #samsungtv .games-samsungtv__slider,
+    #samsungtv .sound-samsungtv__slider,
+    #samsungtv .smart-samsungtv__slider
+        padding-left: 0
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        top: 30%
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        padding: 0px 8px
+    #samsungtv .picture-samsungtv__title h2,
+    #samsungtv .games-samsungtv__title h2,
+    #samsungtv .sound-samsungtv__title h2,
+    #samsungtv .smart-samsungtv__title h2
+        text-align: center
+        padding: 20px 15px 0
+
+@media screen and (max-width: 540px)
+    #samsungtv .spec-samsungtv__row
+        grid-template-columns: 1fr
+    #samsungtv .spec-samsungtv__item
+        min-height: 80px
+        justify-content: stretch
+
+@media screen and (max-width: 479.98px)
+    #samsungtv .swiper-button-prev:after, #samsungtv .swiper-button-next:after
+        display: none
+    #samsungtv .picture-samsungtv-button-prev, #samsungtv .picture-samsungtv-button-next
+        display: none
+    #samsungtv .spec-samsungtv__bg
+        padding-top: 20px
+        padding-bottom: 20px
+    #samsungtv .picture-samsungtv__title h2,
+    #samsungtv .games-samsungtv__title h2,
+    #samsungtv .sound-samsungtv__title h2,
+    #samsungtv .smart-samsungtv__title h2
+        margin-bottom: 10px
+    #samsungtv .picture-samsungtv__text,
+    #samsungtv .games-samsungtv__text,
+    #samsungtv .sound-samsungtv__text,
+    #samsungtv .smart-samsungtv__text
+        padding-top: 10px
+    #samsungtv .picture-samsungtv__text,
+    #samsungtv .games-samsungtv__text,
+    #samsungtv .sound-samsungtv__text,
+    #samsungtv .smart-samsungtv__text
+        h2,span,p
+            text-align: center
