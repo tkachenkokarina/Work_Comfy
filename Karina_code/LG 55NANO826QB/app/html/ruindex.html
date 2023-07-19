@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #lgtvqa ul,#lgtvqa ol,#lgtvqa li{list-style:none;padding:0;margin:0}#lgtvqa .bc-description__content p{margin-bottom:0}#lgtvqa .bc-description__content h3{text-align:left}#lgtvqa h1,#lgtvqa h2,#lgtvqa h3,#lgtvqa h4,#lgtvqa h5,#lgtvqa h6{text-transform:none;font-weight:bold}#lgtvqa{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#lgtvqa h1,#lgtvqa h2,#lgtvqa h3,#lgtvqa h4,#lgtvqa h5,#lgtvqa h6,#lgtvqa p{margin:0;padding:0;text-align:left}#lgtvqa p::first-letter{padding-left:0}#lgtvqa img{opacity:1;max-width:100%;display:block;margin:0 auto}#lgtvqa img:hover{opacity:1}[class*=__container]{max-width:1630px;margin:0 auto;padding:0 15px}#lgtvqa .header-lgtvqa__bg{position:relative;z-index:2}#lgtvqa .header-lgtvqa__text{position:absolute;z-index:5;top:10%;left:0;right:0;padding:0 15px;width:60%;margin:0 auto}#lgtvqa .header-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center}@media(max-width: 1630px){#lgtvqa .header-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .header-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1630px){#lgtvqa .header-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .nano-lgtvqa__bg{position:relative;z-index:2}#lgtvqa .nano-lgtvqa__text{position:absolute;z-index:5;top:10%;left:0;right:0;padding:0 15px;width:60%;margin:0 auto}#lgtvqa .nano-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .nano-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .nano-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .nano-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .proc-lgtvqa__bg{position:relative;z-index:2}#lgtvqa .proc-lgtvqa__text{position:absolute;z-index:5;top:10%;left:0;right:0;padding:0 15px;width:60%;margin:0 auto}#lgtvqa .proc-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .proc-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .proc-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .proc-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .bright-lgtvqa__box{max-width:1000px;margin:0 auto;padding-top:30px}#lgtvqa .bright-lgtvqa__text{margin-bottom:10px}#lgtvqa .bright-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center}@media(max-width: 1630px){#lgtvqa .bright-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .bright-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1630px){#lgtvqa .bright-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .control-lgtvqa__bg{position:relative;z-index:2}#lgtvqa .control-lgtvqa__text{position:absolute;z-index:5;top:10%;left:0;right:0;padding:0 15px;width:60%;margin:0 auto}#lgtvqa .control-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .control-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .control-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center;color:#fff}@media(max-width: 1630px){#lgtvqa .control-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .play-lgtvqa__box{padding-top:30px}#lgtvqa .play-lgtvqa__text{max-width:1000px;margin:0 auto}#lgtvqa .play-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center}@media(max-width: 1630px){#lgtvqa .play-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .play-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1630px){#lgtvqa .play-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .prime-lgtvqa__bg{position:relative;z-index:2}#lgtvqa .prime-lgtvqa__text{position:absolute;z-index:5;top:10%;left:0;right:0;padding:0 15px;width:60%;margin:0 auto}#lgtvqa .prime-lgtvqa__text h2{font-size:60px;line-height:1.2;margin-bottom:15px;text-align:center}@media(max-width: 1630px){#lgtvqa .prime-lgtvqa__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:-moz-calc(20px + 40 * ((100vw - 320px) / 1310));font-size:calc(20px + 40 * ((100vw - 320px) / 1310))}}#lgtvqa .prime-lgtvqa__text p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1630px){#lgtvqa .prime-lgtvqa__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}#lgtvqa .prime-lgtvqa__snoska{position:absolute;z-index:5;bottom:3%;left:0;right:0;padding:0 15px}#lgtvqa .prime-lgtvqa__snoska p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1630px){#lgtvqa .prime-lgtvqa__snoska p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:-moz-calc(16px + 4 * ((100vw - 320px) / 1310));font-size:calc(16px + 4 * ((100vw - 320px) / 1310))}}@media screen and (max-width: 1024.98px){#lgtvqa .header-lgtvqa__text,#lgtvqa .nano-lgtvqa__text,#lgtvqa .proc-lgtvqa__text,#lgtvqa .control-lgtvqa__text,#lgtvqa .prime-lgtvqa__text{width:80%;top:5%}}@media screen and (max-width: 767.98px){#lgtvqa .header-lgtvqa__text,#lgtvqa .nano-lgtvqa__text,#lgtvqa .proc-lgtvqa__text,#lgtvqa .control-lgtvqa__text,#lgtvqa .prime-lgtvqa__text{top:10%}}@media screen and (max-width: 479.98px){#lgtvqa .header-lgtvqa__text,#lgtvqa .nano-lgtvqa__text,#lgtvqa .proc-lgtvqa__text,#lgtvqa .control-lgtvqa__text,#lgtvqa .prime-lgtvqa__text{top:3%;width:auto}}
+    </style>
+
+    <div id="lgtvqa">
+        <div class="lgtvqa__container">
+            <div class="lgtvqa__header header-lgtvqa">
+                <div class="header-lgtvqa__bg">
+                    <div class="header-lgtvqa__text">
+                        <h2>Новый уровень изображения</h2>
+                        <p>HDR формат с более широким диапазоном яркости и насыщенности позволяет наслаждаться полной
+                            картинкой с цветами, близкими к естественным.</p>
+                    </div>
+                    <div class="header-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img1.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img1-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img1.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__nano nano-lgtvqa">
+                <div class="nano-lgtvqa__bg">
+                    <div class="nano-lgtvqa__text">
+                        <h2>Запатентованная технология NanoCell</h2>
+                        <p>NanoCell — это система, которая гарантирует широкий угол обзора, невероятную цветовую
+                            передачу и четкость изображения. Эта технология встречается только в телевизорах LG.</p>
+                    </div>
+                    <div class="nano-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img2.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img2-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img2.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__proc proc-lgtvqa">
+                <div class="proc-lgtvqa__bg">
+                    <div class="proc-lgtvqa__text">
+                        <h2>Чистые цвета благодаря обработке</h2>
+                        <p>Процессор α5 5-го поколения с разрешением экрана 4К будет радовать вас динамичным
+                            изображением без шумов и с сохранением всех деталей. А искусственный интеллект анализирует
+                            контент и оптимизирует настройки под него.</p>
+                    </div>
+                    <div class="proc-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img3.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img3-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img3.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Яркое изображение в любых условиях</h2>
+                        <p>Благодаря системе AI Brightness Control телевизор подстраивает яркость картинки под
+                            окружающую среду, а именно под свет. Смотрите любимые фильмы и сериалы днем и ночью с
+                            максимальным комфортом!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Объемный и мощный звук</h2>
+                        <p>Система AI Sound Pro отвечает за качество звука — она превращает 2 аудиоканала в
+                            5.1.2-канальный виртуальный объемный звук. Вы услышите совершенно новые звуки в каждом
+                            фильме, сериале и шоу. Благодаря искусственному интеллекту, эта система анализирует контент
+                            и оптимизирует звук на основе этого анализа. Персонализированный звук для каждого видео!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__control control-lgtvqa">
+                <div class="control-lgtvqa__bg">
+                    <div class="control-lgtvqa__text">
+                        <h2>Управляйте телевизором, не вставая с дивана</h2>
+                        <p>Телевизор LG NanoCell имеет функцию голосового интерфейса, благодаря чему вы можете управлять
+                            всеми функциями прямо с дивана.</p>
+                    </div>
+                    <div class="control-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img6.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img6-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img6.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Ваш умный помощник</h2>
+                        <p>LG NanoCell — это сплошной комфорт. У него есть поддержка Apple AirPlay, Google Assistant и
+                            Homekit. Вы также можете найти подключенные приборы и изменять настройки.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Скорость и комфорт поиска</h2>
+                        <p>Создавайте профиль каждого члена семьи, чтобы быстро находить любимый контент.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Смотрите все важные матчи</h2>
+                        <p>LG NanoCell имеет полезную функцию для спортивных фанатов — Sport Alerts. Включив ее,
+                            телевизор будет своевременно предупреждать вас о важных спортивных событиях.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Смотрите фильмы с удовольствием</h2>
+                        <p>С режимом FILMMAKER MODE. Именно он позволяет смотреть фильмы так, как их снял режиссер.
+                            Знаем, звучит странно, но этот режим убирает искажения структур и другие наслоения
+                            визуальных параметров.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Большая контрастность</h2>
+                        <p>Формат видеосигнала HDR 10 Pro делает любую картинку более контрастной, динамичной и яркой.
+                            Наслаждайтесь любимыми играми и фильмами по полной!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Dynamic Tone Mapping</h2>
+                        <p>Это технология, которая повышает качество изображения и делает видимыми даже самые мелкие
+                            детали!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__control control-lgtvqa">
+                <div class="control-lgtvqa__bg">
+                    <div class="control-lgtvqa__text">
+                        <h2>Играйте в игры с LG NanoCell</h2>
+                        <p>Теперь можно наслаждаться любимыми играми на большом экране, полностью погрузившись в них.
+                            Динамичность, плавность изображения и отсутствие задержек гарантированы.</p>
+                    </div>
+                    <div class="control-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img13.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img13-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img13.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__play play-lgtvqa">
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Бесперебойный игровой процесс</h2>
+                        <p>В этой модели телевизора разрыв изображения на экране минимизирован, а значит, уменьшены
+                            задержки. Теперь вы не упустите ни одной детали в игре!</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Играйте в новейшие игры</h2>
+                        <p>Поддержка Google Stadia открывает вам доступ к тысячам игр в разных жанрах. И для них вам не
+                            нужно дополнительное оборудование!</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Продолжайте с места, где остановились</h2>
+                        <p>Телевизор поддерживает игровую платформу NVIDIA GeForce Now, позволяющую играть в
+                            компьютерные игры на телевизоре. Также есть функция сохранения, поэтому вы можете начать
+                            играть с того места, где остановились на компьютере.</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img16.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Доступ к различным настройкам</h2>
+                        <p>Игровой процесс еще не был столь простым и легким. Управляйте множеством настроек через
+                            игровую панель и режим Game Optimizer.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Улучшенный игровой процесс</h2>
+                        <p>Телевизор LG NanoCell оснащен новейшими игровыми спецификациями, такими как ALLM, eARC и
+                            HGiG. Благодаря им, а также улучшенной аудиосистеме, вы в секунду погрузитесь в игру и
+                            будете наслаждаться четким глубоким изображением!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__prime prime-lgtvqa">
+                <div class="prime-lgtvqa__bg">
+                    <div class="prime-lgtvqa__text">
+                        <h2>Все подписки в одном месте</h2>
+                        <p>Смотрите любые фильмы, сериалы и шоу благодаря удобному доступу к популярным потоковым
+                            сервисам, таким как Netflix или Prime Video.</p>
+                    </div>
+                    <div class="prime-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img19.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img19-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img19.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__prime prime-lgtvqa">
+                <div class="prime-lgtvqa__bg">
+                    <div class="prime-lgtvqa__text">
+                        <h2>Забота о планете</h2>
+                        <p>В упаковке теперь используется одноцветная печать, а саму коробку можно сдать на переработку.
+                        </p>
+                    </div>
+                    <div class="prime-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img20.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img20-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img20.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="prime-lgtvqa__snoska">
+                        <p>Купить телевизор LG NanoCell в Украине можно на сайте или в фирменных магазинах Comfy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="lgtvqa">
+        <div class="lgtvqa__container">
+            <div class="lgtvqa__header header-lgtvqa">
+                <div class="header-lgtvqa__bg">
+                    <div class="header-lgtvqa__text">
+                        <h2>Новий рівень зображення</h2>
+                        <p>HDR формат з ширшим діапазоном яскравості та насиченості дозволяє насолоджуватися повною картинкою з кольорами, близькими до природних.</p>
+                    </div>
+                    <div class="header-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img1.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img1-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img1.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__nano nano-lgtvqa">
+                <div class="nano-lgtvqa__bg">
+                    <div class="nano-lgtvqa__text">
+                        <h2>Запатентована технологія NanoCell</h2>
+                        <p>NanoCell — це система, яка гарантує широкий кут огляду, неймовірну колірну передачу та чіткість зображення. Ця технологія зустрічається тільки в телевізорах компанії LG.</p>
+                    </div>
+                    <div class="nano-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img2.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img2-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img2.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__proc proc-lgtvqa">
+                <div class="proc-lgtvqa__bg">
+                    <div class="proc-lgtvqa__text">
+                        <h2>Чисті кольори завдяки обробці</h2>
+                        <p>Процесор α5 5-го покоління з роздільною здатністю екрана 4К буде радувати вас динамічним зображенням без шумів і зі збереженням всіх деталей. А штучний інтелект аналізує контент і оптимізує налаштування під нього. </p>
+                    </div>
+                    <div class="proc-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img3.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img3-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img3.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Яскраве зображення в будь-яких умовах</h2>
+                        <p>Завдяки системі AI Brightness Control телевізор підлаштовує яскравість картинки під навколишнє середовище, а саме світло. Дивіться улюблені фільми й програми вдень і вночі з максимальним комфортом!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Об'ємний і потужний звук</h2>
+                        <p>Система AI Sound Pro відповідає за якість звука — вона перетворює 2 аудіоканали в 5.1.2-канальний віртуальний об’ємний звук. Ви почуєте абсолютно нові звуки в кожному фільмі, серіалі та шоу. Завдяки штучному інтелекту ця система аналізує контент і оптимізує звук на основі цього аналізу. Персоналізований звук для кожного відео!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__control control-lgtvqa">
+                <div class="control-lgtvqa__bg">
+                    <div class="control-lgtvqa__text">
+                        <h2>Керуйте телевізором, не встаючи з дивану</h2>
+                        <p>Телевізор LG NanoCell має функцію голосового інтерфейсу, завдяки чому ви можете керувати всіма функціями прямо з дивану.</p>
+                    </div>
+                    <div class="control-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img6.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img6-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img6.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Ваш розумний помічник</h2>
+                        <p>LG NanoCell — це суцільний комфорт. Він має підтримку Apple AirPlay, Google Assistant і Homekit. Ви також можете знаходити підключені прилади та змінювати налаштування.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Швидкість і комфорт пошуку</h2>
+                        <p>Створюйте профіль на кожного члена сім'ї, щоб швидко знаходити улюблений контент.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Дивіться всі важливі матчі</h2>
+                        <p>LG NanoCell має корисну функцію для спортивних фанатів — Sport Alerts. Увімкнувши її, телевізор буде вчасно попереджувати вас про важливі спортивні події.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Дивіться фільми із задоволенням</h2>
+                        <p>З режимом FILMMAKER MODE. Саме він дозволяє дивитися фільми так, як їх зняв режисер. Знаємо, звучить дивно, але цей режим прибирає спотворення структур та інші нашарування візуальних параметрів.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Більша контрастність</h2>
+                        <p>Формат відеосигналу HDR 10 Pro робить будь-яку картинку більш контрастною, динамічною та яскравою. Насолоджуйтеся улюбленими іграми та фільмами на повну!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Dynamic Tone Mapping</h2>
+                        <p>Це технологія, яка підвищує якість зображення та робить видимими навіть найдрібніші деталі!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__control control-lgtvqa">
+                <div class="control-lgtvqa__bg">
+                    <div class="control-lgtvqa__text">
+                        <h2>Грайте в ігри з LG NanoCell</h2>
+                        <p>Тепер можна насолоджуватися улюбленими іграми на великому екрані, повністю поринувши в них. Динамічність, плавність зображення і відсутність затримок гарантовані.</p>
+                    </div>
+                    <div class="control-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img13.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img13-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img13.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__play play-lgtvqa">
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Безперебійний ігровий процес</h2>
+                        <p>В цій моделі телевізора розрив зображення на екрані мінімізований, а значить зменшені затримки. Тепер ви не пропустите жодної деталі у грі!</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Грайте в найновіші ігри</h2>
+                        <p>Підтримка Google Stadia відкриває вам доступ до тисяч ігор в різних жанрах. І для них вам не потрібне додаткове обладнання!</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="play-lgtvqa__box">
+                    <div class="play-lgtvqa__text">
+                        <h2>Продовжуйте з місця, де зупинилися</h2>
+                        <p>Телевізор підтримує ігрову платформу NVIDIA GeForce Now, яка дає змогу грати в комп'ютерні ігри на телевізорі. Також там є функція збереження, тож ви можете почати грати з того місця, де зупинилися на комп'ютері.</p>
+                    </div>
+                    <div class="play-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img16.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__bright bright-lgtvqa">
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Доступ до різних налаштувань</h2>
+                        <p>Ігровий процес ще не був таким простим і легким. Керуйте безліччю налаштувань через ігрову панель та режим Game Optimizer.</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="bright-lgtvqa__box">
+                    <div class="bright-lgtvqa__text">
+                        <h2>Покращений ігровий процес</h2>
+                        <p>Телевізор LG NanoCell оснащений новітніми ігровими специфікаціями, такими як ALLM, eARC і HGiG. Завдяки їм, а також покращеній аудіосистемі, ви за секунду поринете в гру і будете насолоджуватися чітким глибоким зображенням!</p>
+                    </div>
+                    <div class="bright-lgtvqa__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2036800/img18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__prime prime-lgtvqa">
+                <div class="prime-lgtvqa__bg">
+                    <div class="prime-lgtvqa__text">
+                        <h2>Всі підписки в одному місці</h2>
+                        <p>Дивіться будь-які фільми, серіали та шоу завдяки зручному доступу до популярних потокових сервісів, таких як Netflix або Prime Video.</p>
+                    </div>
+                    <div class="prime-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img19.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img19-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img19.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="lgtvqa__prime prime-lgtvqa">
+                <div class="prime-lgtvqa__bg">
+                    <div class="prime-lgtvqa__text">
+                        <h2>Турбота про планету</h2>
+                        <p>В пакуванні тепер використовується одноколірний друк, а саму коробку можна здати на перероблення.
+                        </p>
+                    </div>
+                    <div class="prime-lgtvqa__media">
+                        <picture>
+                            <source media="(min-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img20.jpg">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2036800/img20-m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2036800/img20.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="prime-lgtvqa__snoska">
+                        <p>Купити телевізор LG NanoCell в Україні можна на сайті або у фірмових магазинах Comfy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
