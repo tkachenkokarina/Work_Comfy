@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        [class*=-ibg]{position:relative}[class*=-ibg] img{position:absolute;width:100%;height:100%;top:0;left:0;-o-object-fit:cover;object-fit:cover}[class*=-ibg_contain] img{-o-object-fit:contain;object-fit:contain}#philipshd a{color:inherit;text-decoration:none}#philipshd ul,#philipshd ol,#philipshd li{list-style:none;padding:0;margin:0}#philipshd .bc-description__content p{margin-bottom:0}#philipshd .bc-description__content h3{text-align:left}#philipshd h1,#philipshd h2,#philipshd h3,#philipshd h4,#philipshd h5,#philipshd h6{text-transform:none;font-weight:bold}#philipshd{margin:0 auto;overflow:hidden;background-color:#fff}#philipshd h1,#philipshd h2,#philipshd h3,#philipshd h4,#philipshd h5,#philipshd h6,#philipshd p{margin:0;padding:0;text-align:left}#philipshd p::first-letter{padding-left:0}#philipshd img{opacity:1;max-width:100%;display:block;margin:0 auto}#philipshd img:hover{opacity:1}[class*=__container]{max-width:1490px;margin:0 auto;padding:0 15px}#philipshd .header-philipshd__bg{overflow:hidden;position:relative;z-index:2}#philipshd .header-philipshd__bg::after{content:"";position:absolute;z-index:3;top:0;right:50%;background:url("https://cdn.comfy.ua/media/x/img3/2075018/bg1.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;height:100%;width:100%}#philipshd .header-philipshd__logo{position:absolute;z-index:5;top:0;left:2%;right:80%}#philipshd .header-philipshd__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#philipshd .header-philipshd__item{position:relative;z-index:8;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:end;-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#philipshd .header-philipshd__text{padding-top:100px;padding-left:7%;padding-bottom:20px}#philipshd .header-philipshd__text h2{font-size:55px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1490px){#philipshd .header-philipshd__text h2{font-size:-webkit-calc(20px + 35 * ((100vw - 320px) / 1170));font-size:-moz-calc(20px + 35 * ((100vw - 320px) / 1170));font-size:calc(20px + 35 * ((100vw - 320px) / 1170))}}#philipshd .header-philipshd__text p{font-size:40px;line-height:1.3;color:#fff}@media(max-width: 1490px){#philipshd .header-philipshd__text p{font-size:-webkit-calc(16px + 24 * ((100vw - 320px) / 1170));font-size:-moz-calc(16px + 24 * ((100vw - 320px) / 1170));font-size:calc(16px + 24 * ((100vw - 320px) / 1170))}}#philipshd .header-philipshd__image-ibg{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;padding-bottom:40%}#philipshd .row-philipshd__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:20px;padding:80px 20px}#philipshd .row-philipshd__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;background:url("https://cdn.comfy.ua/media/x/img3/2075018/bg2.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#philipshd .row-philipshd__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#philipshd .row-philipshd__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}#philipshd .row-philipshd__icon{-webkit-box-flex:0;-webkit-flex:0 0 155px;-moz-box-flex:0;-ms-flex:0 0 155px;flex:0 0 155px}#philipshd .row-philipshd__text p{font-size:26px;line-height:1.2}@media(max-width: 1490px){#philipshd .row-philipshd__text p{font-size:-webkit-calc(16px + 10 * ((100vw - 320px) / 1170));font-size:-moz-calc(16px + 10 * ((100vw - 320px) / 1170));font-size:calc(16px + 10 * ((100vw - 320px) / 1170))}}#philipshd .row-philipshd__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1200px){#philipshd .row-philipshd__icon{-webkit-box-flex:0;-webkit-flex:0 0 110px;-moz-box-flex:0;-ms-flex:0 0 110px;flex:0 0 110px}}@media screen and (max-width: 991.98px){#philipshd .row-philipshd__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;padding:40px 20px}}@media screen and (max-width: 767.98px){#philipshd .header-philipshd__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#philipshd .header-philipshd__bg::after{right:0}#philipshd .header-philipshd__image-ibg{position:relative;z-index:6;padding-bottom:60%}#philipshd .header-philipshd__text{padding-left:15px;padding-right:15px;padding-bottom:20px;padding-top:80px}}@media screen and (max-width: 767.98px)and (max-width: 1490px){#philipshd .header-philipshd__text{padding-top:-webkit-calc(60px + 20 * ((100vw - 320px) / 1170));padding-top:-moz-calc(60px + 20 * ((100vw - 320px) / 1170));padding-top:calc(60px + 20 * ((100vw - 320px) / 1170))}}@media screen and (max-width: 479.98px){#philipshd .header-philipshd__logo{right:75%}#philipshd .row-philipshd__icon{-webkit-box-flex:0;-webkit-flex:0 0 70px;-moz-box-flex:0;-ms-flex:0 0 70px;flex:0 0 70px}#philipshd .row-philipshd__items{gap:15px}#philipshd .row-philipshd__inner{padding:20px 15px}}
+    </style>
+
+    <div id="philipshd">
+        <div class="philipshd__container">
+            <div class="philipshd__header header-philipshd">
+                <div class="header-philipshd__bg">
+                    <div class="header-philipshd__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2075018/img2.png" alt="">
+                    </div>
+                    <div class="header-philipshd__row">
+                        <div class="header-philipshd__item">
+                            <div class="header-philipshd__text">
+                                <h2>Хрусткі золотисті тости кожного дня</h2>
+                                <p>з тостером Daily Collection HD2582/00 від Philips</p>
+                            </div>
+                        </div>
+                        <div class="header-philipshd__image-ibg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2075018/img1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipshd__row row-philipshd">
+                <div class="row-philipshd__inner row-philipshd__inner_rev">
+                    <div class="row-philipshd__item">
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img4.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Функція високого піднімання</b> <br>дозволяє безпечно виймати маленькі скибки</p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img5.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Вбудована рамка для підігрівання</b> <br>улюблених булочок, тістечок та рогаликів
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img6.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Знімний лоток для крихт</b> <br>Легко чистити завдяки знімному лотку для крихт</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-philipshd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2075018/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipshd__inner">
+                    <div class="row-philipshd__item">
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img8.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>8 налаштувань підсмажування</b><br>дозволяють підсмажувати різні види хліба без
+                                    ризику підгоряння</p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img9.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Підігрівання, розморожування за один раз</b><br>Функція підігрівання за мить
+                                    підігріває тости, а функція розморожування дозволяє підсмажувати заморожений хліб
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img10.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Кнопка скасування</b> миттєво припиняє приготування тостів у будь-який час для
+                                    безпечної та точної роботи</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-philipshd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2075018/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipshd__inner row-philipshd__inner_rev">
+                    <div class="row-philipshd__item">
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img12.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>2 отвори зі змінною шириною для скибок різного розміру</b><br>Завдяки функції
+                                    автоцентрування скибка розташовується посередині для рівномірного підсмажування з
+                                    обох боків</p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img13.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Додатковий захист із автовимкненням</b><br>для захисту пристрою від короткого
+                                    замикання</p>
+                            </div>
+                        </div>
+                        <div class="row-philipshd__items">
+                            <div class="row-philipshd__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2075018/img14.png" alt="">
+                            </div>
+                            <div class="row-philipshd__text">
+                                <p><b>Пилезахисна кришка</b><br>для захисту від пилу та додаткової гігієнічності</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-philipshd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2075018/img11.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
