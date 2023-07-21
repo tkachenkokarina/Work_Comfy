@@ -1,0 +1,521 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#macbookair15 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#macbookair15 ul,
+#macbookair15 ol,
+#macbookair15 li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#macbookair15 .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#macbookair15 .bc-description__content h3 {
+  text-align: left;
+}
+
+#macbookair15 h1, #macbookair15 h2, #macbookair15 h3, #macbookair15 h4, #macbookair15 h5, #macbookair15 h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#macbookair15 {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#macbookair15 h1, #macbookair15 h2, #macbookair15 h3, #macbookair15 h4, #macbookair15 h5, #macbookair15 h6, #macbookair15 p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#macbookair15 p::first-letter {
+  padding-left: 0;
+}
+
+#macbookair15 img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#macbookair15 img:hover {
+  opacity: 1;
+}
+
+[class*=__container] {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#macbookair15 .macbookair15__bg {
+  background-color: #fbfbfb;
+}
+
+#macbookair15 .box-macbookair15__text {
+  padding-top: 80px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .box-macbookair15__text {
+    padding-top: -webkit-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: calc(30px + 50 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .box-macbookair15__text h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .box-macbookair15__text h2 {
+    font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: calc(18px + 22 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .box-macbookair15__image_pp {
+  padding-top: 80px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .box-macbookair15__image_pp {
+    padding-top: -webkit-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: calc(30px + 50 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .box-macbookair15__media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#macbookair15 .box-macbookair15__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+#macbookair15 .box-macbookair15__item p {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .box-macbookair15__item p {
+    font-size: -webkit-calc(15px + 35 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(15px + 35 * ((100vw - 320px) / 850));
+    font-size: calc(15px + 35 * ((100vw - 320px) / 850));
+  }
+}
+
+#macbookair15 .camera-macbookair15 {
+  background-color: #fff;
+  padding: 20px 0;
+}
+#macbookair15 .camera-macbookair15__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+#macbookair15 .camera-macbookair15__media-ibg {
+  padding-bottom: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 62%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 62%;
+          flex: 0 1 62%;
+}
+#macbookair15 .camera-macbookair15__items {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 38%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 38%;
+          flex: 0 0 38%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+#macbookair15 .camera-macbookair15__item {
+  min-height: 366px;
+  background-color: #fbfbfb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+#macbookair15 .camera-macbookair15__text {
+  padding-top: 20px;
+}
+#macbookair15 .camera-macbookair15__text p {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .camera-macbookair15__text p {
+    font-size: -webkit-calc(16px + 9 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(16px + 9 * ((100vw - 320px) / 850));
+    font-size: calc(16px + 9 * ((100vw - 320px) / 850));
+  }
+}
+
+#macbookair15 .color-macbookair15 {
+  padding-top: 80px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .color-macbookair15 {
+    padding-top: -webkit-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: calc(30px + 50 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .color-macbookair15__row {
+  padding-left: 80px;
+  max-width: 1009px;
+  margin-left: auto;
+}
+#macbookair15 .color-macbookair15__image img {
+  margin: 0;
+}
+#macbookair15 .color-macbookair15__text {
+  padding-left: 20px;
+}
+#macbookair15 .color-macbookair15__text p {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 5px 0;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .color-macbookair15__text p {
+    font-size: -webkit-calc(15px + 10 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(15px + 10 * ((100vw - 320px) / 850));
+    font-size: calc(15px + 10 * ((100vw - 320px) / 850));
+  }
+}
+
+#macbookair15 .spec-macbookair15 {
+  padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .spec-macbookair15 {
+    padding-top: -webkit-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: calc(30px + 50 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .spec-macbookair15__title h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .spec-macbookair15__title h2 {
+    font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: calc(18px + 22 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .spec-macbookair15__row {
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+#macbookair15 .spec-macbookair15__col {
+  max-width: 340px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#macbookair15 .spec-macbookair15__text {
+  padding-bottom: 40px;
+}
+#macbookair15 .spec-macbookair15__text p {
+  font-size: 25px;
+  line-height: 1.2;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .spec-macbookair15__text p {
+    font-size: -webkit-calc(14px + 11 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(14px + 11 * ((100vw - 320px) / 850));
+    font-size: calc(14px + 11 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .spec-macbookair15__line {
+  border-top: 1px solid #000;
+  padding-top: 40px;
+  width: 50%;
+}
+
+#macbookair15 .inbox-macbookair15 {
+  padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .inbox-macbookair15 {
+    padding-top: -webkit-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(30px + 50 * ((100vw - 320px) / 850));
+    padding-top: calc(30px + 50 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .inbox-macbookair15__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+#macbookair15 .inbox-macbookair15__item {
+  background-color: #fbfbfb;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .inbox-macbookair15__item {
+    padding-top: -webkit-calc(20px + 70 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(20px + 70 * ((100vw - 320px) / 850));
+    padding-top: calc(20px + 70 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .inbox-macbookair15__text h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .inbox-macbookair15__text h2 {
+    font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(18px + 22 * ((100vw - 320px) / 850));
+    font-size: calc(18px + 22 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .inbox-macbookair15__text p {
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .inbox-macbookair15__text p {
+    font-size: -webkit-calc(14px + 11 * ((100vw - 320px) / 850));
+    font-size: -moz-calc(14px + 11 * ((100vw - 320px) / 850));
+    font-size: calc(14px + 11 * ((100vw - 320px) / 850));
+  }
+}
+#macbookair15 .inbox-macbookair15__items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+#macbookair15 .inbox-macbookair15__col {
+  background-color: #fbfbfb;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1170px) {
+  #macbookair15 .inbox-macbookair15__col {
+    padding-top: -webkit-calc(20px + 30 * ((100vw - 320px) / 850));
+    padding-top: -moz-calc(20px + 30 * ((100vw - 320px) / 850));
+    padding-top: calc(20px + 30 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (max-width: 991.98px) and (max-width: 767.98px) {
+  #macbookair15 .camera-macbookair15__media-ibg {
+    padding-bottom: 162%;
+  }
+  #macbookair15 .camera-macbookair15__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  #macbookair15 .camera-macbookair15 {
+    padding: 15px 0 15px;
+  }
+  #macbookair15 .camera-macbookair15__items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  #macbookair15 .camera-macbookair15__item {
+    min-height: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 33.33333%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 33.33333%;
+            flex: 0 1 33.33333%;
+  }
+  #macbookair15 .inbox-macbookair15__row,
+  #macbookair15 .inbox-macbookair15__items {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 991.98px) and (max-width: 600px) {
+  #macbookair15 .camera-macbookair15__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #macbookair15 .color-macbookair15__row {
+    padding-left: 40px;
+  }
+  #macbookair15 .spec-macbookair15__text {
+    padding-bottom: 20px;
+  }
+  #macbookair15 .spec-macbookair15__line {
+    padding-top: 20px;
+  }
+  #macbookair15 .spec-macbookair15__title h2 {
+    margin-bottom: 20px;
+  }
+  #macbookair15 .inbox-macbookair15__row,
+  #macbookair15 .inbox-macbookair15__items {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #macbookair15 .spec-macbookair15__line {
+    padding-top: 10px;
+  }
+  #macbookair15 .spec-macbookair15__title h2 {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

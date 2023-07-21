@@ -1,0 +1,217 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1890
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+#ergotv a
+    color: inherit
+    text-decoration: none
+
+//========================================================================================================================================================
+
+[class*="-ibg"]
+    position: relative
+
+[class*="-ibg"] img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    -o-object-fit: cover
+    object-fit: cover
+
+[class*="-ibg_contain"] img
+    -o-object-fit: contain
+    object-fit: contain
+
+#ergotv
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#ergotv .bc-description__content p
+    margin-bottom: 0
+
+#ergotv .bc-description__content h3
+    text-align: left
+
+#ergotv
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#ergotv
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#ergotv p::first-letter
+    padding-left: 0
+
+#ergotv img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#ergotv img:hover
+    opacity: 1
+
+[class*="__container"]
+    max-width: 1890px
+    margin: 0 auto
+    padding: 0 15px
+
+//========================================================================================================================================================
+#ergotv .header-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__image-mob
+        display: none
+    &__box
+        position: absolute
+        z-index: 5
+        top: 40%
+        transform: translateY(-60%)
+        right: 2%
+        width: 43%
+    &__text
+        @include adaptiv-value("padding-left", 180, 10, 1)
+        position: relative
+        z-index: 2
+        &::after
+            content: 'БЕЗ'
+            position: absolute
+            z-index: 5
+            top: 70%
+            transform: translateY(-50%)
+            left: 0
+            //font-size: 200px
+            @include adaptiv-value("font-size", 200, 50, 1)
+            line-height: 1
+            color: #fff
+            opacity: 0.5
+        p
+            @include adaptiv-value("font-size", 100, 20, 1)
+            line-height: 1
+            text-transform: uppercase
+            color: #fff
+        span
+            display: block
+            @include adaptiv-value("padding-left", 90, 30, 1)
+    &__os
+        display: flex
+        align-items: flex-end
+        gap: 10px
+        position: absolute
+        z-index: 5
+        top: 58%
+        //left: 70%
+        right: 8%
+        //padding-right: 15px
+        // @include adaptiv-value("padding-top", 30, 10, 1)
+        // @include adaptiv-value("padding-left", 280, 0, 1)
+        p
+            @include adaptiv-value("font-size", 26, 10, 1)
+            line-height: 1
+            color: #d10055
+            text-transform: uppercase
+            flex: 0 0 auto
+        img
+            margin: 0
+            flex: 0 1 50%
+    &__size
+        // @include adaptiv-value("padding-top", 80, 10, 1)
+        // @include adaptiv-value("padding-left", 220, 0, 1)
+        position: absolute
+        z-index: 5
+        bottom: 10%
+        left: 70%
+        right: 3%
+        //padding-right: 15px
+        img
+            margin-right: 0
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1200px)
+    // #ergotv .header-ergotv__os
+    //     align-items: center
+    #ergotv .header-ergotv__os img
+        width: 110px
+//@media screen and (max-width: 1024.98px)
+//@media screen and (max-width: 991.98px)
+@media screen and (max-width: 767.98px)
+    #ergotv .header-ergotv__os img
+        width: 80px
+    #ergotv .header-ergotv__os
+        right: 3%
+
+@media screen and (max-width: 512px)
+    #ergotv .header-ergotv__image-mob
+        display: block
+    #ergotv .header-ergotv__image
+        display: none
+    #ergotv .header-ergotv__size
+        left: 0
+        right: 0
+        padding: 0 15px
+        bottom: auto
+        top: 85%
+        img
+            max-width: 250px
+            margin: 0 auto
+    #ergotv .header-ergotv__os
+        left: 0
+        right: 0
+        max-width: 200px
+        margin: 0 auto
+        top: 72%
+    #ergotv .header-ergotv__box
+        left: 0
+        right: 0
+        margin: 0 auto
+    #ergotv .header-ergotv__box
+        top: 35%
+        width: 50%
+    #ergotv .header-ergotv__text
+        //padding-left: 60px
+        @include adaptiv-value("padding-left", 160, 40, 1)
+
+//@media screen and (max-width: 479.98px)
