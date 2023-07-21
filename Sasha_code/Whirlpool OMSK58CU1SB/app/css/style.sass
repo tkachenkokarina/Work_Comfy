@@ -1,0 +1,729 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1300px
+    margin: 0 auto
+    padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+// @mixin fonts($fontSize, $lineHeight)
+//     font:
+//         size: $fontSize
+//     line:
+//         height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+//========================================================================================================================================================
+
+// ==========STYLES====================================================================================================
+
+/* MAIN START
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/
+
+#whirlpool
+    color: #000
+    font-size: 1em
+    line-height: 1.4
+
+    div
+        font-size: 12px
+        line-height: 15px
+
+
+    \::-moz-selection, ::selection
+        background: #efb300
+        text-shadow: none
+
+    iframe, img, svg, video
+        vertical-align: middle
+
+    small
+        line-height: 1
+
+#whirlpool .esm-wrapper
+    width: 100%
+    max-width: 960px
+    margin: 0 auto
+    position: relative
+    overflow: hidden
+    background-color: white
+    
+    h2
+        font-weight: 300
+
+    u
+        font-size: 36px
+        padding-bottom: 2px
+        border-bottom: 2px solid #efb300
+
+    a
+        text-decoration: none
+        color: #efb300
+
+        &:hover
+            color: #000
+            text-decoration: underline
+            -webkit-text-decoration-color: #efb300
+            text-decoration-color: #efb300
+
+    div
+        box-sizing: border-box
+
+#whirlpool .esm-wrapper .esm-main-header .esm-top-row
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    flex-basis: 0%
+    flex-grow: 1
+    flex-shrink: 1
+
+#whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-left-col
+    background-color: #c2c5c6
+    min-width: 300px
+    width: 50%
+    min-height: 200px
+
+#whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-left-col .esm-banner-title
+    font-size: 2.6em
+    margin: 41px 28px 33px
+    line-height: 1em
+    font-weight: 300
+
+    p
+        font-size: 1.4em
+        line-height: 22px
+        font-weight: 300
+        margin: 14px 28px
+
+#whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-right-col
+    width: 50%
+    min-width: 300px
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+#whirlpool .esm-wrapper .esm-main-header .esm-bottom-row
+    display: flex
+    align-items: stretch
+    flex-flow: row nowrap
+    position: relative
+
+#whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-left-col
+    background-color: #efb300
+    min-height: 76px
+    width: 50%
+
+#whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-right-col
+    text-align: right
+    width: 50%
+    background-color: white
+
+    img
+        width: 103px
+        height: 34px
+        margin: 24px 29px 0
+        display: inline
+
+#whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-logo
+    width: 60px
+    height: 60px
+    position: absolute
+    bottom: 46px
+    left: calc(50% - 30px)
+    z-index: 5
+
+    > img
+        width: 60px
+// =====feauteres===================================================================
+#whirlpool .esm-features
+    text-align: center
+
+    h3
+        font-size: 3em
+        margin: 36px 28px 8px
+        line-height: 1.4em
+
+#whirlpool .esm-features .esm-features-wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))
+    margin: 0 2% 30px
+
+    
+#whirlpool .esm-wrapper .esm-features .esm-features-item
+    width: 100%
+    box-sizing: border-box
+    padding: 5px 10px 0
+    position: relative
+    text-align: center
+
+    &:last-child
+        align-self: flex-start
+
+#whirlpool .esm-wrapper .esm-features .esm-features-item .esm-feature-title
+    font-weight: 300
+    font-size: 1.7em
+    line-height: 1.15em
+    text-align: center
+
+#whirlpool .esm-wrapper .esm-features .esm-features-item
+    p
+        font-size: 1em
+        line-height: 1.3em
+        margin: .7em auto 1.5em
+
+    img
+        width: 120px
+        height: 120px
+        margin: 8px auto
+        display: block
+
+#whirlpool .esm-wrapper .esm-features .esm-features-item .esm-tooltip
+    background-color: rgba(255, 255, 255, 0.9)
+    text-align: left
+    position: absolute
+    top: -20px
+    right: 100%
+    transition: all 0.3s ease-in-out
+    opacity: 0
+    visibility: hidden
+    z-index: 99
+
+    &::after
+        content: " "
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 10px 10px 0 10px
+        border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent
+        position: absolute
+        right: -15px
+        top: 24px
+        transform: rotate(-90deg)
+
+    ul
+        list-style: none
+        padding: 10px 15px
+        margin: 0
+
+    li
+        margin: 0
+        padding: 1px 0
+        white-space: nowrap
+
+#whirlpool .esm-wrapper .esm-features-more
+    background-color: #e4e4e4
+    padding: 15px 0
+
+    h2
+        font-size: 3em
+        margin: 36px 28px 8px
+        line-height: 1.4em
+
+#whirlpool .esm-wrapper .esm-features-more .esm-features-wrapper
+    justify-content: flex-start
+
+#whirlpool .esm-wrapper .esm-features-more .esm-features-item
+    flex: 0 0 25%
+#whirlpool .esm-wrapper
+    nav
+        height: 47px
+        width: 100%
+
+#whirlpool .esm-wrapper nav.sticked
+    position: fixed
+    z-index: 20
+    top: 0
+    left: 0
+    margin: 0 auto
+#whirlpool .esm-wrapper nav
+    ul
+        box-sizing: border-box
+        padding: 10px 20px
+        width: 100%
+        max-width: 960px
+        margin: 0 auto
+        background-color: #efb300
+        justify-content: space-evenly
+        align-items: center
+        display: flex
+        font-size: 1.09em
+        height: 47px
+
+    li
+        display: inline-flex
+        margin: 0
+        padding: 0
+        flex: 0 0
+    
+
+#whirlpool .esm-wrapper .esm-tech_6sense
+    padding: 36px 36px
+    margin: 0
+    text-align: center
+    display: flex
+    flex-direction: column
+
+    h2
+        font-size: 3em
+        margin: 0 10px 30px
+        line-height: 1.4em
+
+#whirlpool .esm-wrapper .esm-tech_6sense .esm-feature-image
+    width: 100%
+    max-width: 760px
+    margin: 0 auto
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row
+    display: flex
+    flex: 1 1
+    flex-wrap: wrap
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-img-1,
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-img-2
+    background-position: 50% 50%
+    background-size: cover
+    flex: 50%
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-feature-image
+    flex: 50%
+    position: relative
+    overflow: hidden
+    min-width: 300px
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-feature-image
+    video, img
+        width: 100%
+        height: 100%
+        min-width: 100%
+        min-height: 0.7282608696vw
+        -o-object-fit: cover
+        object-fit: cover
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-feature-image.esm-feature-image-6
+    background-color: #fafafa
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info
+    flex: 50%
+    padding: 28px 40px 36px 40px
+
+    h3
+        font-weight: 300
+        font-size: 3em
+        line-height: 1.1666em
+        display: inline-block
+        margin: 0 0 20px
+
+    u
+        border-bottom: 2px solid #efb300
+        text-decoration: none
+
+    h4
+        font-weight: 300
+        font-size: 1.75em
+        line-height: 1.2em
+        margin: 0 0 10px
+
+    p
+        font-size: 1em
+        line-height: 1.2em
+        margin: 0
+
+    ul
+        margin: 10px 0 0
+        padding: 0 0 0 15px
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-row-reverse
+    flex-direction: row-reverse
+
+#whirlpool .esm-wrapper .esm-tech-specs
+    padding: 0 0 25px 0
+
+    h2
+        font-size: 3em
+        margin: 0 28px 30px
+        line-height: 1.4em
+        text-align: center
+
+#whirlpool .esm-wrapper .esm-tech-specs .esm-tech-specs-wrapper
+    display: flex
+    flex-wrap: wrap
+    margin: 20px 0
+
+#whirlpool .esm-wrapper .esm-tech-specs .esm-tech-specs-wrapper .esm-tech-specs-row
+    display: flex
+    margin: 7px 0
+    padding: 0 3%
+    flex-basis: 50%
+    min-width: 300px
+    align-items: center
+
+#whirlpool .esm-wrapper .esm-tech-specs .esm-tech-specs-wrapper .esm-tech-specs-row .esm-tech-spec-desc
+    padding: 0px 10px
+    width: 43%
+    min-width: 120px
+
+#whirlpool .esm-wrapper .esm-tech-specs .esm-tech-specs-wrapper .esm-tech-specs-row .esm-tech-spec-data
+    padding: 8px 10px 7px
+    font-weight: 600
+    text-align: center
+    border: 1px solid #efb300
+    width: 57%
+    min-width: 120px
+
+#whirlpool .esm-wrapper .esm-package
+    background-color: #c2c5c6
+    display: flex
+    flex: 1 0
+    flex-wrap: wrap
+    align-items: center
+    padding: 20px 20px 22px
+    margin: 0 auto
+    justify-content: center
+
+#whirlpool .esm-wrapper .esm-package .esm-main-header
+    font-size: 3em
+    font-weight: 300
+    line-height: 1.3em
+    margin: 10px 20px
+    padding: 0
+    text-align: center
+
+#whirlpool .esm-wrapper .esm-package .esm-package-items
+    p
+        margin: 4px 20px
+        line-height: 1.42em
+        padding: 0
+
+#whirlpool .esm-wrapper .esm-good-to-know
+    background-color: #e4e4e4
+    padding: 36px 40px 22px
+
+    h2
+        font-size: 3em
+        margin: 0 28px 30px
+        line-height: 1.4em
+        padding: 0
+        text-align: center
+
+    h4
+        font-weight: 300
+        font-size: 1.7em
+        line-height: 1.3em
+        margin: 10px 0 4px
+
+    p
+        line-height: 1.7em
+        margin: 0 0 30px
+
+#whirlpool .esm-section-title
+    border-bottom: 2px solid #efb300
+    font-size: 36px
+    margin: 36px auto 8px
+    line-height: 1.4em
+    font-weight: 300
+    text-align: center
+
+#whirlpool .esm-functions-header
+    padding: 1em 15px 1.2em
+    display: block
+    background: #505050
+
+#whirlpool .esm-functions-header .esm-section-title
+    border-bottom: none
+    padding: 0
+    margin: 20px auto
+    color: #fff
+    text-align: center
+    text-decoration: underline 2px solid #efb300
+    text-underline-offset: 10px
+
+#whirlpool .esm-good-to-know .esm-section-title
+    margin: 0 auto 30px
+
+
+#whirlpool .esm-poznaj .esm-design-header
+    font-size: 3em
+    line-height: 1.3em
+    padding: 1em 15px 1.2em
+    margin-bottom: 0
+    display: block
+    color: #fff
+    text-align: center
+    background: #505050
+
+#whirlpool .esm-poznaj .esm-design-header .esm-section-title
+    border-bottom: none
+    padding: 0
+    margin: 0 auto
+    color: #fff
+    text-align: center
+    text-decoration: underline 2px solid #efb300
+    text-underline-offset: 10px
+
+
+#whirlpool .esm-wrapper .esm-tech_6sense
+    p
+        font-size: 1.3em
+        line-height: 1.3em
+        float: left
+        font-weight: normal
+        text-align: center
+        
+
+#whirlpool .esm-wrapper .esm-tech_6sense .esm-_6th
+    display: flex
+    align-items: center
+    max-width: 750px
+    margin: 0 auto
+
+#whirlpool .esm-wrapper .esm-tech_6sense .esm-_6th .esm-_6th_text
+    display: block
+    width: 100%
+
+#whirlpool .esm-wrapper .esm-tech_6sense > img
+    align-self: center
+    max-height: 300px
+    width: 100%
+    object-fit: contain
+
+#whirlpool .esm-wrapper .esm-features .esm-features-item .esm-other-feature-title,#whirlpool .esm-wrapper .esm-features .esm-features-item
+    p
+        text-align: center
+
+#whirlpool .esm-wrapper .esm-features .esm-features-item .esm-other-feature-title
+    text-align: center
+    font-size: 21px
+    font-weight: 300
+    line-height: 25px
+
+
+#whirlpool .esm-disclaimer-section .esm-common-disclaimer
+    padding: 0 15px
+    margin: 15px 0
+    text-align: center
+
+
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info
+    flex: 50%
+    padding: 28px 20px 36px 20px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-features-title
+    font-weight: 300
+    width: fit-content
+    font-size: 26px
+    line-height: 1.1666em
+    display: inline-block
+    margin: 0 0 20px
+    border-bottom: 2px solid #efb300
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-design-title
+    font-size: 26px
+    text-decoration: underline 2px solid #efb300
+    text-underline-offset: 10px
+    font-weight: 300
+    line-height: 40px
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-features-subtitle
+    font-weight: 300
+    font-size: 1.75em
+    line-height: 1.2em
+    margin: 0 0 10px
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info
+    p
+    font-size: 1em
+    line-height: 1.2em
+    margin: 0
+
+
+#whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-long-desc
+    font-weight: 300
+    font-size: 1.75em
+    line-height: 1.2em
+    margin: 10px 0
+
+
+@media (max-width: 600px)
+    #whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-left-col .esm-banner-title
+        text-align: center
+    #whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-left-col
+        flex-grow: 1    
+
+    #whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-right-col
+        width: unset
+
+    #whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-right-col
+        width: 100%
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    #whirlpool .esm-wrapper .esm-main-header .esm-bottom-row .esm-logo
+        right: 130px
+        left: unset
+
+    #whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-left-col
+        width: 100%
+
+        h2
+            font-size: 2.6em
+            margin: 41px 28px 0
+            line-height: 1em
+
+        p
+            font-size: 1.7em
+
+@media (max-width: 600px)
+    #whirlpool .esm-wrapper .esm-features .esm-features-wrapper
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr))
+
+        &.esm-center-features
+            display: flex
+            justify-content: center
+
+    @-webkit-keyframes example
+        0%
+            transform: scale(1.1)
+
+        50%
+            transform: scale(1.3)
+
+        100%
+            transform: scale(1.1)
+
+    @keyframes example
+        0%
+            transform: scale(1.1)
+
+        50%
+            transform: scale(1.3)
+
+        100%
+            transform: scale(1.1)
+
+@media (max-width: 600px)
+    #whirlpool .esm-section-title
+        margin-top: 10px
+    #whirlpool .esm-wrapper .esm-tech_6sense
+        padding: 15px
+
+    #whirlpool .esm-wrapper .esm-tech-specs .esm-tech-specs-wrapper .esm-tech-specs-row
+        display: flex
+        margin: 7px 0
+        padding: 0 3%
+        flex-basis: 50%
+        flex-grow: 1
+        min-width: 300px
+        align-items: center
+
+    #whirlpool .esm-wrapper .esm-good-to-know
+        padding: 15px
+    
+
+
+
+//===========MEDIA=============================================================================================================================================
+// @media screen and (max-width: 1540px)//     
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 959.98px)
+    #whirlpool .esm-wrapper .esm-main-header .esm-top-row .esm-left-col .esm-banner-title
+        font-size: calc( 24px + (32 - 24) * ((100vw - 320px)/(959 - 320)))
+    #whirlpool .esm-section-title
+        font-size: calc( 24px + (36 - 24) * ((100vw - 320px)/(959 - 320)))
+    #whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-features-title
+        font-size: calc( 22px + (26 - 22) * ((100vw - 320px)/(959 - 320)))
+    #whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-features-subtitle
+        font-size: calc( 19px + (21 - 19) * ((100vw - 320px)/(959 - 320)))
+    #whirlpool .esm-wrapper .esm-poznaj .esm-feature-row .esm-info .esm-design-title
+        font-size: calc( 22px + (26 - 22) * ((100vw - 320px)/(959 - 320)))
+
+
+//@media screen and (max-width: 767.98px)
+//@media screen and (max-width: 479.98px)
