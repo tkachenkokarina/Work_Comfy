@@ -94,7 +94,7 @@ button
 [class*="__container"]
     max-width: 1890px
     margin: 0 auto
-    padding: 0 15px
+    //padding: 0 15px
 
 //========================================================================================================================================================
 #ergotv .header-ergotv
@@ -168,11 +168,64 @@ button
         img
             margin-right: 0
 
+#ergotv .content-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__image-mob
+        display: none
+    &__box
+        position: absolute
+        z-index: 5
+        top: 25%
+        left: 7%
+        width: 30%
+        h2
+            //font-size: 150px
+            @include adaptiv-value("font-size", 150, 30, 1)
+            line-height: 1
+            font-weight: normal
+            opacity: 0.6
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 70, 20, 1)
+            //font-size: 70px
+            line-height: 1.2
+            letter-spacing: 1.3px
+            text-transform: uppercase
+            color: #fff
+
+#ergotv .webos-ergotv
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__image-mob
+        display: none
+    &__box
+        position: absolute
+        z-index: 5
+        top: 50%
+        right: 2%
+        width: 35%
+        p
+            margin-top: -85px
+            @include adaptiv-value("font-size", 40, 15, 1)
+            //font-size: 40px
+            line-height: 1.2
+            color: #fff
+            text-align: right
+            span
+                color: #d10055
+    &__icon
+    &__text
+
 //===========MEDIA=============================================================================================================================================
 
 @media screen and (max-width: 1200px)
-    // #ergotv .header-ergotv__os
-    //     align-items: center
+    #ergotv .webos-ergotv__box p
+        margin-top: -55px
     #ergotv .header-ergotv__os img
         width: 110px
 //@media screen and (max-width: 1024.98px)
@@ -182,11 +235,17 @@ button
         width: 80px
     #ergotv .header-ergotv__os
         right: 3%
+    #ergotv .webos-ergotv__box p
+        margin-top: -40px
 
 @media screen and (max-width: 512px)
-    #ergotv .header-ergotv__image-mob
+    #ergotv .header-ergotv__image-mob,
+    #ergotv .content-ergotv__image-mob,
+    #ergotv .webos-ergotv__image-mob
         display: block
-    #ergotv .header-ergotv__image
+    #ergotv .header-ergotv__image,
+    #ergotv .content-ergotv__image,
+    #ergotv .webos-ergotv__image
         display: none
     #ergotv .header-ergotv__size
         left: 0
@@ -213,5 +272,24 @@ button
     #ergotv .header-ergotv__text
         //padding-left: 60px
         @include adaptiv-value("padding-left", 160, 40, 1)
+    #ergotv .content-ergotv__box
+        top: 65%
+        width: auto
+        right: 0
+        left: 0
+        padding: 0 15px
+        h2,p
+            text-align: center
+    #ergotv .webos-ergotv__icon img
+        max-width: 250px
+        margin: 0 auto
+    #ergotv .webos-ergotv__box
+        width: auto
+        right: 0
+        left: 0
+        top: 30%
+        padding: 0 15px
+        p
+            text-align: center
 
 //@media screen and (max-width: 479.98px)
