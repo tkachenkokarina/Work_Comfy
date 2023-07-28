@@ -1,0 +1,370 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+[class*="__container"]
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url, $bgSize)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: $bgSize
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        h2
+            @include fonts($fontSize: 40px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+            color: #1564A1
+
+        p
+            @include fonts($fontSize: 26px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+
+#maincontent .top
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2085832/top01.png), $bgSize: 100% auto)
+        margin-bottom: 20px
+    &__inner
+        margin: 0 auto
+    &__logo
+        img
+            margin-left: auto
+            padding-top: 3%
+            padding-right: 4%
+            padding-bottom: 5%
+
+    &__item
+        // max-width: 1310px
+        margin: 0 auto
+
+#maincontent .item-box
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: flex-end)
+        width: 100%
+    &__img
+        flex: 0 1 40%
+        margin: 0 0 15px 12%
+
+    &__text
+        flex: 0 1 60%
+        margin: auto 4% 6% auto
+        p
+            span
+                @include fonts($fontSize: 30px, $lineHeight: 1.2)
+                color: #1564A1
+                font-weight: 700
+
+#maincontent .row-maincontent
+    max-width: 1310px
+    margin: 0 auto 130px auto
+    &__inner
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        h2
+            text-align: left
+        p
+            text-align: left
+            span
+                font-weight: 700
+    &__image
+        flex: 0 1 50%
+
+#maincontent .maincontent
+    &__rectangle
+        max-width: 1310px
+        margin: 0 auto 121px auto
+
+#maincontent .rectangle
+    position: relative
+    z-index: 5
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        background-color: #56C4DA
+
+        border-radius: 193px
+    &__text
+        flex: 0 1 48%
+        margin: 3% 10px 3% 7%
+        h2, p
+            text-align: left
+            color: #fff
+        h2
+            margin-bottom: 20px
+            max-width: 600px
+    &__img
+        flex: 0 1 52%
+        position: absolute
+        z-index: 8
+        bottom: 5%
+        right: 0
+
+#maincontent .control
+    margin-bottom: 35px
+    &__inner
+        gap: 80px
+        margin-bottom: 50px
+    &__item
+        flex: 0 1 50%
+    &__media
+        position: relative
+        z-index: 5
+
+    &__image
+        flex: 0 1 50%
+    &__image_pos
+        position: absolute
+        z-index: 6
+        top: 29%
+        right: -25%
+        width: 85%
+
+#maincontent .general-block
+    &__item
+        flex: 0 1 33%
+    &__image
+        flex: 0 1 33%
+
+#maincontent .bottom
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2085832/bottom01.png), $bgSize: cover)
+    &__inner
+        position: relative
+        z-index: 8
+    &__text
+        padding: 18% 10px 2%
+        max-width: 730px
+        margin: 0 auto
+        h2
+            color: #34DDFF
+        p
+            color: #fff
+
+
+    &__img
+        position: absolute
+        z-index: 9
+        opacity: 0.3
+        top: 10%
+        right: 3%
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1310px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (40 - 22) * ((100vw - 320px)/(1310 - 320)))
+            p
+                font-size: calc( 12px + (26 - 12) * ((100vw - 320px)/(1310 - 320)))
+    #maincontent .item-box
+        p
+            span
+                font-size: calc( 14px + (30 - 14) * ((100vw - 320px)/(1310 - 320)))
+    #maincontent .item-box
+        &__text
+            margin-bottom: 11%
+
+@media screen and (max-width: 1300px)
+    #maincontent .rectangle
+        &__inner
+            border-radius: 145px
+        &__img
+            bottom: 10%
+            right: -5%
+            img
+                width: 85%
+    #maincontent .bottom
+        &__img
+            img
+                width: calc( 40px + (400 - 40) * ((100vw - 320px)/(1300 - 320)))
+@media screen and (max-width: 1100px)
+    #maincontent .rectangle
+        margin-bottom: 5%
+        &__img
+            right: -8%
+    #maincontent .control
+        gap: 60px
+@media screen and (max-width: 1024.98px)
+    #maincontent .row-maincontent
+        margin-bottom: 50px
+    #maincontent .rectangle
+        &__img
+            right: -14%
+            img
+                width: 75%
+@media screen and (max-width: 991.98px)
+    #maincontent .item-box
+        &__img
+            margin-left: 8%
+    #maincontent .rectangle
+        &__inner
+            flex-direction: column-reverse
+            border-radius: 60px
+        &__text
+            margin: 10px 25px
+            h2, p
+                text-align: center
+            h2
+                max-width: 100%
+                margin-top: 10px
+        &__img
+            position: unset
+            img
+                width: auto
+    #maincontent .control
+        flex-direction: column
+        gap: 0
+        margin-bottom: 20px
+        &__text
+            h2, p
+                text-align: center
+        &__image_pos
+            top: 35%
+            right: -27%
+            img
+                width: 85%
+    #maincontent .general-block
+        flex-direction: column
+        &__text
+            h2, p
+                text-align: center
+    #maincontent .row-maincontent .general-block
+        &__text
+            h2
+                margin-top: 0
+@media screen and (max-width: 767.98px)
+    #maincontent .top
+        &__bg
+            margin-bottom: 0
+        &__logo
+            img
+                width: 30%
+    #maincontent .item-box
+        &__text
+            margin-bottom: 7%
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+        &__text
+            padding: 10px 0
+            h2
+                margin-top: 10px
+                text-align: center
+            p
+                text-align: center
+    #maincontent .rectangle
+        &__img
+            margin: 0 3%
+    #maincontent .control
+        margin-bottom: 0
+        &__inner
+            gap: 0
+            margin-bottom: 15px
+
+@media screen and (max-width: 565.98px)
+    #maincontent .item-box
+        &__text
+            margin-bottom: 2%
+
+@media screen and (max-width: 479.98px)
+    #maincontent .top
+        &__logo
+            img
+                padding-bottom: 11%
+    #maincontent .item-box
+        &__img
+            margin-left: 0
+        &__text
+            margin-right: 0
+@media screen and (max-width: 345.98px)
+    #maincontent .top
+        &__logo
+            img
+                padding-bottom: 15%
