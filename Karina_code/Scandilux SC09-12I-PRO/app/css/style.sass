@@ -109,6 +109,7 @@ button
         left: 0
         right: 0
         margin: 0 auto
+        padding: 0 15px
         p
             @include adaptiv-value("font-size", 50, 20, 1)
             line-height: 1.4
@@ -142,7 +143,7 @@ button
             z-index: 5
             top: 0
             left: 0
-            background: url('../img/img14.png') 0 0 no-repeat
+            background: url('https://cdn.comfy.ua/media/x/img3/2069015/img14.png') 0 0 no-repeat
             background-size: cover
             width: 235px
             height: 96px
@@ -160,7 +161,7 @@ button
                 left: 0
                 right: 0
                 margin: 0 auto
-                background: url('../img/img2.png') 0 0 no-repeat
+                background: url('https://cdn.comfy.ua/media/x/img3/2069015/img2.png') 0 0 no-repeat
                 background-size: cover
                 width: 37px
                 height: 34px
@@ -173,7 +174,7 @@ button
                 left: 0
                 right: 0
                 margin: 0 auto
-                background: url('../img/img3.png') 0 0 no-repeat
+                background: url('https://cdn.comfy.ua/media/x/img3/2069015/img3.png') 0 0 no-repeat
                 background-size: cover
                 width: 37px
                 height: 25px
@@ -186,10 +187,21 @@ button
                 left: 0
                 right: 0
                 margin: 0 auto
-                background: url('../img/img4.png') 0 0 no-repeat
+                background: url('https://cdn.comfy.ua/media/x/img3/2069015/img4.png') 0 0 no-repeat
                 background-size: cover
                 width: 48px
                 height: 22px
+    &__snoska
+        max-width: 1000px
+        margin: 0 auto
+        @include adaptiv-value("padding-top", 80, 30, 1)
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.4
+            text-align: center
+            span
+                color: #37E0FF
+                font-weight: bold
 
 #scandiluxsc .row-scandiluxsc
     max-width: 1233px
@@ -248,7 +260,7 @@ button
 
 #scandiluxsc .function-scandiluxsc
     @include adaptiv-value("padding-top", 50, 30, 1)
-    padding-bottom: 30px
+    //padding-bottom: 30px
     &__title
         h2
             @include adaptiv-value("font-size", 50, 20, 1)
@@ -294,8 +306,38 @@ button
             text-align: center
         p
             @include adaptiv-value("font-size", 18, 16, 1)
-            line-height: 25px
+            line-height: 1.4
             text-align: center
+
+#scandiluxsc .grid-scandiluxsc
+    @include adaptiv-value("padding-top", 80, 30, 1)
+    padding-bottom: 30px
+    max-width: 1310px
+    margin: 0 auto
+    &__row
+        display: flex
+        gap: 15px
+        margin-bottom: 30px
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 15px
+    &__image
+    &__bg
+        background: #F3F3F3
+        border-radius: 50px
+    &__text
+        max-width: 905px
+        margin: 0 auto
+        padding: 20px 15px
+        p
+            @include adaptiv-value("font-size", 20, 16, 1)
+            line-height: 1.4
+            text-align: center
+            span
+                color: #37E0FF
+                font-weight: bold
 
 //===========MEDIA=============================================================================================================================================
 
@@ -358,12 +400,24 @@ button
             color: #000
         &:not(:last-child)
             margin-bottom: 15px
-@media screen and (max-width: 600px)
+@media screen and (max-width: 660px)
     #scandiluxsc .header-scandiluxsc__box
         top: 39%
+@media screen and (max-width: 600px)
     #scandiluxsc .header-scandiluxsc__row
         grid-template-columns: 1fr
         justify-items: center
     #scandiluxsc .header-scandiluxsc__box
         top: 32%
-    //@media screen and (max-width: 479.98px)
+@media screen and (max-width: 479.98px)
+    #scandiluxsc .grid-scandiluxsc__item,
+    #scandiluxsc .grid-scandiluxsc__row
+        gap: 8px
+    #scandiluxsc .header-scandiluxsc__box
+        top: 27%
+@media screen and (max-width: 409px)
+    #scandiluxsc .header-scandiluxsc__box
+        top: 23%
+@media screen and (max-width: 340px)
+    #scandiluxsc .header-scandiluxsc__box
+        top: 20%
