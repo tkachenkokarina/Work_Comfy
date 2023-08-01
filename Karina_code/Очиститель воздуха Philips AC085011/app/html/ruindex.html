@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+    
+    <style>
+        #philipsac ul,#philipsac ol,#philipsac li{list-style:none;padding:0;margin:0}#philipsac .bc-description__content p{margin-bottom:0}#philipsac .bc-description__content h3{text-align:left}#philipsac h1,#philipsac h2,#philipsac h3,#philipsac h4,#philipsac h5,#philipsac h6{text-transform:none;font-weight:bold}#philipsac{margin:0 auto;overflow:hidden;background-color:#fff}#philipsac h1,#philipsac h2,#philipsac h3,#philipsac h4,#philipsac h5,#philipsac h6,#philipsac p{margin:0;padding:0;text-align:left}#philipsac p::first-letter{padding-left:0}#philipsac img{opacity:1;max-width:100%;display:block;margin:0 auto}#philipsac img:hover{opacity:1}[class*=__container]{max-width:1500px;margin:0 auto;padding:0 15px}#philipsac .header-philipsac{padding-top:30px}#philipsac .header-philipsac__text h2{font-size:36px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1300px){#philipsac .header-philipsac__text h2{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 980));font-size:calc(20px + 16 * ((100vw - 320px) / 980))}}#philipsac .header-philipsac__text p{font-size:32px;line-height:1.2;text-align:center;margin-bottom:15px}@media(max-width: 1300px){#philipsac .header-philipsac__text p{font-size:-webkit-calc(16px + 16 * ((100vw - 320px) / 980));font-size:calc(16px + 16 * ((100vw - 320px) / 980))}}#philipsac .header-philipsac__media{position:relative;z-index:2}#philipsac .header-philipsac__icon{position:absolute;z-index:5;top:0;left:0;right:80%}#philipsac .col-philipsac{padding:50px 40px}#philipsac .col-philipsac__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#philipsac .col-philipsac__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}#philipsac .col-philipsac__icon{-webkit-box-flex:0;-webkit-flex:0 0 192px;-moz-box-flex:0;-ms-flex:0 0 192px;flex:0 0 192px}#philipsac .col-philipsac__text h2{font-size:36px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#philipsac .col-philipsac__text h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .col-philipsac__text p{font-size:24px;line-height:1.2}@media(max-width: 1300px){#philipsac .col-philipsac__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 980));font-size:calc(16px + 8 * ((100vw - 320px) / 980))}}#philipsac .row-philipsac{padding:0px 40px 50px}#philipsac .row-philipsac__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#philipsac .row-philipsac__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#philipsac .row-philipsac__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipsac .row-philipsac__text{width:90%;margin:0 auto;padding:10px 0}#philipsac .row-philipsac__text h2{font-size:36px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#philipsac .row-philipsac__text h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .row-philipsac__text p{font-size:24px;line-height:1.2}@media(max-width: 1300px){#philipsac .row-philipsac__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 980));font-size:calc(16px + 8 * ((100vw - 320px) / 980))}}#philipsac .row-philipsac__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipsac .air-philipsac{padding-top:50px}@media(max-width: 1300px){#philipsac .air-philipsac{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 980));padding-top:calc(20px + 30 * ((100vw - 320px) / 980))}}#philipsac .air-philipsac__title h2{font-size:36px;line-height:1.2;margin-bottom:20px;text-align:center}@media(max-width: 1300px){#philipsac .air-philipsac__title h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .air-philipsac__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px}#philipsac .air-philipsac__text{padding-top:15px}#philipsac .air-philipsac__text h4{font-size:36px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#philipsac .air-philipsac__text h4{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .air-philipsac__text p{font-size:24px;line-height:1.2;margin-bottom:15px}@media(max-width: 1300px){#philipsac .air-philipsac__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 980));font-size:calc(16px + 8 * ((100vw - 320px) / 980))}}#philipsac .air-philipsac__text span{font-size:18px;line-height:1.2;display:block}@media(max-width: 1300px){#philipsac .air-philipsac__text span{font-size:-webkit-calc(14px + 4 * ((100vw - 320px) / 980));font-size:calc(14px + 4 * ((100vw - 320px) / 980))}}#philipsac .hepa-philipsac{padding-top:50px}@media(max-width: 1300px){#philipsac .hepa-philipsac{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 980));padding-top:calc(20px + 30 * ((100vw - 320px) / 980))}}#philipsac .hepa-philipsac__title h2{font-size:36px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1300px){#philipsac .hepa-philipsac__title h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .hepa-philipsac__title p{font-size:24px;line-height:1.2;text-align:center;margin-bottom:15px}@media(max-width: 1300px){#philipsac .hepa-philipsac__title p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 980));font-size:calc(16px + 8 * ((100vw - 320px) / 980))}}#philipsac .hepa-philipsac__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px}#philipsac .hepa-philipsac__text{padding-top:15px}#philipsac .hepa-philipsac__text h2{font-size:36px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#philipsac .hepa-philipsac__text h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 980));font-size:calc(18px + 18 * ((100vw - 320px) / 980))}}#philipsac .hepa-philipsac__text p{font-size:24px;line-height:1.2}@media(max-width: 1300px){#philipsac .hepa-philipsac__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 980));font-size:calc(16px + 8 * ((100vw - 320px) / 980))}}#philipsac .snoska-philipsac{padding-bottom:30px;padding-top:50px}@media(max-width: 1300px){#philipsac .snoska-philipsac{padding-top:-webkit-calc(20px + 30 * ((100vw - 320px) / 980));padding-top:calc(20px + 30 * ((100vw - 320px) / 980))}}#philipsac .snoska-philipsac__list{max-width:1420px;margin:0 auto}#philipsac .snoska-philipsac__list li{font-size:14px;line-height:1.2}@media screen and (max-width: 991.98px){#philipsac .col-philipsac__icon{-webkit-box-flex:0;-webkit-flex:0 0 150px;-moz-box-flex:0;-ms-flex:0 0 150px;flex:0 0 150px}}@media screen and (max-width: 767.98px){#philipsac .air-philipsac__text,#philipsac .hepa-philipsac__text{padding:10px 0 20px}#philipsac .air-philipsac__text h4,#philipsac .air-philipsac__text p,#philipsac .air-philipsac__text span,#philipsac .air-philipsac__text h2,#philipsac .hepa-philipsac__text h4,#philipsac .hepa-philipsac__text p,#philipsac .hepa-philipsac__text span,#philipsac .hepa-philipsac__text h2{text-align:center}#philipsac .row-philipsac__text{padding:20px 0 10px;width:auto}#philipsac .row-philipsac__text h2,#philipsac .row-philipsac__text p{text-align:center}#philipsac .row-philipsac__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#philipsac .col-philipsac__icon{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#philipsac .col-philipsac{padding:30px 15px}#philipsac .row-philipsac{padding:0 15px 30px}}@media screen and (max-width: 479.98px){#philipsac .hepa-philipsac__row,#philipsac .air-philipsac__row{grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:0}#philipsac .col-philipsac__icon{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#philipsac .col-philipsac,#philipsac .row-philipsac{padding:20px 0}}
+    </style>
+
+    <div id="philipsac">
+        <div class="philipsac__container">
+            <div class="philipsac__header header-philipsac">
+                <div class="header-philipsac__bg">
+                    <div class="header-philipsac__text">
+                        <h2>Дышите чистым и здоровым воздухом</h2>
+                        <p>Компактный воздухоочиститель 800i серии AC0850/11</p>
+                    </div>
+                    <div class="header-philipsac__media">
+                        <div class="header-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img2.png" alt="">
+                        </div>
+                        <div class="header-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__col col-philipsac">
+                <div class="col-philipsac__row">
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img3.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Удаляет мельчайшие частицы размером 0.003 мкм</h2>
+                            <p>в комнатах площадью 22 м² (GB/t) - 49 м² (NRCC)*</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img4.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Высокотехнологичный датчик</h2>
+                            <p>Точно сканирует воздух 1000 раз в секунду, обнаруживает такие загрязнения как споры
+                                плесени, бактерии, смог, аллергены клеща, летучие органические соединения, шерсть
+                                животных, вирусы, пыльца, пыль, чрезвычайно мелкие частицы и в автоматическом режиме
+                                выбирает скорость очистки в соответствии со степенью загрязнения.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img5.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Фильтр NanoProtect НЕРА</h2>
+                            <p>С помощью NanoProtect НЕРА фильтрует до 99,9% загрязняющих веществ, которые меньше
+                                мельчайшего вируса - 0,020 мкм, до 0,003** мкм, включая смог, аллергены, бактерии и
+                                опасные газы.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img6.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Чрезвычайно тихий и почти незаметный</h2>
+                            <p>Пока вы спите, очиститель работает в режиме сна почти бесшумно.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img7.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Очистка воздуха СADR*** 190 м3/ч</h2>
+                            <p>Потужний повітряний потік ефективно покриває простір площею до 49 м2 і розподіляє чисте
+                                повітря в кожному куточку приміщення.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img8.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Технология AeraSense</h2>
+                            <p>Мгновенно просматривайте информацию о качестве воздуха в реальном времени с помощью
+                                цветной индикации воздуха на дисплее или через приложение Air+.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__row row-philipsac">
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Удаляет до 99,9% вирусов и аэрозолей из воздуха</h2>
+                            <p>Захватывает частицы в воздухе, включая те, которые могут содержать вирусы, вызывающие
+                                респираторные заболевания. Независимо протестирован Airmid Health group Ltd на предмет
+                                удаления до 99,9% вирусов и частиц из воздуха1. Также протестирован на коронавирус2.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Фильтрует 99,5% частиц размером 0,003 микрона</h2>
+                            <p>Трехуровневая фильтрация с помощью фильтра NanoProtect HEPA, фильтра с активированным
+                                углем и фильтра предварительной очистки захватывает 99,5% сверхмелких частиц размером
+                                0,003 микрона3, благодаря чему вы защищены от PM2.5, бактерий, пыльцы, пыли, частиц кожи
+                                домашних животных, газов и других загрязняющих веществ Сертифицирован Европейским
+                                центром исследования проблем аллергии (ECARF).</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Умные датчики для эффективной очистки</h2>
+                            <p>Сканирует воздух 1000 раз в секунду для обнаружения сверхмелких частиц. Уведомляет о
+                                качестве воздуха в режиме реального времени и разумно выбирает соответствующую скорость
+                                для вашего дома (в автоматическом режиме).</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Протестировано и сертифицировано — качество, которому можно доверять</h2>
+                            <p>Перед выпуском с завода и сертификацией Европейским центром исследования проблем аллергии
+                                (European Center for Allergy Research Foundation) очистители Philips проходят 170
+                                обязательных и жестких проверок. Их тщательно проверят на длительность эксплуатации и
+                                надежность для непрерывной работы в режиме 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Легкий уход</h2>
+                            <p>Очиститель воздуха легко чистить благодаря компактному и простому цилиндрическому
+                                пластиковому корпусу. В нем установлен встроенный фильтр 3-в-1, поэтому необходимость
+                                изменять каждый фильтр отдельно отпадает.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Отображение качества воздуха</h2>
+                            <p>Мгновенно просматривайте информацию о качестве воздуха дома в реальном времени. Дисплей
+                                показывает уровень аллергенов и частиц PM2.5 в цифровом формате и с интуитивным цветным
+                                кольцом.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img14.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Отслеживание и управление с помощью приложения Air+</h2>
+                            <p>Следите за качеством воздуха и управляйте воздухоочистителем в любое время и в любом
+                                месте с помощью приложения Air+. Получайте персональные рекомендации, а также
+                                уведомления, когда качество воздуха ухудшается. Контролируйте состояние воздуха дома с
+                                помощью голосовых команд из Amazon Alexa или Google Home5.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img15.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Автоматический режим и 3 уровня ручной скорости</h2>
+                            <p>Включайте изделие в автоматическом режиме или выбирайте один из 3 уровней скорости: режим
+                                сна, скорость 1 и турборежим.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img16.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Умный индикатор фильтра</h2>
+                            <p>Воздухоочиститель точно вычисляет продолжительность службы фильтра на основе уровня
+                                загрязнения и времени работы. Он сообщает, когда нужно заменить фильтр для легкого
+                                ухода.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img17.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Низкий уровень потребления энергии</h2>
+                            <p>Благодаря энергоэффективному дизайну воздухоочиститель работает с максимальной мощностью
+                                20 Вт. Это равнозначно одной лампе накаливания.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img18.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__air air-philipsac">
+                <div class="air-philipsac__title">
+                    <h2>Очистите воздух одним нажатием кнопки</h2>
+                </div>
+                <div class="air-philipsac__row">
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img19.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Автоматический режим</h4>
+                            <p>Непрерывно сканирует воздух, обнаруживая загрязнение и подстраивая рабочую мощность под
+                                текущую потребность.</p>
+                        </div>
+                    </div>
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img20.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Турборежим</h4>
+                            <p>Очищает воздух с наибольшей мощностью (CADR) 190 м³/ч, устраняя пыль и микробы всего за
+                                16 минут*.</p>
+                            <span>*Из воздуха, проходящего через фильтр, теоретическое время очистки рассчитывается
+                                делением помещения площадью 48 м³ (при условии, что помещение составляет 20 м² у пола и
+                                2,4 м высотой) на CADR 190 м³/час.</span>
+                        </div>
+                    </div>
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img21.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Ночний режим</h4>
+                            <p>Работает почти бесшумно, заботясь о правильной гигиене сна.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__hepa hepa-philipsac">
+                <div class="hepa-philipsac__title">
+                    <h2>Как работает фильтрация?</h2>
+                    <p>Только оригинальные фильтры Philips гарантируют заявленную производителем производительность и
+                        эффективность!</p>
+                </div>
+                <div class="hepa-philipsac__row">
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img22.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>1. Фильтр предварительной очистки</h2>
+                            <p>Первый слой предварительной очистки, задерживает большие частицы, такие как пыль и шерсть
+                                животных.</p>
+                        </div>
+                    </div>
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img23.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>2. NanoProtect HEPA</h2>
+                            <p>Второй слой NanoProtect HEPA фильтрует частицы PM2,5 (смог); аллергены; пыльца растений,
+                                аллергены клещей, шерсть животных, споры плесени и грибов, бактерии и вирусы, включая
+                                частицы размером до 0,003 мкм**.</p>
+                        </div>
+                    </div>
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img24.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>3. Фильтр с активированным углем</h2>
+                            <p>Третий слой фильтра с активированным углем нейтрализует потенциально вредные газы,
+                                включая летучие органические соединения, и устраняет неприятные запахи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__snoska snoska-philipsac">
+                <ul class="snoska-philipsac__list">
+                    <li>*GB\T - стандарт по качеству воздуха, Китай. NRCC – стандарт по качеству воздуха, Канада.</li>
+                    <li>**Испытано с частицами 0,003 мкм IUTA в соответствии с DIN71460-1 с использованием аэрозоля
+                        NaCl.</li>
+                    <li>***CADR (Clean Air Delivery Rate) – уровень очистки воздуха. Коэффициент подачи чистого воздуха:
+                        протестирован третьей стороной в соответствии с GB/T 18801-2015.</li>
+                    <li><sup>1</sup>Тестирование на коэффициент уменьшения количества микробов проведено в Airmid Health
+                        group Ltd.
+                        в камере для тестирования 28,5 м³ с вирусом гриппа типа А (H1N1) с воздушно-капельным механизмом
+                        передачи. Воздухоочиститель сам по себе не защищает от Covid-19, но может быть частью плана
+                        защиты себя и своей семьи (Агентство по охране окружающей среды США).</li>
+                    <li><sup>2</sup>Тестирование на коэффициент уменьшения количества микробов проведено в сторонней
+                        лаборатории в
+                        камере для тестирования с вирусом птичьего бронхита с помощью фильтра Philips HEPA NanoProtect
+                    </li>
+                    <li><sup>3</sup>С воздух, проходящий сквозь фильтр; проверено аэрозолем NaCl iUTA в соответствии с
+                        DIN71460-1.
+                    </li>
+                    <li><sup>4</sup>Доступно с ноября 2022 г. (время обновления по беспроводному каналу может отличаться
+                        в
+                        зависимости от рынка).</li>
+                    <li><sup>5</sup>Доступность Alexa и Google Home зависит от вашего местоположения.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="philipsac">
+        <div class="philipsac__container">
+            <div class="philipsac__header header-philipsac">
+                <div class="header-philipsac__bg">
+                    <div class="header-philipsac__text">
+                        <h2>Дихайте чистим і здоровим повітрям</h2>
+                        <p>Компактний очищувач повітря 800i серії AC0850/11</p>
+                    </div>
+                    <div class="header-philipsac__media">
+                        <div class="header-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img2.png" alt="">
+                        </div>
+                        <div class="header-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__col col-philipsac">
+                <div class="col-philipsac__row">
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img3.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Видаляє найдрібніші часточки розміром 0.003 мкм</h2>
+                            <p>в кімнатах площею 22 м² (GB/t) - 49 м² (NRCC)*</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img4.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Високотехнологічний датчик</h2>
+                            <p>Cканує повітря 1000 разів на секунду, виявляє такі забруднення як спори цвілі, бактерії,
+                                смог, алергени кліща, летючі органічні сполуки, шерсть тварин, вірусів, пилок, пил,
+                                надзвичайно дрібні частинки і в автоматичному режимі обирає швидкість очищення
+                                відповідно до ступеню забруднення.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img5.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Фільтр NanoProtect НЕРА</h2>
+                            <p>Фільтрує до 99,97% забруднюючих речовин, менших за найдрібніший відомий вірус – 0,020
+                                мкм, а саме до 0,003** мкм, включаючи смог, алергени, бактерії та небезпечні гази.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img6.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Надзвичайно тихий та майже непомітний</h2>
+                            <p>Поки ви спите, очищувач повітря працює в режимі сну майже безшумно.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img7.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Висока ефективність – СADR*** 190 м3/год</h2>
+                            <p>Потужний повітряний потік ефективно покриває простір площею до 49 м2 і розподіляє чисте
+                                повітря в кожному куточку приміщення.</p>
+                        </div>
+                    </div>
+                    <div class="col-philipsac__items">
+                        <div class="col-philipsac__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img8.png" alt="">
+                        </div>
+                        <div class="col-philipsac__text">
+                            <h2>Технологія AeraSense</h2>
+                            <p>Миттєво переглядайте інформацію про якість повітря вдома у реальному часі за допомогою
+                                кольоровоїї індикації повітря на дисплеї або через додаток Air+.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__row row-philipsac">
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Видаляє до 99,9% вірусів та аерозолів із повітря</h2>
+                            <p>Захоплює частинки в повітрі, включаючи ті, які можуть містити віруси, що можуть
+                                спричиняти респіраторні захворювання. Незалежно протестовано Airmid Health group Ltd на
+                                предмет видалення до 99,9% вірусів і частинок із повітря<sup>1</sup>. Також протестовано
+                                на коронавірус<sup>2</sup>.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Фільтрує 99,5% частинок розміром 0,003 мікрона</h2>
+                            <p>Трирівнева фільтрація за допомогою фільтра NanoProtect HEPA, фільтра з активованим
+                                вугіллям і фільтра попереднього очищення захоплює 99,5% наддрібних частинок розміром
+                                0,003 мікрона<sup>3</sup>, завдяки чому ви захищені від PM2.5, бактерій, пилку, пилу,
+                                часточок шкіри домашніх тварин, газів та інших забруднюючих речовин. Сертифіковано
+                                Європейським центром дослідження проблем алергії (ECARF).</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Розумні датчики для ефективного очищення</h2>
+                            <p>Сканує повітря 1000 разів на секунду для виявлення наддрібних частинок. Повідомляє про
+                                якість повітря у режимі реального часу і обирає відповідну швидкість для вашого дому (в
+                                автоматичному режимі).</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Протестовано та сертифіковано — якість, якій можна довіряти</h2>
+                            <p>Перед випуском із заводу та сертифікацією Європейським центром дослідження проблем
+                                алергії (European Center for Allergy Research Foundation) очищувачі Philips проходять
+                                170 обов’язкових та жорстких перевірок. Їх ретельно перевірять на тривалість
+                                експлуатації та надійність для безперервної роботи в режимі 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Легкий догляд</h2>
+                            <p>Фільтр очищувача повітря легко чистити завдяки компактному та простому циліндричному
+                                пластиковому корпусу. В ньому встановлено вбудований фільтр 3-в-1, який рекомендовано
+                                замінювати 1 раз на 12 місяців.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Відображення якості повітря</h2>
+                            <p>Миттєво переглядайте інформацію про якість повітря вдома у реальному часі за допомогою
+                                кольоровоїї індикації повітря на дисплеї.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img14.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Відстеження і керування за допомогою додатка Air+</h2>
+                            <p>Стежте за якістю повітря і керуйте очищувачем повітря у будь-який час і будь-де за
+                                допомогою додатка Air+. Отримуйте персоналізовані рекомендації, а також сповіщення, коли
+                                якість повітря погана. Контролюйте стан повітря вдома за допомогою голосових команд з
+                                Amazon Alexa або Google Home<sup>5</sup>.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img15.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Автоматичний режим та 3 рівні ручної швидкості</h2>
+                            <p>Вмикайте виріб в автоматичному режимі або вибирайте один із 3 рівнів швидкості: режим
+                                сну, швидкість 1 та турборежим.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img16.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner row-philipsac__inner_rev">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Розумний індикатор фільтра</h2>
+                            <p>Очищувач повітря точно обчислює тривалість служби фільтра на основі рівня забруднення та
+                                часу роботи. Він сповіщає, коли потрібно замінити фільтр для легкого догляду.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img17.png" alt="">
+                    </div>
+                </div>
+                <div class="row-philipsac__inner">
+                    <div class="row-philipsac__item">
+                        <div class="row-philipsac__text">
+                            <h2>Низький рівень споживання енергії</h2>
+                            <p>Завдяки енергоефективному дизайну очищувач повітря працює з максимальною потужністю 20
+                                Вт. Це рівнозначно одній лампі розжарювання.</p>
+                        </div>
+                    </div>
+                    <div class="row-philipsac__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2420973/img18.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__air air-philipsac">
+                <div class="air-philipsac__title">
+                    <h2>Очистіть повітря одним натисканням кнопки</h2>
+                </div>
+                <div class="air-philipsac__row">
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img19.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Автоматичний режим</h4>
+                            <p>Безперервно сканує повітря, виявляючи забруднення і підлаштовує робочу потужність під
+                                поточну потребу.</p>
+                        </div>
+                    </div>
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img20.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Турборежим</h4>
+                            <p>Очищає повітря з найбільшою потужністю (CADR) 190 м³/год, усуваючи пил і мікроби всього
+                                за 16 хвилин*.</p>
+                            <span>*З повітря, що проходить через фільтр, теоретичний час очищення розраховується
+                                діленням приміщення площею 48 м³ (за умови, що приміщення становить 20 м² біля підлоги і
+                                2,4 м заввишки) на CADR 190 м³/год.</span>
+                        </div>
+                    </div>
+                    <div class="air-philipsac__col">
+                        <div class="air-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img21.png" alt="">
+                        </div>
+                        <div class="air-philipsac__text">
+                            <h4>Нічний режим</h4>
+                            <p>Працює майже безшумно, піклуючись про правильну гігієну сну.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__hepa hepa-philipsac">
+                <div class="hepa-philipsac__title">
+                    <h2>Як працює фільтрація?</h2>
+                    <p>Тільки оригінальні фільтри Philips гарантують заявлену виробником продуктивність і ефективність!
+                    </p>
+                </div>
+                <div class="hepa-philipsac__row">
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img22.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>1. Фільтр попередньої очистки</h2>
+                            <p>Перший шар попереднього очищенння, затримує великі часточки, такі як пил і шерсть тварин.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img23.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>2. NanoProtect HEPA</h2>
+                            <p>Другий шар NanoProtect HEPA фільтрує частинки PM2,5 (смог); алергени; пилок рослин,
+                                алергени кліщів, шерсть тварин, спори цвілі і грибів, бактерії і віруси, в тому числі
+                                частинки розміром до 0,003 мкм**.</p>
+                        </div>
+                    </div>
+                    <div class="hepa-philipsac__col">
+                        <div class="hepa-philipsac__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2420973/img24.png" alt="">
+                        </div>
+                        <div class="hepa-philipsac__text">
+                            <h2>3. Фільтр з активованим вугіллям</h2>
+                            <p>Третій шар фільтра з активованим вугіллям нейтралізує потенційно шкідливі гази, в тому числі летючі органічні сполуки, і усуває неприємні запахи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="philipsac__snoska snoska-philipsac">
+                <ul class="snoska-philipsac__list">
+                    <li>*GB\T - стандарт щодо якості повітря, Китай. NRCC - стандарт щодо якості повітря, Канада.\</li>\
+                    <li>**Випробувано з частинками 0,003 мкм IUTA відповідно до DIN71460-1 з використанням аерозолю NaCl.</li>
+                    <li>***CADR (Clean Air Delivery Rate) - рівень очищення повітря. Коефіцієнт подачі чистого повітря: протестовано третьою стороною відповідно до GB/T 18801-2015.</li>
+                    <li><sup>1</sup>Тестування на коефіцієнт зменшення кількості мікробів проведено в Airmid Health group Ltd. в камері для тестування 28,5 м³ із вірусом грипу типу А (H1N1) з повітряно-краплинним механізмом передачі. Очищувач повітря сам по собі не захищає від Covid-19, але може бути частиною плану захисту себе та своєї родини (Агентство з охорони довкілля США).</li>
+                    <li><sup>2</sup>Тестування на коефіцієнт зменшення кількості мікробів проведено в зовнішній лабораторії у камері для тестування з вірусом пташиного бронхіту за допомогою фільтра Philips HEPA NanoProtect</li>
+                    <li><sup>3</sup>З повітря, яке проходить крізь фільтр; перевірено аерозолем NaCl iUTA відповідно до DIN71460-1.</li>
+                    <li><sup>4</sup>Доступно з листопада 2022 р. (час оновлення по бездротовому каналу може відрізнятися залежно від ринку).</li>
+                    <li><sup>5</sup>Доступність Alexa та Google Home залежить від вашого місця перебування.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
