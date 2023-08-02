@@ -1,0 +1,338 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1520px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 36px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+        h3
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin-bottom: 10px
+        ul, li
+            list-style: disc
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+    &__row
+        max-width: 1300px
+        margin: 0 auto
+#maincontent .philips-hx6857
+    &__box
+        margin-bottom: 50px
+
+#maincontent .box-top
+    &__bg
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        top: 50%
+        left: 4%
+        bottom: 30%
+        max-width: 500px
+        p
+            span
+                @include fonts($fontSize: 34px, $lineHeight: 1.2)
+                color: #fff
+        h2
+            color: #fff
+
+#maincontent .philips-hx6857
+    &__inner
+        max-width: 1300px
+        margin: 0 auto
+    &__header
+        h3
+            color: #009899
+            text-align: center
+        p
+            max-width: 50%
+            margin-left: 15px
+            span
+                @include fonts($fontSize: 28px, $lineHeight: 1.2)
+                font-weight: 600
+
+#maincontent .box-col
+    &__item
+        @include flex-box($justifyContent: flex-start, $alignItems: center)
+        margin: 0 0.83em 2.08em
+    &__img
+        flex: 0 1 20%
+    &__text
+        flex: 0 1 80%
+        padding: 15px 3%
+        p
+            span
+                @include fonts($fontSize: 32px, $lineHeight: 1.2)
+
+#maincontent .box-compare
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: stretch)
+        gap: 15px
+        margin-bottom: 15px
+    &__item
+        flex: 0 1 33%
+        padding: 15px
+
+        img
+            margin: 0 auto
+    &__images
+        @include flex-box($justifyContent: center, $alignItems: center)
+
+#maincontent .compare
+    &__inner
+        align-items: center
+        gap: 20px
+    &__item
+        margin-left: 15px
+        &:nth-child(1)
+            flex: 0 1 40%
+        &:nth-child(2)
+            flex: 0 1 25%
+        &:nth-child(3)
+            flex: 0 1 30%
+        p
+            text-align: left
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        gap: 2.5em
+        margin-bottom: 20px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+
+#maincontent .box-table
+    &__header
+        h3
+            text-align: center
+            margin-bottom: 20px
+    &__cells
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+    &__cell
+        min-width: 147px
+    &__cell_text
+        grid-column: 1/-1
+        background: #ccebff
+        h3
+            margin-top: 10px
+            padding-left: 15px
+    &__text
+        p
+            margin-top: 10px
+            text-align: center
+
+#maincontent .bottom-box
+    max-width: 1300px
+    margin: 0 auto 15px
+    &__list
+        ul, li
+            @include fonts($fontSize: 14px, $lineHeight: 1.2)
+            list-style: none
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1500px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (36 - 22) * ((100vw - 320px)/(1500 - 320)))
+            h3
+                font-size: calc( 20px + (32 - 20) * ((100vw - 320px)/(1500 - 320)))
+            p, ul, li
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1500 - 320)))
+    #maincontent .box-top
+        &__text
+            p
+                span
+                    font-size: calc( 18px + (34 - 18) * ((100vw - 320px)/(1500 - 320)))
+    #maincontent .box-col
+        &__text
+            p
+                span
+                    font-size: calc( 20px + (32 - 20) * ((100vw - 320px)/(1500 - 320)))
+    #maincontent .philips-hx6857
+        &__header
+            p
+                span
+                    font-size: calc( 15px + (28 - 15) * ((100vw - 320px)/(1500 - 320)))
+    #maincontent .bottom-box
+        &__list
+            ul, li
+                font-size: calc( 8px + (14 - 8) * ((100vw - 320px)/(1500 - 320)))
+
+@media screen and (max-width: 1300px)
+    #maincontent .philips-hx6857
+        &__header
+            p
+                max-width: 100%
+@media screen and (max-width: 1024.98px)
+
+@media screen and (max-width: 991.98px)
+    #maincontent .row-maincontent
+        &__inner
+            gap: 1em
+@media screen and (max-width: 767.98px)
+    #maincontent .philips-hx6857
+        &__box
+            margin-bottom: 15px
+    #maincontent .box-top
+        &__text
+            top: 40%
+    #maincontent .box-compare
+        &__inner
+            flex-direction: column
+            gap: 0
+        &__item
+            padding: 5px 15px
+            img
+                width: 50%
+    #maincontent .compare
+        &__inner
+            gap: 0
+        &__item
+            &:nth-child(2)
+                margin-left: 0
+        & .block__images
+            width: 50%
+            margin: 0 auto
+    #maincontent .row-maincontent
+        margin-bottom: 0.5em
+        &__inner
+            flex-direction: column
+            gap: 0
+        &__image
+            img
+                max-width: 85%
+                margin: 0 auto
+        &__text
+            padding: 0 20px
+            h3, p
+                text-align: center
+    #maincontent .box-table
+        &__cells
+            overflow-x: scroll
+
+@media screen and (max-width: 479.98px)
+    #maincontent .box-top
+        &__img
+            margin-bottom: 10px
+        &__text
+            position: unset
+
+            h2
+                color: #000
+                text-align: center
+                margin-top: 10px
+            p
+                text-align: center
+                span
+                    color: #000
+    #maincontent .box-col
+        &__item
+            flex-direction: column
+            margin: 0 0 1em
+        &__img
+            img
+                width: 85%
+                margin: 0 auto
+        &__text
+            p
+                text-align: center
+    
