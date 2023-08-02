@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #tefalmaster a{color:inherit;text-decoration:none}#tefalmaster ul,#tefalmaster ol,#tefalmaster li{list-style:none;padding:0;margin:0}#tefalmaster .bc-description__content p{margin-bottom:0}#tefalmaster .bc-description__content h3{text-align:left}#tefalmaster h1,#tefalmaster h2,#tefalmaster h3,#tefalmaster h4,#tefalmaster h5,#tefalmaster h6{text-transform:none;font-weight:bold}#tefalmaster{margin:0 auto;overflow:hidden;max-width:1440px}#tefalmaster h1,#tefalmaster h2,#tefalmaster h3,#tefalmaster h4,#tefalmaster h5,#tefalmaster h6,#tefalmaster p{margin:0;padding:0;text-align:left}#tefalmaster p::first-letter{padding-left:0}#tefalmaster img{opacity:1;max-width:100%;display:block;margin:0 auto}#tefalmaster img:hover{opacity:1}#tefalmaster .tefalmaster__container{max-width:1340px;margin:0 auto;padding:0 15px}#tefalmaster .tefalmaster__bg{background-color:#afdce5}#tefalmaster .tefalmaster__logo{background:url("https://cdn.comfy.ua/media/x/img3/2436978/line.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:219px}#tefalmaster .tefalmaster__logo img{padding-top:50px;padding-left:50px;padding-right:15px;margin:0}@media(max-width: 1340px){#tefalmaster .tefalmaster__logo img{padding-left:-webkit-calc(15px + 35 * ((100vw - 320px) / 1020));padding-left:calc(15px + 35 * ((100vw - 320px) / 1020))}}#tefalmaster .header-tefalmaster__media{position:relative;z-index:2}#tefalmaster .header-tefalmaster__line{position:absolute;z-index:5;bottom:3%;left:0;right:0;background:url("https://cdn.comfy.ua/media/x/img3/2436978/line1.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:257px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:10px 15px}#tefalmaster .header-tefalmaster__row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:15px}#tefalmaster .header-tefalmaster__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:15px}#tefalmaster .header-tefalmaster__icon{-webkit-box-flex:0;-webkit-flex:0 0 150px;-moz-box-flex:0;-ms-flex:0 0 150px;flex:0 0 150px}#tefalmaster .header-tefalmaster__text h2{font-size:18px;line-height:1.2;margin-bottom:5px;text-transform:uppercase}@media(max-width: 1340px){#tefalmaster .header-tefalmaster__text h2{font-size:-webkit-calc(10px + 8 * ((100vw - 320px) / 1020));font-size:calc(10px + 8 * ((100vw - 320px) / 1020))}}#tefalmaster .header-tefalmaster__text p{font-size:16px;line-height:1.2}@media(max-width: 1340px){#tefalmaster .header-tefalmaster__text p{font-size:-webkit-calc(10px + 6 * ((100vw - 320px) / 1020));font-size:calc(10px + 6 * ((100vw - 320px) / 1020))}}#tefalmaster .header-tefalmaster__text p:not(:last-child){margin-bottom:15px}#tefalmaster .comfort-tefalmaster__bg{position:relative;z-index:2}#tefalmaster .comfort-tefalmaster__top{position:absolute;z-index:5;top:10%;right:8%}#tefalmaster .comfort-tefalmaster__top h2{font-size:30px;line-height:1.2;text-transform:uppercase;text-align:center;color:#494848;position:relative;z-index:2}@media(max-width: 1340px){#tefalmaster .comfort-tefalmaster__top h2{font-size:-webkit-calc(12px + 18 * ((100vw - 320px) / 1020));font-size:calc(12px + 18 * ((100vw - 320px) / 1020))}}#tefalmaster .comfort-tefalmaster__top h2::after{content:"";position:absolute;z-index:5;bottom:-21px;right:-30px;background:url("https://cdn.comfy.ua/media/x/img3/2436978/img6.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:112px;height:44px}#tefalmaster .comfort-tefalmaster__top h2::before{content:"";position:absolute;z-index:5;top:-20px;left:-30px;background:url("https://cdn.comfy.ua/media/x/img3/2436978/img5.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:112px;height:44px}#tefalmaster .comfort-tefalmaster__col{position:absolute;z-index:5;top:1%;left:3%;right:60%}#tefalmaster .comfort-tefalmaster__col-image{max-width:520px;position:relative;z-index:2}#tefalmaster .comfort-tefalmaster__text{position:absolute;z-index:5}#tefalmaster .comfort-tefalmaster__text p{font-size:18px;line-height:1.2;text-transform:uppercase;width:70%;color:#fff}@media(max-width: 1340px){#tefalmaster .comfort-tefalmaster__text p{font-size:-webkit-calc(8px + 10 * ((100vw - 320px) / 1020));font-size:calc(8px + 10 * ((100vw - 320px) / 1020))}}#tefalmaster .comfort-tefalmaster__text_1{top:12%;left:30%}#tefalmaster .comfort-tefalmaster__text_2{top:35%;left:30%}#tefalmaster .comfort-tefalmaster__text_3{top:55%;left:30%}#tefalmaster .comfort-tefalmaster__text_4{top:80%;left:30%}#tefalmaster .comfort-tefalmaster__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:absolute;z-index:5;bottom:0;right:1%;left:70%}#tefalmaster .seal-tefalmaster__bg{position:relative;z-index:2}#tefalmaster .seal-tefalmaster__icon{position:absolute;z-index:5}#tefalmaster .seal-tefalmaster__icon_1{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:10%;right:60%}#tefalmaster .seal-tefalmaster__icon_2{top:5%;right:3%;left:58%}#tefalmaster .safe-tefalmaster__bg{position:relative;z-index:2}#tefalmaster .safe-tefalmaster__icon{position:absolute;z-index:4;top:6%;left:45%;right:40%}#tefalmaster .safe-tefalmaster__left{position:absolute;z-index:5;top:3%;left:3%;width:55%}#tefalmaster .safe-tefalmaster__left-box{padding-left:110px;padding-top:15px;position:absolute;z-index:5;top:40%;left:3%;width:55%}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__left-box{padding-left:-webkit-calc(0px + 110 * ((100vw - 320px) / 1020));padding-left:calc(0px + 110 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__left-box h4{font-size:25px;line-height:1.2;text-transform:uppercase;color:#494848;margin-bottom:15px}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__left-box h4{font-size:-webkit-calc(16px + 9 * ((100vw - 320px) / 1020));font-size:calc(16px + 9 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__left-box p{font-size:16px;line-height:1.2;color:#494848}#tefalmaster .safe-tefalmaster__left-text{margin-bottom:20px;padding-left:110px}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__left-text{padding-left:-webkit-calc(0px + 110 * ((100vw - 320px) / 1020));padding-left:calc(0px + 110 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__left-text h2{font-size:35px;line-height:1.2;text-transform:uppercase;color:#494848;margin-bottom:15px}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__left-text h2{font-size:-webkit-calc(13px + 22 * ((100vw - 320px) / 1020));font-size:calc(13px + 22 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__left-text p{font-size:20px;line-height:1.2;text-transform:uppercase;color:#494848}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__left-text p{font-size:-webkit-calc(12px + 8 * ((100vw - 320px) / 1020));font-size:calc(12px + 8 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__left-image img{margin:0}#tefalmaster .safe-tefalmaster__right-text{position:absolute;z-index:5;top:3%;right:3%;width:30%}#tefalmaster .safe-tefalmaster__right-text p{font-size:25px;line-height:1.2;color:#494848;text-align:right}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__right-text p{font-size:-webkit-calc(12px + 13 * ((100vw - 320px) / 1020));font-size:calc(12px + 13 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__right-text p:not(:last-child){margin-bottom:15px}#tefalmaster .safe-tefalmaster__box{position:absolute;z-index:5;top:60%;left:10%;width:35%;background:url("https://cdn.comfy.ua/media/x/img3/2436978/line2.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:370px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#tefalmaster .safe-tefalmaster__box-text{padding:20px}#tefalmaster .safe-tefalmaster__box-text h2{font-size:30px;line-height:1.3;text-transform:uppercase;color:#494848;margin-bottom:15px}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__box-text h2{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1020));font-size:calc(16px + 14 * ((100vw - 320px) / 1020))}}#tefalmaster .safe-tefalmaster__box-text p{font-size:20px;line-height:1.2;color:#494848}@media(max-width: 1340px){#tefalmaster .safe-tefalmaster__box-text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1020));font-size:calc(16px + 4 * ((100vw - 320px) / 1020))}}@media screen and (max-width: 1200px){#tefalmaster .safe-tefalmaster__box{top:62%;width:50%;min-height:300px}#tefalmaster .header-tefalmaster__icon{-webkit-box-flex:0;-webkit-flex:0 0 110px;-moz-box-flex:0;-ms-flex:0 0 110px;flex:0 0 110px}}@media screen and (max-width: 1152px){#tefalmaster .comfort-tefalmaster__text_1{top:8%}#tefalmaster .comfort-tefalmaster__text_2{top:30%}#tefalmaster .comfort-tefalmaster__text_3{top:52%}#tefalmaster .comfort-tefalmaster__text_4{top:77%}}@media screen and (max-width: 1024.98px){#tefalmaster .comfort-tefalmaster__text p{width:80%}#tefalmaster .safe-tefalmaster__box{top:66%;width:53%;min-height:250px}#tefalmaster .safe-tefalmaster__left-box{top:43%}}@media screen and (max-width: 991.98px){#tefalmaster .tefalmaster__logo img{max-width:400px}#tefalmaster .header-tefalmaster__line{position:relative;z-index:5;margin-top:-100px}#tefalmaster .header-tefalmaster__row{grid-template-columns:1fr 1fr;padding:10px}}@media screen and (max-width: 942px){#tefalmaster .safe-tefalmaster__box{position:relative;z-index:2;width:auto;left:0;right:0;margin-top:-80px}#tefalmaster .safe-tefalmaster__box-text h2,#tefalmaster .safe-tefalmaster__box-text p{text-align:center}#tefalmaster .safe-tefalmaster__left-box{top:38%}}@media screen and (max-width: 767.98px){#tefalmaster .header-tefalmaster__icon{-webkit-box-flex:0;-webkit-flex:0 0 80px;-moz-box-flex:0;-ms-flex:0 0 80px;flex:0 0 80px}#tefalmaster .header-tefalmaster__row{grid-template-columns:1fr}#tefalmaster .comfort-tefalmaster__top h2::after{width:66px;height:26px;bottom:-12px;right:-18px}#tefalmaster .comfort-tefalmaster__top h2::before{width:66px;height:26px;top:-12px;left:-18px}#tefalmaster .seal-tefalmaster__icon_1{left:2%;right:79%}}@media screen and (max-width: 699px){#tefalmaster .safe-tefalmaster__box{margin-top:0}#tefalmaster .safe-tefalmaster__left-box{top:36%}}@media screen and (max-width: 650px){#tefalmaster .comfort-tefalmaster__text p{width:92%;font-size:8px}#tefalmaster .safe-tefalmaster__left-box p{font-size:13px}#tefalmaster .safe-tefalmaster__left-box h4{margin-bottom:8px}}@media screen and (max-width: 511px){#tefalmaster .safe-tefalmaster__left{width:58%}#tefalmaster .safe-tefalmaster__left-box{width:80%}}@media screen and (max-width: 479.98px){#tefalmaster .tefalmaster__logo img{max-width:250px;padding-top:30px}#tefalmaster .tefalmaster__logo{min-height:130px}#tefalmaster .header-tefalmaster__line{margin-top:-45px}}@media screen and (max-width: 427px){#tefalmaster .comfort-tefalmaster__text p{font-size:6px}#tefalmaster .comfort-tefalmaster__top h2::after,#tefalmaster .comfort-tefalmaster__top h2::before{width:60px;height:22px}#tefalmaster .safe-tefalmaster__left-box{position:unset;padding:10px;width:auto;background:url(https://cdn.comfy.ua/media/x/img3/2436978/line2.png) 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#tefalmaster .safe-tefalmaster__left-box h4,#tefalmaster .safe-tefalmaster__left-box p{text-align:center}}@media screen and (max-width: 366px){#tefalmaster .comfort-tefalmaster__text p{font-size:6px}}
+    </style>
+
+    <div id="tefalmaster">
+        <div class="tefalmaster__bg">
+            <div class="tefalmaster__logo">
+                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img1.png" alt="">
+            </div>
+            <div class="tefalmaster__container">
+                <div class="tefalmaster__header header-tefalmaster">
+                    <div class="header-tefalmaster__media">
+                        <div class="header-tefalmaster__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2436978/img2.png" alt="">
+                        </div>
+                        <div class="header-tefalmaster__line">
+                            <div class="header-tefalmaster__row">
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-1.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>Инжектированный уплотнитель в крышке</h2>
+                                        <p>Контейнеры MASTER SEAL не пропускают воздух и микробы. А все благодаря
+                                            немецкой
+                                            технологии изготовления крышек, она обеспечивает надежное прилегание крышки
+                                            к
+                                            контейнеру.</p>
+                                        <p>С MASTER SEAL твои продукты будут храниться дольше!</p>
+                                    </div>
+                                </div>
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-2.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>Безопасные
+                                            на 100% </h2>
+                                        <p>Не содержат ВРА и подходят для детского питания</p>
+                                    </div>
+                                </div>
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-3.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>100% герметичность</h2>
+                                        <p>Без запахов и протеканий</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__comfort comfort-tefalmaster">
+                <div class="comfort-tefalmaster__bg">
+                    <div class="comfort-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img4.png" alt="">
+                    </div>
+                    <div class="comfort-tefalmaster__box">
+                        <div class="comfort-tefalmaster__top">
+                            <h2>Удобные и <br>надежные на 100%</h2>
+                        </div>
+                        <div class="comfort-tefalmaster__col">
+                            <div class="comfort-tefalmaster__col-image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img7.png" alt="">
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_1">
+                                <p>Безопасно разогревать
+                                    в микроволновой печи</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_2">
+                                <p>Безопасное хранение в морозильной камере до -40°C</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_3">
+                                <p>Можно мыть в посудомоечной машине</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_4">
+                                <p>Мерная шкала</p>
+                            </div>
+                        </div>
+                        <div class="comfort-tefalmaster__items">
+                            <div class="comfort-tefalmaster__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img8.png" alt="">
+                            </div>
+                            <div class="comfort-tefalmaster__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img9.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__seal seal-tefalmaster">
+                <div class="seal-tefalmaster__bg">
+                    <div class="seal-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img10.png" alt="">
+                    </div>
+                    <div class="seal-tefalmaster__icon seal-tefalmaster__icon_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img11.png" alt="">
+                    </div>
+                    <div class="seal-tefalmaster__icon seal-tefalmaster__icon_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__safe safe-tefalmaster">
+                <div class="safe-tefalmaster__bg">
+                    <div class="safe-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img13.png" alt="">
+                    </div>
+                    <div class="safe-tefalmaster__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img14.png" alt="">
+                    </div>
+                    <div class="safe-tefalmaster__left">
+                        <div class="safe-tefalmaster__left-text">
+                            <h2>Свежесть до 2-х раз дольше</h2>
+                            <p>срок годности</p>
+                        </div>
+                        <div class="safe-tefalmaster__left-image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2436978/img15.png" alt="">
+                        </div>
+                    </div>
+                    <div class="safe-tefalmaster__left-box">
+                        <h4>Дни</h4>
+                        <p>Сравнивая хранение продуктов в контейнере для еды Master Seal (в холодильнике) с
+                            обычным хранением продуктов (в холодильнике). Испытания проведены институтом питания
+                            (ISUN) в Мюнстере — университет прикладных наук, 02.07.2020. От качества продуктов
+                            зависит, на сколько долго еда будет оставаться свежей.
+                        </p>
+                    </div>
+                    <div class="safe-tefalmaster__right">
+                        <div class="safe-tefalmaster__right-text">
+                            <p>от 0,15 л
+                                <br>до 10,6 л
+                            </p>
+                            <p>квадратной,
+                                <br>прямоугольной
+                                <br>и круглой формы
+                            </p>
+                        </div>
+                    </div>
+                    <div class="safe-tefalmaster__box">
+                        <div class="safe-tefalmaster__box-text">
+                            <h2>Я сохраню свежесть твоих продуктов!</h2>
+                            <p>Контейнеры MASTER SEAL FRESH сохраняют продукты свежими значительно дольше. Ешь блюда
+                                в течение недели — вкус, как в первый день.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="tefalmaster">
+        <div class="tefalmaster__bg">
+            <div class="tefalmaster__logo">
+                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img1.png" alt="">
+            </div>
+            <div class="tefalmaster__container">
+                <div class="tefalmaster__header header-tefalmaster">
+                    <div class="header-tefalmaster__media">
+                        <div class="header-tefalmaster__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2436978/img2ua.png" alt="">
+                        </div>
+                        <div class="header-tefalmaster__line">
+                            <div class="header-tefalmaster__row">
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-1.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>Інжектований ущільнювач у кришці</h2>
+                                        <p>Контейнери MASTER SEAL не пропускають повітря та мікроби. А все завдяки
+                                            німецькій технології виготовлення кришок — вона забезпечує надійне
+                                            прилягання кришки до контейнера.</p>
+                                        <p>З MASTER SEAL твої продукти зберігатимуться довше!</p>
+                                    </div>
+                                </div>
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-2.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>Безпечні на 100%</h2>
+                                        <p>Не містять ВРА та підходять для дитячого харчування</p>
+                                    </div>
+                                </div>
+                                <div class="header-tefalmaster__item">
+                                    <div class="header-tefalmaster__icon">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img3-3.png" alt="">
+                                    </div>
+                                    <div class="header-tefalmaster__text">
+                                        <h2>100% герметичність</h2>
+                                        <p>Без запахів та протікань</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__comfort comfort-tefalmaster">
+                <div class="comfort-tefalmaster__bg">
+                    <div class="comfort-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img4.png" alt="">
+                    </div>
+                    <div class="comfort-tefalmaster__box">
+                        <div class="comfort-tefalmaster__top">
+                            <h2>Зручні та <br>надійні на 100%</h2>
+                        </div>
+                        <div class="comfort-tefalmaster__col">
+                            <div class="comfort-tefalmaster__col-image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img7.png" alt="">
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_1">
+                                <p>Безпечно розігрівати у мікрохвильовій печі</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_2">
+                                <p>Безпечне зберігання у морозильній камері до -40°C</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_3">
+                                <p>Можна мити у посудомийній машині</p>
+                            </div>
+                            <div class="comfort-tefalmaster__text comfort-tefalmaster__text_4">
+                                <p>Мірна шкала</p>
+                            </div>
+                        </div>
+                        <div class="comfort-tefalmaster__items">
+                            <div class="comfort-tefalmaster__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img8ua.png" alt="">
+                            </div>
+                            <div class="comfort-tefalmaster__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2436978/img9ua.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__seal seal-tefalmaster">
+                <div class="seal-tefalmaster__bg">
+                    <div class="seal-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img10.png" alt="">
+                    </div>
+                    <div class="seal-tefalmaster__icon seal-tefalmaster__icon_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img11ua.png" alt="">
+                    </div>
+                    <div class="seal-tefalmaster__icon seal-tefalmaster__icon_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img12ua.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tefalmaster__safe safe-tefalmaster">
+                <div class="safe-tefalmaster__bg">
+                    <div class="safe-tefalmaster__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img13.png" alt="">
+                    </div>
+                    <div class="safe-tefalmaster__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2436978/img14ua.png" alt="">
+                    </div>
+                    <div class="safe-tefalmaster__left">
+                        <div class="safe-tefalmaster__left-text">
+                            <h2>СВІЖІСТЬ ДО 2-Х РАЗІВ ДОВШЕ</h2>
+                            <p>термін придатності</p>
+                        </div>
+                        <div class="safe-tefalmaster__left-image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2436978/img15ua.png" alt="">
+                        </div>
+                    </div>
+                    <div class="safe-tefalmaster__left-box">
+                        <h4>дні</h4>
+                        <p>Порівнюючи зберігання продуктів у контейнері для їжі Master Seal (у холодильнику) зі
+                            звичайним зберіганням продуктів (у холодильнику). Випробування проведені інститутом сталого
+                            харчування (ISUN) у Мюнстері — університет прикладних наук, 02.07.2020. Тривалість свіжості
+                            залежить від якості продуктів.
+                        </p>
+                    </div>
+                    <div class="safe-tefalmaster__right">
+                        <div class="safe-tefalmaster__right-text">
+                            <p>від 0,15 л<br>до 10,6 л</p>
+                            <p>квадратної,<br>прямокутної та<br>круглої форми
+                            </p>
+                        </div>
+                    </div>
+                    <div class="safe-tefalmaster__box">
+                        <div class="safe-tefalmaster__box-text">
+                            <h2>Я збережу свіжість твоїх продуктів!</h2>
+                            <p>Контейнери MASTER SEAL FRESH зберігають продукти свіжими значно довше. Готуй страви та
+                                насолоджуйся ними протягом тижня — смак,
+                                як у перший день.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
