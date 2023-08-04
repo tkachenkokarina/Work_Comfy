@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #samsungdv ul,
+        #samsungdv ol,
+        #samsungdv li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #samsungdv .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #samsungdv .bc-description__content h3 {
+            text-align: left
+        }
+
+        #samsungdv h1,
+        #samsungdv h2,
+        #samsungdv h3,
+        #samsungdv h4,
+        #samsungdv h5,
+        #samsungdv h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #samsungdv {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #samsungdv h1,
+        #samsungdv h2,
+        #samsungdv h3,
+        #samsungdv h4,
+        #samsungdv h5,
+        #samsungdv h6,
+        #samsungdv p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #samsungdv p::first-letter {
+            padding-left: 0
+        }
+
+        #samsungdv img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #samsungdv img:hover {
+            opacity: 1
+        }
+
+        #samsungdv .samsungdv__container {
+            max-width: 1410px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #samsungdv .samsungdv__box {
+            padding-top: 20px
+        }
+
+        #samsungdv .samsungdv__text {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 10px
+        }
+
+        #samsungdv .samsungdv__text h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .samsungdv__text h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .samsungdv__text p {
+            font-size: 18px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        #samsungdv .samsungdv__text span {
+            font-size: 28px;
+            line-height: 1.2;
+            text-align: center;
+            display: block;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .samsungdv__text span {
+                font-size: -webkit-calc(18px + 10 * ((100vw - 320px) / 1090));
+                font-size: calc(18px + 10 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .bg-samsungdv__media {
+            position: relative;
+            z-index: 2
+        }
+
+        #samsungdv .bg-samsungdv__text {
+            position: absolute;
+            z-index: 5;
+            top: 1%;
+            left: 0;
+            right: 0;
+            width: 50%;
+            margin: 0 auto
+        }
+
+        #samsungdv .bg-samsungdv__text h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .bg-samsungdv__text h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .col-samsungdv {
+            padding-top: 20px
+        }
+
+        #samsungdv .col-samsungdv__title h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 50px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .col-samsungdv__title h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .col-samsungdv__row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px
+        }
+
+        #samsungdv .col-samsungdv__text {
+            padding-top: 10px
+        }
+
+        #samsungdv .col-samsungdv__text h2 {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .col-samsungdv__text h2 {
+                font-size: -webkit-calc(20px + 4 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 4 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .col-samsungdv__text p {
+            font-size: 16px;
+            line-height: 1.2
+        }
+
+        #samsungdv .row-samsungdv {
+            padding-top: 20px
+        }
+
+        #samsungdv .row-samsungdv__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 15px
+        }
+
+        #samsungdv .row-samsungdv__inner:not(:last-child) {
+            margin-bottom: 30px
+        }
+
+        #samsungdv .row-samsungdv__items {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #samsungdv .row-samsungdv__text {
+            padding-top: 10px
+        }
+
+        #samsungdv .row-samsungdv__text h2 {
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-align: center
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .row-samsungdv__text h2 {
+                font-size: -webkit-calc(20px + 4 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 4 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .row-samsungdv__text span {
+            font-size: 22px;
+            line-height: 1.2;
+            text-align: center;
+            display: block;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .row-samsungdv__text span {
+                font-size: -webkit-calc(18px + 4 * ((100vw - 320px) / 1090));
+                font-size: calc(18px + 4 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .row-samsungdv__text p {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        #samsungdv .spec-samsungdv {
+            padding-top: 20px;
+            padding-bottom: 20px
+        }
+
+        #samsungdv .spec-samsungdv__title h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 50px
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .spec-samsungdv__title h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .spec-samsungdv__row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px
+        }
+
+        #samsungdv .spec-samsungdv__text h4 {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: normal
+        }
+
+        @media(max-width: 1410px) {
+            #samsungdv .spec-samsungdv__text h4 {
+                font-size: -webkit-calc(18px + 2 * ((100vw - 320px) / 1090));
+                font-size: calc(18px + 2 * ((100vw - 320px) / 1090))
+            }
+        }
+
+        #samsungdv .spec-samsungdv__text p {
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: bold
+        }
+
+        @media screen and (max-width: 767.98px) {
+
+            #samsungdv .col-samsungdv__text h2,
+            #samsungdv .col-samsungdv__text p {
+                text-align: center
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            #samsungdv .row-samsungdv__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+        }
+
+        @media screen and (max-width: 479.98px) {
+
+            #samsungdv .col-samsungdv__title h2,
+            #samsungdv .spec-samsungdv__title h2 {
+                margin-bottom: 20px
+            }
+        }
+    </style>
+
+    <div id="samsungdv">
+        <div class="samsungdv__container">
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Умное энергосбережение</h2>
+                    <span>Благодаря режиму SmartThings</span>
+                    <p>Режим Интеллектуального энергосбережения поможет вам контролировать и снижать использование
+                        электроэнергии в вашем доме, а именно вашей сушилки. Энергопотребление в этом режиме уменьшается
+                        до 20% — все благодаря контролю скорости работы компрессора.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img1.png" alt="">
+            </div>
+            <div class="samsungdv__bg bg-samsungdv">
+                <div class="bg-samsungdv__media">
+                    <div class="bg-samsungdv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2369715/img2.jpg" alt="">
+                    </div>
+                    <div class="bg-samsungdv__text">
+                        <h2>Быстрая и бережная сушка</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__col col-samsungdv">
+                <div class="col-samsungdv__title">
+                    <h2>Основные преимущества</h2>
+                </div>
+                <div class="col-samsungdv__row">
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img3.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Энергоэффективность класса А+++</h2>
+                            <p>Берегите окружающую среду и уменьшайте счета, используя меньшее количество
+                                электроэнергии.</p>
+                        </div>
+                    </div>
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img4.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Умная сушилка</h2>
+                            <p>Эта модель работает в паре с искусственным интеллектом, который гарантирует быструю,
+                                точную и экономичную сушку.</p>
+                        </div>
+                    </div>
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img5.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Технология QuickDrive</h2>
+                            <p>Оставляйте больше времени на хобби и встречи с родными.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Энергоэффективность А+++</h2>
+                    <span>Потребляйте меньше электроэнергии</span>
+                    <p>Эта модель сушилки оснащена тепловым насосом, который обеспечивает не только бережный уход, но и
+                        экономичный расход энергии. Для нагревания воздуха и его рециркуляции используется не
+                        электроэнергия, а "хладагент".</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img6.jpg" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Интеллектуальные датчики</h2>
+                    <span>Снижение энергии на 10%</span>
+                    <p>Сушилка имеет много датчиков, работающих вместе с искусственным интеллектом. Они в режиме
+                        реального времени рассчитывают уровень влажности и определяют идеальное количество тепла.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img8.png" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Быстрая качественная сушка</h2>
+                    <span>Технология QuickDrive</span>
+                    <p>При активации этой технологии время сушки уменьшается до 35%, при этом снижается использование
+                        энергии. К тому же, технология инверторного компрессора самостоятельно настраивает скорость
+                        оборотов на основе внутренней температуры и ваших потребностей.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img9.png" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Умная сушка</h2>
+                    <span>Легко и эффективно</span>
+                    <p>Эта умная сушилка запоминает все индивидуальные настройки, чтобы вы максимально быстро могли
+                        запустить ее под ваши потребности. Она также будет предлагать программы, которыми вы пользуетесь
+                        чаще всего. Приложение SmartThings прописывает советы по поводу неисправностей, циклов и
+                        планирования.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img10.jpg" alt="">
+            </div>
+            <div class="samsungdv__row row-samsungdv">
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img11.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Супербыстрая сушка</h2>
+                                <span>За 81 минуту</span>
+                                <p>2 часа — и вся ваша одежда сухая и чистая. Благодаря программе Суперскорость вы можете высушить белье из хлопчатобумажных и синтетических тканей в одном цикле.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img13.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Никаких бактерий</h2>
+                                <span>Максимальный уровень гигиены</span>
+                                <p>Одежда, белье и детские игрушки находятся в полной безопасности от бактерий. Во время цикла Гигиена, который можно использовать как для сухих, так и влажных вещей, удаляется 99% бактерий.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img14.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Открывайте дверцу в обе стороны</h2>
+                                <span>Комфорт в любой ванной комнате</span>
+                                <p>Эта модель сушилки имеет перевешиваемую дверцу, поэтому вы можете увеличить уровень комфорта во время ее использования до максимума. Настраивайте дверцу в зависимости от интерьера и ваших привычек.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img15.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Забудьте о складках</h2>
+                                <span>Больше не нужно гладить одежду</span>
+                                <p>Выбирая программу Одежда без складок, вы гарантированно получаете чистую, сухую и выглаженную одежду. После цикла барабан медленно вращается еще 180 минут с высокой температурой воздуха, благодаря чему одежда выглаживается.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img16.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Безопасность и производительность</h2>
+                                <span>Цифровой инверторный двигатель</span>
+                                <p>Меньше шума, долговечность и высокая производительность достигается благодаря цифровому инвертору. В нем используют мощные магниты, поэтому он издает меньше шума и при этом работает более эффективно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img17.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Стиль и долговечность</h2>
+                                <span>Стеклянная дверца</span>
+                                <p>Дверцы сушилки выглядят как новенькие год за годом — это благодаря закаленному стеклу, из которого они изготовлены. Оно прочное и долговечное, устойчивое к царапинам и трещинам, а также выглядит элегантно и стильно.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Персонализированные настройки</h2>
+                    <span>SmartThings Home</span>
+                    <p>Приложение SmartThings Home — это удобное приложение для смартфонов, с которым пользоваться сушилкой станет гораздо легче. Он анализирует особенности сушки и предлагает индивидуальные рекомендации, помогает управлять электроэнергией, а также поддерживает сушилку в стабильном состоянии.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img18.png" alt="">
+            </div>
+            <div class="samsungdv__row row-samsungdv">
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img19.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Интеллектуальная сушка</h2>
+                                <span>С датчиками</span>
+                                <p>Наслаждайтесь лучшей эффективностью благодаря трем датчикам, встроенным в сушилку. Они мониторят влажность и регулируют время сушки в соответствии с полученной информацией. Так скорость сушки увеличивается, а использование энергии уменьшается.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img20.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Легкое обслуживание</h2>
+                                <span>Благодаря фильтру 2 в 1</span>
+                                <p>Двухслойный сетчатый фильтр гарантирует легкое и быстрое обслуживание и отсутствие потребности в фильтре для теплообменника.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img21.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Освежите свою одежду</h2>
+                                <span>Не используя моющее средство</span>
+                                <p>Благодаря технологии Air Wash вы можете освежить свои вещи без стирки и моющих средств. Это особенно удобно летом, потому что неприятные запахи из одежды удаляются просто с помощью горячего воздуха.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img22.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Быстрая сушка</h2>
+                                <span>Через 35 минут</span>
+                                <p>Нужно быстро высушить рабочую одежду? Через 35 минут она будет сухой благодаря циклу Быстрая сушка. Он предназначен для небольшого количества белья (1 кг).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__bg bg-samsungdv">
+                <div class="bg-samsungdv__media">
+                    <div class="bg-samsungdv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2369715/img23.jpg" alt="">
+                    </div>
+                    <div class="bg-samsungdv__text">
+                        <h2>Как измерить</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img24.jpg" alt="">
+                <div class="samsungdv__text">
+                    <p>20 лет гарантии на инверторный двигатель</p>
+                </div>
+            </div>
+            <div class="samsungdv__spec spec-samsungdv">
+                <div class="spec-samsungdv__title">
+                    <h2>Технические характеристики</h2>
+                </div>
+                <div class="spec-samsungdv__row">
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Загрузка для сушки</h4>
+                            <p>9.0 кг</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Класс энергоэффективности</h4>
+                            <p>А+++</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Вес нетто</h4>
+                            <p>50 кг</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Физические характеристики</h4>
+                            <p>600 х 850 х 600 мм</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="samsungdv">
+        <div class="samsungdv__container">
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Розумне енергоощадження</h2>
+                    <span>Завдяки SmartThings</span>
+                    <p>Режим Інтелектуального енергоощадження допоможе вам контролювати та знижувати використання електроенергії у вашому будинку, а саме вашої сушарки. Енергоспоживання в цьому режимі зменшується до 20% — все завдяки контролю швидкості роботи компресора.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img1.png" alt="">
+            </div>
+            <div class="samsungdv__bg bg-samsungdv">
+                <div class="bg-samsungdv__media">
+                    <div class="bg-samsungdv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2369715/img2.jpg" alt="">
+                    </div>
+                    <div class="bg-samsungdv__text">
+                        <h2>Швидке та дбайливе сушіння</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__col col-samsungdv">
+                <div class="col-samsungdv__title">
+                    <h2>Основні переваги</h2>
+                </div>
+                <div class="col-samsungdv__row">
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img3.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Енергоефективність класу А+++</h2>
+                            <p>Бережіть довкілля та зменшуйте рахунки, використовуючи меншу кількість електроенергії.</p>
+                        </div>
+                    </div>
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img4.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Розумна сушарка</h2>
+                            <p>Ця модель працює в парі зі штучним інтелектом, який гарантує швидке, точне та економне сушіння.</p>
+                        </div>
+                    </div>
+                    <div class="col-samsungdv__item">
+                        <div class="col-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img5.jpg" alt="">
+                        </div>
+                        <div class="col-samsungdv__text">
+                            <h2>Технологія QuickDrive</h2>
+                            <p>Залишайте більше часу на хобі та зустрічі з рідними.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Енергоефективність А+++</h2>
+                    <span>Споживайте менше електроенергії</span>
+                    <p>Ця модель сушарки оснащена тепловим насосом, який забезпечує не тільки дбайливий догляд, але й економічну витрату енергії. Для нагрівання повітря та його рециркуляції використовується не електроенергія, а "холодоагент".</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img6.jpg" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Інтелектуальні датчики</h2>
+                    <span>Зниження енергії на 10%</span>
+                    <p>Сушарка має багато датчиків, які працюють разом зі штучним інтелектом. Вони в режимі реального часу розраховують рівень вологості речей та визначають ідеальну кількість тепла.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img8.png" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Швидка якісна сушка</h2>
+                    <span>Технологія QuickDrive</span>
+                    <p>При активації цієї технології час сушіння зменшується до 35%, при цьому і знижується використання енергії. До того ж технологія інверторного компресора самостійно налаштовує швидкість обертів на основі внутрішньої температури та ваших потреб.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img9.png" alt="">
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Розумне сушіння</h2>
+                    <span>Легко та ефективно</span>
+                    <p>Ця розумна сушарка запам'ятовує всі індивідуальні налаштування, щоб ви максимально швидко могли запустити її під ваші потреби. Вона також буде пропонувати програми, якими ви користуєтеся найчастіше. Додаток SmartThings прописує поради щодо несправностей, циклів та планування.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img10.jpg" alt="">
+            </div>
+            <div class="samsungdv__row row-samsungdv">
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img11.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Супершвидке сушіння</h2>
+                                <span>За 81 хвилину</span>
+                                <p>2 години — і весь ваш одяг сухий та чистий. Завдяки програмі Супершвидкість ви можете висушити білизну з бавовняних та синтетичних тканин в одному циклі.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img13.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Ніяких бактерій</h2>
+                                <span>Максимальний рівень гігієни</span>
+                                <p>Одяг, білизна і дитячі іграшки збережені від бактерій. Під час циклу Гігієна, який можна використовувати як для сухих, так і для вологих речей, видаляється 99% бактерій.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img14.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Відчиняйте дверцята в обидві сторони</h2>
+                                <span>Комфорт в будь-якій ванній кімнаті</span>
+                                <p>Ця модель сушарки має дверцята, що перевішуються, тому ви можете збільшити рівень комфорту під час її використання до максимуму. Налаштовуйте дверцята в залежності від інтер'єру та ваших звичок.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img15.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Забудьте про складки</h2>
+                                <span>Більше не треба прасувати одяг</span>
+                                <p>Обираючи програму Одяг без складок, ви гарантовано отримуєте чистий, сухий та випрасуваний одяг. Після циклу барабан повільно обертається ще 180 хвилин з високою температурою повітря, завдяки чому одяг випрасовується.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img16.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Безпека та продуктивність</h2>
+                                <span>Цифровий інверторний двигун</span>
+                                <p>Менше шуму, довговічність та висока продуктивність досягається завдяки цифровому інвертору. В ньому використовують потужні магніти, тому він видає менше шуму і при цьому працює ефективніше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img17.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Стиль та довговічність</h2>
+                                <span>Скляні дверцята</span>
+                                <p>Дверцята сушарки виглядають як новенькі рік за роком — це завдяки загартованому склу, з якого вони виготовлені. Воно міцне і довговічне, стійке до подряпин та тріщин, а також виглядає елегантно та стильно.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <div class="samsungdv__text">
+                    <h2>Персоналізовані налаштування</h2>
+                    <span>SmartThings Home</span>
+                    <p>Додаток SmartThings Home — це зручний додаток для смартфонів, з яким користуватися сушаркою стане набагато легше. Він аналізує особливості сушки та пропонує індивідуальні рекомендації, допомагає керувати електроенергії, а також підтримує сушарку в стабільному стані.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img18.png" alt="">
+            </div>
+            <div class="samsungdv__row row-samsungdv">
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img19.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Інтелектуальне сушіння</h2>
+                                <span>З датчиками</span>
+                                <p>Насолоджуйтеся кращою ефективністю завдяки трьом датчикам, вбудованим у сушарку. Вони моніторять вологість та регулюють час сушіння відповідно до отриманої інформації. Так швидкість сушіння збільшується, а використання енергії зменшується. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img20.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Легке обслуговування</h2>
+                                <span>Завдяки фільтру 2 в 1</span>
+                                <p>Двошаровий сітчастий фільтр гарантує легке та швидке обслуговування, а також відсутність потреби у фільтрі для теплообмінника.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-samsungdv__inner">
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img21.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Освіжіть свій одяг</h2>
+                                <span>Не використовуючи мийний засіб</span>
+                                <p>Завдяки технології Air Wash ви можете освіжити свої речі без прання та мийних засобів. Це особливо зручно влітку, бо неприємні запахи з одягу видаляються просто за допомогою гарячого повітря.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-samsungdv__items">
+                        <div class="row-samsungdv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2369715/img22.jpg" alt="">
+                        </div>
+                        <div class="row-samsungdv__item">
+                            <div class="row-samsungdv__text">
+                                <h2>Швидке сушіння</h2>
+                                <span>За 35 хвилин</span>
+                                <p>Треба швидко висушити робочий одяг? За 35 хвилин він буде сухим завдяки циклу Швидке сушіння. Він створений для невеликої кількості білизни (1 кг).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__bg bg-samsungdv">
+                <div class="bg-samsungdv__media">
+                    <div class="bg-samsungdv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2369715/img23.jpg" alt="">
+                    </div>
+                    <div class="bg-samsungdv__text">
+                        <h2>Як виміряти</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungdv__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/2369715/img24.jpg" alt="">
+                <div class="samsungdv__text">
+                    <p>20 років гарантії на інверторний двигун</p>
+                </div>
+            </div>
+            <div class="samsungdv__spec spec-samsungdv">
+                <div class="spec-samsungdv__title">
+                    <h2>Технічні характеристики</h2>
+                </div>
+                <div class="spec-samsungdv__row">
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Завантаження для сушки</h4>
+                            <p>9.0 кг</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Клас енергоефективності</h4>
+                            <p>А+++</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Вага нетто</h4>
+                            <p>50 кг</p>
+                        </div>
+                    </div>
+                    <div class="spec-samsungdv__item">
+                        <div class="spec-samsungdv__text">
+                            <h4>Фізичні характеристики</h4>
+                            <p>600 х 850 х 600 мм</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
