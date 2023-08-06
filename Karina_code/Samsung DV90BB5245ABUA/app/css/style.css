@@ -1,0 +1,354 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+#samsungdv a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#samsungdv ul,
+#samsungdv ol,
+#samsungdv li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#samsungdv .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#samsungdv .bc-description__content h3 {
+  text-align: left;
+}
+
+#samsungdv h1, #samsungdv h2, #samsungdv h3, #samsungdv h4, #samsungdv h5, #samsungdv h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#samsungdv {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#samsungdv h1, #samsungdv h2, #samsungdv h3, #samsungdv h4, #samsungdv h5, #samsungdv h6, #samsungdv p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#samsungdv p::first-letter {
+  padding-left: 0;
+}
+
+#samsungdv img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#samsungdv img:hover {
+  opacity: 1;
+}
+
+#samsungdv .samsungdv__container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#samsungdv .samsungdv__box {
+  padding-top: 20px;
+}
+#samsungdv .samsungdv__text {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+#samsungdv .samsungdv__text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .samsungdv__text h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .samsungdv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+#samsungdv .samsungdv__text span {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .samsungdv__text span {
+    font-size: -webkit-calc(18px + 10 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 10 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungdv .bg-samsungdv {
+  padding-top: 20px;
+}
+#samsungdv .bg-samsungdv__media {
+  position: relative;
+  z-index: 2;
+}
+#samsungdv .bg-samsungdv__title {
+  position: absolute;
+  z-index: 5;
+  top: 2%;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+#samsungdv .bg-samsungdv__title h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1410px) {
+  #samsungdv .bg-samsungdv__title h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungdv .col-samsungdv__title {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+#samsungdv .col-samsungdv__title h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1410px) {
+  #samsungdv .col-samsungdv__title h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .col-samsungdv__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+#samsungdv .col-samsungdv__image img {
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+}
+#samsungdv .col-samsungdv__text h4 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .col-samsungdv__text h4 {
+    font-size: -webkit-calc(20px + 5 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 5 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .col-samsungdv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungdv .col-samsungdv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungdv .box-samsungdv {
+  padding-top: 80px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .box-samsungdv {
+    padding-top: -webkit-calc(20px + 60 * ((100vw - 320px) / 1090));
+    padding-top: calc(20px + 60 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .box-samsungdv__text {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+#samsungdv .box-samsungdv__text h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+@media (max-width: 1410px) {
+  #samsungdv .box-samsungdv__text h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .box-samsungdv__text p {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1410px) {
+  #samsungdv .box-samsungdv__text p {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .box-samsungdv__text span {
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .box-samsungdv__text span {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 1090));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .box-samsungdv__text_1 {
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 10px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .box-samsungdv__text_1 {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .box-samsungdv__image img {
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+}
+
+#samsungdv .row-samsungdv {
+  padding-top: 80px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .row-samsungdv {
+    padding-top: -webkit-calc(20px + 60 * ((100vw - 320px) / 1090));
+    padding-top: calc(20px + 60 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .row-samsungdv__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px 20px;
+}
+#samsungdv .row-samsungdv__image img {
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+}
+#samsungdv .row-samsungdv__text h4 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .row-samsungdv__text h4 {
+    font-size: -webkit-calc(20px + 5 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 5 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .row-samsungdv__text p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media (max-width: 1410px) {
+  #samsungdv .row-samsungdv__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+#samsungdv .foter-samsungdv {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1410px) {
+  #samsungdv .foter-samsungdv {
+    padding-top: -webkit-calc(20px + 60 * ((100vw - 320px) / 1090));
+    padding-top: calc(20px + 60 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .foter-samsungdv__title h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-align: center;
+}
+@media (max-width: 1410px) {
+  #samsungdv .foter-samsungdv__title h2 {
+    font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1090));
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .foter-samsungdv__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+#samsungdv .foter-samsungdv__item h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+@media (max-width: 1410px) {
+  #samsungdv .foter-samsungdv__item h4 {
+    font-size: -webkit-calc(16px + 4 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1090));
+  }
+}
+#samsungdv .foter-samsungdv__item p {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 1410px) {
+  #samsungdv .foter-samsungdv__item p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1090));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1090));
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #samsungdv .col-samsungdv__text h4, #samsungdv .col-samsungdv__text p,
+  #samsungdv .row-samsungdv__text h4,
+  #samsungdv .row-samsungdv__text p {
+    text-align: center;
+  }
+  #samsungdv .row-samsungdv__inner {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
