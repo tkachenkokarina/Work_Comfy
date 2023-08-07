@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #tefalne .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #tefalne .bc-description__content h3 {
+            text-align: left
+        }
+
+        #tefalne h1,
+        #tefalne h2,
+        #tefalne h3,
+        #tefalne h4,
+        #tefalne h5,
+        #tefalne h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #tefalne {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #tefalne h1,
+        #tefalne h2,
+        #tefalne h3,
+        #tefalne h4,
+        #tefalne h5,
+        #tefalne h6,
+        #tefalne p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #tefalne p::first-letter {
+            padding-left: 0
+        }
+
+        #tefalne img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #tefalne img:hover {
+            opacity: 1
+        }
+
+        #tefalne .tefalne__container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #tefalne .header-tefalne__bg {
+            position: relative;
+            z-index: 1
+        }
+
+        #tefalne .header-tefalne__icon {
+            position: absolute;
+            z-index: 5;
+            top: 5%;
+            left: 0;
+            right: 80%
+        }
+
+        #tefalne .header-tefalne__text {
+            max-width: 1290px;
+            margin: 0 auto;
+            padding-top: 85px
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .header-tefalne__text {
+                padding-top: -webkit-calc(20px + 65 * ((100vw - 320px) / 1180));
+                padding-top: calc(20px + 65 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .header-tefalne__text h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-align: center
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .header-tefalne__text h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1180));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .header-tefalne__text p {
+            font-size: 25px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .header-tefalne__text p {
+                font-size: -webkit-calc(16px + 9 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 9 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .col-tefalne__row {
+            padding-top: 85px
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .col-tefalne__row {
+                padding-top: -webkit-calc(20px + 65 * ((100vw - 320px) / 1180));
+                padding-top: calc(20px + 65 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .col-tefalne__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between
+        }
+
+        #tefalne .col-tefalne__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #tefalne .col-tefalne__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 60%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 60%;
+            flex: 0 1 60%
+        }
+
+        #tefalne .col-tefalne__text {
+            width: 80%;
+            margin: 0 auto
+        }
+
+        #tefalne .col-tefalne__text h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .col-tefalne__text h2 {
+                font-size: -webkit-calc(20px + 28 * ((100vw - 320px) / 1180));
+                font-size: calc(20px + 28 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .col-tefalne__text p {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #tefalne .col-tefalne__text p {
+                font-size: -webkit-calc(16px + 9 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 9 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #tefalne .col-tefalne__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 40%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 40%;
+            flex: 0 1 40%
+        }
+
+        #tefalne .col-tefalne__media {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 40%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+            position: relative;
+            z-index: 2
+        }
+
+        #tefalne .col-tefalne__icon {
+            position: absolute;
+            z-index: 5;
+            top: 15%;
+            left: 70%;
+            -webkit-transform: translateX(-30%);
+            -ms-transform: translateX(-30%);
+            -o-transform: translateX(-30%);
+            transform: translateX(-30%)
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #tefalne .col-tefalne__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #tefalne .col-tefalne__text {
+                width: auto;
+                padding: 10px 0
+            }
+
+            #tefalne .col-tefalne__text h2,
+            #tefalne .col-tefalne__text p {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="tefalne">
+        <div class="tefalne__container">
+            <div class="tefalne__header header-tefalne">
+                <div class="header-tefalne__bg">
+                    <div class="header-tefalne__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2043123/img1.png" alt="">
+                    </div>
+                    <div class="header-tefalne__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2043123/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="header-tefalne__text">
+                    <h2>Готовьте быстро и легко</h2>
+                    <p>Мясорубка Tefal HV 7в1 - идеальный помощник на кухне, если вы хотите приготовить любой рецепт
+                        блюд на основе мясного фарша, а также для салатов, гарниров или томатного сока.</p>
+                </div>
+            </div>
+            <div class="tefalne__col col-tefalne">
+                <div class="col-tefalne__row">
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Легко справляется
+                                    с любым мясом</h2>
+                                <p>Легко и быстро перемелите любое, даже жесткое мясо, нарежете или натрете овощи,
+                                    приготовите томатный соус, сосиски и многое другое с помощью компактной и мощной
+                                    мясорубки.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Эффективная и компактная</h2>
+                                <p>Идеальный партнер на кухне, благодаря мощности 1400 Вт обрабатывает до 1.7 кг мяса в
+                                    минуту.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Универсальность 7 в 1</h2>
+                                <p>С помощью данной модели можно быстро и легко приготовить множество рецептов благодаря
+                                    универсальному набору аксессуаров, которые входят в комплект: 2 насадки для разного
+                                    перемалывания мяса, 3 барабана для нарезки и шинковки, насадка для колбас и насадка
+                                    для производства томатного сока.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Функция реверса</h2>
+                                <p>Засоры не станут препятствием с функцией реверса. Успешно измельчите даже жилистое
+                                    мясо без засорения мясорубки.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Ручка для переноски</h2>
+                                <p>Благодаря компактной конструкции и встроенной большой ручке мясорубку удобно хранить
+                                    и транспортировать.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>15-летняя
+                                    ремонтопригодность</h2>
+                                <p>Недорогая и быстрая доставка запасных частей из 6200 ремонтных центров по всему миру
+                                    в рамках нашего обязательства защищать окружающую среду и сокращать количество
+                                    отходов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__media">
+                            <div class="col-tefalne__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2043123/img9.png" alt="">
+                            </div>
+                            <div class="col-tefalne__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2043123/img8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    UA
+    <div id="tefalne">
+        <div class="tefalne__container">
+            <div class="tefalne__header header-tefalne">
+                <div class="header-tefalne__bg">
+                    <div class="header-tefalne__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2043123/img1.png" alt="">
+                    </div>
+                    <div class="header-tefalne__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2043123/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="header-tefalne__text">
+                    <h2>Готуй швидко та легко</h2>
+                    <p>М'ясорубка Tefal HV 7в1 — ідеальний помічник на кухні, якщо ви хочете приготувати будь-який
+                        рецепт страв на основі м'ясного фаршу, а також для салатів, гарнірів або томатного соку.</p>
+                </div>
+            </div>
+            <div class="tefalne__col col-tefalne">
+                <div class="col-tefalne__row">
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Легко справляється
+                                    з будь-яким м’ясом</h2>
+                                <p>Легко та швидко перемелете будь-яке, навіть жорстке м'ясо, наріжете чи натрете овочі,
+                                    приготуєте томатний соус, сосиски й багато іншого за допомогою компактної й потужної
+                                    м'ясорубки.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Ефективна та компактна</h2>
+                                <p>Ідеальний партнер на кухні, завдяки потужності 1400 Вт обробляє до 1.7 кг м'яса за
+                                    хвилину.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Універсальність 7 в 1</h2>
+                                <p>За допомогою цієї моделі можна швидко та легко приготувати безліч рецептів завдяки
+                                    універсальному набору аксесуарів, які входять до комплекту: 2 насадки для різного
+                                    перемелювання м'яса, 3 барабани для нарізування та шинкування, насадка для ковбас і
+                                    насадка для виробництва томатного соку.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Функція реверсу</h2>
+                                <p>Засмічення не стануть на заваді з функцією реверсу. Успішно подрібнюйте навіть
+                                    жорстке м’ясо без забиття м’ясорубки.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner col-tefalne__inner_rev">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>Ручка для перенесення</h2>
+                                <p>Завдяки компактній конструкції та вбудованій великій ручці м'ясорубку зручно
+                                    зберігати й транспортувати.</p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2043123/img7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-tefalne__inner">
+                        <div class="col-tefalne__item">
+                            <div class="col-tefalne__text">
+                                <h2>15-річна ремонтопридатність</h2>
+                                <p>Недорога та швидка доставка запасних частин з 6200 ремонтних центрів по всьому світу
+                                    в рамках нашого зобов'язання захищати довкілля та скорочувати кількість відходів.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-tefalne__media">
+                            <div class="col-tefalne__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2043123/img10.png" alt="">
+                            </div>
+                            <div class="col-tefalne__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2043123/img8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
