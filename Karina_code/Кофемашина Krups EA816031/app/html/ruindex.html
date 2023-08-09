@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+    
+    <style>
+        #tefalea ul,#tefalea ol,#tefalea li{list-style:none;padding:0;margin:0}#tefalea .bc-description__content p{margin-bottom:0}#tefalea .bc-description__content h3{text-align:left}#tefalea h1,#tefalea h2,#tefalea h3,#tefalea h4,#tefalea h5,#tefalea h6{text-transform:none;font-weight:bold}#tefalea{margin:0 auto;overflow:hidden;background-color:#fff}#tefalea h1,#tefalea h2,#tefalea h3,#tefalea h4,#tefalea h5,#tefalea h6,#tefalea p{margin:0;padding:0;text-align:left}#tefalea p::first-letter{padding-left:0}#tefalea img{opacity:1;max-width:100%;display:block;margin:0 auto}#tefalea img:hover{opacity:1}#tefalea .tefalea__container{max-width:1500px;margin:0 auto;padding:0 15px}#tefalea .box-tefalea__text{max-width:1300px;margin:0 auto;padding-top:20px;margin-bottom:50px}@media(max-width: 1500px){#tefalea .box-tefalea__text{margin-bottom:-webkit-calc(20px + 30 * ((100vw - 320px) / 1180));margin-bottom:calc(20px + 30 * ((100vw - 320px) / 1180))}}#tefalea .box-tefalea__text h2{font-size:48px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1500px){#tefalea .box-tefalea__text h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1180));font-size:calc(20px + 28 * ((100vw - 320px) / 1180))}}#tefalea .box-tefalea__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1500px){#tefalea .box-tefalea__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 1180));font-size:calc(16px + 6 * ((100vw - 320px) / 1180))}}#tefalea .bgone-tefalea__media{position:relative;z-index:2}#tefalea .bgone-tefalea__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#tefalea .bgone-tefalea__image{position:absolute;z-index:5;top:8%;left:6%;right:50%}#tefalea .bgone-tefalea__text{position:absolute;z-index:5;top:20%;right:6%;width:40%}#tefalea .bgone-tefalea__text h2{font-size:48px;line-height:1.2;color:#fff;text-align:right;padding-top:30px}@media(max-width: 1500px){#tefalea .bgone-tefalea__text h2{font-size:-webkit-calc(14px + 34 * ((100vw - 320px) / 1180));font-size:calc(14px + 34 * ((100vw - 320px) / 1180))}}#tefalea .bgone-tefalea__text img{margin-right:0}#tefalea .bgone-tefalea__box{padding-top:110px;max-width:1300px;margin:0 auto}@media(max-width: 1500px){#tefalea .bgone-tefalea__box{padding-top:-webkit-calc(30px + 80 * ((100vw - 320px) / 1180));padding-top:calc(30px + 80 * ((100vw - 320px) / 1180))}}#tefalea .bgone-tefalea__box p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1500px){#tefalea .bgone-tefalea__box p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 1180));font-size:calc(16px + 6 * ((100vw - 320px) / 1180))}}#tefalea .drink-tefalea{padding-bottom:100px;padding-top:70px}@media(max-width: 1500px){#tefalea .drink-tefalea{padding-top:-webkit-calc(20px + 50 * ((100vw - 320px) / 1180));padding-top:calc(20px + 50 * ((100vw - 320px) / 1180))}}#tefalea .drink-tefalea__media{position:relative;z-index:2}#tefalea .drink-tefalea__text{position:absolute;z-index:5;top:20%;left:6%;width:40%}#tefalea .drink-tefalea__text h2{font-size:48px;line-height:1.2;color:#fff;margin-bottom:30px}@media(max-width: 1500px){#tefalea .drink-tefalea__text h2{font-size:-webkit-calc(14px + 34 * ((100vw - 320px) / 1180));font-size:calc(14px + 34 * ((100vw - 320px) / 1180))}}#tefalea .drink-tefalea__text img{margin:0}#tefalea .drink-tefalea__image{position:absolute;z-index:5;top:15%;right:6%;left:55%}#tefalea .recipe-tefalea__text{max-width:1300px;margin:0 auto;margin-bottom:50px}@media(max-width: 1500px){#tefalea .recipe-tefalea__text{margin-bottom:-webkit-calc(20px + 30 * ((100vw - 320px) / 1180));margin-bottom:calc(20px + 30 * ((100vw - 320px) / 1180))}}#tefalea .recipe-tefalea__text h2{font-size:48px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1500px){#tefalea .recipe-tefalea__text h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1180));font-size:calc(20px + 28 * ((100vw - 320px) / 1180))}}#tefalea .recipe-tefalea__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1500px){#tefalea .recipe-tefalea__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 1180));font-size:calc(16px + 6 * ((100vw - 320px) / 1180))}}#tefalea .recipe-tefalea__media{position:relative;z-index:2}#tefalea .recipe-tefalea__icon{position:absolute;z-index:5;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}@media screen and (max-width: 991.98px){#tefalea .recipe-tefalea__icon img{width:200px}#tefalea .drink-tefalea__text{top:10%}#tefalea .drink-tefalea__text img{width:250px}#tefalea .drink-tefalea__text h2{margin-bottom:15px}#tefalea .bgone-tefalea__text h2{padding-top:15px}#tefalea .bgone-tefalea__text img{width:250px}}@media screen and (max-width: 767.98px){#tefalea .bgone-tefalea__text img,#tefalea .drink-tefalea__text img{width:200px}#tefalea .recipe-tefalea__icon img{width:110px}}@media screen and (max-width: 479.98px){#tefalea .drink-tefalea{padding-bottom:50px}#tefalea .drink-tefalea__text{width:50%}#tefalea .drink-tefalea__text h2{margin-bottom:10px}#tefalea .bgone-tefalea__text{width:60%}#tefalea .bgone-tefalea__text h2{padding-top:10px}#tefalea .bgone-tefalea__text img{width:120px}#tefalea .drink-tefalea__text img{width:100px}#tefalea .recipe-tefalea__icon img{width:70px}}
+    </style>
+
+    <div id="tefalea">
+        <div class="tefalea__container">
+            <div class="tefalea__box box-tefalea">
+                <div class="box-tefalea__text">
+                    <h2>Приготовьте кофе, совершенный в деталях,
+                        с кофемашиной KRUPS Essential</h2>
+                    <p>Насыщенный вкус и аромат, идеальная температура от первой до последней чашки. С кофемашиной KRUPS
+                        Essential EA816 любая чашка кофе станет настоящим шедевром.</p>
+                </div>
+            </div>
+            <div class="tefalea__bgone bgone-tefalea">
+                <div class="bgone-tefalea__media">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2355441/img2.png" alt="">
+                    <div class="bgone-tefalea__row">
+                        <div class="bgone-tefalea__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img1.png" alt="">
+                        </div>
+                        <div class="bgone-tefalea__text">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/logo.png" alt="">
+                            <h2>Кофе безупречный
+                                в деталях</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgone-tefalea__box">
+                    <p>Набор для автоматического вспенивания молока XS6000 позволяет быстро и без труда приготовить
+                        капучино или заплатку. Наберите молоко в металлическую емкость, выберите нужный режим и нажмите
+                        кнопку подачи пара – пенка для замечательного напитка готова!</p>
+                </div>
+            </div>
+            <div class="tefalea__drink drink-tefalea">
+                <div class="drink-tefalea__media">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2355441/img5.png" alt="">
+                    <div class="drink-tefalea__row">
+                        <div class="drink-tefalea__text">
+                            <h2>Идеально приготовленный
+                                капучино и латте</h2>
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img4.png" alt="">
+                        </div>
+                        <div class="drink-tefalea__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalea__recipe recipe-tefalea">
+                <div class="recipe-tefalea__text">
+                    <h2>Функция «Любимый рецепт»</h2>
+                    <p>Вы знаете, чего хотите? Сохраните рецепт в памяти кофемашины и держите под рукой напиток,
+                        приготовленный по любимому рецепту. Сохраните два рецепта идеального черного кофе.</p>
+                </div>
+                <div class="recipe-tefalea__media">
+                    <div class="recipe-tefalea__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2355441/img6.png" alt="">
+                    </div>
+                    <div class="recipe-tefalea__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2355441/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="tefalea">
+        <div class="tefalea__container">
+            <div class="tefalea__box box-tefalea">
+                <div class="box-tefalea__text">
+                    <h2>Приготуйте каву, довершену в деталях,
+                        з кавомашиною KRUPS Essential</h2>
+                    <p>Насичений смак і аромат, ідеальна температура від першої до останньої чашки.
+                        З кавомашиною KRUPS Essential EA816 кожна чашка кави стане справжнім шедевром.</p>
+                </div>
+            </div>
+            <div class="tefalea__bgone bgone-tefalea">
+                <div class="bgone-tefalea__media">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2355441/img2.png" alt="">
+                    <div class="bgone-tefalea__row">
+                        <div class="bgone-tefalea__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img1.png" alt="">
+                        </div>
+                        <div class="bgone-tefalea__text">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/logo.png" alt="">
+                            <h2>Кава довершена
+                                в деталях</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgone-tefalea__box">
+                    <p>Набір для автоматичного спінювання молока XS6000 дозволяє швидко та без зайвих зусиль приготувати
+                        капучино або лате.
+                        Наберіть молоко у металеву ємність, оберіть потрібний режим та натисніть кнопку подачі пари –
+                        пінка для чудового напою готова!</p>
+                </div>
+            </div>
+            <div class="tefalea__drink drink-tefalea">
+                <div class="drink-tefalea__media">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2355441/img5.png" alt="">
+                    <div class="drink-tefalea__row">
+                        <div class="drink-tefalea__text">
+                            <h2>Ідеально приготований
+                                капучино та лате</h2>
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img4.png" alt="">
+                        </div>
+                        <div class="drink-tefalea__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2355441/img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tefalea__recipe recipe-tefalea">
+                <div class="recipe-tefalea__text">
+                    <h2>Функція «Улюблений рецепт»</h2>
+                    <p>Ви вже знаєте, чого хочете? Збережіть рецепт у пам'яті своєї кавомашини та тримайте під рукою
+                        напій, приготований за улюбленим рецептом. Збережіть два рецепти ідеальної чорної кави.</p>
+                </div>
+                <div class="recipe-tefalea__media">
+                    <div class="recipe-tefalea__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2355441/img6.png" alt="">
+                    </div>
+                    <div class="recipe-tefalea__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2355441/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
