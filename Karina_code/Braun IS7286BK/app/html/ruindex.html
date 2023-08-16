@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #brauncare .bc-description__content p{margin-bottom:0}#brauncare .bc-description__content h3{text-align:left}#brauncare h1,#brauncare h2,#brauncare h3,#brauncare h4,#brauncare h5,#brauncare h6{text-transform:none;font-weight:bold}#brauncare{margin:0 auto;overflow:hidden;background-color:#fff}#brauncare h1,#brauncare h2,#brauncare h3,#brauncare h4,#brauncare h5,#brauncare h6,#brauncare p{margin:0;padding:0;text-align:left}#brauncare p::first-letter{padding-left:0}#brauncare img{opacity:1;max-width:100%;display:block;margin:0 auto}#brauncare img:hover{opacity:1}#brauncare .brauncare__container{max-width:1430px;margin:0 auto;padding:0 15px}#brauncare .header-brauncare{padding-bottom:50px;position:relative;z-index:5}#brauncare .header-brauncare__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#brauncare .header-brauncare__item{position:relative;z-index:10}#brauncare .header-brauncare__text{width:70%;margin:0}#brauncare .header-brauncare__text span{font-size:24px;line-height:1.2;display:block;color:#007bc2}@media(max-width: 1430px){#brauncare .header-brauncare__text span{font-size:-webkit-calc(15px + 9 * ((100vw - 320px) / 1110));font-size:calc(15px + 9 * ((100vw - 320px) / 1110))}}#brauncare .header-brauncare__text h2{font-size:48px;line-height:1.2}@media(max-width: 1430px){#brauncare .header-brauncare__text h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1110));font-size:calc(20px + 28 * ((100vw - 320px) / 1110))}}#brauncare .header-brauncare__text p{font-size:15px;line-height:1.2;padding-top:30px;max-width:500px}#brauncare .header-brauncare__smimage{position:absolute;z-index:5;top:35%;left:38%;right:28%}#brauncare .col-brauncare{position:relative;z-index:2;margin-top:-50px}#brauncare .col-brauncare_1{margin-top:0}#brauncare .col-brauncare__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#brauncare .col-brauncare__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#brauncare .col-brauncare__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#brauncare .col-brauncare__text{width:80%;margin:0 auto;padding:10px 0}#brauncare .col-brauncare__text h2{font-size:48px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#brauncare .col-brauncare__text h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1110));font-size:calc(20px + 28 * ((100vw - 320px) / 1110))}}#brauncare .col-brauncare__text p{font-size:24px;line-height:1.2}@media(max-width: 1430px){#brauncare .col-brauncare__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#brauncare .col-brauncare__text span{display:block;font-size:20px;line-height:1.2;padding-top:30px}@media(max-width: 1430px){#brauncare .col-brauncare__text span{font-size:-webkit-calc(15px + 5 * ((100vw - 320px) / 1110));font-size:calc(15px + 5 * ((100vw - 320px) / 1110))}}#brauncare .col-brauncare__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:2}#brauncare .col-brauncare__icon{position:absolute;z-index:5;top:5%;left:5%;right:70%}#brauncare .row-brauncare{margin-bottom:30px;margin-top:-100px;position:relative;z-index:2}#brauncare .row-brauncare__image{padding-left:200px}#brauncare .row-brauncare__image img{margin-right:0}#brauncare .row-brauncare__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px;max-width:1200px;margin:0 auto}#brauncare .row-brauncare__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#brauncare .row-brauncare__item h2{font-size:48px;line-height:1.2;margin-bottom:10px}@media(max-width: 1430px){#brauncare .row-brauncare__item h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1110));font-size:calc(20px + 28 * ((100vw - 320px) / 1110))}}#brauncare .row-brauncare__item p{font-size:24px;line-height:1.2}@media(max-width: 1430px){#brauncare .row-brauncare__item p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}#brauncare .footer-brauncare{padding-top:30px}#brauncare .footer-brauncare__box{max-width:1000px;margin:0 auto 20px}#brauncare .footer-brauncare__box h2{font-size:48px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1430px){#brauncare .footer-brauncare__box h2{font-size:-webkit-calc(20px + 28 * ((100vw - 320px) / 1110));font-size:calc(20px + 28 * ((100vw - 320px) / 1110))}}#brauncare .footer-brauncare__box p{font-size:24px;line-height:1.2;text-align:center}@media(max-width: 1430px){#brauncare .footer-brauncare__box p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1110));font-size:calc(16px + 8 * ((100vw - 320px) / 1110))}}@media screen and (max-width: 1024.98px){#brauncare .row-brauncare{margin-top:-60px}}@media screen and (max-width: 991.98px){#brauncare .col-brauncare{margin-top:-20px}#brauncare .header-brauncare__smimage{top:43%;left:34%}#brauncare .col-brauncare__text{width:90%}}@media screen and (max-width: 767.98px){#brauncare .header-brauncare__text{width:90%}#brauncare .col-brauncare{margin-top:0}#brauncare .col-brauncare__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#brauncare .col-brauncare__text{width:auto}#brauncare .col-brauncare__text h2,#brauncare .col-brauncare__text p,#brauncare .col-brauncare__text span{text-align:center}#brauncare .header-brauncare__smimage{top:40%;left:38%;right:20%}#brauncare .row-brauncare__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:0}#brauncare .row-brauncare__item h2,#brauncare .row-brauncare__item p{text-align:center}#brauncare .row-brauncare__image img{margin:0}#brauncare .row-brauncare__image{padding-left:0}#brauncare .row-brauncare{margin-top:0}}@media screen and (max-width: 601px){#brauncare .header-brauncare__text p{font-size:11px;padding-top:15px;max-width:200px}#brauncare .header-brauncare__text{width:100%}}@media screen and (max-width: 479.98px){#brauncare .header-brauncare{padding-bottom:65px}#brauncare .header-brauncare__smimage{top:42%}#brauncare .header-brauncare__item{position:absolute;z-index:8;top:0;left:0;width:50%}#brauncare .header-brauncare__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#brauncare .header-brauncare__row{-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}#brauncare .header-brauncare__smimage{left:44%}#brauncare .header-brauncare__text p{font-size:9px}}
+    </style>
+
+    <div id="brauncare">
+        <div class="brauncare__container">
+            <div class="brauncare__header header-brauncare">
+                <div class="header-brauncare__row">
+                    <div class="header-brauncare__item">
+                        <div class="header-brauncare__text">
+                            <span>Braun CareStyle 7 Pro</span>
+                            <h2>Самая мощная гладильная система Braun.</h2>
+                            <p>* Применяется только к IS7286BK со 190 г/мин.
+                                На основе показателей расхода пара
+                                (норма IEC 60311) по сравнению с наиболее продаваемыми конкурентами, 2021 г.</p>
+                        </div>
+                    </div>
+                    <div class="header-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img1.png" alt="">
+                    </div>
+                </div>
+                <div class="header-brauncare__smimage">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2558920/img2.png" alt="">
+                </div>
+            </div>
+            <div class="brauncare__col col-brauncare">
+                <div class="col-brauncare__inner col-brauncare__inner_rev">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Профессиональные результаты благодаря мощной подаче пара.</h2>
+                            <p>Оснащенный инновационной технологией PowerSteam, CareStyle 7 Pro позволяет легко
+                                разглаживать даже самые сложные складки благодаря непрерывной подаче пара
+                                190 г/мин.</p>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-brauncare__inner">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Первый в мире утюг с сертификатом эргономики*.</h2>
+                            <p>Уникальная открытая ручка имеет оптимальный угол для уменьшения нагрузки на запястье,
+                                обеспечивая более комфортную глажку.</p>
+                            <span>*Сертифицирован ErgoCert (Институт сертификации эргономики, признанный Accredia).
+                                Проверено по сравнению с наиболее продаваемыми конкурентами,
+                                январь 2020г.</span>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img4.png" alt="">
+                        <div class="col-brauncare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2558920/img5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__row row-brauncare">
+                <div class="row-brauncare__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2558920/img6.png" alt="">
+                </div>
+                <div class="row-brauncare__inner">
+                    <div class="row-brauncare__item">
+                        <h2>Мощный паровой выстрел.
+                            Сильное давление пара.</h2>
+                    </div>
+                    <div class="row-brauncare__item">
+                        <p>Наслаждайтесь безупречными результатами благодаря давлению пара 8 бар и чрезвычайно мощному
+                            паровому удару 650 г/мин, чтобы разгладить сложные складки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__col col-brauncare col-brauncare_1">
+                <div class="col-brauncare__inner col-brauncare__inner_rev">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Пусть ничто не тормозит вас.</h2>
+                            <p>Технология <b>Freeglide 3D</b> позволяет скользить назад над любыми препятствиями, такими
+                                как пуговицы
+                                и молнии.</p>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img7.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__footer footer-brauncare">
+                <div class="footer-brauncare__box">
+                    <h2>Наслаждайтесь удобством.</h2>
+                    <p><b>Благодаря новому интерфейсу iMode</b> все режимы глажки будут под рукой. Выберите один из 4
+                        режимов одним нажатием кнопки во время глажки.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2558920/img8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="brauncare">
+        <div class="brauncare__container">
+            <div class="brauncare__header header-brauncare">
+                <div class="header-brauncare__row">
+                    <div class="header-brauncare__item">
+                        <div class="header-brauncare__text">
+                            <span>Braun CareStyle 7 Pro</span>
+                            <h2>Найпотужніша прасувальна система*.</h2>
+                            <p>* Застосовується лише до IS7286BK із 190 г/хв.
+                                На основі показників витрати пари (норма
+                                IEC 60311) у порівнянні з найбільш продаваними конкурентами, 2021 р.</p>
+                        </div>
+                    </div>
+                    <div class="header-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img1.png" alt="">
+                    </div>
+                </div>
+                <div class="header-brauncare__smimage">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2558920/img2.png" alt="">
+                </div>
+            </div>
+            <div class="brauncare__col col-brauncare">
+                <div class="col-brauncare__inner col-brauncare__inner_rev">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Професійні результати завдяки інтенсивній подачі пари
+                                потужність.</h2>
+                            <p>Оснащений інноваційною технологією
+                                PowerSteam, CareStyle 7 Pro дозволяє легко розгладжувати навіть найскладніші складки
+                                завдяки безперервній подачі пари 190 г/хв.</p>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-brauncare__inner">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Перша в світі праска з сертифікатом ергономіки*.</h2>
+                            <p>Унікальна відкрита ручка має оптимальний кут для зменшення навантаження на зап’ястя,
+                                забезпечуючи більш комфортне прасування.</p>
+                            <span>*Сертифіковано ErgoCert (Інститут сертифікації ергономіки, визнаний Accredia).
+                                Перевірено порівняно з найбільш продаваними конкурентами, січень 2020 р.</span>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img4.png" alt="">
+                        <div class="col-brauncare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2558920/img5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__row row-brauncare">
+                <div class="row-brauncare__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2558920/img6.png" alt="">
+                </div>
+                <div class="row-brauncare__inner">
+                    <div class="row-brauncare__item">
+                        <h2>Потужний паровий постріл.
+                            Сильний тиск пари.</h2>
+                    </div>
+                    <div class="row-brauncare__item">
+                        <p>Насолоджуйтесь бездоганними результатами завдяки тиску пари 8 бар і надзвичайно потужному
+                            паровому удару
+                            650 г/хв, щоб розгладити найскладніші складки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__col col-brauncare col-brauncare_1">
+                <div class="col-brauncare__inner col-brauncare__inner_rev">
+                    <div class="col-brauncare__item">
+                        <div class="col-brauncare__text">
+                            <h2>Нехай ніщо
+                                не гальмує вас.</h2>
+                            <p><b>Технологія Freeglide 3D</b> дозволяє ковзати назад над будь-якими перешкодами, такими
+                                як гудзики та блискавки.</p>
+                        </div>
+                    </div>
+                    <div class="col-brauncare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2558920/img7.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="brauncare__footer footer-brauncare">
+                <div class="footer-brauncare__box">
+                    <h2>Насолоджуйтесь зручністю.</h2>
+                    <p><b>Завдяки новому інтерфейсу iMode</b> усі режими прасування будуть під рукою. Виберіть один із 4
+                        режимів одним натисканням кнопки під час прасування.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2558920/img8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
