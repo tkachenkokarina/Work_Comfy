@@ -1,0 +1,221 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+// #maincontent section
+//     width: 970px
+//     margin-bottom: 30px
+//     &::after
+//         clear: both
+//         display: block
+//         content: ''
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 970px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 22px, $lineHeight: 1.5)
+            margin: 20px 0px 10px 0px
+        p
+            @include fonts($fontSize: 16px, $lineHeight: 1.5)
+            margin-bottom: 10px
+            span
+                @include fonts($fontSize: 14px, $lineHeight: 1.5)
+
+        ul, li
+            @include fonts($fontSize: 16px, $lineHeight: 1.5)
+            margin: 0
+            padding-left: 16px
+            padding-bottom: 10px
+            list-style: disc
+        section
+            margin-bottom: 30px
+
+// #maincontent .mr-0
+//     margin-right: 0 !important
+
+
+
+#maincontent .overview
+    @include flex-box($justifyContent: center, $alignItems: stretch)
+    gap: 20px
+#maincontent .product
+    &-image 
+        flex: 0 1 30%
+    &-info
+        flex: 0 1 35%
+#maincontent .acer
+    &-intro
+        flex: 0 1 25% 
+        padding-left: 30px
+        border-left: 1px solid #ddd
+#maincontent .column-3
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    column-gap: 30px
+
+#maincontent .ksp
+    &-text
+        padding: 0 15px 
+#maincontent .bottom-text
+    p
+        text-align: center
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 900px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 17px + (22 - 17) * ((100vw - 320px)/(900 - 320)))            
+            p
+                font-size: calc( 13px + (16 - 13) * ((100vw - 320px)/(900 - 320)))
+                span
+                    font-size: calc( 12px + (14 - 12) * ((100vw - 320px)/(900 - 320)))
+            ul, li
+                font-size: calc( 13px + (16 - 13) * ((100vw - 320px)/(900 - 320)))
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 850.98px)
+    #maincontent .column-3
+        grid-template-columns: repeat(2, 1fr)   
+
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            section
+                margin-bottom: 0
+            .product-title
+                margin-top: 10px
+            .ksp-title
+                margin-top: 10px
+    #maincontent .overview
+        flex-direction: column
+        gap: 0
+    #maincontent .product
+        &-image
+            margin: 0 auto
+            order: 2
+        &-info
+            order: 1 
+            padding: 0 10px
+            ul, li
+                &:last-child
+                    padding-bottom: 0 
+        &-title
+            text-align: center
+        &-desc
+            text-align: center
+    #maincontent .acer
+        &-intro
+            order: 3
+            border: none
+            padding: 0 10px
+        &-logo
+            img
+                margin: 0 auto
+        &-desc
+            text-align: center
+    #maincontent .column-3
+        grid-template-columns: 1fr
+    #maincontent .ksp
+        &-image
+            img
+                margin: 0 auto
+        &-title
+            text-align: center
+            
+        &-desc
+            text-align: center
+            
+
+@media screen and (max-width: 479.98px)
+    #maincontent .product
+        &-info
+            padding: 0        
+    #maincontent .acer
+        &-intro
+            padding: 0
+    #maincontent .ksp
+        &-text
+            padding: 0 
+        
