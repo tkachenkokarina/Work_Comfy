@@ -214,17 +214,7 @@ li
         height: 50px
         z-index: 8
 
-// #maincontent .row-maincontent
-//     &__inner
-//         @include flex-box($justifyContent: center, $alignItems: center)
-//         &_rev
-//             flex-direction: row-reverse
-//     &__item
-//         flex: 0 1 50%
-//     &__text
-//         padding: 10px 20px
-//     &__image
-//         flex: 0 1 50%
+
 
 //===========MEDIA=============================================================================================================================================
 @media screen and (max-width: 1400px)
@@ -241,13 +231,20 @@ li
 @media screen and (max-width: 1110px)
     #maincontent .col-maincontent
         &__inner
-            grid-template-columns: repeat(2, 1fr)    
-@media screen and (max-width: 1090.98px)
+            grid-template-columns: repeat(2, 1fr) 
     #maincontent .samsung-ue
-        &__prev, &__next
-            display: none
-//@media screen and (max-width: 1024.98px)
-//@media screen and (max-width: 991.98px)
+        &__img, &__item
+            padding: 0 30px        
+        &__prev, &__next 
+            width: 40px
+            height: 40px  
+// @media screen and (max-width: 1090.98px)
+   
+@media screen and (max-width: 1024.98px)
+    #maincontent .samsung-ue
+        &__img, &__item
+            padding: 0 60px
+// @media screen and (max-width: 991.98px)    
 @media screen and (max-width: 767.98px)
     #maincontent .maincontent
         &__container
@@ -279,13 +276,17 @@ li
             text-align: center
         h4
             margin-top: 10px
+        &__img
+            padding: 0
         &__item
+            padding: 0
             p
                 margin-bottom: 38px
             &_nomb
                 p
                     margin-bottom: 10px
-
+        &__prev, &__next
+            display: none       
 
 @media screen and (max-width: 600.98px)
     #maincontent .col-maincontent

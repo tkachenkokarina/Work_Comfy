@@ -288,10 +288,17 @@ li {
   #maincontent .col-maincontent__inner {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media screen and (max-width: 1090.98px) {
+  #maincontent .samsung-ue__img, #maincontent .samsung-ue__item {
+    padding: 0 30px;
+  }
   #maincontent .samsung-ue__prev, #maincontent .samsung-ue__next {
-    display: none;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  #maincontent .samsung-ue__img, #maincontent .samsung-ue__item {
+    padding: 0 60px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -329,11 +336,20 @@ li {
   #maincontent .samsung-ue h4 {
     margin-top: 10px;
   }
+  #maincontent .samsung-ue__img {
+    padding: 0;
+  }
+  #maincontent .samsung-ue__item {
+    padding: 0;
+  }
   #maincontent .samsung-ue__item p {
     margin-bottom: 38px;
   }
   #maincontent .samsung-ue__item_nomb p {
     margin-bottom: 10px;
+  }
+  #maincontent .samsung-ue__prev, #maincontent .samsung-ue__next {
+    display: none;
   }
 }
 @media screen and (max-width: 600.98px) {

@@ -1,6 +1,6 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {    
     speed: 500,
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 20,
     autoheight: true,
     navigation: {
@@ -17,3 +17,4 @@ const swiper = new Swiper('.swiper', {
         crossFade: true
     },
 });
+
