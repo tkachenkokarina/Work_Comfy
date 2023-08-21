@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #samsungtv ul,#samsungtv ol,#samsungtv li{list-style:none;padding:0;margin:0}#samsungtv .bc-description__content p{margin-bottom:0}#samsungtv .bc-description__content h3{text-align:left}#samsungtv h1,#samsungtv h2,#samsungtv h3,#samsungtv h4,#samsungtv h5,#samsungtv h6{text-transform:none;font-weight:bold}#samsungtv{margin:0 auto;overflow:hidden;background-color:#fff}#samsungtv h1,#samsungtv h2,#samsungtv h3,#samsungtv h4,#samsungtv h5,#samsungtv h6,#samsungtv p{margin:0;padding:0;text-align:left}#samsungtv p::first-letter{padding-left:0}#samsungtv img{opacity:1;max-width:100%;display:block;margin:0 auto}#samsungtv img:hover{opacity:1}#samsungtv .samsungtv__container{max-width:1400px;margin:0 auto}#samsungtv .header-samsungtv__bg{position:relative;z-index:2}#samsungtv .header-samsungtv__text{position:absolute;z-index:5;top:6%;left:5%;width:50%}#samsungtv .header-samsungtv__text h2{font-size:48px;line-height:1.2;font-weight:700}@media(max-width: 1400px){#samsungtv .header-samsungtv__text h2{font-size:-webkit-calc(22px + 26 * ((100vw - 320px) / 1080));font-size:calc(22px + 26 * ((100vw - 320px) / 1080))}}#samsungtv .function-samsungtv{background-color:#000;padding-top:48px;padding-bottom:48px;padding-left:84px;padding-right:84px}@media(max-width: 1400px){#samsungtv .function-samsungtv{padding-left:-webkit-calc(15px + 69 * ((100vw - 320px) / 1080));padding-left:calc(15px + 69 * ((100vw - 320px) / 1080))}}@media(max-width: 1400px){#samsungtv .function-samsungtv{padding-right:-webkit-calc(15px + 69 * ((100vw - 320px) / 1080));padding-right:calc(15px + 69 * ((100vw - 320px) / 1080))}}#samsungtv .function-samsungtv__title h2{font-size:48px;line-height:1.2;font-weight:700;text-align:center;margin-bottom:20px;color:#fff}@media(max-width: 1400px){#samsungtv .function-samsungtv__title h2{font-size:-webkit-calc(22px + 26 * ((100vw - 320px) / 1080));font-size:calc(22px + 26 * ((100vw - 320px) / 1080))}}#samsungtv .function-samsungtv__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px}#samsungtv .function-samsungtv__item{border:1px solid rgba(255,255,255,.26);background:rgba(255,255,255,.1);display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px;-webkit-border-radius:20px;border-radius:20px;min-height:100px}#samsungtv .function-samsungtv__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:15px}#samsungtv .function-samsungtv__icon{-webkit-box-flex:0;-webkit-flex:0 0 56px;-moz-box-flex:0;-ms-flex:0 0 56px;flex:0 0 56px}#samsungtv .function-samsungtv__text h2{font-size:18px;line-height:1.3;margin-bottom:10px;color:#fff}#samsungtv .function-samsungtv__text p{font-size:14px;line-height:1.3;color:#fff}#samsungtv .column-samsungtv{background-color:#000}#samsungtv .column-samsungtv__box{padding:80px 20px 0}#samsungtv .column-samsungtv__text{padding-bottom:15px;max-width:1000px;margin:0 auto}#samsungtv .column-samsungtv__text h2{font-size:48px;line-height:1.2;text-align:center;margin-bottom:15px;color:#fff}@media(max-width: 1400px){#samsungtv .column-samsungtv__text h2{font-size:-webkit-calc(22px + 26 * ((100vw - 320px) / 1080));font-size:calc(22px + 26 * ((100vw - 320px) / 1080))}}#samsungtv .column-samsungtv__text p{font-size:28px;line-height:1.2;font-weight:700;text-align:center;margin-bottom:20px;color:#fff}@media(max-width: 1400px){#samsungtv .column-samsungtv__text p{font-size:-webkit-calc(16px + 12 * ((100vw - 320px) / 1080));font-size:calc(16px + 12 * ((100vw - 320px) / 1080))}}#samsungtv .column-samsungtv__text span{font-size:32px;line-height:1.2;margin-bottom:15px;text-align:center;display:block;font-weight:bold;color:#fff}@media(max-width: 1400px){#samsungtv .column-samsungtv__text span{font-size:-webkit-calc(16px + 16 * ((100vw - 320px) / 1080));font-size:calc(16px + 16 * ((100vw - 320px) / 1080))}}#samsungtv .quality-samsungtv__title{padding:88px 88px 0}#samsungtv .quality-samsungtv__title h2{font-size:60px;line-height:1.2;margin-bottom:60px}@media(max-width: 1400px){#samsungtv .quality-samsungtv__title h2{font-size:-webkit-calc(22px + 38 * ((100vw - 320px) / 1080));font-size:calc(22px + 38 * ((100vw - 320px) / 1080))}}#samsungtv .quality-samsungtv__row{overflow:hidden}#samsungtv .quality-samsungtv__slider{width:64%;margin:0;overflow:visible}#samsungtv .quality-samsungtv__text{padding-top:40px}@media(max-width: 1400px){#samsungtv .quality-samsungtv__text{padding-top:-webkit-calc(15px + 25 * ((100vw - 320px) / 1080));padding-top:calc(15px + 25 * ((100vw - 320px) / 1080))}}#samsungtv .quality-samsungtv__text h2{font-size:38px;line-height:1.2;margin-bottom:10px}@media(max-width: 1400px){#samsungtv .quality-samsungtv__text h2{font-size:-webkit-calc(20px + 18 * ((100vw - 320px) / 1080));font-size:calc(20px + 18 * ((100vw - 320px) / 1080))}}#samsungtv .quality-samsungtv__text span{font-size:22px;line-height:1.2;margin-bottom:10px;font-weight:bold;display:block}@media(max-width: 1400px){#samsungtv .quality-samsungtv__text span{font-size:-webkit-calc(18px + 4 * ((100vw - 320px) / 1080));font-size:calc(18px + 4 * ((100vw - 320px) / 1080))}}#samsungtv .quality-samsungtv__text p{font-size:18px;line-height:1.2}@media(max-width: 1400px){#samsungtv .quality-samsungtv__text p{font-size:-webkit-calc(16px + 2 * ((100vw - 320px) / 1080));font-size:calc(16px + 2 * ((100vw - 320px) / 1080))}}#samsungtv .swiper{padding-left:60px;padding-bottom:60px}#samsungtv .swiper-button-prev{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);left:10px}#samsungtv .swiper-button-next{right:-50px}#samsungtv .swiper-button-next,#samsungtv .swiper-button-prev{top:30%;border:1px solid rgba(0,0,0,.1);-webkit-border-radius:50%;border-radius:50%;width:40px;height:40px}#samsungtv .swiper-button-next:after,#samsungtv .swiper-button-prev:after{content:"";background:url("https://cdn.comfy.ua/media/x/img3/2360418/arrow.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:20px;height:32px}#samsungtv .swiper-pagination-bullet{width:10px;height:10px;background:#000}#samsungtv .swiper-pagination{border:1px solid rgba(0,0,0,.1);width:15%;-webkit-border-radius:10px;border-radius:10px;padding:3px 5px;right:0;margin:0 auto}#samsungtv .sound-samsungtv__title{padding:88px 88px 0}#samsungtv .sound-samsungtv__title h2{font-size:60px;line-height:1.2;margin-bottom:60px}@media(max-width: 1400px){#samsungtv .sound-samsungtv__title h2{font-size:-webkit-calc(22px + 38 * ((100vw - 320px) / 1080));font-size:calc(22px + 38 * ((100vw - 320px) / 1080))}}#samsungtv .sound-samsungtv__row{overflow:hidden}#samsungtv .sound-samsungtv__slider{width:64%;margin:0;overflow:visible}#samsungtv .sound-samsungtv__text{padding-top:40px}@media(max-width: 1400px){#samsungtv .sound-samsungtv__text{padding-top:-webkit-calc(15px + 25 * ((100vw - 320px) / 1080));padding-top:calc(15px + 25 * ((100vw - 320px) / 1080))}}#samsungtv .sound-samsungtv__text h2{font-size:38px;line-height:1.2;margin-bottom:10px}@media(max-width: 1400px){#samsungtv .sound-samsungtv__text h2{font-size:-webkit-calc(20px + 18 * ((100vw - 320px) / 1080));font-size:calc(20px + 18 * ((100vw - 320px) / 1080))}}#samsungtv .sound-samsungtv__text span{font-size:22px;line-height:1.2;margin-bottom:10px;font-weight:bold;display:block}@media(max-width: 1400px){#samsungtv .sound-samsungtv__text span{font-size:-webkit-calc(18px + 4 * ((100vw - 320px) / 1080));font-size:calc(18px + 4 * ((100vw - 320px) / 1080))}}#samsungtv .sound-samsungtv__text p{font-size:18px;line-height:1.2}@media(max-width: 1400px){#samsungtv .sound-samsungtv__text p{font-size:-webkit-calc(16px + 2 * ((100vw - 320px) / 1080));font-size:calc(16px + 2 * ((100vw - 320px) / 1080))}}#samsungtv .design-samsungtv__title{padding:88px 88px 0}#samsungtv .design-samsungtv__title h2{font-size:60px;line-height:1.2;margin-bottom:60px}@media(max-width: 1400px){#samsungtv .design-samsungtv__title h2{font-size:-webkit-calc(22px + 38 * ((100vw - 320px) / 1080));font-size:calc(22px + 38 * ((100vw - 320px) / 1080))}}#samsungtv .design-samsungtv__row{overflow:hidden}#samsungtv .design-samsungtv__slider{width:64%;margin:0;overflow:visible}#samsungtv .design-samsungtv__text{padding-top:40px}@media(max-width: 1400px){#samsungtv .design-samsungtv__text{padding-top:-webkit-calc(15px + 25 * ((100vw - 320px) / 1080));padding-top:calc(15px + 25 * ((100vw - 320px) / 1080))}}#samsungtv .design-samsungtv__text h2{font-size:38px;line-height:1.2;margin-bottom:10px}@media(max-width: 1400px){#samsungtv .design-samsungtv__text h2{font-size:-webkit-calc(20px + 18 * ((100vw - 320px) / 1080));font-size:calc(20px + 18 * ((100vw - 320px) / 1080))}}#samsungtv .design-samsungtv__text span{font-size:22px;line-height:1.2;margin-bottom:10px;font-weight:bold;display:block}@media(max-width: 1400px){#samsungtv .design-samsungtv__text span{font-size:-webkit-calc(18px + 4 * ((100vw - 320px) / 1080));font-size:calc(18px + 4 * ((100vw - 320px) / 1080))}}#samsungtv .design-samsungtv__text p{font-size:18px;line-height:1.2}@media(max-width: 1400px){#samsungtv .design-samsungtv__text p{font-size:-webkit-calc(16px + 2 * ((100vw - 320px) / 1080));font-size:calc(16px + 2 * ((100vw - 320px) / 1080))}}#samsungtv .play-samsungtv{padding-left:60px;padding-right:15px}#samsungtv .play-samsungtv__title{padding:88px 88px 0}#samsungtv .play-samsungtv__title h2{font-size:60px;line-height:1.2;margin-bottom:60px}@media(max-width: 1400px){#samsungtv .play-samsungtv__title h2{font-size:-webkit-calc(22px + 38 * ((100vw - 320px) / 1080));font-size:calc(22px + 38 * ((100vw - 320px) / 1080))}}#samsungtv .play-samsungtv__item{max-width:900px}#samsungtv .play-samsungtv__text{padding-top:40px}@media(max-width: 1400px){#samsungtv .play-samsungtv__text{padding-top:-webkit-calc(15px + 25 * ((100vw - 320px) / 1080));padding-top:calc(15px + 25 * ((100vw - 320px) / 1080))}}#samsungtv .play-samsungtv__text h2{font-size:38px;line-height:1.2;margin-bottom:10px}@media(max-width: 1400px){#samsungtv .play-samsungtv__text h2{font-size:-webkit-calc(20px + 18 * ((100vw - 320px) / 1080));font-size:calc(20px + 18 * ((100vw - 320px) / 1080))}}#samsungtv .play-samsungtv__text span{font-size:22px;line-height:1.2;margin-bottom:10px;font-weight:bold;display:block}@media(max-width: 1400px){#samsungtv .play-samsungtv__text span{font-size:-webkit-calc(18px + 4 * ((100vw - 320px) / 1080));font-size:calc(18px + 4 * ((100vw - 320px) / 1080))}}#samsungtv .play-samsungtv__text p{font-size:18px;line-height:1.2}@media(max-width: 1400px){#samsungtv .play-samsungtv__text p{font-size:-webkit-calc(16px + 2 * ((100vw - 320px) / 1080));font-size:calc(16px + 2 * ((100vw - 320px) / 1080))}}#samsungtv .spec-samsungtv__title{padding:88px 88px 0}#samsungtv .spec-samsungtv__title h2{font-size:60px;line-height:1.2;margin-bottom:60px}@media(max-width: 1400px){#samsungtv .spec-samsungtv__title h2{font-size:-webkit-calc(22px + 38 * ((100vw - 320px) / 1080));font-size:calc(22px + 38 * ((100vw - 320px) / 1080))}}#samsungtv .spec-samsungtv__row{overflow:hidden}#samsungtv .spec-samsungtv__slider{width:64%;margin:0;overflow:visible}#samsungtv .spec-samsungtv__text{padding-top:40px}@media(max-width: 1400px){#samsungtv .spec-samsungtv__text{padding-top:-webkit-calc(15px + 25 * ((100vw - 320px) / 1080));padding-top:calc(15px + 25 * ((100vw - 320px) / 1080))}}#samsungtv .spec-samsungtv__text h2{font-size:38px;line-height:1.2;margin-bottom:10px}@media(max-width: 1400px){#samsungtv .spec-samsungtv__text h2{font-size:-webkit-calc(20px + 18 * ((100vw - 320px) / 1080));font-size:calc(20px + 18 * ((100vw - 320px) / 1080))}}#samsungtv .spec-samsungtv__text span{font-size:22px;line-height:1.2;margin-bottom:10px;font-weight:bold;display:block}@media(max-width: 1400px){#samsungtv .spec-samsungtv__text span{font-size:-webkit-calc(18px + 4 * ((100vw - 320px) / 1080));font-size:calc(18px + 4 * ((100vw - 320px) / 1080))}}#samsungtv .spec-samsungtv__text p{font-size:18px;line-height:1.2}@media(max-width: 1400px){#samsungtv .spec-samsungtv__text p{font-size:-webkit-calc(16px + 2 * ((100vw - 320px) / 1080));font-size:calc(16px + 2 * ((100vw - 320px) / 1080))}}@media screen and (max-width: 767.98px){#samsungtv .column-samsungtv__box{padding:20px 15px 0}#samsungtv .quality-samsungtv__title,#samsungtv .sound-samsungtv__title,#samsungtv .design-samsungtv__title,#samsungtv .play-samsungtv__title,#samsungtv .spec-samsungtv__title{padding:40px 15px 0}#samsungtv .quality-samsungtv__title h2,#samsungtv .sound-samsungtv__title h2,#samsungtv .design-samsungtv__title h2,#samsungtv .play-samsungtv__title h2,#samsungtv .spec-samsungtv__title h2{text-align:center;margin-bottom:30px}}@media screen and (max-width: 720px){#samsungtv .header-samsungtv__text{width:auto;top:10%;left:0;padding:0 15px}#samsungtv .header-samsungtv__text h2{text-align:center}#samsungtv .swiper-pagination{width:22%}}@media screen and (max-width: 601px){#samsungtv .swiper-button-next,#samsungtv .swiper-button-prev{display:none}#samsungtv .swiper,#samsungtv .play-samsungtv{padding-left:15px}}@media screen and (max-width: 479.98px){#samsungtv .swiper{padding-right:15px}#samsungtv .quality-samsungtv__slider,#samsungtv .sound-samsungtv__slider,#samsungtv .design-samsungtv__slider,#samsungtv .spec-samsungtv__slider{width:auto}#samsungtv .quality-samsungtv__text h2,#samsungtv .quality-samsungtv__text span,#samsungtv .quality-samsungtv__text p,#samsungtv .sound-samsungtv__text h2,#samsungtv .sound-samsungtv__text span,#samsungtv .sound-samsungtv__text p,#samsungtv .design-samsungtv__text h2,#samsungtv .design-samsungtv__text span,#samsungtv .design-samsungtv__text p,#samsungtv .play-samsungtv__text h2,#samsungtv .play-samsungtv__text span,#samsungtv .play-samsungtv__text p,#samsungtv .spec-samsungtv__text h2,#samsungtv .spec-samsungtv__text span,#samsungtv .spec-samsungtv__text p{text-align:center}#samsungtv .quality-samsungtv__title h2,#samsungtv .sound-samsungtv__title h2,#samsungtv .design-samsungtv__title h2,#samsungtv .play-samsungtv__title h2,#samsungtv .spec-samsungtv__title h2{text-align:center;margin-bottom:18px}}
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <div id="samsungtv">
+        <div class="samsungtv__container">
+            <div class="samsungtv__header header-samsungtv">
+                <div class="header-samsungtv__bg">
+                    <div class="header-samsungtv__image">
+                        <picture>
+                            <source media="(min-width: 720px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2360418/img1.jpg">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2360418/img1m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2360418/img1.jpg">
+                        </picture>
+                    </div>
+                    <div class="header-samsungtv__text">
+                        <h2>Миллиард оттенков, элегантный дизайн и мощный звук</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__function function-samsungtv">
+                <div class="function-samsungtv__title">
+                    <h2>Основные функции</h2>
+                </div>
+                <div class="function-samsungtv__row">
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img2.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Миллиард оттенков цветов на вашем экране</h2>
+                                <p>Благодаря квантовым точкам телевизор имеет 100% цветовой охват.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img3.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Глубина и контрастность</h2>
+                                <p>Благодаря технологии Quantum HDR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img4.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>AirSlim</h2>
+                                <p>Элегантный и утонченный дизайн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img5.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Smart Hub</h2>
+                                <p>Весь контент в одном месте</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__column column-samsungtv">
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Миллиард оттенков цветов что бы вы ни смотрели</h2>
+                        <span>Потрясающие цвета</span>
+                        <p>Благодаря технологии Quantum Dot вы можете наслаждаться невероятным цветовым охватом. Все
+                            цвета и оттенки сохраняются на любом уровне яркости и радуют вас при просмотре любого
+                            контента.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Кинематографическая контрастность</h2>
+                        <span>Технология Quantum HDR</span>
+                        <p>Теперь вы не упустите ни одной детали! Динамическое отображение тонов HDR10+ создает глубокие
+                            оттенки черного и яркие изображения с улучшенной контрастностью, как задумывалось
+                            режиссером.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Элегантный дизайн</h2>
+                        <span>Airslim — тонкость и легкость</span>
+                        <p>Этот тонкий дизайн поразит любого! Телевизор будет смотреться на стене максимально гармонично
+                            и изящно.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Smart Hub</h2>
+                        <span>Весь контент в одном месте</span>
+                        <p>Теперь все фильмы, сериалы и программы находятся в одном месте — в телевизоре. У вас есть
+                            быстрый доступ к ним и теперь вы не будете тратить множество времени на поиск.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__quality quality-samsungtv">
+                <div class="quality-samsungtv__title">
+                    <h2>Изображение</h2>
+                </div>
+                <div class="quality-samsungtv__row">
+                    <div class="quality-samsungtv__slider swiper">
+                        <div class="quality-samsungtv__wrapper swiper-wrapper">
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img10.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Quantum Processor Lite 4K</h2>
+                                        <span>Мощный и быстрый процессор</span>
+                                        <p>Этот умный процессор оптимизирует звук в соответствии с условиями просмотра,
+                                            а повышение качества до 4K обеспечивает высокое разрешение для всех фильмов,
+                                            сериалов и программ.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img11.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Идеальные цвета</h2>
+                                        <span>Проверенные PANTONE</span>
+                                        <p>Первый в мире телевизор, цветной дисплей которого проверил сам PANTONE. Это
+                                            подтверждение является надежным показателем цветостойкости, поэтому вы
+                                            можете смело наслаждаться точными насыщенными цветами.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img12.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Двойная подсветка Dual LED</h2>
+                                        <span>Лучший контраст</span>
+                                        <p>С теплой и холодной светодиодной подсветкой вы получаете более яркий контраст
+                                            изображения. К тому же подсветка включается в соответствии с типом контента,
+                                            который находится на экране в реальном времени.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__sound sound-samsungtv">
+                <div class="sound-samsungtv__title">
+                    <h2>Звучание</h2>
+                </div>
+                <div class="sound-samsungtv__row">
+                    <div class="sound-samsungtv__slider swiper">
+                        <div class="sound-samsungtv__wrapper swiper-wrapper">
+                            <div class="sound-samsungtv__slide swiper-slide">
+                                <div class="sound-samsungtv__item">
+                                    <div class="sound-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img13.jpg" alt="">
+                                    </div>
+                                    <div class="sound-samsungtv__text">
+                                        <h2>Объемный звук</h2>
+                                        <span>С технологией OTS Lite</span>
+                                        <p>3D-звук дома — э то уже не мечта, а реальность. Он обеспечит полное
+                                            погружение в события вместе с виртуальным динамиком верхнего канала.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sound-samsungtv__slide swiper-slide">
+                                <div class="sound-samsungtv__item">
+                                    <div class="sound-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img14.jpg" alt="">
+                                    </div>
+                                    <div class="sound-samsungtv__text">
+                                        <h2>Гармония между телевизором и саундбаром</h2>
+                                        <span>Q-Symphony</span>
+                                        <p>Благодаря этой технологии динамики саундбара и телевизора работают
+                                            одновременно и без подавления. Так вы получаете идеальное объемное звучание!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__design design-samsungtv">
+                <div class="design-samsungtv__title">
+                    <h2>Дизайн</h2>
+                </div>
+                <div class="design-samsungtv__row">
+                    <div class="design-samsungtv__slider swiper">
+                        <div class="design-samsungtv__wrapper swiper-wrapper">
+                            <div class="design-samsungtv__slide swiper-slide">
+                                <div class="design-samsungtv__item">
+                                    <div class="design-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img15.jpg" alt="">
+                                    </div>
+                                    <div class="design-samsungtv__text">
+                                        <h2>Простой и экологичный контроль</h2>
+                                        <span>Пульт с солнечной батареей</span>
+                                        <p>SolarCell Remote — это пульт, благодаря которому вы можете попрощаться с
+                                            одноразовыми батарейками. Он имеет солнечную панель и может заряжаться от
+                                            солнечного света.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design-samsungtv__slide swiper-slide">
+                                <div class="design-samsungtv__item">
+                                    <div class="design-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img17.jpg" alt="">
+                                    </div>
+                                    <div class="design-samsungtv__text">
+                                        <h2>Регулируйте высоту</h2>
+                                        <span>Идеально для любого пространства</span>
+                                        <p>Благодаря управляемой подставке можно настроить высоту телевизора. Так, вы
+                                            можете установить, например саундбар прямо под телевизором.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__play play-samsungtv">
+                <div class="play-samsungtv__title">
+                    <h2>Игры</h2>
+                </div>
+                <div class="play-samsungtv__row">
+                    <div class="play-samsungtv__item">
+                        <div class="play-samsungtv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2360418/img18.jpg" alt="">
+                        </div>
+                        <div class="play-samsungtv__text">
+                            <h2>Плавные движения с Motion Xcelerator</h2>
+                            <span>Идеальный игровой опыт</span>
+                            <p>Производительность и плавность, четкость и точность — все это есть в этой модели
+                                телевизора благодаря Motion Xcelerator. Он автоматически оценивает и компенсирует кадры
+                                источника содержимого.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__spec spec-samsungtv">
+                <div class="spec-samsungtv__title">
+                    <h2>Умные функции</h2>
+                </div>
+                <div class="spec-samsungtv__row">
+                    <div class="spec-samsungtv__slider swiper">
+                        <div class="spec-samsungtv__wrapper swiper-wrapper">
+                            <div class="spec-samsungtv__slide swiper-slide">
+                                <div class="spec-samsungtv__item">
+                                    <div class="spec-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img16.jpg" alt="">
+                                    </div>
+                                    <div class="spec-samsungtv__text">
+                                        <h2>SmartThings</h2>
+                                        <span>Ваш умный дом</span>
+                                        <p>Благодаря встроенному IoT Hub, обнаруживающему, подключающему и управляющему
+                                            другими умными устройствами в комнате, вы можете расслабиться и не думать об
+                                            управлении другими устройствами.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-samsungtv__slide swiper-slide">
+                                <div class="spec-samsungtv__item">
+                                    <div class="spec-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img19.jpg" alt="">
+                                    </div>
+                                    <div class="spec-samsungtv__text">
+                                        <h2>NFT-Вселенная</h2>
+                                        <span>Оценивайте NFT на большом экране</span>
+                                        <p>В эту модель телевизора интегрирована первая в мире платформа агрегации NFT.
+                                            С ней можно легко и быстро искать и покупать NFT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let myQualitySlider = new Swiper('.quality-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let mySoundSlider = new Swiper('.sound-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let myDesignSlider = new Swiper('.design-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let mySpecSlider = new Swiper('.spec-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+        });
+    </script>
+
+    UA
+    <div id="samsungtv">
+        <div class="samsungtv__container">
+            <div class="samsungtv__header header-samsungtv">
+                <div class="header-samsungtv__bg">
+                    <div class="header-samsungtv__image">
+                        <picture>
+                            <source media="(min-width: 720px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2360418/img1.jpg">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2360418/img1m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2360418/img1.jpg">
+                        </picture>
+                    </div>
+                    <div class="header-samsungtv__text">
+                        <h2>Мільярд відтінків, елегантний дизайн та потужний звук</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__function function-samsungtv">
+                <div class="function-samsungtv__title">
+                    <h2>Основні функції</h2>
+                </div>
+                <div class="function-samsungtv__row">
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img2.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Мільярд відтінків кольорів на вашому екрані</h2>
+                                <p>Завдяки квантовим точкам телевізор має 100% колірне охоплення</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img3.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Глибина і контрастність</h2>
+                                <p>Завдяки технології Quantum HDR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img4.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>AirSlim</h2>
+                                <p>Елегантний та витончений дизайн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="function-samsungtv__item">
+                        <div class="function-samsungtv__inner">
+                            <div class="function-samsungtv__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2360418/img5.png" alt="">
+                            </div>
+                            <div class="function-samsungtv__text">
+                                <h2>Smart Hub</h2>
+                                <p>Весь контент в одному місці</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__column column-samsungtv">
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Мільярд відтінків кольорів що б ви не дивилися</h2>
+                        <span>Приголомшливі кольори</span>
+                        <p>Завдяки технології Quantum Dot ви можете насолоджуватися неймовірним колірним охопленням. Всі
+                            відтінки та кольори зберігаються на будь-якому рівні яскравості і радують вас при перегляді
+                            будь-якого контенту.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Кінематографічна контрастність</h2>
+                        <span>Технологія Quantum HDR</span>
+                        <p>Тепер ви не пропустите жодної деталі! Динамічне відображення тонів HDR10+ створює глибокі
+                            відтінки чорного та яскраві зображення з покращеною контрастністю, прям як задумувалося
+                            режисером.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Елегантний дизайн</h2>
+                        <span>Airslim — тонкість та легкість</span>
+                        <p>Цей тонкий дизайн приголомшить будь-кого! Телевізор буде виглядати на стіні максимально
+                            гармонічно та витончено.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="column-samsungtv__box">
+                    <div class="column-samsungtv__text">
+                        <h2>Smart Hub</h2>
+                        <span>Весь контент в одному місці</span>
+                        <p>Тепер всі фільми, серіали та програми знаходяться в одному місці — у вашому телевізорі. Ви
+                            маєте швидких доступ до них і тепер ви не будете витрачати безліч часу на пошук.</p>
+                    </div>
+                    <div class="column-samsungtv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__quality quality-samsungtv">
+                <div class="quality-samsungtv__title">
+                    <h2>Зображення</h2>
+                </div>
+                <div class="quality-samsungtv__row">
+                    <div class="quality-samsungtv__slider swiper">
+                        <div class="quality-samsungtv__wrapper swiper-wrapper">
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img10.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Quantum Processor Lite 4K</h2>
+                                        <span>Потужний та швидкий процесор</span>
+                                        <p>Цей розумний процесор оптимізує звук відповідно до умов перегляду, а
+                                            підвищення якості до 4K забезпечує вам високу роздільну здатність для всіх
+                                            фільмів, серіалів та програм.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img11.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Ідеальні кольори</h2>
+                                        <span>Перевірені PANTONE</span>
+                                        <p>Першій у світі телевізор, кольоровий дисплей якого перевірив сам PANTONE. Це
+                                            підтвердження є надійним показником стійкості кольору, тому ви можете
+                                            сміливо насолоджуватися точними насиченими кольорами.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quality-samsungtv__slide swiper-slide">
+                                <div class="quality-samsungtv__item">
+                                    <div class="quality-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img12.jpg" alt="">
+                                    </div>
+                                    <div class="quality-samsungtv__text">
+                                        <h2>Подвійне підсвічування Dual LED</h2>
+                                        <span>Кращий контраст</span>
+                                        <p>З теплим та холодним світлодіодним підсвічуванням ви отримуєте яскравіший
+                                            контраст зображення. До того ж підсвічування вмикається відповідно до типу
+                                            контенту, який на екрані в реальному часі.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__sound sound-samsungtv">
+                <div class="sound-samsungtv__title">
+                    <h2>Звучання</h2>
+                </div>
+                <div class="sound-samsungtv__row">
+                    <div class="sound-samsungtv__slider swiper">
+                        <div class="sound-samsungtv__wrapper swiper-wrapper">
+                            <div class="sound-samsungtv__slide swiper-slide">
+                                <div class="sound-samsungtv__item">
+                                    <div class="sound-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img13.jpg" alt="">
+                                    </div>
+                                    <div class="sound-samsungtv__text">
+                                        <h2>Об'ємний звук</h2>
+                                        <span>З технологією OTS Lite</span>
+                                        <p>3D-звук вдома — це вже не мрія, а реальність. Він забезпечить повне занурення
+                                            у події разом з віртуальним динаміком верхнього каналу.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sound-samsungtv__slide swiper-slide">
+                                <div class="sound-samsungtv__item">
+                                    <div class="sound-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img14.jpg" alt="">
+                                    </div>
+                                    <div class="sound-samsungtv__text">
+                                        <h2>Гармонія між телевізором і саундбаром</h2>
+                                        <span>Q-Symphony</span>
+                                        <p>Завдяки цій технології динаміки саундбара та телевізора працюють одночасно і
+                                            без приглушення. Так ви отримуєте ідеальне об'ємне звучання!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__design design-samsungtv">
+                <div class="design-samsungtv__title">
+                    <h2>Дизайн</h2>
+                </div>
+                <div class="design-samsungtv__row">
+                    <div class="design-samsungtv__slider swiper">
+                        <div class="design-samsungtv__wrapper swiper-wrapper">
+                            <div class="design-samsungtv__slide swiper-slide">
+                                <div class="design-samsungtv__item">
+                                    <div class="design-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img15.jpg" alt="">
+                                    </div>
+                                    <div class="design-samsungtv__text">
+                                        <h2>Простий і екологічний контроль</h2>
+                                        <span>Пульт із сонячною батареєю</span>
+                                        <p>SolarCell Remote — це пульт, завдяки якому ви можете попрощатися з
+                                            одноразовими батарейками. Він має сонячну панель і може заряджатися від
+                                            сонячного світла.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design-samsungtv__slide swiper-slide">
+                                <div class="design-samsungtv__item">
+                                    <div class="design-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img17.jpg" alt="">
+                                    </div>
+                                    <div class="design-samsungtv__text">
+                                        <h2>Регулюйте висоту</h2>
+                                        <span>Ідеально для будь-якого простору</span>
+                                        <p>Завдяки керованій підставці ви можете налаштувати висоту телевізора. Так, ви
+                                            можете встановити, наприклад саундбар прямо під телевізором.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__play play-samsungtv">
+                <div class="play-samsungtv__title">
+                    <h2>Ігри</h2>
+                </div>
+                <div class="play-samsungtv__row">
+                    <div class="play-samsungtv__item">
+                        <div class="play-samsungtv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2360418/img18.jpg" alt="">
+                        </div>
+                        <div class="play-samsungtv__text">
+                            <h2>Плавні рухи з Motion Xcelerator</h2>
+                            <span>Ідеальний ігровий досвід</span>
+                            <p>Продуктивність та плавність, чіткість і точність — все це є в цій моделі телевізора
+                                завдяки Motion Xcelerator. Він автоматично оцінює та компенсує кадри джерела вмісту.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungtv__spec spec-samsungtv">
+                <div class="spec-samsungtv__title">
+                    <h2>Розумні функції</h2>
+                </div>
+                <div class="spec-samsungtv__row">
+                    <div class="spec-samsungtv__slider swiper">
+                        <div class="spec-samsungtv__wrapper swiper-wrapper">
+                            <div class="spec-samsungtv__slide swiper-slide">
+                                <div class="spec-samsungtv__item">
+                                    <div class="spec-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img16.jpg" alt="">
+                                    </div>
+                                    <div class="spec-samsungtv__text">
+                                        <h2>SmartThings</h2>
+                                        <span>Ваш розумний дім</span>
+                                        <p>Завдяки вбудованому IoT Hub, який виявляє, під'єднує та керує іншими
+                                            розумними пристроями в кімнаті, ви можете розслабитися і не думати про
+                                            керування іншими пристроями.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-samsungtv__slide swiper-slide">
+                                <div class="spec-samsungtv__item">
+                                    <div class="spec-samsungtv__image">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2360418/img19.jpg" alt="">
+                                    </div>
+                                    <div class="spec-samsungtv__text">
+                                        <h2>NFT-Всесвіт</h2>
+                                        <span>Оцінюйте NFT на великому екрані</span>
+                                        <p>В цю модель телевізора інтегровано першу у світі платформу агрегації NFT. З
+                                            нею ви можете легко та швидко шукати і купувати NFT.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let myQualitySlider = new Swiper('.quality-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let mySoundSlider = new Swiper('.sound-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let myDesignSlider = new Swiper('.design-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+
+            let mySpecSlider = new Swiper('.spec-samsungtv__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 60,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        spaceBetween: 20
+                    },
+                    601: {
+                        spaceBetween: 60
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
