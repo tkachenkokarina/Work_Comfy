@@ -1,0 +1,303 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 48px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        h4
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 18px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+    &__bg
+        @include position($position: relative, $zIndex: 5)
+    &__img
+        &_s
+            display: none
+    &__text
+        &_white
+            color: #fff
+        h2
+            text-align: left
+
+#maincontent .samsung-ue
+    &__bg
+        background: #000
+    &__container
+        max-width: 1300px
+        margin: 0 auto
+    &__box
+        margin-bottom: 50px
+        &_nomb
+            margin-bottom: 0
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        top: 10%
+        left: 3%
+        right: 50%
+        bottom: 0
+
+#maincontent .col-maincontent
+    h2
+        color: #fff
+        margin-bottom: 20px
+    &__inner
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 20px
+        padding: 0 15px
+    &__item
+        @include flex-box($justifyContent: center, $alignItems: center)
+        border: 1px solid rgba(255,255,255,0.26)
+        border-radius: 15px
+        background: rgba(255,255,255,0.1)
+        padding: 15px 10px
+        gap: 10px
+    &__img
+        flex: 0 1 30%
+    &__text
+        flex: 0 1 70%
+        padding: 5px 10px
+        h4
+            margin-top: 10px
+        h4, p
+            color: #fff
+            text-align: left
+
+#maincontent .ue-samsung
+    &__text
+        max-width: 90%
+        margin: 0 auto 30px
+        h2
+            text-align: center
+    &__img
+        img
+            margin: 0 auto
+#maincontent .maincontent
+    &__slider
+        max-width: 1300px
+        margin: 0 auto
+
+#maincontent .swiper-button-next
+    &::after
+        display: none
+#maincontent .swiper-button-prev
+    &::after
+        display: none
+
+#maincontent .swiper-pagination-bullet-active
+    background-color: #000
+    opacity: 0.8
+
+#maincontent .samsung-ue
+    &__slide
+        padding: 10px 20px
+        width: auto
+    &__card
+        max-width: 900px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__item
+        flex: 1
+        max-width: 900px
+        h3, h4, p
+            text-align: left
+        p
+            margin-bottom: 50px
+        &_nomb
+            p
+                margin-bottom: 0
+    &__prev
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2360465/prev.png))
+        width: calc(100px/ 100 * 50)
+        height: 50px
+        z-index: 8
+    &__next
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2360465/next.png))
+        width: calc(100px/ 100 * 50)
+        height: 50px
+        z-index: 8
+
+// #maincontent .row-maincontent
+//     &__inner
+//         @include flex-box($justifyContent: center, $alignItems: center)
+//         &_rev
+//             flex-direction: row-reverse
+//     &__item
+//         flex: 0 1 50%
+//     &__text
+//         padding: 10px 20px
+//     &__image
+//         flex: 0 1 50%
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1400px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (48 - 22) * ((100vw - 320px)/(1400 - 320)))
+            h3
+                font-size: calc( 20px + (28 - 20) * ((100vw - 320px)/(1400 - 320)))
+            h4
+                font-size: calc( 18px + (22 - 18) * ((100vw - 320px)/(1400 - 320)))
+            p
+                font-size: calc( 14px + (18 - 14) * ((100vw - 320px)/(1400 - 320)))
+@media screen and (max-width: 1110px)
+    #maincontent .col-maincontent
+        &__inner
+            grid-template-columns: repeat(2, 1fr)    
+@media screen and (max-width: 1090.98px)
+    #maincontent .samsung-ue
+        &__prev, &__next
+            display: none
+//@media screen and (max-width: 1024.98px)
+//@media screen and (max-width: 991.98px)
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, h3
+                margin-top: 10px
+        &__img
+            &_b
+                display: none
+            &_s
+                display: block
+    #maincontent .samsung-ue
+        &__box
+            margin-bottom: 0
+        &__text
+            left: 7%
+            right: 10%
+    #maincontent .col-maincontent
+        &__inner
+            gap: 10px
+        &__item
+            padding: 5px
+        &__text
+            padding: 0 5px
+    #maincontent .ue-samsung
+        &__text
+            margin-bottom: 10px
+    #maincontent .samsung-ue
+        h3, h4, p
+            text-align: center
+        h4
+            margin-top: 10px
+        &__item
+            p
+                margin-bottom: 38px
+            &_nomb
+                p
+                    margin-bottom: 10px
+
+
+@media screen and (max-width: 600.98px)
+    #maincontent .col-maincontent
+        &__inner
+            grid-template-columns: 1fr
+    #maincontent .ue-samsung
+        &__text
+            max-width: 100%
+            padding: 0 7px
+
+@media screen and (max-width: 479.98px)
+    #maincontent .samsung-ue
+        &__text
+            top: 2%
+
