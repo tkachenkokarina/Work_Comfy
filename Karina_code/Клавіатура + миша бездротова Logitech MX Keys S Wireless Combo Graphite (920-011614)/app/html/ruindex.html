@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1600px;
+            margin: 0 auto
+        }
+
+        #maincontent .maincontent__text {
+            padding: 30px 70px 30px
+        }
+
+        #maincontent .maincontent__text h2 {
+            font-size: 62px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1600px) {
+            #maincontent .maincontent__text h2 {
+                font-size: -webkit-calc(16px + 46 * ((100vw - 320px) / 1280));
+                font-size: calc(16px + 46 * ((100vw - 320px) / 1280))
+            }
+        }
+
+        #maincontent .maincontent__text p {
+            font-size: 24px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1600px) {
+            #maincontent .maincontent__text p {
+                font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1280));
+                font-size: calc(16px + 8 * ((100vw - 320px) / 1280))
+            }
+        }
+
+        #maincontent .maincontent__text span {
+            font-size: 24px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 10px;
+            display: block;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1600px) {
+            #maincontent .maincontent__text span {
+                font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1280));
+                font-size: calc(16px + 8 * ((100vw - 320px) / 1280))
+            }
+        }
+
+        #maincontent .row-maincontent {
+            padding: 0 70px
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text {
+            width: 90%;
+            margin: 0 auto
+        }
+
+        #maincontent .row-maincontent__text h2 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1600px) {
+            #maincontent .row-maincontent__text h2 {
+                font-size: -webkit-calc(16px + 26 * ((100vw - 320px) / 1280));
+                font-size: calc(16px + 26 * ((100vw - 320px) / 1280))
+            }
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 24px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1600px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1280));
+                font-size: calc(16px + 8 * ((100vw - 320px) / 1280))
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .maincontent__text {
+                padding: 20px 30px
+            }
+
+            #maincontent .row-maincontent {
+                padding: 0 20px
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #maincontent .row-maincontent__text {
+                padding: 10px 0
+            }
+        }
+
+        @media screen and (max-width: 630px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                width: auto;
+                padding: 20px 0 10px
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+
+            #maincontent .row-maincontent {
+                padding: 0 15px
+            }
+
+            #maincontent .maincontent__text {
+                padding: 20px 15px
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <div class="maincontent__text">
+                    <h2>MX KEYS S <br>MX MASTER 3S</h2>
+                    <span>ТОЧНІСТЬ, ПРОДУКТИВНІСТЬ, МАЙСТЕРНІСТЬ</span>
+                    <p>СЕРІЯ MASTER ВІД LOGITECH</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2484225/img1.png" alt="">
+                <div class="maincontent__text">
+                    <h2>Володійте своїм робочим процесом з MX Keys S як ніколи раніше</h2>
+                    <p>З компактною бездротовою клавіатурою, яка пропонує швидкий, точний і безшумний досвід набору
+                        тектсту,
+                        інтелектуальне підсвічування та настроювані макроси для економії часу. MX Keys S також має
+                        інтелектуальну підсвічування, яке вмикається при наближенні пальців до клавіатури та автоматично
+                        регулює яскравість відповідно до часу доби. Тепер ви маєте більше контролю над яскравістю
+                        підсвічування та тривалістю роботи з Logi Options+.</p>
+                </div>
+                <img src="https://cdn.comfy.ua/media/x/img3/2484225/img2.png" alt="">
+                <div class="maincontent__text">
+                    <h2>ЗУСТРІЧАЙТЕ <br>Logitech MX Keys S Combo</h2>
+                    <p>Остаточним набіром точних інструментів, розроблених для поглинання в робочий процес. Потужність
+                        плавного, швидкого і точного набору тексту клавіатури MX Keys S в поєднанні з точним і швидким
+                        досвідом прокручування миші MX Master 3S.</p>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Розроблено для Швидкості та Точності</h2>
+                            <p>Бездротова клавіатура з плавним набором тексту: Профіль, схожий на ноутбук, з клавішами,
+                                які мають форму для вашого кінчика пальця, забезпечує швидке, плавне, точне та більш
+                                тихе набирання тексту. Прокручування 1000 рядків за секунду: Завдяки технології
+                                MagSpeed, найшвидшому і найточнішому коліщатку прокручування від
+                                Logitech.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Автоматизуйте Повторювані Завдання</h2>
+                            <p>Легко створюйте та діліться скороченнями Smart Actions, що зберігають час, із допомогою
+                                програми Logi Options+, яка виконує декілька дій одним натисканням клавіші.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Більш Розумне Підсвічування</h2>
+                            <p>Клавіші підсвічуються, коли руки наближаються до клавіатури та адаптуються до оточення;
+                                тепер з більшим вибором настройок підсвічування на Logi Options+.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>LOGITECH FLOW</h2>
+                            <p>Керуйте декількома комп'ютерами за допомогою однієї миші Перемикайтеся між комп'ютерами,
+                                пересуваючи курсор на край екрана. Ваша миша рухається разом з вами, навіть між
+                                операційними системами Windows® та macOS.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img6.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Більше Комфорту</h2>
+                            <p>Клавіатура з низьким профілем, стійким корпусом та оптимальним кутом нахилу, який сприяє
+                                здоровому положенню зап'ястя.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Рівномірний досвід набору тексту</h2>
+                            <p>Клавіатура має профіль, схожий на ноутбук, із сферично-вигнутими клавішами, що дозволяє
+                                швидко, рівномірно, точно та тихо набирати текст.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>8000 ТОЧек на дюйм</h2>
+                            <p>Завдяки сенсору з роздільною здатністю 8K DPI, ця миша
+                                Logitech відстежує рухи навіть на склі.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2484225/img9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
