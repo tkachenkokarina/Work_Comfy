@@ -1,0 +1,165 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.2;margin:50px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:28px;line-height:1.33;margin:0;text-align:center}#maincontent .maincontent__container p{font-size:18px;line-height:1.33;margin:50px 0;text-align:center}#maincontent .galaxy-tab__box_pos{position:relative;z-index:3}#maincontent .galaxy-tab__inner{max-width:1024px;margin:0 auto;padding:0 5px}#maincontent .galaxy-tab__inner_pos{position:absolute;z-index:6;top:5%;left:10%;right:10%}#maincontent .galaxy-tab__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .galaxy-tab__item{padding:5px 15px;border-right:2px solid #000;-webkit-box-flex:0;-webkit-flex:0 1 33%;-moz-box-flex:0;-ms-flex:0 1 33%;flex:0 1 33%}#maincontent .galaxy-tab__item h3{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}#maincontent .galaxy-tab__item:last-child{border-right:none}#maincontent .galaxy-tab__title_nomb h2{margin-bottom:0}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:left}#maincontent .row-maincontent__images{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__img_crop{display:none}#maincontent .hotspot-box__inner_pos{position:absolute;z-index:9;top:8%;left:50%;right:0}@media screen and (max-width: 1400px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 26*(100vw - 320px)/1080);font-size:calc(22px + 26*(100vw - 320px)/1080)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 10*(100vw - 320px)/1080);font-size:calc(18px + 10*(100vw - 320px)/1080)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 4*(100vw - 320px)/1080);font-size:calc(14px + 4*(100vw - 320px)/1080)}}@media screen and (max-width: 1150px){#maincontent .galaxy-tab__inner_pos{top:0}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:25px 0}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .hotspot-box__inner_pos{top:15%}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .galaxy-tab__inner_pos{top:2%;left:0;right:0}#maincontent .galaxy-tab__item{padding:5px}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .row-maincontent__img{display:none}#maincontent .row-maincontent__img_crop{display:block}}@media screen and (max-width: 670.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:5%}#maincontent .galaxy-tab__inner_pos{top:-5%}#maincontent .hotspot-box__inner_pos{top:10%}}@media screen and (max-width: 520.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:7%}#maincontent .galaxy-tab__inner_pos{top:-10%}#maincontent .hotspot-box__inner_pos{position:unset}}@media screen and (max-width: 479.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:0}#maincontent .galaxy-tab__inner_pos{position:unset}#maincontent .galaxy-tab__row{margin:20px 0}#maincontent .galaxy-tab__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;height:60px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.2;margin:50px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:28px;line-height:1.33;margin:0;text-align:center}#maincontent .maincontent__container p{font-size:18px;line-height:1.33;margin:50px 0;text-align:center}#maincontent .galaxy-tab__box_pos{position:relative;z-index:3}#maincontent .galaxy-tab__inner{max-width:1024px;margin:0 auto;padding:0 5px}#maincontent .galaxy-tab__inner_pos{position:absolute;z-index:6;top:5%;left:10%;right:10%}#maincontent .galaxy-tab__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .galaxy-tab__item{padding:5px 15px;border-right:2px solid #000;-webkit-box-flex:0;-webkit-flex:0 1 33%;-moz-box-flex:0;-ms-flex:0 1 33%;flex:0 1 33%}#maincontent .galaxy-tab__item h3{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}#maincontent .galaxy-tab__item:last-child{border-right:none}#maincontent .galaxy-tab__title_nomb h2{margin-bottom:0}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:left}#maincontent .row-maincontent__images{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__img_crop{display:none}#maincontent .hotspot-box__inner_pos{position:absolute;z-index:9;top:8%;left:50%;right:0}@media screen and (max-width: 1400px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 26*(100vw - 320px)/1080);font-size:calc(22px + 26*(100vw - 320px)/1080)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 10*(100vw - 320px)/1080);font-size:calc(18px + 10*(100vw - 320px)/1080)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 4*(100vw - 320px)/1080);font-size:calc(14px + 4*(100vw - 320px)/1080)}}@media screen and (max-width: 1150px){#maincontent .galaxy-tab__inner_pos{top:0}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:25px 0}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .hotspot-box__inner_pos{top:15%}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .galaxy-tab__inner_pos{top:2%;left:0;right:0}#maincontent .galaxy-tab__item{padding:5px}#maincontent .galaxy-tab__text_bottom p{margin-bottom:5px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .row-maincontent__img{display:none}#maincontent .row-maincontent__img_crop{display:block}}@media screen and (max-width: 670.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:5%}#maincontent .galaxy-tab__inner_pos{top:-5%}#maincontent .hotspot-box__inner_pos{top:10%}}@media screen and (max-width: 520.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:7%}#maincontent .galaxy-tab__inner_pos{top:-10%}#maincontent .hotspot-box__inner_pos{position:unset}}@media screen and (max-width: 479.98px){#maincontent .galaxy-tab__box_mb{margin-bottom:0}#maincontent .galaxy-tab__inner_pos{position:unset}#maincontent .galaxy-tab__row{margin:20px 0}#maincontent .galaxy-tab__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;height:60px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container galaxy-tab">
+<div class="maincontent__box">
+<div class="galaxy-tab__title">
+<h2>Galaxy Tab A7 Lite LTE 4 64 ГБ</h2>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img01.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Легкий, потужний та стильний</h2>
+</div>
+<div class="galaxy-tab__row">
+<div class="galaxy-tab__item">
+<h3>Дисплей 8,7"</h3>
+</div>
+<div class="galaxy-tab__item">
+<h3>Вага 366 г</h3>
+</div>
+<div class="galaxy-tab__item">
+<h3 lang="ru">Металеве покриття</h3>
+</div>
+</div>
+<div class="galaxy-tab__text">
+<p>Більше не потрібно жертвувати стилем заради комфорту. В Galaxy Tab A7 Lite LTE 4 64 ГБ поєднані                         всі необхідні характеристики, а саме висока потужність, комфорт та стиль. Планшет має товщину                         8,0 мм, вагу 366 г — він легко поміститься в сумку або портфель і майже не буде відчуватися!</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img02.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Багатозадачність — синонім Galaxy Tab A7 Lite LTE</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>Ця модель планшета підійде кожному! Учню, працівнику офісу, фрілансеру — Galaxy Tab A7 Lite LTE 4                         64 ГБ поєднує в собі все, що потрібно як для відпочинку, так і для продуктивної роботи.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img03.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Легка навігація за допомогою однієї руки</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>Galaxy Tab A7 Lite LTE 4 64 ГБ має меню на основі жестів — це дає вам змогу легко та швидко                         повернутися назад, переглянути останні додатки та повернутися в головне меню. Для цього потрібен                         лише один рух великого пальця.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img04_ru.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box galaxy-tab__box_mb">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Знімайте яскраві моменти</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>Galaxy Tab A7 Lite LTE 4 64 ГБ має дві камери — фронтальну (2 МП) та основну (8 МП). Завдяки їм                         ви можете моментально фіксувати важливі для вас моменти: фотографувати не тільки документи,                         потрібні для роботи, але й знімати портрети та пейзажі.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img05.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box galaxy-tab__box_pos">
+<div class="galaxy-tab__inner galaxy-tab__inner_pos">
+<div class="galaxy-tab__title">
+<h2>Забудьте про маленькі формати</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>Galaxy Tab A7 Lite LTE 4 64 ГБ оснащений вузькою рамкою та дисплеєм діагоналлю 8,7 дюйма.                         Забудьте про незручний перегляд контенту на екрані смартфона — насолоджуйтеся великим                         зображенням та об'ємним звуком.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img06.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Зберігайте всі необхідні файли</h2>
+</div>
+<div class="galaxy-tab__row">
+<div class="galaxy-tab__item">
+<h3>4+64 ГБ</h3>
+</div>
+<div class="galaxy-tab__item">
+<h3>microSD на 1 ТБ</h3>
+</div>
+</div>
+<div class="galaxy-tab__text">
+<p>Внутрішнє сховище в Galaxy Tab A7 Lite LTE має об'єм 64 ГБ, чого більше ніж достатньо для                         збереження необхідних для роботи і навчання документів. До того ж його можна розширити до 1 ТБ                         за допомогою microSD карти.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img07.png" /></div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Містка батарея для елегантного планшета</h2>
+<p>З батареєю Galaxy Tab A7 Lite LTE 4 64 ГБ можна надовго забути про заряджання. Акумулятор має                             місткість 5100 мАг, тому його вистачить і на роботу, і на відпочинок.</p>
+</div>
+</div>
+<div class="row-maincontent__images">
+<div class="row-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img08.png" /></div>
+<div class="row-maincontent__img row-maincontent__img_crop"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img08_crop.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box galaxy-tab__box galaxy-tab__box_pos hotspot-box">
+<div class="galaxy-tab__title galaxy-tab__title_nomb">
+<h2>Завжди на зв'язку з близькими</h2>
+</div>
+<div class="galaxy-tab__inner hotspot-box__inner_pos">
+<div class="galaxy-tab__text">
+<p>Ви можете бути завжди на зв'язку завдяки безперебійному контакту між вашими пристроями Samsung                         Galaxy. Підключайте Galaxy Tab A7 Lite LTE 4 64 ГБ до свого смартфона.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img09.png" /></div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>2 місяці безкоштовного YouTube Premium</h2>
+<p>Слухайте музику та дивіться улюблені інтерв'ю без реклами, в офлайн або у фоновому режимі.                             YouTube Premium та Galaxy об'єдналися, щоб ви могли безкоштовно насолоджуватися перевагами                             преміум-підписки цілих два місяці.</p>
+</div>
+</div>
+<div class="row-maincontent__images">
+<div class="row-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img10.png" /></div>
+<div class="row-maincontent__img row-maincontent__img_crop"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img10_crop.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Дитячий простір</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>У вас є дитина? Просто торкніться Samsung Kids на панелі "Швидкий доступ" і сміливо віддавайте                         планшет вашій дитині. В цьому сервісі є безліч оригінальних програм з героями із віртуального                         світу. Служба "Батьківський контроль" допоможе вам відстежувати час та використання планшета.                         Безпека для ваших дітей на першому місці!</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img11.png" /></div>
+</div>
+<div class="maincontent__box galaxy-tab__box">
+<div class="galaxy-tab__inner">
+<div class="galaxy-tab__title">
+<h2>Захист всіх ваших даних</h2>
+</div>
+<div class="galaxy-tab__text">
+<p>Samsung Knox — це безпека на рівні оборонних технологій. Всі ваші приватні дані надійно захищені                         багаторівневою платформою безпеки.</p>
+</div>
+</div>
+<div class="galaxy-tab__img"><img src="https://cdn.comfy.ua/media/x/img3/1807501/img12.png" /></div>
+<div class="galaxy-tab__text galaxy-tab__text_bottom">
+<p>Купити Galaxy Tab A7 Lite LTE 4 64 ГБ в Україні можна на сайті або у фірмових магазинах Comfy!</p>
+</div>
+</div>
+</div>
+</div>
