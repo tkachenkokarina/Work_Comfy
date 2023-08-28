@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #maincontent .row-maincontent {
+            padding-top: 30px
+        }
+
+        #maincontent .row-maincontent__title p {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 20px
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .row-maincontent__title p {
+                font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 980));
+                font-size: calc(16px + 14 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 15px
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 60%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 60%;
+            flex: 0 1 60%
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 30px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 980));
+                font-size: calc(16px + 14 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 40%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 40%;
+            flex: 0 1 40%
+        }
+
+        #maincontent .row-maincontent__items {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -webkit-align-items: flex-end;
+            -moz-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            gap: 5px;
+            padding-top: 10px
+        }
+
+        #maincontent .row-maincontent__icon {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: stretch;
+                -webkit-align-items: stretch;
+                -moz-box-align: stretch;
+                -ms-flex-align: stretch;
+                align-items: stretch
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+
+            #maincontent .row-maincontent__icon-1 img,
+            #maincontent .row-maincontent__icon-2 img {
+                width: 34px
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box box-maincontent">
+                <div class="box-maincontent__inner">
+                    <div class="box-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2549561/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__title">
+                    <p>Привіт! Мене звати ПУШ і я хочу стати твоїм другом. Я вмію слухати, обійматися і зберігати навіть
+                        найпотаємніші секрети.</p>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <p>Якщо тобі сумно, просто обійми мене.
+                                <br>Якщо тобі весело, хапай мене з собою!
+                                <br>Бери мене в ліжко і на прогулянку.
+                                <br>Я берегтиму твій сон і розважатиму, коли не буде з ким погратися.
+                            </p>
+                            <div class="row-maincontent__items">
+                                <div class="row-maincontent__text">
+                                    <p>Бо тепер я — твій ПУШ, а ти — мій друг</p>
+                                </div>
+                                <div class="row-maincontent__icon">
+                                    <div class="row-maincontent__icon-1">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2549561/img4.png" alt="">
+                                    </div>
+                                    <div class="row-maincontent__icon-2">
+                                        <img src="https://cdn.comfy.ua/media/x/img3/2549561/img5.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2549561/img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

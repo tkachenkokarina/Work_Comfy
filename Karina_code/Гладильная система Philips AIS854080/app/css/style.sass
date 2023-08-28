@@ -17,15 +17,15 @@ $maxWidthContainer: 1500
     @else
         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
 
-html,
-body
-    height: 100%
-    min-width: 320px
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
 
-button
-    cursor: pointer
-    color: inherit
-    background-color: inherit
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
 
 //========================================================================================================================================================
 
@@ -45,9 +45,9 @@ button
 //     -o-object-fit: contain
 //     object-fit: contain
 
-#philipsais a
-    color: inherit
-    text-decoration: none
+// #philipsais a
+//     color: inherit
+//     text-decoration: none
 
 #philipsais
     ul,
@@ -139,12 +139,396 @@ button
             line-height: 1.2
             color: #fff
 
+#philipsais .col-philipsais
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2487012/img3.jpg') 60% 0 no-repeat
+        background-size: cover
+        min-height: 1000px
+        display: flex
+        align-items: center
+        padding-left: 40px
+        &::after
+            content: ''
+            position: absolute
+            z-index: 3
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background-color: #36343453
+    &__image
+    &__row
+        // position: absolute
+        // z-index: 5
+        // top: 50%
+        // transform: translateY(-50%)
+        // left: 3%
+        position: relative
+        z-index: 10
+        display: flex
+        flex-direction: column
+        gap: 15px
+        width: 50%
+    &__item
+        display: flex
+        align-items: center
+        gap: 20px
+    &__icon
+        flex: 0 0 112px
+    &__text
+        p
+            @include adaptiv-value("font-size", 26, 16, 1)
+            font-weight: 700
+            line-height: 1.3
+            color: #fff
+
+#philipsais .video-philipsais
+    &__media
+        max-width: 1500px
+        width: 100%
+        position: relative
+        z-index: 2
+        padding-bottom: 55%
+        iframe
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+#philipsais .bg-philipsais
+    &__bg
+        position: relative
+        z-index: 2
+    &__media
+        position: relative
+        z-index: 3
+        padding-bottom: 55%
+        video
+            position: absolute
+            z-index: 4
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__text
+        position: absolute
+        z-index: 5
+        top: 60%
+        transform: translateY(-50%)
+        left: 2%
+        width: 42%
+        padding: 5px
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+            background-color: #3a3a3a35
+            border-radius: 5px
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            font-weight: 700
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 22, 16, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: #ffffff
+
+#philipsais .power-philipsais
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 65%
+        transform: translateY(-50%)
+        right: 2%
+        width: 42%
+        padding: 5px
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: -1
+        //     top: 0
+        //     left: 0
+        //     height: 100%
+        //     width: 100%
+        //     background-color: #3a3a3a35
+        //     border-radius: 5px
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            font-weight: 700
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 22, 16, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: #ffffff
+    &__media
+        position: relative
+        z-index: 3
+        padding-bottom: 55%
+        video
+            position: absolute
+            z-index: 4
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+#philipsais .safe-philipsais
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 65%
+        transform: translateY(-50%)
+        left: 2%
+        width: 42%
+        padding: 5px
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: -1
+        //     top: 0
+        //     left: 0
+        //     height: 100%
+        //     width: 100%
+        //     background-color: #3a3a3a35
+        //     border-radius: 5px
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            font-weight: 700
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 22, 16, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: #ffffff
+    &__media
+        position: relative
+        z-index: 3
+        padding-bottom: 55%
+        video
+            position: absolute
+            z-index: 4
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+#philipsais .box-philipsais
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 20%
+        transform: translateY(-50%)
+        left: 2%
+        width: 42%
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            font-weight: 700
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #fff
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 22, 16, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: #ffffff
+        &_1
+            width: 30%
+            h2
+                color: #317896
+        &_2
+            top: auto
+            transform: translateY(0)
+            bottom: 10%
+            h2
+                color: #317896
+            p
+                color: #000
+        &_3
+            width: 35%
+            h2
+                color: #317896
+            p
+                color: #000
+        &_4
+            width: 50%
+            top: auto
+            transform: translateY(0)
+            bottom: 8%
+        &_5
+            h2
+                color: #317896
+            p
+                color: #000
+        &_6
+            h2
+                @include adaptiv-value("font-size", 55, 18, 1)
+                font-weight: 700
+                line-height: 1.2
+    &__media
+    &__icon
+        position: absolute
+        z-index: 5
+        bottom: 5%
+        left: 2%
+        right: 80%
+
+#philipsais .question-philipsais
+    padding-top: 30px
+    padding-left: 20px
+    padding-right: 20px
+    &__title-tc
+        h2
+            @include adaptiv-value("font-size", 36, 20, 1)
+            line-height: 1.2
+            text-align: center
+            margin-bottom: 10px
+    &__item
+        padding-top: 20px
+        padding-bottom: 10px
+        border-bottom: 2px solid #13151A
+    &__title
+        @include adaptiv-value("font-size", 24, 18, 1)
+        line-height: 1.2
+        font-weight: 700
+        margin-bottom: 15px
+        position: relative
+        z-index: 2
+        padding-right: 30px
+        cursor: pointer
+        &::before
+            content: ''
+            width: 10px
+            height: 1px
+            background-color: #000
+            position: absolute
+            z-index: 5
+            top: 8px
+            transition: all 0.3s ease 0s
+            background: url('https://cdn.comfy.ua/media/x/img3/2487012/img20.png') 0 0 no-repeat
+            width: 10px
+            height: 16px
+            right: 10px
+        // &::before
+        //     transform: rotate(40deg)
+        //     right: 0
+        // &::after
+        //     transform: rotate(-40deg)
+        //     // right: 8px
+        //     right: 0
+        //     top: 7px
+    &__text
+        @include adaptiv-value("font-size", 18, 16, 1)
+        line-height: 1.2
+        font-weight: 300
+        display: none
+        padding: 10px 0px 0px 0px
+
+#philipsais .question-philipsais__title.active:before
+    transform: rotate(90deg)
+
+#philipsais .snoska-philipsais
+    padding: 30px 20px 10px 20px
+    &__list
+        li
+            font-size: 12px
+            line-height: 1.2
+
 //===========MEDIA=============================================================================================================================================
 
     //@media screen and (max-width: 1300px)
     //@media screen and (max-width: 1024.98px)
-    //@media screen and (max-width: 991.98px)
-    //@media screen and (max-width: 767.98px)
+@media screen and (max-width: 991.98px)
+    #philipsais .bg-philipsais__text
+        width: 55%
+        top: 55%
+    #philipsais .power-philipsais__text
+        top: 55%
+    #philipsais .safe-philipsais__text
+        top: 55%
+        width: 50%
+    #philipsais .box-philipsais__text_1
+        width: 31%
+    #philipsais .box-philipsais__text_3
+        top: 35%
+    #philipsais .box-philipsais__text_5
+        top: 30%
+
+@media screen and (max-width: 767.98px)
+    #philipsais .box-philipsais__text_1
+        top: 30%
+    #philipsais .col-philipsais__row
+        width: 70%
+    #philipsais .col-philipsais__bg
+        min-height: 700px
+    #philipsais .col-philipsais__icon
+        flex: 0 0 60px
+    #philipsais .bg-philipsais__text
+        width: 60%
+        top: 50%
+    #philipsais .power-philipsais__text
+        width: 50%
+    #philipsais .safe-philipsais__text
+        width: 55%
+    #philipsais .box-philipsais__text_5
+        top: 35%
+        width: 50%
+
+@media screen and (max-width: 610px)
+    #philipsais .bg-philipsais__text,
+    #philipsais .power-philipsais__text,
+    #philipsais .safe-philipsais__text,
+    #philipsais .box-philipsais__text
+        position: unset
+        top: 0
+        transform: translateY(0)
+        width: auto
+        padding: 20px 10px 10px
+        h2,p
+            text-align: center
+            color: #000
+    #philipsais .bg-philipsais__text::after
+        display: none
+
 @media screen and (max-width: 479.98px)
     #philipsais .header-philipsais__text
         width: 70%
+    #philipsais .col-philipsais__bg
+        padding-left: 15px
+    #philipsais .col-philipsais__icon
+        flex: 0 0 50px
+    #philipsais .col-philipsais__row
+        width: 90%
+    #philipsais .col-philipsais__bg
+        min-height: 610px

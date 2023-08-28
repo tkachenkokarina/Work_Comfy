@@ -1,35 +1,19 @@
-const swiper = new Swiper('.swiper', {
-    speed: 500,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-    },
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 4,
-            spaceBetween: 40
+$(document).ready(function () {
+    $('.question-philipsais__title').click(function (event) {
+        if ($('.question-philipsais-1').hasClass('one')) {
+            $('.question-philipsais__title').not($(this)).removeClass('active');
+            $('.question-philipsais__text').not($(this).next()).slideUp(300);
         }
-    }
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
 });
+
+// $(document).ready(function () {
+//     $('.block__title').click(function (event) {
+//         if ($('.block').hasClass('one')) {
+//             $('.block__title').not($(this)).removeClass('active');
+//             $('.block__text').not($(this).next()).slideUp(300);
+//         }
+//         $(this).toggleClass('active').next().slideToggle(300);
+//     });
+// });
