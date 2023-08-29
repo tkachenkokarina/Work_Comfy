@@ -1,0 +1,301 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 80px, $lineHeight: 1.2)
+            font-weight: 400
+            margin: 0px 0px 50px 0px
+            text-align: center
+            color: #fff
+        p
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            font-weight: 325
+            color: #fff
+    &__box
+        padding: 0 25px
+        
+
+#maincontent .top-box
+    &__bg
+        @include bg-image(url('https://cdn.comfy.ua/media/x/img3/2582719/bg_top.png'))
+        @include position(relative, 3)
+        padding: 60px 76px 0 120px
+        &::before
+            background: linear-gradient(180deg, #121B26 0.01%, #0F273C 33.94%, rgba(19, 31, 43, 0.00) 100%)
+            content: ''
+            @include position($position: absolute, $zIndex: 1)
+            display: block
+            height: 100%
+            width: 100%
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            transform: rotate(-180deg)
+    &__logo
+        margin-bottom: 100px
+        @include position($position: relative, $zIndex: 7)
+        img
+            margin: 0
+    &__logo_pos
+        @include position($position: absolute, $zIndex: 7)
+        right: 76px
+        top: 60px
+    &__img
+        @include position($position: relative, $zIndex: 7)
+        top: 50%
+        bottom: 20px
+        margin: 0 auto
+        
+#maincontent .lenovo-box
+    &__bg
+        margin-top: -2px
+        padding-top: 20px
+    &__inner
+        max-width: 1270px
+        margin: 0 auto 
+    &__header
+        h3
+            @include fonts($fontSize: 74px, $lineHeight: 1.1)
+            text-align: left
+            color: #FFF
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            font-weight: 700    
+        span
+            @include fonts($fontSize: 64px, $lineHeight: 1.1)
+            display: block
+            font-weight: 350
+            color: #FFF
+            padding-bottom: 50px    
+        p
+            @include fonts($fontSize: 42px, $lineHeight: 1.2)
+            font-weight: 400
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            margin-bottom: 70px
+    &__text
+        p
+            padding-bottom: 45px
+            small
+                @include fonts($fontSize: 16px, $lineHeight: 1.5)
+                font-weight: 350
+        &_c
+            p
+                text-align: center
+
+#maincontent .facilities
+    &__bg
+        background: #08243c            
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin-bottom: 50px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 0
+    &__image
+        flex: 0 1 50%
+
+#maincontent .productivity
+    &__bg
+        background: linear-gradient(#08243c , #213357)
+
+#maincontent .efficiency
+    &__bg
+        background: #233357
+
+#maincontent .representation
+    &__bg
+        background: linear-gradient(#233357 , #212c48)
+
+#maincontent .security
+    &__bg
+        background: linear-gradient(#212c48 , #1f273e)
+#maincontent .speedy
+    &__bg
+        background: linear-gradient(#1f273e , #202a43)
+#maincontent .protection
+    &__bg
+        background: linear-gradient(#202a43 , #213152)
+    &__text
+        max-width: 75%
+        margin: 0 auto
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1400px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 24px + (80 - 24) * ((100vw - 320px)/(1400 - 320)))
+            p
+                font-size: calc( 16px + (28 - 16) * ((100vw - 320px)/(1400 - 320)))
+    #maincontent .top-box
+        &__logo
+            width: calc( 50px + (250 - 50) * ((100vw - 320px)/(1400 - 320)))
+    #maincontent .lenovo-box
+        &__header
+            h3
+                font-size: calc( 22px + (74 - 22) * ((100vw - 320px)/(1400 - 320)))
+            span
+                font-size: calc( 20px + (64 - 20) * ((100vw - 320px)/(1400 - 320)))
+            p
+                font-size: calc( 18px + (42 - 18) * ((100vw - 320px)/(1400 - 320)))
+        &__text
+            p
+            small
+                font-size: calc( 10px + (16 - 10) * ((100vw - 320px)/(1400 - 320)))
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin-bottom: 20px
+    #maincontent .top-box
+        &__bg
+            padding: 40px 40px 0
+        &__logo
+            &_pos
+                right: 40px
+    #maincontent .lenovo-box
+        &__header
+            span
+                padding-bottom: 20px
+            p
+                margin-bottom: 25px
+        &__text
+            p
+                padding-bottom: 20px   
+    #maincontent .row-maincontent
+        &__inner
+            margin-bottom: 25px
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            margin-bottom: 10px            
+            h2, h3, p, span
+                text-align: center
+            h2
+                margin-bottom: 10px
+        &__box
+            padding: 0 7px
+    #maincontent .lenovo-box
+        &__bg
+            padding-top: 0px
+        &__header
+            span
+                padding-bottom: 15px
+            p
+                margin-bottom: 15px
+        &__text
+            p
+                padding-bottom: 10px  
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+    #maincontent .protection
+        &__text
+            max-width: 100%
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__bg
+            padding: 25px 30px 0
+        &__logo
+            margin-bottom: 40px
+            &_pos
+                top: 25px
