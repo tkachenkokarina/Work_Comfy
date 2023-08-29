@@ -1,0 +1,463 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 48px, $lineHeight: 1.2)
+            margin: 50px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.33)
+            margin: 0
+            text-align: center
+        p
+            @include fonts($fontSize: 18px, $lineHeight: 1.33)
+            margin: 50px 0
+            text-align: center
+
+#maincontent .galaxy-tab
+    &__bg
+        background: #000
+        margin-bottom: 100px
+        h2, h3, p
+            color: #fff
+    &__inner
+        max-width: 1024px
+        margin: 0 auto
+        padding: 0 20px
+    &__row
+        @include flex-box($justifyContent: center, $alignItems: center)
+    &__item
+        padding: 5px 15px
+        border-right: 2px solid #000
+        flex: 0 1 33%
+        h3
+            hyphens: auto
+        &:last-child
+            border-right: none
+    &__title
+        &_nomb
+            h2
+                margin-bottom: 0
+    &__text
+        &_bottom
+            p
+                margin-bottom: 5px
+
+#maincontent .center-galaxy-tab
+    @include position($position: relative, $zIndex: 3)
+    &__inner
+        max-width: 650px
+        margin: 0 auto
+        &_pos
+            @include position($position: absolute, $zIndex: 6)
+            top: 0
+            left: 6%
+            right: 6%
+
+#maincontent .left-galaxy-tab
+    @include position($position: relative, $zIndex: 3)
+    &__inner
+        max-width: 585px
+        margin: 0
+        &_pos
+            @include position($position: absolute, $zIndex: 6)
+            top: 0
+            left: 6%
+            right: 55%
+    &__text
+        h2, p
+            text-align: left
+
+#maincontent .right-galaxy-tab
+    @include position($position: relative, $zIndex: 3)
+    &__inner
+        max-width: 585px
+        margin: 0
+        &_pos
+            @include position($position: absolute, $zIndex: 6)
+            top: 0
+            left: 55%
+            right: 10%
+    &__text
+        h2, p
+            text-align: right
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin: 0 0 0 6%
+        gap: 20px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        h2, p
+            text-align: left
+    &__images
+        flex: 0 1 50%
+    &__img
+        &_rev
+            padding-left: 20px
+        &_crop
+            display: none
+
+#maincontent .screen-recorder
+    &__inner
+        align-items: start
+        margin: 0 6% 100px
+    &__text
+        h2
+            margin-top: 0
+        p
+            margin-bottom: 100px
+
+#maincontent .galaxy-kids
+    &__inner
+        align-items: start
+        margin: 0 6% 100px
+    &__text
+        h2, p
+            text-align: right
+        h2
+            margin-top: 0
+        p
+            margin-bottom: 100px
+
+#maincontent .swiper
+    &-wrapper
+        padding-bottom: 70px
+    &-button-prev
+        left: 20px
+    &-button-next
+        right: 20px
+    &-button-prev, &-button-next
+        top: 45%
+        border: 1px solid rgba(0,0,0,0.1)
+        background-color: rgba(0,0,0,0.45)
+        border-radius: 50%
+        width: 40px
+        height: 40px
+        &:hover
+            background: #1c1c1c
+        &:active
+            background: #1c1c1c
+            border: 2px dashed #fff
+
+#maincontent .swiper-button-next:after
+    content: ''
+    @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/1935995/next_w.png'))
+    width: 34px
+    height: 36px
+
+#maincontent .swiper-button-prev:after
+    content: ''
+    @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/1935995/prev_w.png'))
+    color: #fff
+    width: 34px
+    height: 36px
+
+#maincontent .swiper-pagination
+    color: #757575
+    border: 1px solid rgba(0,0,0,0.2)
+    max-width: 83px
+    padding: 4px 8px
+    border-radius: 15px
+    right: 0
+    left: 0
+    margin: 0 auto
+
+#maincontent .swiper-button-next.swiper-button-disabled, #maincontent .swiper-button-prev.swiper-button-disabled
+    opacity: 0
+
+#maincontent .swiper-pagination-bullet-active
+    background-color: #626262
+
+#maincontent .bottom-box
+    &__text
+        p
+            margin-bottom: 10px
+            span
+                font-weight: 600
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1400px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (48 - 22) * ((100vw - 320px)/(1400 - 320)))
+            h3
+                font-size: calc( 18px + (28 - 18) * ((100vw - 320px)/(1400 - 320)))
+            p
+                font-size: calc( 14px + (18 - 14) * ((100vw - 320px)/(1400 - 320)))
+
+@media screen and (max-width: 1150px)
+    #maincontent .center-galaxy-tab
+        &__inner
+            &_pos
+                top: -4%
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .galaxy-tab
+        &__bg
+            margin-bottom: 50px
+    #maincontent .screen-recorder
+        &__inner
+            margin-bottom: 50px
+        &__text
+            p
+                margin-bottom: 50px
+    #maincontent .galaxy-kids
+        &__inner
+            margin-bottom: 50px
+        &__text
+            p
+                margin-bottom: 50px
+
+@media screen and (max-width: 991.98px)
+    #maincontent .center-galaxy-tab
+        &__inner
+            max-width: 100%
+            &_pos
+                left: 28px
+                right: 28px
+    #maincontent .left-galaxy-tab
+        &__inner
+            &_pos
+                left: 28px
+    #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                right: 28px
+    #maincontent .processor
+        &__inner
+            padding: 0 43px
+    #maincontent .row-maincontent
+        &__inner
+            margin-left: 28px
+            margin-right: 28px
+
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, p
+                margin: 10px 0
+    #maincontent .center-galaxy-tab
+        &__inner
+            &_pos
+                top: 2%
+    #maincontent .left-galaxy-tab
+        &__inner
+            &_pos
+                top: 10%
+                right: 45%
+    #maincontent .galaxy-tab
+        &__bg
+            margin-bottom: 0
+    #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                top: 10%
+                left: 45%
+
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+            gap: 0
+        &__text
+            padding: 0 5px
+            h2, p
+                text-align: center
+            img
+                display: none
+        &__img
+            display: none
+            &_crop
+                display: block
+
+    #maincontent .screen-recorder
+        &__inner
+            margin: 0
+            gap: 0
+
+    #maincontent .galaxy-kids
+        &__inner
+            margin: 0
+            gap: 0
+
+    #maincontent .swiper
+        &-button-prev
+            left: 10px
+        &-button-next
+            right: 10px
+        &-button-prev, &-button-next
+            top: 43%
+            width: 30px
+            height: 30px
+    #maincontent .swiper-button-next:after,
+    #maincontent .swiper-button-prev:after
+        width: 15px
+        height: 26px
+    #maincontent .swiper-wrapper
+        padding-bottom: 50px
+    #maincontent .swiper-pagination
+        padding: 2px 4px
+@media screen and (max-width: 689.98px)
+    #maincontent .galaxy-tab
+        &__inner
+            padding: 0 15px
+    #maincontent .center-galaxy-tab
+        &__inner
+            &_pos
+                top: 0
+                left: 0
+                right: 0
+    #maincontent .left-galaxy-tab
+        &__inner
+            &_pos
+                left: 15px
+    #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                right: 15px
+    #maincontent .processor__inner
+        padding: 0 30px
+    // #maincontent .row-maincontent
+    //     &__inner
+    //         margin: 0 
+@media screen and (max-width: 595.98px)
+    #maincontent .center-galaxy-tab
+        &__inner
+            &_pos
+                position: unset
+    #maincontent .left-galaxy-tab
+        &__inner
+            &_pos
+                top: 5%
+                right: 30%
+    #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                top: 5%
+                left: 30%
+    #maincontent .swiper
+        &-button-prev, &-button-next
+            display: none
+
+@media screen and (max-width: 520.98px)
+    #maincontent .left-galaxy-tab, #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                top: 0
+@media screen and (max-width: 479.98px)
+    #maincontent .galaxy-tab
+        &__inner
+            padding: 0 5px
+    #maincontent .left-galaxy-tab, #maincontent .right-galaxy-tab
+        &__inner
+            &_pos
+                position: unset
+        &__text
+            h2, p
+                text-align: center
+    #maincontent .right-galaxy-tab
+        &__text
+            padding-top: 10px
+            h2
+                margin-top: 0
+    #maincontent .row-maincontent
+        &__inner
+            margin: 0
