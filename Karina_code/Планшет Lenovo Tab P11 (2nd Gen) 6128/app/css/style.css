@@ -1,0 +1,596 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+#lenovotab a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#lenovotab ul,
+#lenovotab ol,
+#lenovotab li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lenovotab .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#lenovotab .bc-description__content h3 {
+  text-align: left;
+}
+
+#lenovotab h1, #lenovotab h2, #lenovotab h3, #lenovotab h4, #lenovotab h5, #lenovotab h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#lenovotab {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1920px;
+}
+#lenovotab h1, #lenovotab h2, #lenovotab h3, #lenovotab h4, #lenovotab h5, #lenovotab h6, #lenovotab p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#lenovotab p::first-letter {
+  padding-left: 0;
+}
+
+#lenovotab img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#lenovotab img:hover {
+  opacity: 1;
+}
+
+#lenovotab .header-lenovotab__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img4.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  height: 1100px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1800px) {
+  #lenovotab .header-lenovotab__bg {
+    height: -webkit-calc(300px + 800 * ((100vw - 320px) / 1480));
+    height: calc(300px + 800 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .header-lenovotab__logo-text {
+  padding-top: 4%;
+  padding-left: 3%;
+}
+#lenovotab .header-lenovotab__logo-text p {
+  font-size: 46px;
+  line-height: 1;
+  color: #fff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .header-lenovotab__logo-text p {
+    font-size: -webkit-calc(16px + 30 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 30 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .header-lenovotab__logo-text span {
+  font-size: 30px;
+  line-height: 1;
+}
+@media (max-width: 1800px) {
+  #lenovotab .header-lenovotab__logo-text span {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .header-lenovotab__logo {
+  position: absolute;
+  z-index: 5;
+  top: 3%;
+  right: 0;
+  left: 96%;
+}
+#lenovotab .header-lenovotab__title {
+  width: 60%;
+  padding-top: 3%;
+  padding-left: 7%;
+}
+#lenovotab .header-lenovotab__title h2 {
+  font-size: 115px;
+  line-height: 1;
+  color: #fff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .header-lenovotab__title h2 {
+    font-size: -webkit-calc(20px + 95 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 95 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .header-lenovotab__image {
+  position: absolute;
+  z-index: 5;
+  top: 24%;
+  right: 3%;
+  left: 30%;
+}
+#lenovotab .header-lenovotab__row {
+  position: absolute;
+  z-index: 5;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#lenovotab .header-lenovotab__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 33.3333%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+}
+#lenovotab .header-lenovotab__item p {
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .header-lenovotab__item p {
+    font-size: -webkit-calc(15px + 15 * ((100vw - 320px) / 1480));
+    font-size: calc(15px + 15 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .header-lenovotab__item img {
+  margin: 0;
+}
+
+#lenovotab .box-lenovotab__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img5.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#lenovotab .box-lenovotab__text {
+  padding: 70px 8%;
+}
+#lenovotab .box-lenovotab__text p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .box-lenovotab__text p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+
+#lenovotab .multimedia-lenovotab__bg {
+  position: relative;
+  z-index: 2;
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img7.png") 40% 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  height: 1200px;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__bg {
+    height: -webkit-calc(760px + 440 * ((100vw - 320px) / 1480));
+    height: calc(760px + 440 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__title {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img6.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding: 20px 15px;
+}
+#lenovotab .multimedia-lenovotab__title h2 {
+  font-size: 70px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__title h2 {
+    font-size: -webkit-calc(20px + 50 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 50 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__box {
+  width: 55%;
+  padding-left: 3%;
+  padding-top: 50px;
+  padding-right: 3%;
+}
+#lenovotab .multimedia-lenovotab__text h2 {
+  font-size: 65px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__text h2 {
+    font-size: -webkit-calc(20px + 45 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 45 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__text p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__text p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 5;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+}
+#lenovotab .multimedia-lenovotab__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#lenovotab .multimedia-lenovotab__item p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__item p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__item span {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #ffffff;
+  opacity: 0.8;
+  text-align: center;
+}
+@media (max-width: 1800px) {
+  #lenovotab .multimedia-lenovotab__item span {
+    font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .multimedia-lenovotab__item img {
+  margin: 0;
+}
+#lenovotab .multimedia-lenovotab__item_ps p {
+  position: relative;
+  z-index: 2;
+  padding-left: 50px;
+}
+#lenovotab .multimedia-lenovotab__item_ps p::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 43px;
+  height: 43px;
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img9.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+#lenovotab .reaction-lenovotab__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img10.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding: 40px 15px;
+}
+#lenovotab .reaction-lenovotab__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+#lenovotab .reaction-lenovotab__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab .reaction-lenovotab__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab .reaction-lenovotab__text {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: -webkit-calc(10px + 40 * ((100vw - 320px) / 1600));
+  padding-top: calc(10px + 40 * ((100vw - 320px) / 1600));
+}
+#lenovotab .reaction-lenovotab__text h2 {
+  font-size: 65px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .reaction-lenovotab__text h2 {
+    font-size: -webkit-calc(20px + 45 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 45 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .reaction-lenovotab__text p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .reaction-lenovotab__text p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+
+#lenovotab .task-lenovotab__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img13.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding: 40px 15px;
+}
+#lenovotab .task-lenovotab__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+#lenovotab .task-lenovotab__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#lenovotab .task-lenovotab__text {
+  width: 90%;
+  margin: 0 auto;
+}
+#lenovotab .task-lenovotab__text h2 {
+  font-size: 65px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .task-lenovotab__text h2 {
+    font-size: -webkit-calc(20px + 45 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 45 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .task-lenovotab__text p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .task-lenovotab__text p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .task-lenovotab__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#lenovotab .freedom-lenovotab__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2268918/img16.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding: 40px 15px;
+}
+#lenovotab .freedom-lenovotab__box {
+  max-width: 1500px;
+  margin: 0 auto 40px;
+}
+#lenovotab .freedom-lenovotab__box h2 {
+  font-size: 65px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1800px) {
+  #lenovotab .freedom-lenovotab__box h2 {
+    font-size: -webkit-calc(20px + 45 * ((100vw - 320px) / 1480));
+    font-size: calc(20px + 45 * ((100vw - 320px) / 1480));
+  }
+}
+#lenovotab .freedom-lenovotab__box p {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1800px) {
+  #lenovotab .freedom-lenovotab__box p {
+    font-size: -webkit-calc(16px + 20 * ((100vw - 320px) / 1480));
+    font-size: calc(16px + 20 * ((100vw - 320px) / 1480));
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #lenovotab .multimedia-lenovotab__box {
+    width: 61%;
+  }
+  #lenovotab .reaction-lenovotab__text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #lenovotab .multimedia-lenovotab__box {
+    width: 70%;
+  }
+  #lenovotab .reaction-lenovotab__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #lenovotab .reaction-lenovotab__bg,
+  #lenovotab .task-lenovotab__bg {
+    padding: 20px 0;
+  }
+  #lenovotab .reaction-lenovotab__text,
+  #lenovotab .task-lenovotab__text {
+    width: auto;
+    padding: 0 15px;
+  }
+  #lenovotab .task-lenovotab__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  #lenovotab .multimedia-lenovotab__row {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  #lenovotab .multimedia-lenovotab__item img {
+    width: 80px;
+  }
+  #lenovotab .multimedia-lenovotab__item_ps p::before {
+    width: 25px;
+    height: 25px;
+  }
+  #lenovotab .multimedia-lenovotab__item_ps p {
+    padding-left: 30px;
+  }
+  #lenovotab .box-lenovotab__text {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #lenovotab .header-lenovotab__image {
+    right: 1%;
+    left: 32%;
+  }
+  #lenovotab .header-lenovotab__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    bottom: 4%;
+  }
+  #lenovotab .multimedia-lenovotab__box {
+    width: auto;
+  }
+  #lenovotab .multimedia-lenovotab__row {
+    bottom: 5%;
+  }
+  #lenovotab .multimedia-lenovotab__row {
+    grid-template-columns: 1fr;
+  }
+  #lenovotab .freedom-lenovotab__box h2 {
+    text-align: left;
+  }
+}/*# sourceMappingURL=style.css.map */
