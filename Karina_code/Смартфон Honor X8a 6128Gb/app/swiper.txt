@@ -1,0 +1,325 @@
+ #lgtvlq32 .swiper-pagination {
+            padding-top: 42px
+        }
+
+        #lgtvlq32 .bground-lgtvlq32-2__slider {
+            padding-top: 170px
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet {
+            position: relative;
+            z-index: 2;
+            -webkit-transition: all .3s ease 0s;
+            -o-transition: all .3s ease 0s;
+            -moz-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            width: 122px;
+            height: 122px
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet::after,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet::after {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            border: 1.5px solid #535353;
+            width: 132px;
+            height: 132px;
+            top: -5px;
+            left: -5px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation-name: circle-wawes;
+            -moz-animation-name: circle-wawes;
+            -o-animation-name: circle-wawes;
+            animation-name: circle-wawes;
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear
+        }
+
+        @-webkit-keyframes circle-wawes {
+            0% {
+                -webkit-transform: scale(0.9);
+                transform: scale(0.9)
+            }
+
+            100% {
+                -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+                opacity: 0
+            }
+        }
+
+        @-moz-keyframes circle-wawes {
+            0% {
+                -moz-transform: scale(0.9);
+                transform: scale(0.9)
+            }
+
+            100% {
+                -moz-transform: scale(1.4);
+                transform: scale(1.4);
+                opacity: 0
+            }
+        }
+
+        @-o-keyframes circle-wawes {
+            0% {
+                -o-transform: scale(0.9);
+                transform: scale(0.9)
+            }
+
+            100% {
+                -o-transform: scale(1.4);
+                transform: scale(1.4);
+                opacity: 0
+            }
+        }
+
+        @keyframes circle-wawes {
+            0% {
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                transform: scale(0.9)
+            }
+
+            100% {
+                -webkit-transform: scale(1.4);
+                -moz-transform: scale(1.4);
+                -o-transform: scale(1.4);
+                transform: scale(1.4);
+                opacity: 0
+            }
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet::before,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet::before {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            border: 1.5px solid #535353;
+            width: 132px;
+            height: 132px;
+            top: -5px;
+            left: -5px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation-name: circle-wawes;
+            -moz-animation-name: circle-wawes;
+            -o-animation-name: circle-wawes;
+            animation-name: circle-wawes;
+            -webkit-animation-duration: 3s;
+            -moz-animation-duration: 3s;
+            -o-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-delay: 1.5s;
+            -moz-animation-delay: 1.5s;
+            -o-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet:hover,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1)
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet-active::after,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet-active::after,
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet-active::before,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet-active::before {
+            content: "";
+            border: 2.5px solid #c4064e
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet:nth-child(1) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image01.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet:nth-child(2) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image02.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination-bullet:nth-child(3) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image03.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet:nth-child(1) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image04.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet:nth-child(2) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image05.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination-bullet:nth-child(3) {
+            background: url("https://cdn.comfy.ua/media/x/img3/2191934/image06.png") 0 0 no-repeat;
+            display: block;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            opacity: 1
+        }
+
+        #lgtvlq32 .bground-lgtvlq32__slider .swiper-pagination,
+        #lgtvlq32 .bground-lgtvlq32-2__slider .swiper-pagination {
+            top: 0;
+            bottom: auto;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+            justify-content: space-around
+        }
+
+Второй вариант, где слайдер доезжает четко влево
+
+#samsungtv .quality-samsungtv
+    &__title
+        padding: 88px 88px 0
+        h2
+            @include adaptiv-value("font-size", 60, 22, 1)
+            line-height: 1.2
+            margin-bottom: 60px
+    &__row
+        overflow: hidden
+    &__slider
+        //max-width: 900px
+        width: 64%
+        margin: 0
+        overflow: visible
+    &__wrapper
+    &__slide
+    &__item
+    &__image
+    &__text
+        //padding-top: 40px
+        @include adaptiv-value("padding-top", 40, 15, 1)
+        h2
+            //font-size: 38px
+            @include adaptiv-value("font-size", 38, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        span
+            @include adaptiv-value("font-size", 22, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            font-weight: bold
+            display: block
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#samsungtv .swiper
+    padding-left: 60px
+    padding-bottom: 60px
+    &-wrapper
+    &-slide
+    &-pagination
+    &-button-prev
+        transform: rotate(-180deg)
+        left: 10px
+    &-button-next
+        right: -50px
+
+#samsungtv .swiper-button-next, #samsungtv .swiper-button-prev
+    top: 30%
+    border: 1px solid rgba(0,0,0,0.1)
+    border-radius: 50%
+    width: 40px
+    height: 40px
+
+#samsungtv .swiper-button-next:after, #samsungtv .swiper-button-prev:after
+    content: ''
+    background: url('https://cdn.comfy.ua/media/x/img3/2360418/arrow.png') 0 0 no-repeat
+    background-size: cover
+    width: 20px
+    height: 32px
+
+#samsungtv .swiper-pagination-bullet
+    width: 10px
+    height: 10px
+    background: #000
+
+#samsungtv .swiper-pagination
+    border: 1px solid rgba(0,0,0,0.1)
+    width: 15%
+    border-radius: 10px
+    padding: 3px 5px
+    right: 0
+    margin: 0 auto
+
+let myQualitySlider = new Swiper('.quality-samsungtv__slider', {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 60,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            spaceBetween: 20
+        },
+        601: {
+            spaceBetween: 60
+        }
+    }
+});
