@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #honorx8a ul,
+        #honorx8a ol,
+        #honorx8a li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #honorx8a .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #honorx8a .bc-description__content h3 {
+            text-align: left
+        }
+
+        #honorx8a h1,
+        #honorx8a h2,
+        #honorx8a h3,
+        #honorx8a h4,
+        #honorx8a h5,
+        #honorx8a h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #honorx8a {
+            max-width: 1900px;
+            padding: 0 15px;
+            margin: 0 auto;
+            overflow: hidden
+        }
+
+        #honorx8a h1,
+        #honorx8a h2,
+        #honorx8a h3,
+        #honorx8a h4,
+        #honorx8a h5,
+        #honorx8a h6,
+        #honorx8a p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #honorx8a p::first-letter {
+            padding-left: 0
+        }
+
+        #honorx8a img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #honorx8a img:hover {
+            opacity: 1
+        }
+
+        #honorx8a .col-honorx8a__box h2 {
+            font-size: 45px;
+            line-height: 1.2;
+            text-align: center;
+            padding-top: 30px
+        }
+
+        @media(max-width: 1900px) {
+            #honorx8a .col-honorx8a__box h2 {
+                font-size: -webkit-calc(20px + 25 * ((100vw - 320px) / 1580));
+                font-size: calc(20px + 25 * ((100vw - 320px) / 1580))
+            }
+        }
+
+        #honorx8a .col-honorx8a__box p {
+            font-size: 35px;
+            line-height: 1.2;
+            text-align: center;
+            padding: 15px 0
+        }
+
+        @media(max-width: 1900px) {
+            #honorx8a .col-honorx8a__box p {
+                font-size: -webkit-calc(16px + 19 * ((100vw - 320px) / 1580));
+                font-size: calc(16px + 19 * ((100vw - 320px) / 1580))
+            }
+        }
+
+        #honorx8a .col-honorx8a__row {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 15px
+        }
+
+        #honorx8a .col-honorx8a__row_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #honorx8a .col-honorx8a__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #honorx8a .col-honorx8a__text {
+            width: 90%;
+            margin: 0 auto
+        }
+
+        #honorx8a .col-honorx8a__text h2 {
+            font-size: 45px;
+            line-height: 1.2;
+            text-align: left
+        }
+
+        @media(max-width: 1900px) {
+            #honorx8a .col-honorx8a__text h2 {
+                font-size: -webkit-calc(20px + 25 * ((100vw - 320px) / 1580));
+                font-size: calc(20px + 25 * ((100vw - 320px) / 1580))
+            }
+        }
+
+        #honorx8a .col-honorx8a__text p {
+            font-size: 30px;
+            line-height: 1.2;
+            text-align: left
+        }
+
+        @media(max-width: 1900px) {
+            #honorx8a .col-honorx8a__text p {
+                font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1580));
+                font-size: calc(16px + 14 * ((100vw - 320px) / 1580))
+            }
+        }
+
+        #honorx8a .col-honorx8a__item-image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        @media screen and (max-width: 479.98px) {
+            #honorx8a .col-honorx8a__row {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #honorx8a .col-honorx8a__text {
+                width: auto
+            }
+
+            #honorx8a .col-honorx8a__text h2,
+            #honorx8a .col-honorx8a__text p {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="honorx8a">
+        <div class="honorx8a__col col-honorx8a">
+            <div class="col-honorx8a__box">
+                <h2>Ваш маленький помощник, вмещающий все</h2>
+                <p>Honor X6a 4/128 Gb — это смартфон, который откроет вам новый мир производительности, творчества и
+                    отдыха. С тройной камерой вы можете снимать невероятные пейзажи и портреты, а благодаря
+                    вместительной батарее вы никогда не упустите ни одного хорошего кадра. За энергоэффективность,
+                    производительность и скорость отвечают процессор MediaTek Helio G36 и 4 ГБ оперативной памяти.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img1.png" alt="">
+                <h2>16 млн цветов на одном экране</h2>
+                <p>Именно такое количество цветов отображает дисплей Honor X6a 4/128 Gb, который имеет диагональ 6.56".
+                    На нем удобно просматривать и только что сделанные фото, и смотреть фильмы или сериалы. Насыщенные
+                    естественные цвета, свет и тень, контрасты — все это относится к опыту с Honor X6a.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img4.png" alt="">
+                <h2>Безопасность для ваших глаз</h2>
+                <p>Экран смартфона оснащен технологией Dynamic Dimming, создающей естественное затемнение. Этим она
+                    снимает усталость с глаз и улучшает кровообращение в глазах. Ваше зрение и глаза в полной
+                    безопасности как днем, так и ночью.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img5.png" alt="">
+                <h2>Тройная камера для лучших снимков</h2>
+                <p>Honor X6a 4/128 Gb имеет тройную камеру, состоящую из основной на 50 Мп, макрокамеры и камеры
+                    глубины, каждая по 2 Мп. С помощью основной камеры вы можете снимать что-угодно и получать четкие
+                    снимки. Макрокамера покажет вам мир деталей еще ближе, так, как ваш глаз никогда не видел. А камера
+                    глубины поможет создать шедевральные портреты с размытием заднего плана.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img6.jpg" alt="">
+                <h2>Поражающая автономность</h2>
+                <p>Смартфон оснащен мощной батареей на 5200 мАч, поэтому можете забыть о кабелях в сумке и Power Bank —
+                    Honor X6a 4/128 Gb будет держать заряд целый день! А когда придет время подзарядить смартфон,
+                    используйте быструю зарядку 22,5 Вт, которая зарядит аккумулятор за считанные минуты.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img7.png" alt="">
+                <div class="col-honorx8a__row">
+                    <div class="col-honorx8a__item">
+                        <div class="col-honorx8a__text">
+                            <h2>Память, которой хватит</h2>
+                            <p>Больше свободы, больше фотографий и другой информации. С объемом памяти в 128 Гб вы
+                                можете забыть о болезненных удалениях любимых фото и видео.
+                                А даже если и этого не хватит, смартфон поддерживает HONOR RAM Turbo и совместим с
+                                расширенной памятью MicroSD на 1 ТВ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-honorx8a__item-image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2614151/img8.png" alt="">
+                    </div>
+                </div>
+                <p>Купить смартфон Honor X6a 4/128 Gb в Украине можно на сайте или в фирменных магазинах Comfy!</p>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="honorx8a">
+        <div class="honorx8a__col col-honorx8a">
+            <div class="col-honorx8a__box">
+                <h2>Ваш маленький помічник, який вміщує все</h2>
+                <p>Honor X6a 4/128 Gb — це смартфон, який відкриє вам новий світ продуктивності, творчості та
+                    відпочинку. З потрійною камерою ви можете знімати неймовірні пейзажі та портрети, а завдяки місткій
+                    батареї ви ніколи не проґавите жодного хорошого кадру. За енергоефективність, продуктивність та
+                    швидкість відповідають процесор MediaTek Helio G36 та 4 Гб оперативної пам’яті.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img1.png" alt="">
+                <h2>16 млн кольорів на одному екрані</h2>
+                <p>Саме таку кількість кольорів відображає дисплей Honor X6a 4/128 Gb, який має діагональ 6.56". На
+                    ньому зручно і передивлятися тільки що зроблені фото, і дивитися фільми або серіали. Насичені
+                    природні кольори, світло і тінь, контрасти — все це стосується досвіду з Honor X6a.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img4.png" alt="">
+                <h2>Безпека для ваших очей</h2>
+                <p>Екран смартфона оснащений технологією Dynamic Dimming, яка створює природне затемнення. Цим вона
+                    знімає втому з очей і покращує кровообіг в очах. Ваш зір та очі в повній безпеці як вдень, так і
+                    вночі.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img5.png" alt="">
+                <h2>Потрійна камера для найкращих знімків</h2>
+                <p>Honor X6a 4/128 Gb має потрійну камеру, яка складається з основної на 50 Мп, макрокамери та камери
+                    глибини, кожна по 2 Мп. За допомогою основної камери ви можете знімати будь-що та отримувати чіткі
+                    знімки. Макрокамера покаже вам світ деталей ще ближче, так, як ваше око ніколи не бачило. А камера
+                    глибини допоможе створити шедевральні портрети з розмиттям заднього плану.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img6.jpg" alt="">
+                <h2>Автономність, яка вражає</h2>
+                <p>Смартфон оснащений потужною батареєю на 5200 мАг, тому можете забути про кабелі в сумці та Power bank
+                    — Honor X6a 4/128 Gb буде тримати заряд цілий день! А коли настане час підзарядити смартфон,
+                    використовуйте швидку зарядку 22,5 Вт, яка зарядить акумулятор за лічені хвилини.</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/2614151/img7.png" alt="">
+                <div class="col-honorx8a__row">
+                    <div class="col-honorx8a__item">
+                        <div class="col-honorx8a__text">
+                            <h2>Пам’ять, якої вистачить </h2>
+                            <p>Більше свободи, більше фотографій та іншої інформації. З обсягом пам’яті в 128 Гб ви
+                                можете забути про болючі видалення улюблених фото та відео.
+                                А навіть якщо і цього не вистачить, смартфон має підтримку HONOR RAM Turbo і сумісний із
+                                розширеною пам’яттю MicroSD на 1 ТБ.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-honorx8a__item-image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2614151/img8.png" alt="">
+                    </div>
+                </div>
+                <p>Купити смартфон Honor X6a 4/128 Gb в Україні можна на сайті або у фірмових магазинах Comfy! </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
