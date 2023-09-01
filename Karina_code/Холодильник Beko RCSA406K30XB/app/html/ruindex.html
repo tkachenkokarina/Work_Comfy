@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,
+        #maincontent ol,
+        #maincontent li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #maincontent .maincontent__box h2 {
+            font-size: 35px;
+            line-height: 1.2;
+            text-align: center;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .maincontent__box h2 {
+                font-size: -webkit-calc(20px + 15 * ((100vw - 320px) / 980));
+                font-size: calc(20px + 15 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .maincontent__box p {
+            font-size: 28px;
+            line-height: 1.2;
+            text-align: center;
+            padding: 15px 0
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .maincontent__box p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 980));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 0
+        }
+
+        #maincontent .row-maincontent__text h2 {
+            font-size: 35px;
+            line-height: 1.2;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .row-maincontent__text h2 {
+                font-size: -webkit-calc(20px + 15 * ((100vw - 320px) / 980));
+                font-size: calc(20px + 15 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1300px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 980));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 980))
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                width: auto
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/1476091/img1.jpg" alt="">
+                <p>Классический холодильник beko со стандартной, статической системой охлаждения сочетает в себе
+                    простоту и надежность.</p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <p>Статическая система охлаждения и использование современных теплоизоляционных материалов
+                                позволило добиться высокой эффективности работы. Такие холодильники показали свою
+                                надежность в регионах с нестабильной электроэнергией.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>LED подсветка</h2>
+                            <p>Яркая светодиодная подсветка гарантирует качественное и эффективное освещение холодильной
+                                камеры.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Надежные полки и ящики</h2>
+                            <p>Полки в холодильнике выполнены из закаленного стекла, способны выдерживать нагрузку до 20
+                                кг. В нижней части холодильного отделения (зона свежести, с более низкой температурой
+                                холодильного отделения) имеется ящик, в котором удобно хранить овощи и фрукты.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <img src="https://cdn.comfy.ua/media/x/img3/1476091/img5.jpg" alt="">
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/1476091/img1.jpg" alt="">
+                <p>Класичний холодильник beko із стандартною, статичною системою охолодження поєднує в собі простоту і
+                    надійність.</p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <p>Статична система охолодження і використання сучасних теплоізоляційних матеріалів
+                                дозволило добитися високої ефективності роботи. Такі холодильники показали свою
+                                надійність в регіонах з нестабільною електроенергією.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>LED підсвітка</h2>
+                            <p>Яскраве світлодіодне підсвічування гарантує якісне і ефективне освітлення холодильної
+                                камери.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Надійні полиці і ящики</h2>
+                            <p>Полиці в холодильнику виконані із загартованого скла, здатні витримувати навантаження до
+                                20 кг. В нижній частині холодильного відділення (зона свіжості, з нижчою температурою
+                                холодильного відділення) є ящик, в якому зручно зберігати овочі і фрукти.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1476091/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <img src="https://cdn.comfy.ua/media/x/img3/1476091/img5.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
