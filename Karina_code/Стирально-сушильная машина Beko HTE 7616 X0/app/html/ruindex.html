@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,
+        #maincontent ol,
+        #maincontent li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #maincontent .maincontent__box h2 {
+            font-size: 35px;
+            line-height: 1.2;
+            padding: 10px 0;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box h2 {
+                font-size: -webkit-calc(16px + 19 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 19 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .maincontent__box p {
+            font-size: 28px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .maincontent__box span {
+            display: block;
+            font-size: 20px;
+            line-height: 1.2;
+            text-align: center;
+            padding: 10px 0
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box span {
+                font-size: -webkit-calc(14px + 6 * ((100vw - 320px) / 1180));
+                font-size: calc(14px + 6 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent {
+            padding: 20px 0
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 15px
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text h2 {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__text h2 {
+                font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 14 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__list p {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__list p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__list-item {
+            padding: 5px
+        }
+
+        #maincontent .row-maincontent__list-item li {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__list-item li {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                padding: 10px 0;
+                width: auto
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+
+            #maincontent .row-maincontent__list p,
+            #maincontent .row-maincontent__list-item li {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <h2>ПРАЛЬНО-СУШИЛЬНА МАШИНА HTE 7616 X0</h2>
+                <p>ЗІ СМАРТ-КЕРУВАННЯМ ЧЕРЕЗ ДОДАТОК HOMEWHIZ</p>
+                <img src="https://cdn.comfy.ua/media/x/img3/1459782/img1.jpg" alt="">
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРАННЯ ТА СУШКА В ОДНІЙ МАШИНЦІ</h2>
+                            <p>Прально-сушильна машина оснащується спеціальним нагнітачем теплого сухого повітря, який
+                                вбирає вологу з речей, яка потім конденсується в теплообміннику. Таким чином, прання та
+                                сушка речей відбуваються одній машинці</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ІНВЕРТОРНИЙ ДВИГУН PROSMART™</h2>
+                        </div>
+                        <div class="row-maincontent__list">
+                            <p>Заощаджуйте з сучасними технологічними рішеннями вже сьогоді. Переваги інверторних
+                                двигунів:</p>
+                            <ul class="row-maincontent__list-item">
+                                <li>- економія електроенергії</li>
+                                <li>- низький рівень шуму</li>
+                                <li>- висока надійність і продуктивність, про що свідчить 10-річна гарантія на
+                                    інверторні двигуни від beko</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРАННЯ З ПАРОЮ STEAMCURE™ </h2>
+                            <p>Сила і делікатність в парі!</p>
+                        </div>
+                        <div class="row-maincontent__list">
+                            <p>Надає додаткові переваги прання:</p>
+                            <ul class="row-maincontent__list-item">
+                                <li>- на початку програми пар делікатно розм'якшує бруд, що полегшує його видалення
+                                    дбайливим для тканини способом</li>
+                                <li>- в кінці програми пар робить білизну більш м'якою, що означає мінімум зусиль при
+                                    прасуванні в подальшому</li>
+                                <li>- незалежно від циклу, парова обробка білизни забезпечує гігієнічний ефект.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАМА “ВИПЕРИ ТА ОДЯГНИ” </h2>
+                            <p>Ви збираєтесь на урочисту подію, і раптом помітили, що речі не випрані?</p>
+                        </div>
+                        <div class="row-maincontent__list">
+                            <p>Комплексна програма прання та сушки стане в нагоді:</p>
+                            <ul class="row-maincontent__list-item">
+                                <li>- 1 година при завантаженні 1 кг білизни ( наприклад, 5 сорочок)</li>
+                                <li>- 40 хвилин при завантаженні 0,5 кг білизни (наприклад, 2 сорочки)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Економте свій час та заощаджуйте на затратах.</h2>
+                            <p>В прально-сушильній машині використовуйте комплексні програми, та відтерміновуйте старт
+                                прання таким чином, щоб весь цикл відбувався вночі, за більш низьким тарифом на
+                                електроенергію. А враці дістаньте повністю сухі речі.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img6.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАМИ ШВИДКОГО ПРАННЯ</h2>
+                        </div>
+                        <div class="row-maincontent__list">
+                            <p>Більше не потрібно гаяти час для повсякденного прання завдяки спеціальним програмам для
+                                прання одягу з низьким забрудненням:</p>
+                            <ul class="row-maincontent__list-item">
+                                <li>- 14 хвилин при завантаженні 2 кг білизни </li>
+                                <li>- 28 хвилин при повному завантаженні для прання при 30 °С.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРАННЯ БІЛИЗНИ З ПЛЯМАМИ</h2>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАМА ПРЯННЯ ВОВНЯНИХ ВИРОБІВ</h2>
+                            <p>Ця пральна машинка сертифікована для прання вовняних речей та має відповідний знак.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ТЕХНОЛОГІЯ ЕКОНОМІЇ МИЮЧОГО ЗАСОБУ</h2>
+                            <p>Пральна машина оснащена спеціальним клапаном AquaFusion, що запобігає миючому засобу
+                                збиратись в зливному отворі баку. Таким чином, ваш пральний засіб повністю розчиняється
+                                в процессі прання, і покращує результат.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАММА ПРАННЯ ПУХОВИХ РЕЧЕЙ</h2>
+                            <p>Завдяки спеціальній программі прання пухових речей (пухових ковдр, або верхнього одягу),
+                                машинка делікатно випере речі. До того ж, ви можете увімкнути опцію пари для цієї
+                                программи.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАММА ДЖИНСИ І ТЕМНІ РЕЧІ</h2>
+                            <p>Ця програма призначена для прання речей з щальної тканини, такої як джинси. Так як при
+                                пранні в звичайних пральних машинках на загальному режимі, щільні тканини можуть погано
+                                виполаскуватись, і лишаються плями від миючих засобів в складках таких тканин.
+                                Спеціальний алгоритм в пральних машинках beko подбає про чистоту ваших речей з
+                                гарантованим результатом.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ФУНКІЯ ADDXTRA</h2>
+                            <p>Натиснули «Старт» та знайшли загублену футболку? Тепер не треба чекати на інше прання –
+                                просто натисніть паузу і добавте необхідну річ.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>ПРОГРАМА САМООЧИЩЕННЯ БАРАБАНУ</h2>
+                            <p>Догляд за пральною машинкою ще не був таким простим. Користуйтесь програмою очистки
+                                барабану раз на три місяці та будете мати гарантовано свіжу і чисту білизну.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1459782/img14.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/1459782/img15.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,
+        #maincontent ol,
+        #maincontent li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #maincontent .maincontent__box h2 {
+            font-size: 35px;
+            line-height: 1.2;
+            padding: 10px 0;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box h2 {
+                font-size: -webkit-calc(16px + 19 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 19 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .maincontent__box p {
+            font-size: 28px;
+            line-height: 1.2;
+            padding: 10px 0
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .maincontent__box span {
+            display: block;
+            font-size: 28px;
+            line-height: 1.2;
+            text-align: center;
+            padding: 10px 0
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box span {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .maincontent__box-list {
+            padding-left: 40px
+        }
+
+        #maincontent .maincontent__box-list li {
+            list-style-type: disc;
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .maincontent__box-list li {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent {
+            padding: 20px 0
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 15px
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text h2 {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__text h2 {
+                font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 14 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__list p {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__list p {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        #maincontent .row-maincontent__list-item {
+            padding: 5px
+        }
+
+        #maincontent .row-maincontent__list-item li {
+            font-size: 28px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .row-maincontent__list-item li {
+                font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1180));
+                font-size: calc(16px + 12 * ((100vw - 320px) / 1180))
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                padding: 10px 0;
+                width: auto
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+
+            #maincontent .row-maincontent__list p,
+            #maincontent .row-maincontent__list-item li {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/1478702/img1.png" alt="">
+                <p>Превратите кухню в творческую мастерскую по созданию кулинарных шедевров с техникой, которая
+                    разработана для вашего удобства. В модельном ряду Beko представлены плиты с базовой
+                    функциональностью и расширенными возможностями, а также различные комбинации поверхностей и духовых
+                    шкафов в них:</p>
+                <ul class="maincontent__box-list">
+                    <li>газ + газ;</li>
+                    <li>газ + электрика;</li>
+                    <li>электрика + электрика. </li>
+                </ul>
+                <p>Вы точно сможете подобрать оптимальный вариант. Продуманный дизайн позволит гармонично вписать
+                    технику в любой интерьер. Ниже вы можете ознакомиться с ключевыми характеристиками плит Beko, чтобы
+                    сделать правильный выбор.</p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Каталитика: уход без забот</h2>
+                            <p>Уход за духовкой или плитой может быть максимально простым, если в ней предусмотрена
+                                каталитическая очистка. Благодаря специальному покрытию задней стенки все жирные пятна
+                                быстро абсорбируются и химическим путем преобразуются в воду и углекислый газ. Таким
+                                образом, вам просто не придется мыть духовой шкаф после использования — он будет
+                                очищаться сам, освобождая вам время для более приятных дел.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>SteamShine® — очистка паром</h2>
+                            <p>Позвольте горячему пару выполнить за вас всю черновую работу. Просто поставьте в духовку
+                                противень с небольшим количеством воды и активируйте функцию SteamShine. Уже через
+                                несколько минут интенсивный пар размягчит пригоревшие остатки пищи и жира на стенках
+                                духового шкафа, после чего их можно будет вытереть несколькими легкими движениями.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>3D-выпекание: вкусно, как из печки</h2>
+                            <p>Инновация для максимально простого и эффективного приготовления блюд в духовке. Эта
+                                функция активирует все нагревательные элементы, так что прогрев ведется на всех уровнях
+                                сразу. Тепло распределяется по всему духовому шкафу, обеспечивая равномерное пропекание
+                                любого количества блюд. Эта функция также используется при одновременном приготовлении
+                                блюд на разных уровнях.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Газ под контролем</h2>
+                            <p>Позаботьтесь о безопасности, выбрав для дома плиту с системой газ-контроль. Неважно, по
+                                каким причинам в конфорке потух огонь, — техника сама определит это и мгновенно
+                                перекроет подачу газа. Ваш дом и его обитатели надежно защищены!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Экономят газ, экономят время</h2>
+                            <p>Инновационные газовые конфорки помогут готовить различные блюда быстрее. Благодаря их
+                                особой конструкции удалось снизить потребление голубого топлива, повысив эффективность
+                                его использования. Вкусный ужин будет готов всего за несколько минут!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Практичность, надежность, долговечность</h2>
+                            <p>Чугунные решетки обеспечат кастрюлям и сковородкам максимально стабильное положение.
+                                Перемешивайте блюда, не боясь их сдвинуть или уронить с плиты. Чугун устойчив к
+                                воздействию высоких температур и брызг масла или кислых соусов. Для поддержания чистоты
+                                достаточно регулярно мыть решетки теплой водой с моющим средством — и они снова выглядят
+                                безупречно!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__box">
+                <span>Выбирайте современную технику beko и делайте свою жизнь комфортнее и здоровее!</ы>
+                    <img src="https://cdn.comfy.ua/media/x/img3/1478702/img8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box">
+                <img src="https://cdn.comfy.ua/media/x/img3/1478702/img1.png" alt="">
+                <p>Перетворіть кухню на творчу майстерню зі створення кулінарних шедеврів із технікою, розробленою для
+                    вашої зручності. У модельному ряду Beko представлені плити з базовим функціоналом та розширеними
+                    можливостями, а також різні комбінації поверхонь і духових шаф у них:</p>
+                <ul class="maincontent__box-list">
+                    <li>газ + газ;</li>
+                    <li>газ + електрика;</li>
+                    <li>електрика + електрика.</li>
+                </ul>
+                <p>Ви точно зможете підібрати оптимальний варіант. Продуманий дизайн дасть можливість гармонійно вписати
+                    техніку в будь-який інтер’єр. Нижче ви можете ознайомитися з ключовими характеристиками плит Beko,
+                    щоб зробити правильний вибір.</p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Каталітика: догляд без турбот</h2>
+                            <p>Догляд за духовкою чи плитою може бути максимально простим, якщо в ній передбачено
+                                каталітичне очищення. Завдяки спеціальному покриттю задньої стінки всі жирні плями
+                                швидко абсорбуються та хімічним шляхом перетворюються на воду та вуглекислий газ. Таким
+                                чином, вам просто не доведеться мити духову шафу після використання — вона очищатиметься
+                                сама, звільняючи вам час для приємніших справ.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img2.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>SteamShine® — очищення парою</h2>
+                            <p>Дозвольте гарячій парі виконати за вас усю чорнову роботу. Просто помістіть в духовку
+                                деко з невеликою кількістю води й активуйте функцію SteamShine. Уже через кілька хвилин
+                                інтенсивна пара розм’якшить залишки їжі та жиру, що пригоріли, на стінках духової шафи,
+                                після чого їх можна буде витерти кількома легкими рухами.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>3D-випікання: смачно, як із пічки</h2>
+                            <p>Інновація для максимально простого й ефективного приготування страв у духовці. Ця функція
+                                активує всі нагрівальні елементи, тому прогрівання ведеться на всіх рівнях одразу. Тепло
+                                розподіляється по всій духовці, забезпечуючи рівномірне пропікання будь-якої кількості
+                                страв. Ця функція також використовується для одночасного приготування страв на різних
+                                рівнях.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Газ під контролем</h2>
+                            <p>Подбайте про безпеку, вибравши для дому плиту із системою газ-контроль. Неважливо, з яких
+                                причин у конфорці згас вогонь, — техніка сама визначить це й миттєво перекриє подачу
+                                газу. Ваш дім та його мешканці надійно захищені!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Заощаджують газ, заощаджують час</h2>
+                            <p>Інноваційні газові конфорки допоможуть готувати різноманітні страви швидше. Завдяки їхній
+                                особливій конструкції вдалося знизити споживання блакитного палива, підвищивши
+                                ефективність його використання. Смачна вечеря буде готова всього за кілька хвилин!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Практичність, надійність, довговічність</h2>
+                            <p>Чавунні решітки забезпечать каструлям і сковорідкам максимально стабільне положення.
+                                Перемішуйте страви, не боячись їх зрушити чи впустити з плити. Чавун стійкий до впливу
+                                високих температур і бризок олії чи кислих соусів. Для підтримання чистоти достатньо
+                                регулярно мити решітки теплою водою з мийним засобом — і вони знову мають бездоганний
+                                вигляд!</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1478702/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__box">
+                <span>Обирайте сучасну техніку beko та робіть своє життя комфортнішим та здоровішим!</span>
+                <img src="https://cdn.comfy.ua/media/x/img3/1478702/img8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
