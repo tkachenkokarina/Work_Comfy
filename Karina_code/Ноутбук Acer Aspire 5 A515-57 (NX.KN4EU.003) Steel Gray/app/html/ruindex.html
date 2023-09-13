@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,#maincontent ol,#maincontent li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .top-maincontent{padding:20px 0}#maincontent .top-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}#maincontent .top-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 35%;-moz-box-flex:0;-ms-flex:0 1 35%;flex:0 1 35%}#maincontent .top-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 35%;-moz-box-flex:0;-ms-flex:0 1 35%;flex:0 1 35%}#maincontent .top-maincontent__item-text h2{font-size:30px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#maincontent .top-maincontent__item-text h2{font-size:-webkit-calc(18px + 12 * ((100vw - 320px) / 980));font-size:calc(18px + 12 * ((100vw - 320px) / 980))}}#maincontent .top-maincontent__item-text p{font-size:20px;line-height:1.2}@media(max-width: 1300px){#maincontent .top-maincontent__item-text p{font-size:-webkit-calc(14px + 6 * ((100vw - 320px) / 980));font-size:calc(14px + 6 * ((100vw - 320px) / 980))}}#maincontent .top-maincontent__item-list{padding-top:20px;padding-left:15px}#maincontent .top-maincontent__item-list li{font-size:15px;margin-bottom:5px;line-height:1.2;list-style:disc}#maincontent .top-maincontent__col{-webkit-box-flex:0;-webkit-flex:0 1 25%;-moz-box-flex:0;-ms-flex:0 1 25%;flex:0 1 25%;padding-left:30px;border-left:1px solid #ddd}#maincontent .top-maincontent__text p{font-size:18px;line-height:1.2;color:#888}@media(max-width: 1300px){#maincontent .top-maincontent__text p{font-size:-webkit-calc(13px + 5 * ((100vw - 320px) / 980));font-size:calc(13px + 5 * ((100vw - 320px) / 980))}}#maincontent .column-maincontent__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px}#maincontent .column-maincontent__text{padding-top:20px}#maincontent .column-maincontent__text h2{font-size:20px;line-height:1.2;margin-bottom:10px}@media(max-width: 1300px){#maincontent .column-maincontent__text h2{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 980));font-size:calc(16px + 4 * ((100vw - 320px) / 980))}}#maincontent .column-maincontent__text p{font-size:16px;line-height:1.2}@media(max-width: 1300px){#maincontent .column-maincontent__text p{font-size:-webkit-calc(15px + 1 * ((100vw - 320px) / 980));font-size:calc(15px + 1 * ((100vw - 320px) / 980))}}@media screen and (max-width: 991.98px){#maincontent .top-maincontent__row{display:grid;grid-template-columns:1fr 1fr;gap:15px}#maincontent .top-maincontent__col{grid-column:span 2;border-left:none;padding-left:0}}@media screen and (max-width: 767.98px){#maincontent .top-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .top-maincontent__image{-webkit-box-ordinal-group:3;-webkit-order:2;-moz-box-ordinal-group:3;-ms-flex-order:2;order:2}#maincontent .top-maincontent__item{-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1}#maincontent .top-maincontent__col{-webkit-box-ordinal-group:4;-webkit-order:3;-moz-box-ordinal-group:4;-ms-flex-order:3;order:3}#maincontent .column-maincontent__row{grid-template-columns:repeat(auto-fit, minmax(220px, 1fr))}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner">
+                <img src="https://cdn.comfy.ua/media/x/img3/2499018/img2.jpg" alt="">
+            </div>
+            <div class="maincontent__top top-maincontent">
+                <div class="top-maincontent__row">
+                    <div class="top-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2499018/img3.png" alt="">
+                    </div>
+                    <div class="top-maincontent__item">
+                        <div class="top-maincontent__item-text">
+                            <h2>Aspire 5</h2>
+                            <p>Новый Aspire 5 - компактный ноутбук в стильном минималистичном корпусе, качественным IPS дисплеем и разнообразным набором интерфейсов. Благодаря новейшим компонентам, ноутбук обеспечивает максимальную эффективность в многозадачном режиме и идеально подходит для любых задач.</p>
+                        </div>
+                        <ul class="top-maincontent__item-list">
+                            <li>Стильный минималистичный корпус с металлической крышкой</li>
+                            <li>Процессор Intel® Core i7-12650H и встроенная графика Intel® UHD Graphics</li>
+                            <li>16 ГБ оперативной памяти и SDD-накопитель PCIe 512 ГБ (свободный слот для второго SSD-накопителя)</li>
+                            <li>15.6" FullHD дисплей с IPS матрицей</li>
+                            <li>HD веб-камера 720p</li>
+                            <li>Два встроенных микрофона</li>
+                            <li>Клавиатура с подсветкой</li>
+                            <li>До 8 часов работы без подзарядки</li>
+                        </ul>
+                    </div>
+                    <div class="top-maincontent__col">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2499018/img1.png" alt="">
+                        <div class="top-maincontent__text">
+                            <p>Основанная в 1976 году, компания Acer специализируется на оказании IT-услуг и производстве аппаратного и программного обеспечения, а также занимается исследованием, разработкой, маркетингом, продажей и обслуживанием инновационных продуктов для улучшения качества жизни пользователей. В ассортименте продуктов Acer — ноутбуки, настольные компьютеры, дисплеи, проекторы, серверы, планшеты, смартфоны и носимые на теле устройства. Компания также разрабатывает облачные решения, объединяющие Интернет вещей в единое целое. Acer отметила 40-летний юбилей в 2016 г. и в настоящее время является одной из 5 крупнейших мировых компаний по производству ПК.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__column column-maincontent">
+                <div class="column-maincontent__row">
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img4.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Баланс производительности</h2>
+                            <p>Ноутбук Aspire 5 с современным процессором Intel® Core i7-12650H идеально подходит для любых задач, обеспечивая высокую производительность. Встроенная графика Intel® UHD Graphics позволяет запускать нетребовательные игры.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img5.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Яркий дисплей</h2>
+                            <p>Дисплей с разрешением FullHD и IPS матрицей отлично подходит для работы, просмотра фильмов и игр, обеспечивая четкое и детальное изображение. Благодаря узким рамкам заметно увеличивается полезная площадь дисплея. Технология Bluelight Shield позаботится о защите ваших глаз.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img6.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Обновленный дизайн</h2>
+                            <p>Aspire 5 стал еще легче и тоньше. Его вес составляет всего 1,76 кг, а толщина - 17,9 мм. Aspire 5 имеет металлическую крышку и эргономичную конструкцию с подъемным шарниром.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img7.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Эффективное охлаждение</h2>
+                            <p>Благодаря увеличению эффективности системы охлаждения на 10% в новом поколении Aspire 5 удалось уменьшить нагрев устройства для более высокой производительности. Возможность выбора из трех режимов работы системы охлаждения для достижения оптимальных показателей шума и температуры.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img8.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Широкие возможности подключения</h2>
+                            <p>Богатый набор портов позволяет подключать разнообразную периферию. HDMI разъем позволяет подключить внешний монитор или проектор. Порт Thunderbolt™ 4 обеспечивает подключение новейших устройств с максимальной скоростью, а также зарядку ноутбука по USB Type-C. Для беспроводного подключения используется Wi-Fi 6E и Bluetooth 5.2.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img9.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Интеллектуальные функции</h2>
+                            <p>Acer TNR Solution позволяет снизить уровень шумов изображения в условиях недостаточной освещенности для веб-камер. Функция Acer PurifiedVoice подавляет фоновый шум при использовании микрофона для конференций. Встроенный сканер отпечатков пальцев гарантируют быстрый и безопасный вход в систему без ввода пароля.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner">
+                <img src="https://cdn.comfy.ua/media/x/img3/2499018/img2.jpg" alt="">
+            </div>
+            <div class="maincontent__top top-maincontent">
+                <div class="top-maincontent__row">
+                    <div class="top-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2499018/img3.png" alt="">
+                    </div>
+                    <div class="top-maincontent__item">
+                        <div class="top-maincontent__item-text">
+                            <h2>Aspire 5</h2>
+                            <p>Новий Aspire 5 - компактний ноутбук у стильному мінімалістичному корпусі, якісним IPS дисплеєм і різноманітним набором інтерфейсів. Завдяки новітнім компонентам, ноутбук забезпечує максимальну ефективність у багатозадачному режимі та ідеально підходить для будь-яких завдань.</p>
+                        </div>
+                        <ul class="top-maincontent__item-list">
+                            <li>Стильний мінімалістичний корпус з металевою кришкою</li>
+                            <li>Процесор Intel® Core i7-12650H і вбудована графіка Intel® UHD Graphics</li>
+                            <li>16 ГБ оперативної пам'яті і SDD-накопичувач PCIe 512 ГБ (вільний слот для другого SSD-накопичувача)</li>
+                            <li>15.6" FullHD дисплей з IPS матрицею</li>
+                            <li>HD веб-камера 720p</li>
+                            <li>Два вбудовані мікрофони</li>
+                            <li>Клавіатура з підсвічуванням</li>
+                            <li>До 8 годин роботи без підзарядки</li>
+                        </ul>
+                    </div>
+                    <div class="top-maincontent__col">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2499018/img1.png" alt="">
+                        <div class="top-maincontent__text">
+                            <p>Заснована в 1976 р. компанія Acer є виробником обладнання, програмного забезпечення та послуг. Основними напрямками її діяльності є дослідження, розробка, маркетингові стратегії, продаж та підтримка інноваційних продуктів, що покликані покращувати життя людей. Серед продуктів, які пропонує користувачам Acer – ноутбуки, комп’ютери, дисплеї, проєктори, сервери, планшети, смартфони та натільні пристрої. Крім того, компанія розробляє хмарні рішення для Інтернету речей. Acer відзначила 40-річчя своєї діяльності в 2016 р. та є однією з 5 провідних компаній-виробників ПК у світі.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__column column-maincontent">
+                <div class="column-maincontent__row">
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img4.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Баланс продуктивності</h2>
+                            <p>Ноутбук Aspire 5 із сучасним процесором Intel® Core i7-12650H ідеально підходить для будь-яких завдань, забезпечуючи високу продуктивність. Вбудована графіка Intel® UHD Graphics дозволяє запускати невимогливі ігри.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img5.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Яскравий дисплей</h2>
+                            <p>Дисплей з роздільною здатністю FullHD і IPS матрицею відмінно підходить для роботи, перегляду фільмів та ігор, забезпечуючи чітке і детальне зображення. Завдяки вузьким рамкам помітно збільшується корисна площа дисплея. Технологія Bluelight Shield подбає про захист ваших очей.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img6.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Оновлений дизайн</h2>
+                            <p>Aspire 5 став ще легшим і тоншим. Його вага становить лише 1,76 кг, а товщина - 17,9 мм. Aspire 5 має металеву кришку та ергономічну конструкцію з підйомним шарніром.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img7.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Ефективне охолодження</h2>
+                            <p>Завдяки збільшенню ефективності системи охолодження на 10% у новому поколінні Aspire 5 вдалося зменшити нагрівання пристрою для більш високої продуктивності. Можливість вибору з трьох режимів роботи системи охолодження для досягнення оптимальних показників шуму і температури.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img8.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Широкі можливості підключення</h2>
+                            <p>Багатий набір портів дає змогу під'єднання різноманітної периферії. HDMI роз'єм дає змогу під'єднати зовнішній монітор або проєктор. Порт Thunderbolt™ 4 забезпечує під'єднання новітніх пристроїв з максимальною швидкістю, а також заряджання ноутбука через USB Type-C. Для бездротового підключення використовується Wi-Fi 6E і Bluetooth 5.2.</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2499018/img9.jpg" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Інтелектуальні функції</h2>
+                            <p>Acer TNR Solution дає змогу знизити рівень шумів зображення в умовах недостатньої освітленості для веб-камер. Функція Acer PurifiedVoice пригнічує фоновий шум під час використання мікрофона для конференцій. Вбудований сканер відбитків пальців гарантують швидкий і безпечний вхід у систему без введення пароля.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
