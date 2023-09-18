@@ -1,0 +1,219 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1200px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:28px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:24px;line-height:1.2;margin-bottom:10px;text-align:center}#maincontent .maincontent__container p span{font-weight:700}#maincontent .maincontent__container p b{font-weight:800}#maincontent .maincontent__container p small{font-size:18px;line-height:1}#maincontent .maincontent__text_tc{margin:0px auto 8% 23%;width:50%}#maincontent .maincontent__text_c{margin:0px auto 28% 40%;width:35%}#maincontent .maincontent__text_tl{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;padding:14% 22% 20% 11%}#maincontent .maincontent__col{margin-bottom:10px}#maincontent .maincontent__item_br{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%;padding-top:35%}#maincontent .maincontent__table{margin-bottom:30px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__subtext{position:absolute;z-index:4}#maincontent .title-block__media{position:relative;z-index:4;-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .title-block__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .title-block__text{margin:0 auto}#maincontent .title-block__subtext{top:94%;left:0}#maincontent .unlimited-power{margin-bottom:10px}#maincontent .unlimited-power__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2572833/img02.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;padding:15px 10px}#maincontent .unlimited-power__inner{-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end}#maincontent .unlimited-power__item{position:relative;z-index:4}#maincontent .unlimited-power__item_tabl{display:none}#maincontent .unlimited-power__media{margin-bottom:100%;position:unset}#maincontent .unlimited-power__title{margin-bottom:48px}#maincontent .unlimited-power__title h3{margin-top:0;font-size:24px;line-height:1.2}#maincontent .unlimited-power__text{position:absolute;z-index:5}#maincontent .unlimited-power__text_b{left:0%;top:18%;right:65%}#maincontent .unlimited-power__text_pos{top:50%;left:49%;-webkit-transform:rotate(-8deg);-ms-transform:rotate(-8deg);-o-transform:rotate(-8deg);transform:rotate(-8deg)}#maincontent .unlimited-power__text_c{top:63%;left:16%}#maincontent .unlimited-power__text_c h3{font-size:24px;line-height:1.2;margin:10px 0}#maincontent .unlimited-power__text_c p{font-size:16px;line-height:1.2}#maincontent .unlimited-power__text_small{position:unset;padding:0}#maincontent .unlimited-power__text_small p{font-size:16px;line-height:1.2}#maincontent .unlimited-power__subtext{top:97%;left:0;right:-55%}#maincontent .unlimited-power__subtext p{line-height:1}#maincontent .unlimited-power__subtext p small{font-size:12px;line-height:1}#maincontent .unlimited-power__img{display:none}#maincontent .work-mode{margin-bottom:10px}#maincontent .work-mode__inner{-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;height:592px;width:100%;position:relative;z-index:4;overflow:hidden}#maincontent .work-mode__image img{height:100%;width:50%;position:absolute;z-index:6;top:0;left:0}#maincontent .work-mode__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2572833/img03_2.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;background-position:0 0;padding:15px 53px 59px 20px}#maincontent .work-mode__text{width:65%;padding:0}#maincontent .work-mode__text:nth-child(1){width:50%;margin:0 0 0 auto}#maincontent .work-mode__text:nth-child(1) h2{margin:2px 0}#maincontent .work-mode__text:nth-child(2){margin-bottom:20px}#maincontent .work-mode__text:nth-child(3){margin:0 auto 20%}#maincontent .battery__box{margin-bottom:10px}#maincontent .battery__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2572833/img04.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto}#maincontent .battery__title{padding-top:20px;width:60%;margin:0 auto 32%}#maincontent .battery__title p{font-size:20px}#maincontent .battery__text{padding-bottom:5%;margin-left:50%}#maincontent .battery__text p{font-size:20px}#maincontent .battery__img{display:none}#maincontent .col-maincontent__inner{display:grid;gap:20px}#maincontent .col-maincontent__bg{-webkit-background-size:auto 100%;-o-background-size:auto 100%;background-size:auto 100%;padding:15px 0}#maincontent .characteristics__inner{grid-template-columns:repeat(3, 1fr)}#maincontent .characteristics__media{position:relative;z-index:4;height:562px;width:auto;overflow:hidden}#maincontent .characteristics__item{position:absolute;z-index:6}#maincontent .characteristics__item_l{top:1%;right:0;left:40%}#maincontent .characteristics__item_m{top:1%;right:40%;left:0}#maincontent .characteristics__item_r{top:85%;right:0;left:40%}#maincontent .characteristics__image img{position:absolute;z-index:5;top:0;left:0;height:100%;width:auto}#maincontent .characteristics__image_desc{display:block}#maincontent .characteristics__image_mob{display:none}#maincontent .characteristics__text_w p{color:#fff}#maincontent .dynamic-power{margin-bottom:10px}#maincontent .dynamic-power__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2572833/img06.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto}#maincontent .dynamic-power__inner{position:relative;z-index:4;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start}#maincontent .dynamic-power__item_rev{position:relative;z-index:5}#maincontent .dynamic-power__title{position:absolute;z-index:6;top:90%;left:-2%;right:25%}#maincontent .dynamic-power__title p{color:#fff}#maincontent .dynamic-power__title_mob{display:none}#maincontent .dynamic-power__title_rev{top:90%;left:-8%;right:51%}#maincontent .dynamic-power__title_rev p{color:#000}#maincontent .dynamic-power__text{padding:15px 20px 5% 30%;margin-bottom:75%}#maincontent .dynamic-power__text p{color:#fff}#maincontent .dynamic-power__subtext{top:90%;right:2%}#maincontent .dynamic-power__subtext p{color:#fff}#maincontent .dynamic-power__img{display:none}#maincontent .filter{margin-bottom:10px}#maincontent .filter__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2572833/img07.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;-webkit-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto}#maincontent .filter__inner{-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end;position:relative;z-index:7}#maincontent .filter__title{position:absolute;z-index:8;top:10px;left:10px}#maincontent .filter__title h3{font-size:24px;line-height:1.2;margin-top:0}#maincontent .filter__text p{font-size:22px;line-height:1.2}#maincontent .filter__text_pos{position:absolute;z-index:8;top:10px;left:27%;width:26%}#maincontent .filter__subtext{top:86%;left:10px}#maincontent .filter__subtext p{text-align:left}#maincontent .filter__img{display:none}#maincontent .filter-block__item{position:relative;z-index:7;padding:32% 15px 13% 20%}#maincontent .filter-block__item p{color:#fff;text-align:right}#maincontent .filter-block__subtext{top:90%;right:10px}#maincontent .warranty{margin-bottom:10px}#maincontent .warranty__inner{-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;height:592px;width:100%;position:relative;z-index:4;overflow:hidden}#maincontent .warranty__image img{height:100%;width:50%;position:absolute;z-index:5;top:0;left:0}#maincontent .warranty__item{position:relative;z-index:5;background:-webkit-gradient(linear, left top, left bottom, from(#e7f4fc), to(#cadae7));background:-webkit-linear-gradient(#e7f4fc, #cadae7);background:-o-linear-gradient(#e7f4fc, #cadae7);background:linear-gradient(#e7f4fc, #cadae7)}#maincontent .warranty__text{position:absolute;z-index:6;top:40%;left:-20%}#maincontent .warranty__subtext{top:90%;right:10px}#maincontent .logo__inner{max-width:768px;margin:0 auto}#maincontent .logo__img{margin-bottom:30px}#maincontent .logo__text{padding:0 20px}@media screen and (max-width: 1160.98px){#maincontent .battery__title{padding-top:10px}#maincontent .filter__subtext{top:86%}#maincontent .filter-block__item{padding-bottom:11%}}@media screen and (max-width: 1130.98px){#maincontent .unlimited-power__subtext{left:-7%;right:-75%}#maincontent .work-mode__bg{padding-bottom:35px}#maincontent .work-mode__text:nth-child(3){margin:0 auto 26%;width:70%}#maincontent .baterry__item{margin:0 auto -35%;padding-top:30px}#maincontent .dynamic-power__title{left:-5%}#maincontent .dynamic-power__text{margin-bottom:65%}#maincontent .filter__text_pos{left:33%}#maincontent .filter__subtext{top:87%}#maincontent .filter-block__subtext{top:90%}#maincontent .filter-block__item{padding-bottom:9%}}@media screen and (max-width: 1050.98px){#maincontent .work-mode__text:nth-child(3){margin:0 auto 28%;width:90%}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/704);font-size:calc(22px + 10*(100vw - 320px)/704)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 10*(100vw - 320px)/704);font-size:calc(18px + 10*(100vw - 320px)/704)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/704);font-size:calc(16px + 8*(100vw - 320px)/704)}#maincontent .maincontent__container p small{font-size:-webkit-calc(10px + 8*(100vw - 320px)/704);font-size:calc(10px + 8*(100vw - 320px)/704)}#maincontent .maincontent__text_tc{margin-bottom:3%}#maincontent .maincontent__text_c{width:40%;margin-right:44%}#maincontent .maincontent__text_tl{padding:11% 15% 20% 9%}#maincontent .unlimited-power{margin-bottom:0}#maincontent .unlimited-power__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .unlimited-power__bg{background:none;padding:0}#maincontent .unlimited-power__item_tabl{display:block;margin-bottom:10px}#maincontent .unlimited-power__title{margin:0 auto}#maincontent .unlimited-power__media{margin-bottom:0}#maincontent .unlimited-power__text{position:unset}#maincontent .unlimited-power__text_b,#maincontent .unlimited-power__text_pos,#maincontent .unlimited-power__text_c{padding:0}#maincontent .unlimited-power__text_pos{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)}#maincontent .unlimited-power__subtext{position:unset}#maincontent .work-mode{margin-bottom:0}#maincontent .work-mode__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%}#maincontent .work-mode__image img{position:unset;width:auto;height:100%;margin:0 auto}#maincontent .work-mode__bg{background:none;padding:0}#maincontent .work-mode__text{margin:0 auto;width:auto}#maincontent .work-mode__text:nth-child(1){margin:0 auto}#maincontent .work-mode__text:nth-child(2),#maincontent .work-mode__text:nth-child(3){margin-bottom:0}#maincontent .battery__bg{background:none}#maincontent .battery__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .battery__title{margin-bottom:0;width:100%}#maincontent .battery__text{margin-left:0;padding-bottom:0}#maincontent .battery__img{display:block;margin:0 auto}#maincontent .dynamic-power__title_rev{left:0}#maincontent .filter__title h3{font-size:-webkit-calc(18px + 6*(100vw - 320px)/704);font-size:calc(18px + 6*(100vw - 320px)/704)}#maincontent .filter__text p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/704);font-size:calc(16px + 6*(100vw - 320px)/704)}}@media screen and (max-width: 991.98px){#maincontent .col-maincontent__bg{background-position:63% 37%}#maincontent .characteristics__inner{grid-template-columns:repeat(2, 1fr)}#maincontent .dynamic-power__title{left:-8%}#maincontent .dynamic-power__title_rev{left:1%}#maincontent .dynamic-power__text{margin-bottom:60%;padding-left:55px}#maincontent .filter__text_pos{width:35%;top:12px;left:35%}#maincontent .filter__subtext{top:85%}#maincontent .filter-block__item{padding:28% 15px 7% 20%}#maincontent .filter-block__subtext{top:90%}}@media screen and (max-width: 965.98px){#maincontent .filter-block__item{padding-bottom:5%}}@media screen and (max-width: 875.98px){#maincontent .dynamic-power__title{left:-11%}#maincontent .dynamic-power__title_rev{left:3%;right:45%}#maincontent .dynamic-power__text{margin-bottom:55%}#maincontent .dynamic-power__subtext{top:91%}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;margin-bottom:0}#maincontent .maincontent__bg{background:none}#maincontent .maincontent__text{margin:0 auto;width:auto}#maincontent .maincontent__text_tl{padding:0}#maincontent .maincontent__text_br p{margin-bottom:0}#maincontent .maincontent__img{display:block}#maincontent .maincontent__item_br{padding-top:0;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .maincontent__item_br p{margin-top:10px}#maincontent .maincontent__col{margin-bottom:0}#maincontent .maincontent__table{margin-bottom:10px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__media{position:unset}#maincontent .row-maincontent__subtext{position:unset}#maincontent .row-maincontent__subtext p{text-align:center}#maincontent .col-maincontent__wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:0}#maincontent .col-maincontent__inner_s{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .col-maincontent__bg{background:none;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .col-maincontent__image_s{display:block}#maincontent .col-maincontent__text_l:first-child,#maincontent .col-maincontent__text_l:last-child,#maincontent .col-maincontent__text_r:first-child,#maincontent .col-maincontent__text_r:last-child{margin:0 auto;width:auto}#maincontent .col-maincontent__text_l p,#maincontent .col-maincontent__text_r p{margin-bottom:0}#maincontent .characteristics__inner{grid-template-columns:1fr;gap:0}#maincontent .characteristics__media{height:100%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .characteristics__item{position:unset}#maincontent .characteristics__image img{position:unset;width:auto;height:100%;margin:0 auto}#maincontent .characteristics__image_desc{display:none}#maincontent .characteristics__image_mob{display:block}#maincontent .characteristics__text p{margin-top:10px}#maincontent .characteristics__text_w p{color:#000}#maincontent .dynamic-power{margin-bottom:0}#maincontent .dynamic-power__title{position:unset}#maincontent .dynamic-power__title p{color:#000;margin-top:10px}#maincontent .dynamic-power__title_desc,#maincontent .dynamic-power__title_rev{display:none}#maincontent .dynamic-power__title_mob{display:block}#maincontent .dynamic-power__text{margin-bottom:0}#maincontent .dynamic-power__text p{color:#000}#maincontent .dynamic-power__subtext p{color:#000}#maincontent .dynamic-power__img{display:block}#maincontent .logo__img{margin-bottom:10px}#maincontent .logo__img img{width:80%;margin:0 auto}#maincontent .logo__text{padding:0 5px}#maincontent .filter{margin-bottom:0}#maincontent .filter__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .filter__title{position:unset}#maincontent .filter__title h3{margin:10px 0}#maincontent .filter__text_pos{position:unset;width:auto}#maincontent .filter__img{display:block}#maincontent .filter-block__item{-webkit-box-ordinal-group:0;-webkit-order:-1;-moz-box-ordinal-group:0;-ms-flex-order:-1;order:-1;padding:0}#maincontent .filter-block__text p,#maincontent .filter-block__subtext p{color:#000;text-align:center}#maincontent .warranty__inner{height:auto}#maincontent .warranty__image img{position:unset;height:100%;width:auto}#maincontent .warranty__item{background:none}#maincontent .warranty__text{position:unset}#maincontent .warranty__text p{margin-top:10px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent">
+<div class="title-block">
+<div class="row-maincontent__inner title-block__inner">
+<div class="row-maincontent__media title-block__media">
+<div class="row-maincontent__image title-block__image"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img01_1.png" /></div>
+<div class="row-maincontent__subtext title-block__subtext">
+<p><small><sup>*</sup>Анлимитед </small></p>
+</div>
+</div>
+<div class="row-maincontent__item title-block__item">
+<div class="row-maincontent__text title-block__text">
+<h2>Аккумуляторный пылесос <b>Unlimited* 7 BSS71125AH</b></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="unlimited-power">
+<div class="unlimited-power__wrapper">
+<div class="unlimited-power__bg">
+<div class="row-maincontent__inner unlimited-power__inner">
+<div class="row-maincontent__item unlimited-power__item">
+<div class="row-maincontent__title unlimited-power__title">
+<h3>Такой же мощный – как обычный пылесос</h3>
+</div>
+<div class="row-maincontent__media unlimited-power__media">
+<div class="row-maincontent__text unlimited-power__text unlimited-power__text_b">
+<p><span>Изготовлено в Германии</span></p>
+</div>
+<div class="row-maincontent__text unlimited-power__text unlimited-power__text_pos">
+<p><span>Напряжение 18 В </span></p>
+</div>
+<div class="row-maincontent__text unlimited-power__text unlimited-power__text_c">
+<h3>Наиболее гибкий пылесос</h3>
+<p>Убирает под низкой мебелью и сгибается на 90°</p>
+</div>
+<div class="row-maincontent__subtext unlimited-power__subtext">
+<p><small><sup>*</sup>В Турбо режиме прибор достигает необходимого сбора                                                     пыли для                                                     проводных пылесосов в соотв. к (EU) No 666/2013 (соотв. к EN                                                     60312-1:2017). </small></p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__item unlimited-power__item unlimited-power__item_tabl">
+<div class="row-maincontent__image unlimited-power__image"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img02.jpg" /></div>
+</div>
+<div class="row-maincontent__item unlimited-power__item">
+<div class="row-maincontent__text unlimited-power__text unlimited-power__text_small">
+<p>Благодаря <span>взаимодействию</span> надежного <span>аккумулятора                                                 Bosch</span>, мощного <span>мотора</span> с 66                                             000 об/мин и <span>моторизованной щетки с LED светом</span>, аккумуляторный                                             <span>пылесос</span> столь                                             <span>мощный</span>, как и проводной* и <span>обеспечивает тщательную и                                                 гибкую уборку</span></p>
+</div>
+<div class="row-maincontent__text unlimited-power__text unlimited-power__text_small">
+<p><span>Наслаждайтесь преимуществами аккумуляторного пылесоса в сочетании с                                                 мощностью проводного </span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="work-mode">
+<div class="row-maincontent__inner work-mode__inner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__image work-mode__image"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img03.jpg" /></div>
+</div>
+<div class="row-maincontent__item work-mode__item">
+<div class="work-mode__bg">
+<div class="row-maincontent__media work-mode__media">
+<div class="row-maincontent__text work-mode__text">
+<h2>Три режима работы</h2>
+</div>
+<div class="row-maincontent__text work-mode__text">
+<p><span>Эко</span> – длительное время работы для более длительной уборки</p>
+</div>
+<div class="row-maincontent__text work-mode__text">
+<p><span>Авто</span> – лучшее решение для работы и продуктивности с                                             автоматической регулировкой мощности</p>
+</div>
+<div class="row-maincontent__text work-mode__text">
+<p><span>Турбо</span> – максимальная продуктивность для оптимальных результатов                                             уборки</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box battery__box">
+<div class="maincontent__bg battery__bg">
+<div class="maincontent__inner battery__inner">
+<div class="maincontent__item">
+<div class="maincontent__title battery__title">
+<p><span>Один аккумулятор для всего вашего дома. </span></p>
+<p>Сменный <span>аккумулятор Power for ALL 2,5 Ач</span> является частью 18-ти                                     вольтовой                                     системы Bosch (зеленая линия). Аккумулятор совместим со многими                                     электроинструментами и садовыми устройствами Bosch.</p>
+</div>
+<div class="maincontent__text battery__text">
+<p><span>Время зарядки 4 часа </span><br /> <span>Время работы до 35 мин </span></p>
+</div>
+</div>
+<div class="maincontent__img battery__img"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img04.jpg" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__col col-maincontent characteristics">
+<div class="col-maincontent__wrapper characteristics__wrapper">
+<div class="col-maincontent__inner characteristics__inner">
+<div class="col-maincontent__media characteristics__media">
+<div class="col-maincontent__item characteristics__item characteristics__item_l">
+<div class="col-maincontent__text characteristics__text">
+<p><span>Трубка со щеткой стоит самостоятельно</span></p>
+</div>
+</div>
+<div class="col-maincontent__image characteristics__image characteristics__image_desc"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_1.jpg" /></div>
+<div class="col-maincontent__image characteristics__image characteristics__image_mob"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_1_i.jpg" /></div>
+</div>
+<div class="col-maincontent__media characteristics__media">
+<div class="col-maincontent__item characteristics__item characteristics__item_m">
+<div class="col-maincontent__text characteristics__text">
+<p><span>Фиксатор для                                             парковки </span></p>
+</div>
+</div>
+<div class="col-maincontent__image characteristics__image characteristics__image_desc"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_2.jpg" /></div>
+<div class="col-maincontent__image characteristics__image characteristics__image_mob"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_2_i.jpg" /></div>
+</div>
+<div class="col-maincontent__media characteristics__media">
+<div class="col-maincontent__item characteristics__item characteristics__item_r">
+<div class="col-maincontent__text characteristics__text characteristics__text_w">
+<p><span>Отсоединение щетки ногой</span></p>
+</div>
+</div>
+<div class="col-maincontent__image characteristics__image characteristics__image_desc"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_3.jpg" /></div>
+<div class="col-maincontent__image characteristics__image characteristics__image_mob"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img05_3_i.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="dynamic-power">
+<div class="dynammic-power__wrapper">
+<div class="maincontent__bg dynamic-power__bg">
+<div class="row-maincontent__inner dynamic-power__inner">
+<div class="row-maincontent__item dynamic-power__item">
+<div class="row-maincontent__title dynamic-power__title dynamic-power__title_desc">
+<p><span>Максимальная гибкость </span></p>
+</div>
+</div>
+<div class="row-maincontent__img dynamic-power__img"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img06.jpg" /></div>
+<div class="row-maincontent__item dynamic-power__item dynamic-power__item_rev">
+<div class="row-maincontent__title dynamic-power__title  dynamic-power__title_rev">
+<p><span>идеальное виденье</span></p>
+</div>
+<div class="row-maincontent__title dynamic-power__title  dynamic-power__title_mob">
+<p><span>Максимальная гибкость, идеальное виденье</span></p>
+</div>
+<div class="row-maincontent__text dynamic-power__text">
+<p>Благодаря <span>щетке для пола с LED*</span> подсветкой вы можете убрать                                             менее заметную грязь и                                             добраться до труднодоступных мест - для отличных результатов уборки.</p>
+</div>
+<div class="row-maincontent__subtext dynamic-power__subtext">
+<p><small><sup>*</sup>лед </small></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="filter">
+<div class="filter__wrapper">
+<div class="maincontent__bg filter__bg">
+<div class="row-maincontent__inner filter__inner">
+<div class="row-maincontent__item filter__item">
+<div class="row-maincontent__title filter__title">
+<h3>Контейнер для пыли 0.3 л</h3>
+</div>
+<div class="row-maincontent__title filter__text filter__text_pos">
+<p><span>Картридж фильтр с мембраной <b>Pure Air<sup>*</sup></b> и качественная                                                 металлическая                                                 сетка для чистого отработанного воздуха (99.9% фильтрации**) </span></p>
+</div>
+<div class="row-maincontent__subtext filter__subtext">
+<p><small><sup>*</sup>Пьюр Эир<br /> <sup>**</sup>Испытано в соответствии с EN 60312-1:2017.</small></p>
+</div>
+</div>
+<div class="row-maincontent__item filter__item  filter-block__item">
+<div class="row-maincontent__text filter__text filter-block__text">
+<p><span>Система RotationClean***легкая и быстрая очистка фильтра без                                                 необходимости мытья </span></p>
+</div>
+<div class="row-maincontent__subtext filter__subtext filter-block__subtext">
+<p><small><sup>***</sup>РотейшнКлин</small></p>
+</div>
+</div>
+<div class="row-maincontent__img filter__img"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img07.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="warranty">
+<div class="row-maincontent__inner warranty__inner">
+<div class="row-maincontent__image warranty__image"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img08_1.jpg" /></div>
+<div class="row-maincontent__item warranty__item">
+<div class="row-maincontent__bg warranty__bg">
+<div class="row-maincontent__text warranty__text">
+<p>Разрабатывая и производя наши высокопроизводительные двигатели в Германии уже                                         более 65 лет, мы не только ожидаем, что пылесос обеспечит оптимальные                                         результаты, но и будет долговечным, что мы гарантируем нашей <span>10-летней                                             гарантией на двигатель</span> (при регистрации на сайте производителя)*</p>
+</div>
+<div class="row-maincontent__subtext warranty__subtext">
+<p><small> <sup>*</sup>Детали на сайте производителя</small></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box logo__box">
+<div class="maincontent__inner logo__inner">
+<div class="maincontent__img logo__img"><img src="https://cdn.comfy.ua/media/x/img3/2572833/img09.jpg" /></div>
+<div class="maincontent__text logo__text">
+<p><span>Bosch – немецкие стандарты качества </span></p>
+<p>Приборы Bosch разработаны профессиональными немецкими инженерами, которые известны благодаря                             своему удивительному вниманию к деталям. Устройства производятся и протестированы на                             современных заводах, что гарантирует настоящее немецкое качество.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
