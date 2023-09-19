@@ -1,0 +1,391 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#daewoodi a
+    color: inherit
+    text-decoration: none
+
+#daewoodi
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#daewoodi .bc-description__content p
+    margin-bottom: 0
+
+#daewoodi .bc-description__content h3
+    text-align: left
+
+#daewoodi
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#daewoodi
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#daewoodi p::first-letter
+    padding-left: 0
+
+#daewoodi img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#daewoodi img:hover
+    opacity: 1
+
+#daewoodi .daewoodi__container
+    max-width: 1440px
+    margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+#daewoodi .header-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 4%
+        left: 6%
+        right: 66%
+    &__image
+
+#daewoodi .queen-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 10%
+        width: 50%
+        p
+            @include adaptiv-value("font-size", 36, 16, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: #FFFFFF
+        span
+            color: #A8741A
+            font-weight: 800
+    &__image
+
+#daewoodi .master-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #F6C643
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 500
+            line-height: 1.2
+    &__image
+
+#daewoodi .silent-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 10%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #A8741A
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 500
+            line-height: 1.2
+    &__image
+
+#daewoodi .door-daewoodi
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #A8741A
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 500
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#daewoodi .infoled-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2569611/img6.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 514px
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        right: 0
+        width: 55%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #A8741A
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 300
+            line-height: 1.2
+            text-align: center
+            color: #ffffff
+    &__image
+
+#daewoodi .column-daewoodi
+    &__row
+        display: flex
+        &_rev
+            // flex-direction: row-reverse
+    &__box
+        flex: 0 1 50%
+        padding: 50px 80px 20px
+        min-height: 500px
+        display: flex
+        // align-items: center
+        &_bg
+            background-color: #000000
+    &__item
+    &__title
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #A8741A
+            margin-bottom: 10px
+    &__inner
+        display: flex
+        align-items: center
+    &__icon
+        flex: 0 0 60px
+    &__text
+        position: relative
+        z-index: 2
+        padding-left: 15px
+        margin-left: 15px
+        &::before
+            content: ''
+            position: absolute
+            z-index: 5
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            height: 50%
+            width: 1px
+            background-color: #A8741A
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 300
+            line-height: 1.2
+        &_wh
+            color: #ffffff
+            &::before
+                background-color: #ffffff
+
+#daewoodi .energy-daewoodi
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2569611/img16.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 505px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 60%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 800
+            line-height: 1.2
+            text-transform: uppercase
+            color: #A8741A
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            font-weight: 300
+            line-height: 1.2
+            color: #ffffff
+    &__image
+        flex: 0 1 40%
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1100px)
+    #daewoodi .column-daewoodi__box
+        padding: 50px 40px 20px
+    //@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #daewoodi .master-daewoodi__text
+        width: 45%
+        right: 2%
+    #daewoodi .infoled-daewoodi__bg
+        min-height: 400px
+    #daewoodi .column-daewoodi__box
+        padding: 50px 15px 15px
+
+@media screen and (max-width: 767.98px)
+    #daewoodi .master-daewoodi__text
+        position: unset
+        transform: translateY(0)
+        width: auto
+        padding: 20px 15px
+        background: #6f6b6c
+        h2,p
+            text-align: center
+    #daewoodi .silent-daewoodi__text
+        left: 3%
+        width: 52%
+    #daewoodi .door-daewoodi__row
+        flex-direction: column
+    #daewoodi .door-daewoodi__text
+        width: auto
+        padding: 20px 15px
+        h2,p
+            text-align: center
+    #daewoodi .infoled-daewoodi__text
+        width: 90%
+    #daewoodi .column-daewoodi__row
+        flex-direction: column
+    #daewoodi .column-daewoodi__box
+        min-height: auto
+        justify-content: center
+        padding: 40px 15px
+    #daewoodi .column-daewoodi__row_rev
+        flex-direction: column-reverse
+    #daewoodi .column-daewoodi__title h2
+        text-align: center
+    #daewoodi .column-daewoodi__inner
+        max-width: 500px
+    #daewoodi .energy-daewoodi__row
+        flex-direction: column
+        gap: 20px
+        padding: 0 15px
+    #daewoodi .energy-daewoodi__bg
+        min-height: 450px
+    #daewoodi .energy-daewoodi__text
+        width: auto
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 479.98px)
+    #daewoodi .silent-daewoodi__text
+        position: unset
+        transform: translateY(0)
+        width: auto
+        padding: 20px 15px
+        background: #fffeff
+        h2,p
+            text-align: center
+    #daewoodi .infoled-daewoodi__bg
+        min-height: 298px
+    #daewoodi .energy-daewoodi__bg
+        min-height: 400px

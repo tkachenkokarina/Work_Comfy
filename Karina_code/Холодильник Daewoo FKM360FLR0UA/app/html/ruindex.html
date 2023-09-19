@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #daewoofkm ul,
+        #daewoofkm ol,
+        #daewoofkm li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #daewoofkm .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #daewoofkm .bc-description__content h3 {
+            text-align: left
+        }
+
+        #daewoofkm h1,
+        #daewoofkm h2,
+        #daewoofkm h3,
+        #daewoofkm h4,
+        #daewoofkm h5,
+        #daewoofkm h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #daewoofkm {
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff
+        }
+
+        #daewoofkm h1,
+        #daewoofkm h2,
+        #daewoofkm h3,
+        #daewoofkm h4,
+        #daewoofkm h5,
+        #daewoofkm h6,
+        #daewoofkm p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #daewoofkm p::first-letter {
+            padding-left: 0
+        }
+
+        #daewoofkm img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #daewoofkm img:hover {
+            opacity: 1
+        }
+
+        #daewoofkm .daewoofkm__container {
+            max-width: 1440px;
+            margin: 0 auto
+        }
+
+        #daewoofkm .header-daewoofkm__bg {
+            position: relative;
+            z-index: 2
+        }
+
+        #daewoofkm .header-daewoofkm__logo {
+            position: absolute;
+            z-index: 5;
+            top: 7%;
+            left: 8%;
+            right: 60%
+        }
+
+        #daewoofkm .header-daewoofkm__row {
+            position: absolute;
+            z-index: 5;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            padding: 0 40px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            gap: 80px
+        }
+
+        #daewoofkm .header-daewoofkm__item-image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 144px;
+            -moz-box-flex: 0;
+            -ms-flex: 0 0 144px;
+            flex: 0 0 144px
+        }
+
+        #daewoofkm .header-daewoofkm__item {
+            max-width: 974px
+        }
+
+        #daewoofkm .header-daewoofkm__item p {
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .header-daewoofkm__item p {
+                font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1120));
+                font-size: calc(16px + 10 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .header-daewoofkm__item span {
+            color: #a8741a;
+            font-weight: 600
+        }
+
+        #daewoofkm .krasa-daewoofkm__bg {
+            position: relative;
+            z-index: 2
+        }
+
+        #daewoofkm .krasa-daewoofkm__icon {
+            position: absolute;
+            z-index: 5;
+            top: 2%;
+            right: 7%;
+            left: 71%
+        }
+
+        #daewoofkm .krasa-daewoofkm__text {
+            position: absolute;
+            z-index: 5;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            top: 50%;
+            left: 9%;
+            width: 40%
+        }
+
+        #daewoofkm .krasa-daewoofkm__text h2 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: #a8741a;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .krasa-daewoofkm__text h2 {
+                font-size: -webkit-calc(15px + 17 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 17 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .krasa-daewoofkm__text p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .krasa-daewoofkm__text p {
+                font-size: -webkit-calc(15px + 9 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 9 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .multi-daewoofkm {
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 30px
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .multi-daewoofkm {
+                padding-right: -webkit-calc(15px + 85 * ((100vw - 320px) / 1120));
+                padding-right: calc(15px + 85 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .multi-daewoofkm {
+                padding-left: -webkit-calc(15px + 85 * ((100vw - 320px) / 1120));
+                padding-left: calc(15px + 85 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .multi-daewoofkm__row {
+            position: relative;
+            z-index: 2;
+            max-width: 1240px;
+            margin: 0 auto
+        }
+
+        #daewoofkm .multi-daewoofkm__line {
+            position: absolute;
+            z-index: 5
+        }
+
+        #daewoofkm .multi-daewoofkm__line_1 {
+            top: 3%;
+            left: 0;
+            right: 63%;
+            border: 1px solid #000;
+            opacity: .6
+        }
+
+        #daewoofkm .multi-daewoofkm__line_2 {
+            top: 3%;
+            left: 37%
+        }
+
+        #daewoofkm .multi-daewoofkm__line_3 {
+            top: 50%;
+            left: 37%
+        }
+
+        #daewoofkm .multi-daewoofkm__line_4 {
+            top: 53%;
+            left: 0;
+            right: 63%;
+            border: 1px solid #000;
+            opacity: .6
+        }
+
+        #daewoofkm .multi-daewoofkm__line_5 {
+            top: 25%;
+            right: 0;
+            left: 43%;
+            border: 1px solid #000;
+            opacity: .6
+        }
+
+        #daewoofkm .multi-daewoofkm__line_6 {
+            top: 20.6%;
+            right: 57%
+        }
+
+        #daewoofkm .multi-daewoofkm__col-image {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        #daewoofkm .multi-daewoofkm__text {
+            position: absolute;
+            z-index: 5;
+            width: 25%
+        }
+
+        #daewoofkm .multi-daewoofkm__text_1 {
+            top: 6%;
+            left: 0%
+        }
+
+        #daewoofkm .multi-daewoofkm__text_2 {
+            top: 55%;
+            left: 0%
+        }
+
+        #daewoofkm .multi-daewoofkm__text_3 {
+            top: 28%;
+            right: 0%
+        }
+
+        #daewoofkm .multi-daewoofkm__text h2 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: #a8741a;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .multi-daewoofkm__text h2 {
+                font-size: -webkit-calc(15px + 17 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 17 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .multi-daewoofkm__text p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .multi-daewoofkm__text p {
+                font-size: -webkit-calc(15px + 9 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 9 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .multi-daewoofkm__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #daewoofkm .multi-daewoofkm__image-mob {
+            display: none
+        }
+
+        #daewoofkm .glass-daewoofkm__bg {
+            background: url("https://cdn.comfy.ua/media/x/img3/2367638/img6.png") 0 0 no-repeat;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            min-height: 800px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding-right: 80px;
+            padding-left: 100px
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .glass-daewoofkm__bg {
+                padding-right: -webkit-calc(15px + 65 * ((100vw - 320px) / 1120));
+                padding-right: calc(15px + 65 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .glass-daewoofkm__bg {
+                padding-left: -webkit-calc(15px + 85 * ((100vw - 320px) / 1120));
+                padding-left: calc(15px + 85 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .glass-daewoofkm__row {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #daewoofkm .glass-daewoofkm__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #daewoofkm .glass-daewoofkm__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #daewoofkm .glass-daewoofkm__text {
+            width: 80%;
+            margin: 0 auto
+        }
+
+        #daewoofkm .glass-daewoofkm__text h2 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: #a8741a;
+            text-transform: uppercase
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .glass-daewoofkm__text h2 {
+                font-size: -webkit-calc(15px + 17 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 17 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .glass-daewoofkm__text p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .glass-daewoofkm__text p {
+                font-size: -webkit-calc(15px + 9 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 9 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .zone-daewoofkm__text {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 15px 40px
+        }
+
+        #daewoofkm .zone-daewoofkm__text h2 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            color: #a8741a;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .zone-daewoofkm__text h2 {
+                font-size: -webkit-calc(15px + 17 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 17 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        #daewoofkm .zone-daewoofkm__text p {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1440px) {
+            #daewoofkm .zone-daewoofkm__text p {
+                font-size: -webkit-calc(15px + 9 * ((100vw - 320px) / 1120));
+                font-size: calc(15px + 9 * ((100vw - 320px) / 1120))
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #daewoofkm .multi-daewoofkm__line_6 {
+                top: 19.6%
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+
+            #daewoofkm .multi-daewoofkm__text_1,
+            #daewoofkm .multi-daewoofkm__text_2 {
+                width: 30%
+            }
+
+            #daewoofkm .multi-daewoofkm__text_1,
+            #daewoofkm .multi-daewoofkm__text_2 {
+                left: -30px
+            }
+
+            #daewoofkm .multi-daewoofkm__line_1,
+            #daewoofkm .multi-daewoofkm__line_4 {
+                left: -30px
+            }
+        }
+
+        @media screen and (max-width: 1024.98px) {
+            #daewoofkm .multi-daewoofkm__line_6 {
+                top: 18.6%
+            }
+
+            #daewoofkm .multi-daewoofkm__line_3 {
+                top: 49%
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #daewoofkm .header-daewoofkm__row {
+                gap: 40px
+            }
+
+            #daewoofkm .glass-daewoofkm__bg {
+                min-height: 600px
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            #daewoofkm .multi-daewoofkm__text {
+                position: unset;
+                width: auto;
+                padding: 10px 0px 10px
+            }
+
+            #daewoofkm .multi-daewoofkm__text h2,
+            #daewoofkm .multi-daewoofkm__text p {
+                text-align: center
+            }
+
+            #daewoofkm .multi-daewoofkm__line {
+                display: none
+            }
+
+            #daewoofkm .multi-daewoofkm {
+                padding-top: 0
+            }
+
+            #daewoofkm .multi-daewoofkm__image {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1 1 auto;
+                -moz-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #daewoofkm .header-daewoofkm__row {
+                position: unset;
+                display: block;
+                padding: 20px 15px
+            }
+
+            #daewoofkm .header-daewoofkm__item-image {
+                position: absolute;
+                z-index: 5;
+                bottom: 20%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 5%;
+                right: 75%
+            }
+
+            #daewoofkm .header-daewoofkm__item p {
+                text-align: center
+            }
+
+            #daewoofkm .krasa-daewoofkm__text {
+                left: 4%;
+                width: 55%
+            }
+
+            #daewoofkm .glass-daewoofkm__bg {
+                padding-left: 30px
+            }
+
+            #daewoofkm .glass-daewoofkm__bg {
+                min-height: 400px
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            #daewoofkm .header-daewoofkm__item-image {
+                bottom: 25%
+            }
+        }
+
+        @media screen and (max-width: 553px) {
+            #daewoofkm .header-daewoofkm__item-image {
+                bottom: 30%
+            }
+
+            #daewoofkm .header-daewoofkm__logo {
+                top: 5%;
+                left: 6%;
+                right: 64%
+            }
+        }
+
+        @media screen and (max-width: 479.98px) {
+            #daewoofkm .header-daewoofkm__item-image {
+                bottom: 40%
+            }
+
+            #daewoofkm .zone-daewoofkm__text {
+                padding: 20px 15px 10px
+            }
+
+            #daewoofkm .glass-daewoofkm__row {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                -webkit-flex-direction: column-reverse;
+                -moz-box-orient: vertical;
+                -moz-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse
+            }
+
+            #daewoofkm .glass-daewoofkm__bg {
+                padding: 30px 15px
+            }
+
+            #daewoofkm .glass-daewoofkm__text {
+                width: auto;
+                margin-bottom: 10px
+            }
+
+            #daewoofkm .glass-daewoofkm__text h2,
+            #daewoofkm .glass-daewoofkm__text p {
+                text-align: center
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            #daewoofkm .header-daewoofkm__item-image {
+                bottom: 45%
+            }
+        }
+
+        @media screen and (max-width: 357px) {
+            #daewoofkm .header-daewoofkm__item-image {
+                bottom: 50%
+            }
+        }
+    </style>
+
+    <div id="daewoofkm">
+        <div class="daewoofkm__container">
+            <div class="daewoofkm__header header-daewoofkm">
+                <div class="header-daewoofkm__bg">
+                    <div class="header-daewoofkm__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/img11.png" alt="">
+                    </div>
+                    <div class="header-daewoofkm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367639/img1.png" alt="">
+                    </div>
+                    <div class="header-daewoofkm__row">
+                        <div class="header-daewoofkm__item-image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2367640/img2.png" alt="">
+                        </div>
+                        <div class="header-daewoofkm__item">
+                            <p><span>Інверторний двигун</span> має ряд переваг перед звичайним. Він тихіший, більш
+                                економічний та має довший термін користування. Також залежно від зміни температури зовні
+                                або всередині холодильника двигун починає підвищувати або знижувати кількість обертів за
+                                хвилину. Це дозволяє підтримувати в камері необхідну температуру. Гарантійний термін -
+                                <span>10 років.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="daewoofkm__krasa krasa-daewoofkm">
+                <div class="krasa-daewoofkm__bg">
+                    <div class="krasa-daewoofkm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367639/img3.png" alt="">
+                    </div>
+                    <div class="krasa-daewoofkm__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/img4.png" alt="">
+                    </div>
+                    <div class="krasa-daewoofkm__text">
+                        <h2>Краса та ВМІСТКІСТЬ</h2>
+                        <p>Холодильник Daewoo FKM360FDR0UA поєднує в собі високі технології, практичність і красу в
+                            компактній конструкції із загальною місткістю <b>379 літри.</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="daewoofkm__multi multi-daewoofkm">
+                <div class="multi-daewoofkm__row">
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_1">
+                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2367640/line1.png" alt=""> -->
+                    </div>
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/line2.png" alt="">
+                    </div>
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_3">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/line3.png" alt="">
+                    </div>
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_4">
+                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2367640/line4.png" alt=""> -->
+                    </div>
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_5">
+                        <!-- <img src="https://cdn.comfy.ua/media/x/img3/2367640/line5.png" alt=""> -->
+                    </div>
+                    <div class="multi-daewoofkm__line multi-daewoofkm__line_6">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/line6.png" alt="">
+                    </div>
+
+                    <div class="multi-daewoofkm__col">
+                        <div class="multi-daewoofkm__text multi-daewoofkm__text_1">
+                            <h2>metal cooling</h2>
+                            <p>Системою дозволяє мати рівні температурні режимі по всій висоті холодильної камери та
+                                скоріше відновлювати температуру після відчинення дверцят.</p>
+                        </div>
+                        <div class="multi-daewoofkm__text multi-daewoofkm__text_2">
+                            <h2>mULTI cooling</h2>
+                            <p>Система багатопотокового охолодження, яка рівномірно розподіляє холодне повітря для того,
+                                щоб продукти залишалися свіжими довше навіть на верхніх полицях холодильника.</p>
+                        </div>
+                    </div>
+                    <div class="multi-daewoofkm__col-image">
+                        <div class="multi-daewoofkm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2367639/img5-1.png" alt="">
+                        </div>
+                        <!-- <div class="multi-daewoofkm__image-mob">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2367640/img5-1.png" alt="">
+                        </div> -->
+                    </div>
+                    <div class="multi-daewoofkm__col">
+                        <div class="multi-daewoofkm__text multi-daewoofkm__text_3">
+                            <h2>No Frost</h2>
+                            <p>Система основана на циркуляції холодних повітряних потоків, які рівномірно заповнюють
+                                морозильну та холодильну камеру. З системою No Frost якраз і не доводиться розморожувати
+                                агрегат вручну.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="daewoofkm__glass glass-daewoofkm">
+                <div class="glass-daewoofkm__bg">
+                    <div class="glass-daewoofkm__row">
+                        <div class="glass-daewoofkm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2367640/img7.png" alt="">
+                        </div>
+                        <div class="glass-daewoofkm__item">
+                            <div class="glass-daewoofkm__text">
+                                <h2>Регульована скляна полиця</h2>
+                                <p>Складна полиця, яка дозволяє зберігати великі та габаритні продукти та
+                                    використовувати максимально об'єм холодильника.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="daewoofkm__zone zone-daewoofkm">
+                <div class="zone-daewoofkm__box">
+                    <div class="zone-daewoofkm__text">
+                        <h2>DAILYZONE</h2>
+                        <p>Підтримує температуру на нульовій позначці для більш тривалого зберігання продуктів (м'ясо,
+                            риба).</p>
+                    </div>
+                    <div class="zone-daewoofkm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="zone-daewoofkm__box">
+                    <div class="zone-daewoofkm__text">
+                        <h2>OPTICRISPZONE</h2>
+                        <p>Має підвищену вологість у контейнері, і в першу чергу адаптована для зберігання овочів та
+                            фруктів.</p>
+                    </div>
+                    <div class="zone-daewoofkm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367640/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="zone-daewoofkm__box">
+                    <div class="zone-daewoofkm__text">
+                        <h2>нульвоий зазор</h2>
+                        <p>Нульвий зазор відчинення дверей. Завдяки цьому можна ставити холодильник впритул до стіни і
+                            відчиняти двері на 90°, при цьому ящики висуваються безперешкодно.</p>
+                    </div>
+                    <div class="zone-daewoofkm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2367639/img10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
