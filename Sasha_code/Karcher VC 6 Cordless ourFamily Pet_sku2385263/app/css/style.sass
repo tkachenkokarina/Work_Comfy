@@ -1,0 +1,535 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+// [class*="__container"]
+//     // max-width: 1920px
+//     // margin: 0 auto
+//     // padding: 0 15px
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1920px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 41px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+            color: #555555
+        h3
+            @include fonts($fontSize: 30px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center,
+            color: #555555
+        h4
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            color: #555555
+        p
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+            color: #939393
+            &:last-child
+                margin-bottom: 30px
+            span
+                font-weight: 700
+        ul, li
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            margin-bottom: 10px
+
+#maincontent .top-box
+    &__card
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            z-index: 5
+            background-color: #111111
+            opacity: 0.7
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+
+    &__item
+        img
+            position: absolute
+            left: 50%
+            top: 10%
+            transform: translate(-50%, -50%)
+            z-index: 8
+        &_text
+            position: absolute
+            left: 0
+            right: 0
+            top: 50%
+            transform: translate(0, -50%)
+            margin: 0 auto
+            z-index: 8
+            h2, h3, p
+                color: #fff
+
+// #maincontent .swiper-pagination-bullet-active
+//     background-color: #ffed00
+
+// #maincontent .swiper-button-prev
+//     &::after
+//         display: none
+
+// #maincontent .swiper-button-next
+//     &::after
+//         display: none
+
+// #maincontent .slider-button-prev
+//     @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/arrow-prev.png))
+//     width: calc(40px/ 40 * 23)
+//     height: 42px
+//     z-index: 8
+
+// #maincontent .slider-buton-next
+//     @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/arrow-next.png))
+//     width: calc(40px/ 40 * 23)
+//     height: 42px
+//     z-index: 8
+#maincontent .maincontent
+    &__row
+        padding-top: 2em
+
+#maincontent .row-maincontent
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/bg_02.png))
+    &__inner
+        margin: 0 auto
+        max-width: 950px
+    &__item
+        margin-bottom: 20px
+    &__images
+        @include flex-box($justifyContent: center, $alignItems: stretch)
+        gap: 2rem
+    &__image
+        max-width: 500px
+        margin: 0 auto
+        padding: 15px
+        flex: 0 1 33%
+        img
+            margin: 0 auto 10px
+#maincontent .karcher-use
+    margin-bottom: 20px
+    &__inner
+        max-width: 1175px
+        
+
+
+#maincontent .col-maincontent
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 10px
+
+#maincontent .images-box
+    margin-bottom: 30px
+    &__grid
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        gap: 10px
+    &__item
+        padding: 15px
+        img
+            margin: 0 auto
+    &__img
+        height: 62px
+        margin-bottom: 15px
+        display: flex
+        align-items: center 
+    &__image
+        background: #fbfaf8
+        padding: 0
+        img
+            width: 100%
+    &__text
+        position: relative
+        padding: 15px
+        
+        p
+            font-size: 20px
+            text-align: left
+        &::before
+            content: ""
+            position: absolute
+            width: 0
+            height: 0
+            border-left: 30px solid transparent
+            border-right: 30px solid transparent
+            border-bottom: 20px solid #fbfaf8
+            top: -28px
+            left: 24px
+            margin-right: -10px
+    &__header
+        position: relative
+        margin-top: auto
+        &::after
+            content: ""
+            position: absolute
+            width: 70px
+            height: 2px
+            background: #555555
+            top: 80px
+            left: 50%
+            transform: translate(-50%, -50%)
+
+#maincontent .karcher-peculiarities
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/bg_05.png))
+        padding: 0 30px
+    &__inner
+        max-width: 1175px
+    &__text
+        padding-top: 100px
+        margin-bottom: 70px
+
+#maincontent .list-row-maincontent
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
+    gap: 50px
+    margin: 0 30px
+    h4, p
+        text-align: left
+    &__item
+        position: relative
+        z-index: 6
+        &:last-child
+            grid-column: 2
+        h4
+            &::before
+                content: ""
+                @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/list-arr.png))
+                position: absolute
+                z-index: 7
+                width: 21px
+                height: 21px
+                top: 3px
+                left: -35px
+
+#maincontent .karcher-services 
+    &__inner
+        max-width: 1175px
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2385263/bg_06.png))   
+        padding-bottom: 2em
+    &__text        
+        h2
+            text-transform: uppercase
+            color: #fff
+
+    &__image
+        position: relative
+        z-index: 5
+        &:last-child
+            text-align: center           
+            img
+                display: inline-block 
+                padding-right: 10px
+        &::after
+            content: ""
+            position: absolute
+            z-index: 6
+            width: 20px
+            height: 2px
+            background: #fff
+            bottom: 0
+            left: 50%
+            margin-right: -50%
+            transform: translate(-50%, -50%)
+
+
+#maincontent .bottom-box
+    &__card
+        position: relative
+        z-index: 6
+        &::after
+            content: ""
+            position: absolute
+            z-index: 7
+            background-color: #111111
+            opacity: 0.5
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+    &__item
+        &_text
+            position: absolute
+            left: 0
+            right: 0
+            top: 50%
+            transform: translate(0, -50%)
+            margin: 0 auto
+            padding: 0 5px
+            z-index: 8
+            p
+                span
+                    color: #fff
+                    font-size: 24px
+                    font-weight: 500
+
+                
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1540px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (41 - 22) * ((100vw - 320px)/(1540 - 320)))
+            h3
+                font-size: calc( 20px + (30 - 20) * ((100vw - 320px)/(1540 - 320)))
+            h4
+                font-size: calc( 16px + (22 - 16) * ((100vw - 320px)/(1540 - 320)))
+            p
+                font-size: calc( 16px + (22 - 16) * ((100vw - 320px)/(1540 - 320)))
+            ul, li
+                font-size: calc( 16px + (22 - 16) * ((100vw - 320px)/(1540 - 320)))
+    #maincontent .bottom-box
+        &__item
+            &_text
+                p
+                    span
+                        p
+                font-size: calc( 18px + (24 - 18) * ((100vw - 320px)/(1540 - 320)))
+    
+@media screen and (max-width: 1300px)
+    #maincontent .top-box
+        &__item 
+            img
+                max-width: 110px
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .col-maincontent
+        grid-template-columns: repeat(3, 1fr)
+    #maincontent .images-box
+        &__grid
+            grid-template-columns: repeat(3, 1fr)
+        &__header
+            &::after
+                top: 60px
+    #maincontent .karcher-peculiarities
+        &__text
+            padding-top: 70px
+    #maincontent .list-row-maincontent
+        grid-template-columns: repeat(2, 1fr)
+        row-gap: 20px
+        &__item
+            &:last-child
+                grid-column: 1
+    
+@media screen and (max-width: 991.98px)
+    #maincontent .top-box
+        &__item
+            img
+                max-width: 90px
+
+    #maincontent .row-maincontent
+        &__inner
+            max-width: 100%
+            padding: 0 15px
+            margin: 0 auto
+        &__images
+            gap: 1rem
+        &__image
+            flex: 0 1 33%
+
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            p
+                &:last-child
+                    margin-bottom: 10px
+        &__row
+            padding-top: 0
+    #maincontent .top-box
+        &__item
+            &_text
+                width: 75%
+            h3
+                font-size: 18px
+            h2
+                font-size: 20px
+            p
+                font-size: 16px
+    
+    #maincontent .row-maincontent
+        &__inner
+            padding: 0 5px
+        &__item
+            margin-bottom: 10px
+        &__text
+            h3
+                margin-top: 10px
+        &__images
+            flex-direction: column
+            gap: 10px
+        &__image
+            p
+                &:last-child
+                    margin-bottom: 10px
+    
+    #maincontent .col-maincontent
+        grid-template-columns: repeat(2, 1fr)
+    #maincontent .images-box
+        margin-bottom: 10px
+        &__text
+            padding-top: 0
+            padding-bottom: 0
+            &::before
+                top: -28px
+        &__header
+            p
+                &:last-child
+                    margin-bottom: 10px
+            &::after
+                top: 50px
+    #maincontent .karcher-peculiarities
+        &__bg
+            padding: 0 20px
+        &__item
+            margin-bottom: 15px
+        &__text
+            padding-top: 15px
+            margin-bottom: 10px
+    #maincontent .list-row-maincontent
+        grid-template-columns: 1fr
+        row-gap: 10px
+        margin: 0 25px
+        &__item
+            h4
+                &::before
+                    width: 18px
+                    height: 18px    
+    
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__card
+            &::after
+                background: none
+        &__item
+            img
+                max-width: 50px
+            h3
+                margin-top: 10px
+                margin-bottom: 0
+            h2
+                margin-top: 10px
+            &_text
+                position: unset
+                width: auto                
+                transform: translate(0, 0)
+                h2, h3, p
+                    color: #000
+    // #maincontent .swiper-button-next
+    //     display: none
+    // #maincontent .swiper-button-prev
+    //     display: none
+    // #maincontent .slider-button-prev
+    //     display: none
+    // #maincontent .slider-button-next
+    //     display: none
+    #maincontent .col-maincontent
+        grid-template-columns: 1fr
+        &__img
+            img
+                margin: 0 auto
+    #maincontent .images-box
+        &__text
+            &::before
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                border-bottom: 10px solid #fbfaf8
+                top: -18px
+    #maincontent .images-box
+        &__grid
+            grid-template-columns: repeat(2, 1fr)
+    
+    
