@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #boschmsm ul,#boschmsm ol,#boschmsm li{list-style:none;padding:0;margin:0}#boschmsm .bc-description__content p{margin-bottom:0}#boschmsm .bc-description__content h3{text-align:left}#boschmsm h1,#boschmsm h2,#boschmsm h3,#boschmsm h4,#boschmsm h5,#boschmsm h6{text-transform:none;font-weight:bold}#boschmsm{margin:0 auto;overflow:hidden;background-color:#fff}#boschmsm h1,#boschmsm h2,#boschmsm h3,#boschmsm h4,#boschmsm h5,#boschmsm h6,#boschmsm p{margin:0;padding:0;text-align:left}#boschmsm p::first-letter{padding-left:0}#boschmsm img{opacity:1;max-width:100%;display:block;margin:0 auto}#boschmsm img:hover{opacity:1}#boschmsm .boschmsm__container{max-width:1000px;margin:0 auto}#boschmsm .header-boschmsm{padding-top:20px}#boschmsm .header-boschmsm__bg{position:relative;z-index:2}#boschmsm .header-boschmsm__text{position:absolute;z-index:5;top:26%;right:2%;left:50%;width:50%}#boschmsm .header-boschmsm__text h2{font-size:32px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .header-boschmsm__text h2{font-size:-webkit-calc(18px + 14 * ((100vw - 320px) / 680));font-size:calc(18px + 14 * ((100vw - 320px) / 680))}}#boschmsm .header-boschmsm__image{max-width:800px;padding-right:100px}#boschmsm .header-boschmsm__image img{margin:0}#boschmsm .header-boschmsm__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:50px}#boschmsm .header-boschmsm__snoska span{font-size:13px;line-height:1.2}#boschmsm .header-boschmsm__logo img{width:100px}#boschmsm .power-boschmsm__bg{position:relative;z-index:2}#boschmsm .power-boschmsm__text{position:absolute;z-index:5;top:2%;left:6%;right:0;width:35%;margin:0 auto}#boschmsm .power-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .power-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .frame-boschmsm__bg{position:relative;z-index:2}#boschmsm .frame-boschmsm__item{position:absolute;z-index:5}#boschmsm .frame-boschmsm__item p{font-size:22px;line-height:1.2;font-weight:bold}@media(max-width: 1000px){#boschmsm .frame-boschmsm__item p{font-size:-webkit-calc(15px + 7 * ((100vw - 320px) / 680));font-size:calc(15px + 7 * ((100vw - 320px) / 680))}}#boschmsm .frame-boschmsm__item_1{top:16%;left:1%}#boschmsm .frame-boschmsm__item_2{top:17%;left:40%;right:20%}#boschmsm .frame-boschmsm__item_3{top:47%;left:1%;width:30%}#boschmsm .frame-boschmsm__item_4{top:85%;left:31%}#boschmsm .blade-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:800px}#boschmsm .blade-boschmsm__row_1{margin-left:auto;margin-bottom:15px}#boschmsm .blade-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .blade-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .blade-boschmsm__text{width:90%;margin:0 auto}#boschmsm .blade-boschmsm__text h2{font-size:28px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1000px){#boschmsm .blade-boschmsm__text h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .blade-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .blade-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .blade-boschmsm__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-webkit-justify-content:flex-end;-moz-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;gap:20px}#boschmsm .blade-boschmsm__snoska span{font-size:13px;line-height:1.2}#boschmsm .blade-boschmsm__logo img{width:100px}#boschmsm .ceramic-boschmsm__bg{position:relative;z-index:2}#boschmsm .ceramic-boschmsm__icon{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:35%;right:45%}#boschmsm .ceramic-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#boschmsm .ceramic-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .ceramic-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;background:url("https://cdn.comfy.ua/media/x/img3/2620570/img8.jpg") 0 0 no-repeat;-webkit-background-size:contain;-o-background-size:contain;background-size:contain}#boschmsm .ceramic-boschmsm__title h2{font-size:28px;line-height:1.2;text-align:center;padding-top:10px;margin-bottom:10px}@media(max-width: 1000px){#boschmsm .ceramic-boschmsm__title h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .ceramic-boschmsm__text{width:58%}#boschmsm .ceramic-boschmsm__text p{font-size:20px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .ceramic-boschmsm__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 680));font-size:calc(16px + 4 * ((100vw - 320px) / 680))}}#boschmsm .ceramic-boschmsm__text_1{margin-left:auto;padding-right:15px}#boschmsm .ceramic-boschmsm__text_2{padding-left:30px;padding-top:10px}#boschmsm .accessories-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:7px}#boschmsm .accessories-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .accessories-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;background:url("https://cdn.comfy.ua/media/x/img3/2620570/img8.jpg") 0 0 no-repeat;-webkit-background-size:contain;-o-background-size:contain;background-size:contain}#boschmsm .accessories-boschmsm__text{width:80%;margin:0 auto;padding-top:50px}#boschmsm .accessories-boschmsm__text h2{font-size:28px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1000px){#boschmsm .accessories-boschmsm__text h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .accessories-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .accessories-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .speed-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#boschmsm .speed-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .speed-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:2}#boschmsm .speed-boschmsm__title{padding:15px}#boschmsm .speed-boschmsm__title h2{font-size:28px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1000px){#boschmsm .speed-boschmsm__title h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .speed-boschmsm__text{width:55%;padding:0 15px}#boschmsm .speed-boschmsm__text:not(:last-child){margin-bottom:20px}#boschmsm .speed-boschmsm__text_1{margin-left:auto}#boschmsm .speed-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .speed-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .speed-boschmsm__logo{position:absolute;z-index:5;bottom:0;right:0}#boschmsm .speed-boschmsm__logo img{width:100px}#boschmsm .acces-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#boschmsm .acces-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 30%;-moz-box-flex:0;-ms-flex:0 1 30%;flex:0 1 30%;position:relative;z-index:2;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#boschmsm .acces-boschmsm__text{width:90%;margin:0 auto}#boschmsm .acces-boschmsm__text p{font-size:22px;line-height:1.2;font-weight:bold}@media(max-width: 1000px){#boschmsm .acces-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .acces-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 70%;-moz-box-flex:0;-ms-flex:0 1 70%;flex:0 1 70%}#boschmsm .acces-boschmsm__snoska h2{font-size:28px;line-height:1.2;text-align:center;padding:15px}@media(max-width: 1000px){#boschmsm .acces-boschmsm__snoska h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .acces-boschmsm__logo{position:absolute;z-index:5;bottom:0;right:0}#boschmsm .acces-boschmsm__logo img{width:100px}#boschmsm .wash-boschmsm__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:relative;z-index:2}#boschmsm .wash-boschmsm__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#boschmsm .wash-boschmsm__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#boschmsm .wash-boschmsm__text{width:80%;margin:0 auto}#boschmsm .wash-boschmsm__text h2{font-size:28px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1000px){#boschmsm .wash-boschmsm__text h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .wash-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .wash-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .wash-boschmsm__text p:not(:last-child){margin-bottom:10px}#boschmsm .wash-boschmsm__logo{position:absolute;z-index:5;bottom:0;right:0}#boschmsm .wash-boschmsm__logo img{width:100px}#boschmsm .footer-boschmsm{padding-bottom:50px;position:relative;z-index:2}#boschmsm .footer-boschmsm__image{max-width:700px;margin:0 auto}#boschmsm .footer-boschmsm__text{width:75%;margin:0 auto;padding:20px 15px 0}#boschmsm .footer-boschmsm__text h2{font-size:28px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1000px){#boschmsm .footer-boschmsm__text h2{font-size:-webkit-calc(18px + 10 * ((100vw - 320px) / 680));font-size:calc(18px + 10 * ((100vw - 320px) / 680))}}#boschmsm .footer-boschmsm__text p{font-size:22px;line-height:1.2;text-align:center}@media(max-width: 1000px){#boschmsm .footer-boschmsm__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 680));font-size:calc(16px + 6 * ((100vw - 320px) / 680))}}#boschmsm .footer-boschmsm__logo{position:absolute;z-index:5;bottom:0;right:0}#boschmsm .footer-boschmsm__logo img{width:100px}@media screen and (max-width: 991.98px){#boschmsm .header-boschmsm__text{left:43%;width:56%}#boschmsm .ceramic-boschmsm__text{width:70%}#boschmsm .speed-boschmsm__text{width:70%}}@media screen and (max-width: 841px){#boschmsm .ceramic-boschmsm__text{width:80%}}@media screen and (max-width: 767.98px){#boschmsm .frame-boschmsm__item_3{width:25%}#boschmsm .power-boschmsm__text{width:60%}#boschmsm .frame-boschmsm__item_4{left:28%}#boschmsm .ceramic-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#boschmsm .ceramic-boschmsm__item{-webkit-background-size:cover;-o-background-size:cover;background-size:cover;padding:20px 0}#boschmsm .ceramic-boschmsm__text{width:auto;padding:0 15px}#boschmsm .ceramic-boschmsm__text:not(:last-child){margin-bottom:15px}#boschmsm .ceramic-boschmsm__icon{top:55%;left:63%;right:3%}#boschmsm .speed-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#boschmsm .speed-boschmsm__text{width:auto}#boschmsm .speed-boschmsm__item{padding-bottom:30px}#boschmsm .acces-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:8px}#boschmsm .acces-boschmsm__item_1{-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1}#boschmsm .acces-boschmsm__image_1{-webkit-box-ordinal-group:3;-webkit-order:2;-moz-box-ordinal-group:3;-ms-flex-order:2;order:2}#boschmsm .acces-boschmsm__text{width:auto}#boschmsm .acces-boschmsm__text p{text-align:center}#boschmsm .wash-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;gap:10px}#boschmsm .wash-boschmsm__text{width:auto;padding:-15px}#boschmsm .acces-boschmsm{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#boschmsm .acces-boschmsm__snoska{-webkit-box-ordinal-group:2;-webkit-order:1;-moz-box-ordinal-group:2;-ms-flex-order:1;order:1}#boschmsm .acces-boschmsm__row{-webkit-box-ordinal-group:3;-webkit-order:2;-moz-box-ordinal-group:3;-ms-flex-order:2;order:2}}@media screen and (max-width: 626px){#boschmsm .frame-boschmsm__item_2{top:9%}#boschmsm .frame-boschmsm__item_3{top:42%}#boschmsm .frame-boschmsm__item_4{left:26%;top:87%}#boschmsm .ceramic-boschmsm__icon{top:60%}#boschmsm .accessories-boschmsm__text{width:90%;padding-top:20px}}@media screen and (max-width: 479.98px){#boschmsm .header-boschmsm__text{position:unset;width:auto;padding:0 15px;margin-bottom:10px}#boschmsm .header-boschmsm__image{max-width:100%;padding-right:0}#boschmsm .power-boschmsm__text{position:unset;padding:15px 10px 10px;width:auto}#boschmsm .frame-boschmsm__item_2{top:8%;left:34%}#boschmsm .frame-boschmsm__item_3{top:53%}#boschmsm .frame-boschmsm__item_4{left:22%;top:88%}#boschmsm .blade-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#boschmsm .blade-boschmsm__text{width:auto;padding:20px 15px 0px}#boschmsm .ceramic-boschmsm__icon{top:70%}#boschmsm .accessories-boschmsm__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#boschmsm .accessories-boschmsm__item{-webkit-background-size:cover;-o-background-size:cover;background-size:cover;padding:20px 0}#boschmsm .accessories-boschmsm__text{width:auto;padding:0 15px}#boschmsm .footer-boschmsm__text{width:auto}}
+    </style>
+
+    <div id="boschmsm">
+        <div class="boschmsm__container">
+            <div class="boschmsm__header header-boschmsm">
+                <div class="header-boschmsm__bg">
+                    <div class="header-boschmsm__text">
+                        <h2>Погружной блендер ErgoMaster* Серия 4 MSM4B621</h2>
+                    </div>
+                    <div class="header-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="header-boschmsm__items">
+                    <div class="header-boschmsm__snoska">
+                        <span>*ЭргоМастер</span>
+                    </div>
+                    <div class="header-boschmsm__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__power power-boschmsm">
+                <div class="power-boschmsm__bg">
+                    <div class="power-boschmsm__text">
+                        <p><b>Высокопроизводительный двигатель</b> мощностью до <b>1000 Вт для</b> эффективного
+                            измельчения <b>твердых ингредиентов (орехов, сыра) и сложных вызовов в приготовлении.</b>
+                        </p>
+                    </div>
+                    <div class="power-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__frame frame-boschmsm">
+                <div class="frame-boschmsm__bg">
+                    <div class="frame-boschmsm__list">
+                        <div class="frame-boschmsm__item frame-boschmsm__item_1">
+                            <p>Мощный и крепкий</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_2">
+                            <p>Легкий корпус</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_3">
+                            <p>Крепкая металлическая ножка блендера</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_4">
+                            <p>Высокая скорость</p>
+                        </div>
+                    </div>
+                    <div class="frame-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__blade blade-boschmsm">
+                <div class="blade-boschmsm__row blade-boschmsm__row_1">
+                    <div class="blade-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img4.jpg" alt="">
+                    </div>
+                    <div class="blade-boschmsm__item">
+                        <div class="blade-boschmsm__text">
+                            <h2>Система QuattroBlade Pro*.</h2>
+                            <p>Прочный, очень острый нож из нержавеющей стали с 4 лезвиями для точного и быстрого
+                                смешивания.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blade-boschmsm__row blade-boschmsm__row_2">
+                    <div class="blade-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img5.jpg" alt="">
+                    </div>
+                    <div class="blade-boschmsm__item">
+                        <div class="blade-boschmsm__text">
+                            <h2>4 ускорителя потока.</h2>
+                            <p>Обеспечивает оптимальный поток ингредиентов и низкое всасывание для эффективного
+                                смешивания – без перерывов и брызг.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blade-boschmsm__items">
+                    <div class="blade-boschmsm__snoska">
+                        <span>*КватроБлейд Про</span>
+                    </div>
+                    <div class="blade-boschmsm__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__ceramic ceramic-boschmsm">
+                <div class="ceramic-boschmsm__bg">
+                    <div class="ceramic-boschmsm__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img7.png" alt="">
+                    </div>
+                    <div class="ceramic-boschmsm__row">
+                        <div class="ceramic-boschmsm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img6.jpg" alt="">
+                        </div>
+                        <div class="ceramic-boschmsm__item">
+                            <div class="ceramic-boschmsm__title">
+                                <h2>Керамическое соединение</h2>
+                            </div>
+                            <div class="ceramic-boschmsm__text ceramic-boschmsm__text_1">
+                                <p><b>Муфта</b> ручного блендера <b>изготовлена из</b> технической <b>керамики</b>,
+                                    которая в 10 раз прочнее пластика. От того керамический коннектор очень крепкий.</p>
+                            </div>
+                            <div class="ceramic-boschmsm__text ceramic-boschmsm__text_2">
+                                <p><b>Надежная производительность.</b> Отличные свойства материала гарантируют, что
+                                    <b>мощность двигателя передается системе лопастей без износа</b> – для надежного
+                                    смешивания в течение всего срока службы.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__accessories accessories-boschmsm">
+                <div class="accessories-boschmsm__row">
+                    <div class="accessories-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img9.jpg" alt="">
+                    </div>
+                    <div class="accessories-boschmsm__item">
+                        <div class="accessories-boschmsm__text">
+                            <h2>Меняйте аксессуары одним щелчком</h2>
+                            <p>Зажмите кнопку с обеих сторон блендера и снимите ножку. Чтобы установить другой
+                                аксессуар, просто установите блендер до щелчка.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__speed speed-boschmsm">
+                <div class="speed-boschmsm__row">
+                    <div class="speed-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img11.jpg" alt="">
+                    </div>
+                    <div class="speed-boschmsm__item">
+                        <div class="speed-boschmsm__title">
+                            <h2>Динамический контроль скорости</h2>
+                        </div>
+                        <div class="speed-boschmsm__text speed-boschmsm__text_1">
+                            <p>Все <b>скорости можно регулировать</b> простым <b>нажатием рычага.</b>
+                                <b>Чем сильнее</b> вы <b>нажимаете, тем быстрее</b> он будет <b>работать.</b>
+                            </p>
+                        </div>
+                        <div class="speed-boschmsm__text speed-boschmsm__text_2">
+                            <p><b>Интегрированная кнопка разблокировки</b><br>Удобная разблокировка для легкого
+                                использования одной рукой.</p>
+                        </div>
+                        <div class="speed-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__acces acces-boschmsm">
+                <div class="acces-boschmsm__row">
+                    <div class="acces-boschmsm__item acces-boschmsm__item_1">
+                        <div class="acces-boschmsm__text">
+                            <p>Ножка блендера из нержавеющей стали</p>
+                        </div>
+                    </div>
+                    <div class="acces-boschmsm__image acces-boschmsm__image_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img12-1.jpg" alt="">
+                    </div>
+                    <div class="acces-boschmsm__item acces-boschmsm__item_1">
+                        <div class="acces-boschmsm__text">
+                            <p>Венчик для сбивания из нержавеющей стали</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acces-boschmsm__snoska">
+                    <h2>Широкий выбор аксессуаров в комплекте</h2>
+                </div>
+                <div class="acces-boschmsm__row">
+                    <div class="acces-boschmsm__item">
+                        <div class="acces-boschmsm__text">
+                            <p>Универсальный измельчитель</p>
+                        </div>
+                    </div>
+                    <div class="acces-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img12-2.jpg" alt="">
+                    </div>
+                    <div class="acces-boschmsm__item">
+                        <div class="acces-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__wash wash-boschmsm">
+                <div class="wash-boschmsm__row">
+                    <div class="wash-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img13.jpg" alt="">
+                    </div>
+                    <div class="wash-boschmsm__item">
+                        <div class="wash-boschmsm__text">
+                            <h2>Очистка ножки без дополнительных усилий</h2>
+                            <p>Беспроблемная очистка занимает всего несколько секунд. После завершения смешивания
+                                снимите ножку для смешивания одним простым нажатием.</p>
+                            <p>Теперь вы можете быстро и легко очистить ее под проточной водой или в посудомоечной
+                                машине.</p>
+                        </div>
+                        <div class="wash-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__footer footer-boschmsm">
+                <div class="footer-boschmsm__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2620570/img14.jpg" alt="">
+                </div>
+                <div class="footer-boschmsm__text">
+                    <h2>Bosch – немецкие стандарты качества</h2>
+                    <p>Блендеры Bosch разработаны профессиональными немецкими инженерами, которые известны благодаря
+                        своему удивительному вниманию к деталям. Устройства производятся и протестированы на современных
+                        заводах, что гарантирует настоящее немецкое качество.</p>
+                </div>
+                <div class="footer-boschmsm__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="boschmsm">
+        <div class="boschmsm__container">
+            <div class="boschmsm__header header-boschmsm">
+                <div class="header-boschmsm__bg">
+                    <div class="header-boschmsm__text">
+                        <h2>Занурювальний блендер ErgoMaster* Серія 4 MSM4B621</h2>
+                    </div>
+                    <div class="header-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="header-boschmsm__items">
+                    <div class="header-boschmsm__snoska">
+                        <span>*ЕргоМастер</span>
+                    </div>
+                    <div class="header-boschmsm__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__power power-boschmsm">
+                <div class="power-boschmsm__bg">
+                    <div class="power-boschmsm__text">
+                        <p><b>Високопродуктивний двигун</b> потужністю до <b>1000 Вт для</b> ефективного подрібнення
+                            <b>твердих
+                                інгредієнтів (горіхів, сиру) та для складних викликів у приготуванні.</b>
+                        </p>
+                    </div>
+                    <div class="power-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__frame frame-boschmsm">
+                <div class="frame-boschmsm__bg">
+                    <div class="frame-boschmsm__list">
+                        <div class="frame-boschmsm__item frame-boschmsm__item_1">
+                            <p>Потужний та міцний</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_2">
+                            <p>Легкий корпус</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_3">
+                            <p>Міцна металева ніжка блендера</p>
+                        </div>
+                        <div class="frame-boschmsm__item frame-boschmsm__item_4">
+                            <p>Висока швидкість</p>
+                        </div>
+                    </div>
+                    <div class="frame-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__blade blade-boschmsm">
+                <div class="blade-boschmsm__row blade-boschmsm__row_1">
+                    <div class="blade-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img4.jpg" alt="">
+                    </div>
+                    <div class="blade-boschmsm__item">
+                        <div class="blade-boschmsm__text">
+                            <h2>Система QuattroBlade Pro*.</h2>
+                            <p>Міцний, надзвичайно гострий ніж із нержавіючої сталі з 4 лезами для точного та швидкого
+                                змішування.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blade-boschmsm__row blade-boschmsm__row_2">
+                    <div class="blade-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img5.jpg" alt="">
+                    </div>
+                    <div class="blade-boschmsm__item">
+                        <div class="blade-boschmsm__text">
+                            <h2>4 прискорювачі потоку.</h2>
+                            <p>Забезпечує оптимальний потік інгредієнтів і низьке всмоктування для ефективного
+                                змішування – без перерв і бризок.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blade-boschmsm__items">
+                    <div class="blade-boschmsm__snoska">
+                        <span>*КватроБлейд Про</span>
+                    </div>
+                    <div class="blade-boschmsm__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__ceramic ceramic-boschmsm">
+                <div class="ceramic-boschmsm__bg">
+                    <div class="ceramic-boschmsm__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img7.png" alt="">
+                    </div>
+                    <div class="ceramic-boschmsm__row">
+                        <div class="ceramic-boschmsm__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img6.jpg" alt="">
+                        </div>
+                        <div class="ceramic-boschmsm__item">
+                            <div class="ceramic-boschmsm__title">
+                                <h2>Керамічне з’єднання</h2>
+                            </div>
+                            <div class="ceramic-boschmsm__text ceramic-boschmsm__text_1">
+                                <p><b>Муфта</b> ручного блендера <b>виготовлена</b> з технічної <b>кераміки</b>, яка у
+                                    10 разів міцніше
+                                    пластику. Від того керамічний конектор дуже міцний.</p>
+                            </div>
+                            <div class="ceramic-boschmsm__text ceramic-boschmsm__text_2">
+                                <p><b>Надійна продуктивність.</b><br>Відмінні властивості матеріалу гарантують, що
+                                    <b>потужність двигуна передається системі
+                                        лопатей без зношування</b> - для надійної роботи змішування протягом усього
+                                    терміну
+                                    служби.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__accessories accessories-boschmsm">
+                <div class="accessories-boschmsm__row">
+                    <div class="accessories-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img9.jpg" alt="">
+                    </div>
+                    <div class="accessories-boschmsm__item">
+                        <div class="accessories-boschmsm__text">
+                            <h2>Змінюйте аксесуари одним кліком</h2>
+                            <p>Затисніть кнопку з двох боків блендера та зніміть ніжку. Щоб встановити інший аксесуар
+                                просто встановіть блендер до кліку.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__speed speed-boschmsm">
+                <div class="speed-boschmsm__row">
+                    <div class="speed-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img11.jpg" alt="">
+                    </div>
+                    <div class="speed-boschmsm__item">
+                        <div class="speed-boschmsm__title">
+                            <h2>Динамічний контроль швидкості</h2>
+                        </div>
+                        <div class="speed-boschmsm__text speed-boschmsm__text_1">
+                            <p>Усі <b>швидкості можна регулювати</b> простим <b>натисканням важеля.
+                                    Чим сильніше ви натискаєте, тим швидше він працюватиме</b>
+                            </p>
+                        </div>
+                        <div class="speed-boschmsm__text speed-boschmsm__text_2">
+                            <p><b>Інтегрована кнопка розблокування</b> Легке розблокування для легкого використання
+                                однією рукою.</p>
+                        </div>
+                        <div class="speed-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__acces acces-boschmsm">
+                <div class="acces-boschmsm__row">
+                    <div class="acces-boschmsm__item acces-boschmsm__item_1">
+                        <div class="acces-boschmsm__text">
+                            <p>Ніжка блендера з нержавіючої сталі</p>
+                        </div>
+                    </div>
+                    <div class="acces-boschmsm__image acces-boschmsm__image_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img12-1.jpg" alt="">
+                    </div>
+                    <div class="acces-boschmsm__item acces-boschmsm__item_1">
+                        <div class="acces-boschmsm__text">
+                            <p>Вінчик для збивання з нержавіючої сталі</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="acces-boschmsm__snoska">
+                    <h2>Широкий вибір аксесуарів у комплекті</h2>
+                </div>
+                <div class="acces-boschmsm__row">
+                    <div class="acces-boschmsm__item">
+                        <div class="acces-boschmsm__text">
+                            <p>Універсальний подрібнювач</p>
+                        </div>
+                    </div>
+                    <div class="acces-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img12-2.jpg" alt="">
+                    </div>
+                    <div class="acces-boschmsm__item">
+                        <div class="acces-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__wash wash-boschmsm">
+                <div class="wash-boschmsm__row">
+                    <div class="wash-boschmsm__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2620570/img13.jpg" alt="">
+                    </div>
+                    <div class="wash-boschmsm__item">
+                        <div class="wash-boschmsm__text">
+                            <h2>Очищення ніжки без додаткових зусиль</h2>
+                            <p>Безпроблемне очищення займає лише кілька секунд. Після завершення змішування зніміть
+                                ніжку для змішування одним простим клацанням.</p>
+                            <p>Тепер ви можете швидко й легко очистити її під проточною водою або в посудомийній машині.
+                            </p>
+                        </div>
+                        <div class="wash-boschmsm__logo">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boschmsm__footer footer-boschmsm">
+                <div class="footer-boschmsm__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2620570/img14.jpg" alt="">
+                </div>
+                <div class="footer-boschmsm__text">
+                    <h2>Bosch ̶ німецькі стандарти якості</h2>
+                    <p>Блендери Bosch розроблені професійними німецькими інженерами, які відомі завдяки своїй
+                        надзвичайній увазі до деталей. Пристрої вироблені та протестовані на сучасних заводах, що
+                        гарантує справжню німецьку якість.</p>
+                </div>
+                <div class="footer-boschmsm__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2620570/img15.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
