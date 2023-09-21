@@ -1,0 +1,195 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1200px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 10px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:28px;line-height:1.2;margin:20px 0px 10px 0px;text-align:center}#maincontent .maincontent__container h4{font-size:26px;line-height:1.2;margin:10px 0px;text-align:center}#maincontent .maincontent__container p{font-size:24px;line-height:1.2;margin:10px 0;text-align:center}#maincontent .maincontent__container p span{font-weight:700}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2}#maincontent .maincontent__box,#maincontent .maincontent__col{margin-bottom:50px}#maincontent .row-maincontent__wrapper{width:80%;margin:0 auto}#maincontent .row-maincontent__inner{position:relative;z-index:5;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__title{margin-bottom:50px}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__logo{position:absolute;z-index:6;top:0;right:0;left:75%}#maincontent .box-central__item{position:relative;z-index:5}#maincontent .box-central__text{max-width:767px;margin:0 auto 70px}#maincontent .box-central__subtitle{position:absolute;z-index:6;top:98%;bottom:10%;right:0;left:80%}#maincontent .box-central__subtitle p span{font-weight:400;font-size:12px;line-height:1}#maincontent .box-central__title{background:-webkit-gradient(linear, left top, right top, from(#52bdbd), color-stop(#21a7a7), to(#1aa3bd));background:-webkit-linear-gradient(left, #52bdbd, #21a7a7, #1aa3bd);background:-o-linear-gradient(left, #52bdbd, #21a7a7, #1aa3bd);background:linear-gradient(0.25turn, #52bdbd, #21a7a7, #1aa3bd);padding:7px 3px;margin-bottom:50px}#maincontent .box-central__title h3{margin:10px 0}#maincontent .col-maincontent__inner{display:grid;position:relative;z-index:5;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#maincontent .col-maincontent__item{padding:10px 5px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .col-maincontent__image{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;overflow:hidden}#maincontent .col-maincontent__image img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#maincontent .col-maincontent__list ul{padding-left:28%}#maincontent .col-maincontent__list li{padding-left:10px}#maincontent .col-maincontent__text{width:80%;margin:0 auto}#maincontent .double-box__inner{grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px}#maincontent .siemens-iaroma__list ul,#maincontent .siemens-iaroma__list li{list-style-type:"✔"}#maincontent .siemens-onetouche__inner{grid-template-columns:1fr 1.37fr}#maincontent .quadruple__inner{grid-template-columns:repeat(4, 1fr);gap:5px;margin-bottom:50px}#maincontent .quadruple__image{width:60%;margin:0 auto}#maincontent .quadruple__text{width:auto;margin:0 auto}#maincontent .siemens-calcnclean__inner{margin-bottom:50px}#maincontent .siemens-accessories{position:relative;z-index:5}#maincontent .siemens-accessories__logo{left:90%}#maincontent .siemens-accessories__title{padding:7px 5px}#maincontent .siemens-accessories__inner{gap:20px;margin-bottom:10px}#maincontent .siemens-accessories__inner_mb{margin-bottom:10em}#maincontent .siemens-accessories__image{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .siemens-accessories__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .siemens-accessories__text p{text-align:left}#maincontent .siemens-accessories__text li{padding-left:11px}#maincontent .siemens-accessories__text ul,#maincontent .siemens-accessories__text li{list-style-type:disc}#maincontent .siemens-accessories__text ul span,#maincontent .siemens-accessories__text li span{font-weight:700}#maincontent .siemens-accessories__text ul ul,#maincontent .siemens-accessories__text ul li,#maincontent .siemens-accessories__text li ul,#maincontent .siemens-accessories__text li li{margin-left:30px}#maincontent .siemens-accessories__img{position:absolute;z-index:-1;top:67%;right:-9%;left:58%}@media screen and (max-width: 1150px){#maincontent .siemens-accessories__img{top:68%;right:-10%;left:62%}}@media screen and (max-width: 1050px){#maincontent .siemens-accessories__img{top:71%;right:-11%;left:64%}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/704);font-size:calc(22px + 10*(100vw - 320px)/704)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 8*(100vw - 320px)/704);font-size:calc(18px + 8*(100vw - 320px)/704)}#maincontent .maincontent__container h4{font-size:-webkit-calc(16px + 10*(100vw - 320px)/704);font-size:calc(16px + 10*(100vw - 320px)/704)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(14px + 10*(100vw - 320px)/704);font-size:calc(14px + 10*(100vw - 320px)/704)}#maincontent .box-central__subtitle p span{font-size:-webkit-calc(8px + 4*(100vw - 320px)/704);font-size:calc(8px + 4*(100vw - 320px)/704)}#maincontent .quadruple__inner{grid-template-columns:repeat(2, 1fr);gap:10px}#maincontent .siemens-accessories__img{top:78%;left:75%}}@media screen and (max-width: 991.98px){#maincontent .row-maincontent__title{margin-bottom:20px}#maincontent .row-maincontent__text h2{margin-bottom:10px}#maincontent .box-central__text{margin-bottom:50px}#maincontent .box-central__subtitle{top:97%;bottom:40%}#maincontent .siemens-accessories__img{top:80%;left:67%}}@media screen and (max-width: 767.98px){#maincontent .maincontent__box,#maincontent .maincontent__col{margin-bottom:10px}#maincontent .row-maincontent__wrapper{width:auto;margin:0 auto}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:0}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-maincontent__title{margin-bottom:0}#maincontent .row-maincontent__title h3{margin-top:10px}#maincontent .row-maincontent__title_mobile{display:none}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2{margin-top:10px}#maincontent .row-maincontent__text p:first-child{margin-bottom:0}#maincontent .top-box__image{width:80%}#maincontent .box-central__title{margin-bottom:10px}#maincontent .box-central__subtitle{top:99%;left:70%}#maincontent .col-maincontent__inner{grid-template-columns:1fr;gap:0}#maincontent .col-maincontent__item{padding:0 5px}#maincontent .col-maincontent__text{width:auto}#maincontent .col-maincontent__list{margin-bottom:10px}#maincontent .quadruple__inner{grid-template-columns:repeat(2, 1fr);gap:10px;margin-bottom:0}#maincontent .siemens-accessories{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .siemens-accessories__logo{position:unset}#maincontent .siemens-accessories__inner{gap:0}#maincontent .siemens-accessories__inner_rev{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .siemens-accessories__text{margin:0 20px 10px}#maincontent .siemens-accessories__text p{text-align:center}#maincontent .siemens-accessories__text ul{padding-top:10px}#maincontent .siemens-accessories__img{position:unset}}@media screen and (max-width: 550.98px){#maincontent .quadruple__inner{grid-template-columns:1fr;gap:0}}@media screen and (max-width: 479.98px){#maincontent .box-central__title{padding:1px 2px}#maincontent .siemens-accessories__text{margin:0 0 10px}#maincontent .siemens-accessories__text li{padding-left:7px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent top-box">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image top-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img01.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Повністю автоматична кавомашина Siemens TI35A209RW</h2>
+</div>
+</div>
+<div class="row-maincontent__logo"><img src="https://cdn.comfy.ua/media/x/img3/2374121/logo.png" /></div>
+</div>
+</div>
+<div class="maincontent__col col-maincontent double-box">
+<div class="col-maincontent__inner double-box__inner siemens-iaroma__inner">
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img02_1.jpg" /></div>
+<div class="col-maincontent__text">
+<p><span>Преміум-млинок</span> з низьким рівнем шуму з високоякісної                             <span>кераміки</span>, який має здатність герметизувати ароматичні речовини та майже не                             зношується.</p>
+</div>
+</div>
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img02_2.png" /></div>
+<div class="col-maincontent__text">
+<p><span>Унікальна система iAroma* </span> – запорука напоїв найвищої якості.                             Довговічний керамічний млинок, проточний нагрівач, водяний насос та високотехнологічний                             заварювальний блок створюють технічну <span>досконалість від зерна до чашки кави. </span></p>
+</div>
+</div>
+<div class="box-central__subtitle">
+<p><span><sup>*</sup>айАрома </span></p>
+</div>
+</div>
+<div class="box-central__title">
+<h3>Відмінний смак від чашки до чашки.</h3>
+</div>
+<div class="col-maincontent__inner double-box__inner siemens-onetouche__inner">
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img03_1.png" /></div>
+<div class="col-maincontent__text">
+<p>Інтуїтивно зрозуміле керування та функція <span>oneTouch*</span> - задоволення від кави одним                             натисканням кнопки.</p>
+</div>
+</div>
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img03_2.png" /></div>
+<div class="col-maincontent__text">
+<p><span>Контейнер для зерен з кришкою,</span> яка зберігає неперевершений аромат кави                             <span>(об’єм 250 г). </span></p>
+</div>
+</div>
+<div class="box-central__subtitle">
+<p><span><sup>*</sup>уанТач </span></p>
+</div>
+</div>
+<div class="box-central__title">
+<h3>Індивідуальний підхід до кожної чашки кави.</h3>
+</div>
+<div class="col-maincontent__inner double-box__inner siemens-milkperfect__inner">
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img04_1.png" /></div>
+<div class="col-maincontent__text">
+<p>Неперевершена молочна пінка з системою <span>milkPerfect*.</span></p>
+</div>
+</div>
+<div class="col-maincontent__item double-box__item">
+<div class="col-maincontent__image double-box__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img04_2.jpg" /></div>
+<div class="col-maincontent__text">
+<p>Регулювання висоти <span>панарелло до 13 см.</span></p>
+</div>
+</div>
+<div class="box-central__subtitle">
+<p><span><sup>*</sup>МілкПерфект </span></p>
+</div>
+</div>
+<div class="box-central__title">
+<h3>Індивідуальний підхід до кожної чашки кави.</h3>
+</div>
+</div>
+<div class="maincontent__col col-maincontent quadruple">
+<div class="col-maincontent__inner quadruple__inner">
+<div class="col-maincontent__item quadruple__item">
+<div class="col-maincontent__image quadruple__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img05_1.png" /></div>
+<div class="col-maincontent__text quadruple__text">
+<p>Приготування напоїв натисканням однієї кнопки.</p>
+</div>
+</div>
+<div class="col-maincontent__item quadruple__item">
+<div class="col-maincontent__image quadruple__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img05_2.png" /></div>
+<div class="col-maincontent__text quadruple__text">
+<p>Довговічний керамічний млинок, проточний нагрівач, водяний насос та високотехнологічний                             заварювальний блок створюють технічну досконалість від зерна до чашки кави.</p>
+</div>
+</div>
+<div class="col-maincontent__item quadruple__item">
+<div class="col-maincontent__image quadruple__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img05_3.png" /></div>
+<div class="col-maincontent__text quadruple__text">
+<p>Преміум-млинок з низьким рівнем шуму з високоякісної кераміки.</p>
+</div>
+</div>
+<div class="col-maincontent__item quadruple__item">
+<div class="col-maincontent__image quadruple__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img05_4.png" /></div>
+<div class="col-maincontent__text quadruple__text">
+<p>Легке та зручне керування кавомашиною завдяки інтуїтивно зрозумілому керуванню.</p>
+</div>
+</div>
+</div>
+<div class="box-central__title">
+<h3>Допомога системи у приготуванні кави.</h3>
+</div>
+</div>
+<div class="maincontent__row row-maincontent siemens-calcnclean">
+<div class="row-maincontent__inner siemens-calcnclean__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img06.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<p><span>Знімний заварювальний блок</span>, який можна з легкістю промити під проточною водою.</p>
+<p><span>Автоматичне промивання системи</span> при ввімкненні та вимкненні кавомашини, що                             забезпечує чистоту.</p>
+<p><span>Система Calc`nClean</span> – автоматично очищає та видаляє накип.</p>
+</div>
+</div>
+</div>
+<div class="box-central__title">
+<h3>Відмінний смак від чашки до чашки.</h3>
+</div>
+</div>
+<div class="maincontent__row row-maincontent siemens-accessories">
+<div class="row-maincontent__logo siemens-accessories__logo"><img src="https://cdn.comfy.ua/media/x/img3/2374121/logo.png" /></div>
+<div class="row-maincontent__wrapper">
+<div class="box-central__title siemens-accessories__title">
+<h3>Додаткові аксесуари й засоби для догляду за приладом.</h3>
+</div>
+<div class="row-maincontent__inner siemens-accessories__inner">
+<div class="row-maincontent__image siemens-accessories__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img07_1.png" /></div>
+<div class="row-maincontent__item siemens-accessories__item">
+<div class="row-maincontent__text siemens-accessories__text">
+<p><span>TZ80001A Таблетки для чищення кавомашин від кавових масел (10 таблеток в упаковці): </span></p>
+<ul>
+<li>Очищують кавомашини від ефірних масел (кавових масел); </li>
+<li>Форма та склад спеціально оптимізовані для автоматичного процесу очистки кавомашин                                     Siemens; </li>
+<li><span>2-в-1:</span> для найкращого аромату та тривалий строк служби приладу. </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev siemens-accessories__inner siemens-accessories__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img07_2.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text siemens-accessories__text">
+<p><span>TZ80002A Таблетки для видалення накипу                                     (3 таблетки в упаковці): </span></p>
+<ul>
+<li>Форма та склад оптимізовані для автоматичного процесу очистки кавомашин Siemens; </li>
+<li><span>2-в-1:</span> Декальцинація й захист від корозії. </li>
+</ul>
+<p>Результат: тривалий термін експлуатації вашої кавової машини та постійна насолода кавою.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner siemens-accessories__inner">
+<div class="row-maincontent__image siemens-accessories__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img08_1.png" /></div>
+<div class="row-maincontent__item siemens-accessories__item">
+<div class="row-maincontent__text siemens-accessories__text">
+<p><span>TZ70003 Brita Intenza® фільтр для води </span></p>
+<ul>
+<li>Фільтр для води Brita нейтралізує хлор й інші речовини, які негативно впливають на                                     смак й аромат кави </li>
+<li>Забезпечує максимальний захист кавомашин:                                 
+<ul>
+<li>знижує твердість води </li>
+<li>захищає кавомашину від накипу </li>
+<li>подовжує термін служби кавомашини. </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner siemens-accessories__inner siemens-accessories__inner_mb">
+<div class="row-maincontent__image siemens-accessories__image"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img08_2.png" /></div>
+<div class="row-maincontent__item siemens-accessories__item">
+<div class="row-maincontent__text siemens-accessories__text">
+<p><span>TZ80004A  Набір аксесуарів до кавомашин </span></p>
+<p>Чудовий аромат кави та тривалий строк експлуатації кавомашини</p>
+<p>В комплекті:</p>
+<ul>
+<li>Таблетки для чищення кавомашин від кавових масел (10 таблеток) </li>
+<li>Таблетки для повного й безпечного видалення накипу (3 таблетки) </li>
+<li>Brita Intenza<sup>®</sup> фільтр для води </li>
+<li>Щітка для чищення патрубків </li>
+</ul>
+</div>
+<div class="row-maincontent__img siemens-accessories__img"><img src="https://cdn.comfy.ua/media/x/img3/2374121/img08_3.png" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
