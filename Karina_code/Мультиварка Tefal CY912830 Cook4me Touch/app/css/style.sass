@@ -1,0 +1,380 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1600
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#tefalcook a
+    color: inherit
+    text-decoration: none
+
+#tefalcook
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#tefalcook .bc-description__content p
+    margin-bottom: 0
+
+#tefalcook .bc-description__content h3
+    text-align: left
+
+#tefalcook
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#tefalcook
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#tefalcook p::first-letter
+    padding-left: 0
+
+#tefalcook img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#tefalcook img:hover
+    opacity: 1
+
+#tefalcook .tefalcook__container
+    max-width: 1600px
+    margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+
+#tefalcook .header-tefalcook
+    &__logo
+        padding: 15px 15px 25px 35px
+        img
+            margin: 0
+    &__bg
+        position: relative
+        z-index: 2
+    &__title
+        position: absolute
+        z-index: 5
+        top: 12%
+        left: 62%
+        right: 2%
+        // max-width: 481px
+        h2
+            @include adaptiv-value("font-size", 28, 13, 1)
+            line-height: 1.2
+            text-align: center
+            text-transform: uppercase
+            color: #ffffff
+            background-color: #de1720
+            border-radius: 17px 0 17px 0
+            padding: 30px
+            // position: relative
+            // z-index: 2
+            // &::after
+            //     content: ''
+            //     position: absolute
+            //     z-index: -1
+            //     top: 50%
+            //     transform: translateY(-50%)
+            //     left: 0
+            //     background: url('../img/img3.png') 0 0 no-repeat
+            //     background-size: cover
+            //     width: 481px
+            //     height: 87px
+    &__image
+        img
+            border-top-left-radius: 50px
+
+#tefalcook .cookme-tefalcook
+    padding: 140px 15px
+    &__title
+        max-width: 1330px
+        margin: 0 auto 70px
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+            color: #de1720
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #4e3827
+    &__row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 50px 20px
+        max-width: 1330px
+        margin: 0 auto
+    &__item
+    &__inner
+        display: flex
+        align-items: center
+        gap: 20px
+    &__icon
+        flex: 0 0 90px
+    &__text
+        h4
+            @include adaptiv-value("font-size", 24, 15, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+            color: #4e3827
+        p
+            @include adaptiv-value("font-size", 21, 15, 1)
+            line-height: 1.2
+            color: #4e3827
+
+#tefalcook .app-tefalcook
+    padding: 0 0 0 15px
+    &__row
+        display: flex
+        justify-content: space-between
+        gap: 20px
+        max-width: 1450px
+        margin-left: auto
+    &__item
+        flex: 0 1 50%
+    &__box
+    &__title
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+            line-height: 1.1
+            margin-bottom: 40px
+            color: #de1720
+    &__list
+        p
+            @include adaptiv-value("font-size", 22, 15, 1)
+            line-height: 1.1
+            text-transform: uppercase
+            font-weight: bold
+            color: #4e3827
+            padding-left: 30px
+            position: relative
+            z-index: 2
+            &:not(:last-child)
+                margin-bottom: 30px
+            &::after
+                content: ''
+                position: absolute
+                z-index: 5
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                width: 22px
+                height: 22px
+                background: url('../img/img9.png') 0 0 no-repeat
+                background-size: cover
+    &__image
+        flex: 0 1 50%
+        img
+            margin-right: 0
+
+#tefalcook .column-tefalcook
+    padding: 20px 15px
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(400px, 1fr))
+        gap: 50px 15px
+    &__item
+    &__image
+    &__text
+        p
+            @include adaptiv-value("font-size", 21, 16, 1)
+            line-height: 1.2
+            color: #4e3827
+            text-align: center
+            padding-top: 20px
+
+#tefalcook .fast-tefalcook
+    padding: 100px 15px
+    &__box
+        max-width: 1000px
+        margin: 0 auto 100px
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+            color: #de1720
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #4e3827
+            text-align: center
+    &__row
+        max-width: 1400px
+        margin: 0 auto
+        display: flex
+        align-items: center
+    &__col
+        flex: 0 1 33.33333%
+    &__item
+        h2
+            @include adaptiv-value("font-size", 21, 16, 1)
+            line-height: 1.2
+            color: #7c7c7c
+            text-align: center
+    &__image
+    &__text
+        flex: 0 1 33.3333%
+        p
+            @include adaptiv-value("font-size", 20, 15, 1)
+            line-height: 1.2
+            color: #4e3827
+            font-weight: bold
+            text-align: center
+    &__item-text
+        p
+            @include adaptiv-value("font-size", 18, 15, 1)
+            line-height: 1.2
+            color: #7c7c7c
+            text-align: center
+    &__items
+        h2
+            @include adaptiv-value("font-size", 21, 16, 1)
+            line-height: 1.2
+            color: #7c7c7c
+            text-align: center
+    &__inner
+        display: flex
+        align-items: center
+    &__icon
+        flex: 0 1 33.3333%
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1300px)
+    #tefalcook .cookme-tefalcook
+        padding: 100px 15px
+
+@media screen and (max-width: 1277px)
+    #tefalcook .column-tefalcook__row
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
+    //@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #tefalcook .header-tefalcook__title
+        top: 6%
+    #tefalcook .cookme-tefalcook
+        padding: 50px 15px
+    // #tefalcook .app-tefalcook__list p:not(:last-child)
+    //     margin-bottom: 25px
+
+@media screen and (max-width: 975px)
+    #tefalcook .column-tefalcook__row
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+
+@media screen and (max-width: 767.98px)
+    #tefalcook .header-tefalcook__logo img
+        width: 300px
+    #tefalcook .header-tefalcook__image img
+        border-top-left-radius: 30px
+    #tefalcook .header-tefalcook__logo
+        padding: 15px 15px 8px 24px
+    #tefalcook .header-tefalcook__title h2
+        padding: 15px
+    #tefalcook .header-tefalcook__title
+        top: 4%
+    #tefalcook .cookme-tefalcook__row
+        grid-template-columns: 1fr
+        gap: 30px
+    #tefalcook .cookme-tefalcook__title
+        margin-bottom: 30px
+    #tefalcook .app-tefalcook__row
+        flex-direction: column
+    #tefalcook .app-tefalcook
+        padding: 0
+    #tefalcook .app-tefalcook__box
+        padding: 15px 15px
+    #tefalcook .app-tefalcook__list p::after
+        width: 17px
+        height: 17px
+        transform: translateY(0)
+        top: 0%
+    #tefalcook .column-tefalcook__row
+        gap: 30px 15px
+
+@media screen and (max-width: 601px)
+    #tefalcook .header-tefalcook__title
+        left: 45%
+
+@media screen and (max-width: 560px)
+    #tefalcook .column-tefalcook__row
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))
+
+@media screen and (max-width: 479.98px)
+    #tefalcook .header-tefalcook__title
+        left: 32%
+    #tefalcook .header-tefalcook__title h2
+        padding: 8px
+    #tefalcook .header-tefalcook__logo img
+        width: 200px
+    #tefalcook .header-tefalcook__image img
+        border-top-left-radius: 20px
+    #tefalcook .cookme-tefalcook
+        padding: 20px 15px
+    #tefalcook .app-tefalcook__title h2
+        margin-bottom: 20px
+    #tefalcook .app-tefalcook__list p:not(:last-child)
+        margin-bottom: 25px
+    #tefalcook .column-tefalcook__row
+        gap: 15px 10px
+    #tefalcook .column-tefalcook__text p
+        padding-top: 10px
+
+@media screen and (max-width: 366.98px)
+    #tefalcook .header-tefalcook__title
+        left: 20%

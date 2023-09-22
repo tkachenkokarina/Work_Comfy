@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #applepro15 a{color:inherit;text-decoration:none}#applepro15 ul,#applepro15 ol,#applepro15 li{list-style:none;padding:0;margin:0}#applepro15 .bc-description__content p{margin-bottom:0}#applepro15 .bc-description__content h3{text-align:left}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6{text-transform:none;font-weight:bold}#applepro15{margin:0 auto;overflow:hidden}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6,#applepro15 p{margin:0;padding:0;text-align:left}#applepro15 p::first-letter{padding-left:0}#applepro15 img{opacity:1;max-width:100%;display:block;margin:0 auto}#applepro15 img:hover{opacity:1}#applepro15 .applepro15__container{max-width:1200px;margin:0 auto;background-color:#000}#applepro15 .header-applepro15{padding-top:106px}#applepro15 .header-applepro15__logo{padding:0 15px 100px}#applepro15 .header-applepro15__image{padding-left:60px;padding-bottom:80px}#applepro15 .header-applepro15__image img{margin-right:0}#applepro15 .header-applepro15__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}#applepro15 .header-applepro15__box h2{font-size:50px;line-height:1.2;text-align:center;color:#86868b;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__box h2{font-size:-webkit-calc(25px + 25 * ((100vw - 320px) / 880));font-size:calc(25px + 25 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__box a{display:inline-block}#applepro15 .header-applepro15__box a p{font-size:33px;line-height:1.2;text-align:center;color:#86868b;padding:17px 44px;border:1px solid #86868b;-webkit-border-radius:50px;border-radius:50px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(max-width: 1200px){#applepro15 .header-applepro15__box a p{font-size:-webkit-calc(20px + 13 * ((100vw - 320px) / 880));font-size:calc(20px + 13 * ((100vw - 320px) / 880))}}@media(any-hover: hover){#applepro15 .header-applepro15__box a p:hover{background-color:rgba(134,134,139,.3725490196);color:#fff}}#applepro15 .corpus-applepro15{padding-top:100px}#applepro15 .corpus-applepro15__box{max-width:900px;margin:0 auto;padding:0 25px}#applepro15 .corpus-applepro15__text{margin-bottom:110px}#applepro15 .corpus-applepro15__text p{font-size:36px;line-height:1.2;font-weight:400;text-align:center;color:#86868b}@media(max-width: 1200px){#applepro15 .corpus-applepro15__text p{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 880));font-size:calc(20px + 16 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15{padding-top:115px}#applepro15 .spec-applepro15__title{padding:0 25px;margin-bottom:50px}#applepro15 .spec-applepro15__title h2{font-size:64px;line-height:1.2;font-weight:600;text-align:center;color:#86868b}@media(max-width: 1200px){#applepro15 .spec-applepro15__title h2{font-size:-webkit-calc(34px + 30 * ((100vw - 320px) / 880));font-size:calc(34px + 30 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15__row{padding:0 25px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:995px;margin:0 auto;gap:50px}#applepro15 .spec-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:60px}#applepro15 .spec-applepro15__text h4{font-size:19px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;color:#86868b}#applepro15 .spec-applepro15__text p{font-size:19px;line-height:1.2;color:#86868b}#applepro15 .inform-applepro15{padding-top:100px;padding-bottom:80px}#applepro15 .inform-applepro15__image{padding:0 25px}#applepro15 .inform-applepro15__box{padding:0 25px;max-width:995px;margin:0 auto}#applepro15 .inform-applepro15__top{padding-top:100px;margin-bottom:30px}#applepro15 .inform-applepro15__top h2{font-size:19px;line-height:1.2;margin-bottom:10px;color:#86868b}#applepro15 .inform-applepro15__top p{font-size:18px;line-height:1.2;color:#86868b}#applepro15 .inform-applepro15__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:30px}#applepro15 .inform-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .inform-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__text p{font-size:18px;line-height:1.2;color:#86868b}@media screen and (max-width: 767.98px){#applepro15 .header-applepro15{padding-top:80px}#applepro15 .header-applepro15__logo{padding-bottom:50px}#applepro15 .header-applepro15__logo img{width:300px}#applepro15 .header-applepro15__image{padding-left:30px;padding-bottom:50px}#applepro15 .corpus-applepro15__text{margin-bottom:70px}#applepro15 .spec-applepro15__row{gap:30px}}@media screen and (max-width: 600px){#applepro15 .spec-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#applepro15 .inform-applepro15__item:not(:last-child),#applepro15 .inform-applepro15__top{margin-bottom:15px}#applepro15 .inform-applepro15{padding-top:50px;padding-bottom:50px}#applepro15 .inform-applepro15__top{padding-top:50px}}@media screen and (max-width: 479.98px){#applepro15 .header-applepro15__logo img{width:210px}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__box a p{padding:15px 30px}#applepro15 .corpus-applepro15{padding-top:60px}#applepro15 .spec-applepro15__text h4,#applepro15 .spec-applepro15__text p,#applepro15 .inform-applepro15__top h2,#applepro15 .inform-applepro15__top p,#applepro15 .inform-applepro15__text p{font-size:16px}#applepro15 .spec-applepro15__title{margin-bottom:30px}#applepro15 .spec-applepro15{padding-top:50px}}@media screen and (max-width: 401px){#applepro15 .header-applepro15__image{padding-left:15px}#applepro15 .header-applepro15__logo{padding-bottom:25px}#applepro15 .header-applepro15__logo img{width:160px}#applepro15 .corpus-applepro15__text{margin-bottom:50px}}
+    </style>
+
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>В продаже появится позже</h2>
+                    <a href="https://comfy.ua/smartfon/brand__apple__seriya_smartphone__apple-iphone-15-pro--apple-iphone-15-pro-max/"
+                        class="header-applepro15__link">
+                        <p>Подробнее</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>iPhone 15 Pro. Титановый корпус, невероятный чип A17 Pro,
+                            настраиваемая кнопка действия и система камер Pro
+                            с новыми расширенными возможностями.</p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2601131/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основные характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>СОЗДАН ИЗ ТИТАНА.</h4>
+                                <p>Прочный и лёгкий корпус iPhone 15 Pro Max изготовлен из титана, применяемого в
+                                    аэрокосмической отрасли, и фактурного матового стекла.
+                                    Передняя панель Ceramic Shield надёжно защищает экран. А ещё он устойчив к
+                                    воздействию брызг, воды и пыли.<sup>1</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НЕВЕРОЯТНЫЙ ЧИП A17 PRO.</h4>
+                                <p>С графическим процессором уровня Pro игры становятся ещё реалистичнее, текстуры
+                                    завораживают своей детализацией, а персонажи кажутся настоящими. При этом чип A17
+                                    Pro поразительно энергоэффективен, поэтому устройством можно пользоваться весь день
+                                    без подзарядки.<sup>3</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАСТРАИВАЕМАЯ КНОПКА ДЕЙСТВИЯ.</h4>
+                                <p>Кнопка действия — это самый быстрый путь
+                                    к любимой функции. Просто выберите нужную,
+                                    например Режим тишины, Камера, Диктофон,
+                                    Быстрые команды или другие. А затем нажмите и удерживайте кнопку действия.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>СОЗДАН ДЛЯ ПЕРЕМЕН К ЛУЧШЕМУ.</h4>
+                                <p>В iPhone предусмотрены средства защиты конфиденциальности, поэтому вашими данными
+                                    управляете только вы. Он изготовлен
+                                    из большего количества переработанных материалов — это минимизирует влияние
+                                    на окружающую среду
+                                    . А встроенные функции делают iPhone ещё
+                                    более удобным для каждого.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УЛУЧШЕННЫЙ ДИСПЛЕЙ.</h4>
+                                <p>Super Retina XDR 6,7 дюйма<sup>2</sup> с технологией ProMotion повышает частоту
+                                    обновления до
+                                    120 Гц, когда вам нужна быстрая обработка графики.
+                                    Благодаря Dynamic Island оповещения и Эфир активности удобно отображаются
+                                    в верхней части экрана. А со всегда включённым дисплеем ваш экран блокировки
+                                    постоянно находится на расстоянии взгляда — не нужно касаться смартфона, чтобы
+                                    оставаться в курсе.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>МОЩНАЯ СИСТЕМА КАМЕР PRO.</h4>
+                                <p>Семь профессиональных объективов
+                                    обеспечивают небывалые возможности кадрирования. С основной камерой 48 Мп получаются
+                                    невероятно детализированные фотографии в высоком разрешении и с более насыщенными
+                                    цветами. А на телефотокамеру iPhone 15 Pro Max с зумом 5x можно снимать ещё более
+                                    чёткие крупные планы с большего расстояния.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВОЗМОЖНОСТИ ПОДКЛЮЧЕНИЯ УРОВНЯ PRO.</h4>
+                                <p>Благодаря новому порту USB-C
+                                    вы можете заряжать Mac или iPad с помощью
+                                    того же кабеля, что и iPhone 15 Pro Max.
+                                    Поддержка стандарта USB 3 обеспечит невероятную скорость передачи данных.4 А
+                                    с технологией Wi-Fi 6E скачивать файлы можно
+                                    в два раза быстрее.<sup>5</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВАЖНЕЙШИЕ ФУНКЦИИ БЕЗОПАСНОСТИ.</h4>
+                                <p>Функция «Распознавание аварии»
+                                    позволяет iPhone определить серьёзную автомобильную аварию и вызвать помощь,
+                                    когда вы не можете.<sup>6</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридическая информация</h2>
+                        <p><sup>1</sup>iPhone 15, iPhone 15 Plus, iPhone 15 Pro и iPhone 15 Pro Max устойчивы к
+                            воздействию брызг, воды и пыли и протестированы в специально поддерживаемых лабораторных
+                            условиях. Устройства имеют рейтинг IP68 по стандарту IEC 60529 (допускается погружение в
+                            воду на глубину до 6 метров длительностью до 30 минут). Устойчивость к воздействию брызг,
+                            воды и пыли может снижаться при естественном износе.
+                            <br>Не пытайтесь заряжать мокрый iPhone: протрите и высушите его согласно инструкциям в
+                            руководстве пользователя. Повреждение в результате контакта с жидкостью не покрывается
+                            гарантией.
+                        </p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>2</sup>Дисплей представляет собой прямоугольник
+                                        с закруглёнными углами. Диагональ этого прямоугольника без учёта закруглений
+                                        составляет 6,12 дюйма (для iPhone 15 Pro и iPhone 15) или 6,69 дюйма (для iPhone
+                                        15
+                                        Pro Max и iPhone 15 Plus). Фактическая область просмотра меньше.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Время работы от аккумулятора зависит от конфигурации и характера
+                                        использования
+                                        устройства. Подробнее на странице apple.com/batteries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Для ускорения передачи данных в 20 раз на моделях iPhone 15 Pro
+                                        необходим кабель USB
+                                        3 с поддержкой скорости 10 Гбит/с.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Технология Wi-Fi 6E доступна в странах и регионах, где поддерживается
+                                        соответствующий стандарт.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>6</sup>iPhone 15 и iPhone 15 Pro способны определить серьёзную автомобильную
+                                        аварию и
+                                        вызвать помощь. Требуется подключение к сотовой сети или поддержка вызовов по
+                                        Wi‑Fi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <style>
+        #applepro15 a{color:inherit;text-decoration:none}#applepro15 ul,#applepro15 ol,#applepro15 li{list-style:none;padding:0;margin:0}#applepro15 .bc-description__content p{margin-bottom:0}#applepro15 .bc-description__content h3{text-align:left}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6{text-transform:none;font-weight:bold}#applepro15{margin:0 auto;overflow:hidden}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6,#applepro15 p{margin:0;padding:0;text-align:left}#applepro15 p::first-letter{padding-left:0}#applepro15 img{opacity:1;max-width:100%;display:block;margin:0 auto}#applepro15 img:hover{opacity:1}#applepro15 .applepro15__container{max-width:1200px;margin:0 auto;background-color:#000}#applepro15 .header-applepro15{padding-top:106px}#applepro15 .header-applepro15__logo{padding:0 15px 100px}#applepro15 .header-applepro15__image{padding-left:60px;padding-bottom:80px}#applepro15 .header-applepro15__image img{margin-right:0}#applepro15 .header-applepro15__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}#applepro15 .header-applepro15__box h2{font-size:50px;line-height:1.2;text-align:center;color:#86868b;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__box h2{font-size:-webkit-calc(25px + 25 * ((100vw - 320px) / 880));font-size:calc(25px + 25 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__box a{display:inline-block}#applepro15 .header-applepro15__box a p{font-size:33px;line-height:1.2;text-align:center;color:#86868b;padding:17px 44px;border:1px solid #86868b;-webkit-border-radius:50px;border-radius:50px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(max-width: 1200px){#applepro15 .header-applepro15__box a p{font-size:-webkit-calc(20px + 13 * ((100vw - 320px) / 880));font-size:calc(20px + 13 * ((100vw - 320px) / 880))}}@media(any-hover: hover){#applepro15 .header-applepro15__box a p:hover{background-color:rgba(134,134,139,.3725490196);color:#fff}}#applepro15 .corpus-applepro15{padding-top:100px}#applepro15 .corpus-applepro15__box{max-width:900px;margin:0 auto;padding:0 25px}#applepro15 .corpus-applepro15__text{margin-bottom:110px}#applepro15 .corpus-applepro15__text p{font-size:36px;line-height:1.2;font-weight:400;text-align:center;color:#86868b}@media(max-width: 1200px){#applepro15 .corpus-applepro15__text p{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 880));font-size:calc(20px + 16 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15{padding-top:115px}#applepro15 .spec-applepro15__title{padding:0 25px;margin-bottom:50px}#applepro15 .spec-applepro15__title h2{font-size:64px;line-height:1.2;font-weight:600;text-align:center;color:#86868b}@media(max-width: 1200px){#applepro15 .spec-applepro15__title h2{font-size:-webkit-calc(34px + 30 * ((100vw - 320px) / 880));font-size:calc(34px + 30 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15__row{padding:0 25px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:995px;margin:0 auto;gap:50px}#applepro15 .spec-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:60px}#applepro15 .spec-applepro15__text h4{font-size:19px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;color:#86868b}#applepro15 .spec-applepro15__text p{font-size:19px;line-height:1.2;color:#86868b}#applepro15 .inform-applepro15{padding-top:100px;padding-bottom:80px}#applepro15 .inform-applepro15__image{padding:0 25px}#applepro15 .inform-applepro15__box{padding:0 25px;max-width:995px;margin:0 auto}#applepro15 .inform-applepro15__top{padding-top:100px;margin-bottom:30px}#applepro15 .inform-applepro15__top h2{font-size:19px;line-height:1.2;margin-bottom:10px;color:#86868b}#applepro15 .inform-applepro15__top p{font-size:18px;line-height:1.2;color:#86868b}#applepro15 .inform-applepro15__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:30px}#applepro15 .inform-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .inform-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__text p{font-size:18px;line-height:1.2;color:#86868b}@media screen and (max-width: 767.98px){#applepro15 .header-applepro15{padding-top:80px}#applepro15 .header-applepro15__logo{padding-bottom:50px}#applepro15 .header-applepro15__logo img{width:300px}#applepro15 .header-applepro15__image{padding-left:30px;padding-bottom:50px}#applepro15 .corpus-applepro15__text{margin-bottom:70px}#applepro15 .spec-applepro15__row{gap:30px}}@media screen and (max-width: 600px){#applepro15 .spec-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#applepro15 .inform-applepro15__item:not(:last-child),#applepro15 .inform-applepro15__top{margin-bottom:15px}#applepro15 .inform-applepro15{padding-top:50px;padding-bottom:50px}#applepro15 .inform-applepro15__top{padding-top:50px}}@media screen and (max-width: 479.98px){#applepro15 .header-applepro15__logo img{width:210px}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__box a p{padding:15px 30px}#applepro15 .corpus-applepro15{padding-top:60px}#applepro15 .spec-applepro15__text h4,#applepro15 .spec-applepro15__text p,#applepro15 .inform-applepro15__top h2,#applepro15 .inform-applepro15__top p,#applepro15 .inform-applepro15__text p{font-size:16px}#applepro15 .spec-applepro15__title{margin-bottom:30px}#applepro15 .spec-applepro15{padding-top:50px}}@media screen and (max-width: 401px){#applepro15 .header-applepro15__image{padding-left:15px}#applepro15 .header-applepro15__logo{padding-bottom:25px}#applepro15 .header-applepro15__logo img{width:160px}#applepro15 .corpus-applepro15__text{margin-bottom:50px}}
+    </style>
+    
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>Передзамовлення</h2>
+                    <a href="https://comfy.ua/ua/smartfon/brand__apple__seriya_smartphone__apple-iphone-15-pro--apple-iphone-15-pro-max/"
+                        class="header-applepro15__link">
+                        <p>Детальніше</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>iPhone 15 Pro викувано з титану й оснащено революційним
+                            чипом A17 Pro, кнопкою дії з можливістю налаштування
+                            та ще універсальнішою системою камер Pro.</p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2601131/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основні характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВИКУВАНО З ТИТАНУ.</h4>
+                                <p>iPhone 15 Pro має міцний та легкий корпус із аерокосмічного титану та задню панель із
+                                    фактурного матового скла. Його оснащено передньою панеллю Ceramic Shield, що міцніша
+                                    за скло будь-якого смартфона. Крім того, iPhone 15 Pro захищено від бризок, води й
+                                    пилу.<sup>1</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>РЕВОЛЮЦІЙНИЙ ЧИП A17 PRO.</h4>
+                                <p>З графічним процесором професійного класу ви повністю занурюєтеся в мобільні ігри.
+                                    Їхній простір захоплює своєю деталізацією, а персонажі реалістичністю. Чип A17 Pro
+                                    дуже енергоефективний, тому пристроєм можна користуватися цілий день без
+                                    підзарядки.<sup>3</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>КНОПКА ДІЇ З МОЖЛИВІСТЮ НАЛАШТУВАННЯ.</h4>
+                                <p>Кнопка дії — це короткий шлях до вашої улюбленої функції. Просто налаштуйте потрібну,
+                                    як-от Режим тиші, Камера, Диктофон, Швидкі команди тощо. А потім натисніть і
+                                    утримуйте кнопку, щоб цю функцію запустити.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>СТВОРЕНИЙ ЗМІНЮВАТИ ВСЕ НА КРАЩЕ.</h4>
+                                <p>В iPhone передбачено засоби захисту приватності, тож вашими даними керуватимете лише
+                                    ви. Його виготовлено з більшої кількості перероблених матеріалів, що мінімізує вплив
+                                    на навколишнє середовище. А інтегровані функції роблять iPhone іще доступнішим для
+                                    кожного.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАДСУЧАСНИЙ ДИСПЛЕЙ. </h4>
+                                <p>Дисплей Super Retina XDR 6,1 дюйма<sup>2</sup> з технологією ProMotion підвищує
+                                    частоту оновлення до 120 Гц, коли вам потрібна виняткова продуктивність графіки.
+                                    Завдяки Dynamic Island ви матимете під рукою сповіщення та функцію «Дії наживо».
+                                    Крім того, дисплей завжди ввімкнено, тож екран блокування залишається доступним для
+                                    перегляду, і вам навіть не потрібно торкатися його, щоб бути в курсі подій.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ПОТУЖНА СИСТЕМА КАМЕР PRO.</h4>
+                                <p>Сім професійних об’єктивів забезпечують неймовірну гнучкість кадрування. Створюйте
+                                    приголомшливі деталізовані фотографії з насиченими кольорами й високою роздільною
+                                    здатністю за допомогою основної камери 48 Мп. А на камеру Телефото 3х в iPhone 15
+                                    Pro можна знімати чіткі крупні плани з великої відстані.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ПРОФЕСІЙНІ МОЖЛИВОСТІ ПІДКЛЮЧЕННЯ.</h4>
+                                <p>Завдяки новому порту USB-C ви можете заряджати Mac або iPad за допомогою того самого
+                                    кабелю, що й iPhone 15 Pro. А підтримка стандарту USB 3 забезпечить неймовірну
+                                    швидкість передавання даних.4 Крім того, завдяки Wi-Fi 6E завантажувати файли можна
+                                    майже вдвічі швидше.<sup>5</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАДВАЖЛИВІ ФУНКЦІЇ БЕЗПЕКИ.</h4>
+                                <p>За допомогою функції «Виявлення аварій» iPhone може розпізнавати серйозні
+                                    автомобільні аварії та викликати допомогу, коли ви не в змозі.<sup>6</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2601131/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридична інформація</h2>
+                        <p><sup>1</sup>iPhone 15, iPhone 15 Plus, iPhone 15 Pro та iPhone 15 Pro Max захищено від
+                            бризок, води й пилу. Тестування пристроїв у контрольованих лабораторних умовах показало їх
+                            відповідність класу захисту IP68 згідно зі стандартом IEC 60529 (занурення щонайбільше на 6
+                            метрів протягом 30 хвилин). Ступінь захисту від бризок, води й пилу не є сталою величиною,
+                            тому може знижуватися внаслідок звичайного зношування. Не заряджайте iPhone, якщо він
+                            мокрий. Інформацію щодо очищення й просушування пристрою дивіться в інструкції користувача.
+                            Гарантія не поширюється на пошкодження від вологи.
+
+                        </p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>2</sup>Кути дисплея заокруглені. Довжина діагоналі становить 6,12 дюйма
+                                        (iPhone 15 Pro, iPhone 15) або 6,69 дюйма (iPhone 15 Pro Max, iPhone 15 Plus),
+                                        якщо її вимірювати між вершинами стандартного прямокутника. Фактична зона
+                                        перегляду менша.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Час роботи від акумулятора залежить від конфігурації та особливостей
+                                        використання пристрою. Детальніше на apple.com/batteries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Щоб обмінюватися даними на моделях iPhone 15 Pro до 20 разів швидше,
+                                        потрібен кабель USB 3 зі швидкістю передавання 10 Гбіт/с.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Технологія Wi-Fi 6E доступна в країнах і регіонах, де підтримується
+                                        відповідний стандарт.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>6</sup>iPhone 15 та iPhone 15 Pro можуть розпізнавати серйозні автомобільні
+                                        аварії та викликати допомогу. Потрібна мобільна мережа або можливість виклику за
+                                        допомогою Wi-Fi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
