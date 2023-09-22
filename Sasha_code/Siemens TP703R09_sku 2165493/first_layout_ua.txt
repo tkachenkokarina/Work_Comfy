@@ -1,0 +1,127 @@
+<style>
+        #siemenstp703r09 a{color:inherit;text-decoration:none}#siemenstp703r09 ul,li{list-style:none;padding:0;margin:0}#siemenstp703r09 .bc-description__content p{margin-bottom:0}#siemenstp703r09 .bc-description__content h3{text-align:left}#siemenstp703r09 p{margin:0;padding:0;text-align:left}#siemenstp703r09 h1,#siemenstp703r09 h2,#siemenstp703r09 h3,#siemenstp703r09 h4,#siemenstp703r09 h5,#siemenstp703r09 h6{padding:0;margin:0;text-align:left;text-transform:none}#siemenstp703r09{margin:0 auto;overflow:hidden;background-color:#fff}#siemenstp703r09 p::first-letter{padding-left:0}[class*=__container]{max-width:1000px;margin:0 auto;padding:0 15px}[class*=-ibg]{position:relative}[class*=-ibg] img{position:absolute;width:100%;height:100%;top:0;left:0;-o-object-fit:cover;object-fit:cover}[class*=-ibg_contain] img{-o-object-fit:contain;object-fit:contain}#siemenstp703r09 img{opacity:1;max-width:100%;display:block;margin:0 auto}#siemenstp703r09 img:hover{opacity:1}#siemenstp703r09 .siemenstp703r09__box{padding-top:20px}#siemenstp703r09 .box-siemenstp703r09__text h2{font-size:30px;line-height:1.2;margin-bottom:20px;text-align:center}#siemenstp703r09 .row-siemenstp703r09__inner{display:flex;align-items:center}#siemenstp703r09 .row-siemenstp703r09__item{flex:0 1 50%}#siemenstp703r09 .row-siemenstp703r09__text{padding:10px 20px}#siemenstp703r09 .row-siemenstp703r09__text h4{font-size:18px;line-height:1.2;margin-bottom:5px}#siemenstp703r09 .row-siemenstp703r09__text p{font-size:16px;line-height:1.2}#siemenstp703r09 .row-siemenstp703r09__image{flex:0 1 50%}#siemenstp703r09 .row-siemenstp703r09__inner-rev{flex-direction:row-reverse}@media screen and (max-width: 1000px){#siemenstp703r09 .box-siemenstp703r09__text h2{font-size:30px}}@media screen and (max-width: 1000px)and (max-width: 1000px){#siemenstp703r09 .box-siemenstp703r09__text h2{font-size:calc(22px + 8 * ((100vw - 320px) / 680))}}@media screen and (max-width: 767.98px){#siemenstp703r09 .row-siemenstp703r09__inner{flex-direction:column}#siemenstp703r09 .row-siemenstp703r09__text{padding:20px 0 10px}#siemenstp703r09 .row-siemenstp703r09__text h4,#siemenstp703r09 .row-siemenstp703r09__text p{text-align:center}}
+    </style>
+
+   <div id="siemenstp703r09">
+        <div class="siemenstp703r09__container">
+            <div class="siemenstp703r09__box box-siemenstp703r09">
+                <div class="box-siemenstp703r09__text">
+                    <h2>Насолоджуйтесь ідеальною кавою з Siemens TP703R09</h2>
+                </div>
+                <div class="box-siemenstp703r09__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2165493/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="siemenstp703r09__row row-siemenstp703r09">
+                <div class="row-siemenstp703r09__inner">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Легка навігація з великим сенсорним дисплеєм – iSelect Display</h4>
+                            <p>Налаштуйте свою каву до досконалості за допомогою зручного дисплея iSelect з функціями дотику та ковзання для зручного керування та легкої навігації по меню повністю автоматичної кавомашини Siemens TP703R09. Персоналізуйте варіння з широкого спектру міжнародних варіантів приготування одним дотиком та насолоджуйтесь неперевершеною кавою щодня!</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner row-siemenstp703r09__inner-rev">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Індивідуальність в кожному ковтку: збережіть свої 5 улюблених кавових напоїв</h4>
+                            <p>Отримуйте свою ідеальну чашку кави кожного разу з функцією «Улюблене». Створюйте до 5 найулюбленіших напоїв в одне натискання, завдяки індивідуальним налаштуванням міцності кави, розміру чашки та кількості молока.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <p>Отримайте максимум задоволення від комфортного використання автоматичної кавомашини Siemens TP703R09 за допомогою розумних технологій. Пориньте у світ преміальної кави з додатком Home Connect.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner row-siemenstp703r09__inner-rev">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Бездоганна кава щодня</h4>
+                            <p>Відчуйте вишуканий смак кави, як ніколи раніше, з кавомашиною Siemens TP703R09, яка включає інноваційну систему iAroma. Міцна керамічна кавомолка, проточний нагрівач, водяний насос і найсучасніший заварювальний блок працюють в ідеальній гармонії для приготування найсмачнішої кави преміальної якості від зерна до чашки.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Розкрийте повний смак екстраміцної кави з AromaDouble Shot</h4>
+                            <p>Насолоджуйтесь надзвичайно міцною кавою з насиченим смаком завдяки інноваційній функції aromaDouble Shot. Подвійний помел і заварювання кави гарантує, що через автоматизовану систему проходить менше води, в результаті чого новий Siemens TP703R09 забезпечує ідеально збалансовану чашку кави без гіркого присмаку.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner row-siemenstp703r09__inner-rev">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Автоматичне очищення молочної системи - autoMilk Clean</h4>
+                            <p>Siemens зробив приготування кави ще приємнішим, представивши функцію autoMilk Clean. Новий повністю автоматизований процес парового очищення autoMilk Clean усуває потребу в ручному чищенні, що дозволяє зосередитися виключно на на насолоді ароматними кавовими напоями.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Високоякісна керамічна кавомолка CeramDrive для делікатного помелу кави</h4>
+                            <p>Насолоджуйтесь ідеальним еспресо щоразу за допомогою керамічного млинка преміум-класу від Siemens. Низький рівень шуму та високоякісна керамічна конструкція забезпечують винятковий помел та зберігають ідеальний аромат кави. На відміну від сталевих млинків, кераміка майже не руйнується, що забезпечує високу якість на довгі роки щоденного використання.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner row-siemenstp703r09__inner-rev">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Подвійна кава, подвійна зручність: OneTouch DoubleCup</h4>
+                            <p>Більше ніяких клопотів зприготуванням кави – просто торкніться OneTouch DoubleCup, щоб насолодитися улюбленою кавою, приготованою у двох чашках одночасно.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Вишуканий смак насиченої кави одним натисканням кнопки</h4>
+                            <p>Насолоджуйтеся неперевершеним смаком кави одним дотиком, завдяки повністю автоматизованій кавомашині Siemens TP703R09! Від капучіно до латте макіато та еспресо – кожен раз отримуйте ідеальний смак свого улюбленого кавового напою. Система Siemens TP703R09 миттєво приготує його так, як вам подобається.</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-siemenstp703r09__inner row-siemenstp703r09__inner-rev">
+                    <div class="row-siemenstp703r09__item">
+                        <div class="row-siemenstp703r09__text">
+                            <h4>Знімний заварювальний блок для легкого очищення</h4>
+                            <p>Заварювальний пристрій можна легко від'єднати для ретельного очищення під проточною водою, зберігаючи смак кави і подовжуючи термін служби кавомашини. Насолоджуйтесь справжнім смаком найкращої кави щодня з Siemens TP703R09!</p>
+                        </div>
+                    </div>
+                    <div class="row-siemenstp703r09__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2165493/img11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

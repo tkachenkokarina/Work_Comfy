@@ -1,0 +1,505 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1200px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin: 20px 0px 10px 0px
+            text-align: center
+        h4
+            @include fonts($fontSize: 26px, $lineHeight: 1.2)
+            margin: 10px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin: 10px 0
+            text-align: center
+            span
+                font-weight: 700
+        ul, li
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+    &__box, &__col
+        margin-bottom: 50px
+
+#maincontent .row-maincontent
+    &__wrapper
+        width: 90%
+        margin: 0 auto
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+        @include flex-box($justifyContent: center, $alignItems: center)
+        &_rev
+            flex-direction: row-reverse
+    &__title
+        margin-bottom: 50px
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+    &__logo
+        @include position($position: absolute, $zIndex: 6)
+        top: 0
+        right: 0
+        left: 75%
+
+#maincontent .box-central
+    &__item
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        max-width: 767px
+        margin: 0 auto 70px
+    &__subtitle
+        @include position($position: absolute, $zIndex: 6)
+        top: 98%
+        bottom: 10%
+        right: 0
+        left: 90%
+        &_left
+            right: auto
+            left: 0
+        p
+            span
+                font-weight: 400
+                @include fonts($fontSize: 12px, $lineHeight: 1)
+    &__title
+        background: linear-gradient(0.25turn, #52bdbd, #21a7a7, #1aa3bd)
+        padding: 7px 3px
+        margin-bottom: 50px
+        h3
+            margin: 10px 0
+#maincontent .siemens-iaroma
+    &__subtitle
+        left: 86%
+#maincontent .siemens-iselect
+    &__subtitle
+        left: 86% 
+
+#maincontent .col-maincontent
+    &__inner
+        display: grid
+        @include position($position: relative, $zIndex: 5)
+        justify-content: center
+    &__item
+        padding: 10px 5px
+        display: flex
+        flex-direction: column
+    &__image
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__list
+        ul
+            padding-left: 28%
+        li
+            padding-left: 10px
+    &__text
+        width: 80%
+        margin: 0 auto
+
+#maincontent .double-box
+    &__inner
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+        margin-bottom: 30px
+
+#maincontent .siemens-connect
+    &__inner
+        align-items: flex-start
+        margin-bottom: 50px
+    &__image
+        flex: 0 1 60%
+    &__item
+        flex: 0 1 40%
+        @include position($position: relative, $zIndex: 6)        
+    &__text
+        width: 80%
+        &:first-child            
+            margin-left: auto
+    &__subtitle
+        top: 100%
+        left: 80%
+        &_left
+            left: 15px
+
+#maincontent .siemens-select  
+    &__inner
+        grid-template-columns: 1.18fr 1fr
+    &__text
+        p
+            margin-top: 30px     
+#maincontent .siemens-favorites
+    &__inner   
+        grid-template-columns: 1.16fr 1fr  
+
+#maincontent .quadruple
+    margin-bottom: 0
+    &__inner
+        grid-template-columns: repeat(4, 1fr)
+        gap: 5px
+        margin-bottom: 50px
+    &__image
+        width: 90%
+        margin: 0 auto         
+    &__text
+        width: auto
+        margin: 0 auto
+    &__title
+        margin-bottom: 0
+
+#maincontent .bg-box
+    &__bg
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2165493-1/img08.png))
+        background-size: 100% auto
+        padding: 2em 4em 3em        
+        @include position($position: relative, $zIndex: 6)
+    &__inner
+        @include flex-box($justifyContent: flex-start, $alignItems: flex-start)
+        
+    &__list
+        &:first-child            
+            flex: 0 1 65%
+            margin-bottom: 15em
+        &:last-child
+            flex: 0 1 35%
+            @include position($position: absolute, $zIndex: 7)
+            left: 62%
+            top: 15%
+        ul, li
+            list-style-type: disc
+            span
+                    font-weight: 700 
+        &:first-child            
+            ul, li
+                color: #fff  
+    &__image
+        display: none
+
+#maincontent .siemens-accessories
+    @include position($position: relative, $zIndex: 5)    
+    &__title
+        padding: 7px 5px
+        background: none
+    &__inner
+        gap: 20px
+        margin-bottom: 10px
+        &_triple
+            gap: 0
+    &__image
+        flex: 0 1 40%
+        &_triple
+            flex: 0 1 23%
+    &__item
+        flex: 0 1 60%
+        &_triple
+            flex: 0 1 55%
+    &__text
+        p
+            text-align: left
+        li
+            padding-left: 11px
+        ul, li
+            list-style-type: disc
+            span
+                font-weight: 700
+            ul, li
+                margin-left: 30px    
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1150px)
+    #maincontent .siemens-connect
+        &__inner
+            align-items: center
+        &__image
+            flex: 0 1 50%
+        &__item
+            flex: 0 1 50%
+        &__subtitle
+            top: 96%
+    #maincontent .bg-box
+        &__bg
+            padding-bottom: 1em
+    
+@media screen and (max-width: 1080.98px)
+    #maincontent .bg-box
+        &__list
+            &:first-child 
+                margin-bottom: 10em 
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (32 - 22) * ((100vw - 320px)/(1024 - 320)))
+            h3
+                font-size: calc( 18px + (28 - 20) * ((100vw - 320px)/(1024 - 320)))
+            h4
+                font-size: calc( 16px + (26 - 16) * ((100vw - 320px)/(1024 - 320)))
+            p, ul, li
+                font-size: calc( 14px + (24 - 14) * ((100vw - 320px)/(1024 - 320)))
+    #maincontent .box-central
+        &__subtitle
+            p
+                span
+                    font-size: calc( 8px + (12 - 8) * ((100vw - 320px)/(1024 - 320)))
+    #maincontent .quadruple
+        &__inner
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 10px  
+            row-gap: 0
+            margin-bottom: 0 
+        &__item
+            padding: 0 5px 
+
+@media screen and (max-width: 991.98px)
+    #maincontent .row-maincontent
+        &__title
+            margin-bottom: 20px
+        &__text
+            h2
+                margin-bottom: 10px
+    #maincontent .box-central
+        &__text
+            margin-bottom: 50px
+        &__subtitle
+            top: 97%
+            bottom: 40%
+    #maincontent .siemens-favorites
+        &__subtitle
+            left: 86% 
+    #maincontent .bg-box
+        &__bg
+            background: none
+            padding: 0
+        &__inner
+            padding: 0 2em
+            margin-bottom: 10px
+            gap: 20px
+        &__image
+            display: block
+            margin-bottom: 10px
+        &__list            
+            &:first-child   
+                flex: 0 1 50%             
+                margin-bottom: 0
+                ul, li
+                    color: #000
+            &:last-child                
+                position: unset
+                flex: 0 1 50%
+                ul, li
+                    span
+                        font-weight: 400
+    #maincontent .siemens-automilk
+        &__subtitle
+            left: 85%
+        
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__box, &__col
+            margin-bottom: 10px
+    #maincontent .row-maincontent
+        &__wrapper
+            width: auto
+            margin: 0 auto
+        &__inner
+            flex-direction: column
+            margin-bottom: 0
+            &_rev
+                flex-direction: column-reverse
+        &__title
+            margin-bottom: 0
+            h3
+                margin-top: 10px
+            &_mobile
+                display: none
+        &__text
+            padding: 0 5px
+            h2, h3
+                margin-top: 10px
+            p
+                &:first-child
+                    margin-bottom: 0
+    #maincontent .top-box
+        &__image
+            width: 80%
+    #maincontent .box-central
+        &__title
+            margin-bottom: 10px
+        &__subtitle
+            position: unset
+            margin-left: auto
+            padding: 0 5px
+            p
+                margin-top: 0
+    #maincontent .col-maincontent
+        &__inner
+            grid-template-columns: 1fr
+            gap: 0
+        &__item
+            padding: 0 5px
+        &__text
+            width: auto
+            h3
+                margin-top: 10px
+        &__list
+            margin-bottom: 10px
+    #maincontent .double-box
+        &__inner
+            margin-bottom: 0
+    #maincontent .siemens-connect
+        &__text
+            width: auto
+            margin: 0 auto
+        &__subtitle
+            p
+                text-align: right
+    #maincontent .siemens-select
+        &__text
+            p
+                margin-top: 10px
+    #maincontent .quadruple
+        &__inner
+            grid-template-columns: repeat(2, 1fr)
+            gap: 10px
+            margin-bottom: 0
+    
+    #maincontent .siemens-accessories
+        display: flex
+        flex-direction: column        
+        &__logo
+            position: unset
+        &__inner
+            gap: 0
+            &_rev
+                flex-direction: column
+        &__text
+            margin: 0 20px 10px
+            p
+                text-align: center
+            ul
+                padding-top: 10px
+                ul, li
+                    margin-left: 15px
+        &__img
+            position: unset
+    
+@media screen and (max-width: 550.98px)
+    #maincontent .quadruple
+        &__inner
+            grid-template-columns: 1fr
+            gap: 0
+@media screen and (max-width: 479.98px)
+    #maincontent .box-central
+        &__title
+            padding: 1px 2px
+    #maincontent .bg-box
+        &__inner
+            flex-direction: column
+            gap: 0        
+    #maincontent .siemens-accessories
+        &__text
+            margin: 0 0 10px
+            li
+                padding-left: 7px
