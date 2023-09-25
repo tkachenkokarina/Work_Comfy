@@ -1,0 +1,367 @@
+<style>
+    #content_ex p:first-letter {
+        padding-left: 0;
+    }
+
+    #content_ex p {
+        margin-bottom: 0;
+    }
+
+    #content_ex img:hover {
+        opacity: 1;
+    }
+
+    #content_ex img {
+        opacity: 1;
+    }
+
+    #content_ex {
+        max-width: 1316px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    #content_ex h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    #content_ex img {
+        max-width: 100%;
+        max-height: 700px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #content_ex p {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 60%;
+        margin: 0 auto 15px;
+    }
+
+    #content_ex .bosch_bg3__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    #content_ex .bosch_bg3__info {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+
+    #content_ex .bosch_bg5 {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    #content_ex .bosch_bg5__box {
+        position: absolute;
+        max-width: 600px;
+        text-align: center;
+        top: 41px;
+    }
+
+    #content_ex .bosch_bg5__title {
+        margin-bottom: 150px;
+    }
+
+    #content_ex .bosch_bg5__title h2 {
+        font-size: 32px;
+    }
+
+    #content_ex .bosch_bg5__info p {
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    #content_ex .bosch_bg6__info {
+        max-width: 50%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+
+    #content_ex .bosch_bg1__info,
+    #content_ex .bosch_bg2__info,
+    #content_ex .bosch_bg4__info,
+    #content_ex .bosch_bg8__info,
+    #content_ex .bosch_bg7__info,
+    #content_ex .bosch_bg9__info {
+        text-align: center;
+    }
+
+    #content_ex .bosch_bg10 p,
+    #content_ex .bosch_bg11 p {
+        text-align: center;
+    }
+
+    #content_ex .bosch_bg4__inner-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #content_ex .bosch_bg4__inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #content_ex .bosch_bg4__items h2 {
+        text-align: left;
+    }
+
+    #content_ex .bosch_bg12__inner {
+        display: flex;
+        flex-direction: row;
+        max-width: 750px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    #content_ex .bosch_bg12__list li {
+        position: relative;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    #content_ex .bosch_bg12__list li::before {
+        content: '✔';
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+    }
+
+    #content_ex .bosch_bg4__items {
+        flex: 1 0 50%;
+        padding: 0px 20px;
+    }
+
+    #content_ex .bosch_bg4__items p {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 950px) {
+        #content_ex .bosch_bg5__box {
+            position: static;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        #content_ex .bosch_bg5__title {
+            margin-bottom: 0;
+        }
+
+        #content_ex .bosch_bg5__info p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: normal;
+        }
+
+        #content_ex .bosch_bg5 {
+            padding-top: 0;
+        }
+
+        #content_ex .bosch_bg5__title h2 {
+            font-size: 28px;
+        }
+
+        #content_ex .bosch_bg8__list {
+            max-width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 775px) {
+
+        #content_ex .bosch_bg4__inner-rev,
+        #content_ex .bosch_bg4__inner {
+            flex-direction: column;
+        }
+
+        #content_ex .bosch_bg12__inner {
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        #content_ex .bosch_bg4__items h2 {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        #content_ex .bosch_bg3__inner {
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        #content_ex .bosch_bg10 p,
+        #content_ex .bosch_bg11 p {
+            text-align: justify;
+        }
+
+        #content_ex .bosch_bg6__info {
+            max-width: 100%;
+            text-align: justify;
+        }
+
+        #content_ex .bosch_bg1__info,
+        #content_ex .bosch_bg2__info,
+        #content_ex .bosch_bg4__info,
+        #content_ex .bosch_bg8__info,
+        #content_ex .bosch_bg7__info,
+        #content_ex .bosch_bg9__info {
+            text-align: justify;
+        }
+
+        #content_ex p {
+            max-width: 100%;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        #content_ex {
+            margin: 15px;
+        }
+    }
+</style>
+
+
+<div id="content_ex">
+    <section class="bosch_bg1">
+        <h2 class="bosch_bg1__title">BGL6PET1 </h2>
+        <p class="bosch_bg1__info">Наслаждайтесь обнимашками - забудьте о шерсти в доме. Серия ProAnimal для быстрой
+            уборки шерсти.
+        </p>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/1.jpg" alt="" class="bosch_bg1__img">
+    </section>
+    <section class="bosch_bg2">
+        <h2 class="bosch_bg2__title">Регулировка мощности на ручке</h2>
+        <p class="bosch_bg2__info">Одно касание - это все, что нужно для перехода в турборежим, режим ожидания или
+            желаемый уровень мощности.</p>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/2.jpg" alt="" class="bosch_bg2__img">
+    </section>
+    <section class="bosch_bg3">
+        <h2 class="bosch_bg3__title">Широкий выбор дополнительных аксессуаров</h2>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/3.jpg" alt="" class="bosch_bg3__img">
+    </section>
+
+    <section class="bosch_bg4">
+        <div class="bosch_bg4-box">
+            <h2 class="bosch_bg4__title">Турбо-щетка AirTurbo Plus</h2>
+            <div class="bosch_bg4__inner-rev">
+                <div class="bosch_bg4__items">
+                    <p>Турбо-щетка специально разработана для владельцев домашних животных для тщательной уборки шерсти
+                        на всех типах поверхности пола.
+                    </p>
+                </div>
+                <div class="bosch_bg4__img">
+                    <img src="https://cdn.comfy.ua/media/x/img/1669517/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="bosch_bg4__inner">
+                <div class="bosch_bg4__items">
+                    <h2>Функция самоочистки SelfClean</h2>
+                    <p>Очистка щетки от мусора нажатием одной кнопки.</p>
+                </div>
+                <div class="bosch_bg4__img">
+                    <img src="https://cdn.comfy.ua/media/x/img/1669517/4-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bosch_bg5">
+        <div class="bosch_bg5__box">
+            <div class="bosch_bg5__title">
+                <h2>Щетка для паркета</h2>
+            </div>
+            <div class="bosch_bg5__info">
+                <p>Специальная щетка с мягким ворсом, которая обеспечивает деликатный уход за полом, не оставляя
+                    царапин.</p>
+            </div>
+        </div>
+        <div class="bosch_bg5__img">
+            <img src="https://cdn.comfy.ua/media/x/img/1638167/5.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="bosch_bg6">
+        <h2 class="bosch_bg6__title">Насадка 2-в-1: для корпусной мебели и щелевая</h2>
+        <p class="bosch_bg6__info">Интегрированная насадка на трубе пылесоса всегда под рукой и готова к работе в любой
+            момент.</p>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/6.jpg" alt="" class="bosch_bg6__img">
+    </section>
+
+
+    <section class="bosch_bg7">
+        <h2 class="bosch_bg7__title">Пылесборник AirFresh с угольным слоем</h2>
+        <p class="bosch_bg7__info">Большой объем пылесборника 4 л с угольным слоем предотвращает возникновение
+            неприятных запахов, а гигиенический замок обеспечивает утилизацию без контакта с пылью.</p>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/7.jpg" alt="" class="bosch_bg7__img">
+    </section>
+
+    <section class="bosch_bg8">
+        <h2 class="bosch_bg8__title">Высокий стандарт чистоты</h2>
+        <p class="bosch_bg8__info"><strong>Фильтр HEPA</strong> можно мыть под проточной водой. Он обеспечивает чистый и
+            свежий воздух и идеально подходит для людей с аллергией.
+            Поэтому воздуха на выходе чище, чем в помещении.
+        </p>
+        <img src="https://cdn.comfy.ua/media/x/img/1638167/7.jpg" alt="" class="bosch_bg8__img">
+    </section>
+
+    <section class="bosch_bg12">
+        <div class="bosch_bg12__box">
+            <h2 class="bosch_bg12__title">Комфорт:</h2>
+            <div class="bosch_bg12__inner">
+                <ul class="bosch_bg12__list">
+                    <li>Индикатор замены пылесборника</li>
+                    <li>Радиус работы: 12 метров</li>
+                    <li>Вес: 4.3 кг (без аксессуаров)</li>
+                    <li>Матовая текстура корпуса</li>
+                    <li>Регулировка мощности на корпусе</li>
+                </ul>
+                <div class="bosch_bg12__img">
+                    <img src="https://cdn.comfy.ua/media/x/img/1669517/9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bosch_bg9">
+        <div class="bosch_bg9__box">
+            <h2 class="bosch_bg9__title">Чистота 360º</h2>
+            <p class="bosch_bg9__info">От пола к потолку в вашем доме. Уборка во всех труднодоступных местах.
+            </p>
+        </div>
+        <img src="https://cdn.comfy.ua/media/x/img/1638167/9.jpg" alt="" class="bosch_bg9__img">
+    </section>
+
+    <section class="bosch_bg10">
+        <h2>Гарантия 10 лет на МОТОР</h2>
+        <p>Покупайте пылесос Bosch и регистрируйте прибор в кабинете MyBosch на официальном сайте производителя.
+            Убедитесь в долговечности приборов Bosch.</p>
+        <img src="https://cdn.comfy.ua/media/x/img/1638166/10_years.jpg" alt="">
+    </section>
+
+    <section class="bosch_bg11">
+        <h2>Bosch ̶ немецкие стандарты качества</h2>
+        <p>Пылесосы Bosch разработаны профессиональными немецкими инженерами, которые известны благодаря своему
+            чрезвычайному вниманию к деталям. Техника произведена и протестирована на современных заводах, что
+            гарантирует настоящее немецкое качество. </p>
+        <img src="https://cdn.comfy.ua/media/x/img/1669517/12.jpg" alt="">
+    </section>
+</div>
