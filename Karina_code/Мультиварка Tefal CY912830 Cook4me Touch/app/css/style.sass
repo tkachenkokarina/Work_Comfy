@@ -131,7 +131,7 @@ button
             //     top: 50%
             //     transform: translateY(-50%)
             //     left: 0
-            //     background: url('../img/img3.png') 0 0 no-repeat
+            //     background: url('https://cdn.comfy.ua/media/x/img3/2626495/img3.png') 0 0 no-repeat
             //     background-size: cover
             //     width: 481px
             //     height: 87px
@@ -215,7 +215,7 @@ button
                 left: 0
                 width: 22px
                 height: 22px
-                background: url('../img/img9.png') 0 0 no-repeat
+                background: url('https://cdn.comfy.ua/media/x/img3/2626495/img9.png') 0 0 no-repeat
                 background-size: cover
     &__image
         flex: 0 1 50%
@@ -259,12 +259,14 @@ button
         margin: 0 auto
         display: flex
         align-items: center
+        gap: 15px
     &__col
         flex: 0 1 33.33333%
     &__item
         h2
             @include adaptiv-value("font-size", 21, 16, 1)
             line-height: 1.2
+            margin-bottom: 10px
             color: #7c7c7c
             text-align: center
     &__image
@@ -278,21 +280,133 @@ button
             text-align: center
     &__item-text
         p
-            @include adaptiv-value("font-size", 18, 15, 1)
+            @include adaptiv-value("font-size", 18, 16, 1)
             line-height: 1.2
             color: #7c7c7c
             text-align: center
+            padding-top: 20px
     &__items
+        &:not(:last-child)
+            margin-bottom: 40px
         h2
             @include adaptiv-value("font-size", 21, 16, 1)
             line-height: 1.2
+            margin-bottom: 10px
             color: #7c7c7c
             text-align: center
+        span
+            @include adaptiv-value("font-size", 18, 14, 1)
+            line-height: 1.2
+            color: #7c7c7c
+            display: block
+            text-align: center
+            padding-top: 20px
     &__inner
         display: flex
         align-items: center
     &__icon
         flex: 0 1 33.3333%
+
+#tefalcook .multi-tefalcook
+    padding: 0 15px 30px
+    &__row
+        max-width: 1400px
+        margin: 0 auto
+        display: flex
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 90%
+        margin: 0 auto
+        &:not(:last-child)
+            margin-bottom: 20px
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+            line-height: 1.1
+            margin-bottom: 5px
+            color: #de1720
+        span
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #4e3827
+            display: block
+        h4
+            @include adaptiv-value("font-size", 21, 18, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+            color: #7c7c7c
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #7c7c7c
+    &__image
+        flex: 0 1 50%
+        img
+            margin-right: 0
+
+#tefalcook .spec-tefalcook
+    padding: 100px 15px 100px
+    &__row
+        display: grid
+        grid-template-columns: 232px 1fr 1fr 1fr
+        gap: 15px
+        max-width: 1000px
+        margin: 0 auto
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 10px
+        &_1
+        &_2
+        &_3
+            justify-content: end
+        &_4
+            justify-content: end
+        &_5
+        &_6
+        &_7
+        &_8
+    &__button
+        p
+            display: inline-block
+            @include adaptiv-value("font-size", 18, 15, 1)
+            line-height: 1.2
+            text-align: center
+            font-weight: bold
+            color: #e23232
+            padding: 10px 30px
+            border: 2px solid #e23232
+            border-radius: 10px
+            margin-bottom: 20px
+    &__body
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #240824
+            text-align: center
+    &__image
+    &__text
+        width: 90%
+        h2
+            font-size: 18px
+            line-height: 1.2
+            font-weight: bold
+            color: #4e3827
+            margin-bottom: 5px
+        p
+            font-size: 14px
+            line-height: 1.2
+            color: #4e3827
+    &__icon
 
 //===========MEDIA=============================================================================================================================================
 
@@ -312,12 +426,22 @@ button
         padding: 50px 15px
     // #tefalcook .app-tefalcook__list p:not(:last-child)
     //     margin-bottom: 25px
+    #tefalcook .fast-tefalcook__items:not(:last-child)
+        margin-bottom: 20px
+    #tefalcook .multi-tefalcook__row
+        flex-direction: column
+        align-items: center
+        gap: 20px
 
 @media screen and (max-width: 975px)
     #tefalcook .column-tefalcook__row
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 
 @media screen and (max-width: 767.98px)
+    #tefalcook .spec-tefalcook__row
+        overflow-x: scroll
+    #tefalcook .spec-tefalcook__item
+        min-width: 160px
     #tefalcook .header-tefalcook__logo img
         width: 300px
     #tefalcook .header-tefalcook__image img
@@ -345,11 +469,47 @@ button
         transform: translateY(0)
         top: 0%
     #tefalcook .column-tefalcook__row
-        gap: 30px 15px
+        gap: 20px 15px
+    #tefalcook .fast-tefalcook__row
+        flex-wrap: wrap-reverse
+        gap: 20px
+        justify-content: center
+    #tefalcook .fast-tefalcook__col
+        flex: 0 1 auto
+    #tefalcook .fast-tefalcook__box
+        margin-bottom: 20px
+    #tefalcook .fast-tefalcook
+        padding: 30px 15px
+    #tefalcook .multi-tefalcook__text
+        width: auto
+    #tefalcook .spec-tefalcook
+        padding-top: 30px
+        padding-bottom: 50px
 
 @media screen and (max-width: 601px)
     #tefalcook .header-tefalcook__title
         left: 45%
+
+@media screen and (max-width: 580px)
+    #tefalcook .spec-tefalcook__row
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 8px
+    #tefalcook .spec-tefalcook__text h2
+        font-size: 16px
+    #tefalcook .spec-tefalcook__text p
+        font-size: 13px
+    #tefalcook .spec-tefalcook__text
+        width: auto
+    #tefalcook .spec-tefalcook__icon
+        img
+            width: 23px
+    #tefalcook .spec-tefalcook__image
+        img
+            width: 80px
+    #tefalcook .spec-tefalcook__item
+        min-width: 130px
+    #tefalcook .spec-tefalcook__button p
+        padding: 12px 20px
 
 @media screen and (max-width: 560px)
     #tefalcook .column-tefalcook__row
@@ -374,6 +534,28 @@ button
         gap: 15px 10px
     #tefalcook .column-tefalcook__text p
         padding-top: 10px
+
+@media screen and (max-width: 440px)
+    #tefalcook .spec-tefalcook__text h2
+        font-size: 14px
+    #tefalcook .spec-tefalcook__text p
+        font-size: 9px
+    #tefalcook .spec-tefalcook__button p
+        padding: 8px 11px
+    #tefalcook .spec-tefalcook__item
+        min-width: 100px
+        padding: 10px 0
+    #tefalcook .spec-tefalcook__item_5,
+    #tefalcook .spec-tefalcook__item_9,
+    #tefalcook .spec-tefalcook__item_13,
+    #tefalcook .spec-tefalcook__item_17,
+    #tefalcook .spec-tefalcook__item_21,
+    #tefalcook .spec-tefalcook__item_25,
+    #tefalcook .spec-tefalcook__item_29,
+    #tefalcook .spec-tefalcook__item_33
+        min-width: 120px
+    #tefalcook .spec-tefalcook__row
+        gap: 5px
 
 @media screen and (max-width: 366.98px)
     #tefalcook .header-tefalcook__title

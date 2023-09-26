@@ -255,7 +255,7 @@ button {
   left: 0;
   width: 22px;
   height: 22px;
-  background: url("../img/img9.png") 0 0 no-repeat;
+  background: url("https://cdn.comfy.ua/media/x/img3/2626495/img9.png") 0 0 no-repeat;
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
@@ -338,6 +338,7 @@ button {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 15px;
 }
 #tefalcook .fast-tefalcook__col {
   -webkit-box-flex: 0;
@@ -349,6 +350,7 @@ button {
 #tefalcook .fast-tefalcook__item h2 {
   font-size: 21px;
   line-height: 1.2;
+  margin-bottom: 10px;
   color: #7c7c7c;
   text-align: center;
 }
@@ -383,16 +385,21 @@ button {
   line-height: 1.2;
   color: #7c7c7c;
   text-align: center;
+  padding-top: 20px;
 }
 @media (max-width: 1600px) {
   #tefalcook .fast-tefalcook__item-text p {
-    font-size: -webkit-calc(15px + 3 * ((100vw - 320px) / 1280));
-    font-size: calc(15px + 3 * ((100vw - 320px) / 1280));
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1280));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1280));
   }
+}
+#tefalcook .fast-tefalcook__items:not(:last-child) {
+  margin-bottom: 40px;
 }
 #tefalcook .fast-tefalcook__items h2 {
   font-size: 21px;
   line-height: 1.2;
+  margin-bottom: 10px;
   color: #7c7c7c;
   text-align: center;
 }
@@ -400,6 +407,20 @@ button {
   #tefalcook .fast-tefalcook__items h2 {
     font-size: -webkit-calc(16px + 5 * ((100vw - 320px) / 1280));
     font-size: calc(16px + 5 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .fast-tefalcook__items span {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #7c7c7c;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+@media (max-width: 1600px) {
+  #tefalcook .fast-tefalcook__items span {
+    font-size: -webkit-calc(14px + 4 * ((100vw - 320px) / 1280));
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1280));
   }
 }
 #tefalcook .fast-tefalcook__inner {
@@ -422,6 +443,209 @@ button {
           flex: 0 1 33.3333%;
 }
 
+#tefalcook .multi-tefalcook {
+  padding: 0 15px 30px;
+}
+#tefalcook .multi-tefalcook__row {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#tefalcook .multi-tefalcook__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#tefalcook .multi-tefalcook__text {
+  width: 90%;
+  margin: 0 auto;
+}
+#tefalcook .multi-tefalcook__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+#tefalcook .multi-tefalcook__text h2 {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  color: #de1720;
+}
+@media (max-width: 1600px) {
+  #tefalcook .multi-tefalcook__text h2 {
+    font-size: -webkit-calc(20px + 30 * ((100vw - 320px) / 1280));
+    font-size: calc(20px + 30 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .multi-tefalcook__text span {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #4e3827;
+  display: block;
+}
+@media (max-width: 1600px) {
+  #tefalcook .multi-tefalcook__text span {
+    font-size: -webkit-calc(16px + 12 * ((100vw - 320px) / 1280));
+    font-size: calc(16px + 12 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .multi-tefalcook__text h4 {
+  font-size: 21px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: #7c7c7c;
+}
+@media (max-width: 1600px) {
+  #tefalcook .multi-tefalcook__text h4 {
+    font-size: -webkit-calc(18px + 3 * ((100vw - 320px) / 1280));
+    font-size: calc(18px + 3 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .multi-tefalcook__text p {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #7c7c7c;
+}
+@media (max-width: 1600px) {
+  #tefalcook .multi-tefalcook__text p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1280));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .multi-tefalcook__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#tefalcook .multi-tefalcook__image img {
+  margin-right: 0;
+}
+
+#tefalcook .spec-tefalcook {
+  padding: 100px 15px 100px;
+}
+#tefalcook .spec-tefalcook__row {
+  display: grid;
+  grid-template-columns: 232px 1fr 1fr 1fr;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#tefalcook .spec-tefalcook__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+#tefalcook .spec-tefalcook__item_3 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+#tefalcook .spec-tefalcook__item_4 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+#tefalcook .spec-tefalcook__button p {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: bold;
+  color: #e23232;
+  padding: 10px 30px;
+  border: 2px solid #e23232;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1600px) {
+  #tefalcook .spec-tefalcook__button p {
+    font-size: -webkit-calc(15px + 3 * ((100vw - 320px) / 1280));
+    font-size: calc(15px + 3 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .spec-tefalcook__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#tefalcook .spec-tefalcook__title {
+  margin-bottom: 10px;
+}
+#tefalcook .spec-tefalcook__title p {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #240824;
+  text-align: center;
+}
+@media (max-width: 1600px) {
+  #tefalcook .spec-tefalcook__title p {
+    font-size: -webkit-calc(16px + 2 * ((100vw - 320px) / 1280));
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1280));
+  }
+}
+#tefalcook .spec-tefalcook__text {
+  width: 90%;
+}
+#tefalcook .spec-tefalcook__text h2 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #4e3827;
+  margin-bottom: 5px;
+}
+#tefalcook .spec-tefalcook__text p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #4e3827;
+}
 @media screen and (max-width: 1300px) {
   #tefalcook .cookme-tefalcook {
     padding: 100px 15px;
@@ -439,6 +663,24 @@ button {
   #tefalcook .cookme-tefalcook {
     padding: 50px 15px;
   }
+  #tefalcook .fast-tefalcook__items:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #tefalcook .multi-tefalcook__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 975px) {
   #tefalcook .column-tefalcook__row {
@@ -446,6 +688,12 @@ button {
   }
 }
 @media screen and (max-width: 767.98px) {
+  #tefalcook .spec-tefalcook__row {
+    overflow-x: scroll;
+  }
+  #tefalcook .spec-tefalcook__item {
+    min-width: 160px;
+  }
   #tefalcook .header-tefalcook__logo img {
     width: 300px;
   }
@@ -494,12 +742,70 @@ button {
     top: 0%;
   }
   #tefalcook .column-tefalcook__row {
-    gap: 30px 15px;
+    gap: 20px 15px;
+  }
+  #tefalcook .fast-tefalcook__row {
+    -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    gap: 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #tefalcook .fast-tefalcook__col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+       -moz-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+  #tefalcook .fast-tefalcook__box {
+    margin-bottom: 20px;
+  }
+  #tefalcook .fast-tefalcook {
+    padding: 30px 15px;
+  }
+  #tefalcook .multi-tefalcook__text {
+    width: auto;
+  }
+  #tefalcook .spec-tefalcook {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 601px) {
   #tefalcook .header-tefalcook__title {
     left: 45%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #tefalcook .spec-tefalcook__row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+  }
+  #tefalcook .spec-tefalcook__text h2 {
+    font-size: 16px;
+  }
+  #tefalcook .spec-tefalcook__text p {
+    font-size: 13px;
+  }
+  #tefalcook .spec-tefalcook__text {
+    width: auto;
+  }
+  #tefalcook .spec-tefalcook__icon img {
+    width: 23px;
+  }
+  #tefalcook .spec-tefalcook__image img {
+    width: 80px;
+  }
+  #tefalcook .spec-tefalcook__item {
+    min-width: 130px;
+  }
+  #tefalcook .spec-tefalcook__button p {
+    padding: 12px 20px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -535,6 +841,34 @@ button {
   }
   #tefalcook .column-tefalcook__text p {
     padding-top: 10px;
+  }
+}
+@media screen and (max-width: 440px) {
+  #tefalcook .spec-tefalcook__text h2 {
+    font-size: 14px;
+  }
+  #tefalcook .spec-tefalcook__text p {
+    font-size: 9px;
+  }
+  #tefalcook .spec-tefalcook__button p {
+    padding: 8px 11px;
+  }
+  #tefalcook .spec-tefalcook__item {
+    min-width: 100px;
+    padding: 10px 0;
+  }
+  #tefalcook .spec-tefalcook__item_5,
+  #tefalcook .spec-tefalcook__item_9,
+  #tefalcook .spec-tefalcook__item_13,
+  #tefalcook .spec-tefalcook__item_17,
+  #tefalcook .spec-tefalcook__item_21,
+  #tefalcook .spec-tefalcook__item_25,
+  #tefalcook .spec-tefalcook__item_29,
+  #tefalcook .spec-tefalcook__item_33 {
+    min-width: 120px;
+  }
+  #tefalcook .spec-tefalcook__row {
+    gap: 5px;
   }
 }
 @media screen and (max-width: 366.98px) {
