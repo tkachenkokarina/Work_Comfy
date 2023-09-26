@@ -1,0 +1,603 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1200px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+            span
+                font-weight: 700
+            b
+                font-weight: 800
+    &__box
+        margin-bottom: 10px
+    &__text
+        &_tl
+            flex: 0 1 60%
+            padding: 14% 22% 20% 11%
+    &__col
+        margin-bottom: 10px
+    &__item
+        &_br
+            flex: 0 1 40%
+            padding-top: 35%
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        @include position($position: relative, $zIndex: 4)
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+    &__subtitle
+        @include position($position: absolute, $zIndex: 5)
+        bottom: 0
+        left: 15px
+        p
+            span
+                @include fonts($fontSize: 12px, $lineHeight: 1)
+                font-weight: 400
+    &__logo
+        @include position($position: absolute, $zIndex: 5)
+        bottom: 0
+        right: 0
+
+#maincontent .bosch-smartsensor
+    &__box
+        margin-bottom: 10px
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1663873_1/img02.png"))
+        padding: 5px
+    &__inner
+        flex-direction: column
+        @include position($position: relative, $zIndex: 6)
+    &__text
+        margin-left: auto
+        padding: 5px
+        &_tr
+            width: 60%
+            margin-bottom: 50%
+        &_br
+            width: 50%
+            margin-top: 87px
+    &__img
+        display: none
+    &__subtitle
+        order: -1
+
+#maincontent .bosch-aircycle
+    &__box
+        margin-bottom: 10px
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1663873_1/img03.png"))
+        padding: 5px
+    &__inner
+        justify-content: space-between
+        align-items: flex-start
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        width: 40%
+        padding: 10px 5px
+        margin-bottom: 35%
+    &__img
+        display: none
+    &__subtitle
+        left: auto
+        right: 15px
+
+#maincontent .bosch-selfclean
+    &__box
+        margin-bottom: 10px
+    &__image        
+        flex: 0 1 60%        
+    &__item
+        flex: 0 1 40%
+    &__subtitle
+        left: auto
+        right: 20%
+#maincontent .bosch-filters
+    &__box
+        margin-bottom: 10px
+    &__item
+        &_pos
+            @include position($position: relative, $zIndex: 6)            
+        &_row
+            display: flex
+            flex-direction: row
+    &__image
+        max-width: 700px
+        height: 652px
+        overflow: hidden
+        @include position($position: relative, $zIndex: 6)        
+        img
+            @include position($position: absolute, $zIndex: 7)
+            height: 100%
+            width: auto
+            display: block
+            top: 0
+            left: 0
+        &_row
+            flex: 0 1 45%
+    &__text
+        &_pos
+            @include position($position: absolute, $zIndex: 8)
+            width: 50%
+            top: 20px
+            left: 20px            
+    &__content
+        &_row
+            flex: 0 1 55%
+#maincontent .bosch-characteristicks
+    &__box
+        margin-bottom: 10px
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1663873_1/img06.png"))
+        padding: 20px 5px
+    &__inner
+        @include position($position: relative, $zIndex: 6)
+        justify-content: flex-start
+    &__text
+        width: 30%
+        &_tl
+            margin-bottom: 50%
+            margin-left: 20px
+        &_cc, &_br
+            @include position($position: absolute, $zIndex: 7)
+            width: 22%
+        &_cc
+            top: 50%
+            left: 55%
+        &_br
+            top: 75%
+            right: 20px
+    &__img
+        display: none
+
+#maincontent .bosch-turbo
+    margin-bottom: 10px
+    &__inner
+        gap: 50px
+        padding-bottom: 50px
+    &__text
+        padding: 50px 20px 40px        
+
+#maincontent .col-maincontent
+    margin-bottom: 10px
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 20px
+    &__logo
+        grid-column: 3/-1
+        img
+            margin-left: auto
+    &__subtitle
+        right: 20%
+
+#maincontent .bosch-warranty
+    &__box
+        margin-bottom: 10px
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1663873_1/img09.jpg"))
+        padding: 20px 5px
+    &__inner
+        display: flex
+        flex-direction: column
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        width: 28%
+        margin: 10% 0
+        padding: 0 10px
+        p
+            text-align: left
+    &__subtitle
+        left: 63%
+    &__img
+        display: none
+
+#maincontent .logo
+    &__inner
+        max-width: 768px
+        margin: 0 auto
+    &__img
+        margin-bottom: 30px
+    &__text
+        padding: 0 20px
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1100.98px)
+    #maincontent .bosch-aircycle
+        &__text
+            &_br
+                top: 70%
+    
+    #maincontent .bosch-warranty
+        &__text
+            width: 25%
+        &__subtitle
+            left: 60%
+        
+@media screen and (max-width: 1024.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (32 - 22) * ((100vw - 320px)/(1024 - 320)))
+            h3
+                font-size: calc( 18px + (28 - 18) * ((100vw - 320px)/(1024 - 320)))
+            p
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1024 - 320)))
+        &__text
+            &_tc
+                margin-bottom: 3%
+            &_c
+                width: 40%
+                margin-right: 44%
+            &_tl
+                padding: 11% 15% 20% 9%
+    #maincontent .row-maincontent
+        &__subtitle
+            p
+                span
+                    font-size: calc( 8px + (12 - 8) * ((100vw - 320px)/(1024 - 320)))
+    #maincontent .bosch-smartsensor
+        &__text
+            &_br
+                width: 60%
+
+    #maincontent .bosch-aircycle
+        &__text
+            &_br
+                top: 70%    
+    
+@media screen and (max-width: 991.98px)
+    #maincontent .bosch-aircycle
+        &__text
+            &_tl
+                margin-top: 40px
+            &_br
+                top: 60%
+    #maincontent .bosch-selfclean
+        &__inner
+            align-items: stretch
+        &__image
+            flex: 0 1 50%
+        &__item
+            flex: 0 1 50%
+        &__subtitle
+            right: 23%
+        &__logo
+            top: 85%
+            left: 78%
+   
+    #maincontent .bosch-filters
+        &__inner
+            flex-direction: column
+        &__item
+            &_pos
+                display: flex
+                flex-direction: column-reverse
+        &__image
+            height: 100%
+            img
+                position: unset
+        &__text
+            &_pos
+                position: unset
+                width: auto
+    #maincontent .bosch-turbo
+        &__inner
+            gap: 20px
+            padding-bottom: 80px
+        &__text
+            padding: 20px 20px 10px
+    #maincontent .col-maincontent
+        &__subtitle
+            right: 25%
+    #maincontent .bosch-warranty
+        &__bg
+            background: none
+        &__inner
+            flex-direction: column
+        &__text
+            width: auto
+            margin: 10px 0 0
+            padding: 0 5px
+            p
+                text-align: center
+        &__logo
+            position: unset
+            img
+                margin-left: auto
+        &__subtitle
+            position: unset
+            margin-left: auto
+        &__img
+            display: block
+            order: -1
+@media screen and (max-width: 850.98px)   
+    #maincontent .bosch-selfclean
+        &__logo
+            top: 87%
+@media screen and (max-width: 830.98px)
+    #maincontent .bosch-smartsensor
+        &__text
+            &_br
+                width: 65%
+    #maincontent .bosch-selfclean
+        &__inner
+            margin-bottom: 50px
+        &__subtitle
+            top: 101%
+        &__logo
+            top: 96%
+    #maincontent .bosch-aircycle
+        &__text
+            width: 35%
+            &_tl
+                margin-top: 35px
+            &_br
+                top: 65%
+    #maincontent .col-maincontent
+        &__subtitle
+            right: 28%
+    #maincontent .bosch-warranty
+        &__subtitle
+            right: 28%
+
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, h3
+                margin: 10px 0
+        &__box
+            @include flex-box($justifyContent: center, $alignItems: center)
+            flex-direction: column-reverse
+            margin-bottom: 0
+        &__bg
+            background: none
+            padding: 0px 5px
+        &__text
+            margin: 0 auto
+            width: auto
+            &_tl
+                padding: 0
+            &_br
+                p
+                    margin-bottom: 0
+        &__img
+            display: block
+        &__item
+            &_br
+                padding-top: 0
+                margin: 0 auto
+                @include flex-box($justifyContent: center, $alignItems: center)
+                flex-direction: column-reverse
+                p
+                    margin-top: 10px        
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+        &__text
+            padding: 0 5px
+        &__subtitle
+            position: unset
+            margin-left: auto
+        &__logo
+            position: unset
+            img
+                margin-left: auto
+                width: 30%
+    #maincontent .bosch-smartsensor
+        &__box
+            margin-bottom: 0
+        &__bg
+            background: none
+            padding: 0
+        &__inner
+            flex-direction: column
+        &__text
+            padding: 0 5px
+            &_tr
+                p
+                    margin-top: 10px
+        &__img
+            display: block
+            order: -1
+        &__subtitle
+            order: 1
+    #maincontent .bosch-aircycle
+        &__box
+            margin-bottom: 0
+        &__inner
+            flex-direction: column-reverse
+        &__text
+            width: auto
+            margin-bottom: 0
+            padding: 0 5px
+        &__subtitle
+            order: -1
+    #maincontent .bosch-selfclean
+        &__box
+            margin-bottom: 0
+        &__inner
+            margin-bottom: 0        
+    #maincontent .bosch-filters
+        &__box
+            margin-bottom: 0
+    #maincontent .bosch-characteristicks
+        &__bg
+            padding: 0
+        &__text
+            &_tl
+                p
+                    margin-top: 10px
+            &_cc, &_br
+                position: unset        
+    #maincontent .bosch-turbo
+        margin-bottom: 0
+        &__inner
+            gap: 10px
+            padding-bottom: 0
+        &__item
+            display: flex
+            flex-direction: column-reverse
+        &__logo
+            display: none
+    #maincontent .col-maincontent
+        &__inner
+            grid-template-columns: 1fr
+            gap: 0
+        &__img
+            margin: 0 auto
+        &__text
+            p
+                margin-top: 10px
+            &_1
+                grid-row: 1
+            &_2
+                grid-row: 3
+            &_3
+                grid-row: 5
+        &__logo
+            grid-column: auto
+            img
+                width: 30%
+    #maincontent .bosch-warranty
+        &__bg
+            padding: 0 5px
+        &__text
+            p
+                margin-top: 10px
+        &__img
+            order: -1
+        &__logo
+            img
+                width: 30%
+    #maincontent .logo
+        &__img
+            margin-bottom: 10px
+            img
+                width: 80%
+                margin: 0 auto
+        &__text
+            padding: 0 5px
+
+@media screen and (max-width: 479.98px)    
+    #maincontent .bosch-filters
+        &__item
+            &_row
+                flex-direction: column
+        &__image
+            &_row
+                img
+                    margin: 0 auto
+        &__text
+            &_row
+                p
+                    margin-top: 10px

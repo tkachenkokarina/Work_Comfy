@@ -1,0 +1,71 @@
+<style>
+        #boschbgs7pow1 .bc-description__content p{margin-bottom:0}#boschbgs7pow1 .bc-description__content h3{text-align:left}#boschbgs7pow1 p{margin:0;padding:0;text-align:left}#boschbgs7pow1 h1,#boschbgs7pow1 h2,#boschbgs7pow1 h3,#boschbgs7pow1 h4,#boschbgs7pow1 h5,#boschbgs7pow1 h6{padding:0;margin:0;text-align:left;text-transform:none}#boschbgs7pow1{display:flex;flex-direction:column;margin:0 auto;overflow:hidden;background-color:#fff}#boschbgs7pow1 p::first-letter{padding-left:0}[class*=__container]{max-width:1000px;margin:0 auto;padding:0 15px}[class*=-ibg]{position:relative}[class*=-ibg] img{position:absolute;width:100%;height:100%;top:0;left:0;-o-object-fit:cover;object-fit:cover}[class*=-ibg_contain] img{-o-object-fit:contain;object-fit:contain}#boschbgs7pow1 img{opacity:1;max-width:100%;display:block;margin:0 auto}#boschbgs7pow1 img:hover{opacity:1}#boschbgs7pow1 .boschbgs7pow1__box{padding-top:20px}#boschbgs7pow1 .boschbgs7pow1__box h2{font-size:30px;line-height:1.2;margin-bottom:10px;text-align:center}#boschbgs7pow1 .boschbgs7pow1__box img{max-height:800px}#boschbgs7pow1 .row-boschbgs7pow1__inner{display:flex;align-items:center}#boschbgs7pow1 .row-boschbgs7pow1__item{flex:0 1 50%}#boschbgs7pow1 .row-boschbgs7pow1__text{max-width:400px;margin:0 auto;padding:10px}#boschbgs7pow1 .row-boschbgs7pow1__text h4{font-size:18px;line-height:1.2;margin-bottom:10px}#boschbgs7pow1 .row-boschbgs7pow1__text p{font-size:16px;line-height:1.2}#boschbgs7pow1 .row-boschbgs7pow1__image{flex:0 1 50%}#boschbgs7pow1 .row-boschbgs7pow1__inner-rev{flex-direction:row-reverse}@media screen and (max-width: 1000px){#boschbgs7pow1 .boschbgs7pow1__box h2{font-size:30px}}@media screen and (max-width: 1000px)and (max-width: 1000px){#boschbgs7pow1 .boschbgs7pow1__box h2{font-size:calc(22px + 8 * ((100vw - 320px) / 680))}}@media screen and (max-width: 767.98px){#boschbgs7pow1 .row-boschbgs7pow1__inner{flex-direction:column}#boschbgs7pow1 .row-boschbgs7pow1__text{max-width:100%}#boschbgs7pow1 .row-boschbgs7pow1__text h4,#boschbgs7pow1 .row-boschbgs7pow1__text p{text-align:center}#boschbgs7pow1 .row-boschbgs7pow1__text{padding:20px 0 10px}}
+    </style>
+
+    <div id="boschbgs7pow1">
+        <div class="boschbgs7pow1__container">
+            <div class="boschbgs7pow1__box">
+                <h2>Bosch BGS7POW1 – революционный безмешковый пылесос для сухой уборки.</h2>
+                <img src="https://cdn.comfy.ua/media/x/img3/1663873/img1.jpg" alt="">
+            </div>
+            <div class="boschbgs7pow1__row row-boschbgs7pow1">
+                <div class="row-boschbgs7pow1__inner">
+                    <div class="row-boschbgs7pow1__item">
+                        <div class="row-boschbgs7pow1__text">
+                            <h4>Мощная турбощетка для глубокой чистки и сложных загрязнений</h4>
+                            <p>Достигните безупречных результатов уборки с помощью мощной турбощетки, специально
+                                разработанной для эффективной уборки пыли, волокон, нитей и волос на коврах.</p>
+                        </div>
+                    </div>
+                    <div class="row-boschbgs7pow1__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1663873/img2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-boschbgs7pow1__inner row-boschbgs7pow1__inner-rev">
+                    <div class="row-boschbgs7pow1__item">
+                        <div class="row-boschbgs7pow1__text">
+                            <h4>SmartSensor Control: всегда максимальная производительность</h4>
+                            <p>Достигните непревзойденных результатов уборки с помощью SmartSensor Control, который
+                                бесперебойно следит за вашим вакуумом. Светодиодный дисплей уведомит вас, когда фильтр
+                                требует очистки для поддержания высокого уровня производительности из комнаты в комнату.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-boschbgs7pow1__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1663873/img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-boschbgs7pow1__inner">
+                    <div class="row-boschbgs7pow1__item">
+                        <div class="row-boschbgs7pow1__text">
+                            <h4>Технология AirCycle: система автоматического разделения пыли</h4>
+                            <p>Достигайте идеальной чистоты без ущерба для производительности благодаря технологии
+                                Automatic AirCycle! Сочетание интеллектуального потока воздуха, мощного двигателя Bosch,
+                                а также умных датчиков, инициирующих процесс очистки фильтра, обеспечивает длительную
+                                высокую производительность для безупречных результатов уборки в течение долгих лет.</p>
+                        </div>
+                    </div>
+                    <div class="row-boschbgs7pow1__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1663873/img4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-boschbgs7pow1__inner row-boschbgs7pow1__inner-rev">
+                    <div class="row-boschbgs7pow1__item">
+                        <div class="row-boschbgs7pow1__text">
+                            <h4>Автоматическая система очистки SelfClean</h4>
+                            <p>Благодаря сенсорной системе SelfClean ухаживать за пылесосом Bosch BGS7POW1 легко и
+                                беззаботно! Автоматическая система SelfClean с сенсорным управлением постоянно проверяет
+                                эффективность пылесоса. И при необходимости позволяет удобно активировать автоматическую
+                                систему самоочистки для возобновления оптимальной работы.</p>
+                        </div>
+                    </div>
+                    <div class="row-boschbgs7pow1__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1663873/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="boschbgs7pow1__image">
+                <img src="https://cdn.comfy.ua/media/x/img/1638166/10_years.jpg" alt="">
+            </div>
+        </div>
+    </div>
