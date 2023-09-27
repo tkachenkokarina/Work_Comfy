@@ -1,0 +1,545 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1200px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 32px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+            span
+                font-weight: 700
+            b
+                font-weight: 800
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        @include position($position: relative, $zIndex: 5)
+        margin-bottom: 10px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        &_w
+            color: #fff
+    &__image
+        flex: 0 1 50%
+    &__logo
+        @include position($position: absolute, $zIndex: 6)
+        bottom: 0
+        right: 0
+        img
+            margin-left: auto
+    &__subtitle
+        p
+            span
+                @include fonts($fontSize: 12px, $lineHeight: 1)
+                font-weight: 400
+        &_w
+            color: #fff
+
+#maincontent .bosch-powercontrol
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img02.png"))
+    &__inner
+        flex-direction: column
+        color: #fff
+        justify-content: space-between
+    &__title
+        margin: 30px 15px 40% auto
+        width: 30%
+        padding: 5px 15px
+    &__item
+        @include flex-box($justifyContent: space-between, $alignItems: flex-end)
+        margin-top: auto
+        width: 100%
+    &__text
+        width: 32%
+    &__subtitle
+        padding: 15px
+    &__img
+        display: none
+
+#maincontent .bosch-design
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img03.png"))
+    &__inner
+        min-height: 100vh
+    &__text
+        margin-top: 20%
+        width: 26%
+        margin-right: auto
+    &__img
+        display: none
+
+#maincontent .bosch-easyclean
+    &__inner
+        align-items: stretch
+    &__item
+        @include position($position: relative, $zIndex: 5)
+    &__image
+        height: 550px
+        width: 100%
+        overflow: hidden
+        position: relative
+        img
+            height: 100%
+            width: auto
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        width: 50%
+        &_br
+            bottom: 0
+            right: 0
+        &_tl
+            top: 0
+            right: 0
+    &__subtitle
+        @include position($position: absolute, $zIndex: 6)
+        bottom: 5px
+        right: 15px
+
+#maincontent .bosch-filters
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img05.png"))
+    &__inner
+        min-height: 100vh
+        justify-content: space-between
+        align-items: stretch
+        p
+            font-size: 21px
+    &__item
+        flex: 0 1 23%
+        margin-top: 20px
+        @include position($position: relative, $zIndex: 6)     
+    &__content
+        margin-top: 50%   
+    &__text
+        margin-bottom: 100%
+    &__subtitle
+        @include position($position: absolute, $zIndex: 7)
+        bottom: 0
+        right: 0
+        padding: 0 5px
+    &__img
+        display: none
+
+#maincontent .bosch-storage
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img06.png"))
+        background-position: 50%
+    &__inner
+        min-height: 100vh
+        justify-content: flex-end
+    &__text
+        padding: 5px
+        background-color: #fff
+        h3
+            margin: 0
+    &__img
+        display: none
+
+#maincontent .bosch-workingradius
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img07.png"))
+    &__inner
+        min-height: 100vh
+        justify-content: flex-start
+        align-items: flex-start
+    &__text
+        padding: 25% 65px 10px 10px
+    &__img
+        display: none
+
+#maincontent .bosch-brush
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+    &__text    
+        &_pos
+            @include position($position: absolute, $zIndex: 6)
+            top: 50%
+            left: 50%
+            margin-right: -50%
+            transform: translate(-50%, -50%)
+        &_mb
+            margin-bottom: 30px
+    &__image
+        &_s
+            width: 70%        
+    &__content
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin-bottom: 150px
+        &:last-child
+            margin-bottom: 0
+        
+#maincontent .bosch-warranty
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/1878836/img09_1.png"))
+    &__inner
+        min-height: 100vh
+        justify-content: flex-start
+        align-items: flex-start
+        @include position($position: relative, $zIndex: 5)        
+    &__item
+        flex: 0 1 40%        
+    &__text
+        padding: 20px 60px 10px 20px
+    &__image
+        @include position($position: absolute, $zIndex: 6)
+        bottom: 0
+        right: 0
+        width: 26%
+        img
+            margin-left: auto        
+    &__subtitle
+        @include position($position: absolute, $zIndex: 6)
+        left: 15px
+        bottom: 0        
+    &__img
+        display: none
+
+#maincontent .logo
+    &__inner
+        max-width: 768px
+        margin: 0 auto
+    &__img
+        margin-bottom: 30px
+    &__text
+        padding: 0 20px
+
+#maincontent .bosch-accessories
+    &__title
+        margin-bottom: 40px
+    &__text
+        padding: 10px 50px
+
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1150.98px)
+    #maincontent .bosch-filters
+        &__content
+            margin-top: 0
+            h3
+                margin-top: 0
+@media screen and (max-width: 1100.98px)
+    #maincontent .bosch-workingradius
+        &__bg
+            background-position: 0
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (32 - 22) * ((100vw - 320px)/(1024 - 320)))
+            h3
+                font-size: calc( 18px + (28 - 18) * ((100vw - 320px)/(1024 - 320)))
+            p
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1024 - 320)))
+    #maincontent .row-maincontent
+        &__subtitle
+            p
+                span
+                    font-size: calc( 8px + (12 - 8) * ((100vw - 320px)/(1024 - 320)))
+    #maincontent .bosch-design
+        &__text
+            margin-top: 40%
+    #maincontent .bosch-filters
+        &__inner
+            p
+                font-size: 21px
+    // #maincontent .bosch-warranty
+        // &__inner
+        //     flex-direction: row-reverse
+        // &__text
+        //     padding-right: 20px
+@media screen and (max-width: 991.98px)
+    #maincontent .bosch-design
+        &__text
+            margin-top: 50%
+            width: 40%
+    #maincontent .bosch-easyclean
+        &__image
+            height: 530px
+    #maincontent .bosch-filters
+        &__bg
+            background: none
+        &__inner
+            flex-direction: column
+            min-height: auto
+            p
+                font-size: calc( 16px + (21 - 16) * ((100vw - 320px)/(991 - 320)))   
+        &__text
+            margin-bottom: 0
+        &__subtitle
+            position: unset
+            p
+                text-align: right
+        &__img
+            display: block
+    #maincontent .bosch-workingradius
+        &__text
+            padding-right: 10px
+    #maincontent .bosch-brush
+        &__text
+            &_mb
+                margin-bottom: 60px
+@media screen and (max-width: 850.98px)
+    #maincontent .bosch-design
+        &__text
+            margin-top: 60%
+            width: 50%
+    #maincontent .bosch-easyclean
+        &__image
+            height: 490px
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin: 0 0 10px
+            h3
+                margin: 10px 0
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+            margin-bottom: 0
+        &__text
+            padding: 0 5px
+            h2
+                margin: 10px 0
+            &_w
+                color: #000
+        &__title
+            h3
+                margin: 0 auto
+        &__logo
+            position: unset
+            width: 30%
+            margin-left: auto
+        &__subtitle
+            margin-left: auto
+            padding: 0 5px
+            &_w
+                color: #000
+    #maincontent .bosch-powercontrol
+        &__bg
+            background: none
+        &__inner
+            color: #000
+        &__title, &__text
+            width: auto
+            margin-bottom: 0
+            margin: 0 auto
+        &__item
+            flex-direction: column
+        &__img
+            display: block
+            order: -1
+    #maincontent .bosch-design
+        &__bg
+            background: none
+        &__inner
+            min-height: auto
+            flex-direction: column-reverse
+        &__text
+            width: auto
+            margin: 0 auto
+            p
+                margin-top: 10px
+        &__img
+            display: block
+    #maincontent .bosch-easyclean
+        &__image
+            height: 100%
+            img
+                position: unset
+        &__text
+            position: unset
+            width: auto
+            &_w
+                color: #000
+            p
+                margin-top: 10px
+        &__subtitle
+            position: unset
+            p
+                text-align: right
+    #maincontent .bosch-filters
+        &__item
+            margin-top: 0
+            h3
+                margin-bottom: 10px
+        
+        &__img
+            order: -1
+            margin-bottom: 10px
+    #maincontent .bosch-storage
+        &__bg
+            background: none
+        &__inner
+            justify-content: flex-start
+            min-height: auto
+        &__text
+            h3
+                margin-bottom: 10px
+        &__img
+            display: block
+    #maincontent .bosch-workingradius
+        &__bg  
+            background: none
+        &__inner
+            min-height: auto 
+        &__text
+            p
+                margin-top: 10px
+        &__img
+            display: block    
+    #maincontent .bosch-brush
+        &__item
+            display: flex
+            flex-direction: column
+            &_rev
+                flex-direction: column-reverse
+        &__image
+            width: 70%
+            margin: 0 auto
+        &__text
+            p
+                margin-top: 10px
+            &_pos
+                position: unset 
+                transform: translate(0, 0) 
+                margin: 0 auto            
+        &__content
+            flex-direction: column-reverse
+            margin-bottom: 0
+        &__logo
+            order: -1
+    #maincontent .bosch-warranty
+        &__bg
+            background: none
+        &__inner
+            min-height: auto
+        &__text
+            p
+                margin-top: 10px
+        &__img
+            display: block
+        &__image
+            display: none
+        &__subtitle
+            position: unset
+            p
+                text-align: right
+    #maincontent .logo
+        &__inner
+            display: flex
+            flex-direction: column-reverse
+        &__text
+            p
+                margin-top: 10px
+//@media screen and (max-width: 479.98px)
