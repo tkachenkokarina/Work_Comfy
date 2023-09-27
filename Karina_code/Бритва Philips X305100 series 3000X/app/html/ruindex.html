@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #philipseries ul,#philipseries ol,#philipseries li{list-style:none;padding:0;margin:0}#philipseries .bc-description__content p{margin-bottom:0}#philipseries .bc-description__content h3{text-align:left}#philipseries h1,#philipseries h2,#philipseries h3,#philipseries h4,#philipseries h5,#philipseries h6{text-transform:none;font-weight:bold}#philipseries{margin:0 auto;overflow:hidden;background-color:#fff}#philipseries h1,#philipseries h2,#philipseries h3,#philipseries h4,#philipseries h5,#philipseries h6,#philipseries p{margin:0;padding:0;text-align:left}#philipseries p::first-letter{padding-left:0}#philipseries img{opacity:1;max-width:100%;display:block;margin:0 auto}#philipseries img:hover{opacity:1}#philipseries .philipseries__container{max-width:1500px;margin:0 auto;padding:0 15px}#philipseries .header-philipseries__top{padding:50px 0}#philipseries .header-philipseries__top h2{font-size:36px;line-height:1.2;font-weight:700;text-align:center}#philipseries .header-philipseries__top p{font-size:36px;line-height:1.2;text-align:center}#philipseries .header-philipseries__bg{position:relative;z-index:2}#philipseries .header-philipseries__logo{position:absolute;z-index:5;top:0;left:4%;right:70%}#philipseries .header-philipseries__number{position:absolute;z-index:5;bottom:0;left:4%;right:70%}#philipseries .electro-philipseries__title{padding:40px 0}#philipseries .electro-philipseries__title h2{font-size:36px;line-height:1.2;font-weight:700;text-align:center}#philipseries .electro-philipseries__bg{position:relative;z-index:2;background:url("https://cdn.comfy.ua/media/x/img3/2616064/img4.png") 30% 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:659px}#philipseries .electro-philipseries__column{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:3%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:30px;max-width:600px;padding-right:15px}#philipseries .electro-philipseries__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:28px}#philipseries .electro-philipseries__icon{-webkit-box-flex:0;-webkit-flex:0 0 112px;-moz-box-flex:0;-ms-flex:0 0 112px;flex:0 0 112px}#philipseries .electro-philipseries__text h4{font-size:36px;line-height:1.2;font-weight:700;color:#fff}#philipseries .electro-philipseries__text p{font-size:36px;line-height:1.2;font-weight:300;color:#fff}#philipseries .spec-philipseries{padding:50px}#philipseries .spec-philipseries__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#philipseries .spec-philipseries__row_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#philipseries .spec-philipseries__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipseries .spec-philipseries__text{width:80%;margin:0 auto}#philipseries .spec-philipseries__text h2{font-size:36px;line-height:1.2;margin-bottom:10px;font-weight:700}#philipseries .spec-philipseries__text p{font-size:24px;line-height:1.2;font-weight:300}#philipseries .spec-philipseries__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipseries .table-philipseries{padding:130px 0 20px}#philipseries .table-philipseries__title-big h2{font-size:36px;line-height:1.2;margin-bottom:45px;font-weight:700;text-align:center}#philipseries .table-philipseries__title h2{font-size:28px;line-height:1.2;font-weight:700;text-align:center}@media(max-width: 1500px){#philipseries .table-philipseries__title h2{font-size:-webkit-calc(16px + 12 * ((100vw - 320px) / 1180));font-size:calc(16px + 12 * ((100vw - 320px) / 1180))}}#philipseries .table-philipseries__row{display:grid;grid-template-columns:repeat(5, 1fr);gap:20px 10px}#philipseries .table-philipseries__item:nth-child(6),#philipseries .table-philipseries__item:nth-child(12),#philipseries .table-philipseries__item:nth-child(18),#philipseries .table-philipseries__item:nth-child(24),#philipseries .table-philipseries__item:nth-child(30),#philipseries .table-philipseries__item:nth-child(36),#philipseries .table-philipseries__item:nth-child(42),#philipseries .table-philipseries__item:nth-child(48),#philipseries .table-philipseries__item:nth-child(54),#philipseries .table-philipseries__item:nth-child(60),#philipseries .table-philipseries__item:nth-child(66),#philipseries .table-philipseries__item:nth-child(72),#philipseries .table-philipseries__item:nth-child(78){grid-column:1/6}#philipseries .table-philipseries__body{padding:14px;background:rgba(0,0,0,.0509803922)}#philipseries .table-philipseries__body h4{font-size:24px;line-height:1.2;font-weight:700}#philipseries .table-philipseries__text p{font-size:22px;line-height:1.2;font-weight:400;text-align:center}@media(max-width: 1500px){#philipseries .table-philipseries__text p{font-size:-webkit-calc(16px + 6 * ((100vw - 320px) / 1180));font-size:calc(16px + 6 * ((100vw - 320px) / 1180))}}#philipseries .table-philipseries__text_bl{position:relative;z-index:2}#philipseries .table-philipseries__text_bl::before{content:"";position:absolute;z-index:5;top:5px;left:0;right:0;margin:0 auto;background-color:#000;width:11px;height:11px;-webkit-border-radius:50%;border-radius:50%}#philipseries .table-philipseries__snoska{padding:50px 15px}#philipseries .table-philipseries__snoska span{font-size:14px;line-height:1.2}@media screen and (max-width: 991.98px){#philipseries .spec-philipseries{padding:30px 20px}}@media screen and (max-width: 767.98px){#philipseries .header-philipseries__top h2,#philipseries .header-philipseries__top p{font-size:26px}#philipseries .header-philipseries__top{padding:30px 0}#philipseries .electro-philipseries__title h2,#philipseries .electro-philipseries__text h4,#philipseries .electro-philipseries__text p,#philipseries .spec-philipseries__text h2,#philipseries .table-philipseries__title-big h2{font-size:26px}#philipseries .spec-philipseries__text p,#philipseries .table-philipseries__body h4{font-size:18px}#philipseries .electro-philipseries__icon{-webkit-box-flex:0;-webkit-flex:0 0 80px;-moz-box-flex:0;-ms-flex:0 0 80px;flex:0 0 80px}#philipseries .electro-philipseries__bg{background-position-x:50%}#philipseries .spec-philipseries{padding:30px 0px}#philipseries .spec-philipseries__text{width:90%}#philipseries .table-philipseries__item{min-width:136px}#philipseries .table-philipseries__row{overflow-x:scroll;padding-bottom:20px}#philipseries .table-philipseries__text p{font-size:16px}#philipseries .table-philipseries__title-big h2{margin-bottom:25px}#philipseries .table-philipseries{padding-top:50px}}@media screen and (max-width: 610px){#philipseries .spec-philipseries__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#philipseries .spec-philipseries__text{width:auto;padding:15px 0}#philipseries .spec-philipseries__text h2,#philipseries .spec-philipseries__text p{text-align:center}}@media screen and (max-width: 479.98px){#philipseries .header-philipseries__top{padding:20px 0}#philipseries .header-philipseries__top h2,#philipseries .spec-philipseries__text h2{font-size:18px}#philipseries .header-philipseries__top p,#philipseries .spec-philipseries__text p{font-size:16px}#philipseries .electro-philipseries__title h2,#philipseries .electro-philipseries__text h4{font-size:18px}#philipseries .electro-philipseries__text p{font-size:16px}#philipseries .electro-philipseries__bg{background-position-x:60%;min-height:430px}#philipseries .electro-philipseries__icon{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#philipseries .electro-philipseries__column{gap:15px}#philipseries .spec-philipseries{padding:10px 0 20px}#philipseries .table-philipseries__title-big h2{font-size:20px}#philipseries .table-philipseries__snoska{padding:15px}#philipseries .table-philipseries{padding-top:10px}}@media screen and (max-width: 411px){#philipseries .table-philipseries__item{min-width:110px}#philipseries .table-philipseries__body h4{font-size:16px}#philipseries .table-philipseries__body{padding:11px}#philipseries .table-philipseries__text p{font-size:14px}#philipseries .table-philipseries__row{gap:14px 10px}#philipseries .table-philipseries__snoska{padding:15px 0}}
+    </style>
+
+    <div id="philipseries">
+        <div class="philipseries__container">
+            <div class="philipseries__header header-philipseries">
+                <div class="header-philipseries__top">
+                    <h2>Тщательное и удобное бритье</h2>
+                    <p>Электробритва Philips X3051/00 серии 3000Х</p>
+                </div>
+                <div class="header-philipseries__bg">
+                    <div class="header-philipseries__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img3.png" alt="">
+                    </div>
+                    <div class="header-philipseries__number">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img2.png" alt="">
+                    </div>
+                    <div class="header-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipseries__electro electro-philipseries">
+                <div class="electro-philipseries__title">
+                    <h2>Особенности электробритвы Philips</h2>
+                </div>
+                <div class="electro-philipseries__bg">
+                    <div class="electro-philipseries__column">
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img5.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Лезвия PowerCut</h4>
+                                <p>созданы для постоянного, тщательного бритья</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img6.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Головки 4D Flex</h4>
+                                <p>повторяют контуры лица для удобного бритья</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img7.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Открывается одним нажатием</h4>
+                                <p>для легкой очистки</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img8.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Эргономичная ручка</h4>
+                                <p>для удобного использования</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="electro-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img4.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+            <div class="philipseries__spec spec-philipseries">
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Лезвия PowerCut</h2>
+                            <p>27 самозаточных лезвий последовательно подстригают каждый волосок прямо над уровнем кожи
+                                для равномерного бритья каждый раз.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Головки 4D Flex</h2>
+                            <p>Плавающие головки двигаются в четырех направлениях, чтобы поддерживать равномерный
+                                контакт с кожей, не повреждая ее.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Антикоррозионные лезвия</h2>
+                            <p>Наши лезвия изготовлены из гипоаллергенной стали хирургического класса, чтобы
+                                противостоять коррозии, предотвращать загрязнение и защищать вашу кожу.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img22.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Влажное и сухое бритье</h2>
+                            <p>Выберите удобное сухое бритье или в паре с любимой пенкой или гелем для освежающего
+                                влажного бритья, даже в душе.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img23.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Встроенный триммер</h2>
+                            <p>Подравнивайте усы и бакенбарды благодаря встроенному триммеру.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img24.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Время работы</h2>
+                            <p>Мощная никель-металл гидридная батарея обеспечивает 45 минут работы после 1 часа
+                                зарядки.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img14.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Водонепроницаемость</h2>
+                            <p>Мойте под проточной водой или брейтесь под душем.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img15.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Легкая очистка 1 нажатием</h2>
+                            <p>Головка бритвы открывается одним нажатием кнопки для очистки проточной водой.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Индикатор батареи</h2>
+                            <p>Сообщит, когда уровень заряда низкий или заряжается.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Эргономичная резиновая ручка</h2>
+                            <p>Ручка остается надежной и практичной даже когда она влажная, поэтому ее удобно держать в
+                                руке.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Защитный колпачок</h2>
+                            <p>В комплекте защитный колпачок, поддерживающий чистоту бритвенной головки между сеансами
+                                бритья или во время поездки.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img16.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipseries__table table-philipseries">
+                <div class="table-philipseries__title-big">
+                    <h2>Сравнительная таблица</h2>
+                </div>
+                <div class="table-philipseries__row">
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img17.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серии 1000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img18.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серии 3000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img19.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серии 5000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img20.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серии 7000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img21.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серии 9000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Технология</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinProtect</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Лезвия</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>27 лезвий PowerCut</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>27 лезвий PowerCut</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 лезвий SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 лезвий SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>72 лезвия Dual SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик адаптации мощности</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>125 считываний/сек</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>250 считываний/сек</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>500 считываний/сек</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик давления</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Защитное покрытие</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Nano SkinGlide</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Nano SkinGlide</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Гибкие головки</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>4D Flex</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>4D Flex</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик управления движениями</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Встроенный триммер</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Мобильное приложение GroomTribe</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Аккумулятор</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>NiMH</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>NiMH</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Время работы</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>40 мин</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 мин</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 мин</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 мин</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 мин</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Время зарядки</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>8 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Быстрая зарядка</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 мин для 1 бритья</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 мин для 1 бритья</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 мин для 1 бритья</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 мин для 1 бритья</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-philipseries__snoska">
+                    <span>*Источник: Euromonitor International Limited, продажи в ценах потребителя согласно определению
+                        категории бритья и эпиляция, данные за 2022 год, исследование проведено в декабре 2022
+                        года.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="philipseries">
+        <div class="philipseries__container">
+            <div class="philipseries__header header-philipseries">
+                <div class="header-philipseries__top">
+                    <h2>Ретельне й зручне гоління</h2>
+                    <p>Електробритва Philips X3051/00 серії 3000Х</p>
+                </div>
+                <div class="header-philipseries__bg">
+                    <div class="header-philipseries__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img3.png" alt="">
+                    </div>
+                    <div class="header-philipseries__number">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img2.png" alt="">
+                    </div>
+                    <div class="header-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipseries__electro electro-philipseries">
+                <div class="electro-philipseries__title">
+                    <h2>Особливості електробритви Philips</h2>
+                </div>
+                <div class="electro-philipseries__bg">
+                    <div class="electro-philipseries__column">
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img5.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Леза PowerCut</h4>
+                                <p>створені для постійного, ретельного гоління</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img6.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Голівки 4D Flex</h4>
+                                <p>повторюють контури обличчя для зручного гоління</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img7.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Відкривається одним натисканням</h4>
+                                <p>для легкого очищення</p>
+                            </div>
+                        </div>
+                        <div class="electro-philipseries__item">
+                            <div class="electro-philipseries__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img8.png" alt="">
+                            </div>
+                            <div class="electro-philipseries__text">
+                                <h4>Ергономічна ручка</h4>
+                                <p>для зручного користування</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="electro-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img4.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+            <div class="philipseries__spec spec-philipseries">
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Леза PowerCut</h2>
+                            <p>27 самозаточувальних лез послідовно підстригають кожну волосинку прямо над рівнем шкіри
+                                для рівномірного гоління кожного разу.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Голівки 4D Flex</h2>
+                            <p>Плаваючі головки рухаються в чотирьох напрямках, щоб підтримувати рівномірний контакт з
+                                шкірою, не пошкоджуючи її.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Антикорозійні леза</h2>
+                            <p>Наші леза виготовлені з гіпоалергенної сталі хірургічного класу, щоб протистояти корозії,
+                                запобігати забрудненню та захищати вашу шкіру.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img22.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Вологе та сухе гоління</h2>
+                            <p>Виберіть зручне сухе гоління або в парі з улюбленою пінкою чи гелем для освіжаючого
+                                вологого гоління, навіть в душі.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img23.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Вбудований тример</h2>
+                            <p>Підрівнюйте вуса та бакенбарди завдяки вбудованому тримеру.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img24.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Час роботи</h2>
+                            <p>Потужна нікель-металогідридна батарея забезпечує 45 хвилин роботи після 1 години заряджання.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img14.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Водонепроникність</h2>
+                            <p>Мийте під проточною водою або голіться під душем.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img15.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Легке очищення 1 натисканням</h2>
+                            <p>Голівка бритви відкривається одним натисканням кнопки, для очищення проточною водою.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Індикатор батареї</h2>
+                            <p>Повідомить, коли рівень заряду низький чи пристрій заряджається.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Ергономічна гумова ручка</h2>
+                            <p>Ручка залишається надійною та практичною, навіть коли вона волога, тому її зручно тримати
+                                в руці.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-philipseries__row spec-philipseries__row_rev">
+                    <div class="spec-philipseries__item">
+                        <div class="spec-philipseries__text">
+                            <h2>Захисний ковпачок</h2>
+                            <p>У комплекті є захисний ковпачок, який підтримує чистоту бритвенної голівки між сеансами
+                                гоління чи під час подорожі.</p>
+                        </div>
+                    </div>
+                    <div class="spec-philipseries__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616064/img16.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipseries__table table-philipseries">
+                <div class="table-philipseries__title-big">
+                    <h2>Порівняльна таблиця</h2>
+                </div>
+                <div class="table-philipseries__row">
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img17.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серії 1000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img18.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серії 3000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img19.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серії 5000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img20.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серії 7000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__box">
+                            <div class="table-philipseries__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2616064/img21.png" alt="">
+                            </div>
+                            <div class="table-philipseries__title">
+                                <h2>Philips серії 9000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Технологія</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinProtect</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>SkinIQ</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Леза</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>27 лез PowerCut</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>27 лез PowerCut</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 лез SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 лез SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>72 леза Dual SteelPrecision</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик адаптації потужності</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>125 зчитувань за секунду</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>250 зчитувань за секунду</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>500 зчитувань за секунду</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик натиску</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Захисне покриття</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Nano SkinGlide</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Nano SkinGlide</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Гнучкі головки</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>4D Flex</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5D Pivot & Flex</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>360D</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Датчик керування рухами</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Вбудований тример</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Мобільний застосунок GroomTribe</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text table-philipseries__text_bl">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Акумулятор</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>NiMH</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>NiMH</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>Li-ion</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Час роботи</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>40 хв</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>45 хв</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 хв</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 хв</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>60 хв</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Час заряджання</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>8 год</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 год</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 год</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 ч</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>1 год</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__body">
+                            <h4>Швидке заряджання</h4>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>-</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 хв для 1 гоління</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 хв для 1 гоління</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 хв для 1 гоління</p>
+                        </div>
+                    </div>
+                    <div class="table-philipseries__item">
+                        <div class="table-philipseries__text">
+                            <p>5 хв для 1 гоління</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-philipseries__snoska">
+                    <span>*Джерело: Euromonitor International Limited, продажі в цінах споживача згідно з визначенням
+                        категорії гоління та епіляція, дані за 2022 рік, дослідження проведено в грудні 2022
+                        року.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
