@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #sonicare .bc-description__content p{margin-bottom:0}#sonicare .bc-description__content h3{text-align:left}#sonicare h1,#sonicare h2,#sonicare h3,#sonicare h4,#sonicare h5,#sonicare h6{text-transform:none;font-weight:bold}#sonicare{margin:0 auto;overflow:hidden;background-color:#fff}#sonicare h1,#sonicare h2,#sonicare h3,#sonicare h4,#sonicare h5,#sonicare h6,#sonicare p{margin:0;padding:0;text-align:left}#sonicare p::first-letter{padding-left:0}#sonicare img{opacity:1;max-width:100%;display:block;margin:0 auto}#sonicare img:hover{opacity:1}#sonicare .sonicare__container{max-width:1500px;margin:0 auto;padding:0 15px}#sonicare .header-sonicare__box{padding:30px 0}#sonicare .header-sonicare__box h2{font-size:36px;line-height:1.2;text-align:center;margin-bottom:8px;font-weight:700}@media(max-width: 1500px){#sonicare .header-sonicare__box h2{font-size:-webkit-calc(16px + 20 * ((100vw - 320px) / 1180));font-size:calc(16px + 20 * ((100vw - 320px) / 1180))}}#sonicare .header-sonicare__box p{font-size:36px;line-height:1.2;text-align:center;font-weight:300}@media(max-width: 1500px){#sonicare .header-sonicare__box p{font-size:-webkit-calc(16px + 20 * ((100vw - 320px) / 1180));font-size:calc(16px + 20 * ((100vw - 320px) / 1180))}}#sonicare .header-sonicare__bg{position:relative;z-index:2}#sonicare .header-sonicare__icon{position:absolute;z-index:5;top:0;left:4%;right:80%}#sonicare .video-sonicare{padding:50px 0}#sonicare .video-sonicare__media{max-width:1280px;width:100%;margin:0 auto;position:relative;z-index:2;padding-bottom:56%}#sonicare .video-sonicare__media iframe{position:absolute;z-index:5;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#sonicare .column-sonicare__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1420px;margin:0 auto}#sonicare .column-sonicare__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#sonicare .column-sonicare__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#sonicare .column-sonicare__text{width:80%;margin:0 auto}#sonicare .column-sonicare__text h2{font-size:36px;line-height:1.2;margin-bottom:10px;font-weight:700}@media(max-width: 1500px){#sonicare .column-sonicare__text h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 1180));font-size:calc(18px + 18 * ((100vw - 320px) / 1180))}}#sonicare .column-sonicare__text p{font-size:24px;line-height:1.2;font-weight:300}@media(max-width: 1500px){#sonicare .column-sonicare__text p{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1180));font-size:calc(16px + 8 * ((100vw - 320px) / 1180))}}#sonicare .column-sonicare__text ul{padding-left:20px}#sonicare .column-sonicare__text li{font-size:24px;line-height:1.2;font-weight:300;list-style-type:disc}@media(max-width: 1500px){#sonicare .column-sonicare__text li{font-size:-webkit-calc(16px + 8 * ((100vw - 320px) / 1180));font-size:calc(16px + 8 * ((100vw - 320px) / 1180))}}#sonicare .column-sonicare__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#sonicare .row-sonicare{padding:50px 0}#sonicare .row-sonicare__title{margin-bottom:50px}#sonicare .row-sonicare__title h2{font-size:36px;line-height:1.2;margin-bottom:10px;font-weight:700;text-align:center}@media(max-width: 1500px){#sonicare .row-sonicare__title h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 1180));font-size:calc(18px + 18 * ((100vw - 320px) / 1180))}}#sonicare .row-sonicare__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:50px;max-width:1420px;margin:0 auto}#sonicare .row-sonicare__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px}#sonicare .row-sonicare__icon{-webkit-box-flex:0;-webkit-flex:0 0 190px;-moz-box-flex:0;-ms-flex:0 0 190px;flex:0 0 190px}#sonicare .row-sonicare__text p{font-size:36px;line-height:1.2;font-weight:700}@media(max-width: 1500px){#sonicare .row-sonicare__text p{font-size:-webkit-calc(16px + 20 * ((100vw - 320px) / 1180));font-size:calc(16px + 20 * ((100vw - 320px) / 1180))}}#sonicare .footer-sonicare__title{padding:50px 0 40px}#sonicare .footer-sonicare__title h2{font-size:36px;line-height:1.2;margin-bottom:10px;font-weight:700;text-align:center}@media(max-width: 1500px){#sonicare .footer-sonicare__title h2{font-size:-webkit-calc(18px + 18 * ((100vw - 320px) / 1180));font-size:calc(18px + 18 * ((100vw - 320px) / 1180))}}#sonicare .footer-sonicare__text{padding:50px 0px 20px 50px}#sonicare .footer-sonicare__text p{font-size:14px;line-height:1.2}@media screen and (max-width: 767.98px){#sonicare .column-sonicare__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#sonicare .column-sonicare__text{width:auto;padding:15px 0 10px}#sonicare .column-sonicare__text h2,#sonicare .column-sonicare__text p{text-align:center}#sonicare .row-sonicare__icon{-webkit-box-flex:0;-webkit-flex:0 0 80px;-moz-box-flex:0;-ms-flex:0 0 80px;flex:0 0 80px}#sonicare .row-sonicare__item,#sonicare .row-sonicare__inner{gap:20px}#sonicare .row-sonicare__title{margin-bottom:20px}#sonicare .footer-sonicare__text{padding:30px 0px 20px 20px}#sonicare .footer-sonicare__title{padding:30px 0 20px}}@media screen and (max-width: 479.98px){#sonicare .header-sonicare__box{padding:20px 0 10px}#sonicare .video-sonicare{padding:10px 0 10px}}
+    </style>
+
+    <div id="sonicare">
+        <div class="sonicare__container">
+            <div class="sonicare__header header-sonicare">
+                <div class="header-sonicare__box">
+                    <h2>Philips Sonicare Power Flosser 3000
+                        <br>Ирригатор полости рта HX3826/33
+                    </h2>
+                    <p>Удаляет 99,9% налета на обробрабатываемых участках*</p>
+                </div>
+                <div class="header-sonicare__bg">
+                    <div class="header-sonicare__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img2.png" alt="">
+                    </div>
+                    <div class="header-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__video video-sonicare">
+                <div class="video-sonicare__media">
+                    <iframe src="https://www.youtube.com/embed/zNDx6LoRjl8?si=9kv2Lis5eEvgRyJ3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="sonicare__column column-sonicare">
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Технология Quad Stream</h2>
+                            <p>Для сверхтщательной чистки используйте насадку Quad Stream — она обеспечивает подачу воды
+                                в 4 широкие струи для чистки межзубных промежутков и вдоль линии десен.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Тщательная чистка</h2>
+                            <p>Технология импульсной волны устремляет вас от зуба к зубу, не пропуская ни одного
+                                промежутка для тщательной очистки всей полости рта.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Стандатный наконечник для точечной чистки</h2>
+                            <p>Для межзубных промежутков.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__row row-sonicare">
+                <div class="row-sonicare__title">
+                    <h2>2 режима, 3 уровня интенсивности</h2>
+                </div>
+                <div class="row-sonicare__inner">
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img6.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Чистка — идеально для ежедневного использования</p>
+                        </div>
+                    </div>
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img7.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Глубокая чистка — пульсирующий поток воды для более тщательного ухода</p>
+                        </div>
+                    </div>
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img8.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Три уровня интенсивности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__column column-sonicare">
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Легкий в использовании</h2>
+                            <p>Направьте насадку на межзубные промежутки, включите устройство и очищайте полость рта от
+                                зуба до зуба.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Быстрая, универсальная зарядка</h2>
+                            <p>Заряжайтесь с помощью кабеля USB-A. Используйте ирригатор до 14 дней без подзарядки.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Резервуар емкостью 250 мл</h2>
+                            <p>Открутите резервуар и наполните его водой или используйте боковой клапан для легкого
+                                наполнения водой.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Комплектация:</h2>
+                            <ul>
+                                <li>Ирригатор Power Flosser</li>
+                                <li>Насадка F1 Standard</li>
+                                <li>Насадка F3 Quad Stream</li>
+                                <li>Дорожный чехол</li>
+                                <li>Зарядный кабель USB</li>
+                                <li>Адаптер USB для електросети</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__footer footer-sonicare">
+                <div class="footer-sonicare__title">
+                    <h2>Выбирай свой Philips Sonicare Flosser</h2>
+                </div>
+                <div class="footer-sonicare__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2616087/img13.png" alt="">
+                </div>
+                <div class="footer-sonicare__text">
+                    <p>*Исследования in vitro, фактические индивидуальные результаты могут варьироваться</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="sonicare">
+        <div class="sonicare__container">
+            <div class="sonicare__header header-sonicare">
+                <div class="header-sonicare__box">
+                    <h2>Philips Sonicare Power Flosser 3000
+                        <br>Іригатор для ротової порожнини HX3826/33
+                    </h2>
+                    <p>Видаляє 99,9% нальоту на оброблюваних ділянках*</p>
+                </div>
+                <div class="header-sonicare__bg">
+                    <div class="header-sonicare__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img2.png" alt="">
+                    </div>
+                    <div class="header-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__video video-sonicare">
+                <div class="video-sonicare__media">
+                    <iframe src="https://www.youtube.com/embed/zNDx6LoRjl8?si=9kv2Lis5eEvgRyJ3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="sonicare__column column-sonicare">
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Технологія Quad Stream</h2>
+                            <p>Для максимально ретельного чищення обирайте насадку F3 Quad Stream, яка, завдяки хрестоподібному потоку води у чотирьох напрямках, охоплює максимальну площу міжзубних проміжків та ясен.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Ретельне чищення</h2>
+                            <p>Технологія імпульсної хвилі спрямовує вас від зуба до зуба, не пропускаючи жодного проміжку для ретельного очищення всієї порожнини рота.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Стандатний наконечник для точкового чищення</h2>
+                            <p>Для міжзубних проміжків.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__row row-sonicare">
+                <div class="row-sonicare__title">
+                    <h2>2 режими, 3 рівні інтенсивності</h2>
+                </div>
+                <div class="row-sonicare__inner">
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img6.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Очищення — ідеально для щоденного використання</p>
+                        </div>
+                    </div>
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img7.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Глибоке очищення — пульсуючий струмень води для більш ретельного догляду</p>
+                        </div>
+                    </div>
+                    <div class="row-sonicare__item">
+                        <div class="row-sonicare__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2616087/img8.png" alt="">
+                        </div>
+                        <div class="row-sonicare__text">
+                            <p>Три рівні інтенсивності</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__column column-sonicare">
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Легкий у використанні</h2>
+                            <p>Спрямуйте насадку на міжзубні проміжки, ввімкніть пристрій та очищайте порожнину рота від зуба до зуба.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Швидке, універсальне заряджання</h2>
+                            <p>Заряджайтесь за допомогою кабелю USB-A. Використовуйте іригатор до 14 днів без підзарядки.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Резервуар місткістю 250 мл</h2>
+                            <p>Відкрутіть резервуар та наповніть його водою, або використовуйте бічний клапан для легкого наповнення водою.</p>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="column-sonicare__inner column-sonicare__inner_rev">
+                    <div class="column-sonicare__item">
+                        <div class="column-sonicare__text">
+                            <h2>Комплектація:</h2>
+                            <ul>
+                                <li>Іригатор Power Flosser</li>
+                                <li>Насадка F1 Standard</li>
+                                <li>Насадка F3 Quad Stream</li>
+                                <li>Дорожній чохол</li>
+                                <li>Зарядний кабель USB</li>
+                                <li>Адаптер USB для електромережі</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-sonicare__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2616087/img12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="sonicare__footer footer-sonicare">
+                <div class="footer-sonicare__title">
+                    <h2>Обирай свій Philips Sonicare Flosser</h2>
+                </div>
+                <div class="footer-sonicare__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2616087/img13.png" alt="">
+                </div>
+                <div class="footer-sonicare__text">
+                    <p>*Дослідження in vitro, фактичні індивідуальні результати можуть варіюватися</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
