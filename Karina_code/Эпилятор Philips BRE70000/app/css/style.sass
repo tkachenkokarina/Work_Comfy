@@ -1,0 +1,597 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1520
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#philipsbre a
+    color: inherit
+    text-decoration: none
+
+#philipsbre
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#philipsbre .bc-description__content p
+    margin-bottom: 0
+
+#philipsbre .bc-description__content h3
+    text-align: left
+
+#philipsbre
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#philipsbre
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#philipsbre p::first-letter
+    padding-left: 0
+
+#philipsbre img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#philipsbre img:hover
+    opacity: 1
+
+#philipsbre .philipsbre__container
+    max-width: 1520px
+    margin: 0 auto
+    // padding: 0 10px
+
+//========================================================================================================================================================
+
+#philipsbre .header-philipsbre
+    &__bg
+        position: relative
+        z-index: 2
+    &__box
+        position: absolute
+        z-index: 5
+        bottom: 5%
+        left: 3%
+        max-width: 500px
+        h2
+            font-size: 34px
+            //@include adaptiv-value("font-size", 34, 20, 1)
+            line-height: 1.2
+            font-weight: 300
+            color: #91024b
+            margin-bottom: 60px
+        p
+            font-size: 54px
+            line-height: 1.2
+            font-weight: bold
+            color: #91024b
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 3%
+        right: 80%
+    &__image
+
+#philipsbre .spec-philipsbre
+    background: url('https://cdn.comfy.ua/media/x/img3/2616076/bg2.png') 0 0 no-repeat
+    background-size: cover
+    // min-height: auto
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__row
+        padding: 80px
+        display: flex
+        // align-items: center
+    &__col-image
+        flex: 0 1 33.3333%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__col
+        flex: 0 1 33.3333%
+        display: flex
+        flex-direction: column
+    &__item
+        display: flex
+        align-items: center
+        gap: 20px
+        &:not(:last-child)
+            margin-bottom: 50px
+        &_rev
+            flex-direction: row-reverse
+    &__text
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+        &_rev
+            p
+                text-align: right
+    &__icon
+        //flex: 0 0 120px
+        flex-grow: 0
+        flex-shrink: 0
+        @include adaptiv-value("flex-basis", 120, 50, 1)
+    &__image
+
+#philipsbre .result-philipsbre
+    background: url('https://cdn.comfy.ua/media/x/img3/2616076/bg2.png') 0 0 no-repeat
+    background-size: cover
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__bg
+        position: relative
+        z-index: 2
+        &_1
+        &_2
+    &__text
+        h2
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #ed4370
+            margin-bottom: 15px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+        &_1
+            position: absolute
+            z-index: 5
+            top: 8%
+            right: 3%
+            width: 70%
+        &_2
+            position: absolute
+            z-index: 5
+            top: 40%
+            right: 3%
+            //width: 50%
+            max-width: 700px
+        &_3
+            position: absolute
+            z-index: 5
+            top: 20%
+            left: 3%
+            width: 45%
+    &__image
+        &_1
+            img
+                margin: 0
+        &_2
+            img
+                margin-right: 0
+
+#philipsbre .column-philipsbre
+    background: url('https://cdn.comfy.ua/media/x/img3/2616076/bg4.png') 0 0 no-repeat
+    background-size: cover
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__row
+        padding: 50px 3%
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(230px, 1fr))
+        justify-content: center
+        justify-items: center
+        gap: 15px
+    &__item
+        max-width: 400px
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #ed4370
+            margin-bottom: 15px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+
+#philipsbre .comfort-philipsbre
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        left: 3%
+        width: 30%
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+    &__image
+
+#philipsbre .nozzle-philipsbre
+    background: url('https://cdn.comfy.ua/media/x/img3/2616076/bg5.png') 0 0 no-repeat
+    background-size: cover
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__row
+        display: flex
+        align-items: center
+        gap: 20px
+        padding: 50px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 90%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            color: #ed4370
+            margin-bottom: 15px
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#philipsbre .complect-philipsbre
+    background: url('https://cdn.comfy.ua/media/x/img3/2616076/bg6.png') 0 0 no-repeat
+    background-size: cover
+    padding: 0 0px 50px
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__bg
+        padding: 50px 10px
+        position: relative
+        z-index: 2
+        max-width: 1316px
+        margin: 0 auto
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        p
+            @include adaptiv-value("font-size", 28, 13, 1)
+            line-height: 1.2
+            text-align: center
+        &_1
+            bottom: 4%
+            left: 5%
+            width: 20%
+        &_2
+            bottom: 25%
+            left: 39%
+            width: 20%
+        &_3
+            bottom: 25%
+            //left: 72%
+            right: 3%
+            width: 20%
+    &__video
+        max-width: 1360px
+        margin: 0 auto
+        padding: 10px 0px 50%
+        position: relative
+        z-index: 2
+        iframe
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+#philipsbre .table-philipsbre
+    &__title
+        background-color: #ed4370
+        padding: 20px 15px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 22, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+    &__row
+        padding: 50px 15px
+        display: grid
+        grid-template-columns: repeat(7, 1fr)
+        gap: 15px
+    &__item
+        padding: 10px
+        background-color: #fff5f7b7
+        &:nth-child(8),
+        &:nth-child(16),
+        &:nth-child(24),
+        &:nth-child(32),
+        &:nth-child(40),
+        &:nth-child(48),
+        &:nth-child(56),
+        &:nth-child(64),
+        &:nth-child(72),
+        &:nth-child(80),
+        &:nth-child(88),
+        &:nth-child(96),
+        &:nth-child(104),
+        &:nth-child(112),
+        &:nth-child(120),
+        &:nth-child(128),
+        &:nth-child(136),
+        &:nth-child(144)
+            grid-column: 1/8
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6),
+        &:nth-child(10),
+        &:nth-child(12),
+        &:nth-child(14),
+        &:nth-child(18),
+        &:nth-child(20),
+        &:nth-child(22),
+        &:nth-child(26),
+        &:nth-child(28),
+        &:nth-child(30),
+        &:nth-child(34),
+        &:nth-child(36),
+        &:nth-child(38),
+        &:nth-child(42),
+        &:nth-child(44),
+        &:nth-child(46),
+        &:nth-child(50),
+        &:nth-child(52),
+        &:nth-child(54),
+        &:nth-child(58),
+        &:nth-child(60),
+        &:nth-child(62),
+        &:nth-child(66),
+        &:nth-child(68),
+        &:nth-child(70),
+        &:nth-child(74),
+        &:nth-child(76),
+        &:nth-child(78),
+        &:nth-child(82),
+        &:nth-child(84),
+        &:nth-child(86),
+        &:nth-child(90),
+        &:nth-child(92),
+        &:nth-child(94),
+        &:nth-child(98),
+        &:nth-child(100),
+        &:nth-child(102),
+        &:nth-child(106),
+        &:nth-child(108),
+        &:nth-child(110),
+        &:nth-child(114),
+        &:nth-child(116),
+        &:nth-child(118),
+        &:nth-child(122),
+        &:nth-child(124),
+        &:nth-child(126),
+        &:nth-child(130),
+        &:nth-child(132),
+        &:nth-child(134),
+        &:nth-child(138),
+        &:nth-child(140),
+        &:nth-child(142),
+        &:nth-child(146),
+        &:nth-child(148),
+        &:nth-child(150)
+            background-color: #ffdee3
+    &__body
+    &__body-text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 40px
+    &__body-image
+    &__text
+        h2
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ed4370
+        p
+            @include adaptiv-value("font-size", 20, 14, 1)
+            line-height: 1.2
+            text-align: center
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2616076/img26.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 426px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__bg-image
+
+//===========MEDIA=============================================================================================================================================
+
+    //@media screen and (max-width: 1300px)
+@media screen and (max-width: 1151px)
+    #philipsbre .spec-philipsbre__row
+        padding: 50px 40px
+
+@media screen and (max-width: 1024.98px)
+    #philipsbre .header-philipsbre__box h2
+        font-size: 25px
+        margin-bottom: 40px
+    #philipsbre .header-philipsbre__box p
+        font-size: 40px
+    #philipsbre .header-philipsbre__box
+        max-width: 400px
+
+@media screen and (max-width: 991.98px)
+    #philipsbre .spec-philipsbre__row
+        flex-direction: column
+    #philipsbre .spec-philipsbre__col
+        max-width: 600px
+        margin: 0 auto
+    #philipsbre .spec-philipsbre__row
+        padding: 30px 15px
+    #philipsbre .result-philipsbre__text_1
+        position: unset
+        width: auto
+        padding: 20px 15px
+    #philipsbre .result-philipsbre__text_2
+        width: 60%
+        top: 25%
+    #philipsbre .comfort-philipsbre__text
+        top: 34%
+    #philipsbre .nozzle-philipsbre__row
+        padding: 30px 15px
+    #philipsbre .table-philipsbre__row
+        overflow-x: scroll
+    #philipsbre .table-philipsbre__item
+        min-width: 120px
+
+@media screen and (max-width: 767.98px)
+    #philipsbre .header-philipsbre__box h2
+        font-size: 18px
+        margin-bottom: 15px
+    #philipsbre .header-philipsbre__box p
+        font-size: 25px
+    #philipsbre .header-philipsbre__box
+        max-width: 290px
+    #philipsbre .spec-philipsbre__item:not(:last-child)
+        margin-bottom: 40px
+    #philipsbre .comfort-philipsbre__text
+        top: 15%
+
+@media screen and (max-width: 621px)
+    #philipsbre .result-philipsbre__text_2
+        width: 66%
+        top: 31%
+    #philipsbre .result-philipsbre__text_3
+        width: 60%
+    #philipsbre .comfort-philipsbre__text
+        width: 50%
+    #philipsbre .complect-philipsbre__text_1
+        left: 2%
+        width: 30%
+    #philipsbre .complect-philipsbre__text_2
+        left: 35%
+        width: 27%
+    #philipsbre .complect-philipsbre__text_3
+        right: 2%
+        width: 25%
+
+@media screen and (max-width: 479.98px)
+    #philipsbre .header-philipsbre__box h2
+        font-size: 16px
+    #philipsbre .header-philipsbre__box p
+        font-size: 20px
+    #philipsbre .header-philipsbre__box
+        max-width: 200px
+    #philipsbre .spec-philipsbre__item:not(:last-child)
+        margin-bottom: 23px
+    #philipsbre .spec-philipsbre__item
+        gap: 10px
+    #philipsbre .result-philipsbre__text_2
+        position: unset
+        width: auto
+        padding: 0px 15px 0
+    #philipsbre .result-philipsbre__text_3
+        position: unset
+        width: auto
+        padding: 20px 15px 0
+    #philipsbre .column-philipsbre__row
+        padding: 30px 15px
+    #philipsbre .comfort-philipsbre__text
+        width: 70%
+    #philipsbre .nozzle-philipsbre__row
+        flex-direction: column
+    #philipsbre .nozzle-philipsbre__text
+        width: auto
+    #philipsbre .table-philipsbre__item
+        min-width: 80px
+    #philipsbre .table-philipsbre__row
+        padding: 30px 15px
+    #philipsbre .complect-philipsbre
+        padding-bottom: 20px
+    #philipsbre .complect-philipsbre__bg
+        padding-top: 20px
