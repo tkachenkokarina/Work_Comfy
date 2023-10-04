@@ -1,0 +1,172 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:60px;line-height:1;font-weight:600;margin:20px 0;text-align:center}#maincontent .maincontent__container h3{font-size:36px;line-height:1.09;font-weight:600;margin:20px 0;text-align:center}#maincontent .maincontent__container p{font-size:20px;line-height:1.3;font-weight:400;margin-bottom:10px;text-align:center;color:#333}#maincontent .maincontent__box{position:relative;z-index:5}#maincontent .maincontent__text{position:absolute;z-index:6;max-width:768px;padding:0 15px}#maincontent .maincontent__text_w h2,#maincontent .maincontent__text_w h3,#maincontent .maincontent__text_w p{color:#fff}#maincontent .maincontent__img_mob{display:none}#maincontent .lg-alldd__text{top:12%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}#maincontent .lg-intellect__text{top:12%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -34%);-ms-transform:translate(-50%, -34%);-o-transform:translate(-50%, -34%);transform:translate(-50%, -34%)}#maincontent .lg-aidd__text{top:50%;left:30px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);width:50%}#maincontent .lg-aidd__text h2,#maincontent .lg-aidd__text p{text-align:left}#maincontent .col__box_bg{background:#000}#maincontent .col__text{margin:50px auto;max-width:768px}#maincontent .col__text_w h2,#maincontent .col__text_w p{color:#fff}#maincontent .lg-strength__box{margin-bottom:50px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:left}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .lg-slider__box h2{margin:50px 0}#maincontent .lg-slider__text{padding-top:160px}#maincontent .lg-slider__pagination,#maincontent .swiper-pagination{top:0;bottom:auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}#maincontent .swiper-pagination{padding:30px 0}#maincontent .lg-slider__pagination .swiper-pagination-bullet{position:relative;z-index:4;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s;opacity:1;width:122px;height:122px}#maincontent .lg-slider__pagination .swiper-pagination-bullet:nth-child(1){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_1.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-slider__pagination .swiper-pagination-bullet:nth-child(2){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_2.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-slider__pagination .swiper-pagination-bullet:nth-child(3){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_3.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-slider__pagination .swiper-pagination-bullet::before{content:"";position:absolute;z-index:6;border:1.5px solid #8f8f8f;width:132px;height:132px;top:-5px;left:-5px;-webkit-border-radius:50%;border-radius:50%;-webkit-animation-name:circle-waves;-o-animation-name:circle-waves;animation-name:circle-waves;-webkit-animation-duration:3s;-o-animation-duration:3s;animation-duration:3s;-webkit-animation-delay:1.5s;-o-animation-delay:1.5s;animation-delay:1.5s;-webkit-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear}#maincontent .lg-slider__pagination .swiper-pagination-bullet::after{content:"";position:absolute;z-index:6;border:1.5px solid #8f8f8f;width:132px;height:132px;top:-5px;left:-5px;-webkit-border-radius:50%;border-radius:50%;-webkit-animation-name:circle-waves;-o-animation-name:circle-waves;animation-name:circle-waves;-webkit-animation-duration:3s;-o-animation-duration:3s;animation-duration:3s;-webkit-animation-iteration-count:infinite;-o-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;-o-animation-timing-function:linear;animation-timing-function:linear}#maincontent .lg-slider__pagination .swiper-pagination-bullet-active:nth-child(1){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_1_red.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-slider__pagination .swiper-pagination-bullet-active:nth-child(2){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_2_red.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-slider__pagination .swiper-pagination-bullet-active:nth-child(3){background-image:url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_3_red.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .lg-remotestart__box{margin-bottom:0}#maincontent .lg-black__text{margin-top:0;padding:0 15px}#maincontent .lg-black__text h2{margin-top:0;padding-top:50px}#maincontent .lg-babysteam__text{top:50%;left:30px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);width:50%}#maincontent .lg-babysteam__text h2,#maincontent .lg-babysteam__text p{text-align:left}#maincontent .lg-sizes__title h3{text-align:left;padding-left:30px}@-webkit-keyframes circle-waves{0%{-webkit-transform:scale(0.9);transform:scale(0.9)}100%{-webkit-transform:scale(1.4);transform:scale(1.4);opacity:0}}@-o-keyframes circle-waves{0%{-o-transform:scale(0.9);transform:scale(0.9)}100%{-o-transform:scale(1.4);transform:scale(1.4);opacity:0}}@keyframes circle-waves{0%{-webkit-transform:scale(0.9);-o-transform:scale(0.9);transform:scale(0.9)}100%{-webkit-transform:scale(1.4);-o-transform:scale(1.4);transform:scale(1.4);opacity:0}}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 38*(100vw - 320px)/1220);font-size:calc(22px + 38*(100vw - 320px)/1220)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 18*(100vw - 320px)/1220);font-size:calc(18px + 18*(100vw - 320px)/1220)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 4*(100vw - 320px)/1220);font-size:calc(16px + 4*(100vw - 320px)/1220)}}@media screen and (max-width: 991.98px){#maincontent .lg-aidd__text{left:15px}#maincontent .lg-sizes__title h3{padding-left:15px}}@media screen and (max-width: 860.98px){#maincontent .lg-aidd__text{width:50%}}@media screen and (max-width: 800.98px){#maincontent .lg-babysteam__text h2{margin-bottom:10px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container h3{margin:10px 0}#maincontent .maincontent__text_mob{position:unset;width:auto;margin:0 auto;-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0)}#maincontent .maincontent__img_desc{display:none}#maincontent .maincontent__img_mob{display:block}#maincontent .lg-alldd__text h3,#maincontent .lg-alldd__text h2{color:#000}#maincontent .lg-intellect__box{background-color:#101010}#maincontent .lg-intellect__text h2{margin-top:0;padding-top:20px}#maincontent .col__text{margin:0;padding:0 5px}#maincontent .lg-strength__box{margin-bottom:0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .lg-aidd__text h2,#maincontent .lg-aidd__text p,#maincontent .lg-babysteam__text h2,#maincontent .lg-babysteam__text p{text-align:center}#maincontent .lg-slider__text{margin-top:120px}#maincontent .lg-slider__pagination .swiper-pagination-bullet{width:61px;height:61px}#maincontent .lg-slider__pagination .swiper-pagination-bullet::before,#maincontent .lg-slider__pagination .swiper-pagination-bullet::after{width:71px;height:71px}#maincontent .lg-black__text{padding:0 15px}#maincontent .lg-black__text h2{margin-top:0;padding-top:20px}#maincontent .lg-sizes__title h3{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .lg-slider__text{margin-top:90px}#maincontent .lg-slider__pagination .swiper-pagination-bullet{width:41px;height:41px}#maincontent .lg-slider__pagination .swiper-pagination-bullet::before,#maincontent .lg-slider__pagination .swiper-pagination-bullet::after{width:51px;height:51px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box lg-alldd__box">
+<div class="maincontent__text maincontent__text_w maincontent__text_mob lg-alldd__text">
+<h3>Новий, інтелектуальний підхід</h3>
+<h2>Розумне покоління пральних машин LG</h2>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img01.png" /></div>
+</div>
+<div class="maincontent__box lg-intellect__box">
+<div class="maincontent__text maincontent__text_w maincontent__text_mob lg-intellect__text">
+<h2>Пральна машина, яка сама визначає тип тканини</h2>
+<p>Ця модель пральної машини має в пам'яті близько 20 000 поєднань тканини. Завдяки такій базі даних і                     її аналізу, машина самостійно підбирає алгоритм прання для різних типів білизни. Як результат —                     висока якість прання і до 18% менше пошкоджень.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img02.gif" /></div>
+</div>
+<div class="maincontent__box lg-aidd__box">
+<div class="maincontent__text maincontent__text_mob lg-aidd__text">
+<h2>Ai DD</h2>
+<p>Ai DD — це інтелектуальна система, яка визначає вагу, щільність та м'якість тканин.</p>
+</div>
+<div class="maincontent__img maincontent__img_desc"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img03_ua.png" /></div>
+<div class="maincontent__img maincontent__img_mob lg-aidd__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img03_s_ua.png" /></div>
+</div>
+<div class="maincontent__col col__box">
+<div class="col__text">
+<h2>Годину на прання</h2>
+<p>Технологія TurboWash зменшує час прання до 59 хвилин! І при цьому це ніяк не впливає на ефективність                     та якісні результати. Витрачайте менше часу на прання і більше — на спілкування з рідними та                     улюблені справи!</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img04.png" /></div>
+</div>
+<div class="maincontent__col col__box lg-energyefficiency__box">
+<div class="col__text lg-energyefficiency__text">
+<h3>Енергоефективність</h3>
+<h2>Високий показник</h2>
+<p>Виняткова енергоефективність класу А+++ -30%</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img05.png" /></div>
+</div>
+<div class="maincontent__col col__box lg-steam__box">
+<div class="col__text lg-steam__text">
+<h2>Безпека вашого здоров'я</h2>
+<p>Завдяки технології LG Steam, яка використовує пару під час прання, з вашої білизни видаляється до                     99,9% побутових алергенів.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img06.png" /></div>
+</div>
+<div class="maincontent__box lg-babysteam__box">
+<div class="maincontent__text maincontent__text_mob lg-babysteam__text">
+<h2>Ідеальний варіант для одягу малят</h2>
+<p>З функцією Steam ви можете не хвилюватися за одяг вашого малюка і його здоров'я. Пара видаляє до                     99,9% алергенів і бактерій з білизни.</p>
+</div>
+<div class="maincontent__img maincontent__img_desc"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img07.png" /></div>
+<div class="maincontent__img maincontent__img_mob lg-babysteam__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img07_s.png" /></div>
+</div>
+<div class="maincontent__col col__box">
+<div class="col__text">
+<h2>Більше завантаження, а розмір той самий</h2>
+<p>Завдяки покращеній системі амортизаторів в цій моделі знижений рівень вібрації, що дозволило зробити                     об'єм барабана більше. При цьому, розміри корпусу машини майже не змінилися.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img08.png" /></div>
+</div>
+<div class="maincontent__col col__box lg-strength__box">
+<div class="col__text lg-strength__text">
+<h2>Міцність та гігієна</h2>
+<p>Пральна машина створена з надійних якісних матеріалів, а її дизайн продуманий до дрібниць. Пластикова                     накладка на дверцятах захищає від пошкоджень та високих температур, а для підвищення довговічності                     барабана його ребра виготовлені з нержавіючої сталі і мають антибактеріальні особливості.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img09_ua.png" /></div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img10_ua.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Преміальний та зручний дизайн</h2>
+<p>Машина оснащена чітким дисплеєм, на якому зручно слідкувати за процесом прання, та збільшеним                             металевим перемикачем, з яким зручно перемикати програми.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__col col__box lg-slider__box">
+<h2>ThinQ</h2>
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide lg-slider__slide">
+<div class="lg-slider__card">
+<div class="col__text lg-slider__text">
+<h3>Керуйте пральною машиною за допомогою голосу</h3>
+<p>Ви можете займатися своїми справами або відпочивати, і водночас керувати роботою                                     машини. Питайте яка програма зараз працює або коли завершиться прання, і                                     дізнавайтеся відповідь за кілька секунд.</p>
+</div>
+<div class="col__img lg-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img11.png" /></div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="lg-slider__card">
+<div class="col__text lg-slider__text">
+<h3>Керуйте машиною навіть коли ви поза домом</h3>
+<p>За допомогою застосунку LG ThinQ ви можете запускати прання віддалено. Це дуже                                     зручно, коли ви завантажили речі, але забули увімкнути програму, або коли час бігти                                     у справах.</p>
+</div>
+<div class="col__img lg-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img11_2.png" /></div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="lg-slider__card">
+<div class="col__text lg-slider__text">
+<h3>Моніторинг стану машини</h3>
+<p>В додатку ви можете не тільки керувати машиною, але і перевіряти її стан,                                     завантажувати нові програми прання та стежити за енергоспоживанням.</p>
+</div>
+<div class="col__img lg-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img11_3.png" /></div>
+</div>
+</div>
+...</div>
+<div class="swiper-pagination lg-slider__pagination"></div>
+</div>
+</div>
+<div class="maincontent__col col__box lg-remotestart__box">
+<div class="col__text">
+<h2>Забули додати речі? Не біда!</h2>
+<p>Ви можете сміливо додати всі забуті речі після початку прання, а після цього машина продовжить прання                     на тому моменті, на якому ви її зупинили.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img12_ua.png" /></div>
+</div>
+<div class="maincontent__col col__box col__box_bg lg-black__box">
+<div class="col__text col__text_w lg-black__text">
+<h2>Контроль перепаду напруги</h2>
+<p>Пральна машина оснащена системою захисту від перепадів напруги. Завдяки цьому ви можете не                     хвилюватися, що пральна машина згорить від відключення світла або перепадів напруги у діапазоні                     174-400 Вольт.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img13.png" /></div>
+</div>
+<div class="maincontent__col col__box col__box_bg lg-black__box">
+<div class="col__text col__text_w lg-black__text">
+<h2>10 років додаткової гарантії</h2>
+<p>Окрім основної гарантії на 12 місяців компанія дає додаткову гарантію, яка поширюється на деталі                     інверторного двигуна Inverter Direct Drive з прямим приводом.</p>
+</div>
+<div class="maincontent__img maincontent__img_desc"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img14.png" /></div>
+<div class="maincontent__img maincontent__img_mob"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img14_s.png" /></div>
+</div>
+<div class="maincontent__col col__box">
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img15.png" /></div>
+<div class="col__text">
+<h2>Вибір року 2018-2021</h2>
+<p>В Україні компанія LG вже вчетверте поспіль виграє звання "Вибір року" в категорії "Пральні машини".                     Це вибір не тільки споживачів, але й експертів, представників рекламних агенцій, культури та                     оргкомітету конкурсу.</p>
+</div>
+</div>
+<div class="maincontent__box lg-sizes__box">
+<div class="maincontent__title lg-sizes__title">
+<h3>Розміри</h3>
+</div>
+<div class="maincontent__img maincontent__img_desc"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img16.png" /></div>
+<div class="maincontent__img maincontent__img_mob lg-babysteam__img"><img src="https://cdn.comfy.ua/media/x/img3/2228845/img16_s.png" /></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+        document.addEventListener("DOMContentLoaded", function () {
+const swiper = new Swiper('.swiper', {
+    speed: 300,
+    slidesPerView: 1,
+    spaceBetween: 10,    
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    
+});
+        });
+// ]]></script>

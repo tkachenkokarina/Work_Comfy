@@ -1,0 +1,381 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1600px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 60px, $lineHeight: 1)
+            font-weight: 600
+            margin: 20px 0
+            text-align: center
+        h3
+            @include fonts($fontSize: 36px, $lineHeight: 1.09)
+            font-weight: 600
+            margin: 20px 0
+            text-align: center
+        p
+            @include fonts($fontSize: 20px, $lineHeight: 1.3)
+            font-weight: 400
+            margin-bottom: 10px
+            text-align: center
+            color: #333
+    &__box
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        max-width: 768px
+        padding: 0 15px
+        &_w
+            h2, h3, p
+                color: #fff
+    &__img
+        &_mob
+            display: none
+
+#maincontent .lg-alldd
+    &__text
+        top: 12%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+
+#maincontent .lg-intellect
+    &__text
+        top: 12%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -34%)
+
+#maincontent .lg-aidd
+    &__text
+        top: 50%
+        left: 30px
+        transform: translateY(-50%)
+        width: 50%
+        h2, p
+            text-align: left
+
+#maincontent .col
+    &__box
+        &_bg
+            background: #000
+    &__text
+        margin: 50px auto
+        max-width: 768px
+        &_w
+            h2, p
+                color: #fff
+
+#maincontent .lg-strength
+    &__box
+        margin-bottom: 50px
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        h2, p
+            text-align: left
+    &__image
+        flex: 0 1 50%
+
+#maincontent .lg-slider
+    &__box
+        h2
+            margin: 50px 0
+    &__text
+        padding-top: 160px
+
+#maincontent .lg-slider__pagination, #maincontent .swiper-pagination
+    top: 0
+    bottom: auto
+    display: flex
+    justify-content: space-around
+
+#maincontent .swiper-pagination    
+    padding: 30px 0
+
+#maincontent .lg-slider__pagination .swiper-pagination-bullet
+    @include position($position: relative, $zIndex: 4)   
+    transition: all .3s ease 0s
+    opacity: 1
+    width: 122px
+    height: 122px
+    &:nth-child(1)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_1.png))
+    &:nth-child(2)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_2.png))
+    &:nth-child(3)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_3.png))
+    &::before
+        content: ""
+        @include position($position: absolute, $zIndex: 6)
+        border: 1.5px solid #8f8f8f
+        width: 132px
+        height: 132px
+        top: -5px
+        left: -5px
+        border-radius: 50%
+        animation-name: circle-waves
+        animation-duration: 3s
+        animation-delay: 1.5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+    &::after
+        content: ""
+        @include position($position: absolute, $zIndex: 6)
+        border: 1.5px solid #8f8f8f
+        width: 132px
+        height: 132px
+        top: -5px
+        left: -5px
+        border-radius: 50%
+        animation-name: circle-waves
+        animation-duration: 3s        
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+
+#maincontent .lg-slider__pagination .swiper-pagination-bullet-active
+    &:nth-child(1)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_1_red.png))
+    &:nth-child(2)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_2_red.png))
+    &:nth-child(3)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2228845/icon11_3_red.png))
+
+#maincontent .lg-remotestart
+    &__box
+        margin-bottom: 0
+
+#maincontent .lg-black
+    &__text
+        margin-top: 0
+        padding: 0 15px
+        h2
+            margin-top: 0
+            padding-top: 50px
+
+#maincontent .lg-babysteam
+    &__text
+        top: 50%
+        left: 30px
+        transform: translateY(-50%)
+        width: 50%
+        h2, p
+            text-align: left
+
+#maincontent .lg-sizes
+    &__title
+        h3
+            text-align: left
+            padding-left: 30px
+
+@keyframes circle-waves
+    0%
+        transform: scale(0.9)
+
+    100%
+        transform: scale(1.4)
+        opacity: 0
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1540px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (60 - 22) * ((100vw - 320px)/(1540 - 320)))
+            h3
+                font-size: calc( 18px + (36 - 18) * ((100vw - 320px)/(1540 - 320)))
+            p
+                font-size: calc( 16px + (20 - 16) * ((100vw - 320px)/(1540 - 320)))
+// @media screen and (max-width: 1260.98px)
+//     #maincontent .lg-slider
+//         &__text
+//             height: auto
+// @media screen and (max-width: 1024.98px) 
+@media screen and (max-width: 991.98px)
+    #maincontent .lg-aidd
+        &__text
+            left: 15px
+    #maincontent .lg-sizes
+        &__title
+            h3
+                padding-left: 15px
+@media screen and (max-width: 860.98px)
+    #maincontent .lg-aidd
+        &__text
+            width: 50%
+@media screen and (max-width: 800.98px)
+    #maincontent .lg-babysteam
+        &__text
+            h2
+                margin-bottom: 10px
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, h3
+                margin: 10px 0
+        &__text
+            &_mob
+                position: unset
+                width: auto
+                margin: 0 auto
+                transform: translate(0, 0)
+        &__img
+            &_desc
+                display: none
+            &_mob
+                display: block
+    #maincontent .lg-alldd
+        &__text
+            h3, h2
+                color: #000
+    #maincontent .lg-intellect
+        &__box
+            background-color: #101010
+        &__text
+            h2
+                margin-top: 0
+                padding-top: 20px
+    #maincontent .col
+        &__text
+            margin: 0
+            padding: 0 5px
+    #maincontent .lg-strength
+        &__box
+            margin-bottom: 0
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column-reverse
+        &__text
+            padding: 0 5px
+            h2, p
+                text-align: center
+    #maincontent .lg-aidd, #maincontent .lg-babysteam
+        &__text
+            h2, p
+                text-align: center
+    #maincontent .lg-slider
+        &__text
+            margin-top: 120px
+    #maincontent .lg-slider__pagination .swiper-pagination-bullet
+        width: 61px
+        height: 61px
+        &::before, &::after
+            width: 71px
+            height: 71px       
+    #maincontent .lg-black
+        &__text
+            padding: 0 15px
+            h2
+                margin-top: 0
+                padding-top: 20px
+    #maincontent .lg-sizes
+        &__title
+            h3
+                text-align: center
+@media screen and (max-width: 479.98px)
+    #maincontent .lg-slider
+        &__text
+            margin-top: 90px
+    #maincontent .lg-slider__pagination .swiper-pagination-bullet
+        width: 41px
+        height: 41px
+        &::before, &::after
+            width: 51px
+            height: 51px   
