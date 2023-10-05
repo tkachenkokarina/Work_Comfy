@@ -1,0 +1,437 @@
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+#xiaomis10 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#xiaomis10 ul,
+#xiaomis10 ol,
+#xiaomis10 li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#xiaomis10 .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#xiaomis10 .bc-description__content h3 {
+  text-align: left;
+}
+
+#xiaomis10 h1, #xiaomis10 h2, #xiaomis10 h3, #xiaomis10 h4, #xiaomis10 h5, #xiaomis10 h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#xiaomis10 {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#xiaomis10 h1, #xiaomis10 h2, #xiaomis10 h3, #xiaomis10 h4, #xiaomis10 h5, #xiaomis10 h6, #xiaomis10 p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#xiaomis10 p::first-letter {
+  padding-left: 0;
+}
+
+#xiaomis10 img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#xiaomis10 img:hover {
+  opacity: 1;
+}
+
+#xiaomis10 .xiaomis10__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#xiaomis10 .header-xiaomis10__bg {
+  position: relative;
+  z-index: 2;
+}
+#xiaomis10 .header-xiaomis10__text {
+  position: absolute;
+  z-index: 5;
+  top: 20%;
+  left: 5%;
+  width: 50%;
+}
+#xiaomis10 .header-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .header-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .header-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .header-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .header-xiaomis10__image {
+  background: url("https://cdn.comfy.ua/media/x/img3/2457436/img1.png") right 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding-bottom: 50%;
+}
+
+#xiaomis10 .washed-xiaomis10 {
+  padding-top: 20px;
+}
+#xiaomis10 .washed-xiaomis10__bg {
+  position: relative;
+  z-index: 2;
+}
+#xiaomis10 .washed-xiaomis10__text {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+#xiaomis10 .washed-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .washed-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .washed-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .washed-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .charge-xiaomis10 {
+  padding-top: 20px;
+}
+#xiaomis10 .charge-xiaomis10__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#xiaomis10 .charge-xiaomis10__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#xiaomis10 .charge-xiaomis10__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#xiaomis10 .charge-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .charge-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .charge-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .charge-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .charge-xiaomis10__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#xiaomis10 .clean-xiaomis10__bg {
+  position: relative;
+  z-index: 2;
+}
+#xiaomis10 .clean-xiaomis10__text {
+  position: absolute;
+  z-index: 5;
+  top: 20%;
+  right: 5%;
+  width: 40%;
+}
+#xiaomis10 .clean-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .clean-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .clean-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .clean-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .clean-xiaomis10__image {
+  background: url("https://cdn.comfy.ua/media/x/img3/2457436/img4.png") left 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  padding-bottom: 50%;
+}
+
+#xiaomis10 .navigation-xiaomis10__bg {
+  background-color: #d0c8bc;
+  padding: 20px 15px 0;
+}
+#xiaomis10 .navigation-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .navigation-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .navigation-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .navigation-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .sertificat-xiaomis10__bg {
+  background: #d0c8bc;
+  padding: 20px 15px;
+}
+#xiaomis10 .sertificat-xiaomis10__text {
+  margin-bottom: 20px;
+}
+#xiaomis10 .sertificat-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .sertificat-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .sertificat-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .sertificat-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .app-xiaomis10__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#xiaomis10 .app-xiaomis10__row_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#xiaomis10 .app-xiaomis10__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#xiaomis10 .app-xiaomis10__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#xiaomis10 .app-xiaomis10__text h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .app-xiaomis10__text h2 {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .app-xiaomis10__text p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  #xiaomis10 .app-xiaomis10__text p {
+    font-size: -webkit-calc(16px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(16px + 6 * ((100vw - 320px) / 880));
+  }
+}
+#xiaomis10 .app-xiaomis10__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+@media screen and (max-width: 991.98px) {
+  #xiaomis10 .clean-xiaomis10__text {
+    width: 46%;
+    top: 15%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #xiaomis10 .header-xiaomis10__text {
+    background-color: #42332b;
+    position: unset;
+    width: auto;
+    padding: 20px 15px;
+  }
+  #xiaomis10 .header-xiaomis10__text h2, #xiaomis10 .header-xiaomis10__text p {
+    text-align: center;
+  }
+  #xiaomis10 .washed-xiaomis10__text {
+    position: unset;
+    width: auto;
+    padding: 0px 10px 20px;
+  }
+  #xiaomis10 .washed-xiaomis10__text h2, #xiaomis10 .washed-xiaomis10__text p {
+    text-align: center;
+  }
+  #xiaomis10 .charge-xiaomis10__text {
+    width: 90%;
+  }
+  #xiaomis10 .clean-xiaomis10__text {
+    position: unset;
+    width: auto;
+    padding: 10px 0 10px;
+  }
+  #xiaomis10 .clean-xiaomis10__text h2, #xiaomis10 .clean-xiaomis10__text p {
+    text-align: center;
+  }
+  #xiaomis10 .clean-xiaomis10__image,
+  #xiaomis10 .header-xiaomis10__image {
+    height: 150px;
+  }
+  #xiaomis10 .app-xiaomis10__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #xiaomis10 .app-xiaomis10__text {
+    width: auto;
+    padding: 20px 0 0;
+  }
+  #xiaomis10 .app-xiaomis10__text h2, #xiaomis10 .app-xiaomis10__text p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 610px) {
+  #xiaomis10 .charge-xiaomis10__text {
+    width: auto;
+  }
+  #xiaomis10 .charge-xiaomis10__text h2, #xiaomis10 .charge-xiaomis10__text p {
+    text-align: center;
+  }
+  #xiaomis10 .charge-xiaomis10__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

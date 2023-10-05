@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #applepro15 ul,#applepro15 ol,#applepro15 li{list-style:none;padding:0;margin:0}#applepro15 .bc-description__content p{margin-bottom:0}#applepro15 .bc-description__content h3{text-align:left}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6{text-transform:none;font-weight:bold}#applepro15{margin:0 auto;overflow:hidden}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6,#applepro15 p{margin:0;padding:0;text-align:left}#applepro15 p::first-letter{padding-left:0}#applepro15 img{opacity:1;max-width:100%;display:block;margin:0 auto}#applepro15 img:hover{opacity:1}#applepro15 .applepro15__container{max-width:1200px;margin:0 auto;background-color:#fff}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__title h2{font-size:92px;line-height:1.2;text-align:center;color:#86868b;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__title h2{font-size:-webkit-calc(30px + 62 * ((100vw - 320px) / 880));font-size:calc(30px + 62 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__logo{padding:0 0px 100px}#applepro15 .header-applepro15__image{padding-bottom:50px;margin:0 40px}#applepro15 .header-applepro15__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}#applepro15 .header-applepro15__box h2{font-size:50px;line-height:1.2;text-align:center;color:#000;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__box h2{font-size:-webkit-calc(25px + 25 * ((100vw - 320px) / 880));font-size:calc(25px + 25 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__box a{display:inline-block}#applepro15 .header-applepro15__box a p{font-size:33px;line-height:1.2;text-align:center;color:#86868b;padding:17px 44px;border:1px solid #86868b;-webkit-border-radius:50px;border-radius:50px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(max-width: 1200px){#applepro15 .header-applepro15__box a p{font-size:-webkit-calc(20px + 13 * ((100vw - 320px) / 880));font-size:calc(20px + 13 * ((100vw - 320px) / 880))}}@media(any-hover: hover){#applepro15 .header-applepro15__box a p:hover{background-color:rgba(0,0,0,.431372549);color:#fff}}#applepro15 .corpus-applepro15{padding-top:100px}#applepro15 .corpus-applepro15__box{max-width:900px;margin:0 auto;padding:0 15px}#applepro15 .corpus-applepro15__text{margin-bottom:0px}#applepro15 .corpus-applepro15__text p{font-size:36px;line-height:1.2;font-weight:400;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .corpus-applepro15__text p{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 880));font-size:calc(20px + 16 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15{padding-top:0px}#applepro15 .spec-applepro15__title{padding:0 15px;margin-bottom:50px}#applepro15 .spec-applepro15__title h2{font-size:64px;line-height:1.2;font-weight:600;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .spec-applepro15__title h2{font-size:-webkit-calc(34px + 30 * ((100vw - 320px) / 880));font-size:calc(34px + 30 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15__row{padding:0 15px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:995px;margin:0 auto;gap:50px}#applepro15 .spec-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:60px}#applepro15 .spec-applepro15__text h4{font-size:19px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;color:#000}#applepro15 .spec-applepro15__text p{font-size:19px;line-height:1.2;color:#000}#applepro15 .inform-applepro15{padding-top:100px;padding-bottom:80px}#applepro15 .inform-applepro15__image{padding:0 15px}#applepro15 .inform-applepro15__box{padding:0 15px;max-width:995px;margin:0 auto}#applepro15 .inform-applepro15__top{padding-top:100px;margin-bottom:30px}#applepro15 .inform-applepro15__top h2{font-size:19px;line-height:1.2;margin-bottom:10px;color:#000}#applepro15 .inform-applepro15__top p{font-size:18px;line-height:1.2;color:#000}#applepro15 .inform-applepro15__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:30px}#applepro15 .inform-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .inform-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__text p{font-size:18px;line-height:1.2;color:#000}@media screen and (max-width: 767.98px){#applepro15 .header-applepro15{padding-top:80px}#applepro15 .header-applepro15__logo{padding-bottom:50px}#applepro15 .header-applepro15__logo img{width:300px}#applepro15 .header-applepro15__image{padding-bottom:30px}#applepro15 .spec-applepro15__row{gap:30px}}@media screen and (max-width: 600px){#applepro15 .spec-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#applepro15 .inform-applepro15__item:not(:last-child),#applepro15 .inform-applepro15__top{margin-bottom:15px}#applepro15 .inform-applepro15{padding-top:50px;padding-bottom:50px}#applepro15 .inform-applepro15__top{padding-top:50px}}@media screen and (max-width: 479.98px){#applepro15 .header-applepro15__logo img{width:210px}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__box a p{padding:15px 30px}#applepro15 .corpus-applepro15{padding-top:60px}#applepro15 .spec-applepro15__text h4,#applepro15 .spec-applepro15__text p,#applepro15 .inform-applepro15__top h2,#applepro15 .inform-applepro15__top p,#applepro15 .inform-applepro15__text p{font-size:16px}#applepro15 .spec-applepro15__title{margin-bottom:30px}}@media screen and (max-width: 401px){#applepro15 .header-applepro15__logo{padding-bottom:25px}#applepro15 .header-applepro15__logo img{width:160px}}
+    </style>
+
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>Новый уровень приключений.</h2>
+                    <a href="https://comfy.ua/chernihiv/smart-watches/brand__apple__watch_seriya__apple-watch-ultra-2/"
+                        class="header-applepro15__link">
+                        <p>Подробнее</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>Самые прочные и многофункциональные часы Apple Watch.
+                            Они созданы для активного отдыха и интенсивных тренировок
+                            и имеют лёгкий корпус из титана, увеличенное время работы
+                            от аккумулятора1 и самый яркий дисплей Apple Watch.
+                            Двойное касание2 — волшебный способ взаимодействия
+                            с Apple Watch.
+                        </p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2627797/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основные характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ПОЧЕМУ APPLE WATCH ULTRA 2</h4>
+                                <p>Прочные, надёжные и созданные с учётом требований выносливых спортсменов,
+                                    путешественников, пловцов и дайверов —
+                                    для каждого предусмотрен специальный ремешок. Чип S9 SiP позволяет использовать
+                                    потрясающе яркий дисплей и новый волшебный способ быстро и легко взаимодействовать с
+                                    Apple Watch без прикосновения к дисплею.
+                                    До 36 часов работы без подзарядки
+                                    и до 72 часов в режиме энергосбережения.<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УГЛЕРОДНАЯ НЕЙТРАЛЬНОСТЬ</h4>
+                                <p>Apple Watch Ultra 2 в паре с новейшими браслетами Alpine или Trail являются углеродно
+                                    нейтральными. Подробнее о том, как компания Apple заботится
+                                    об окружающей среде, можно узнать на странице apple.com/2030.<sup>3</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ЧРЕЗВЫЧАЙНО ПРОЧНЫЕ, НЕВЕРОЯТНО МОЩНЫЕ</h4>
+                                <p>Корпус 42 мм создан из стойкого к коррозии титана. Большое колёсико Digital Crown
+                                    и настраиваемая кнопка действия обеспечивают мгновенный контроль над различными
+                                    функциями. Водонепроницаемы
+                                    на глубине до 100 м.<sup>4</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>САМЫЙ БОЛЬШОЙ И ЯРКИЙ ДИСПЛЕЙ
+                                    APPLE WATCH</h4>
+                                <p>Информацию на ярком всегда включённом дисплее Retina отлично видно даже при сильном
+                                    солнечном свете. Больше пространства для добавления расширений и настройки
+                                    циферблата часов, а также для одновременного просмотра шести показателей.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ИСПОЛЬЗОВАНИЕ СОТОВОЙ СВЯЗИ</h4>
+                                <p>Встроен модуль сотовой связи.<sup>5</sup>
+                                    Вы можете звонить и отправлять сообщения
+                                    без iPhone. Слушайте любимую музыку
+                                    и подкасты. Прокладывайте маршруты в Картах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ СПОРТСМЕНОВ</h4>
+                                <p>Расширенные показатели и варианты отображения
+                                    в приложении «Тренировка», включая функцию «Пульсовые зоны», пользовательские
+                                    тренировки
+                                    и новые варианты отображения велосипедных тренировок. Модуль GPS повышенной точности
+                                    с поддержкой двух диапазонов частот безупречно определяет местоположение для расчёта
+                                    расстояния, темпа и маршрутных карт. Тонкие, лёгкие и гибкие браслеты Trail
+                                    предназначены
+                                    для всех видов тренировок.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ ПУТЕШЕСТВЕННИКОВ</h4>
+                                <p>Приложение «Компас» позволяет просмотреть полезные варианты отображения и такие
+                                    детали, как высота над уровнем моря и уклон. Найдите место, где был последний приём
+                                    сигнала сотовой связи. Отметьте своё местоположение с помощью путевых точек на
+                                    компасе. Функция «Возврат
+                                    по маршруту» использует GPS для создания карты, на которой отображаются места, в
+                                    которых вы побывали, чтобы вы могли проследить свой путь. Браслет Alpine — это
+                                    чрезвычайно прочный
+                                    и надёжный ремешок, отвечающий всем требованиям путешественников.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ ПЛОВЦОВ И ДАЙВЕРОВ</h4>
+                                <p>Создан для рекреационных водных видов спорта, дайвинга и фридайвинга на глубине до 40
+                                    м.<sup>4</sup> Приложение «Глубина» показывает время, текущую глубину, температуру
+                                    воды,
+                                    продолжительность пребывания под водой и максимальную достигнутую глубину. Благодаря
+                                    приложению Oceanic+ на вашем запястье появляется полнофункциональный компьютер для
+                                    дайвинга.<sup>6</sup> Лёгкий и гибкий ремешок Ocean с титановой застёжкой и
+                                    регулируемой петлёй
+                                    обеспечивает надёжную фиксацию даже при занятиях скоростными водными видами спорта.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УСОВЕРШЕНСТВОВАННЫЕ ФУНКЦИИ
+                                    ДЛЯ ЗДОРОВЬЯ И БЕЗОПАСНОСТИ</h4>
+                                <p>Уведомления о сердечном ритме и приложение «Кислород в крови»<sup>7</sup> позволят
+                                    вам быть в
+                                    курсе событий, связанных с вашим здоровьем. Функция «Обнаружение
+                                    падения»<sup>8</sup> и
+                                    «Распознавание аварии» позволяют связаться с экстренными службами
+                                    в случае сильного падения или серьёзной автомобильной аварии.<sup>9</sup> Удерживая
+                                    кнопку
+                                    действия, можно включить сирену, которая слышна почти на 200 метров.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридическая информация</h2>
+                        <p>Для использования Apple Watch Ultra 2 требуется iPhone Xs или новее с iOS 17 или новее.</p>
+                        <p><sup>1</sup>Время работы от аккумулятора зависит от конфигурации и характера использования
+                            устройства. Подробнее на странице apple.com/batteries.</p>
+                        <p><sup>2</sup>Будет доступен позже в 2023 году. Необходимы часы Apple Watch Series 9 или Apple
+                            Watch Ultra 2.</p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Подробную информацию можно найти на странице apple.com/2030.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Apple Watch Ultra 2 водонепроницаемы на глубине до 100 метров по
+                                        стандарту ISO 22810 и подходят для скоростных водных видов спорта и
+                                        любительского дайвинга
+                                        (с совместимым сторонним приложением из App Store)
+                                        с погружением на глубину до 40 м. Непригодны для погружения на глубину более 40
+                                        метров. Водонепроницаемость может снижаться при естественном износе. Подробнее
+                                        на странице https://support.apple.com/HT205000.
+                                        Apple Watch Ultra 2 имеют рейтинг IP6X устойчивости к пыли.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Сотовая связь доступна не во всех регионах, где продаются Apple Watch
+                                        Ultra. Подробнее на странице apple.com/watch/cellular. За дополнительной
+                                        информацией обратитесь к своему оператору связи.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>6</sup>Требуется подписка на Oceanic+. Приложение представлено в App Store.
+                                        Всегда следуйте протоколам безопасности и совершайте погружения только в
+                                        сопровождении и с дополнительным устройством.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>7</sup>Приложение «Кислород в крови» предназначено для оценки общего
+                                        физического состояния, а не для медицинских целей.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>8</sup>Обновления для функции «Обнаружение падения» доступны на Apple Watch
+                                        Series 4 и новее с watchOS 8 или новее.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>9</sup>Для работы функции «Экстренный вызов — SOS» необходимо подключение к
+                                        сотовой сети или действующая функция вызовов по Wi-Fi с подключением к интернету
+                                        через Apple Watch или находящийся рядом iPhone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <style>
+        #applepro15 ul,#applepro15 ol,#applepro15 li{list-style:none;padding:0;margin:0}#applepro15 .bc-description__content p{margin-bottom:0}#applepro15 .bc-description__content h3{text-align:left}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6{text-transform:none;font-weight:bold}#applepro15{margin:0 auto;overflow:hidden}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6,#applepro15 p{margin:0;padding:0;text-align:left}#applepro15 p::first-letter{padding-left:0}#applepro15 img{opacity:1;max-width:100%;display:block;margin:0 auto}#applepro15 img:hover{opacity:1}#applepro15 .applepro15__container{max-width:1200px;margin:0 auto;background-color:#fff}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__title h2{font-size:92px;line-height:1.2;text-align:center;color:#86868b;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__title h2{font-size:-webkit-calc(30px + 62 * ((100vw - 320px) / 880));font-size:calc(30px + 62 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__logo{padding:0 0px 100px}#applepro15 .header-applepro15__image{padding-bottom:50px;margin:0 40px}#applepro15 .header-applepro15__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}#applepro15 .header-applepro15__box h2{font-size:50px;line-height:1.2;text-align:center;color:#000;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__box h2{font-size:-webkit-calc(25px + 25 * ((100vw - 320px) / 880));font-size:calc(25px + 25 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__box a{display:inline-block}#applepro15 .header-applepro15__box a p{font-size:33px;line-height:1.2;text-align:center;color:#86868b;padding:17px 44px;border:1px solid #86868b;-webkit-border-radius:50px;border-radius:50px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(max-width: 1200px){#applepro15 .header-applepro15__box a p{font-size:-webkit-calc(20px + 13 * ((100vw - 320px) / 880));font-size:calc(20px + 13 * ((100vw - 320px) / 880))}}@media(any-hover: hover){#applepro15 .header-applepro15__box a p:hover{background-color:rgba(0,0,0,.431372549);color:#fff}}#applepro15 .corpus-applepro15{padding-top:100px}#applepro15 .corpus-applepro15__box{max-width:900px;margin:0 auto;padding:0 15px}#applepro15 .corpus-applepro15__text{margin-bottom:0px}#applepro15 .corpus-applepro15__text p{font-size:36px;line-height:1.2;font-weight:400;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .corpus-applepro15__text p{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 880));font-size:calc(20px + 16 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15{padding-top:0px}#applepro15 .spec-applepro15__title{padding:0 15px;margin-bottom:50px}#applepro15 .spec-applepro15__title h2{font-size:64px;line-height:1.2;font-weight:600;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .spec-applepro15__title h2{font-size:-webkit-calc(34px + 30 * ((100vw - 320px) / 880));font-size:calc(34px + 30 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15__row{padding:0 15px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:995px;margin:0 auto;gap:50px}#applepro15 .spec-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:60px}#applepro15 .spec-applepro15__text h4{font-size:19px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;color:#000}#applepro15 .spec-applepro15__text p{font-size:19px;line-height:1.2;color:#000}#applepro15 .inform-applepro15{padding-top:100px;padding-bottom:80px}#applepro15 .inform-applepro15__image{padding:0 15px}#applepro15 .inform-applepro15__box{padding:0 15px;max-width:995px;margin:0 auto}#applepro15 .inform-applepro15__top{padding-top:100px;margin-bottom:30px}#applepro15 .inform-applepro15__top h2{font-size:19px;line-height:1.2;margin-bottom:10px;color:#000}#applepro15 .inform-applepro15__top p{font-size:18px;line-height:1.2;color:#000}#applepro15 .inform-applepro15__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:30px}#applepro15 .inform-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .inform-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__text p{font-size:18px;line-height:1.2;color:#000}@media screen and (max-width: 767.98px){#applepro15 .header-applepro15{padding-top:80px}#applepro15 .header-applepro15__logo{padding-bottom:50px}#applepro15 .header-applepro15__logo img{width:300px}#applepro15 .header-applepro15__image{padding-bottom:30px}#applepro15 .spec-applepro15__row{gap:30px}}@media screen and (max-width: 600px){#applepro15 .spec-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#applepro15 .inform-applepro15__item:not(:last-child),#applepro15 .inform-applepro15__top{margin-bottom:15px}#applepro15 .inform-applepro15{padding-top:50px;padding-bottom:50px}#applepro15 .inform-applepro15__top{padding-top:50px}}@media screen and (max-width: 479.98px){#applepro15 .header-applepro15__logo img{width:210px}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__box a p{padding:15px 30px}#applepro15 .corpus-applepro15{padding-top:60px}#applepro15 .spec-applepro15__text h4,#applepro15 .spec-applepro15__text p,#applepro15 .inform-applepro15__top h2,#applepro15 .inform-applepro15__top p,#applepro15 .inform-applepro15__text p{font-size:16px}#applepro15 .spec-applepro15__title{margin-bottom:30px}}@media screen and (max-width: 401px){#applepro15 .header-applepro15__logo{padding-bottom:25px}#applepro15 .header-applepro15__logo img{width:160px}}
+    </style>
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>Пригоди нового рівня.</h2>
+                    <a href="https://comfy.ua/ua/cherkasy/smart-watches/brand__apple__watch_seriya__apple-watch-ultra-2/">
+                        <p>Детальніше</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>Найвитриваліший і найуніверсальніший Apple Watch. Створений для активного відпочинку й
+                            інтенсивних тренувань, він має легкий титановий корпус, збільшений час роботи від
+                            акумулятора1 та найяскравіший дисплей Apple Watch. Подвійний дотик2 — магічний спосіб
+                            взаємодії з Apple Watch.</p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2627797/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основні характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ЧОМУ APPLE WATCH ULTRA 2</h4>
+                                <p>Міцний, функціональний і створений з урахуванням вимог витривалих спортсменів,
+                                    шанувальників активного відпочинку та водних видів спорту. Має спеціальний ремінець
+                                    для кожного. Завдяки чипу S9 у цього годинника надяскравий дисплей і новий магічний
+                                    спосіб швидко та легко взаємодіяти з Apple Watch, не торкаючись екрана. До 36 годин
+                                    роботи від акумулятора та 72 години в режимі низького заряду.<sup>1</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВУГЛЕЦЕВА НЕЙТРАЛЬНІСТЬ</h4>
+                                <p>Apple Watch Ultra 2 в парі з найновішим браслетом Alpine або Trail є
+                                    вуглецевонейтральним. Детальніше про Apple і довкілля на apple.com/2030.<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАДЗВИЧАЙНО МІЦНИЙ, НЕЙМОВІРНО ПОТУЖНИЙ</h4>
+                                <p>Корпус розміром 49 мм зі стійкого до корозії титану. Велика коронка Digital Crown і
+                                    кнопка дії з можливістю налаштування забезпечують миттєвий контроль над різними
+                                    функціями. Водонепроникність на глибині до 100 метрів.<sup>4</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАЙБІЛЬШИЙ І НАЙЯСКРАВІШИЙ ДИСПЛЕЙ APPLE WATCH</h4>
+                                <p>Інформацію на яскравому завжди ввімкненому дисплеї Retina від Apple легко переглядати
+                                    навіть за яскравого сонячного світла. Більше простору для додавання розширень і
+                                    персоналізації циферблата, а також достатньо місця для перегляду шести показників
+                                    одночасно.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>СВОБОДА БУТИ НА ЗВ’ЯЗКУ</h4>
+                                <p>Інтегрований мобільний зв’язок.<sup>5</sup> Ви можете телефонувати та надсилати повідомлення без
+                                    iPhone. Слухайте улюблену музику й подкасти. Прокладайте маршрути в Картах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ СПОРТСМЕНІВ</h4>
+                                <p>Розширені показники й варіанти відображення в додатку «Тренування», зокрема зони
+                                    серцевого ритму, індивідуальні тренування та нові способи відображення для
+                                    велотренувань. Високоточний двочастотний GPS забезпечує точність при розрахунку
+                                    відстані, темпу та створенні маршрутів. Тонкий, легкий та гнучкий браслет Trail
+                                    призначений для всіх видів тренувань.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ ШАНУВАЛЬНИКІВ АКТИВНОГО ВІДПОЧИНКУ</h4>
+                                <p>Додаток «Компас» дає змогу переглядати корисні деталі, як-от висоту над рівнем моря
+                                    та нахил. Або останнє місце, де був мобільний звʼязок. Крім того, компас допомагає
+                                    позначити ваше положення за допомогою пунктів маршруту. Щоб ви могли простежити свій
+                                    шлях, функція «Пройдений маршрут» використовує дані GPS і автоматично створює карту
+                                    місць, де ви були. Надзвичайно міцний і надійний браслет Alpine відповідає всім
+                                    вимогам шанувальників активного відпочинку.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ДЛЯ ЛЮБИТЕЛІВ ВОДНОГО СПОРТУ</h4>
+                                <p>Створений для непрофесійних водних видів спорту, підводного плавання й фридайвінгу на
+                                    глибині
+                                    до 40 метрів.<sup>4</sup> Додаток «Глибина» показує час, поточну глибину,
+                                    температуру води,
+                                    тривалість перебування під водою та максимальну глибину, яку ви досягли. Додаток
+                                    Oceanic+ — це компʼютер для дайвінгу на вашому запʼясті.<sup>6</sup> Легкий і
+                                    гнучкий ремінець
+                                    Ocean має титанову пряжку та регульовану петлю для надійної фіксації навіть під час
+                                    занять водними видами спорту на високій швидкості.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УДОСКОНАЛЕНІ ФУНКЦІЇ ДЛЯ ЗДОРОВ’Я ТА БЕЗПЕКИ</h4>
+                                <p>Сповіщення про здоровʼя серця та додаток «Кисень у крові»<sup>7</sup> тримають вас
+                                    поінформованими щодо вашого здоровʼя. Функції виявлення падіння<sup>8</sup> та
+                                    аварій дають змогу зв’язатися з екстреними службами в разі сильного падіння або
+                                    серйозної автомобільної аварії.<sup>9</sup> Утримуючи кнопку дії, можна активувати
+                                    сирену, яку чути на відстані
+                                    до 180 метрів.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627797/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридична інформація</h2>
+                        <p>Для використання Apple Watch Ultra 2 потрібен iPhone Xs або новішої моделі з iOS 17 або
+                            пізнішої версії. </p>
+                        <p><sup>1</sup>Час роботи від акумулятора залежить від конфігурації та особливостей використання
+                            пристрою. Детальніше на apple.com/batteries.</p>
+                        <p><sup>2</sup>Стане доступно пізніше у 2023 році. Потрібен Apple Watch Series 9 або Apple Watch
+                            Ultra 2.</p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Докладніше дивіться на apple.com/2030.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Apple Watch Ultra 2 захищено від води під час занурення на глибину до 100 метрів
+                                        за стандартом ISO 22810. Його можна використовувати під час занять швидкісними
+                                        водними видами спорту і непрофесійного підводного плавання (із сумісним
+                                        стороннім додатком з App Store) на глибині до 40 метрів. Не рекомендується
+                                        використовувати під час занурення на глибину понад 40 метрів. Ступінь захисту
+                                        від води не є сталою величиною, тому з часом може знижуватися. Докладнішу
+                                        інформацію дивіться на support.apple.com/HT205000. Apple Watch Ultra 2 має
+                                        захист від пилу класу IP6X.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Мобільна мережа доступна не скрізь, де продається
+                                        Apple Watch Ultra. Докладнішу інформацію дивіться на apple.com/watch/cellular.
+                                        Зв’яжіться зі своїм оператором, щоб дізнатися більше.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>6</sup>Щоб користуватися Oceanic+, потрібна передплата. Доступно в App
+                                        Store. Завжди дотримуйтеся протоколів занурення, занурюйтеся з напарником і
+                                        майте додатковий пристрій.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>7</sup>Додаток «Кисень у крові» призначено лише для загального оцінювання
+                                        здоров’я, а не для медичного використання.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>8</sup>Функція виявлення падіння доступна в Apple Watch Series 4
+                                        і новіших моделях із watchOS 8 або новішої версії.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>9</sup>Для роботи функції «Сигнал SOS» потрібна мобільна мережа або
+                                        можливість виклику за допомогою Wi-Fi з підключенням
+                                        до інтернету через Apple Watch або iPhone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

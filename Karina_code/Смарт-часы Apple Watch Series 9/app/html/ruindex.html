@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #applepro15 ul,#applepro15 ol,#applepro15 li{list-style:none;padding:0;margin:0}#applepro15 .bc-description__content p{margin-bottom:0}#applepro15 .bc-description__content h3{text-align:left}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6{text-transform:none;font-weight:bold}#applepro15{margin:0 auto;overflow:hidden}#applepro15 h1,#applepro15 h2,#applepro15 h3,#applepro15 h4,#applepro15 h5,#applepro15 h6,#applepro15 p{margin:0;padding:0;text-align:left}#applepro15 p::first-letter{padding-left:0}#applepro15 img{opacity:1;max-width:100%;display:block;margin:0 auto}#applepro15 img:hover{opacity:1}#applepro15 .applepro15__container{max-width:1200px;margin:0 auto;background-color:#fff}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__title h2{font-size:92px;line-height:1.2;text-align:center;color:#86868b;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__title h2{font-size:-webkit-calc(30px + 62 * ((100vw - 320px) / 880));font-size:calc(30px + 62 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__logo{padding:0 0px 100px}#applepro15 .header-applepro15__image{padding-bottom:50px;margin:0 40px}#applepro15 .header-applepro15__box{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 15px}#applepro15 .header-applepro15__box h2{font-size:50px;line-height:1.2;text-align:center;color:#000;margin-bottom:20px}@media(max-width: 1200px){#applepro15 .header-applepro15__box h2{font-size:-webkit-calc(25px + 25 * ((100vw - 320px) / 880));font-size:calc(25px + 25 * ((100vw - 320px) / 880))}}#applepro15 .header-applepro15__box a{display:inline-block}#applepro15 .header-applepro15__box a p{font-size:33px;line-height:1.2;text-align:center;color:#86868b;padding:17px 44px;border:1px solid #86868b;-webkit-border-radius:50px;border-radius:50px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(max-width: 1200px){#applepro15 .header-applepro15__box a p{font-size:-webkit-calc(20px + 13 * ((100vw - 320px) / 880));font-size:calc(20px + 13 * ((100vw - 320px) / 880))}}@media(any-hover: hover){#applepro15 .header-applepro15__box a p:hover{background-color:rgba(0,0,0,.431372549);color:#fff}}#applepro15 .corpus-applepro15{padding-top:100px}#applepro15 .corpus-applepro15__box{max-width:900px;margin:0 auto;padding:0 15px}#applepro15 .corpus-applepro15__text{margin-bottom:0px}#applepro15 .corpus-applepro15__text p{font-size:36px;line-height:1.2;font-weight:400;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .corpus-applepro15__text p{font-size:-webkit-calc(20px + 16 * ((100vw - 320px) / 880));font-size:calc(20px + 16 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15{padding-top:0px}#applepro15 .spec-applepro15__title{padding:0 15px;margin-bottom:50px}#applepro15 .spec-applepro15__title h2{font-size:64px;line-height:1.2;font-weight:600;text-align:center;color:#000}@media(max-width: 1200px){#applepro15 .spec-applepro15__title h2{font-size:-webkit-calc(34px + 30 * ((100vw - 320px) / 880));font-size:calc(34px + 30 * ((100vw - 320px) / 880))}}#applepro15 .spec-applepro15__row{padding:0 15px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:995px;margin:0 auto;gap:50px}#applepro15 .spec-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:60px}#applepro15 .spec-applepro15__text h4{font-size:19px;line-height:1.2;margin-bottom:10px;text-transform:uppercase;color:#000}#applepro15 .spec-applepro15__text p{font-size:19px;line-height:1.2;color:#000}#applepro15 .inform-applepro15{padding-top:100px;padding-bottom:80px}#applepro15 .inform-applepro15__image{padding:0 15px}#applepro15 .inform-applepro15__box{padding:0 15px;max-width:995px;margin:0 auto}#applepro15 .inform-applepro15__top{padding-top:100px;margin-bottom:30px}#applepro15 .inform-applepro15__top h2{font-size:19px;line-height:1.2;margin-bottom:10px;color:#000}#applepro15 .inform-applepro15__top p{font-size:18px;line-height:1.2;color:#000}#applepro15 .inform-applepro15__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:30px}#applepro15 .inform-applepro15__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#applepro15 .inform-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__text p{font-size:18px;line-height:1.2;color:#000}@media screen and (max-width: 767.98px){#applepro15 .header-applepro15{padding-top:80px}#applepro15 .header-applepro15__logo{padding-bottom:50px}#applepro15 .header-applepro15__logo img{width:300px}#applepro15 .header-applepro15__image{padding-bottom:30px}#applepro15 .spec-applepro15__row{gap:30px}}@media screen and (max-width: 600px){#applepro15 .spec-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#applepro15 .spec-applepro15__item:not(:last-child){margin-bottom:20px}#applepro15 .inform-applepro15__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#applepro15 .inform-applepro15__item:not(:last-child),#applepro15 .inform-applepro15__top{margin-bottom:15px}#applepro15 .inform-applepro15{padding-top:50px;padding-bottom:50px}#applepro15 .inform-applepro15__top{padding-top:50px}}@media screen and (max-width: 479.98px){#applepro15 .header-applepro15__logo img{width:210px}#applepro15 .header-applepro15{padding-top:50px}#applepro15 .header-applepro15__box a p{padding:15px 30px}#applepro15 .corpus-applepro15{padding-top:60px}#applepro15 .spec-applepro15__text h4,#applepro15 .spec-applepro15__text p,#applepro15 .inform-applepro15__top h2,#applepro15 .inform-applepro15__top p,#applepro15 .inform-applepro15__text p{font-size:16px}#applepro15 .spec-applepro15__title{margin-bottom:30px}}@media screen and (max-width: 401px){#applepro15 .header-applepro15__logo{padding-bottom:25px}#applepro15 .header-applepro15__logo img{width:160px}}
+    </style>
+
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>Умнее. Ярче. Мощнее.</h2>
+                    <a href="https://comfy.ua/smart-watches/brand__apple__watch_seriya__apple-watch-series-9/"
+                        class="header-applepro15__link">
+                        <p>Подробнее</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>Apple Watch Series 9 помогают вам оставаться на связи,
+                            жить активнее, заботиться о здоровье и безопасности.
+                            Двойное касание — волшебный способ взаимодействия с часами
+                            Apple Watch1, которые оснащены ещё более ярким дисплеем.
+                        </p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2627791/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основные характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ПОЧЕМУ APPLE WATCH SERIES 9</h4>
+                                <p>Незаменимый помощник на пути к здоровому образу жизни стал ещё мощнее. Чип S9
+                                    позволяет использовать потрясающе яркий дисплей и новый волшебный способ быстро
+                                    и легко взаимодействовать с Apple Watch без прикосновения к экрану.
+                                    Усовершенствованные функции мониторинга показателей здоровья, безопасности и
+                                    активности обеспечивают мощную аналитику и помощь в нужный момент. А обновлённые
+                                    приложения в watchOS позволяют получать больше информации, лишь взглянув на экран.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УГЛЕРОДНАЯ НЕЙТРАЛЬНОСТЬ</h4>
+                                <p>Apple Watch Series 9 в корпусе из алюминия в паре
+                                    с новым спортивным браслетом являются углеродно нейтральными. Подробнее о том, как
+                                    компания Apple заботится об окружающей среде, можно узнать
+                                    на странице apple.com/2030.<sup>2</sup>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УСОВЕРШЕНСТВОВАННЫЕ ФУНКЦИИ
+                                    ДЛЯ ЗДОРОВЬЯ</h4>
+                                <p>Следите за уровнем кислорода в крови<sup>3</sup> и узнайте, сколько времени вы
+                                    провели в фазах быстрого, базового и глубокого сна с помощью функции «Стадии сна».
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАДЁЖНЫЙ ФИТНЕС-ПАРТНЕР</h4>
+                                <p>Приложение «Тренировка» предлагает различные варианты занятий, а также расширенные
+                                    показатели для получения более полной информации о результатах тренировок.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ИННОВАЦИОННЫЕ ФУНКЦИИ
+                                    БЕЗОПАСНОСТИ</h4>
+                                <p>Функции «Обнаружение падения»<sup>4</sup>
+                                    и «Распознавание аварии» позволяют связаться
+                                    с экстренными службами в случае падения
+                                    с высоты или серьёзной аварии.<sup>5</sup>
+                                    А функция «Экстренный вызов — SOS» позволяет вызвать помощь одним нажатием
+                                    кнопки.<sup>5</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ОТЛИЧНАЯ СОВМЕСТИМОСТЬ</h4>
+                                <p>Часы идеально совместимы с устройствами и сервисами Apple, что позволяет
+                                    разблокировать Mac автоматически.
+                                    Для использования Apple Watch требуется
+                                    iPhone Xs или новее с новейшей версией iOS.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НИКАКИХ ПРЕПЯТСТВИЙ НА ПУТИ К САМОВЫРАЖЕНИЮ</h4>
+                                <p>Благодаря ремешкам различных стилей и цветов
+                                    из разных материалов, а также стильным
+                                    и функциональным циферблатам с расширениями, соответствующими вашим интересам, вы
+                                    можете изменять вид часов в соответствии с настроением
+                                    и обстоятельствами.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НЕВЕРОЯТНАЯ ДОЛГОВЕЧНОСТЬ</h4>
+                                <p>Прочнее прочного. Часы устойчивы к образованию трещин, имеют рейтинг IP6X
+                                    устойчивости к пыли<sup>6</sup>
+                                    и водонепроницаемы на глубине до 50 м.<sup>7</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВСЕГДА НА СВЯЗИ</h4>
+                                <p>Отправляйте сообщения, принимайте звонки, слушайте музыку и подкасты, а также
+                                    получайте уведомления на ходу. Apple Watch Series 9 (GPS) подключаются к iPhone или
+                                    Wi-Fi, чтобы вы всегда могли оставаться на связи.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридическая информация</h2>
+                        <p>Для использования Apple Watch Series 9 требуется iPhone Xs или новее с iOS 17 или новее.</p>
+                        <p><sup>1</sup>Будет доступен позже в 2023 году. Требуются часы Apple Watch Series 9 или Apple
+                            Watch Ultra 2.</p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>2</sup>Подробную информацию можно найти на странице apple.com/2030.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Приложение «Кислород в крови» предназначено для оценки общего
+                                        физического состояния, а не для медицинских целей.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Обновления для функции «Обнаружение падения» доступны на Apple Watch
+                                        Series 4 и новее с watchOS 8 или новее.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Для работы функции «Экстренный вызов — SOS» необходимо подключение к
+                                        сотовой сети или действующая функция вызовов по Wi-Fi с подключением к интернету
+                                        через Apple Watch или находящийся рядом iPhone.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p>
+                                        <syp>6</syp>Apple Watch Series 9 имеют рейтинг IP6X устойчивости к пыли.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>7</sup>Apple Watch Series 9 водонепроницаемы на глубине до 50 метров по
+                                        стандарту ISO 22810:2010. Это означает, что их можно использовать для неглубоких
+                                        погружений, таких как плавание в бассейне или море. Apple Watch Series 9 не
+                                        следует использовать во время дайвинга, занятий воднолыжным спортом и другими
+                                        видами спорта, предполагающими погружение на большую глубину или контакт с водой
+                                        на большой скорости. Водонепроницаемость может снижаться при естественном
+                                        износе. Подробнее на странице https://support.apple.com/HT205000. Apple Watch
+                                        Series 9 имеют рейтинг IP6X устойчивости к пыли.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="applepro15">
+        <div class="applepro15__container">
+            <div class="applepro15__header header-applepro15">
+                <div class="header-applepro15__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img1.png" alt="">
+                </div>
+                <div class="header-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img2.png" alt="">
+                </div>
+                <div class="header-applepro15__box">
+                    <h2>Міцніший. Розумніший.
+                        Яскравіший.</h2>
+                    <a
+                        href="https://comfy.ua/ua/smart-watches/brand__apple__watch_seriya__apple-watch-series-9/">
+                        <p>Детальніше</p>
+                    </a>
+                </div>
+            </div>
+            <div class="applepro15__corpus corpus-applepro15">
+                <div class="corpus-applepro15__box">
+                    <div class="corpus-applepro15__text">
+                        <p>Apple Watch Series 9 допомагає залишатися на зв’язку, підтримувати здоров’я, безпеку й
+                            активний спосіб життя. Подвійний дотик — магічний спосіб взаємодії з Apple Watch1, який
+                            оснащено ще яскравішим дисплеєм.</p>
+                    </div>
+                    <div class="corpus-applepro15__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2627791/img3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__spec spec-applepro15">
+                <div class="spec-applepro15__title">
+                    <h2>Основні характеристики:</h2>
+                </div>
+                <div class="spec-applepro15__row">
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ЧОМУ APPLE WATCH SERIES 9</h4>
+                                <p>Ваш незамінний помічник для здорового способу життя став іще потужнішим. Завдяки чипу
+                                    S9 у цього годинника надяскравий дисплей і новий магічний спосіб швидко та легко
+                                    взаємодіяти з Apple Watch, не торкаючись екрана. Удосконалені функції моніторингу
+                                    показників здоров’я, безпеки та активності забезпечують потужну аналітику та
+                                    допомогу в потрібний момент. А оновлені додатки у watchOS дають змогу отримувати
+                                    більше інформації одночасно.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ВУГЛЕЦЕВА НЕЙТРАЛЬНІСТЬ</h4>
+                                <p>Алюмінієвий корпус Apple Watch Series 9 у парі
+                                    з найновішим спортивним ремінцем роблять годинник вуглецевонейтральним. Детальніше
+                                    про Apple і довкілля на apple.com/2030.<sup>2</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>УДОСКОНАЛЕНІ ФУНКЦІЇ ДЛЯ ЗДОРОВ’Я</h4>
+                                <p>Тримайте рівень кисню в крові під контролем<sup>3</sup> і дізнавайтеся, як довго
+                                    тривали швидка, повільна та глибока фази сну, завдяки функції «Фази сну».</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НАДІЙНИЙ ФІТНЕС-ПАРТНЕР</h4>
+                                <p>Додаток «Тренування» пропонує різні варіанти тренувань, а також розширені показники
+                                    для отримання детальнішої інформації про ваші досягнення.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-applepro15__col">
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ІННОВАЦІЙНІ ФУНКЦІЇ БЕЗПЕКИ</h4>
+                                <p>Функції виявлення падіння<sup>4</sup> та аварій дають змогу зв’язатися з екстреними
+                                    службами в разі сильного падіння або серйозної автомобільної аварії.<sup>5</sup>
+                                    А з функцією «Сигнал SOS» можна викликати допомогу одним натисканням
+                                    кнопки.<sup>5</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>БЕЗДОГАННА СУМІСНІСТЬ</h4>
+                                <p>Годинник чудово працює з пристроями та сервісами Apple, тож ви навіть можете
+                                    розблокувати Mac. Для використання Apple Watch потрібен iPhone Xs або новішої моделі
+                                    з останньою версією iOS.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ПРОСТА ПЕРСОНАЛІЗАЦІЯ</h4>
+                                <p>Завдяки різноколірним ремінцям із різних матеріалів,
+                                    а також стильним і функціональним циферблатам
+                                    з індивідуальними розширеннями, ви можете змінювати вигляд годинника відповідно до
+                                    настрою
+                                    та обставин.</p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>НЕЙМОВІРНА ДОВГОВІЧНІСТЬ</h4>
+                                <p>Міцніше міцного. Годинник стійкий до утворення тріщин, захищений від пилу за
+                                    стандартом IP6X<sup>6</sup>
+                                    та водонепроникний на глибині до 50 метрів.<sup>7</sup></p>
+                            </div>
+                        </div>
+                        <div class="spec-applepro15__item">
+                            <div class="spec-applepro15__text">
+                                <h4>ЗАВЖДИ НА ЗВ’ЯЗКУ</h4>
+                                <p>Надсилайте повідомлення, приймайте виклики, слухайте музику та подкасти, а також
+                                    отримуйте сповіщення на ходу. Apple Watch Series 9 (GPS) підключається до iPhone або
+                                    Wi-Fi, щоб ви завжди залишалися на зв’язку.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="applepro15__inform inform-applepro15">
+                <div class="inform-applepro15__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2627791/img4.png" alt="">
+                </div>
+                <div class="inform-applepro15__box">
+                    <div class="inform-applepro15__top">
+                        <h2>Юридична інформація</h2>
+                        <p>Для використання Apple Watch Series 9 потрібен iPhone Xs або новішої моделі з iOS 17 або
+                            пізнішої версії.</p>
+                        <p><sup>1</sup>Стане доступно пізніше у 2023 році. Потрібен Apple Watch Series 9 або Apple Watch
+                            Ultra 2.</p>
+                    </div>
+                    <div class="inform-applepro15__row">
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>2</sup>Докладніше дивіться на apple.com/2030.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>3</sup>Додаток «Кисень у крові» призначено лише для загального оцінювання
+                                        здоров’я, а не для медичного використання.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>4</sup>Функція виявлення падіння доступна в Apple Watch Series 4
+                                        і новіших моделях із watchOS 8 або новішої версії.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>5</sup>Для роботи функції «Сигнал SOS» потрібна мобільна мережа або
+                                        можливість виклику за допомогою Wi-Fi
+                                        з підключенням до інтернету через Apple Watch або iPhone.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inform-applepro15__col">
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>6</sup>Apple Watch Series 9 має захист від пилу класу IP6X.</p>
+                                </div>
+                            </div>
+                            <div class="inform-applepro15__item">
+                                <div class="inform-applepro15__text">
+                                    <p><sup>7</sup>Apple Watch Series 9 захищено від води на глибині до 50 метрів
+                                        відповідно до стандарту ISO 22810:2010. Тобто його можна надівати під час
+                                        неглибоких занурень (як-от плавання в басейні чи морі). Apple Watch Series 9 не
+                                        можна використовувати під час дайвінгу, катання на водних лижах та інших занять,
+                                        які передбачають занурення на велику глибину чи контакт із водою на високій
+                                        швидкості. Ступінь захисту від води не є сталою величиною, тому з часом може
+                                        знижуватися. Докладнішу інформацію дивіться на support.apple.com/HT205000.
+                                        Apple Watch Series 9 також має захист від пилу класу IP6X.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

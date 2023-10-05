@@ -1,0 +1,159 @@
+<style>
+    #phillipssth .question-phillipssth {
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+    #phillipssth .question-phillipssth__top-title h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 20px
+    }
+
+    #phillipssth .question-phillipssth__title {
+        position: relative;
+        z-index: 2;
+        background-color: #f3ebfa;
+        transition: all .3s ease 0s;
+        cursor: pointer
+    }
+
+    #phillipssth .question-phillipssth__title h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        color: #662045;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 80px;
+        padding-left: 60px
+    }
+
+    #phillipssth .question-phillipssth__title::after,
+    #phillipssth .question-phillipssth__title::before {
+        position: absolute;
+        z-index: 5;
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s ease 0s
+    }
+
+    #phillipssth .question-phillipssth__title::before {
+        transform: rotate(-40deg);
+        right: 20px
+    }
+
+    #phillipssth .question-phillipssth__title::after {
+        transform: rotate(40deg);
+        right: 35px
+    }
+
+    #phillipssth .question-phillipssth__title.active::before,
+    #phillipssth .question-phillipssth__title.active::after {
+        background-color: red
+    }
+
+    #phillipssth .question-phillipssth__title.active::before {
+        transform: rotate(40deg)
+    }
+
+    #phillipssth .question-phillipssth__title.active::after {
+        transform: rotate(-40deg)
+    }
+
+    #phillipssth .question-phillipssth__title.active {
+        background-color: #dbc2f0;
+        padding-bottom: 15px
+    }
+
+    #phillipssth .question-phillipssth__item {
+        margin-bottom: 15px
+    }
+
+    #phillipssth .question-phillipssth__text {
+        display: none;
+        padding: 15px 0
+    }
+
+    #phillipssth .question-phillipssth__text p {
+        font-size: 28px;
+        line-height: 1.2
+    }
+</style>
+
+
+<div class="phillipssth__question question-phillipssth">
+    <div class="question-phillipssth__body">
+        <div class="question-phillipssth__top-title">
+            <h2>Найчастіше ви запитуєте</h2>
+        </div>
+        <div class="question-phillipssth__row one">
+            <div class="question-phillipssth__item">
+                <div class="question-phillipssth__title">
+                    <h2>Чи безпечний відпарювач Philips 7000 Серії для використання на всіх тканинах, які
+                        можна прасувати?</h2>
+                </div>
+                <div class="question-phillipssth__text">
+                    <p>Так, відпарювач Philips 7000 Серії безпечний і підходить для використання на всіх
+                        тканинах, які можна прасувати.</p>
+                </div>
+            </div>
+            <div class="question-phillipssth__item">
+                <div class="question-phillipssth__title">
+                    <h2>Яку воду можна використовувати для відпарювача?</h2>
+                </div>
+                <div class="question-phillipssth__text">
+                    <p>Відпарювач Philips 7000 Серії призначений для використання з водопровідною водою.
+                        Однак якщо ви живете в районі з жорсткою водою, накип може утворюватися швидше. Якщо
+                        це так, спробуйте використовувати дистильовану або демінералізовану воду (можна
+                        також використовувати 50% демінералізовану воду, змішану з водопровідною водою). НЕ
+                        використовуйте парфумовану воду, воду з сушильної машини, оцет, крохмаль, засоби для
+                        видалення накипу, засоби для прасування, хімічно очищену воду або інші хімічні
+                        речовини. Це може призвести до виплескування води, коричневих плям або пошкодження
+                        відпарювача.</p>
+                </div>
+            </div>
+            <div class="question-phillipssth__item">
+                <div class="question-phillipssth__title">
+                    <h2>Чи безпечно торкатися до мого одягу за допомогою відпарювача Philips 7000 Серії?
+                    </h2>
+                </div>
+                <div class="question-phillipssth__text">
+                    <p>Не турбуйтеся про те, що пошкодите свій одяг, підошва відпарювача спеціально
+                        розроблена для того, щоб торкатися будь-якої тканини, яку можна прасувати.
+                        Відпарювач не обпалить ваш одяг. Для кращого розгладжування складок переконайтеся,
+                        що підошва повністю контактує з одягом.</p>
+                </div>
+            </div>
+            <div class="question-phillipssth__item">
+                <div class="question-phillipssth__title">
+                    <h2>Що таке технологія OptimalTEMP?</h2>
+                </div>
+                <div class="question-phillipssth__text">
+                    <p>Технологія OptimalTEMP означає, що підошва компактного відпарювача Philips 7000 Серії
+                        нагрівається до оптимальної температури, безпечної для всіх тканин, і запобігає
+                        утворенню вологих плям. Підошва допомагає притиснути тканину під час відпарювання і
+                        забезпечує ще кращі результати відпарювання.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        $('.question-phillipssth__title').click(function (event) {
+            if ($('.question-phillipssth__row').hasClass('one')) {
+                $('.question-phillipssth__title').not($(this)).removeClass('active');
+                $('.question-phillipssth__text').not($(this).next()).slideUp(300);
+            }
+            $(this).toggleClass('active').next().slideToggle(300);
+        })
+    });
+</script>
