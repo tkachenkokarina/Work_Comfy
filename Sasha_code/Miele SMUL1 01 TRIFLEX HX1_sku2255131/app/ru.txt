@@ -1,0 +1,89 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 10px 0px;text-align:center;text-transform:uppercase;font-weight:500;color:#484848}#maincontent .maincontent__container p{font-size:24px;line-height:1.2;margin-bottom:10px;text-align:center;color:#484848}#maincontent .maincontent__container p span{font-weight:700}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:30px}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/1220);font-size:calc(22px + 10*(100vw - 320px)/1220)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1220);font-size:calc(16px + 8*(100vw - 320px)/1220)}}@media screen and (max-width: 767.98px){#maincontent .row-maincontent__inner{display:block;margin-bottom:20px}#maincontent .row-maincontent__text{padding:0 7px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img01.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ДИЗАЙН 3 в 1</h2>
+<p><span>Универсальность для любой ситуации.</span></p>
+<p>Конфигурацию Triflex можно идеально адаптировать                                 к вашим пожеланиям.<br /> Перемещайте PowerUnit в нужное положение, или используйте его отдельно, в соответствии с                                 вашими потребностями и наслаждайтесь еще большей свободой                                 во время уборки.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img02.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Comfort</h2>
+<p><span>Легкая уборка без усилий</span></p>
+<p>Разместите блок PowerUnit в нижней части пылесоса Triflex.<br /> Так вы сможете легко                                 убирать                                 большие помещения, например, длинные коридоры или просторные гостиные. В этом случае                                 центр тяжести смещается вниз и пылесос удобно держать в руке. Для перерывов в уборке                                 пылесос оснащен функцией вертикальной парковки.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img03.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Reach</h2>
+<p><span>Максимальный радиус действия</span></p>
+<p>Расположение блока PowerUnit в верхней части прибора обеспечивает максимальное                                 удобство.<br /> С помощью пылесоса очень легко добраться под кровать или шкаф и удалить пыль с потолка                                 – для идеальной чистоты вашего дома.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img04.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Compact</h2>
+<p><span>Простота использования</span></p>
+<p>Вам нужно убрать только крошки с дивана или пропылесосить автомобильные сиденья?<br /> Для этого просто используйте блок PowerUnit отдельно: без всасывающей трубки и                                 электрощетки. Пылесос всегда готов к работе – это экономит ваше время и обеспечивает                                 высокое качество уборки.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img05.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Технология Vortex</h2>
+<p><span>Ваши уникальные преимущества</span></p>
+<p>Благодаря технологии Vortex пылесос Miele Triflex обеспечит отличный результат                                 уборки.<br /> Моноциклонная технология обеспечивает чрезвычайно низкое затухание воздушного потока,                                 предотвращая потерю мощности. Центробежная сила гарантирует отделение грубых загрязнений                                 от мелкой пыли. В результате в пылесборнике остается большая часть загрязнений. Более                                 мелкая пыль задерживается следующей стадией фильтрации – фильтром тонкой очистки.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img06.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Литий-ионный аккумулятор VARTA</h2>
+<p><span>Мощный аккумулятор для продолжительной уборки</span></p>
+<p>Литий-ионный аккумулятор Triflex оснащен 7 высокопроизводительными элементами,                                 обеспечивающими мощность и надежность.<br /> Он разработан совместно с VARTA – экспертом в                                 области аккумуляторных технологий.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img07.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Настенный кронштейн</h2>
+<p><span>Идеальное хранение</span></p>
+<p>Практическое крепление позволяет хранить пылесос Miele вместе с тремя аксессуарами,                                 которые входят в комплект, на стене, что позволяет организовать удобное хранение.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255131/img08.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Twist2open</h2>
+<p><span>Быстрая очистка контейнера</span></p>
+<p>Функция Twist2open позволяет очистить контейнер для сбора пыли одним движением. <br />Дно контейнера открывается, и вся пыль попадает в мусорное ведро.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
