@@ -1,0 +1,279 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#samsung9fe a
+    color: inherit
+    text-decoration: none
+
+#samsung9fe
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#samsung9fe .bc-description__content p
+    margin-bottom: 0
+
+#samsung9fe .bc-description__content h3
+    text-align: left
+
+#samsung9fe
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#samsung9fe
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#samsung9fe p::first-letter
+    padding-left: 0
+
+#samsung9fe img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#samsung9fe img:hover
+    opacity: 1
+
+#samsung9fe .samsung9fe__container
+    max-width: 1440px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#samsung9fe .header-samsung9fe
+    &__image
+
+#samsung9fe .design-samsung9fe
+    &__box
+        padding: 30px 15px 0
+        h2
+            @include adaptiv-value("font-size", 40, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-align: center
+    &__slider
+        padding-bottom: 50px
+    &__wrapper
+    &__slide
+    &__image
+
+#samsung9fe .swiper
+    &-wrapper
+    &-slide
+    &-pagination
+        border: 1px solid #000
+        max-width: 110px
+        margin: 0 auto
+        right: 0
+        left: 0
+        padding: 5px
+        border-radius: 10px
+    &-button-prev
+    &-button-next
+
+#samsung9fe .swiper-pagination-bullet
+    background-color: #757575
+    width: 10px
+    height: 10px
+    transition: all 0.3s ease 0s
+
+#samsung9fe .swiper-pagination-bullet-active
+    background-color: #000
+
+#samsung9fe .swiper-button-prev:after,
+#samsung9fe .swiper-button-next:after
+    content: ""
+    background: url("https://cdn.comfy.ua/media/x/img3/2621442/arrow.png") 0 0 no-repeat
+    background-size: cover
+    width: 17px
+    height: 26px
+
+#samsung9fe .swiper-button-next:after
+    transform: rotate(-180deg)
+
+#samsung9fe .swiper-button-next
+    right: 2%
+#samsung9fe .swiper-button-prev
+    left: 2%
+
+#samsung9fe .swiper-button-prev,
+#samsung9fe .swiper-button-next
+    top: 50%
+    transform: translateY(-50%)
+    background-color: rgba(0,0,0,0.45)
+    //padding: 15px 22px
+    border-radius: 50%
+    width: 41px
+    height: 41px
+    transition: all 0.3s ease 0s
+    @media (any-hover: hover)
+        &:hover
+            background-color: #000
+            //border: 1px dashed #000
+
+#samsung9fe .notes-samsung9fe
+    padding-top: 50px
+    &__text
+        margin-bottom: 50px
+        padding: 0 15px
+        h2
+            @include adaptiv-value("font-size", 40, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-align: center
+    &__image
+
+#samsung9fe .bg-samsung9fe
+    &__bg
+        background-color: #000
+        padding: 20px
+    &__box
+        padding-top: 50px
+    &__text
+        margin-bottom: 30px
+        h2
+            @include adaptiv-value("font-size", 40, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+            color: #fff
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-align: center
+            color: #fff
+    &__image
+
+#samsung9fe .akum-samsung9fe
+    &__box
+        padding-top: 50px
+    &__text
+        margin-bottom: 30px
+        padding: 0 15px
+        h2
+            @include adaptiv-value("font-size", 40, 20, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-align: center
+    &__image
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 20px
+        padding: 0 15px
+        // max-width: 1000px
+        // margin: 0 auto
+    &__item
+        p
+            @include adaptiv-value("font-size", 30, 13, 1)
+            line-height: 1.2
+            &:not(:last-child)
+                margin-bottom: 10px
+
+#samsung9fe .snoska-samsung9fe
+    padding: 30px 15px
+    &__text
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-align: center
+
+//===========MEDIA=============================================================================================================================================
+
+    //@media screen and (max-width: 1300px)
+    //@media screen and (max-width: 1024.98px)
+    //@media screen and (max-width: 991.98px)
+    //@media screen and (max-width: 767.98px)
+@media screen and (max-width: 479.98px)
+    #samsung9fe .swiper-button-prev:after,
+    #samsung9fe .swiper-button-next:after
+        width: 10px
+        height: 17px
+    #samsung9fe .swiper-button-prev,
+    #samsung9fe .swiper-button-next
+        width: 27px
+        height: 27px
+    #samsung9fe .design-samsung9fe__slider
+        padding-bottom: 30px
+    #samsung9fe .swiper-pagination
+        max-width: 65px
+    #samsung9fe .swiper-pagination-bullet
+        width: 7px
+        height: 7px
+    #samsung9fe .akum-samsung9fe__box,
+    #samsung9fe .bg-samsung9fe__box,
+    #samsung9fe .notes-samsung9fe
+        padding-top: 30px
+    #samsung9fe .akum-samsung9fe__text,
+    #samsung9fe .notes-samsung9fe__text
+        margin-bottom: 15px

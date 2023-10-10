@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #samsung9fe ul,#samsung9fe ol,#samsung9fe li{list-style:none;padding:0;margin:0}#samsung9fe .bc-description__content p{margin-bottom:0}#samsung9fe .bc-description__content h3{text-align:left}#samsung9fe h1,#samsung9fe h2,#samsung9fe h3,#samsung9fe h4,#samsung9fe h5,#samsung9fe h6{text-transform:none;font-weight:bold}#samsung9fe{margin:0 auto;overflow:hidden;background-color:#fff}#samsung9fe h1,#samsung9fe h2,#samsung9fe h3,#samsung9fe h4,#samsung9fe h5,#samsung9fe h6,#samsung9fe p{margin:0;padding:0;text-align:left}#samsung9fe p::first-letter{padding-left:0}#samsung9fe img{opacity:1;max-width:100%;display:block;margin:0 auto}#samsung9fe img:hover{opacity:1}#samsung9fe .samsung9fe__container{max-width:1440px;margin:0 auto}#samsung9fe .design-samsung9fe__box{padding:30px 15px 0}#samsung9fe .design-samsung9fe__box h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .design-samsung9fe__box h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .design-samsung9fe__box p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .design-samsung9fe__box p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .design-samsung9fe__slider{padding-bottom:50px}#samsung9fe .swiper-pagination{border:1px solid #000;max-width:110px;margin:0 auto;right:0;left:0;padding:5px;-webkit-border-radius:10px;border-radius:10px}#samsung9fe .swiper-pagination-bullet{background-color:#757575;width:10px;height:10px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}#samsung9fe .swiper-pagination-bullet-active{background-color:#000}#samsung9fe .swiper-button-prev:after,#samsung9fe .swiper-button-next:after{content:"";background:url("https://cdn.comfy.ua/media/x/img3/2621442/arrow.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:17px;height:26px}#samsung9fe .swiper-button-next:after{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)}#samsung9fe .swiper-button-next{right:2%}#samsung9fe .swiper-button-prev{left:2%}#samsung9fe .swiper-button-prev,#samsung9fe .swiper-button-next{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);background-color:rgba(0,0,0,.45);-webkit-border-radius:50%;border-radius:50%;width:41px;height:41px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(any-hover: hover){#samsung9fe .swiper-button-prev:hover,#samsung9fe .swiper-button-next:hover{background-color:#000}}#samsung9fe .notes-samsung9fe{padding-top:50px}#samsung9fe .notes-samsung9fe__text{margin-bottom:50px;padding:0 15px}#samsung9fe .notes-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .notes-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .notes-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .notes-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .bg-samsung9fe__bg{background-color:#000;padding:20px}#samsung9fe .bg-samsung9fe__box{padding-top:50px}#samsung9fe .bg-samsung9fe__text{margin-bottom:30px}#samsung9fe .bg-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center;color:#fff}@media(max-width: 1440px){#samsung9fe .bg-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .bg-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center;color:#fff}@media(max-width: 1440px){#samsung9fe .bg-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__box{padding-top:50px}#samsung9fe .akum-samsung9fe__text{margin-bottom:30px;padding:0 15px}#samsung9fe .akum-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:20px;padding:0 15px}#samsung9fe .akum-samsung9fe__item p{font-size:30px;line-height:1.2}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__item p{font-size:-webkit-calc(13px + 17 * ((100vw - 320px) / 1120));font-size:calc(13px + 17 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__item p:not(:last-child){margin-bottom:10px}#samsung9fe .snoska-samsung9fe{padding:30px 15px}#samsung9fe .snoska-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .snoska-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}@media screen and (max-width: 479.98px){#samsung9fe .swiper-button-prev:after,#samsung9fe .swiper-button-next:after{width:10px;height:17px}#samsung9fe .swiper-button-prev,#samsung9fe .swiper-button-next{width:27px;height:27px}#samsung9fe .design-samsung9fe__slider{padding-bottom:30px}#samsung9fe .swiper-pagination{max-width:65px}#samsung9fe .swiper-pagination-bullet{width:7px;height:7px}#samsung9fe .akum-samsung9fe__box,#samsung9fe .bg-samsung9fe__box,#samsung9fe .notes-samsung9fe{padding-top:30px}#samsung9fe .akum-samsung9fe__text,#samsung9fe .notes-samsung9fe__text{margin-bottom:15px}}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <div id="samsung9fe">
+        <div class="samsung9fe__container">
+            <div class="samsung9fe__header header-samsung9fe">
+                <div class="header-samsung9fe__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2621442/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsung9fe__design design-samsung9fe">
+                <div class="design-samsung9fe__box">
+                    <h2>Яркий дизайн для ярких личностей</h2>
+                    <p>Samsung Galaxy Tab S9 FE и FE+ — это устройство, которое поможет вам воплотить все ваши самые
+                        смелые творческие идеи. Выбирайте дизайн, который вдохновит и поможет проявиться. Смотрите,
+                        создавайте и распространяйте на широком ярком экране.</p>
+                </div>
+                <div class="design-samsung9fe__slider swiper">
+                    <div class="design-samsung9fe__wrapper swiper-wrapper">
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="samsung9fe__notes notes-samsung9fe">
+                <div class="notes-samsung9fe__text">
+                    <h2>Работайте с заметками более эффективно</h2>
+                    <p>С помощью S Pen вести заметки и рисовать стало еще легче! Делайте эскизы, рисуйте, пишите
+                        конспекты и делайте многое другое с обновленным водо- и пыленепроницаемым стилусом S Pen.
+                        Выбирайте один из четырех цветов — в пару планшету.</p>
+                </div>
+                <div class="notes-samsung9fe__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2621442/img6.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsung9fe__bg bg-samsung9fe">
+                <div class="bg-samsung9fe__bg">
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Реалистичное изображение гарантировано</h2>
+                            <p>Дисплей с высоким разрешением и достаточной диагональю показывает максимально
+                                реалистичное изображение. А широкий диапазон цветов DCI-P3 и повышенная яркость
+                                обеспечивают четкие и насыщенные детали.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img7.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Плавность, к которой вы стремились</h2>
+                            <p>Адаптивная частота экрана до 90 Гц — это ваш билет в несравненное удовольствие от
+                                пользования планшетом серии Samsung Galaxy Tab S9 FE и FE+. Дисплей обеспечивает
+                                плавность, независимо от того, что вы делаете: играете в любимую игру, редактируете
+                                видео, просматриваете сериал или прокручиваете социальные сети.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img8.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Четкое изображение даже в солнечный день</h2>
+                            <p>Vision Booster — функция, обеспечивающая четкость и насыщенность изображения даже в ярко
+                                освещенных местах. Интеллектуальный алгоритм распознает солнечное сияние и
+                                подстраивается под него.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Ваши глаза теперь в безопасности</h2>
+                            <p>Просматривайте контент и творите сколько угодно — ваши глаза в полной безопасности.
+                                Планшеты Samsung Galaxy Tab S9 FE и FE+ разработаны с пониженным уровнем излучения
+                                синего света, что гарантирует вам комфортное использование устройства на протяжении
+                                любого количества времени.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsung9fe__akum akum-samsung9fe">
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Аккумулятор, который выдержит все</h2>
+                        <p>Планшеты Samsung Galaxy Tab S9 FE и FE+ оснащены мощным и емким аккумулятором, который
+                            обеспечивает долговечную работу. Полного заряда хватает на творчество, работу и отдых в
+                            течение большей части дня. Он также имеет удобную функцию зарядки вашего смартфона — просто
+                            подключите смартфон Samsung Galaxy к планшету, а функция быстрой зарядки сделает все
+                            остальное.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Создавайте шедевры для большого экрана</h2>
+                        <p>Samsung Notes и Goodnotes помогут вам создавать профессиональные заметки и дать волю
+                            творчеству как на настоящей бумаге. Вместе со стилусом S Pen делайте и редактируйте эскизы в
+                            горизонтальной и вертикальной ориентациях.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Прочный водонепроницаемый корпус</h2>
+                        <p>Серия Samsung Galaxy Tab S9 FE и FE+ — это первые планшеты, имеющие водо- и пыленепроницаемую
+                            защиту. Каждый из них оснащен прочной цельнометаллической рамой и защитой класса IP68.
+                            Фиксируйте и творите где угодно и когда угодно.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Производительность нового уровня</h2>
+                        <p>Galaxy Tab S9 FE и FE+ созданы на основе высокопроизводительного чипсета Exynos 1380, что
+                            обеспечивает быструю и плавную работу даже в многозадачном режиме. И про сохранение всех
+                            необходимых данных можете не беспокоиться — если не хватит встроенной памяти, можно
+                            использовать дополнительную micro SD.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Оставайтесь всегда на связи</h2>
+                        <p>Благодаря поддержке двух SIM-карт вы всегда можете оставаться на связи с родными и близкими.
+                            Используйте обычную SIM и активируйте eSIM, делайте основной любую карту и переключайтесь
+                            между ними легко и быстро. Все контакты на вашем eSIM при переключении устройств переносятся
+                            на планшет.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Создавайте семейный круг</h2>
+                        <p>Создайте профили на планшете, добавляйте новые аккаунты Samsung и давайте своим членам семьи
+                            пользоваться планшетом на 100%.</p>
+                    </div>
+                    <div class="akum-samsung9fe__inner">
+                        <div class="akum-samsung9fe__item">
+                            <p>Ссылка на аккаунт для детей и семьи</p>
+                            <p>Найти местонахождение</p>
+                        </div>
+                        <div class="akum-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img16.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Карманный персональный компьютер</h2>
+                        <p>Используйте клавиатуру в виде чехла, чтобы легко превращать планшет в полноценный компьютер
+                            где бы вы ни были. Клавиатура-чехол оснащена функциональными клавишами и трекпадом,
+                            поддержкой DeX и возможностью подключения к другим устройствам Samsung Galaxy.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsung9fe__snoska snoska-samsung9fe">
+                <div class="snoska-samsung9fe__text">
+                    <p>Купить планшет Samsung Galaxy Tab S9 FE и FE+ можно на сайте или в фирменных магазинах Comfy!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                speed: 500,
+                slidesPerView: 1,
+                //spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+    UA
+    <style>
+        #samsung9fe ul,#samsung9fe ol,#samsung9fe li{list-style:none;padding:0;margin:0}#samsung9fe .bc-description__content p{margin-bottom:0}#samsung9fe .bc-description__content h3{text-align:left}#samsung9fe h1,#samsung9fe h2,#samsung9fe h3,#samsung9fe h4,#samsung9fe h5,#samsung9fe h6{text-transform:none;font-weight:bold}#samsung9fe{margin:0 auto;overflow:hidden;background-color:#fff}#samsung9fe h1,#samsung9fe h2,#samsung9fe h3,#samsung9fe h4,#samsung9fe h5,#samsung9fe h6,#samsung9fe p{margin:0;padding:0;text-align:left}#samsung9fe p::first-letter{padding-left:0}#samsung9fe img{opacity:1;max-width:100%;display:block;margin:0 auto}#samsung9fe img:hover{opacity:1}#samsung9fe .samsung9fe__container{max-width:1440px;margin:0 auto}#samsung9fe .design-samsung9fe__box{padding:30px 15px 0}#samsung9fe .design-samsung9fe__box h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .design-samsung9fe__box h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .design-samsung9fe__box p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .design-samsung9fe__box p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .design-samsung9fe__slider{padding-bottom:50px}#samsung9fe .swiper-pagination{border:1px solid #000;max-width:110px;margin:0 auto;right:0;left:0;padding:5px;-webkit-border-radius:10px;border-radius:10px}#samsung9fe .swiper-pagination-bullet{background-color:#757575;width:10px;height:10px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}#samsung9fe .swiper-pagination-bullet-active{background-color:#000}#samsung9fe .swiper-button-prev:after,#samsung9fe .swiper-button-next:after{content:"";background:url("https://cdn.comfy.ua/media/x/img3/2621442/arrow.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:17px;height:26px}#samsung9fe .swiper-button-next:after{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)}#samsung9fe .swiper-button-next{right:2%}#samsung9fe .swiper-button-prev{left:2%}#samsung9fe .swiper-button-prev,#samsung9fe .swiper-button-next{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);background-color:rgba(0,0,0,.45);-webkit-border-radius:50%;border-radius:50%;width:41px;height:41px;-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s}@media(any-hover: hover){#samsung9fe .swiper-button-prev:hover,#samsung9fe .swiper-button-next:hover{background-color:#000}}#samsung9fe .notes-samsung9fe{padding-top:50px}#samsung9fe .notes-samsung9fe__text{margin-bottom:50px;padding:0 15px}#samsung9fe .notes-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .notes-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .notes-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .notes-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .bg-samsung9fe__bg{background-color:#000;padding:20px}#samsung9fe .bg-samsung9fe__box{padding-top:50px}#samsung9fe .bg-samsung9fe__text{margin-bottom:30px}#samsung9fe .bg-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center;color:#fff}@media(max-width: 1440px){#samsung9fe .bg-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .bg-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center;color:#fff}@media(max-width: 1440px){#samsung9fe .bg-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__box{padding-top:50px}#samsung9fe .akum-samsung9fe__text{margin-bottom:30px;padding:0 15px}#samsung9fe .akum-samsung9fe__text h2{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__text h2{font-size:-webkit-calc(20px + 20 * ((100vw - 320px) / 1120));font-size:calc(20px + 20 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:20px;padding:0 15px}#samsung9fe .akum-samsung9fe__item p{font-size:30px;line-height:1.2}@media(max-width: 1440px){#samsung9fe .akum-samsung9fe__item p{font-size:-webkit-calc(13px + 17 * ((100vw - 320px) / 1120));font-size:calc(13px + 17 * ((100vw - 320px) / 1120))}}#samsung9fe .akum-samsung9fe__item p:not(:last-child){margin-bottom:10px}#samsung9fe .snoska-samsung9fe{padding:30px 15px}#samsung9fe .snoska-samsung9fe__text p{font-size:30px;line-height:1.2;text-align:center}@media(max-width: 1440px){#samsung9fe .snoska-samsung9fe__text p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}@media screen and (max-width: 479.98px){#samsung9fe .swiper-button-prev:after,#samsung9fe .swiper-button-next:after{width:10px;height:17px}#samsung9fe .swiper-button-prev,#samsung9fe .swiper-button-next{width:27px;height:27px}#samsung9fe .design-samsung9fe__slider{padding-bottom:30px}#samsung9fe .swiper-pagination{max-width:65px}#samsung9fe .swiper-pagination-bullet{width:7px;height:7px}#samsung9fe .akum-samsung9fe__box,#samsung9fe .bg-samsung9fe__box,#samsung9fe .notes-samsung9fe{padding-top:30px}#samsung9fe .akum-samsung9fe__text,#samsung9fe .notes-samsung9fe__text{margin-bottom:15px}}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div id="samsung9fe">
+        <div class="samsung9fe__container">
+            <div class="samsung9fe__header header-samsung9fe">
+                <div class="header-samsung9fe__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2621442/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsung9fe__design design-samsung9fe">
+                <div class="design-samsung9fe__box">
+                    <h2>Яскравий дизайн для яскравих особистостей</h2>
+                    <p>Samsung Galaxy Tab S9 FE та FE+ — це пристрій, який допоможе вам втілити всі ваші найсміливіші
+                        творчі ідеї. Обирайте дизайн, який надихає вас і допоможе проявитися. Споглядайте, створюйте та
+                        поширюйте на яскравому широкому екрані.</p>
+                </div>
+                <div class="design-samsung9fe__slider swiper">
+                    <div class="design-samsung9fe__wrapper swiper-wrapper">
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="design-samsung9fe__slide swiper-slide">
+                            <div class="design-samsung9fe__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2621442/img5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="samsung9fe__notes notes-samsung9fe">
+                <div class="notes-samsung9fe__text">
+                    <h2>Працюйте з нотатками ефективніше</h2>
+                    <p>За допомогою S Pen вести нотатки та малювати стало ще легше! Робіть ескізи, малюйте, пишіть
+                        конспекти та робіть багато чого іншого з оновленим водо- та пилонепроникним стилусом S Pen.
+                        Обирайте один з чотирьох кольорів — в пару планшету.</p>
+                </div>
+                <div class="notes-samsung9fe__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2621442/img6.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsung9fe__bg bg-samsung9fe">
+                <div class="bg-samsung9fe__bg">
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Реалістичне зображення гарантовано</h2>
+                            <p>Дисплей з високою роздільною здатністю та достатньою діагоналлю показує максимально
+                                реалістичне зображення. А широкий діапазон кольорів DCI-P3 та підвищена яскравість
+                                забезпечують чіткі та насичені деталі.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img7.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Плавність, якої ви прагнули</h2>
+                            <p>Адаптивна частота екрана до 90 Гц — це ваш квиток в незрівнянну насолоду від користування
+                                планшетом серії Samsung Galaxy Tab S9 FE та FE+. Дисплей забезпечує плавність, незалежно
+                                від того що ви робите: граєте в улюблену гру, редагуєте відео, переглядаєте серіал або
+                                прокручуєте соціальні мережі. </p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img8.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Чітке зображення навіть у сонячний день</h2>
+                            <p>Vision Booster — функція, яка забезпечує чіткість та насиченість зображення навіть в
+                                яскраво освітлених місцях. Інтелектуальний алгоритм розпізнає сонячне сяйво та
+                                підлаштовується під нього.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-samsung9fe__box">
+                        <div class="bg-samsung9fe__text">
+                            <h2>Ваші очі тепер в безпеці</h2>
+                            <p>Переглядайте контент та творіть скільки завгодно — ваші очі в повній безпеці. Планшети
+                                Samsung Galaxy Tab S9 FE та FE+ спеціально розроблені зі зниженим рівнем випромінювання
+                                синього світла, що гарантує вам комфортне користування пристроєм будь-яку кількість
+                                часу.</p>
+                        </div>
+                        <div class="bg-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsung9fe__akum akum-samsung9fe">
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Акумулятор, який витримає все</h2>
+                        <p>Планшети Samsung Galaxy Tab S9 FE та FE+ оснащені потужним та містким акумулятором, який
+                            забезпечує довговічну роботу. Повного заряду вистачає на творчість, роботу та відпочинок
+                            протягом більшої частини дня. Він також має зручну функцію заряджання вашого смартфона —
+                            просто під'єднайте смартфон Samsung Galaxy до планшета, а функція швидкої зарядки зробить
+                            все інше.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Створюйте шедеври для великого екрана</h2>
+                        <p>Samsung Notes та Goodnotes допоможуть вам створювати професійні нотатки й дати волю
+                            творчості, ніби на справжньому папері. Разом зі стилусом S Pen робіть та редагуйте свої
+                            ескізи в горизонтальній та вертикальній орієнтаціях.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Міцний водонепроникний корпус</h2>
+                        <p>Серія Samsung Galaxy Tab S9 FE та FE+ — це перші планшети, які мають водо- та пилонепроникний
+                            захист. Кожен з них оснащений міцною суцільнометалевою рамою та захистом класу IP68.
+                            Фіксуйте та творіть будь-де і будь-коли.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Продуктивність нового рівня</h2>
+                        <p>Galaxy Tab S9 FE та FE+ створені на основі високопродуктивного чіпсета Exynos 1380, що
+                            забезпечує швидку і водночас плавну роботу навіть у багатозадачному режимі. І за збереження
+                            всіх необхідних даних можете не перейматися — якщо не вистачить вбудованої пам'яті, можна
+                            використати додаткову micro SD.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Залишайтеся завжди на зв'язку</h2>
+                        <p>Завдяки підтримці двох SIM-карт ви можете завжди залишатися на зв'язку з рідними та
+                            близькими. Використовуйте звичайну SIM та активуйте eSIM, робіть основною будь-яку картку та
+                            перемикайтесь між ними легко та швидко. А всі контакти на вашій eSIM при перемиканні
+                            пристроїв переносяться на планшет.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Створюйте сімейне коло</h2>
+                        <p>Створюйте профілі на планшеті, додавайте нові облікові записи Samsung та давайте можливість
+                            своїм членам сім'ї користуватися планшетом на 100%.</p>
+                    </div>
+                    <div class="akum-samsung9fe__inner">
+                        <div class="akum-samsung9fe__item">
+                            <p>Посилання на обліковий запис для дітей та сім'ї</p>
+                            <p>Знайти місцеперебування</p>
+                        </div>
+                        <div class="akum-samsung9fe__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2621442/img16.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="akum-samsung9fe__box">
+                    <div class="akum-samsung9fe__text">
+                        <h2>Кишеньковий персональний комп'ютер</h2>
+                        <p>Користуйтеся клавіатурою у вигляді чохла, щоб легко перетворювати планшет на повноцінний
+                            комп'ютер де б ви не були. Клавіатура-чохол оснащена функціональними клавішами й трекпадом,
+                            підтримкою DeX та можливістю підключення до інших пристроїв Samsung Galaxy.</p>
+                    </div>
+                    <div class="akum-samsung9fe__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2621442/img17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsung9fe__snoska snoska-samsung9fe">
+                <div class="snoska-samsung9fe__text">
+                    <p>Купити планшет Samsung Galaxy Tab S9 FE та FE+ в Україні можна на сайті або у фірмових магазинах
+                        Comfy!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                speed: 500,
+                slidesPerView: 1,
+                //spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
