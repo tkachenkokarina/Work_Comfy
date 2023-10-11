@@ -1,0 +1,119 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 40px 0px;color:#1b3155}#maincontent .maincontent__container p{font-size:24px;line-height:1.2;margin-bottom:20px;color:#505456}#maincontent .maincontent__box{margin-bottom:50px}#maincontent .maincontent__text{max-width:1300px;margin:0 auto;padding:40px 15px 0}#maincontent .maincontent__text p{text-align:center}#maincontent .maincontent__title h2{text-align:center}#maincontent .row-maincontent{margin-bottom:50px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-column-gap:65px;-moz-column-gap:65px;column-gap:65px}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 15px 10px 0}#maincontent .row-maincontent__text_pl{padding-left:65px}#maincontent .row-maincontent__text_pr{padding-right:65px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .haier-col__box{margin-bottom:3px}#maincontent .haier-col__title h2{text-align:center}#maincontent .haier-col__images{display:grid;grid-template-columns:repeat(3, 1fr);gap:3px}@media screen and (max-width: 1300px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/980);font-size:calc(22px + 10*(100vw - 320px)/980)}#maincontent .maincontent__container h3{font-size:-webkit-calc(20px + 8*(100vw - 320px)/980);font-size:calc(20px + 8*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/980);font-size:calc(16px + 8*(100vw - 320px)/980)}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__text{padding:20px 10px 0}#maincontent .row-maincontent__inner{-webkit-column-gap:55px;-moz-column-gap:55px;column-gap:55px}#maincontent .row-maincontent__text h2{margin-bottom:20px}#maincontent .row-maincontent__text_pl{padding-left:45px}#maincontent .row-maincontent__text_pr{padding-right:45px}#maincontent .haier-col__title h2{margin-bottom:20px}}@media screen and (max-width: 991.98px){#maincontent .maincontent__box{margin-bottom:25px}#maincontent .row-maincontent{margin-bottom:25px}#maincontent .row-maincontent__inner{-webkit-column-gap:25px;-moz-column-gap:25px;column-gap:25px}#maincontent .row-maincontent__text_pl{padding-left:20px}#maincontent .row-maincontent__text_pr{padding-right:20px}#maincontent .haier-col__box{margin-bottom:3px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__box{margin-bottom:0}#maincontent .maincontent__text{padding:10px 5px 0}#maincontent .maincontent__text p{margin-bottom:15px}#maincontent .maincontent__title h2{margin:10px 0}#maincontent .row-maincontent{margin-bottom:0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2{text-align:center;margin:15px 10px}#maincontent .row-maincontent__text p{margin-bottom:10px;text-align:center}#maincontent .haier-col__box{margin-bottom:3px}#maincontent .haier-col__title h2{margin:10px 0}#maincontent .haier-col__images{grid-template-columns:repeat(2, 1fr)}#maincontent .haier-col__img_col2{display:none}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box">
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img01_ru.png" /></div>
+<div class="maincontent__text">
+<p>Холодильники Haier Side By Side гарантируют непревзойденное удобство использования, огромную                         вместимость и легкий доступ ко всем отделениям. Большое пространство позволяет беззаботно                         хранить                         любую пищу с превосходной организацией и оптимальной видимостью как ключевыми характеристиками.                         Элегантный и современный дизайн идеально впишется в любую кухню, а интуитивно понятное                         управление                         упрощает повседневную жизнь.</p>
+</div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img02_ru.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>Гарантия долговечности</h2>
+<p>Благодаря новейшим технологиям, компрессоры Haier смогли существенно уменьшить уровень                                 вибрации во время своей работы, что делает их более тихими и производительными. Оценивая                                 высокий уровень качества своей продукции, Haier предоставляет 3-летнюю гарантию на свои                                 холодильники и 15 лет гарантии на инверторные компрессоры в моделях серии 3D.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img03.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pl">
+<h2>Super-Cool и Super-Freeze – мгновенное снижение температуры</h2>
+<p>Функция Super-Cool позволяет быстро охладить большие порции пищи, например, после большой                                 закупки, гарантируя свежесть продуктам. Функция Super-Freeze быстро снижает внутреннюю                                 температуру прибора, ускоряя замораживание свежих продуктов и защищая продукты, которые                                 уже хранятся, от нежелательного нагрева. Эти функции помогают сохранять качество,                                 аппетитный вид и вкус продуктов.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img04.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>Multi Air Flow – инновационная система распределения холодного воздуха</h2>
+<p>Multi Air Flow – это инновационная технология, которая обеспечивает циркуляцию холодного                                 воздуха в холодильнике с помощью специально спроектированных отверстий, расположенных                                 на задней стенке панелей No Frost. Это решение позволяет поддерживать стабильную                                 температуру при любых условиях и гарантирует оптимальное и длительное хранение                                 продуктов.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img05.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pl">
+<h2>Два независимых воздушных контура в холодильнике и морозильной камере</h2>
+<p>Два независимых воздушных контура холодильника Side by Side позволяют легко                                 контролировать и изменять температуру в холодильной и морозильной камерах. Вы можете                                 легко управлять настройками каждой зоны отдельно с помощью панели управления на дверце                                 холодильника, поэтому ваши продукты всегда будут оптимально защищены.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img06.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>Все для вашего удобства: 4 полки холодильной и морозильной камеры</h2>
+<p>Поддерживать идеальный порядок как в холодильной, так и в морозильной камере еще                                 никогда не было так просто, как с холодильниками Side by Side от Haier. Каждая зона                                 имеет четыре полки из безопасного закаленного стекла, которые позволят вам оптимально                                 хранить продукты каждый день.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img07.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pl">
+<h2>Полки в дверцах холодильной и морозильной камер</h2>
+<p>Наслаждайтесь быстрым и легким доступом к любимым напиткам, майонезу или кетчупу или                                 увеличивайте пространство в морозильной камере, используя до трех полок, расположенных в                                 каждой зоне. Полки на дверце холодильника удобны, устойчивы и идеально организуют                                 хранящиеся продукты.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img08.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>Fresh Box и Freeze Box: 2 ящика в холодильном и морозильном отделениях</h2>
+<p>Свежие продукты необходимо хранить в оптимальных условиях, чтобы они не потеряли свою                                 питательную ценность. Ящики Fresh Box в холодильнике будут поддерживать постоянную                                 низкую температуру, обеспечивая идеальные условия для хранения овощей и фруктов или сыра                                 с интенсивным ароматом, сохраняя их вкус и свойства. Ящики Freeze Box обеспечат                                 наилучшие условия для хранения сырого мяса, рыбы и овощей. Кроме того, они позволят вам                                 гораздо лучше организовать хранящиеся продукты, так что вам точно не будет недоставать                                 места, чтобы запастись продуктами для всей семьи.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img09.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pl">
+<h2>Элегантная внутренняя отделка холодильника</h2>
+<p>Холодильник Haier является ярким примером идеального сочетания изысканного дизайна и                                 высочайшего уровня функциональности. Разработанный с вниманием к каждой детали - это                                 элегантный прибор в классических тонах. Покрытие против отпечатков пальцев, внешняя                                 панель управления и гармонично организованное пространство для хранения обогатят любую                                 кухню.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img10.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>LED освещение в холодильнике</h2>
+<p>Чтобы обеспечить идеальную видимость на всех полках, холодильник оснащен мощной                                 светодиодной подсветкой, которая прекрасно освещает весь интерьер. Если вы знакомы с                                 ночными перекусами, это решение станет вашим союзником.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img11.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pl">
+<h2>Эффективное светодиодное освещение в морозильной камере</h2>
+<p>Верхние светодиоды делают содержимое морозильной камеры более видимым, чем при                                 традиционном освещении, которое используется в холодильниках. Светодиодное освещение не                                 только потребляет меньше энергии, но и имеет более долгий срок службы.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2285574i/img12_ru.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text row-maincontent__text_pr">
+<h2>Haier №1 в мире</h2>
+<p>3 2009 года Haier является недосягаемым лидером в производстве бытовой техники. За этим                                 стоит одна цель: создание надежных приборов высочайшего качества. Адаптируясь к                                 динамике современного мира и меняющимся требованиям потребителей, бренд предлагает                                 инновационные, функциональные и современные продукты для службы повседневной жизни.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__title">
+<h2>Вдохновляйтесь!</h2>
+</div>
+<img src="https://cdn.comfy.ua/media/x/img3/2285574i/img13_ru.png" /></div>
+</div>
+</div>

@@ -1,0 +1,268 @@
+#maincontent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#maincontent ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#maincontent .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#maincontent .bc-description__content h3 {
+  text-align: left;
+}
+
+#maincontent p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  font-weight: bold;
+}
+
+#maincontent {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#maincontent p::first-letter {
+  padding-left: 0;
+}
+
+#maincontent img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#maincontent img:hover {
+  opacity: 1;
+}
+
+#maincontent .maincontent__container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#maincontent .maincontent__container h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 20px 0px 40px 0px;
+  color: #1b3155;
+}
+#maincontent .maincontent__container p {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #505456;
+}
+#maincontent .maincontent__box {
+  margin-bottom: 50px;
+}
+#maincontent .maincontent__text {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 15px 0;
+}
+#maincontent .maincontent__text p {
+  text-align: center;
+}
+#maincontent .maincontent__title h2 {
+  text-align: center;
+}
+
+#maincontent .row-maincontent {
+  margin-bottom: 50px;
+}
+#maincontent .row-maincontent__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 65px;
+     -moz-column-gap: 65px;
+          column-gap: 65px;
+}
+#maincontent .row-maincontent__inner_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#maincontent .row-maincontent__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#maincontent .row-maincontent__text {
+  padding: 10px 15px 10px 0;
+}
+#maincontent .row-maincontent__text_pl {
+  padding-left: 65px;
+}
+#maincontent .row-maincontent__text_pr {
+  padding-right: 65px;
+}
+#maincontent .row-maincontent__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#maincontent .haier-col__box {
+  margin-bottom: 3px;
+}
+#maincontent .haier-col__title h2 {
+  text-align: center;
+}
+#maincontent .haier-col__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+@media screen and (max-width: 1300px) {
+  #maincontent .maincontent__container h2 {
+    font-size: -webkit-calc(22px + 10 * (100vw - 320px) / 980);
+    font-size: calc(22px + 10 * (100vw - 320px) / 980);
+  }
+  #maincontent .maincontent__container h3 {
+    font-size: -webkit-calc(20px + 8 * (100vw - 320px) / 980);
+    font-size: calc(20px + 8 * (100vw - 320px) / 980);
+  }
+  #maincontent .maincontent__container p {
+    font-size: -webkit-calc(16px + 8 * (100vw - 320px) / 980);
+    font-size: calc(16px + 8 * (100vw - 320px) / 980);
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  #maincontent .maincontent__text {
+    padding: 20px 10px 0;
+  }
+  #maincontent .row-maincontent__inner {
+    -webkit-column-gap: 55px;
+       -moz-column-gap: 55px;
+            column-gap: 55px;
+  }
+  #maincontent .row-maincontent__text h2 {
+    margin-bottom: 20px;
+  }
+  #maincontent .row-maincontent__text_pl {
+    padding-left: 45px;
+  }
+  #maincontent .row-maincontent__text_pr {
+    padding-right: 45px;
+  }
+  #maincontent .haier-col__title h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #maincontent .maincontent__box {
+    margin-bottom: 25px;
+  }
+  #maincontent .row-maincontent {
+    margin-bottom: 25px;
+  }
+  #maincontent .row-maincontent__inner {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+  }
+  #maincontent .row-maincontent__text_pl {
+    padding-left: 20px;
+  }
+  #maincontent .row-maincontent__text_pr {
+    padding-right: 20px;
+  }
+  #maincontent .haier-col__box {
+    margin-bottom: 3px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #maincontent .maincontent__box {
+    margin-bottom: 0;
+  }
+  #maincontent .maincontent__text {
+    padding: 10px 5px 0;
+  }
+  #maincontent .maincontent__text p {
+    margin-bottom: 15px;
+  }
+  #maincontent .maincontent__title h2 {
+    margin: 10px 0;
+  }
+  #maincontent .row-maincontent {
+    margin-bottom: 0;
+  }
+  #maincontent .row-maincontent__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #maincontent .row-maincontent__text {
+    padding: 0 5px;
+  }
+  #maincontent .row-maincontent__text h2 {
+    text-align: center;
+    margin: 15px 10px;
+  }
+  #maincontent .row-maincontent__text p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #maincontent .haier-col__box {
+    margin-bottom: 3px;
+  }
+  #maincontent .haier-col__title h2 {
+    margin: 10px 0;
+  }
+  #maincontent .haier-col__images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #maincontent .haier-col__img_col2 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
