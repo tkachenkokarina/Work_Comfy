@@ -1,0 +1,391 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 46px, $lineHeight: 1.2)
+            margin: 30px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 38px, $lineHeight: 1.2)
+            margin: 30px 0px
+            text-align: center
+        h4
+            @include fonts($fontSize: 24px, $lineHeight: 1.33)
+            margin: 20px 0px
+            text-align: center
+        h5
+            @include fonts($fontSize: 20px, $lineHeight: 1.33)
+            margin: 20px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 18px, $lineHeight: 1.33)
+            margin-bottom: 20px
+            text-align: center
+    &__box
+        margin-bottom: 50px
+    &__text
+        max-width: 1200px
+        margin: 0 auto
+        padding: 0 10px
+    &__col
+        margin-bottom: 50px
+
+#maincontent .smsngvr3mb77312k-pos
+    &__box
+        @include position($position: relative, $zIndex: 4)
+    &__text
+        @include position($position: absolute, $zIndex: 5)
+        top: 17%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -60%)
+    &__col
+        @include position($position: absolute, $zIndex: 5)
+        top: 87%
+        transform: translateY(-20%)
+        background-color: #000
+        width: 28vw
+        border-radius: 15px
+        padding: 7px 10px
+        &-top
+            p
+                font-size: 24px
+                color: #fff
+                text-shadow: 3px -1px 1px #000
+                background: linear-gradient(to right, #09cb3a, #af9a2a, #cf7a1f, #dd250a)
+                border: 2px solid #fff
+                border-radius: 20px
+                text-align: left
+                margin: 7px 15px
+                padding-left: 10px
+        &-top01
+            p
+                background: linear-gradient(to right, #09cb3a, #af9a2a, #cf7a1f, #dd250a)
+        &-top02
+            p
+                background: linear-gradient(to right, #09cb3a, #35b046, #4d7c49, #313132)
+        &-bottom
+            p
+                font-size: 26px
+                position: relative
+                color: #fff
+                -webkit-text-stroke: .04em #fff
+
+                &::before
+                    content: attr(data-text)
+                    position: absolute
+                    left: 0
+                    right: 0
+                    -webkit-text-stroke: .02em #fff
+        &_left
+            left: 23px
+            right: 80%
+        &_right
+            right: 23px
+            left: 70%
+
+#maincontent .smsngvr3mb77312k
+    &__img
+        &_bg
+            background-color: #000
+
+#maincontent .col-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: stretch)  
+        column-gap: 40px
+
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        max-width: 580px
+        margin: 0 auto
+    &__image
+        flex: 0 1 50%
+
+#maincontent .smsngvr3mb77312k-slider
+    &__text
+        margin-bottom: 50px
+    &__img
+        padding-top: 200px
+
+#maincontent .smsngvr3mb77312k-slider__pagination, #maincontent .swiper-pagination
+    top: 0
+    bottom: auto
+    display: flex
+    justify-content: space-evenly
+
+#maincontent .swiper-pagination    
+    padding: 30px 0
+
+#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet
+    @include position($position: relative, $zIndex: 4) 
+    width: 87px
+    height: 87px
+    &:nth-child(1)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_1.png))
+        background-color: transparent
+    &:nth-child(2)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_2.png))
+        background-color: transparent
+
+#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet-active
+    &:nth-child(1)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_1_bl.png))
+        background-color: transparent        
+    &:nth-child(2)
+        @include bg-image($url: url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_2_bl.png))
+        background-color: transparent
+        
+    
+    
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1270.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            width: 30vw
+            &-top
+                p
+                    margin: 7px 5px
+            &_right
+                left: 68%
+@media screen and (max-width: 1200px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 28px + (46 - 28) * ((100vw - 320px)/(1200 - 320)))
+            h3
+                font-size: calc( 24px + (38 - 24) * ((100vw - 320px)/(1200 - 320)))
+            h4
+                font-size: calc( 20px + (24 - 20) * ((100vw - 320px)/(1200 - 320)))
+            h5
+                font-size: calc( 18px + (20 - 18) * ((100vw - 320px)/(1200 - 320)))
+            p
+                font-size: calc( 14px + (18 - 14) * ((100vw - 320px)/(1200 - 320)))
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            &-top
+                p
+                    font-size: calc( 6px + (24 - 6) * ((100vw - 320px)/(1200 - 320)))
+            &-bottom
+                p
+                    font-size: calc( 8px + (26 - 8) * ((100vw - 320px)/(1200 - 320)))
+@media screen and (max-width: 1155.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            transform: translateY(-25%)
+            &_left
+                left: 21px
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            // top: 87%
+            &_left
+                left: 10px
+            &_right
+                left: 68%
+
+@media screen and (max-width: 991.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            width: 30vw
+            &_right
+                left: 68%
+@media screen and (max-width: 855.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            // width: 26vw
+            top: 88%
+            bottom: -10px
+            &_right
+                left: 68%
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, h3, h4, p
+                margin: 10px 0
+        &__box, &__col
+            margin-bottom: 0
+        &__text
+            padding: 0 5px
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            &-top, &-bottom
+                p
+                    margin: 5px 0
+            &_right
+                left: 68%
+    #maincontent .col-maincontent
+        &__inner
+            flex-direction: column
+        &__item
+            display: flex
+            flex-direction: column-reverse
+        &__text
+            padding: 0 5px
+    #maincontent .smsngvr3mb77312k-slider
+        &__text 
+            margin-bottom: 0px
+        &__img
+            padding-top: 150px
+    #maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet
+        width: 10vw
+        height: 10vw
+
+@media screen and (max-width: 600.98px)  
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            border-radius: 7px
+            &_right
+                left: 67%
+    #maincontent .smsngvr3mb77312k-slider
+        &__img
+            padding-top: 120px
+@media screen and (max-width: 550.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            width: 31vw
+            &_right
+                left: 66%
+@media screen and (max-width: 479.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__text
+            position: unset
+            transform: translate(0, 0)
+            margin: 0 auto
+        &__col
+            width: 32vw
+            padding: 4px 10px
+            top: 90%
+            bottom: -8px
+            &-bottom
+                p
+                    margin-bottom: 0
+            &_left
+                left: 7px
+            &_right
+                left: 64%
+    #maincontent .swiper-pagination    
+        padding: 15px 0
+    #maincontent .smsngvr3mb77312k-slider
+        &__img
+            padding-top: 85px
+@media screen and (max-width: 400.98px)
+    #maincontent .smsngvr3mb77312k-pos
+        &__col
+            // width: 23vw
+            padding: 0 4px
+            top: 92%
+            &-top
+                p
+                    padding-left: 5px
+            &_left
+                left: 5px
+            // &_right
+            //     left: 66%
+    #maincontent .smsngvr3mb77312k-slider
+        &__img
+            padding-top: 70px
+// @media screen and (max-width: 340.98px)
+    // #maincontent .smsngvr3mb77312k-pos
+    //     &__col
+    //         &_right
+    //             left: 69%
+                
+

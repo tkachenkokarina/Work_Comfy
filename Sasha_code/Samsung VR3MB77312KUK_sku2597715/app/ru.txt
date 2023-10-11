@@ -1,0 +1,144 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:46px;line-height:1.2;margin:30px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:38px;line-height:1.2;margin:30px 0px;text-align:center}#maincontent .maincontent__container h4{font-size:24px;line-height:1.33;margin:20px 0px;text-align:center}#maincontent .maincontent__container h5{font-size:20px;line-height:1.33;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:18px;line-height:1.33;margin-bottom:20px;text-align:center}#maincontent .maincontent__box{margin-bottom:50px}#maincontent .maincontent__text{max-width:1200px;margin:0 auto;padding:0 10px}#maincontent .maincontent__col{margin-bottom:50px}#maincontent .smsngvr3mb77312k-pos__box{position:relative;z-index:4}#maincontent .smsngvr3mb77312k-pos__text{position:absolute;z-index:5;top:17%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -60%);-ms-transform:translate(-50%, -60%);-o-transform:translate(-50%, -60%);transform:translate(-50%, -60%)}#maincontent .smsngvr3mb77312k-pos__col{position:absolute;z-index:5;top:87%;-webkit-transform:translateY(-20%);-ms-transform:translateY(-20%);-o-transform:translateY(-20%);transform:translateY(-20%);background-color:#000;width:28vw;-webkit-border-radius:15px;border-radius:15px;padding:7px 10px}#maincontent .smsngvr3mb77312k-pos__col-top p{font-size:24px;color:#fff;text-shadow:3px -1px 1px #000;background:-webkit-gradient(linear, left top, right top, from(#09cb3a), color-stop(#af9a2a), color-stop(#cf7a1f), to(#dd250a));background:-webkit-linear-gradient(left, #09cb3a, #af9a2a, #cf7a1f, #dd250a);background:-o-linear-gradient(left, #09cb3a, #af9a2a, #cf7a1f, #dd250a);background:linear-gradient(to right, #09cb3a, #af9a2a, #cf7a1f, #dd250a);border:2px solid #fff;-webkit-border-radius:20px;border-radius:20px;text-align:left;margin:7px 15px;padding-left:10px}#maincontent .smsngvr3mb77312k-pos__col-top01 p{background:-webkit-gradient(linear, left top, right top, from(#09cb3a), color-stop(#af9a2a), color-stop(#cf7a1f), to(#dd250a));background:-webkit-linear-gradient(left, #09cb3a, #af9a2a, #cf7a1f, #dd250a);background:-o-linear-gradient(left, #09cb3a, #af9a2a, #cf7a1f, #dd250a);background:linear-gradient(to right, #09cb3a, #af9a2a, #cf7a1f, #dd250a)}#maincontent .smsngvr3mb77312k-pos__col-top02 p{background:-webkit-gradient(linear, left top, right top, from(#09cb3a), color-stop(#35b046), color-stop(#4d7c49), to(#313132));background:-webkit-linear-gradient(left, #09cb3a, #35b046, #4d7c49, #313132);background:-o-linear-gradient(left, #09cb3a, #35b046, #4d7c49, #313132);background:linear-gradient(to right, #09cb3a, #35b046, #4d7c49, #313132)}#maincontent .smsngvr3mb77312k-pos__col-bottom p{font-size:26px;position:relative;color:#fff;-webkit-text-stroke:.04em #fff}#maincontent .smsngvr3mb77312k-pos__col-bottom p::before{content:attr(data-text);position:absolute;left:0;right:0;-webkit-text-stroke:.02em #fff}#maincontent .smsngvr3mb77312k-pos__col_left{left:23px;right:80%}#maincontent .smsngvr3mb77312k-pos__col_right{right:23px;left:70%}#maincontent .smsngvr3mb77312k__img_bg{background-color:#000}#maincontent .col-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-column-gap:40px;-moz-column-gap:40px;column-gap:40px}#maincontent .col-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .col-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .col-maincontent__text{padding:10px 20px;max-width:580px;margin:0 auto}#maincontent .col-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .smsngvr3mb77312k-slider__text{margin-bottom:50px}#maincontent .smsngvr3mb77312k-slider__img{padding-top:200px}#maincontent .smsngvr3mb77312k-slider__pagination,#maincontent .swiper-pagination{top:0;bottom:auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-moz-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}#maincontent .swiper-pagination{padding:30px 0}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet{position:relative;z-index:4;width:87px;height:87px}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet:nth-child(1){background-image:url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_1.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;background-color:rgba(0,0,0,0)}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet:nth-child(2){background-image:url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_2.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;background-color:rgba(0,0,0,0)}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet-active:nth-child(1){background-image:url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_1_bl.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;background-color:rgba(0,0,0,0)}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet-active:nth-child(2){background-image:url(https://cdn.comfy.ua/media/x/img3/2597715/icon09_2_bl.png);background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;background-color:rgba(0,0,0,0)}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(28px + 18*(100vw - 320px)/880);font-size:calc(28px + 18*(100vw - 320px)/880)}#maincontent .maincontent__container h3{font-size:-webkit-calc(24px + 14*(100vw - 320px)/880);font-size:calc(24px + 14*(100vw - 320px)/880)}#maincontent .maincontent__container h4{font-size:-webkit-calc(20px + 4*(100vw - 320px)/880);font-size:calc(20px + 4*(100vw - 320px)/880)}#maincontent .maincontent__container h5{font-size:-webkit-calc(18px + 2*(100vw - 320px)/880);font-size:calc(18px + 2*(100vw - 320px)/880)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 4*(100vw - 320px)/880);font-size:calc(14px + 4*(100vw - 320px)/880)}#maincontent .smsngvr3mb77312k-pos__col-top p{font-size:-webkit-calc(6px + 18*(100vw - 320px)/880);font-size:calc(6px + 18*(100vw - 320px)/880)}#maincontent .smsngvr3mb77312k-pos__col-bottom p{font-size:-webkit-calc(8px + 18*(100vw - 320px)/880);font-size:calc(8px + 18*(100vw - 320px)/880)}}@media screen and (max-width: 1155.98px){#maincontent .smsngvr3mb77312k-pos__col{-webkit-transform:translateY(-25%);-ms-transform:translateY(-25%);-o-transform:translateY(-25%);transform:translateY(-25%)}#maincontent .smsngvr3mb77312k-pos__col_left{left:21px}}@media screen and (max-width: 1024.98px){#maincontent .smsngvr3mb77312k-pos__col_left{left:10px}#maincontent .smsngvr3mb77312k-pos__col_right{left:70%}}@media screen and (max-width: 991.98px){#maincontent .smsngvr3mb77312k-pos__col{width:30vw}#maincontent .smsngvr3mb77312k-pos__col_right{left:68%}}@media screen and (max-width: 855.98px){#maincontent .smsngvr3mb77312k-pos__col{top:88%;bottom:-10px}#maincontent .smsngvr3mb77312k-pos__col_right{left:68%}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container h3,#maincontent .maincontent__container h4,#maincontent .maincontent__container p{margin:10px 0}#maincontent .maincontent__box,#maincontent .maincontent__col{margin-bottom:0}#maincontent .maincontent__text{padding:0 5px}#maincontent .smsngvr3mb77312k-pos__col-top p,#maincontent .smsngvr3mb77312k-pos__col-bottom p{margin:5px 0}#maincontent .smsngvr3mb77312k-pos__col_right{left:68%}#maincontent .col-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .col-maincontent__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .col-maincontent__text{padding:0 5px}#maincontent .smsngvr3mb77312k-slider__text{margin-bottom:0px}#maincontent .smsngvr3mb77312k-slider__img{padding-top:150px}#maincontent .smsngvr3mb77312k-slider__pagination .swiper-pagination-bullet{width:10vw;height:10vw}}@media screen and (max-width: 600.98px){#maincontent .smsngvr3mb77312k-pos__col{-webkit-border-radius:7px;border-radius:7px}#maincontent .smsngvr3mb77312k-pos__col_right{left:67%}#maincontent .smsngvr3mb77312k-slider__img{padding-top:120px}}@media screen and (max-width: 550.98px){#maincontent .smsngvr3mb77312k-pos__col_right{left:67%}}@media screen and (max-width: 479.98px){#maincontent .smsngvr3mb77312k-pos__text{position:unset;-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);margin:0 auto}#maincontent .smsngvr3mb77312k-pos__col{padding:4px 10px;top:90%;bottom:-8px}#maincontent .smsngvr3mb77312k-pos__col-bottom p{margin-bottom:0}#maincontent .smsngvr3mb77312k-pos__col_left{left:7px}#maincontent .smsngvr3mb77312k-pos__col_right{left:67%}#maincontent .swiper-pagination{padding:15px 0}#maincontent .smsngvr3mb77312k-slider__img{padding-top:85px}}@media screen and (max-width: 400.98px){#maincontent .smsngvr3mb77312k-pos__col{padding:0 4px;top:92%}#maincontent .smsngvr3mb77312k-pos__col-top p{padding-left:5px}#maincontent .smsngvr3mb77312k-pos__col_left{left:5px}#maincontent .smsngvr3mb77312k-pos__col_right{left:66%}#maincontent .smsngvr3mb77312k-slider__img{padding-top:70px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box smsngvr3mb77312k-pos__box">
+<div class="maincontent__text smsngvr3mb77312k-pos__text">
+<h2>Уборка 2-в-1 одновременно</h2>
+</div>
+<div class="maincontent__img smsngvr3mb77312k-pos__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img01.png" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Определяет лучший маршрут для эффективной уборки</h2>
+<h3>Сенсор LiDAR</h3>
+<p>Этот робот-пылесос оснащен сенсором LiDAR, который точно определяет свое положение и создает                         идеальный маршрут для эффективной уборки дома. Он сам собирает информацию о расстоянии между                         разными предметами, что помогает ему более рационально передвигаться по комнатам.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img02.png" /></div>
+</div>
+<div class="maincontent__box smsngvr3mb77312k__box">
+<div class="maincontent__text">
+<h2>Сухая и влажная уборка одновременно</h2>
+<h3>Система 2-в-1</h3>
+<p>Хранит ваши силы и время! Система 2-в-1 быстро собирает грязь и пыль, и сразу после этого                         тщательно моет пол. Если накладка подсоединена к пылесосу, он сам это понимает и автоматически                         производит и влажную уборку, регулируя количество воды.</p>
+</div>
+<div class="maincontent__img smsngvr3mb77312k__img smsngvr3mb77312k__img_bg"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img03.gif" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Эффективная уборка без труда</h2>
+<h3>Вы и не заметите, как быстро станет чисто</h3>
+<p>Благодаря высокоэффективному мотору BLDC мощность всасывания повышается до максимума, а значит                         пылесос собирает даже мельчайшую пыль. А клиновидная щетка-валик прекрасно справляется с разными                         типами полов, такими как ковры и твердые породы древесины.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img04.png" /></div>
+</div>
+<div class="maincontent__box smsngvr3mb77312k-pos__box">
+<div class="maincontent__text">
+<h2>Распознает ковры</h2>
+<h3>И усиливает всасывание</h3>
+<p>Тщательная очистка ковров — это еще одно преимущество этого робота-пылесоса. Когда он оказывается                         на ковре, он автоматически увеличивает мощность всасывания. А уехав с него, он возвращает                         мощность на стандартный уровень. При мытье полов он избегает ковров.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img05.png" /></div>
+<div class="maincontent__cols smsngvr3mb77312k-pos__cols">
+<div class="smsngvr3mb77312k-pos__col smsngvr3mb77312k-pos__col_left">
+<div class="smsngvr3mb77312k-pos__col-top smsngvr3mb77312k-pos__col-top01">
+<p>Мощность всасывания</p>
+</div>
+<div class="smsngvr3mb77312k-pos__col-bottom">
+<p>Ковер</p>
+</div>
+</div>
+<div class="smsngvr3mb77312k-pos__col smsngvr3mb77312k-pos__col_right">
+<div class="smsngvr3mb77312k-pos__col-top smsngvr3mb77312k-pos__col-top02">
+<p>Мощность всасывания</p>
+</div>
+<div class="smsngvr3mb77312k-pos__col-bottom">
+<p>Твердый пол</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>До 180 минут автономной работы</h2>
+<h3>Вместительный аккумулятор</h3>
+<p>Забудьте о перезарядке — с аккумулятором на 5200 мАч пылесос может всасывать пыль без перерывов                         до 180 минут. Благодаря этому он может быстро очистить большой участок пространства или весь                         дом.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img06.gif" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Легкое управление</h2>
+<h3>С помощью Wi-Fi</h3>
+<p>Просто загружаете мобильное приложение и управляете пылесосом где бы вы ни были. В приложении вы                         можете следить за уборкой в режиме реального времени, следить за состоянием прибора и всех его                         частей, видеть историю уборок.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img07.png" /></div>
+</div>
+<div class="maincontent__col col-maincontent">
+<div class="col-maincontent__inner">
+<div class="col-maincontent__item">
+<div class="col-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img08_1.png" /></div>
+<div class="col-maincontent__text">
+<h3>Выбирайте комнаты и пространство</h3>
+<h5>Select &amp; Go</h5>
+<p>Вы можете выбрать конкретные участки или комнаты, где вы хотите убраться. С помощью                                 функции Select &amp; Go пылесос распознает комнаты и умеет убирать выборочно.</p>
+</div>
+</div>
+<div class="col-maincontent__item">
+<div class="col-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img08_2.png" /></div>
+<div class="col-maincontent__text">
+<h3>Запретные участки</h3>
+<h5>Закрытые зоны</h5>
+<p>У вас есть ценная мебель, комнаты или просто углы, где вы не хотите, чтобы робот-пылесос                                 убирал? Создайте запрещенные для движения зоны или виртуальные стены в приложении и                                 робот-пылесос не будет убираться на этих участках.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box smsngvr3mb77312k-slider">
+<div class="maincontent__text smsngvr3mb77312k-slider__text">
+<h3>Легкий уход</h3>
+<h4>EZ Empty Dustbin</h4>
+<p>Съемный пылесборник значительно упрощает уход за пылесосом. Вы можете утилизировать собранную                         пыль, не рассыпая ее и не загрязняя руки. Вам нужно просто нажать кнопку, выбросить содержимое и                         подвинуть его обратно.                         Его также можно прополоскать водой, чтобы содержать в чистоте.</p>
+</div>
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide smsngvr3mb77312k-slider__slide">
+<div class="smsngvr3mb77312k-slider__card">
+<div class="smsngvr3mb77312k-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img09_1.png" /></div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="smsngvr3mb77312k-slider__card">
+<div class="smsngvr3mb77312k-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img09_2.png" /></div>
+</div>
+</div>
+...</div>
+<div class="swiper-pagination smsngvr3mb77312k-slider__pagination"></div>
+</div>
+</div>
+<div class="maincontent__box smsngvr3mb77312k-pos__box">
+<div class="maincontent__text smsngvr3mb77312k-pos__text">
+<h2>Что в коробке</h2>
+</div>
+<div class="maincontent__img smsngvr3mb77312k-pos__img"><img src="https://cdn.comfy.ua/media/x/img3/2597715/img10_ru.png" /></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+        document.addEventListener("DOMContentLoaded", function () {
+const swiper = new Swiper('.swiper', {
+    speed: 300,
+    slidesPerView: 1,
+    spaceBetween: 10,    
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    
+});
+        });
+// ]]></script>
