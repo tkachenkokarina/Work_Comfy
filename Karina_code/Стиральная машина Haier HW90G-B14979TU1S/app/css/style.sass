@@ -1,0 +1,272 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1520
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#maincontent
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+#maincontent .maincontent__container
+    max-width: 1520px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#maincontent .header-maincontent
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+        img
+            margin: 0
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 0
+        right: 78%
+        padding: 15px 40px
+        background-color: #000
+    &__box
+        position: absolute
+        z-index: 5
+        top: 0
+        right: 0
+        width: 36%
+        height: 100%
+        background-color: #000
+        padding: 0 20px
+    &__text
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #f4da7c
+            text-align: center
+        h3
+            @include adaptiv-value("font-size", 47, 15, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #fff
+            text-align: center
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 38, 14, 1)
+            line-height: 1.2
+            font-weight: 400
+            color: #f4da7c
+            text-align: center
+        span
+            display: block
+            font-size: 10px
+            line-height: 1.3
+            font-weight: 300
+            color: #fff
+            text-align: center
+            text-transform: uppercase
+    &__icon
+        position: absolute
+        z-index: 5
+        bottom: 2%
+        left: 2%
+        right: 88%
+
+#maincontent .row-maincontent
+    padding: 30px 0
+    &__inner
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 90%
+        margin: 0 auto
+        padding: 10px 0
+        h2
+            @include adaptiv-value("font-size", 35, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #1b3155
+        p
+            @include adaptiv-value("font-size", 25, 16, 1)
+            line-height: 1.2
+            color: #505456
+    &__image
+        flex: 0 1 50%
+        // position: relative
+        // z-index: 2
+        // padding-bottom: 50%
+        // img
+        //     position: absolute
+        //     z-index: 5
+        //     top: 0
+        //     left: 0
+        //     width: 100%
+        //     height: 100px
+        //     object-fit: cover
+
+#maincontent .box-maincontent
+    &__text
+        @include adaptiv-value("padding-left", 50, 15, 1)
+        @include adaptiv-value("padding-right", 50, 15, 1)
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+            line-height: 1.2
+            color: #1b3155
+            text-align: center
+            padding-top: 20px
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 26, 16, 1)
+            line-height: 1.2
+            color: #505456
+            text-align: center
+            padding-top: 10px
+
+//===========MEDIA=============================================================================================================================================
+
+    //@media screen and (max-width: 1300px)
+    //@media screen and (max-width: 1024.98px)
+    //@media screen and (max-width: 991.98px)
+@media screen and (max-width: 767.98px)
+    #maincontent .header-maincontent__box
+        position: unset
+        width: auto
+    #maincontent .header-maincontent__text
+        padding: 20px 15px
+    #maincontent .header-maincontent__text h2
+        margin-bottom: 10px
+    #maincontent .header-maincontent__text h3,
+    #maincontent .header-maincontent__text p
+        margin-bottom: 10px
+    #maincontent .header-maincontent__logo
+        right: 78%
+        padding: 15px 20px
+    #maincontent .header-maincontent__icon
+        bottom: auto
+        top: 50%
+        transform: translateY(-50%)
+    #maincontent .row-maincontent__inner
+        flex-direction: column-reverse
+    #maincontent .row-maincontent__text
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 610px)
+    #maincontent .header-maincontent__icon
+        top: 35%
+        transform: translateY(0)
+    #maincontent .row-maincontent__text
+        width: auto
+        padding: 10px 15px
+
+@media screen and (max-width: 479.98px)
+    #maincontent .header-maincontent__logo
+        padding: 10px
+    #maincontent .header-maincontent__icon
+        top: 30%
+    // #maincontent .box-maincontent__text p
+    //     text-align: justify
+    #maincontent .row-maincontent
+        padding: 10px 0
+    // #maincontent .row-maincontent__text
+    //     p
+    //         text-align: justify
+    #maincontent .box-maincontent__text h2
+        margin-bottom: 5px
+        padding-top: 10px
+
+@media screen and (max-width: 390px)
+    #maincontent .header-maincontent__icon
+        top: 27%

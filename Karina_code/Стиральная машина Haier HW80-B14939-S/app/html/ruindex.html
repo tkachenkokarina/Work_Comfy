@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,#maincontent ol,#maincontent li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto}#maincontent .header-maincontent__bg{position:relative;z-index:2}#maincontent .header-maincontent__image img{margin:0}#maincontent .header-maincontent__logo{position:absolute;z-index:5;top:0;left:0;right:78%;padding:15px 40px;background-color:#000}#maincontent .header-maincontent__box{position:absolute;z-index:5;top:0;right:0;width:38%;height:100%;background-color:#000;padding:0 20px}#maincontent .header-maincontent__text{height:100%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-moz-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly}#maincontent .header-maincontent__text h2{font-size:28px;line-height:1.2;font-weight:400;color:#f4da7c;text-align:center}@media(max-width: 1520px){#maincontent .header-maincontent__text h2{font-size:-webkit-calc(16px + 12 * ((100vw - 320px) / 1200));font-size:calc(16px + 12 * ((100vw - 320px) / 1200))}}#maincontent .header-maincontent__text h3{font-size:30px;line-height:1.2;font-weight:400;color:#fff;text-align:center;text-transform:uppercase}@media(max-width: 1520px){#maincontent .header-maincontent__text h3{font-size:-webkit-calc(15px + 15 * ((100vw - 320px) / 1200));font-size:calc(15px + 15 * ((100vw - 320px) / 1200))}}#maincontent .header-maincontent__text p{font-size:28px;line-height:1.2;font-weight:400;color:#f4da7c;text-align:center}@media(max-width: 1520px){#maincontent .header-maincontent__text p{font-size:-webkit-calc(16px + 12 * ((100vw - 320px) / 1200));font-size:calc(16px + 12 * ((100vw - 320px) / 1200))}}#maincontent .header-maincontent__text span{display:block;font-size:7px;line-height:1.3;font-weight:300;color:#fff;text-align:center;text-transform:uppercase}#maincontent .header-maincontent__icon{position:absolute;z-index:5;bottom:2%;left:2%;right:88%}#maincontent .row-maincontent{padding:30px 0}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{width:90%;margin:0 auto;padding:10px 0}#maincontent .row-maincontent__text h2{font-size:35px;line-height:1.2;margin-bottom:10px;color:#1b3155}@media(max-width: 1520px){#maincontent .row-maincontent__text h2{font-size:-webkit-calc(18px + 17 * ((100vw - 320px) / 1200));font-size:calc(18px + 17 * ((100vw - 320px) / 1200))}}#maincontent .row-maincontent__text p{font-size:25px;line-height:1.2;color:#505456}@media(max-width: 1520px){#maincontent .row-maincontent__text p{font-size:-webkit-calc(16px + 9 * ((100vw - 320px) / 1200));font-size:calc(16px + 9 * ((100vw - 320px) / 1200))}}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .box-maincontent__text{padding-left:50px;padding-right:50px}@media(max-width: 1520px){#maincontent .box-maincontent__text{padding-left:-webkit-calc(15px + 35 * ((100vw - 320px) / 1200));padding-left:calc(15px + 35 * ((100vw - 320px) / 1200))}}@media(max-width: 1520px){#maincontent .box-maincontent__text{padding-right:-webkit-calc(15px + 35 * ((100vw - 320px) / 1200));padding-right:calc(15px + 35 * ((100vw - 320px) / 1200))}}#maincontent .box-maincontent__text h2{font-size:50px;line-height:1.2;color:#1b3155;text-align:center;padding-top:20px;margin-bottom:10px}@media(max-width: 1520px){#maincontent .box-maincontent__text h2{font-size:-webkit-calc(20px + 30 * ((100vw - 320px) / 1200));font-size:calc(20px + 30 * ((100vw - 320px) / 1200))}}#maincontent .box-maincontent__text p{font-size:26px;line-height:1.2;color:#505456;text-align:center;padding-top:10px}@media(max-width: 1520px){#maincontent .box-maincontent__text p{font-size:-webkit-calc(16px + 10 * ((100vw - 320px) / 1200));font-size:calc(16px + 10 * ((100vw - 320px) / 1200))}}#maincontent .column-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:40px}@media screen and (max-width: 991.98px){#maincontent .header-maincontent__text img{width:110px}}@media screen and (max-width: 767.98px){#maincontent .header-maincontent__box{position:unset;width:auto;padding:0}#maincontent .header-maincontent__text{padding:20px 15px}#maincontent .header-maincontent__text h2{margin-bottom:10px}#maincontent .header-maincontent__text h3,#maincontent .header-maincontent__text p{margin-bottom:10px}#maincontent .header-maincontent__logo{right:78%;padding:15px 20px}#maincontent .header-maincontent__icon{bottom:auto;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .column-maincontent__row{gap:10px}#maincontent .header-maincontent__text img{width:auto;padding-bottom:20px}}@media screen and (max-width: 610px){#maincontent .header-maincontent__icon{top:35%;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .row-maincontent__text{width:auto;padding:10px 15px}}@media screen and (max-width: 479.98px){#maincontent .header-maincontent__logo{padding:10px}#maincontent .header-maincontent__icon{top:30%}#maincontent .row-maincontent{padding:10px 0}#maincontent .box-maincontent__text h2{margin-bottom:5px;padding-top:10px}#maincontent .column-maincontent__row{gap:5px}}@media screen and (max-width: 390px){#maincontent .header-maincontent__icon{top:27%}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__header header-maincontent">
+                <div class="header-maincontent__bg">
+                    <div class="header-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img1.png" alt="">
+                    </div>
+                    <div class="header-maincontent__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img2.png" alt="">
+                    </div>
+                    <div class="header-maincontent__box">
+                        <div class="header-maincontent__text">
+                            <h2>Инновационная техника</h2>
+                            <h3>СТИРАЛЬНАЯ МАШИНА
+                                СЕРИИ I-PRO 3</h3>
+                            <p>Рекордно тихая
+                                <br>Обеспечивает комфортную стирку
+                                даже ночью
+                            </p>
+                            <img src="https://cdn.comfy.ua/media/x/img3/2285339/img22.png" alt="">
+                            <span>*Источник: Euromonitor International Limited; Consumer Appliances 2022, % доли рынка,
+                                данные за 2022 год. Категория
+                                крупной бытовой техники включает в себя посудомоечные машины, стиральные машины,
+                                холодильники, кухонную технику и микроволновые печи.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__box box-maincontent">
+                <div class="box-maincontent__text">
+                    <h2>Haier I-Pro 3</h2>
+                    <p>Стиральная машина Haier I-Pro 3 предлагает индивидуальные и технологически продвинутые решения
+                        для удивительных впечатлений от стирки. Благодаря технологии ABT® (сертифицирована институтом
+                        VDE) в I-Pro 3 уничтожается 99% бактерий, обеспечивая идеальную гигиену вашей одежды. А
+                        энергосбережение гарантируется современным двигателем с прямым приводом Direct Motion, который
+                        обеспечивает значительное снижение потребления электроэнергии, а также чрезвычайно тихую работу.
+                        Haier I-Pro 3 — стиральные машины для тех, кто ищет профессиональные результаты с гораздо
+                        большим удобством.</p>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Двигатель Direct Motion: эффективный, тихий, долговечный</h2>
+                            <p>Мощность стиральных машин I-Pro 3 обеспечивает тихий, эффективный двигатель.
+                                Действительно, двигатель Direct Motion крепится непосредственно к барабану стиральных и
+                                стирально-сушильных машин, чтобы повысить их производительность и долговечность.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Экономия воды и электроэнергии</h2>
+                            <p>Автоматические весы в стиральных машинах Haier отвечают за точный выбор оптимального
+                                количества воды. Даже если вы стираете небольшое количество одежды в барабане большой
+                                емкости, вы потратите меньше воды и электроэнергии. На практике это будет способствовать
+                                большей экономии и меньшим счетам за электроэнергию.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Гигиеническая стирка с антибактериальной системой ABT®</h2>
+                            <p>Инновационное решение, защищающее наиболее чувствительные зоны стиральной машины,
+                                обеспечивая высокий уровень гигиены во время цикла стирки. Антибактериальная технология
+                                ABT® защищает от плесени и бактерий, удаляя до 99,9% микробов, размножающихся в ящике
+                                для стиральных средств и уплотнителе барабана.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Полный набор циклов стирки</h2>
+                            <p>Haier i-Pro 3 предлагает полный набор циклов стирки, которые обязательно удовлетворят все
+                                ваши потребности. Среди доступных программ: быстрая программа длительностью всего 15
+                                минут, гигиеническая программа Allergy-Care, режим Eco 40-60, стирка при 90⁰C, хлопок
+                                20⁰C, программы для хлопка, шерсти и синтетических тканей, а также возможность освежения
+                                одежды.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img6.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Программа Refresh — инновационное освежение одежды</h2>
+                            <p>Программа Refresh освежает одежду очень эффективным и инновационным способом, используя
+                                технологию микропара, которая удаляет запахи, мелкую пыль и аллергены, уменьшая складки
+                                всего за 20 минут и без использования моющих средств. Программа полностью безопасна для
+                                деликатных тканей и будет незаменима после посещения ресторанов или же зимой после
+                                катания на лыжах, когда куртки нуждаются в эффективном освежении.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Быстрая стирка за 15 минут</h2>
+                            <p>Напряженная повседневная жизнь требует быстрых и эффективных решений, таких как
+                                15-минутная экспресс-программа стирки, которая моментально освежит вашу одежду. Отныне
+                                вы можете использовать сэкономленное время для своих любимых занятий наслаждаясь
+                                отличными результатами сверхбыстрой программы.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Стиральная машина позаботится о вашей одежде</h2>
+                            <p>Благодаря особой структуре барабана одежда не прилипает и не цепляется к его поверхности,
+                                защищая даже самые щепетильные ткани. Независимо от того, как часто вы стирали,
+                                материалы дольше сохранят свое первоначальное качество.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Функция легкой глажки</h2>
+                            <p>Использование пара в начале и в конце цикла стирки уменьшает количество складок на одежде
+                                до 80%. Благодаря функции Easy Iron гладить становится намного проще, а в случае с
+                                некоторыми тканями это может оказаться и вовсе ненужным.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Не беспокойтесь о пене</h2>
+                            <p>Слишком много пены усложняет стирку и полоскание. Стиральная машина Haier имеет
+                                эффективный механизм управления, который регулирует параметры активного цикла и
+                                предотвращает чрезмерное вспенивание стирального средства.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Остановите стирку и добавьте белье</h2>
+                            <p>Остановить стирку теперь безопасно и очень просто. Нужно нажать кнопку паузы, открыть
+                                барабан, добавить забытый предмет и без проблем продолжить выбранную программу.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Уход за одеждой всей семьи</h2>
+                            <p>Используйте специальный набор программ для обеспечения высочайшего уровня гигиены для вас
+                                и вашей семьи. Циклы Allergy Care, Baby Care и Business Shirt Care – это оптимальная
+                                температура и плавные движения барабана, которые полностью безопасны для одежды и
+                                помогут сохранить ее качество, создадут эффективный защитный барьер от бактерий,
+                                аллергенов и клещей.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Чрезвычайно тихая стиральная машина</h2>
+                            <p>Благодаря технологически усовершенствованному двигателю стиральная машина Haier настолько
+                                тиха, что вы можете запускать ее даже ночью, не беспокоясь о том, что она будет мешать
+                                спать.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img14.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__header header-maincontent">
+                <div class="header-maincontent__bg">
+                    <div class="header-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img1.png" alt="">
+                    </div>
+                    <div class="header-maincontent__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img2.png" alt="">
+                    </div>
+                    <div class="header-maincontent__box">
+                        <div class="header-maincontent__text">
+                            <h2>Інноваційна техніка</h2>
+                            <h3>ПРАЛЬНА МАШИНА
+                                СЕРІЇ I-PRO 3</h3>
+                            <p>Рекордно тиха
+                                <br>Забезпечує комфортне прання навіть вночі
+                            </p>
+                            <img src="https://cdn.comfy.ua/media/x/img3/2285339/img22ua.png" alt="">
+                            <span>*Джерело: Euromonitor International Limited; Consumer Appliances 2022, % частки ринку,
+                                дані за 2022 рік.
+                                Категорія великої побутової техніки включає посудомийні машини, пральні машини,
+                                холодильники, кухонну техніку та мікрохвильові печі.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__box box-maincontent">
+                <div class="box-maincontent__text">
+                    <h2>Haier I-Pro 3</h2>
+                    <p>Пральна машина Haier I-Pro 3 пропонує індивідуальні та технологічно просунуті рішення для
+                        дивовижних вражень від прання. Завдяки технології ABT® (сертифікована інститутом VDE) у I-Pro 3
+                        знищується 99% бактерій, забезпечуючи ідеальну гігієну вашого одягу. А енергозбереження
+                        гарантується сучасним двигуном з прямим приводом Direct Motion, який забезпечує значне зниження
+                        споживання електроенергії та надзвичайно тиху роботу. Haier I-Pro 3 - пральні машини для тих,
+                        хто шукає професійні результати з набагато більшою зручністю.</p>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Двигун Direct Motion: ефективний, тихий, довговічний</h2>
+                            <p>Потужність пральних машин I-Pro 3 забезпечує тихий, ефективний двигун. Дійсно, двигун
+                                Direct Motion кріпиться безпосередньо до барабана пральних і прально-сушильних машин,
+                                щоб підвищити їх продуктивність і довговічність.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img3.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Економія води та електроенергії</h2>
+                            <p>Автоматичні ваги у пральних машинах Haier відповідають за точний вибір оптимальної
+                                кількості води. Навіть якщо ви перете невелику кількість одягу в барабані великої
+                                місткості, ви витратите менше води та електроенергії. Це сприятиме більшій економії та
+                                меншим комунальним рахункам.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img4.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Гігієнічне прання з антибактеріальною системою ABT® та функцією Smart Dual Spray</h2>
+                            <p>Інноваційне рішення, яке захищає найбільш чутливі зони пральної машини, забезпечуючи
+                                найвищий рівень гігієни під час циклу прання. Антибактеріальна технологія ABT® захищає
+                                від цвілі та бактерій, видаляючи до 99,9% мікробів, які розмножуються в ящику для
+                                пральних засобів та ущільнювачі барабана.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img5.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Повний набір циклів прання</h2>
+                            <p>Haier i-Pro 3 пропонує повний набір циклів прання, які обов'язково задовольнять усі ваші
+                                потреби. Серед доступних програм: швидка програма тривалістю всього 15 хвилин,
+                                гігієнічна програма Allergy-Care, режим Eco 40-60, прання при 90⁰C, бавовна 20⁰C,
+                                програми для бавовни, вовни та синтетичних тканин, а також можливість освіження одягу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img6.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Програма Refresh – інноваційне освіження одягу</h2>
+                            <p>Програма Refresh освіжає одяг дуже ефективним та інноваційним способом, використовуючи
+                                технологію мікропари, яка видаляє запахи, дрібний пил та алергени, зменшуючи складки
+                                всього за 20 хвилин та без використання миючих засобів. Програма повністю безпечна для
+                                делікатних тканин і буде незамінною після відвідування ресторанів або взимку після
+                                катання на лижах, коли куртки потребують ефективного освіження.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img7.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Швидке прання за 15 хвилин</h2>
+                            <p>Напружене повсякденне життя вимагає швидких та ефективних рішень, таких як 15-хвилинна
+                                експрес-програма прання, яка миттєво освіжить ваш одяг. Відтепер ви можете використати
+                                зекономлений час для своїх улюблених занять, насолоджуючись відмінними результатами
+                                надшвидкої програми.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Пральна машина подбає про ваш одяг</h2>
+                            <p>Завдяки особливій структурі барабана одяг не прилипає та не чіпляється до його поверхні,
+                                захищаючи навіть найделікатніші тканини. Незалежно від того, як часто ви їх прали,
+                                матеріали довше збережуть свою початкову якість.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img9.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Функція легкого прасування</h2>
+                            <p>Використання пари на початку та в кінці циклу прання зменшує кількість складок на одязі
+                                до 80%. Завдяки функції Easy Iron прасувати стає набагато простіше, а у випадку з
+                                деякими тканинами це може виявитися зовсім непотрібним.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Не турбуйтеся про піну</h2>
+                            <p>Занадто багато піни ускладнює прання та полоскання. Пральна машина Haier має ефективний
+                                механізм управління, який регулює параметри активного циклу і запобігає надмірному
+                                спінюванню засобу для прання.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img11.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Зупиніть прання та додайте білизну</h2>
+                            <p>Зупинити прання тепер безпечно та дуже просто. Потрібно лише натиснути кнопку паузи,
+                                відкрити барабан, додати забутий предмет і без проблем продовжити обрану програму.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Догляд за одягом усієї родини</h2>
+                            <p>Використовуйте спеціальний набір програм для забезпечення найвищого рівня гігієни для вас
+                                та вашої родини. Цикли Allergy Care, Baby Care та Business Shirt Care – це оптимальна
+                                температура та плавні рухи барабана, які повністю безпечні для одягу та допомагають
+                                зберегти його якість, а також створюють ефективний захисний бар'єр від бактерій,
+                                алергенів та кліщів.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img13.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Надзвичайно тиха пральна машина</h2>
+                            <p>Завдяки технологічно вдосконаленому двигуну пральна машина Haier настільки тиха, що ви
+                                можете запускати її навіть вночі, не турбуючись про те, що вона заважатиме спати.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2285339/img14.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
