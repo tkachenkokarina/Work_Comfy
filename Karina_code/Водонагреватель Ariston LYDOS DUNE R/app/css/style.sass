@@ -78,6 +78,7 @@ button
         margin: 0
         padding: 0
         text-align: left
+        color: #091f2c
 
 #aristonlydos p::first-letter
     padding-left: 0
@@ -94,25 +95,456 @@ button
 #aristonlydos .aristonlydos__container
     max-width: 1330px
     margin: 0 auto
-    padding: 0 15px
+    //padding: 0 15px
+    overflow: hidden
 
 //========================================================================================================================================================
 #aristonlydos .header-aristonlydos
     &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2542184/img1.png') 50% 0 no-repeat
+        background-size: cover
+        min-height: 696px
+        position: relative
+        z-index: 2
     &__logo
+        position: absolute
+        z-index: 5
+        top: 0%
+        left: 66%
+        padding-right: 50px
     &__row
+        // display: flex
+        // align-items: center
+        gap: 30px
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        //right: 10%
+        left: 48%
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        align-items: center
+        padding-right: 50px
     &__item
+        // display: flex
+        // flex-direction: column-reverse
+        // justify-content: space-between
+        // align-items: center
     &__text
+        p
+            @include adaptiv-value("font-size", 20, 15, 1)
+            line-height: 1.2
+            text-transform: uppercase
+            text-align: center
+            color: #fff
     &__image
     &__box
+        position: absolute
+        z-index: 5
+        bottom: 0
+        left: 0
+        width: 38%
+    &__box-bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2542184/img3.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 478px
     &__box-text
+        position: absolute
+        z-index: 5
+        top: 65%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 80%
+        h2
+            @include adaptiv-value("font-size", 40, 15, 1)
+            line-height: 1
+            color: #fff
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            line-height: 1.2
+            color: #fff
     &__inner
+        display: flex
+        align-items: center
+        gap: 20px
+        padding-top: 30px
     &__items
+        p
+            @include adaptiv-value("font-size", 17, 10, 1)
+            line-height: 1.2
+            color: #fff
+            text-transform: uppercase
+            text-align: center
+    &__items-image
+        flex: 0 0 10px
+
+#aristonlydos .bg-aristonlydos
+    &__media
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 5%
+        right: 8%
+        left: 75%
+    &__text
+        position: absolute
+        z-index: 5
+        top: 68%
+        left: 13%
+        p
+            @include adaptiv-value("font-size", 22, 10, 1)
+            line-height: 1.2
+            font-weight: bold
+    &__image
+
+#aristonlydos .column-aristonlydos
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1080px
+        margin: 0 auto
+        padding: 80px 15px
+        gap: 15px
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 88%
+            height: 100%
+            width: 100%
+            background-color: #bfced6
+    &__item
+        max-width: 645px
+        width: 100%
+    &__text
+        &:not(:last-child)
+            margin-bottom: 30px
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-transform: uppercase
+            margin-bottom: 10px
+            span
+                color: #c8102e
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+    &__image
+    &__inner
+        display: flex
+        justify-content: space-between
+        gap: 15px
+        max-width: 720px
+        margin: 0 auto
+        padding: 20px 15px
+    &__col
+        // flex: 0 1 25%
+        max-width: 130px
+    &__icon
+    &__col-text
+        padding-top: 15px
+        p
+            font-size: 14px
+            line-height: 1.2
+            text-align: center
+            text-transform: uppercase
+            font-weight: bold
+
+#aristonlydos .element-aristonlydos
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1080px
+        margin: 0 auto
+        padding: 80px 15px
+        gap: 20px
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            right: 88%
+            height: 100%
+            width: 100%
+            background-color: #bfced6
+    &__image
+    &__item
+        max-width: 760px
+        width: 100%
+    &__body
+        display: flex
+        align-items: center
+        gap: 20px
+        &:not(:last-child)
+            margin-bottom: 30px
+    &__icon
+        flex: 0 0 90px
+    &__text
+        h2
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.2
+            text-transform: uppercase
+            margin-bottom: 10px
+            span
+                color: #c8102e
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+
+#aristonlydos .tableone-aristonlydos
+    margin: 40px 0
+    background-color: #bfced6
+    padding: 10px 0
+    &__row
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        max-width: 1055px
+        margin: 0 auto
+        padding: 0 15px
+        gap: 20px 0px
+        align-items: center
+    &__item
+        padding: 5px
+        &_red
+            background-color: #c8102e
+        &:nth-child(1),
+        &:nth-child(5),
+        &:nth-child(9),
+        &:nth-child(13),
+        &:nth-child(17),
+        &:nth-child(21),
+        &:nth-child(25),
+        &:nth-child(29)
+            width: 190px
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12),
+        &:nth-child(18),
+        &:nth-child(19),
+        &:nth-child(20),
+        &:nth-child(26),
+        &:nth-child(27),
+        &:nth-child(28)
+            background-color: #ffffff
+            padding: 10px
+    &__title
+        h2
+            @include adaptiv-value("font-size", 20, 13, 1)
+            line-height: 1.2
+            text-transform: uppercase
+        &_red
+            h2
+                color: #c8102e
+    &__series
+        p
+            font-size: 20px
+            line-height: 1.2
+            text-align: center
+            font-weight: bold
+            color: #fff
+    &__number
+        p
+            font-size: 15px
+            line-height: 1.2
+            text-align: center
+    &__text
+        p
+            font-size: 15px
+            line-height: 1.2
+            text-align: center
+
+#aristonlydos .tabletwo-aristonlydos
+    margin: 20px 0 40px
+    background-color: #bfced6
+    padding: 10px 0
+    &__row
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        max-width: 1055px
+        margin: 0 auto
+        padding: 0 15px
+        gap: 20px 0px
+        align-items: center
+    &__item
+        padding: 5px
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4)
+            background-color: #c8102e
+        &:nth-child(1),
+        &:nth-child(5),
+        &:nth-child(9),
+        &:nth-child(13),
+        &:nth-child(17),
+        &:nth-child(21),
+        &:nth-child(25),
+        &:nth-child(29)
+            width: 190px
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12),
+        &:nth-child(18),
+        &:nth-child(19),
+        &:nth-child(20),
+        &:nth-child(26),
+        &:nth-child(27),
+        &:nth-child(28)
+            background-color: #ffffff
+            padding: 10px
+    &__title
+        h2
+            @include adaptiv-value("font-size", 20, 13, 1)
+            line-height: 1.2
+            text-transform: uppercase
+        &_red
+            h2
+                color: #c8102e
+    &__text
+        p
+            font-size: 13px
+            line-height: 1.2
+            text-align: center
+            text-transform: uppercase
+    &__number
+        p
+            font-size: 13px
+            line-height: 1.2
+            text-align: center
+    &__series
+        p
+            font-size: 20px
+            line-height: 1.2
+            text-align: center
+            font-weight: bold
+            color: #fff
+    &__media
+        display: flex
+        justify-content: center
+        gap: 5px
+    &__image
 
 //===========MEDIA=============================================================================================================================================
 
     //@media screen and (max-width: 1300px)
     //@media screen and (max-width: 1024.98px)
-    //@media screen and (max-width: 991.98px)
-    //@media screen and (max-width: 767.98px)
-    //@media screen and (max-width: 479.98px)
+@media screen and (max-width: 991.98px)
+    #aristonlydos .header-aristonlydos__row
+        left: 40%
+    #aristonlydos .header-aristonlydos__box-bg
+        min-height: 392px
+    #aristonlydos .header-aristonlydos__row
+        top: 44%
+
+@media screen and (max-width: 767.98px)
+    #aristonlydos .header-aristonlydos__row
+        position: unset
+        transform: translateY(0)
+        padding: 80px 15px 0
+        margin-bottom: 40px
+    #aristonlydos .header-aristonlydos__box
+        position: relative
+        z-index: 2
+        width: auto
+        background-color: #ce072b
+        padding: 20px
+    #aristonlydos .header-aristonlydos__box-bg
+        min-height: auto
+        background: none
+    #aristonlydos .header-aristonlydos__box-text
+        position: unset
+        width: auto
+        transform: translate(0, 0)
+        max-width: 400px
+        margin: 0 auto
+    #aristonlydos .header-aristonlydos__inner
+        padding-top: 20px
+    #aristonlydos .header-aristonlydos__bg
+        min-height: auto
+    #aristonlydos .header-aristonlydos__logo
+        padding-right: 0
+        left: 50%
+    #aristonlydos .bg-aristonlydos__text
+        left: 11%
+    #aristonlydos .column-aristonlydos__row,
+    #aristonlydos .element-aristonlydos__row
+        padding: 30px 15px
+    #aristonlydos .element-aristonlydos__icon
+        flex: 0 0 70px
+    #aristonlydos .tabletwo-aristonlydos__image
+        img
+            width: 18px
+
+@media screen and (max-width: 673px)
+    #aristonlydos .tableone-aristonlydos__row,
+    #aristonlydos .tabletwo-aristonlydos__row
+        overflow-x: scroll
+    #aristonlydos .tableone-aristonlydos__item,
+    #aristonlydos .tabletwo-aristonlydos__item
+        min-width: 120px
+    #aristonlydos .tabletwo-aristonlydos__text p
+        font-size: 11px
+
+@media screen and (max-width: 601px)
+    #aristonlydos .column-aristonlydos__row
+        flex-direction: column
+    #aristonlydos .column-aristonlydos__row::after,
+    #aristonlydos .element-aristonlydos__row::after
+        display: none
+    #aristonlydos .column-aristonlydos__inner
+        flex-wrap: wrap
+    #aristonlydos .element-aristonlydos__row
+        flex-direction: column
+        gap: 20px
+
+@media screen and (max-width: 479.98px)
+    #aristonlydos .header-aristonlydos__row
+        gap: 15px
+        margin-bottom: 20px
+    #aristonlydos .header-aristonlydos__logo
+        left: 40%
+    #aristonlydos .header-aristonlydos__box-text
+        h2
+            font-size: 20px
+        p
+            font-size: 16px
+    #aristonlydos .header-aristonlydos__items p
+        font-size: 10px
+    #aristonlydos .bg-aristonlydos__text
+        left: 8%
+    #aristonlydos .column-aristonlydos__inner
+        gap: 15px 10px
+    #aristonlydos .tableone-aristonlydos
+        margin: 10px 0 20px
+
+@media screen and (max-width: 405px)
+    #aristonlydos .tableone-aristonlydos__item,
+    #aristonlydos .tabletwo-aristonlydos__item
+        min-width: 90px
+    #aristonlydos .tableone-aristonlydos__item,
+    #aristonlydos .tabletwo-aristonlydos__item
+        &:nth-child(1),
+        &:nth-child(5),
+        &:nth-child(9),
+        &:nth-child(13),
+        &:nth-child(17),
+        &:nth-child(21),
+        &:nth-child(25),
+        &:nth-child(29)
+            width: 150px
+    #aristonlydos .tabletwo-aristonlydos__text p
+        font-size: 9px
+    #aristonlydos .tabletwo-aristonlydos__number p
+        font-size: 9px
+    #aristonlydos .tableone-aristonlydos__text p
+        font-size: 12px
