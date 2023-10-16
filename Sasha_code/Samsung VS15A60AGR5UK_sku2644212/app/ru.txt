@@ -1,0 +1,233 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:28px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h4{font-size:22px;line-height:1.2;margin:10px 0px;text-align:center}#maincontent .maincontent__container p{font-size:18px;line-height:1.2;margin-bottom:35px;text-align:center}#maincontent .maincontent__text,#maincontent .maincontent__title{max-width:1200px;margin:0 auto;padding:0 15px}#maincontent .maincontent__box{margin-bottom:50px}#maincontent .maincontent__title{margin-bottom:50px}#maincontent .maincontent__slider{margin-bottom:50px}#maincontent .box-pos{position:relative;z-index:4}#maincontent .box-pos__title{position:absolute;z-index:5;top:15%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -70%);-ms-transform:translate(-50%, -70%);-o-transform:translate(-50%, -70%);transform:translate(-50%, -70%);padding:0 10px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__items{padding:0 15px;-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .smsng-vs20c8524tb__box{max-width:1200px;margin:0 auto}#maincontent .smsng-vs20c8524tb__box_left h2,#maincontent .smsng-vs20c8524tb__box_left h3,#maincontent .smsng-vs20c8524tb__box_left h4,#maincontent .smsng-vs20c8524tb__box_left p{text-align:left}#maincontent .smsng-vs20c8524tb__title_left{padding:0 15px 0 0}#maincontent .smsng-vs20c8524tb__img_left img{margin:0}#maincontent .smsng-vs20c8524tb__text_left{max-width:900px;margin:0;padding:0 15px 0 0}#maincontent .smsng-vs20c8524tb-row__text{padding:10px 15px}#maincontent .smsng-vs20c8524tb-row__text p{margin:0}#maincontent .smsng-vs20c8524tb-row__text p span{font-weight:700}#maincontent .slider-maincontent__title h2{text-align:left;padding-left:60px;margin-bottom:50px}#maincontent .slider-maincontent__title_mt h2{margin-top:50px}#maincontent .smsng-vs20c8524tb__swiper{width:65%;margin:0;overflow:visible}#maincontent .smsng-vs20c8524tb__card{max-width:900px}#maincontent .smsng-vs20c8524tb__item h3,#maincontent .smsng-vs20c8524tb__item h4,#maincontent .smsng-vs20c8524tb__item p{text-align:left}#maincontent .smsng-vs20c8524tb__item p{margin-bottom:60px}#maincontent .smsng-vs20c8524tb__item p span{font-weight:700}#maincontent .smsng-vs20c8524tb__item_nomb p{margin-bottom:0}#maincontent .swiper{padding-left:60px}#maincontent .swiper-button-prev{left:8px}#maincontent .swiper-button-next{right:-56px}#maincontent .swiper-button-prev,#maincontent .swiper-button-next{top:37%;-webkit-transform:translateY(-63%);-ms-transform:translateY(-63%);-o-transform:translateY(-63%);transform:translateY(-63%);border:1px solid rgba(0,0,0,.1);-webkit-border-radius:50%;border-radius:50%;width:40px;height:40px}#maincontent .swiper-button-prev:hover,#maincontent .swiper-button-next:hover{background:#f7f7f7}#maincontent .swiper-button-prev:active,#maincontent .swiper-button-next:active{border:2px dashed #000}#maincontent .swiper-button-next:after{content:"";background-image:url("https://cdn.comfy.ua/media/x/img3/2644212/next.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:34px;height:36px}#maincontent .swiper-button-prev:after{content:"";background-image:url("https://cdn.comfy.ua/media/x/img3/2644212/prev.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:34px;height:36px}#maincontent .swiper-pagination{color:#757575;border:1px solid rgba(0,0,0,.2);max-width:85px;padding:4px 8px;-webkit-border-radius:15px;border-radius:15px;right:0;left:0;margin:0 70%}#maincontent .swiper-pagination-bullet-active{background-color:#626262}#maincontent .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{display:none}@media screen and (max-width: 1300px){#maincontent .maincontent__container h2{font-size:-webkit-calc(24px + 24*(100vw - 320px)/980);font-size:calc(24px + 24*(100vw - 320px)/980)}#maincontent .maincontent__container h3{font-size:-webkit-calc(20px + 8*(100vw - 320px)/980);font-size:calc(20px + 8*(100vw - 320px)/980)}#maincontent .maincontent__container h4{font-size:-webkit-calc(18px + 4*(100vw - 320px)/980);font-size:calc(18px + 4*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 4*(100vw - 320px)/980);font-size:calc(14px + 4*(100vw - 320px)/980)}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__box,#maincontent .maincontent__title,#maincontent .maincontent__slider{margin-bottom:35px}#maincontent .swiper-pagination{margin:0 65%}}@media screen and (max-width: 991.98px){#maincontent .box-pos__title{width:80%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}#maincontent .smsng-vs20c8524tb-row__text{padding:5px 15px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container h3,#maincontent .maincontent__container p{margin:10px 0}#maincontent .maincontent__box,#maincontent .maincontent__title{margin-bottom:0}#maincontent .maincontent__text,#maincontent .maincontent__title{padding:0 5px}#maincontent .maincontent__title h2{text-align:center}#maincontent .maincontent__slider{margin-bottom:20px}#maincontent .box-pos__title{padding:0 5px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-maincontent__items{padding:0}#maincontent .smsng-vs20c8524tb__text{padding:0 5px}#maincontent .smsng-vs20c8524tb__item p{margin-bottom:60px}#maincontent .smsng-vs20c8524tb-row__items{margin-bottom:10px}#maincontent .smsng-vs20c8524tb-row__text{padding:5px}#maincontent .smsng-vs20c8524tb-row__text p{margin:0}#maincontent .slider-maincontent__title h2{padding-left:33px}#maincontent .slider-maincontent__title_mt h2{margin-top:20px}#maincontent .swiper{padding-left:33px}#maincontent .swiper-button-prev,#maincontent .swiper-button-next{width:30px;height:30px}#maincontent .swiper-button-prev{left:0}#maincontent .swiper-button-next{right:-39px}#maincontent .swiper-button-next:after,#maincontent .swiper-button-prev:after{width:15px;height:26px}}@media screen and (max-width: 600.98px){#maincontent .swiper{padding-left:15px}#maincontent .swiper-button-prev,#maincontent .swiper-button-next{display:none}}@media screen and (max-width: 479.98px){#maincontent .maincontent__slider{margin-bottom:15px}#maincontent .box-pos__title{position:unset;-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);margin:0 auto}#maincontent .slider-maincontent__title h2{text-align:center;padding-left:0}#maincontent .slider-maincontent__title_mt h2{margin-top:10px}#maincontent .swiper{width:auto;padding-right:15px}#maincontent .swiper-pagination{margin:0 auto;padding:2px 4px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box box-pos">
+<div class="box-pos__title">
+<h2>Высокая мощность при максимальной легкости</h2>
+</div>
+<div class="box-pos__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img01.png" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Интенсивная и тщательная уборка</h2>
+<h3>С мощным Samsung Jet 65</h3>
+<p>Этот пылесос от компании Samsung — отличный вариант для эффективной уборки любых полов. Он                         оснащен цифровым инверторным мотором, обеспечивающим мощность до 150 Вт. Аэродинамическая                         конструкция пневматической системы создает идеальное направление потока воздуха, когда                         многоциклонная система фильтрации отлично задерживает пыль.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img02_ru.png" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Высокая мощность</h2>
+<h3>Инверторный мотор</h3>
+<p>Цифровой инверторный мотор обеспечивает высокую мощность всасывания — до 150 Вт. Он имеет лопасти                         аэродинамической формы, которые сварены ультразвуком — они создают идеальное движение воздуха.                         Пылесос показывает высокую энергоэффективность и имеет мощность мотора до 410 Вт.                         На мотор дается дополнительная 10-летняя гарантия.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img03.png" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Мультициклонная конструкция</h2>
+<h3>Jet Cyclone</h3>
+<p>Чистый воздух и высокую силу всасывания гарантирует мультициклонная конструкция Jet Cyclone.                         Оптимальный путь воздуха снижает сопротивление, а за минимизацию потерь мощности отвечают 9                         циклонов с 27 воздухозаборниками. Мелкая пыль также задерживается в данной конструкции.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img04.gif" /></div>
+</div>
+<div class="maincontent__box  smsng-vs20c8524tb__box smsng-vs20c8524tb__box_left">
+<div class="maincontent__title smsng-vs20c8524tb__title smsng-vs20c8524tb__title_left">
+<h2>Фильтрация</h2>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image smsng-vs20c8524tb__img smsng-vs20c8524tb__img_left"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img05.png" /></div>
+<div class="row-maincontent__items smsng-vs20c8524tb-row__items">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text smsng-vs20c8524tb-row__text">
+<p><span>1 Этап</span></p>
+<p><span>Главный циклон</span></p>
+<p>Отделяет большие частицы пыли</p>
+</div>
+</div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text smsng-vs20c8524tb-row__text">
+<p><span>2 Этап</span></p>
+<p><span>Металлический сетчатый решетчатый фильтр</span></p>
+<p>Отделяет частицы среднего размера</p>
+</div>
+</div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text smsng-vs20c8524tb-row__text">
+<p><span>3 Этап</span></p>
+<p><span>Jet Cyclone</span></p>
+<p>9 циклонов/27 воздухосборников</p>
+<p>Минимизирует трение, максимизирует мощность всасывания, удаляет мелкую бытовую                                         пыль</p>
+</div>
+</div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text smsng-vs20c8524tb-row__text">
+<p><span>4 Этап</span></p>
+<p><span>Моющийся микрофильтр</span></p>
+<p>Снизу/сбоку фильтра блокирует дополнительную мелкую пыль</p>
+</div>
+</div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text smsng-vs20c8524tb-row__text">
+<p><span>5 Этап</span></p>
+<p><span>Фильтр мелкой пыли</span></p>
+<p>Препятствует рассеиванию мелкой пыли.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__text smsng-vs20c8524tb__text smsng-vs20c8524tb__text_left">
+<h3>Только чистый воздух</h3>
+<h4>Больше никакой пыли и аллергенов</h4>
+<p>Samsung Jet 65 обладает многослойной системой фильтрации, которая задерживает около 99% пыли и                         аллергенов животного происхождения. Большие частицы пыли останавливают главный циклонный фильтр                         и металлическая решетка, более мелкую пыль собирают микрофибра и Jet Cyclone, а наименьшие                         частицы пыли задерживает фильтр мелкой пыли.</p>
+</div>
+</div>
+<div class="maincontent__box  smsng-vs20c8524tb__box smsng-vs20c8524tb__box_left">
+<div class="maincontent__title smsng-vs20c8524tb__title smsng-vs20c8524tb__title_left">
+<h2>Никаких дополнительных усилий</h2>
+</div>
+<div class="maincontent__img smsng-vs20c8524tb__img smsng-vs20c8524tb__img_left"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img06.png" /></div>
+<div class="maincontent__text smsng-vs20c8524tb__text smsng-vs20c8524tb__text_left">
+<h3>Сверхлегкий дизайн</h3>
+<p>Максимальное удобство при уборке обеспечивает легкий дизайн пылесоса. Портативный корпус Samsung                         Jet 65 весит всего 1,48 кг, благодаря чему уменьшается нагрузка на запястье. Убирайте свой дом                         без особых усилий!</p>
+</div>
+</div>
+<div class="maincontent__box  smsng-vs20c8524tb__box smsng-vs20c8524tb__box_left">
+<div class="maincontent__title smsng-vs20c8524tb__title smsng-vs20c8524tb__title_left">
+<h2>Аккумулятор</h2>
+</div>
+<div class="maincontent__img smsng-vs20c8524tb__img smsng-vs20c8524tb__img_left"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img07.png" /></div>
+<div class="maincontent__text smsng-vs20c8524tb__text smsng-vs20c8524tb__text_left">
+<h3>40 минут уборки без подзарядки</h3>
+<h4>Долговечный съемный аккумулятор</h4>
+<p>Пылесос обладает аккумулятором большой емкости, которого хватает до 40 минут уборки без                         дополнительной подзарядки. А если времени вам не хватило, вы можете быстро заменить разряженный                         аккумулятор запасным и продлить уборку до 80 минут.<br /> Аккумулятор сохраняет 70% своих первоначальных характеристик до 500 циклов.</p>
+</div>
+</div>
+<div class="maincontent__slider smsng-vs20c8524tb slider-maincontent">
+<div class="slider-maincontent__title">
+<h2>Комфортный уход</h2>
+</div>
+<div class="smsng-vs20c8524tb__swiper swiper">
+<div class="smsng-vs20c8524tb__wrapper swiper-wrapper">
+<div class="smsng-vs20c8524tb__slide swiper-slide">
+<div class="smsng-vs20c8524tb__card">
+<div class="smsng-vs20c8524tb__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img08_1.png" /></div>
+<div class="smsng-vs20c8524tb__item">
+<h3>Полностью моющийся пылесборник</h3>
+<h4>Чистота и гигиена</h4>
+<p>Пылесборник имеет объем 0,8 л и очень легко моется. Он вместе с многоциклонной                                         системой полностью снимается и может мыться под проточной водой. А чтобы просто                                         высыпать пыль, его можно легко снять, не отсоединяя при этом трубку от корпуса.</p>
+</div>
+</div>
+</div>
+<div class="smsng-vs20c8524tb__slide swiper-slide">
+<div class="smsng-vs20c8524tb__card">
+<div class="smsng-vs20c8524tb__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img08_2.png" /></div>
+<div class="smsng-vs20c8524tb__item">
+<h3>Зарядная станция 2-в-1</h3>
+<h4>Занимает меньше места</h4>
+<p>На станции подзарядки вы можете и заряжать пылесос, и просто хранить его. Она                                         может быть расположена на полу или прикреплена к стене. Сохранит место в вашем                                         доме и всегда будет поддерживать заряд аккумулятора.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-next smsng-vs20c8524tb__next"></div>
+<div class="swiper-button-prev smsng-vs20c8524tb__prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="maincontent__box  smsng-vs20c8524tb__box smsng-vs20c8524tb__box_left">
+<div class="maincontent__title smsng-vs20c8524tb__title smsng-vs20c8524tb__title_left">
+<h2>Щетка</h2>
+</div>
+<div class="maincontent__img smsng-vs20c8524tb__img smsng-vs20c8524tb__img_left"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img09.png" /></div>
+<div class="maincontent__text smsng-vs20c8524tb__text smsng-vs20c8524tb__text_left">
+<h3>Насадка для ковров</h3>
+<h4>Jet Fit</h4>
+<p>С помощью этой щетки вы можете легко и быстро убрать пыль с твердых полов и ковров. Главная щетка                         поворачивается на 180°, благодаря чему легко менять направление движения и очистить каждый                         уголок. Щетка легко снимается одним нажатием.</p>
+</div>
+</div>
+<div class="maincontent__slider smsng-vs20c8524tb slider-maincontent">
+<div class="slider-maincontent__title">
+<h2>Аксессуары</h2>
+</div>
+<div class="smsng-vs20c8524tb__swiper swiper">
+<div class="smsng-vs20c8524tb__wrapper swiper-wrapper">
+<div class="smsng-vs20c8524tb__slide swiper-slide">
+<div class="smsng-vs20c8524tb__card">
+<div class="smsng-vs20c8524tb__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img10_1.png" /></div>
+<div class="smsng-vs20c8524tb__item">
+<h3>Вся шерсть — в пылесборнике</h3>
+<h4>Минитурбощетка Pet</h4>
+<p>Эта щетка оснащена резиной и щетиной, компактна и удобна. Легко маневрирует и                                         быстро собирает любую шерсть ваших домашних животных.</p>
+</div>
+</div>
+</div>
+<div class="smsng-vs20c8524tb__slide swiper-slide">
+<div class="smsng-vs20c8524tb__card">
+<div class="smsng-vs20c8524tb__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img10_2.png" /></div>
+<div class="smsng-vs20c8524tb__item">
+<h3>Очищайте самые глубокие места</h3>
+<h4>Удлиненная щелевая насадка</h4>
+<p>С этой насадкой можно легко пропылесосить позади дивана или под шкафом. Она                                         эффективно собирает всю пыль и грязь, и может быть удлинена до 43 см.                                         <br /> <span>Щелевая насадка</span></p>
+</div>
+</div>
+</div>
+<div class="smsng-vs20c8524tb__slide swiper-slide">
+<div class="smsng-vs20c8524tb__card">
+<div class="smsng-vs20c8524tb__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img10_3.png" /></div>
+<div class="smsng-vs20c8524tb__item">
+<h3>Убирайте пыль на мягкой мебели</h3>
+<h4>С комбинированной насадкой</h4>
+<p>Хотите безопасно убрать грязь с мягкой мебели? Используйте комбинированную                                         насадку и будьте уверены в эффективности такой уборки<br /> <span>Комбинированная насадка</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-button-next smsng-vs20c8524tb__next"></div>
+<div class="swiper-button-prev smsng-vs20c8524tb__prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="maincontent__box box-pos">
+<div class="box-pos__title">
+<h2>Что в коробке</h2>
+</div>
+<div class="box-pos__img"><img src="https://cdn.comfy.ua/media/x/img3/2644212/img11_ru.png" /></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+        document.addEventListener("DOMContentLoaded", function () {
+const swiper = new Swiper('.swiper', {    
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            spaceBetween: 32
+        },        
+        600.98: {
+            spaceBetween: 50
+        },
+        767.98: {
+            spaceBetween: 76
+        }
+    }
+});
+        });
+// ]]></script>
