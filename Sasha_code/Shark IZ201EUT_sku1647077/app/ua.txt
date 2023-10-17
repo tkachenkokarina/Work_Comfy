@@ -1,0 +1,74 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:24px;line-height:1.2;margin-bottom:10px;text-align:justify}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2;list-style:disc}#maincontent .maincontent__container ul:last-child,#maincontent .maincontent__container li:last-child{margin-bottom:40px}#maincontent .maincontent__container ul{margin-left:35px}#maincontent .maincontent__container img{margin-bottom:40px}#maincontent .maincontent__box{max-width:1200px;margin:0 auto}#maincontent .maincontent__text{max-width:1024px;margin:0 auto 40px;padding:0 10px}#maincontent .shark-box p{margin-bottom:40px}#maincontent .shark-box__bold p{text-align:center}#maincontent .shark-box__bold p span{font-weight:700}@media screen and (max-width: 1024px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/704);font-size:calc(22px + 10*(100vw - 320px)/704)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 8*(100vw - 320px)/704);font-size:calc(16px + 8*(100vw - 320px)/704)}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:15px 0}#maincontent .maincontent__container img{margin-bottom:0}#maincontent .maincontent__container p{text-align:center}#maincontent .maincontent__box{padding:0}#maincontent .maincontent__box ul:last-child,#maincontent .maincontent__box li:last-child{margin-bottom:15px}#maincontent .maincontent__text{padding:0 5px;margin-bottom:15px}#maincontent .shark-box p{margin-bottom:10px}#maincontent .shark-box__bold p{margin-top:10px}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__text{margin-bottom:10px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Абсолютна зручність прибирання</h2>
+<p>Акумуляторний пилосос Shark Anti Hair Wrap IZ201EU із технологією Flexology ідеально підходить                         для швидкого та максимально зручного застосування. Головна особливість — гнучка основна трубка,                         яка дозволяє прибирати під меблями не нагинаючись або ж фіксується під час звичайного                         вертикального застосування. Крім цього,</p>
+<ul>
+<li>Технологія Anti Hair Wrap запобігає намотуванню волосся на щітку</li>
+<li>Технологія Duo Clean зі щіткою-валиком та щетинною щіткою ідеально підходить для прибирання                             килимів та твердих покриттів</li>
+<li>Моторизовані щітки-валики не залишають на поверхні жодного сміття, пилу, шерсті та волосся </li>
+<li>Гарантія — 60 місяців </li>
+</ul>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img01.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Батарея та режими</h2>
+<p>Shark Anti Hair Wrap IZ201EU працює 40 хв на одному заряді. Дисплей допоможе точно відстежувати                         стан заряду. Ви можете прибирати в стандартному та в турборежимі для найзабрудненіших поверхонь.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img02.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Технологія проти намотування волосся</h2>
+<p>Набридло щоразу зрізати волосся зі щітки під час прибирання? Із технологією Anti Hair Wrap                         пилосос запобігає намотуванню волосся на щітку, тому девайс ідеально підійде власникам домашніх                         тварин.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img03.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Технологія Duo Clean</h2>
+<p>Основна насадка для прибирання складається зі щетинної та валикової щіток. Тому нема потреби                         змінювати насадки, залежно від типу поверхні:</p>
+<ul>
+<li>щетинна щітка глибоко очистить всі види килимів із низьким, середнім та високим ворсом</li>
+<li>щітка-валик допоможе ретельно прибрати пил, дрібне та грубе сміття</li>
+<li>обидві щітки є моторизованими, а отже, вони постійно обертаються під час прибирання та ще                             краще очищують поверхню</li>
+</ul>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img04.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Технологія Flexology</h2>
+<p>Більше не потрібно нагинатися та напружувати поперек під час прибирання під меблями, адже завдяки                         технології Flexology:</p>
+<ul>
+<li>Основна трубка пилососа згинається за потреби для прибирання важкодоступних місць або                             навпаки фіксується для стандартного вертикального прибирання </li>
+<li>Пилосос можна зберігати вертикально в будь-якому місці</li>
+</ul>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img05.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Антиалергенна герметизація та зручне очищення бака для сміття</h2>
+<p>Власники домашніх тварин та люди, схильні до алергій, обов’язково оцінять антиалергенну                         герметизацію на основі стандарту IEC 62885-2. Із нею девайс захоплює та утримує до 99,9% пилу та                         алергенів, не випускаючи їх назад у повітря, яким ми дихаємо. Бак для сміття можна зручно                         очистити в один клік та промити проточною водою. Його ємність складає 700 мл, чого вистачить на                         повний цикл прибирання.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img06.jpg" /></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Комплектація</h2>
+<p>Пилосос поставляється зі щілинною насадкою, щіткою для пилу та щіткою для оббивки та матрасів.</p>
+</div>
+<div class="maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/1647076/img07.jpg" /></div>
+</div>
+<div class="maincontent__box shark-box shark-box__bold">
+<p><span>Спробуй прибирання без зайвих зусиль із Shark! </span></p>
+</div>
+</div>
+</div>
