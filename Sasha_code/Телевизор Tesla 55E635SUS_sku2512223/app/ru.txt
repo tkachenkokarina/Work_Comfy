@@ -1,0 +1,199 @@
+<style>
+#layout-template {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    font-family: "Roboto", sans-serif
+}
+
+#layout-template h2,
+#layout-template h3,
+#layout-template h4,
+#layout-template h5,
+#layout-template h6,
+#layout-template p,
+#layout-template img {
+    padding: 0;
+    margin: 0;
+    display: block
+}
+
+#layout-template img {
+    max-width: 100%;
+    margin: 0 auto
+}
+
+#layout-template h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: left
+}
+
+#layout-template h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center
+}
+
+#layout-template p {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left
+}
+
+.main-container.page {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.bc-description__content p:first-letter {
+    padding-left: 0 !important
+}
+
+.tesla__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.banner__p {
+    padding: 20px 0
+}
+
+.originality {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.item__title {
+    width: 50%;
+    padding: 0 20px
+}
+
+.title__h2 {
+    padding: 20px 0
+}
+
+.title__p {
+    padding-bottom: 20px
+}
+
+.item__images {
+    width: 50%
+}
+
+.originality-revers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+@media(max-width: 1024px) {
+    #layout-template h2 {
+        font-size: 30px
+    }
+}
+
+@media(max-width: 768px) {
+    .originality {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .item__title {
+        width: 100%;
+        padding: 0
+    }
+    .item__images {
+        width: 100%
+    }
+}
+
+@media(max-width: 480px) {
+    #layout-template h2 {
+        font-size: 20px
+    }
+    #layout-template p {
+        font-size: 16px
+    }
+}
+</style>
+<div id="layout-template">
+<div class="tesla__container">
+<div class="banner">
+<div class="banner__p">
+<p>Все покупатели любят телевизор <b>Тесла 55E635SUS</b> с сертифицированной ОС Android TV 11, так                         как он                         имеет много удивительных возможностей. Гугл-ассистент, лицензированные и интегрированные                         Netflix, Prime Video и YouTube делают его любимцем семьи. Он очень удобен, практичный и имеет                         понятные каждому настройки.</p>
+</div>
+<div class="banner__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512223/img01_ru.jpg" /></div>
+</div>
+<div class="originality">
+<div class="item__title">
+<div class="title__h2">
+<h2>Операционная система и комплектация</h2>
+</div>
+<div class="title__p">
+<p>Операционная система – ОС Android TV 11. Что же входит в комплект? Туда входит телевизор,                             пульт со встроенным Bluetooth, с помощью которого вы можете задать Гугл-ассистенту                             интересующий вопрос простым нажатием кнопки микрофона на этом пульте. Также с помощью пульта                             вы можете использовать голосовой поиск или переключать фильмы из любой комнаты вашего дома.                             Помимо пульта, туда входит инструкция по использованию и гарантийный талон.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512223/img02.jpg" /></div>
+</div>
+<div class="originality originality-revers">
+<div class="item__title">
+<div class="title__h2">
+<h2>Дизайн и размер</h2>
+</div>
+<div class="title__p">
+<p>Крышка, рамка, а также подставка телевизора изготовлены в стильном серебристом цвете, который                             подойдет под каждый интерьер и сделает вашу комнату еще красивее. Сам по себе он компактный                             – всего 55 дюймов. Благодаря этому вы сможете поставить его в любое место в доме.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512223/img03.jpg" /></div>
+</div>
+<div class="originality">
+<div class="item__title">
+<div class="title__h2">
+<h2>Экран: технические характеристики</h2>
+</div>
+<div class="title__p">
+<p>Модель экрана телевизора Тесла 55E635SUS из серии Е635. Контрастность экрана 5000:1, это даст                             вам возможность наслаждаться любимыми фильмами, сериалами и другими передачами в отличном                             качестве. Угол обзора 170/170 градусов, а это значит, что вы можете смотреть телевизор под                             любым углом, сидя или стоя в другом конце комнаты.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512223/img04.jpg" /></div>
+</div>
+<div class="originality originality-revers">
+<div class="item__title">
+<div class="title__h2">
+<h2>Звук и другие особенности</h2>
+</div>
+<div class="title__p">
+<p>Телевизор имеет два динамика по 12 Вт в каждом, то есть суммарная мощность аудио – 24 Вт.<br /> Особенностью является встроенный Chromecast, с помощью которого вы можете смотреть свои                             любимые передачи, фильмы, сериалы и другое на большом экране всего за несколько этапов.                             Нужно просто передать их с другого смарт-устройства, например телефона.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512223/img05.jpg" /></div>
+</div>
+</div>
+</div>

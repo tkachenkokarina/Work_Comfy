@@ -1,0 +1,199 @@
+<style>
+#layout-template {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    font-family: "Roboto", sans-serif
+}
+
+#layout-template h2,
+#layout-template h3,
+#layout-template h4,
+#layout-template h5,
+#layout-template h6,
+#layout-template p,
+#layout-template img {
+    padding: 0;
+    margin: 0;
+    display: block
+}
+
+#layout-template img {
+    max-width: 100%;
+    margin: 0 auto
+}
+
+#layout-template h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: left
+}
+
+#layout-template h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center
+}
+
+#layout-template p {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left
+}
+
+.main-container.page {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.bc-description__content p:first-letter {
+    padding-left: 0 !important
+}
+
+.tesla__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.banner__p {
+    padding: 20px 0
+}
+
+.originality {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.item__title {
+    width: 50%;
+    padding: 0 20px
+}
+
+.title__h2 {
+    padding: 20px 0
+}
+
+.title__p {
+    padding-bottom: 20px
+}
+
+.item__images {
+    width: 50%
+}
+
+.originality-revers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+@media(max-width: 1024px) {
+    #layout-template h2 {
+        font-size: 30px
+    }
+}
+
+@media(max-width: 768px) {
+    .originality {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .item__title {
+        width: 100%;
+        padding: 0
+    }
+    .item__images {
+        width: 100%
+    }
+}
+
+@media(max-width: 480px) {
+    #layout-template h2 {
+        font-size: 20px
+    }
+    #layout-template p {
+        font-size: 16px
+    }
+}
+</style>
+<div id="layout-template">
+<div class="tesla__container">
+<div class="banner">
+<div class="banner__p">
+<p>Телевизор <b>Tesla 50E635SUS</b> – воплощение передовых технологий и современного дизайна в одном                         устройстве. Этот умный телевизор сделан для того, чтобы подарить незабываемые моменты                         развлечений и комфортного просмотра любимого контента. Сочетание высокого качества изображения,                         мощного звука и инновационных функций позволит окунуться в мир ярких эмоций, даже не выходя из                         дома.</p>
+</div>
+<div class="banner__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512222/img01_ru.jpg" /></div>
+</div>
+<div class="originality">
+<div class="item__title">
+<div class="title__h2">
+<h2>Современная ОС</h2>
+</div>
+<div class="title__p">
+<p>Операционная система android tv 11 предоставляет богатый выбор разнообразных развлекательных                             приложений и удобный интерфейс для навигации. Благодаря поддержке Wi-Fi и Bluetooth можно                             легко получить доступ к контенту из интернета или смотреть любимые фильмы, шоу и музыку на                             популярных сервисах.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512222/img02.jpg" /></div>
+</div>
+<div class="originality originality-revers">
+<div class="item__title">
+<div class="title__h2">
+<h2>Размеры и дизайн устройства</h2>
+</div>
+<div class="title__p">
+<p>Устройство имеет 50-дюймовый экран, что позволяет погрузиться в захватывающий контент с                             удивительным уровнем детализации. Телевизор создан в современном и элегантном дизайне,                             который гармонично дополнит интерьер любого помещения. Тонкие рамки максимизируют площадь                             просмотра, позволяя наслаждаться каждым моментом без отвлекающих элементов.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512222/img03.jpg" /></div>
+</div>
+<div class="originality">
+<div class="item__title">
+<div class="title__h2">
+<h2>Уникальные характеристики экрана</h2>
+</div>
+<div class="title__p">
+<p>Экран Tesla 50E635SUS оснащен передовыми технологиями. 4K Ultra HD предлагает четкие и                             реалистичные изображения с богатыми цветами и глубокими тонами. Технология HDR поднимает                             контрастность и яркость до новых высот, позволяя увидеть каждую деталь даже в самых темных                             сценах. Частота обновления 60 Гц обеспечивает плавное отображение быстрого движения.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512222/img04.jpg" /></div>
+</div>
+<div class="originality originality-revers">
+<div class="item__title">
+<div class="title__h2">
+<h2>Другие особенности телевизора</h2>
+</div>
+<div class="title__p">
+<p>Tesla имеет встроенный голосовой помощник, что позволяет управлять телевизором без пульта.                             Многочисленные порты HDMI и USB позволяют подключать различные устройства, такие как игровые                             консоли, Blu-ray плееры или ноутбуки, расширяя возможности развлечений.</p>
+</div>
+</div>
+<div class="item__images"><img alt="img" src="https://cdn.comfy.ua/media/x/img3/2512222/img05.jpg" /></div>
+</div>
+</div>
+</div>
