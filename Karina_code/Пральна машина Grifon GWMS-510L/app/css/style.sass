@@ -1,0 +1,791 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1300
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+html,
+body
+    height: 100%
+    min-width: 320px
+
+button
+    cursor: pointer
+    color: inherit
+    background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+#grifongw a
+    color: inherit
+    text-decoration: none
+
+#grifongw
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#grifongw .bc-description__content p
+    margin-bottom: 0
+
+#grifongw .bc-description__content h3
+    text-align: left
+
+#grifongw
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#grifongw
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+        color: #272321
+
+#grifongw p::first-letter
+    padding-left: 0
+
+#grifongw img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#grifongw img:hover
+    opacity: 1
+
+#grifongw .grifongw__container
+    max-width: 1300px
+    margin: 0 auto
+
+//========================================================================================================================================================
+
+#grifongw .header-grifongw
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img1.png') 70% 0 no-repeat
+        background-size: cover
+        min-height: 670px
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -2
+            top: 0
+            right: 0
+            //width: 479px
+            width: 37%
+            height: 567px
+            background: linear-gradient(90deg, rgba(213,205,198,0.6251750700280112) 0%, rgba(213,205,198,1) 30%, rgba(243,239,233,0.46551120448179273) 70%, rgba(245,238,225,0.12377450980392157) 100%)
+        &_sm
+    &__title
+        max-width: 410px
+        width: 100%
+        padding-top: 44px
+        padding-left: 53px
+        h2
+            @include adaptiv-value("font-size", 40, 25, 1)
+            line-height: 1.2
+    &__image
+        position: absolute
+        z-index: 5
+        top: 58%
+        left: 50%
+        right: 20%
+    &__bg-row
+        position: absolute
+        z-index: 5
+        top: 40%
+        transform: translateY(-50%)
+        right: 3%
+        width: 25%
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 30px
+        // max-width: 325px
+        // width: 100%
+        position: relative
+        z-index: 2
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: -2
+        //     top: 0
+        //     right: 0
+        //     width: 474px
+        //     height: 567px
+        //     background: linear-gradient(90deg, rgba(213,205,198,1) 0%, rgba(243,239,233,1) 85%, rgba(245,238,225,1) 100%)
+    &__col
+        display: flex
+        align-items: center
+        gap: 30px
+    &__icon
+        flex: 0 0 61px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+
+#grifongw .size-grifongw
+    position: relative
+    z-index: 5
+    overflow: hidden
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img8.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 670px
+        position: relative
+        z-index: 2
+        // padding-bottom: 47px
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            right: 0
+            min-height: 670px
+            width: 37%
+            background: url('https://cdn.comfy.ua/media/x/img3/2385021/img8-1.png') 0 0 no-repeat
+            background-size: cover
+    &__body
+    &__title
+        max-width: 490px
+        width: 100%
+        padding-top: 44px
+        //padding-left: 158px
+        @include adaptiv-value("padding-left", 158, 20, 1)
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__media
+        position: absolute
+        z-index: 5
+        top: 32%
+        //right: 29%
+        right: 32%
+    &__media-pos
+        display: flex
+        gap: 63px
+    &__image
+        position: absolute
+        &_1
+            z-index: 6
+            top: -18px
+            right: 82%
+            padding-left: 20px
+        &_2
+            z-index: 5
+            top: 0
+            left: -66px
+            right: 60%
+        &_3
+            display: none
+    &__item
+        position: relative
+        z-index: 2
+    &__item-image
+    &__arrow
+        position: absolute
+        z-index: 5
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            color: #756E63
+            text-align: center
+            font-weight: 700
+        &_1
+            top: -30px
+            left: 32%
+            right: 14%
+        &_2
+            top: -43px
+            left: 0
+            right: 0
+        &_3
+            left: -18px
+            bottom: 0
+            top: -5px
+            p
+                writing-mode: vertical-rl
+                position: absolute
+                z-index: 5
+                top: 50%
+                transform: translateY(-50%) rotate(-180deg)
+                left: -25px
+        &_4
+            display: none
+        &_5
+            display: none
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 20px
+        position: absolute
+        z-index: 5
+        top: 45%
+        transform: translateY(-50%)
+        right: 4%
+        width: 27%
+    &__col
+        display: flex
+        align-items: center
+        gap: 21px
+    &__icon
+        flex: 0 0 70px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+
+#grifongw .control-grifongw
+    position: relative
+    z-index: 2
+    margin-top: -50px
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img22.png') 60% 0 no-repeat
+        background-size: cover
+        min-height: 1124px
+        position: relative
+        z-index: 2
+    &__body
+        // padding-top: 113px
+        position: absolute
+        z-index: 5
+        bottom: 0
+        left: 0
+        right: 0
+    &__body-ps
+        position: relative
+        z-index: 3
+    &__image-pos
+        position: absolute
+        z-index: 5
+        top: 9%
+        left: 2%
+        right: 50%
+        // max-width: 999px
+        width: 999px
+        // width: calc(px + (999px - px) * (1300px - 1111px) / 1300)
+    &__title
+        @include adaptiv-value("font-size", 24, 16, 1)
+        line-height: 1.2
+        font-weight: 700
+        padding: 0 15px 20px 138px
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(240px, 1fr))
+        padding: 0 10px 0 50px
+        gap: 25px
+        position: relative
+        z-index: 8
+    &__item
+        display: flex
+        align-items: center
+        gap: 20px
+    &__icon
+        flex: 0 0 70px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__media
+        position: relative
+        z-index: 2
+        max-width: 636px
+        margin: 0 auto
+        padding-top: 113px
+    &__image
+        &_1
+            position: relative
+            z-index: 8
+        &_2
+            position: relative
+            z-index: 5
+            margin-top: -8px
+        &_3
+            position: absolute
+            z-index: 5
+            top: 42%
+            right: 5%
+            left: 80%
+
+#grifongw .spec-grifongw
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img35.png') 0 0 no-repeat
+        background-size: cover
+        padding: 45px 15px
+    &__row
+        max-width: 1054px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr))
+        gap: 30px 20px
+    &__item
+        display: flex
+        align-items: center
+        gap: 10px
+    &__icon
+        display: flex
+        flex: 0 0 100px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            line-height: 1.2
+
+#grifongw .function-grifongw
+    padding: 10px 0
+    &__row
+        display: flex
+        justify-content: space-between
+        gap: 5px
+    &__items
+        flex: 0 1 33.3333%
+        max-width: 428px
+        // display: flex
+        // flex-direction: column
+    &__item
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img58.png') 0 0 no-repeat
+        background-size: cover
+        padding: 10px
+        min-height: 87px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+    &__image
+        position: relative
+        z-index: 2
+        padding-bottom: 78%
+        img
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__icon
+        flex: 0 0 60px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+
+#grifongw .drum-grifongw
+    &__row
+        display: flex
+    &__image
+        flex: 0 1 50%
+    &__item
+        flex: 0 1 50%
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img60.png') 0 0 no-repeat
+        background-size: cover
+        display: flex
+        align-items: center
+    &__text
+        width: 80%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1300px)
+    #grifongw .control-grifongw__image-pos
+        top: 10%
+        left: 1%
+    #grifongw .size-grifongw__arrow_3 img
+        height: calc(377px + (450 - 377) * ((100vw - 1024px) / (1300 - 1024)))
+
+@media screen and (max-width: 1293px)
+    #grifongw .control-grifongw__image-pos
+        display: none
+    #grifongw .control-grifongw__row
+        padding: 0 10px
+
+// @media screen and (max-width: 1148px)
+//     #grifongw .size-grifongw__arrow_3 img
+//         height: 420px
+//         height: calc(px + () * (100vw - 320px) / 1300)
+
+@media screen and (max-width: 1120px)
+    #grifongw .control-grifongw
+        margin-top: 0
+
+@media screen and (max-width: 1100px)
+    #grifongw .header-grifongw__title
+        padding-top: 23px
+        padding-left: 20px
+    #grifongw .header-grifongw__bg::after
+        width: 38%
+
+@media screen and (max-width: 1024.98px)
+    #grifongw .size-grifongw__bg
+        min-height: auto
+    #grifongw .size-grifongw__item
+        bottom: -40px
+        padding-right: 30px
+        max-width: 536px
+        margin: 0 auto
+    #grifongw .size-grifongw__arrow_1
+        // top: -35px
+        // left: 38%
+        // right: 30%
+        top: -35px
+        left: 30%
+        //right: 20%
+        max-width: 292px
+    #grifongw .size-grifongw__arrow_4
+        display: block
+        top: -27px
+        left: 85%
+        max-width: 51px
+    #grifongw .size-grifongw__arrow_5
+        display: block
+        top: 0px
+        right: 20px
+        img
+            height: 430px
+        p
+            writing-mode: vertical-rl
+            position: absolute
+            z-index: 5
+            top: 50%
+            transform: translateY(-50%) rotate(360deg)
+            left: 10px
+    #grifongw .size-grifongw__arrow p
+        font-size: 14px
+    #grifongw .size-grifongw__bg::after
+        display: none
+    #grifongw .size-grifongw__bg
+        background: none
+    #grifongw .size-grifongw__body
+        background: url(https://cdn.comfy.ua/media/x/img3/2385021/img8m.png) 0 0 no-repeat
+        background-size: cover
+        margin: 0 auto
+    #grifongw .size-grifongw__media
+        position: unset
+    #grifongw .size-grifongw__row
+        position: unset
+        transform: translateY(0)
+    #grifongw .size-grifongw__item_2
+        display: none
+    #grifongw .size-grifongw__media-pos
+        display: block
+        // max-width: 600px
+        // margin: 0 auto
+    #grifongw .size-grifongw__title
+        margin: 0 auto 10px
+        padding: 40px 15px 0
+    #grifongw .size-grifongw__image_2
+        display: none
+    #grifongw .size-grifongw__image_3
+        display: block
+        position: absolute
+        z-index: 5
+        top: 16%
+        left: 8%
+        right: 35%
+    #grifongw .size-grifongw__image_1
+        top: 2%
+        right: 65%
+        left: 20%
+        padding-left: 0
+    #grifongw .size-grifongw__media-pos
+        position: relative
+        z-index: 3
+    #grifongw .size-grifongw__row-bg
+        background: url(https://cdn.comfy.ua/media/x/img3/2385021/img8m1.png) 0 0 no-repeat
+        background-size: cover
+        padding: 76px 15px 34px
+    #grifongw .size-grifongw__row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+        max-width: 600px
+        width: auto
+        margin: 0 auto
+
+@media screen and (max-width: 991.98px)
+    #grifongw .size-grifongw__title
+        max-width: 390px
+    #grifongw .size-grifongw__image_1
+        top: 5%
+    #grifongw .control-grifongw__media
+        padding-top: 70px
+    #grifongw .control-grifongw__body
+        position: unset
+        padding-top: 50px
+    #grifongw .size-grifongw__bg
+        padding-bottom: 0
+    // #grifongw .control-grifongw
+    //     margin-top: 0
+    #grifongw .header-grifongw__bg::after
+        width: 39%
+    #grifongw .header-grifongw__bg-row
+        width: 32%
+    #grifongw .header-grifongw__image
+        top: 60%
+        left: 45%
+        right: 32%
+
+@media screen and (max-width: 836px)
+    #grifongw .spec-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+
+@media screen and (max-width: 767.98px)
+    #grifongw .function-grifongw__icon
+        flex: 0 0 40px
+    #grifongw .control-grifongw__bg
+        min-height: auto
+    #grifongw .control-grifongw__image_3
+        top: 39%
+    #grifongw .control-grifongw__icon
+        flex: 0 0 40px
+    #grifongw .control-grifongw__body
+        padding: 50px 15px 0
+    #grifongw .control-grifongw__row
+        padding: 0
+    #grifongw .control-grifongw__title
+        padding: 0 20px 20px
+    #grifongw .header-grifongw__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2385021/img1m.png') 50% 0 no-repeat !important
+    #grifongw .header-grifongw__title
+        margin: 0 auto
+        padding: 20px 15px 0
+        max-width: 365px
+        width: auto
+        h2
+            text-align: center
+    #grifongw .header-grifongw__bg::after
+        display: none
+    #grifongw .header-grifongw__bg-row
+        transform: translateY(0)
+        bottom: 5%
+        left: 0
+        right: 0
+        top: auto
+        width: 65%
+        margin: 0 auto
+    #grifongw .header-grifongw__image
+        right: 0
+        left: 35%
+        top: 50%
+        img
+            width: 100px
+    #grifongw .header-grifongw__row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 20px 15px
+    #grifongw .header-grifongw__col
+        gap: 10px
+        &:nth-child(5)
+            grid-column: span 2
+    #grifongw .header-grifongw__icon
+        flex: 0 0 30px
+    // #grifongw .size-grifongw__image_1
+    //     right: 63%
+    //     left: 20%
+    #grifongw .size-grifongw__icon
+        flex: 0 0 40px
+    #grifongw .size-grifongw__col
+        gap: 10px
+
+@media screen and (max-width: 680px)
+    #grifongw .spec-grifongw__text p
+        text-align: center
+    #grifongw .spec-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    #grifongw .spec-grifongw__icon
+        flex: 0 1 auto
+    #grifongw .spec-grifongw__item
+        flex-direction: column
+        justify-content: space-between
+
+@media screen and (max-width: 600px)
+    #grifongw .size-grifongw__image_3
+        top: 20%
+        left: 0
+    #grifongw .size-grifongw__image_1
+        top: 10%
+        left: 0
+        right: 70%
+    #grifongw .control-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))
+    #grifongw .size-grifongw__arrow_5
+        bottom: 0
+        top: 2%
+    // #grifongw .size-grifongw__arrow_5 img
+    //     height: auto
+    #grifongw .size-grifongw__arrow_4
+        top: -24px
+        left: 83%
+        right: 5%
+    #grifongw .size-grifongw__arrow_1
+        top: -24px
+        right: 20%
+    // #grifongw .size-grifongw__image_3
+    //     top: 14%
+    //     right: 25%
+    //     left: -64px
+    // #grifongw .size-grifongw__image_1
+    //     right: 71%
+    //     left: 10%
+
+@media screen and (max-width: 530px)
+    #grifongw .spec-grifongw__icon
+        min-height: 63px
+        display: block
+    #grifongw .spec-grifongw__item
+        justify-content: start
+    #grifongw .drum-grifongw__text
+        width: auto
+        padding: 20px 15px
+    #grifongw .drum-grifongw__row
+        flex-direction: column
+    #grifongw .size-grifongw__arrow_5 img
+        height: 390px
+    #grifongw .spec-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr))
+
+@media screen and (max-width: 490px)
+    #grifongw .size-grifongw__arrow_5 img
+        height: 350px
+
+@media screen and (max-width: 479.98px)
+    #grifongw .function-grifongw__items
+        max-width: 100%
+    #grifongw .function-grifongw__row
+        flex-direction: column
+        gap: 0
+    #grifongw .control-grifongw__image_3
+        top: 41%
+    #grifongw .size-grifongw__row-bg
+        padding-top: 50px
+    #grifongw .size-grifongw__arrow_5 p
+        left: 6px
+    #grifongw .size-grifongw__arrow_4
+        left: 81%
+        right: 8%
+    #grifongw .size-grifongw__arrow p
+        font-size: 12px
+    #grifongw .header-grifongw__image
+        left: 57%
+    #grifongw .header-grifongw__bg-row
+        width: auto
+        padding: 0 15px
+        bottom: 3%
+    #grifongw .header-grifongw__title
+        padding: 30px 15px
+    #grifongw .size-grifongw__title
+        max-width: 100%
+        width: auto
+        padding: 20px 15px 0
+        p
+            font-size: 20px
+    // #grifongw .size-grifongw__image_3
+    //     top: 13%
+    //     left: -66px
+    //     right: 35%
+    // #grifongw .size-grifongw__image_1
+    //     top: 12%
+    #grifongw .size-grifongw__row
+        gap: 20px 10px
+        // grid-template-columns: 1fr
+    #grifongw .size-grifongw__text p
+        font-size: 15px
+    #grifongw .size-grifongw__col
+        gap: 5px
+
+@media screen and (max-width: 450px)
+    #grifongw .size-grifongw__arrow_5 img
+        height: 320px
+
+@media screen and (max-width: 430px)
+    // #grifongw .size-grifongw__image_3
+    //     top: 15%
+    //     left: -66px
+    //     right: 35%
+    // #grifongw .size-grifongw__image_1
+    //     top: 15%
+    #grifongw .control-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+    #grifongw .control-grifongw__item
+        gap: 10px
+
+@media screen and (max-width: 406px)
+    #grifongw .size-grifongw__arrow_5 img
+        height: 280px
+
+@media screen and (max-width: 395px)
+    #grifongw .size-grifongw__icon,
+    #grifongw .control-grifongw__icon
+        flex: 0 0 30px
+    #grifongw .size-grifongw__text p,
+    #grifongw .control-grifongw__text p
+        font-size: 13px
+    #grifongw .size-grifongw__row-bg
+        padding: 50px 8px 30px
+    #grifongw .control-grifongw__body
+        padding: 50px 8px 0
+    #grifongw .control-grifongw__row
+        gap: 20px 15px
+
+@media screen and (max-width: 360px)
+    #grifongw .size-grifongw__arrow_5 img
+        height: 250px
+    #grifongw .control-grifongw__image_3
+        top: 45%
+
+@media screen and (max-width: 355px)
+    #grifongw .size-grifongw__arrow p
+        font-size: 10px
+    #grifongw .control-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+    #grifongw .spec-grifongw__row
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr))
+        gap: 20px 15px
+    #grifongw .spec-grifongw__text p
+        font-size: 15px
+    #grifongw .spec-grifongw__bg
+        padding: 40px 8px
