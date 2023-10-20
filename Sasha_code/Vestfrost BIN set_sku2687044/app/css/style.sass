@@ -1,0 +1,690 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 42px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-align: center
+        h3
+            @include fonts($fontSize: 32px, $lineHeight: 1.3)
+            margin: 20px 0px
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.5)
+            margin-bottom: 10px
+            text-align: center
+            span
+                font-weight: 700
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: left)
+        flex-direction: column
+    &__subtitle
+        p
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            letter-spacing: 0.1rem
+            color: #002E5D
+    &__header
+        p
+            @include fonts($fontSize: 64px, $lineHeight: 1.3)
+            text-transform: uppercase
+            color: #fff
+            max-width: 620px
+            text-align: left
+
+#maincontent .top-box
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2687044/bg01.png"))
+        position: relative
+        z-index: 0
+        &::after
+            content: ""
+            @include position($position: absolute, $zIndex: 6)
+            top: 50%
+            left: 0
+            right: 0
+            bottom: 0
+            background: linear-gradient(#3D3D3D00, #3D3D3D)
+    &__inner
+        @include position($position: relative, $zIndex: 99)
+        &::before
+            content: ''
+            @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon01.png'))
+            @include position($position: absolute, $zIndex: 100)
+            width: 78px
+            height: 85px
+            top: 55%
+            left: 86%
+            right: 10%
+            transform: translateY(-45%)
+    &__logo
+        margin: 46px auto 18px
+    &__subtitle
+        margin-bottom: 391px
+        padding: 0 10px
+    &__header
+        margin-bottom: 117px
+        margin-left: 80px
+
+#maincontent .vestfrostbOv67be-modern
+    &__bg
+        @include position($position: relative, $zIndex: 4)
+        margin-bottom: 15rem
+    &__media
+        @include position($position: absolute, $zIndex: 5)
+        top: 0
+        left: 0
+    &__inner
+        @include flex-box($justifyContent: flex-start, $alignItems: center)
+        flex-direction: row
+        padding: 82px 80px
+    &__text-box
+        flex: 0 1 51%
+    &__title
+        margin-bottom: 155px
+        p
+            text-align: left
+            color: #fff
+            @include fonts($fontSize: 40px, $lineHeight: 1.3)
+            font-weight: 700
+    &__text
+        p
+            text-align: left
+    &__img
+        flex: 0 1 49%
+
+#maincontent .row-maincontent
+    margin-bottom: 60px
+    &__title
+        margin-bottom: 50px
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        h3
+            text-transform: uppercase
+        p
+            text-align: left
+    &__image
+        flex: 0 1 50%
+
+#maincontent .vestfrostbOv67be-frontpanel
+    &__image
+        @include position($position: relative, $zIndex: 5)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 6)
+            @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon02.png'))
+            width: 78px
+            height: 85px
+            top: 18%
+            left: 7%
+            transform: translate(-10%, -80%)
+
+#maincontent .vestfrostbOv67be-grates
+    &__text
+        p
+            @include position($position: relative, $zIndex: 3)
+            padding-left: 90px
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 6)
+                width: 60px
+                height: 60px
+                top: 0
+                left: 0
+        &--p01
+            &::before
+                @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon04_1.png'))
+        &--p02
+            &::before
+                @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon04_2.png'))
+        &--p03
+            &::before
+                @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon04_3.png'))
+                
+#maincontent .vestfrostbOv67be-bgbox
+    &__bg
+        @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/bg03.png'))
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        padding: 115px 0 175px
+        max-width: 1269px
+        margin: 0 auto
+    &__text
+        p
+            @include fonts($fontSize: 42px, $lineHeight: 1.2)
+            color: #fff
+
+#maincontent .col-maincontent
+    margin-bottom: 50px
+    @include position($position: relative, $zIndex: 5)
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: stretch)
+        padding: 67px 80px 41px
+        gap: 20px
+    &__item
+        flex: 0 1 50%
+    &__text
+        &:first-child
+            margin-bottom: 80px
+            min-height: 265px
+        &--left
+            p
+                text-align: left
+        &--right
+            margin-left: auto
+            p
+                text-align: right
+        &--narrow
+            max-width: 290px
+        &--wide
+            max-width: 500px
+    &__image
+        @include position($position: absolute, $zIndex: 6)
+        top: -25%
+        left: 50%
+        margin-right: -50%
+        transform: translateX(-50%)
+        img
+            width: 80%
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 7)
+            @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/img06_1.png'))
+            width: 258px
+            height: 258px
+            top: 50%
+            left: 7%
+        &::after
+            content: ""
+            @include position($position: absolute, $zIndex: 7)
+            @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/img06_2.png'))
+            width: 258px
+            height: 258px
+            top: 60%
+            left: 57%
+
+#maincontent .bottom-box
+    @include position($position: relative, $zIndex: 4)    
+    &__text
+        @include position($position: absolute, $zIndex: 5)
+        top: -4%
+        right: 80px
+        left: 45%
+        p
+            @include fonts(38px, $lineHeight: 1.2)
+            text-align: right
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 7)
+            @include bg-image($url: url('https://cdn.comfy.ua/media/x/img3/2687044/icon02.png'))
+            width: 78px
+            height: 85px
+            top: 0%
+            left: -25%
+            
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1400px)
+    #maincontent .vestfrostbOv67be-modern
+        &__inner
+            padding-top: 4rem
+        &__title
+            margin-bottom: 180px
+    #maincontent .col-maincontent
+        &__item
+            &--right .col-maincontent__text--narrow
+                max-width: 220px
+            &--left .col-maincontent__text--narrow
+                max-width: 265px
+
+@media screen and (max-width: 1300px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (42 - 22) * ((100vw - 320px)/(1300 - 320)))
+            h3
+                font-size: calc( 20px + (32 - 20) * ((100vw - 320px)/(1300 - 320)))
+            p
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1300 - 320)))
+        &__subtitle
+            p
+                font-size: calc( 18px + (22 - 18) * ((100vw - 320px)/(1300 - 320)))
+        &__header
+            p
+                font-size: calc( 26px + (64 - 26) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 13rem
+        &__title
+            margin-bottom: 16rem
+            p
+                font-size: calc( 20px + (40 - 20) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .vestfrostbOv67be-bgbox
+        &__text
+            padding: 0 10px
+            p
+                font-size: calc( 22px + (42 - 22) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .col-maincontent
+        &__item
+            &--left .col-maincontent__text--narrow
+                max-width: 230px
+        &__text
+            &:first-child 
+                min-height: 323px
+    #maincontent .bottom-box
+        &__text
+            right: 35px
+            p
+                font-size: calc( 18px + (38 - 18) * ((100vw - 320px)/(1300 - 320)))  
+@media screen and (max-width: 1250px)
+    #maincontent .col-maincontent
+        &__image
+            img
+                width: 75%
+            &::before
+                width: 200px
+                height: 200px
+                top: 64%
+                left: 12%
+            &::after
+                width: 200px
+                height: 200px
+                top: 73%
+@media screen and (max-width: 1200px)
+    #maincontent .vestfrostbOv67be-modern
+        &__inner
+            padding: 2rem 40px 80px
+    #maincontent .bottom-box
+        &__text
+            top: -6%
+            left: 26%
+@media screen and (max-width: 1175.98px)
+    #maincontent .col-maincontent
+        &__image
+            top: -12%
+@media screen and (max-width: 1100px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 18rem
+        &__title
+            margin-bottom: 14rem
+    #maincontent .col-maincontent
+        &__inner
+            padding-left: 40px
+            padding-right: 40px
+        &__text
+            padding: 0 10px
+@media screen and (max-width: 1024.98px)
+    #maincontent .top-box
+        &__inner
+            &::before
+                display: none
+    #maincontent .vestfrostbOv67be-frontpanel
+        &__image
+            &::before
+                display: none
+    #maincontent .col-maincontent
+        margin-bottom: 100px
+        &__image
+            top: -12%
+            img
+                width: 65%
+            &::before
+                width: 150px
+                height: 150px
+                left: 18%
+            &::after
+                width: 150px
+                height: 150px
+                left: 60%
+    #maincontent .bottom-box
+        &__text
+            top: -15%
+@media screen and (max-width: 991.98px)
+    #maincontent .maincontent
+        &__bg
+            background-position: 60% center
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 81rem
+        &__inner
+            flex-direction: column
+            padding: 4rem 80px
+        &__title
+            margin-bottom: 22rem
+        &__text
+            max-width: 60%
+    #maincontent .row-maincontent
+        &__title
+            margin-bottom: 35px
+    #maincontent .vestfrostbOv67be-bgbox
+        &__inner
+            padding: 115px 0
+    #maincontent .col-maincontent
+        margin-bottom: 25rem
+        &__inner
+            padding: 40px 25px
+        &__item
+            &--left .col-maincontent__text--narrow, &--right .col-maincontent__text--narrow
+                max-width: 100%
+        &__text
+            &:first-child
+                margin-bottom: 0
+                min-height: auto
+            &--right, &--left
+                p
+                    text-align: justify
+        &__image
+            position: relative
+            margin-right: 0
+            img
+                width: auto
+            &::before
+                width: 258px
+                height: 258px
+                left: 15%
+            &::after
+                width: 258px
+                height: 258px
+@media screen and (max-width: 910.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 84rem
+        &__title
+            margin-bottom: 19rem
+    #maincontent .col-maincontent
+        &__image
+            &::before
+                left: 10%
+@media screen and (max-width: 850.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 77rem
+        &__inner
+            padding-top: 2rem
+        &__title
+            margin-bottom: 20rem
+        &__text
+            max-width: 100%
+
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__bg
+            background-position: 65% center
+    #maincontent .top-box
+        &__logo
+            width: 50%
+        &__header
+            margin-left: 35px
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 78rem
+        &__inner
+            padding-left: 35px
+            padding-right: 35px
+        &__title
+            margin-bottom: 21rem
+    #maincontent .row-maincontent
+        margin-bottom: 0
+        &__title
+            margin-bottom: 0
+            h2
+                margin: 10px 0
+        &__inner
+            flex-direction: column
+        &__text
+            padding: 0 5px
+            h3
+                text-align: center
+                margin: 10px 0
+            p
+                text-align: justify
+    #maincontent .vestfrostbOv67be-grates
+        &__image
+            margin-bottom: 10px
+    #maincontent .col-maincontent
+        margin-bottom: 20rem
+        &__inner
+            flex-direction: column
+            padding: 10px 0
+            gap: 0
+        &__text
+            max-width: 100%
+        &__image
+            &::before
+                left: 0
+            &::after
+                left: 63%
+@media screen and (max-width: 700.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 73rem
+        &__title
+            margin-bottom: 17rem
+            p
+                text-align: center
+        &__text
+            p
+                text-align: justify
+    #maincontent .bottom-box
+        &__text
+            right: 15px
+            top: -20%
+    #maincontent .col-maincontent
+        &__image
+            &::after
+                left: 57%
+
+@media screen and (max-width: 600.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 68rem
+        &__inner
+            padding-top: 1rem
+        &__text
+            max-width: 100%
+    #maincontent .vestfrostbOv67be-bgbox
+        &__inner
+            padding: 30px 0
+    #maincontent .col-maincontent
+        margin-bottom: 16rem
+        &__image
+            &::before
+                width: 200px
+                height: 200px
+            &::after
+                width: 200px
+                height: 200px
+    #maincontent .bottom-box
+        &__text
+            top: -25%
+            &::before
+                width: 51px
+                height: 56px
+@media screen and (max-width: 550.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 65rem
+        &__inner
+            padding-left: 15px
+            padding-right: 15px
+        &__title
+            margin-bottom: 14rem
+    #maincontent .col-maincontent
+        margin-bottom: 13rem
+        &__image
+            &::before
+                width: 150px
+                height: 150px
+            &::after
+                width: 150px
+                height: 150px
+    #maincontent .bottom-box
+        &__text
+            top: -30%
+            left: 20%
+@media screen and (max-width: 479.98px)
+    #maincontent .maincontent
+        &__bg
+            background-position: 70% center
+    #maincontent .top-box
+        &__header
+            margin: 0 10px 117px
+            p
+                text-align: center
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 58rem
+        &__image
+            background-color: #000
+        &__title
+            margin-bottom: 12rem
+    #maincontent .vestfrostbOv67be-grates
+        &__text
+            p
+                padding-left: 50px
+                &::before
+                    width: 30px
+                    height: 30px
+    #maincontent .vestfrostbOv67be-bgbox
+        &__inner
+            padding: 15px 0
+    #maincontent .bottom-box
+        &__text
+            top: -35%
+@media screen and (max-width: 440.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__title
+            margin-bottom: 10rem
+    #maincontent .col-maincontent
+        &__image
+            &::before
+                width: 120px
+                height: 120px
+            &::after
+                width: 120px
+                height: 120px
+                top: 68%
+    #maincontent .bottom-box
+        &__text
+            top: -50%
+@media screen and (max-width: 400.98px)
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 55rem
+        &__title
+            margin-bottom: 6rem
+    #maincontent .col-maincontent
+        margin-bottom: 3rem
+    #maincontent .bottom-box
+        &__text
+            position: unset
+            p
+                text-align: center
+            &::before
+                display: none
+@media screen and (max-width: 360.98px)
+    #maincontent .maincontent
+        &__bg
+            background-position: 69% center
+    #maincontent .vestfrostbOv67be-modern
+        &__bg
+            margin-bottom: 51rem
+        &__title
+            margin-bottom: 5rem
