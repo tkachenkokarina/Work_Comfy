@@ -1,0 +1,481 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+    
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1920px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 58px, $lineHeight: 1.2)
+            margin: 50px 0px
+            color: #84bae0
+            text-transform: uppercase
+        h3
+            @include fonts($fontSize: 44px, $lineHeight: 1.2)
+            text-transform: uppercase
+            
+        p
+            @include fonts($fontSize: 33px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            color: #3b3b3b 
+    &__wrapper
+        max-width: 1726px
+        margin: 0 auto
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+        &--rev
+            flex-direction: row-reverse
+    &__box
+        margin-bottom: 110px
+    
+
+#maincontent .interluxilr
+    &__top-wrapper
+        padding: 110px 100px
+    
+#maincontent .item-top
+    &__image
+        display: none
+    &__text        
+        @include position($position: absolute, $zIndex: 6)
+        left: 0
+        right: 50%
+    
+#maincontent .interluxilr-row
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)      
+            
+    &__item
+        flex: 0 1 50%
+    &__img
+        flex: 0 1 50%
+        
+#maincontent .item-row
+    &__text
+        padding: 0 20px 0 100px
+        max-width: 625px
+    
+#maincontent .interluxilr-img
+    &__box
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+
+#maincontent .box-dimensions   
+    &__text     
+        right: 0
+        top: 44%
+        transform: translateY(-58%)
+        background-color: #f8bfca
+        padding: 0 105px 0 70px
+        h2
+            color: #fff
+
+#maincontent .box-doors
+    &__text
+        top: 3%
+        left: 50%
+        margin-right: -50%
+        transform: translateX(-50%)
+        h2
+            color: #fff
+
+#maincontent .box-optimization
+    &__text
+        h2
+            color: #c1d57d
+
+#maincontent .box-freezer
+    &__text
+        top: 40%
+        left: 0  
+        right: 54vw
+        transform: translateY(-10%)
+        background-color: #84bbe1
+        padding-left: 100px
+        h2
+            color: #fff
+            max-width: 585px
+
+#maincontent .box-shelves
+    &__text
+        top: 35%
+        left: 0  
+        right: 56vw
+        transform: translateY(-10%)
+        background-color: #f8bfca
+        padding-left: 100px
+        h2
+            color: #fff
+            max-width: 595px
+
+#maincontent .box-shelvesforbottles
+    &__text
+        top: 35%
+        right: 0  
+        left: 47vw
+        transform: translateY(-10%)
+        background-color: #f8bfca
+        padding-right: 100px
+        padding-left: 185px
+        h2
+            color: #fff
+            max-width: 710px
+            text-align: right
+
+#maincontent .box-vegetable
+    &__text
+        top: 25%
+        left: 0  
+        right: 56vw
+        transform: translateY(-10%)
+        background-color: #c1d57d
+        padding-left: 100px
+        h2
+            color: #fff
+            max-width: 640px
+
+#maincontent .box-freezing
+    &__text
+        h2
+            color: #84bbe1
+
+#maincontent .box-design
+    &__text
+        h2
+            color: #c1d57d
+        p
+            margin-bottom: 180px
+    &__text-title
+        color: #c1d57d
+        @include position($position: relative, $zIndex: 5) 
+        padding: 70px 0 66px 231px     
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 6)
+            width: 179px
+            height: 188px
+            top: 0
+            left: 0
+        &--noize
+            margin-bottom: 70px
+            &::before
+                @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2400714/icon11_1.png"))
+        &--led
+            &::before
+                @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2400714/icon11_2.png"))
+
+#maincontent .box-warranty
+    &__item
+        @include position($position: relative, $zIndex: 5)        
+    &__text
+        @include position($position: absolute, $zIndex: 7)
+        top: 50%
+        left: 0
+        transform: translateY(0)
+        padding-left: 7vw
+
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1800px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (58 - 22) * ((100vw - 320px)/(1800 - 320)))
+            h3
+                font-size: calc( 18px + (44 - 18) * ((100vw - 320px)/(1800 - 320)))             
+            p
+                font-size: calc( 16px + (33 - 16) * ((100vw - 320px)/(1800 - 320)))
+    #maincontent .interluxilr-img
+        &__text
+            width: auto
+            padding-left: calc( 5px + (70 - 5) * ((100vw - 320px)/(1800 - 320)))
+            padding-right: calc( 5px + (105 - 5) * ((100vw - 320px)/(1800 - 320)))
+    #maincontent .box-vegetable
+        &__text
+            padding-right: 20px
+    #maincontent .box-design
+        &__text
+            p
+                margin-bottom: 70px
+@media screen and (max-width: 1581px)
+    #maincontent .box-shelves
+        &__text
+            top: 50%
+            transform: translateY(-50%)
+    #maincontent .box-design
+        &__text-title
+            &--noize
+                margin-bottom: 20px
+@media screen and (max-width: 1500px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin: 35px 0
+        &__box
+            margin-bottom: 70px
+    #maincontent .interluxilr
+        &__top-wrapper
+            padding: 70px 0px 70px 50px
+    #maincontent .item-row
+        &__text
+            padding-left: 50px
+    #maincontent .box-design
+        &__text
+            p 
+                margin-bottom: 70px
+        &__text-title
+            padding: 58px 0 58px 185px
+            &::before
+                width: 155px
+                height: 164px
+    #maincontent .box-warranty
+        &__text
+            padding-left: 7vw
+
+@media screen and (max-width: 1275.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin: 20px 0
+    #maincontent .box-design
+        &__text-title
+            padding: 37px 0 37px 135px
+            &::before
+                width: 110px
+                height: 116px
+@media screen and (max-width: 1150.98px)
+    #maincontent .box-freezer
+        &__text 
+            right: 54vw
+@media screen and (max-width: 1100.98px)
+    #maincontent .maincontent
+        &__box
+            margin-bottom: 50px
+    #maincontent .interluxilr
+        &__top-wrapper
+            padding: 50px 0px 50px 20px
+    #maincontent .item-row
+        &__text
+            padding-left: 20px
+    #maincontent .box-warranty
+        &__text
+            padding-left: 6vw
+@media screen and (max-width: 1024.98px)
+    #maincontent .maincontent
+        &__box
+            margin-bottom: 20px
+    #maincontent .interluxilr
+        &__top-wrapper
+            padding: 10px 0px 20px 10px
+    #maincontent .box-freezer
+        &__text
+            top: 50%
+            // right: 54vw
+            transform: translateY(-50%) 
+    #maincontent .box-shelves, #maincontent .box-vegetable
+        &__text
+            right: 56vw  
+@media screen and (max-width: 991.98px)
+    #maincontent .interluxilr
+        &__top-wrapper
+            padding: 0 0 20px 0
+    #maincontent .item-top
+        &__image
+            display: block
+            margin: 0 auto
+        &__text
+            position: unset
+            padding: 0 5px
+            h2, p
+                text-align: center
+    #maincontent .box-design
+        &__text
+            p
+                margin-bottom: 35px
+        &__text-title
+            padding: 22px 0 22px 95px
+            &::before
+                width: 74px
+                height: 78px
+            &--noize
+                margin-bottom: 30px
+@media screen and (max-width: 900.98px)
+    #maincontent .box-shelves
+        &__text
+            right: 55vw
+    #maincontent .box-vegetable
+        &__text
+            top: 50%
+            transform: translateY(-50%)
+            right: 55vw
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin: 10px 0
+    #maincontent .interluxilr
+        &__top-wrapper
+            padding: 0
+    #maincontent .interluxilr-row
+        &__inner
+            flex-direction: column
+    #maincontent .item-row
+        &__text
+            padding: 0 5px
+            h2, p
+                text-align: center
+    #maincontent .box-optimization
+        &__text
+            h2
+                color: #84bae0
+    #maincontent .box-freezer
+        &__text
+            right: 52vw
+    #maincontent .box-freezer, #maincontent .box-shelves, #maincontent .box-shelvesforbottles, #maincontent .box-vegetable        
+        &__text
+            position: unset
+            transform: translateY(0)
+            background-color: transparent
+            padding: 0 5px
+            h2
+                color: #84bae0
+                text-align: center
+                margin: 10px auto
+    #maincontent .box-design
+        margin-bottom: 0
+        &__text
+            margin-bottom: 20px
+            h2
+                color: #84bae0
+                text-align: center
+            p
+                margin-bottom: 20px
+        &__text-title
+            &--noize
+                margin-bottom: 20px
+    #maincontent .box-warranty
+        &__text
+            max-width: 100%
+            top: 60%
+@media screen and (max-width: 479.98px)
+    #maincontent .maincontent
+        &__box
+            margin-bottom: 0
+    #maincontent .interluxilr-img
+        &__text
+            position: unset
+            h2
+                color: #84bae0
+                text-align: center    
+    #maincontent .box-dimensions   
+        &__text
+            background-color: transparent
+            transform: translateY(0)
+    #maincontent .box-doors
+        &__text
+            margin: 0 auto
+            transform: translateX(0)
+    #maincontent .box-design
+        &__text
+            margin-bottom: 10px
+            p
+                margin-bottom: 10px
+        &__text-title
+            padding: 20px 0 20px 82px
+            &::before
+                width: 62px
+                height: 65px
+    #maincontent .box-warranty
+        &__text
+            top: 55%
+

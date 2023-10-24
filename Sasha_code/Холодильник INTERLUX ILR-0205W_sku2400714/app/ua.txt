@@ -1,0 +1,110 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1920px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:58px;line-height:1.2;margin:50px 0px;color:#84bae0;text-transform:uppercase}#maincontent .maincontent__container h3{font-size:44px;line-height:1.2;text-transform:uppercase}#maincontent .maincontent__container p{font-size:33px;line-height:1.2;margin-bottom:10px;color:#3b3b3b}#maincontent .maincontent__wrapper{max-width:1726px;margin:0 auto}#maincontent .maincontent__inner{position:relative;z-index:5}#maincontent .maincontent__inner--rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .maincontent__box{margin-bottom:110px}#maincontent .interluxilr__top-wrapper{padding:110px 100px}#maincontent .item-top__image{display:none}#maincontent .item-top__text{position:absolute;z-index:6;left:0;right:50%}#maincontent .interluxilr-row__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .interluxilr-row__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .interluxilr-row__img{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .item-row__text{padding:0 20px 0 100px;max-width:625px}#maincontent .interluxilr-img__box{position:relative;z-index:5}#maincontent .interluxilr-img__text{position:absolute;z-index:6}#maincontent .box-dimensions__text{right:0;top:44%;-webkit-transform:translateY(-58%);-ms-transform:translateY(-58%);-o-transform:translateY(-58%);transform:translateY(-58%);background-color:#f8bfca;padding:0 105px 0 70px}#maincontent .box-dimensions__text h2{color:#fff}#maincontent .box-doors__text{top:3%;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}#maincontent .box-doors__text h2{color:#fff}#maincontent .box-optimization__text h2{color:#c1d57d}#maincontent .box-freezer__text{top:40%;left:0;right:54vw;-webkit-transform:translateY(-10%);-ms-transform:translateY(-10%);-o-transform:translateY(-10%);transform:translateY(-10%);background-color:#84bbe1;padding-left:100px}#maincontent .box-freezer__text h2{color:#fff;max-width:585px}#maincontent .box-shelves__text{top:35%;left:0;right:56vw;-webkit-transform:translateY(-10%);-ms-transform:translateY(-10%);-o-transform:translateY(-10%);transform:translateY(-10%);background-color:#f8bfca;padding-left:100px}#maincontent .box-shelves__text h2{color:#fff;max-width:595px}#maincontent .box-shelvesforbottles__text{top:35%;right:0;left:47vw;-webkit-transform:translateY(-10%);-ms-transform:translateY(-10%);-o-transform:translateY(-10%);transform:translateY(-10%);background-color:#f8bfca;padding-right:100px;padding-left:185px}#maincontent .box-shelvesforbottles__text h2{color:#fff;max-width:710px;text-align:right}#maincontent .box-vegetable__text{top:25%;left:0;right:56vw;-webkit-transform:translateY(-10%);-ms-transform:translateY(-10%);-o-transform:translateY(-10%);transform:translateY(-10%);background-color:#c1d57d;padding-left:100px}#maincontent .box-vegetable__text h2{color:#fff;max-width:640px}#maincontent .box-freezing__text h2{color:#84bbe1}#maincontent .box-design__text h2{color:#c1d57d}#maincontent .box-design__text p{margin-bottom:180px}#maincontent .box-design__text-title{color:#c1d57d;position:relative;z-index:5;padding:70px 0 66px 231px}#maincontent .box-design__text-title::before{content:"";position:absolute;z-index:6;width:179px;height:188px;top:0;left:0}#maincontent .box-design__text-title--noize{margin-bottom:70px}#maincontent .box-design__text-title--noize::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2400714/icon11_1.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .box-design__text-title--led::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2400714/icon11_2.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .box-warranty__item{position:relative;z-index:5}#maincontent .box-warranty__text{position:absolute;z-index:7;top:50%;left:0;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding-left:7vw}@media screen and (max-width: 1800px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 36*(100vw - 320px)/1480);font-size:calc(22px + 36*(100vw - 320px)/1480)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 26*(100vw - 320px)/1480);font-size:calc(18px + 26*(100vw - 320px)/1480)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 17*(100vw - 320px)/1480);font-size:calc(16px + 17*(100vw - 320px)/1480)}#maincontent .interluxilr-img__text{width:auto;padding-left:-webkit-calc(5px + 65*(100vw - 320px)/1480);padding-left:calc(5px + 65*(100vw - 320px)/1480);padding-right:-webkit-calc(5px + 100*(100vw - 320px)/1480);padding-right:calc(5px + 100*(100vw - 320px)/1480)}#maincontent .box-vegetable__text{padding-right:20px}#maincontent .box-design__text p{margin-bottom:70px}}@media screen and (max-width: 1581px){#maincontent .box-shelves__text{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .box-design__text-title--noize{margin-bottom:20px}}@media screen and (max-width: 1500px){#maincontent .maincontent__container h2{margin:35px 0}#maincontent .maincontent__box{margin-bottom:70px}#maincontent .interluxilr__top-wrapper{padding:70px 0px 70px 50px}#maincontent .item-row__text{padding-left:50px}#maincontent .box-design__text p{margin-bottom:70px}#maincontent .box-design__text-title{padding:58px 0 58px 185px}#maincontent .box-design__text-title::before{width:155px;height:164px}#maincontent .box-warranty__text{padding-left:7vw}}@media screen and (max-width: 1275.98px){#maincontent .maincontent__container h2{margin:20px 0}#maincontent .box-design__text-title{padding:37px 0 37px 135px}#maincontent .box-design__text-title::before{width:110px;height:116px}}@media screen and (max-width: 1150.98px){#maincontent .box-freezer__text{right:54vw}}@media screen and (max-width: 1100.98px){#maincontent .maincontent__box{margin-bottom:50px}#maincontent .interluxilr__top-wrapper{padding:50px 0px 50px 20px}#maincontent .item-row__text{padding-left:20px}#maincontent .box-warranty__text{padding-left:6vw}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__box{margin-bottom:20px}#maincontent .interluxilr__top-wrapper{padding:10px 0px 20px 10px}#maincontent .box-freezer__text{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .box-shelves__text,#maincontent .box-vegetable__text{right:56vw}}@media screen and (max-width: 991.98px){#maincontent .interluxilr__top-wrapper{padding:0 0 20px 0}#maincontent .item-top__image{display:block;margin:0 auto}#maincontent .item-top__text{position:unset;padding:0 5px}#maincontent .item-top__text h2,#maincontent .item-top__text p{text-align:center}#maincontent .box-design__text p{margin-bottom:35px}#maincontent .box-design__text-title{padding:22px 0 22px 95px}#maincontent .box-design__text-title::before{width:74px;height:78px}#maincontent .box-design__text-title--noize{margin-bottom:30px}}@media screen and (max-width: 900.98px){#maincontent .box-shelves__text{right:55vw}#maincontent .box-vegetable__text{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:55vw}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .interluxilr__top-wrapper{padding:0}#maincontent .interluxilr-row__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .item-row__text{padding:0 5px}#maincontent .item-row__text h2,#maincontent .item-row__text p{text-align:center}#maincontent .box-optimization__text h2{color:#84bae0}#maincontent .box-freezer__text{right:52vw}#maincontent .box-freezer__text,#maincontent .box-shelves__text,#maincontent .box-shelvesforbottles__text,#maincontent .box-vegetable__text{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);background-color:rgba(0,0,0,0);padding:0 5px}#maincontent .box-freezer__text h2,#maincontent .box-shelves__text h2,#maincontent .box-shelvesforbottles__text h2,#maincontent .box-vegetable__text h2{color:#84bae0;text-align:center;margin:10px auto}#maincontent .box-design{margin-bottom:0}#maincontent .box-design__text{margin-bottom:20px}#maincontent .box-design__text h2{color:#84bae0;text-align:center}#maincontent .box-design__text p{margin-bottom:20px}#maincontent .box-design__text-title--noize{margin-bottom:20px}#maincontent .box-warranty__text{max-width:100%;top:60%}}@media screen and (max-width: 479.98px){#maincontent .maincontent__box{margin-bottom:0}#maincontent .interluxilr-img__text{position:unset}#maincontent .interluxilr-img__text h2{color:#84bae0;text-align:center}#maincontent .box-dimensions__text{background-color:rgba(0,0,0,0);-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .box-doors__text{margin:0 auto;-webkit-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}#maincontent .box-design__text{margin-bottom:10px}#maincontent .box-design__text p{margin-bottom:10px}#maincontent .box-design__text-title{padding:20px 0 20px 82px}#maincontent .box-design__text-title::before{width:62px;height:65px}#maincontent .box-warranty__text{top:55%}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__wrapper interluxilr__top-wrapper">
+<div class="maincontent__inner interluxilr__top-inner">
+<div class="interluxilr__top-item item-top">
+<div class="item-top__image"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img01_2.png" /></div>
+<div class="item-top__text">
+<h2>Просторе зберігання</h2>
+<p>Наш холодильник з верхньою морозильною камерою забезпечує загальний об'єм 213 літрів, що                                 робить його ідеальним вибором для сімей різних розмірів.</p>
+<p>Ви можете зручно розмістити всі продукти                                 та інгредієнти.</p>
+</div>
+</div>
+<picture class="item-top__bg"> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img01_11.png" media="(max-width: 980px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img01.png" media="(min-width: 981px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2400714/img01.png" /> </picture></div>
+</div>
+<div class="maincontent__box interluxilr-row__box">
+<div class="maincontent__inner interluxilr-row__inner">
+<div class="interluxilr-row__item item-row">
+<div class="item-row__text">
+<h2>Економія Енергії</h2>
+<p>Клас енергоспоживання А+                                 гарантує високу ефективність                                 та низькі електровитрати.</p>
+<p>Це не тільки допомагає скоротити рахунки за електроенергію, але                                 також дає внесок у збереження навколишнього середовища.</p>
+</div>
+</div>
+<div class="interluxilr-row__img item-row__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img02.png" /></div>
+</div>
+</div>
+<div class="maincontent__box interluxilr-img__box box-dimensions">
+<div class="interluxilr-img__text box-dimensions__text">
+<h2>Габарити</h2>
+</div>
+<div class="interluxilr-img__bg"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img03.png" /></div>
+</div>
+<div class="maincontent__box interluxilr-img__box box-doors">
+<div class="interluxilr-img__text box-doors__text">
+<h2>Перевішування дверей</h2>
+</div>
+<div class="interluxilr-img__bg"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img04.png" /></div>
+</div>
+<div class="maincontent__box interluxilr-row__box box-optimization">
+<div class="maincontent__inner interluxilr-row__inner">
+<div class="interluxilr-row__item item-row">
+<div class="item-row__text box-optimization__text">
+<h2>Оптимальна Організація</h2>
+<p>Холодильник INTERLUX дозволяє зручно організувати зберігання продуктів, зберігаючи їх                                 свіжість                                 та якість.</p>
+</div>
+</div>
+<div class="interluxilr-row__img item-row__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img05.png" /></div>
+</div>
+</div>
+<div class="maincontent__box interluxilr-img__box box-freezer">
+<div class="interluxilr-img__text box-freezer__text">
+<h2>Морозильна                         камера з двома                         відсіками</h2>
+</div>
+<picture class="interluxilr-img__bg"> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img06_1.png" media="(max-width: 767.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img06.png" media="(min-width: 768px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2400714/img06.png" /> </picture></div>
+<div class="maincontent__box interluxilr-img__box box-shelves">
+<div class="interluxilr-img__text box-shelves__text">
+<h2>три Регульовані                         полиці із                         загартованого                         скла</h2>
+</div>
+<picture class="interluxilr-img__bg"> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img07_1.png" media="(max-width: 767.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img07.png" media="(min-width: 768px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2400714/img07.png" /> </picture></div>
+<div class="maincontent__box interluxilr-img__box box-shelvesforbottles">
+<div class="interluxilr-img__text box-shelvesforbottles__text">
+<h2>полички для                         зберігання склянок</h2>
+</div>
+<picture class="interluxilr-img__bg"> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img08_1.png" media="(max-width: 767.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img08.png" media="(min-width: 768px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2400714/img08.png" /> </picture></div>
+<div class="maincontent__box interluxilr-img__box box-vegetable">
+<div class="interluxilr-img__text box-vegetable__text">
+<h2>Зручний ящик                         для збереження                         фруктів та овочів</h2>
+</div>
+<picture class="interluxilr-img__bg"> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img09_1.png" media="(max-width: 767.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2400714/img09.png" media="(min-width: 768px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2400714/img09.png" /> </picture></div>
+<div class="maincontent__box interluxilr-row__box box-freezing">
+<div class="maincontent__inner interluxilr-row__inner">
+<div class="interluxilr-row__item item-row">
+<div class="item-row__text box-freezing__text">
+<h2>Ефективне                                 заморожування</h2>
+<p>Потужність заморожування 2,2 кг/добу забезпечує швидке заморожування продуктів,                                 зберігаючи їх смак та поживні властивості.</p>
+</div>
+</div>
+<div class="interluxilr-row__img item-row__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img10.png" /></div>
+</div>
+</div>
+<div class="maincontent__box interluxilr-row__box box-design">
+<div class="maincontent__inner interluxilr-row__inner">
+<div class="interluxilr-row__item item-row">
+<div class="item-row__text box-design__text">
+<h2>Стильний Дизайн</h2>
+<p>Білий колір та ергономічний дизайн роблять холодильник INTERLUX привабливим акцентом                                 вашого дому.</p>
+<h3 class="box-design__text-title box-design__text-title--noize">Низький шум</h3>
+<h3 class="box-design__text-title box-design__text-title--led">освітлення</h3>
+</div>
+</div>
+<div class="interluxilr-row__img item-row__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img11.png" /></div>
+</div>
+</div>
+<div class="maincontent__box interluxilr-row__box box-warranty">
+<div class="maincontent__inner maincontent__inner--rev interluxilr-row__inner">
+<div class="interluxilr-row__item item-row box-warranty__item">
+<div class="item-row__text box-warranty__text">
+<h2>Гарантія</h2>
+<p>Ми надаємо гарантію на 36 місяців, що підтверджує нашу довіру до якості продукції.</p>
+</div>
+<div class="item-row__img box-warranty__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img12_2.png" /></div>
+</div>
+<div class="interluxilr-row__img item-row__img"><img src="https://cdn.comfy.ua/media/x/img3/2400714/img12_1.png" /></div>
+</div>
+</div>
+</div>
+</div>
