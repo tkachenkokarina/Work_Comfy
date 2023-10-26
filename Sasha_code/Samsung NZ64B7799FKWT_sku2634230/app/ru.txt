@@ -1,0 +1,215 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:24px;line-height:1.33;margin:20px 0px;text-align:center}#maincontent .maincontent__container h4{font-size:20px;line-height:1.33;margin:15px 0px;text-align:center}#maincontent .maincontent__container p{font-size:14px;line-height:1.33;margin-bottom:10px;text-align:center}#maincontent .maincontent__inner{padding:60px 88px}#maincontent .col-maincontent__inner{display:grid;grid-template-columns:repeat(3, 1fr);gap:30px}#maincontent .col-maincontent__inner--double{grid-template-columns:repeat(2, 1fr)}#maincontent .col-maincontent__img img{-webkit-border-radius:1.39vw;border-radius:1.39vw}#maincontent .col-maincontent__content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0 10px}#maincontent .smsgnz64b7799fk-slider__swiper{width:100%;margin:0;overflow:visible}#maincontent .smsgnz64b7799fk-slider__card{padding-bottom:55px}#maincontent .swiper-button-prev{left:8px}#maincontent .swiper-button-next{right:13px}#maincontent .swiper-button-prev,#maincontent .swiper-button-next{top:63%;-webkit-transform:translateY(-63%);-ms-transform:translateY(-63%);-o-transform:translateY(-63%);transform:translateY(-63%);border:1px solid rgba(0,0,0,.1);background-color:rgba(0,0,0,.45);-webkit-border-radius:50%;border-radius:50%;width:40px;height:40px}#maincontent .swiper-button-prev:hover,#maincontent .swiper-button-next:hover{background:#1c1c1c}#maincontent .swiper-button-prev:active,#maincontent .swiper-button-next:active{border:2px dashed #fff;background-color:#1c1c1c}#maincontent .swiper-button-next:after{content:"";background-image:url("https://cdn.comfy.ua/media/x/img3/2634230/next_w.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:34px;height:36px}#maincontent .swiper-button-prev:after{content:"";background-image:url("https://cdn.comfy.ua/media/x/img3/2634230/prev_w.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:34px;height:36px}#maincontent .swiper-pagination{color:#757575;border:1px solid rgba(0,0,0,.45);max-width:85px;padding:4px 8px;-webkit-border-radius:15px;border-radius:15px;right:0;left:0;margin:0 auto}#maincontent .swiper-pagination-bullet-active{background-color:#1c1c1c}#maincontent .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{display:none}#maincontent .smsgnz64b7799fk-slimfit__box{margin-bottom:60px}#maincontent .bottom-box__text p{font-size:18px}@media screen and (max-width: 1300px){#maincontent .maincontent__container h2{font-size:-webkit-calc(24px + 24*(100vw - 320px)/980);font-size:calc(24px + 24*(100vw - 320px)/980)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 6*(100vw - 320px)/980);font-size:calc(18px + 6*(100vw - 320px)/980)}#maincontent .maincontent__container h4{font-size:-webkit-calc(16px + 4*(100vw - 320px)/980);font-size:calc(16px + 4*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(12px + 2*(100vw - 320px)/980);font-size:calc(12px + 2*(100vw - 320px)/980)}#maincontent .maincontent__inner{padding:3.5vw 4.5vw}#maincontent .smsgnz64b7799fk-slimfit__box{margin-bottom:3.5vw}#maincontent .bottom-box__text p{font-size:-webkit-calc(14px + 4*(100vw - 320px)/980);font-size:calc(14px + 4*(100vw - 320px)/980)}}@media screen and (max-width: 1290.98px){#maincontent .col-maincontent__header{min-height:102px}}@media screen and (max-width: 991.98px){#maincontent .col-maincontent__inner{grid-template-columns:repeat(2, 1fr);gap:20px}#maincontent .col-maincontent__header{min-height:auto}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container h3,#maincontent .maincontent__container h4{margin:10px 0}#maincontent .maincontent__inner{padding:0 5px}#maincontent .col-maincontent__inner{grid-template-columns:1fr;gap:0}#maincontent .col-maincontent__title h2{margin-bottom:0}#maincontent .col-maincontent__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .swiper-button-prev,#maincontent .swiper-button-next{width:30px;height:30px}#maincontent .swiper-button-prev{left:2px}#maincontent .swiper-button-next{right:4px}#maincontent .swiper-button-next:after,#maincontent .swiper-button-prev:after{width:15px;height:26px}#maincontent .smsgnz64b7799fk-slimfit__box{margin-bottom:0}#maincontent .bottom-box__text p{margin-top:10px}}@media screen and (max-width: 479.98px){#maincontent .swiper-button-prev,#maincontent .swiper-button-next{display:none}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box">
+<div class="maincontent__inner">
+<div class="maincontent__title">
+<h2>Универсальность, которая поражает</h2>
+</div>
+</div>
+<div class="maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img01.png" /></div>
+</div>
+<div class="maincontent-col col-maincontent">
+<div class="maincontent__inner">
+<div class="maincontent__title col-maincontent__title">
+<h2>Преимущества</h2>
+</div>
+</div>
+<div class="col-maincontent__inner">
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img02_1.jpg" /></div>
+<div class="col-maincontent__content">
+<div class="col-maincontent__header">
+<h3>Расширенная зона приготовления</h3>
+</div>
+<div class="col-maincontent__text">
+<p>Теперь можно готовить гораздо больше блюд одновременно.</p>
+</div>
+</div>
+</div>
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img02_2.jpg" /></div>
+<div class="col-maincontent__content">
+<div class="col-maincontent__header">
+<h3>Оптимизация</h3>
+</div>
+<div class="col-maincontent__text">
+<p>С Assist Sensor приготовление будет гораздо легче!</p>
+</div>
+</div>
+</div>
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img02_3.jpg" /></div>
+<div class="col-maincontent__content">
+<div class="col-maincontent__header">
+<h3>Беспроводное управление</h3>
+</div>
+<div class="col-maincontent__text">
+<p>Подключение к Wi-Fi гарантирует удобное управление плитой даже с дивана.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__inner">
+<div class="maincontent__text">
+<h2>Увеличенное рабочее пространство</h2>
+<h3>Расширенная зона Flex Zone Plus</h3>
+<p>Индукционная варочная плита от Samsung имеет мощные нагревательные элементы по всей                             поверхности,                             а это значит только одно — вы можете готовить больше блюд одновременно, что сэкономит ваше                             время. Теперь вы можете использовать большую и вытянутую посуду, а варочная поверхность                             будет                             самостоятельно определять количество посуды, ее размер и форму. Никаких "мертвых зон" — все                             блюда готовятся равномерно!</p>
+</div>
+</div>
+<div class="maincontent__video"><video width="100%" controls autoplay muted> <source src="https://cdn.comfy.ua/media/video/samsung-induction/video01.mp4" type="video/mp4"></source> </video></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__inner">
+<div class="maincontent__text">
+<h2>Особая точность</h2>
+<h3>С помощником Smart Things</h3>
+<p>Хотите приготовить идеальные стейки? Загружайте приложение SmartThings Cooking, найдите                             нужное блюдо и выбирайте уже запрограммированные полуавтоматические приложения и опции,                             определяющие оптимальную температуру приготовления. Управляйте варочной поверхностью с                             помощью смартфона и наслаждайтесь идеально приготовленными блюдами!</p>
+</div>
+</div>
+<video width="100%" controls autoplay muted> <source src="https://cdn.comfy.ua/media/video/samsung-induction/video02.mp4" type="video/mp4"></source> </video></div>
+<div class="maincontent__box">
+<div class="maincontent__inner">
+<div class="maincontent__text">
+<h2>Автоматическая настройка температуры</h2>
+<h3>Assist Sensor</h3>
+<p>Умный ассистент постоянно измеряет температуру пищи и передает информацию прямо в                             индукционную систему. Таким образом, правильная температура поддерживается автоматически и в                             случае отклонения — аккуратно регулируется.</p>
+</div>
+</div>
+<video width="100%" controls autoplay muted> <source src="https://cdn.comfy.ua/media/video/samsung-induction/video03.mp4" type="video/mp4"></source> </video></div>
+<div class="maincontent__box">
+<div class="maincontent__inner">
+<div class="maincontent__text">
+<h2>Управляйте удаленно</h2>
+<h3>Подключение Wi-Fi</h3>
+<p>Где бы вы ни были, вы можете легко управлять индукционной варочной поверхностью Samsung. Все,                             что вам нужно — это приложение SmartThings и Wi-Fi. В приложении вы будете получать                             уведомления о работе плиты, а также сможете проверить включены ли конфорки в ваше отсутствие                             и установить таймер.</p>
+</div>
+</div>
+<div class="maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img06.jpg" /></div>
+</div>
+<div class="maincontent__slider smsgnz64b7799fk-slider">
+<div class="smsgnz64b7799fk-slider__swiper swiper">
+<div class="smsgnz64b7799fk-slider__wrapper swiper-wrapper">
+<div class="smsgnz64b7799fk-slider__slide swiper-slide">
+<div class="smsgnz64b7799fk-slider__card">
+<div class="smsgnz64b7799fk-slider__item">
+<div class="maincontent__inner">
+<h2>Готовьте с минимальными усилиями</h2>
+<h3>Со SmartThings Cooking</h3>
+<p>Свести к минимуму усилия при приготовлении пищи поможет SmartThings Cooking.                                             Там                                             вы найдете индивидуальные рецепты на основе ваших потребностей, планы                                             питания,                                             возможность проверить настройку варочной поверхности и правильность                                             приготовления блюд.</p>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img07_1_ru.jpg" /></div>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__slide swiper-slide">
+<div class="smsgnz64b7799fk-slider__card">
+<div class="smsgnz64b7799fk-slider__item">
+<div class="maincontent__inner">
+<h2>Индивидуальные рецепты</h2>
+<p>Приложение учитывает все ваши потребности и предпочтения, на их основе                                             предлагает                                             популярные и индивидуальные рецепты, тематические подборки и недельные планы                                             питания.</p>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img07_2_ru.jpg" /></div>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__slide swiper-slide">
+<div class="smsgnz64b7799fk-slider__card">
+<div class="smsgnz64b7799fk-slider__item">
+<div class="maincontent__inner">
+<h2>Надежный помощник</h2>
+<p>Помощник в приготовлении поможет вам управлять процессом приготовления и                                             удаленно                                             контролировать настройки плиты. А встроенный датчик ежесекундно будет                                             следить за                                             процессом, чтобы в результате вы получили идеально приготовленное блюдо.</p>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img07_3_ru.jpg" /></div>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__slide swiper-slide">
+<div class="smsgnz64b7799fk-slider__card">
+<div class="smsgnz64b7799fk-slider__item">
+<div class="maincontent__inner">
+<h2>Покупки продуктов</h2>
+<p>С помощью приложения и смартфона вы можете легко и быстро создать список                                             покупок.                                             Выбирайте рецепт, который хотите приготовить, и одним щелчком добавляйте                                             ингредиенты в список покупок.</p>
+</div>
+</div>
+<div class="smsgnz64b7799fk-slider__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img07_4_ru.jpg" /></div>
+</div>
+</div>
+</div>
+<div class="swiper-button-next smsgnz64b7799fk-slider__next"></div>
+<div class="swiper-button-prev smsgnz64b7799fk-slider__prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<div class="maincontent__box smsgnz64b7799fk-slimfit__box">
+<div class="maincontent__inner">
+<div class="maincontent__text">
+<h2>Больше свободного пространства</h2>
+<h3>Дизайн Slim Fit</h3>
+<p>Индукционная варочная поверхность Samsung имеет отличный дизайн, который впишется в любой                             интерьер и сохранит вам место для важных вещей. Благодаря узкой конструкции она занимает                             минимум места, оставляя площадь для установки ящика для хранения.</p>
+</div>
+</div>
+<div class="maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img08_ru.png" /></div>
+</div>
+<div class="maincontent-col col-maincontent">
+<div class="col-maincontent__inner col-maincontent__inner--double">
+<div class="col-maincontent__item col-maincontent__item--double">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img09_1.jpg" /></div>
+<div class="col-maincontent__content">
+<div class="col-maincontent__header">
+<h3>Точный контроль</h3>
+<h4>Магнитный регулятор</h4>
+</div>
+<div class="col-maincontent__text">
+<p>Регулируйте мощность конфорки с помощью подвижного магнитного регулятора. Просто                                     установите его рядом с нужным элементом управления. И не беспокойтесь за грязные                                     руки.</p>
+</div>
+</div>
+</div>
+<div class="col-maincontent__item col-maincontent__item--double">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2634230/img09_2.jpg" /></div>
+<div class="col-maincontent__content">
+<div class="col-maincontent__header">
+<h3>Больше функционала</h3>
+<h4>ЖК-дисплей</h4>
+</div>
+<div class="col-maincontent__text">
+<p>ЖК-дисплей имеет размер 2,25 дюйма и отличается максимальным удобством и легкостью в                                     использовании. Он отображает информацию из меню, рекомендации и диалоговые                                     сообщения.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="maincontent__inner">
+<div class="maincontent__text bottom-box__text">
+<p><b>Купить индукционную варочную поверхность Samsung NZ64B7799FK/WT можно на сайте или в                                 фирменных магазинах Comfy!</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+        document.addEventListener("DOMContentLoaded", function () {
+const swiper = new Swiper('.swiper', {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },    
+    
+});
+        });
+// ]]></script>
