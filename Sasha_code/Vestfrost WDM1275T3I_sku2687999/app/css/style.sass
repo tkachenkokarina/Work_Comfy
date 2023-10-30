@@ -1,0 +1,489 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    // margin: 0
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+    
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 50px, $lineHeight: 1.3)
+            text-transform: uppercase
+            text-align: center
+            color: #002C5C
+        h3
+            @include fonts($fontSize: 32px, $lineHeight: 1.3)
+            text-transform: uppercase
+            color: #002C5C
+        p
+            @include fonts($fontSize: 24px, $lineHeight: 1.5)
+            margin-bottom: 10px
+
+#maincontent .top-box
+    &__bg
+        @include position($position: relative, $zIndex: 5)   
+        margin-bottom: 277px 
+    &__image-warranty
+        display: none
+    &__header
+        @include position($position: absolute, $zIndex: 6)
+        top: 46px
+        left: 50%
+        margin-right: -50%
+        transform: translateX(-50%)
+    &__logo
+        margin-bottom: 15px
+    &__slogan
+        p
+            color: #fff
+            text-align: center
+    &__inner
+        @include position($position: absolute, $zIndex: 8)
+        top: 225px
+        left: 90px
+        right: 92px
+        @include flex-box($justifyContent: space-between, $alignItems: flex-end)
+    &__img
+        flex: 0 1 50%
+    &__content
+        flex: 0 1 50%
+    &__warranty-img
+        margin-bottom: 28px
+        img
+            margin-left: auto
+            margin-right: 0
+    &__text
+        p
+            @include fonts($fontSize: 36px, $lineHeight: 1.3)
+            color: #002C5C
+        
+#maincontent .box-bg
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+    &__img
+        @include position($position: relative, $zIndex: 5)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 6)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2687999/icon02.png"))
+            width: 210px
+            height: 206px
+            top: 41%
+            left: 65%
+    &__title
+        @include position($position: absolute, $zIndex: 6)
+        top: 15%
+        left: 50%
+        margin-right: -50%
+        transform: translateX(-50%)    
+        margin-bottom: 74px
+        p
+            text-align: center
+    &__content
+        @include position($position: absolute, $zIndex: 7)        
+        width: 41vw
+        top: 58%
+        left: 6.25vw
+        transform: translateY(-58%)
+        h3
+            margin-bottom: 15px
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        padding: 135px 5.56vw 161px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        h3
+            margin-bottom: 15px
+    &__image
+        flex: 0 1 50%
+
+#maincontent .vestfrost-comfort
+    &__img
+        &::before
+            background-image: url("https://cdn.comfy.ua/media/x/img3/2687999/img04_bg.png")
+            width: 52.79vw
+            height: 37vw
+            top: 50%
+            left: 46%
+            right: 10px
+            transform: translateY(-50%)
+    &__content
+        left: 50.31vw
+        h3
+            margin-bottom: 15px
+
+#maincontent .vestfrost-engine    
+    &__img
+        &::before
+            @include position($position: absolute, $zIndex: 6)
+            top: 0
+            left: 0
+            width: 100%   
+            height: 100%         
+            background: linear-gradient(87deg, #FFF 48%, rgba(255, 255, 255, 0.00) 97.51%)
+    &__content
+        top: 50%
+        transform: translateY(-50%)
+        width: 47vw    
+    
+#maincontent .vestfrost-econsumption
+    &__inner
+        padding: 35px 5.56vw
+
+#maincontent .vestfrost-functions
+    &__inner
+        padding: 10px 5.56vw 75px
+    &__item
+        margin-right: 50px
+    &__text
+        max-width: 500px
+    &__image
+        @include position($position: relative, $zIndex: 5)
+        &::before
+            content: ""
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2687999/img07_2.png"))
+            @include position($position: absolute, $zIndex: 6)
+            width: 267px
+            height: 267px
+            top: 0
+            left: -75px          
+            
+        
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1350px)
+    #maincontent .vestfrost-functions
+        &__item
+            margin-right: 100px
+        &__image
+            &::before
+                top: -50px
+@media screen and (max-width: 1300px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 24px + (50 - 24) * ((100vw - 320px)/(1300 - 320)))
+            h3
+                font-size: calc( 20px + (32 - 20) * ((100vw - 320px)/(1300 - 320)))
+            p
+                font-size: calc( 16px + (24 - 16) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .top-box
+        &__inner
+            left: 6.25vw
+            right: 6.39vw
+        &__text
+            p
+                font-size: calc( 22px + (36 - 22) * ((100vw - 320px)/(1300 - 320)))
+@media screen and (max-width: 1200px)
+    #maincontent .top-box
+        &__warranty-img
+            img
+                width: 35%
+    #maincontent .row-maincontent
+        &__inner
+            padding: 75px 5.56vw
+    #maincontent .vestfrost-comfort
+        &__img
+            &::before
+                left: 45.69%
+    #maincontent .vestfrost-engine
+        &__content
+            width: 50vw
+    #maincontent .vestfrost-econsumption
+        &__inner
+            padding: 35px 5.56vw
+    #maincontent .vestfrost-functions
+        &__image
+            &::before
+                top: 0
+                width: 200px
+                height: 200px
+        
+@media screen and (max-width: 1100.98px)
+    #maincontent .box-bg
+        &__title
+            top: 6%
+            h2
+                padding: 0 10px
+        &__content
+            top: 68%
+            transform: translateY(-54%)
+    #maincontent .vestfrost-comfort
+        &__content
+            top: 50%
+            transform: translateY(-50%)
+    #maincontent .vestfrost-engine
+        &__content
+            top: 50%
+            transform: translateY(-50%)
+            width: 60vw
+@media screen and (max-width: 1024.98px)
+    #maincontent .row-maincontent
+        &__inner
+            padding: 45px 5.56vw
+    #maincontent .vestfrost-comfort
+        &__img
+            &::before
+                width: 53vw
+    #maincontent .vestfrost-econsumption
+        &__inner
+            padding: 35px 5.56vw
+    #maincontent .vestfrost-functions
+        &__image
+            &::before
+                top: -75px
+@media screen and (max-width: 991.98px)
+    #maincontent .box-bg
+        &__img
+            &::before
+                width: 130px
+                height: 127px
+        &__content
+            width: 46vw
+            left: 3.25vw
+    #maincontent .row-maincontent
+        &__inner
+            padding: 25px 1.19vw
+    #maincontent .vestfrost-comfort
+        &__box
+            margin-bottom: 20px
+        &__img
+            &::before
+                width: 52.10vw
+                height: 37vw
+                left: 45.85%
+        &__content
+            left: 51%
+            top: 55%
+    #maincontent .vestfrost-engine
+        &__img
+            &::before
+                width: 100%
+                height: 100%
+                left: 0
+        &__content
+            top: 52%
+            width: 75vw
+
+@media screen and (max-width: 799.98px)
+    #maincontent .box-bg
+        &__inner
+            display: flex
+            flex-direction: column
+        &__img   
+            &::before
+                top: 57%
+                left: 39%
+                transform: translateY(-50%)
+        &__title, &__content
+            position: unset
+            transform: translate(0, 0)
+            h2, h3, p
+                text-align: center
+        &__title
+            margin-right: 0
+            margin-bottom: 0
+            order: -1
+            h2
+                margin: 10px 0
+        &__content
+            order: -1
+            width: auto
+            padding: 0 5px
+            h3
+                margin: 10px 0
+    #maincontent .vestfrost-comfort         
+        &__box
+            margin-bottom: 0   
+        &__img
+            &::before
+                display: none
+        &__content
+            h3
+                text-align: center
+    #maincontent .vestfrost-engine
+        &__img
+            &::before
+                display: none
+
+@media screen and (max-width: 767.98px)
+    #maincontent .top-box
+        &__logo
+            img
+                width: 50%
+        &__warranty-img
+            img
+                width: 30%
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+            padding: 0 
+        &__text
+            padding: 0 5px
+            h3
+                margin: 10px 0
+            h3, p
+                text-align: center
+    #maincontent .vestfrost-comfort
+        &__content
+            h3
+                margin: 10px 0
+    #maincontent .vestfrost-functions
+        &__item
+            margin: 0 auto 50px
+        &__text
+            max-width: 100%
+        &__image
+            padding-left: 30px
+            &::before
+                top: 0
+                left: 0
+                width: 35vw
+                height: 35vw
+@media screen and (max-width: 600.98px)
+    #maincontent .top-box
+        &__bg
+            margin-bottom: 0
+        &__image
+            @include position($position: relative, $zIndex: 5)  
+            margin-bottom: 20px          
+        &__image-banner
+            @include position($position: relative, $zIndex: 3)
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 4)
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(0, 0, 0, 0.262745098)
+        &__image-warranty 
+            display: block
+            @include position($position: absolute, $zIndex: 9)
+            bottom: 0
+            right: 0
+            img
+                width: 30%
+                margin-left: auto
+                margin-right: 0
+        &__header
+            top: 20px
+        &__inner
+            position: unset
+            flex-direction: column-reverse
+        &__warranty-img
+            display: none
+        &__text
+            p
+                text-align: center
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box        
+        &__image-warranty
+            img
+                width: 20%
+        &__header
+            top: 6px
+        &__logo
+            margin-bottom: 4px
+        &__slogan
+            padding: 0 10px
+        &__logo
+            img
+                width: 40%
+    #maincontent .vestfrost-functions
+        &__item
+            margin-bottom: 25px
