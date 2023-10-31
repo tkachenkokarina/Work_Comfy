@@ -1,0 +1,159 @@
+		html, body {
+		margin:0;
+		padding:0;
+		}
+	
+	/* Шрифты */
+		@font-face {font-family: "Acer Regular";src: url("../fonts/AcerFoco-Regular.ttf");font-weight: normal;font-style: normal;}
+
+	/* Блоки */
+
+		.acer_container { 
+			width: 100%;
+			max-width: 1920px;
+			min-width: 320px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			box-sizing: border-box;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			
+		}
+		
+		.acer_block {
+			display: block;
+			width: 100%;
+			padding-top:10px;
+			padding-bottom:10px;
+			box-sizing: border-box;
+			padding-left: 5%;
+			padding-right: 5%;	
+		}
+		
+		.acer_block_13 {
+			display: block;
+			width: 33%;
+			max-width: 600px;
+			float: left;
+			box-sizing: border-box;
+			
+		}
+		
+	/* Тексты */
+		
+		.acer_container h1 {
+			font-family: 'Acer Regular';
+			font: 40px 'Acer Regular', sans-serif;
+			text-align: center;
+			display: block;
+			margin-top: 0px;
+			padding-top: 0px;
+			
+		}
+		
+		.acer_container h2 {
+			font-family: 'Acer Regular';
+			font: 35px 'Acer Regular', sans-serif;
+			text-align: center;
+		}
+		
+		.acer_container h3 {
+			font-family: 'Acer Regular';
+			font: 30px 'Acer Regular', sans-serif;
+			text-align: center;
+		}
+		
+		.acer_model_name{
+			min-width: 450px;
+			position: absolute;
+			left: 5%;
+			top: 200px;
+			
+		}
+		
+	/* Цвета */
+		.acer_t_white {
+			color: #FFFFFF;
+		}
+		
+		.acer_t_black {
+			color: #000000;
+		}
+		
+		.acer_t_grey {
+			color: #6d6d6d;
+		}
+		
+		.acer_b_grey_01 {
+			background: #d6d6d6;
+		}
+		
+		.acer_b_light {
+			background: #EEEEEE;
+		}
+		
+		.acer_b_dark_00 {
+			background: #c0c0c0;
+		}
+		
+		.acer_b_dark_01 {
+			background: #363636;
+		}
+		.acer_b_dark_02 {
+			background: #3a3b3d;
+		}
+		
+		.acer_b_dark_03 {
+			background: #2d2d2f;
+		}
+		
+		.acer_b_dark_04 {
+			background: #242527;
+		}
+		
+		.acer_b_violet {
+			background: #3a3585;
+		}
+		
+		.acer_b_black {
+			background: #000000;
+		}
+		
+		.acer_b_white {
+			background: #FFFFFF;
+		}
+		
+	/* Блоки */
+		.acer_small-text {
+			font-family: 'Acer Regular';
+			font: 15px 'Acer Regular', sans-serif;
+		}
+		.acer_center {
+			text-align: center;
+			font-family: 'Acer Regular';
+			font: 20px 'Acer Regular', sans-serif;
+		}
+		
+		.acer_container ul{
+			font-family: 'Acer Regular';
+			font: 20px 'Acer Regular', sans-serif;
+			display: block;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		/* Картинки */
+		
+		.acer_img_big {
+			width: 100%;
+			max-width: 1920px;
+			display: block; /* что бы убрать отступы у картинок */
+		}
+		.acer_img {
+			width: 100%;
+			display: block; /* что бы убрать отступы у картинок */
+		}
