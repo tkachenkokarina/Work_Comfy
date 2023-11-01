@@ -1,0 +1,325 @@
+#maincontent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#maincontent ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#maincontent .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#maincontent .bc-description__content h3 {
+  text-align: left;
+}
+
+#maincontent p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  font-weight: bold;
+}
+
+#maincontent {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#maincontent p::first-letter {
+  padding-left: 0;
+}
+
+#maincontent img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#maincontent img:hover {
+  opacity: 1;
+}
+
+#maincontent .maincontent__container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #000;
+  color: #fff;
+}
+#maincontent .maincontent__container h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 20px 0px;
+  text-align: center;
+}
+#maincontent .maincontent__container h3 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin: 10px 0;
+  text-align: center;
+}
+#maincontent .maincontent__container h4 {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  color: #555555;
+}
+#maincontent .maincontent__container p {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 20px 0;
+  text-align: center;
+}
+#maincontent .maincontent__container ul, #maincontent .maincontent__container li {
+  font-size: 18px;
+  line-height: 1.2;
+  list-style: disc;
+  padding-left: 12px;
+  margin-bottom: 7px;
+}
+#maincontent .maincontent__box {
+  padding-bottom: 20px;
+}
+
+#maincontent .top-box__text {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#maincontent .characteristics-box__images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#maincontent .characteristics-box__text {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#maincontent .box-content__inner {
+  width: 80%;
+  margin: 20px auto;
+}
+#maincontent .box-content__text {
+  margin-bottom: 40px;
+}
+#maincontent .box-content__text h2 {
+  text-transform: uppercase;
+}
+#maincontent .box-content__items {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#maincontent .box-content__item h3 {
+  text-transform: uppercase;
+  color: #4cabc9;
+}
+#maincontent .box-content__item + .box-content__item {
+  margin-left: 10px;
+}
+#maincontent .box-content__list {
+  margin: 40px 0 20px;
+}
+#maincontent .box-content__item-img {
+  height: 320px;
+}
+#maincontent .box-content__item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#maincontent .acer-productivity__items {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+#maincontent .acer-productivity__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 33.33%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  padding: 10px 20px;
+  max-width: 600px;
+}
+
+#maincontent .acer-cooling__items {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+#maincontent .acer-cooling__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 33.33%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  padding: 10px 20px;
+}
+
+#maincontent .acer-interKiller__items {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+@media screen and (max-width: 1540px) {
+  #maincontent .maincontent__container h2 {
+    font-size: -webkit-calc(22px + 13 * (100vw - 320px) / 1220);
+    font-size: calc(22px + 13 * (100vw - 320px) / 1220);
+  }
+  #maincontent .maincontent__container h3 {
+    font-size: -webkit-calc(20px + 5 * (100vw - 320px) / 1220);
+    font-size: calc(20px + 5 * (100vw - 320px) / 1220);
+  }
+  #maincontent .maincontent__container h4 {
+    font-size: -webkit-calc(13px + 2 * (100vw - 320px) / 1220);
+    font-size: calc(13px + 2 * (100vw - 320px) / 1220);
+  }
+  #maincontent .maincontent__container p {
+    font-size: -webkit-calc(16px + 4 * (100vw - 320px) / 1220);
+    font-size: calc(16px + 4 * (100vw - 320px) / 1220);
+  }
+  #maincontent .maincontent__container ul, #maincontent .maincontent__container li {
+    font-size: -webkit-calc(14px + 4 * (100vw - 320px) / 1220);
+    font-size: calc(14px + 4 * (100vw - 320px) / 1220);
+  }
+  #maincontent .box-content__item-img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #maincontent .box-content__item-img {
+    height: 215px;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  #maincontent .acer-productivity__inner {
+    width: auto;
+  }
+  #maincontent .box-content__item-img {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #maincontent .acer-productivity__item, #maincontent .acer-cooling__item {
+    padding: 10px 12px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #maincontent .maincontent__container p {
+    margin: 10px 0;
+  }
+  #maincontent .maincontent__container ul, #maincontent .maincontent__container li {
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+  #maincontent .maincontent__box {
+    padding-bottom: 0;
+  }
+  #maincontent .top-box__text, #maincontent .characteristics-box__text {
+    width: auto;
+    margin: 15px auto;
+    padding: 0 5px;
+  }
+  #maincontent .box-content__inner {
+    width: auto;
+    margin: 15px auto;
+    padding: 0 5px;
+  }
+  #maincontent .box-content__text {
+    margin-bottom: 20px;
+  }
+  #maincontent .box-content__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  #maincontent .box-content__item + .box-content__item {
+    margin-left: 0;
+  }
+  #maincontent .box-content__item {
+    margin-bottom: 15px;
+  }
+  #maincontent .box-content__list {
+    margin-top: 20px;
+  }
+  #maincontent .box-content__item-img {
+    height: 100%;
+  }
+  #maincontent .acer-productivity__item, #maincontent .acer-cooling__item {
+    margin: 0 auto;
+    padding: 10px 3px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #maincontent .bottom-box {
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
