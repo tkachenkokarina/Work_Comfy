@@ -1,0 +1,178 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1920px;margin:0 auto;padding:0 15px;background-color:#000;color:#fff}#maincontent .maincontent__container h2{font-size:35px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:30px;line-height:1.2;margin:10px 0;text-align:centeru}#maincontent .maincontent__container p{font-size:20px;line-height:1.2;margin:20px 0;text-align:center}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:20px;line-height:1.2;list-style:disc;padding-left:12px;margin-bottom:7px}#maincontent .maincontent__box{padding-bottom:20px}#maincontent .top-box__text{width:80%;margin:20px auto}#maincontent .characteristics-box__images{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .characteristics-box__text{width:80%;margin:20px auto}#maincontent .box-content__inner{width:80%;margin:20px auto}#maincontent .box-content__text{margin-bottom:40px}#maincontent .box-content__text h2{text-transform:uppercase}#maincontent .box-content__items{margin:20px 0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .box-content__item h3{text-transform:uppercase;color:#4cabc9}#maincontent .box-content__item+.box-content__item{margin-left:10px}#maincontent .box-content__list{margin:40px 0 20px}#maincontent .box-content__small-text{width:90%;margin:0 auto}#maincontent .box-content__small-text p{text-align:left;font-size:15px}#maincontent .box-content__item-img img{-o-object-fit:cover;object-fit:cover}#maincontent .acer-design__items{-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}#maincontent .acer-design__item{-webkit-box-flex:0;-webkit-flex:0 1 33%;-moz-box-flex:0;-ms-flex:0 1 33%;flex:0 1 33%;padding:10px 20px;max-width:600px}#maincontent .acer-cooling__items{-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}#maincontent .acer-cooling__item{-webkit-box-flex:0;-webkit-flex:0 1 33.33%;-moz-box-flex:0;-ms-flex:0 1 33.33%;flex:0 1 33.33%;padding:10px 20px}#maincontent .acer-interKiller__items{-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(21px + 14*(100vw - 320px)/1220);font-size:calc(21px + 14*(100vw - 320px)/1220)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 12*(100vw - 320px)/1220);font-size:calc(18px + 12*(100vw - 320px)/1220)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(14px + 6*(100vw - 320px)/1220);font-size:calc(14px + 6*(100vw - 320px)/1220)}#maincontent .box-content__small-text p{font-size:-webkit-calc(12px + 3*(100vw - 320px)/1220);font-size:calc(12px + 3*(100vw - 320px)/1220)}}@media screen and (max-width: 1024.98px){#maincontent .acer-productivity__inner{width:auto}}@media screen and (max-width: 991.98px){#maincontent .acer-productivity__item,#maincontent .acer-cooling__item{padding:10px 12px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container p{margin:10px 0}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{padding-left:5px;margin-left:5px}#maincontent .maincontent__box{padding-bottom:0}#maincontent .top-box__text,#maincontent .characteristics-box__text{width:auto;margin:15px auto;padding:0 5px}#maincontent .box-content__inner{width:auto;margin:15px auto;padding:0 5px}#maincontent .box-content__text{margin-bottom:20px}#maincontent .box-content__item+.box-content__item{margin-left:0}#maincontent .box-content__item{margin-bottom:15px}#maincontent .box-content__list{margin-top:20px}#maincontent .box-content__small-text{width:100%}#maincontent .acer-design__item{padding:10px 5px}#maincontent .acer-cooling__item{margin:0 auto;padding:10px 3px;max-width:100%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .bottom-box{padding-bottom:10px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img01.jpg" /></div>
+<div class="top-box__text">
+<p>Nitro 5 — це ігровий ноутбук від Acer, який відрізняється високою потужністю, стильним ігровим                     дизайном та ефективністю, якої ви ще не бачили! Завдяки сучасному процесору Intel 12-го покоління,                     швидкій IPS-матриці та відеокарті NVIDIA GeForce RTX ви отримуєте потужний ноутбук та безліч                     перемог!</p>
+</div>
+</div>
+<div class="maincontent__box characteristics-box">
+<div class="characteristics-box__images">
+<div class="characteristics-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img02_1.jpg" /></div>
+<div class="characteristics-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img02_2.jpg" /></div>
+<div class="characteristics-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img02_3.jpg" /></div>
+</div>
+<div class="characteristics-box__text">
+<div class="characteristics-box__title">
+<h3>Основні переваги:</h3>
+</div>
+<ul>
+<li>ергономічний дизайн;</li>
+<li>сучасний процесор Intel Core i5-12450H;</li>
+<li>оперативна пам’ять DDR5 4800 МГц на 16 ГБ та SSD-диск PCIe на 512 Гб;</li>
+<li>відеокарта NVIDIA GeForce RTX 4050 6 ГБ GDDR6 з підтримкою MUX Switch;</li>
+<li>система охолодження, оснащена технологією CoolBoost і можливістю налаштовувати профілі роботи; </li>
+<li>повне керування системою з фірмовим інтерфейсом Nitro Sense;</li>
+<li>надшвидка ігрова матриця IPS з частотою оновлення 144 Гц.</li>
+</ul>
+</div>
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img02.jpg" /></div>
+</div>
+<div class="maincontent__box box-content acer-design">
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Ергономічний дизайн</h2>
+<p>Продуманий дизайн, який відрізняється мінімалістичністю та максимальним комфортом протягом                         використання — це про ноутбук Nitro 5. Його комфортно переносити та брати із собою, бо він має                         невелику вагу — всього 2,5 кг, і витончений корпус — 26,9 мм.</p>
+</div>
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img03.jpg" /></div>
+<div class="box-content__items acer-design__items">
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img03_1.jpg" /></div>
+<div class="box-content__text">
+<p>Тензорні ядра 4-го покоління</p>
+</div>
+</div>
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img03_2.jpg" /></div>
+<div class="box-content__text">
+<p>Трасування променів</p>
+</div>
+</div>
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img03_3.jpg" /></div>
+<div class="box-content__text">
+<p>Технологія NVIDIA DLSS 3</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content">
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Продуктивність, яка вам потрібна</h2>
+<p>Nitro 5 оснащений процесором Intel i5-12450H і відеокартою NVIDIA GeForce RTX 4050, які                         забезпечать вам високу продуктивність в більшості ігор. А їх швидке завантаження гарантують ОП                         DDR5 4800 МГц на 16 Гб та SSD-диск PCIe 512 Гб.</p>
+</div>
+<div class="box-content__list">
+<div class="box-content__list-subtitle">
+<p>Середні показники в іграх:</p>
+</div>
+<div class="box-content__list-items">
+<ul>
+<li>Assassin's Creed Mirage (ультра) — 69 fps</li>
+<li>Cyberpunk 2077 2.0(ультра) — 63 fps</li>
+<li>Diablo IV (ультра) — 119 fps</li>
+<li>Forza Horizon 5 (ультра) — 61 fps</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="box-content__small-text">
+<p>* Дані основані на внутрішньому тестуванні</p>
+</div>
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img04.jpg" /></div>
+</div>
+<div class="maincontent__box box-content">
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Продуктивна система охолодження</h2>
+<p>З Nitro 5 ви забудете що таке гарячий ноутбук! Завдяки системі охолодження нового покоління, двом                         вентиляторам та чотирьом вентиляційним отворам невисока температура підтримується навіть у                         важких іграх, що вже казати про звичайні. Обертання вентиляторів додатково прискорюється на 10%                         завдяки технології CoolBoost. Вона ж і покращує охолодження ЦП та відеокарти на 9%.                         Всього одне натискання кнопки — і розгін системи активовано. Ви також можете керувати швидкістю                         роботи вентиляторів, моніторити показники температури та інші властивості.</p>
+</div>
+</div>
+<div class="box-content__items acer-design__items">
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img05_1.jpg" /></div>
+<div class="box-content__text">
+<p>2 вентилятори</p>
+</div>
+</div>
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img05_2.jpg" /></div>
+<div class="box-content__text">
+<p>4 вентиляційні отвори</p>
+</div>
+</div>
+<div class="box-content__item acer-design__item">
+<div class="box-content__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img05_3.jpg" /></div>
+<div class="box-content__text">
+<p>Технологія CoolBoost</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img05.jpg" /></div>
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Висока якість зображення</h2>
+<p>Екран ноутбука Nitro 5 — це поєднання всього, що потрібно для максимальної насолоди від                         зображення. Діагональ 15,6 дюйма, швидка ігрова матриця IPS на 144 Гц, вузькі рамки товщиною                         7,02 мм, завдяки яким екран займає 80% від площі корпусу, а також технологія захисту очей                         Bluelight Shield — все це створює незабутній ігровий досвід!</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content acer-productivity">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img06.jpg" /></div>
+<div class="box-content__inner acer-cooling__inner">
+<div class="box-content__text">
+<h2>Проводьте апгрейди легко!</h2>
+<p>Не вистачає швидкості або обсягу сховища? Легко змінюйте конфігурацію ноутбука і прискорюйте                         його. Nitro 5 оснащений 16 Гб оперативної пам’яті з можливістю апгрейду до 32 Гб, та SSD-диском                         PCIe на 512 Гб, поряд з яким також є слот для додаткового SSD-диска. Також є підтримка RAID 0.                         Якщо хочете виконати апгрейд протягом гарантійного періоду, радимо звернутися до сервісного                         центру Acer.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content acer-cooling">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img07.jpg" /></div>
+<div class="box-content__inner acer-cooling__inner">
+<div class="box-content__text">
+<h2>Підключайтеся до будь-чого</h2>
+<p>Завдяки широкому вибору портів ви можете приєднатися до будь-яких сучасних пристроїв: порти USB                         Type-C та USB 3.2 Gen забезпечують сумісність зі всіма пристроями, HDMI 2.1 забезпечить                         підключення зовнішніх моніторів.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img08.jpg" /></div>
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Клавіатура з підсвічуванням</h2>
+<p>Зручність складається не тільки зі високої продуктивності і ергономічного дизайну. До цього                         списку можна сміливо віднести й клавіатуру, яка має підсвічування в червоному кольорі і                         безсумнівно допоможе вам під час гри з поганим освітленням. Додатково окреслені й кнопки WASD з                         клавішами стрілок. Мінімальний час відгуку досягається завдяки глибині натиску 1,6 мм. Заводське                         гравіювання: українські, англійські та російські символи.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content acer-interKiller">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img09.jpg" /></div>
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Мережеве з’єднання</h2>
+<p>Ноутбук Nitro 5 оснащений дводіапазонним бездротовим модулем Intel Wi-Fi 6 (802.11 ax), який має                         підтримку технології 2х2 MU-MIMO, а також гігабітним контролером Killer Ethernet E2600 і звісно                         Bluetooth 5.1.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content">
+<div class="box-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2707001/img10.jpg" /></div>
+<div class="box-content__inner">
+<div class="box-content__text">
+<h2>Гучний і об’ємний звук</h2>
+<p>Два динаміки на 2 Вт та підтримка технології об’ємного звучання DTS:X Ultra гарантують чудове                         цілісне звучання, неважливо граєте ви чи дивитеся улюблений серіал.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-content bottom-box">
+<div class="box-content__inner">
+<div class="box-content__text">
+<p><b>Купити ноутбук Acer Nitro 5 AN515-58 в Україні можна на сайті або у фірмових магазинах Comfy! </b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
