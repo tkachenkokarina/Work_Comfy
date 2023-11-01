@@ -192,6 +192,7 @@ li {
        -o-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-bottom: 74px;
+  padding: 0 10px;
 }
 #maincontent .box-bg__title p {
   text-align: center;
@@ -199,9 +200,10 @@ li {
 #maincontent .box-bg__content {
   position: absolute;
   z-index: 7;
-  width: 41vw;
+  max-width: 615px;
   top: 58%;
-  left: 6.25vw;
+  left: 91px;
+  right: 50%;
   -webkit-transform: translateY(-58%);
       -ms-transform: translateY(-58%);
        -o-transform: translateY(-58%);
@@ -227,7 +229,7 @@ li {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 135px 5.56vw 161px;
+  padding: 135px 70px 161px;
 }
 #maincontent .row-maincontent__inner_rev {
   -webkit-box-orient: horizontal;
@@ -261,8 +263,8 @@ li {
 
 #maincontent .vestfrost-comfort__img::before {
   background-image: url("https://cdn.comfy.ua/media/x/img3/2687999/img04_bg.png");
-  width: 52.79vw;
-  height: 37vw;
+  width: 54%;
+  height: 92%;
   top: 50%;
   left: 46%;
   right: 10px;
@@ -272,7 +274,8 @@ li {
           transform: translateY(-50%);
 }
 #maincontent .vestfrost-comfort__content {
-  left: 50.31vw;
+  left: 50%;
+  right: 10px;
 }
 #maincontent .vestfrost-comfort__content h3 {
   margin-bottom: 15px;
@@ -295,15 +298,15 @@ li {
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 47vw;
+  right: 40%;
 }
 
 #maincontent .vestfrost-econsumption__inner {
-  padding: 35px 5.56vw;
+  padding: 35px 91px;
 }
 
 #maincontent .vestfrost-functions__inner {
-  padding: 10px 5.56vw 75px;
+  padding: 10px 91px 75px;
 }
 #maincontent .vestfrost-functions__item {
   margin-right: 50px;
@@ -360,22 +363,33 @@ li {
     font-size: -webkit-calc(22px + 14 * (100vw - 320px) / 980);
     font-size: calc(22px + 14 * (100vw - 320px) / 980);
   }
+  #maincontent .vestfrost-engine__content {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 1250.98px) {
+  #maincontent .vestfrost-washing__content {
+    top: 63%;
+  }
 }
 @media screen and (max-width: 1200px) {
+  #maincontent .box-bg__content {
+    left: 50px;
+  }
   #maincontent .top-box__warranty-img img {
     width: 35%;
   }
   #maincontent .row-maincontent__inner {
-    padding: 75px 5.56vw;
+    padding: 75px 30px;
   }
   #maincontent .vestfrost-comfort__img::before {
     left: 45.69%;
   }
-  #maincontent .vestfrost-engine__content {
-    width: 50vw;
+  #maincontent .vestfrost-comfort__content {
+    left: 50%;
   }
   #maincontent .vestfrost-econsumption__inner {
-    padding: 35px 5.56vw;
+    padding: 35px 30px;
   }
   #maincontent .vestfrost-functions__image::before {
     top: 0;
@@ -391,11 +405,7 @@ li {
     padding: 0 10px;
   }
   #maincontent .box-bg__content {
-    top: 68%;
-    -webkit-transform: translateY(-54%);
-        -ms-transform: translateY(-54%);
-         -o-transform: translateY(-54%);
-            transform: translateY(-54%);
+    top: 60%;
   }
   #maincontent .vestfrost-comfort__content {
     top: 50%;
@@ -410,18 +420,15 @@ li {
         -ms-transform: translateY(-50%);
          -o-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 60vw;
+    right: 25%;
   }
 }
 @media screen and (max-width: 1024.98px) {
   #maincontent .row-maincontent__inner {
-    padding: 45px 5.56vw;
-  }
-  #maincontent .vestfrost-comfort__img::before {
-    width: 53vw;
+    padding: 45px 30px;
   }
   #maincontent .vestfrost-econsumption__inner {
-    padding: 35px 5.56vw;
+    padding: 35px 30px;
   }
   #maincontent .vestfrost-functions__image::before {
     top: -75px;
@@ -433,18 +440,17 @@ li {
     height: 127px;
   }
   #maincontent .box-bg__content {
-    width: 46vw;
-    left: 3.25vw;
+    left: 25px;
   }
   #maincontent .row-maincontent__inner {
-    padding: 25px 1.19vw;
+    padding: 25px 5px;
   }
   #maincontent .vestfrost-comfort__box {
     margin-bottom: 20px;
   }
   #maincontent .vestfrost-comfort__img::before {
-    width: 52.1vw;
-    height: 37vw;
+    width: 54%;
+    height: 100%;
     left: 45.85%;
   }
   #maincontent .vestfrost-comfort__content {
@@ -458,7 +464,25 @@ li {
   }
   #maincontent .vestfrost-engine__content {
     top: 52%;
-    width: 75vw;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 890.98px) {
+  #maincontent .vestfrost-washing__content {
+    right: 48%;
+    top: 67%;
+  }
+  #maincontent .vestfrost-engine__content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 825.98px) {
+  #maincontent .vestfrost-washing__title {
+    top: 4%;
+  }
+  #maincontent .vestfrost-washing__content {
+    top: 69%;
+    right: 47%;
   }
 }
 @media screen and (max-width: 799.98px) {
@@ -512,7 +536,7 @@ li {
        -moz-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    width: auto;
+    max-width: 100%;
     padding: 0 5px;
   }
   #maincontent .box-bg__content h3 {
@@ -572,8 +596,8 @@ li {
   #maincontent .vestfrost-functions__image::before {
     top: 0;
     left: 0;
-    width: 35vw;
-    height: 35vw;
+    width: 34%;
+    height: 25%;
   }
 }
 @media screen and (max-width: 600.98px) {
@@ -630,6 +654,10 @@ li {
   #maincontent .top-box__text p {
     text-align: center;
   }
+  #maincontent .vestfrost-functions__image::before {
+    width: 35%;
+    height: 26%;
+  }
 }
 @media screen and (max-width: 479.98px) {
   #maincontent .top-box__image-warranty img {
@@ -649,5 +677,21 @@ li {
   }
   #maincontent .vestfrost-functions__item {
     margin-bottom: 25px;
+  }
+  #maincontent .vestfrost-functions__image::before {
+    width: 36%;
+    height: 27%;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #maincontent .vestfrost-functions__image::before {
+    width: 35%;
+    height: 27%;
+  }
+}
+@media screen and (max-width: 340.98px) {
+  #maincontent .vestfrost-functions__image::before {
+    width: 36%;
+    height: 28%;
   }
 }/*# sourceMappingURL=style.css.map */
