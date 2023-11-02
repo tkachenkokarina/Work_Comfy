@@ -1,13 +1,9 @@
-const swiper = new Swiper('.swiper', {
+let myGlowLeft = new Swiper('.glow-oppoa18-left__slider', {
     speed: 500,
     slidesPerView: 1,
     spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-left',
         type: 'bullets',
         clickable: true,
     },
@@ -15,21 +11,46 @@ const swiper = new Swiper('.swiper', {
     fadeEffect: {
         crossFade: true
     },
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20
-        },
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 4,
-            spaceBetween: 40
-        }
-    }
+});
+
+let myGlowRight = new Swiper('.glow-oppoa18-right__slider', {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+myGlowLeft.controller.control = myGlowRight;
+myGlowRight.controller.control = myGlowLeft;
+
+
+let myFotoLeft = new Swiper('.foto-oppoa18-left__slider', {
+    speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+let myFotoRight = new Swiper('.foto-oppoa18-right__slider', {
+    speed: 800,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.foto-oppoa18-right-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
 });
