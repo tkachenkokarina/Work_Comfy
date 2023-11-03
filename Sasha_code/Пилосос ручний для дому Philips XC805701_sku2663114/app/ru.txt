@@ -1,0 +1,477 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1536px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.15;margin:10px 0px;text-align:center;color:#327896}#maincontent .maincontent__container h3{font-size:36px;line-height:1.05;margin:14px 0 19px}#maincontent .maincontent__container p{font-size:24px;line-height:1.16;margin-bottom:10px}#maincontent .top-box__text{max-width:1031px;margin:0 auto;padding:40px 20px}#maincontent .top-box__text p{font-size:32px;line-height:1.18;text-align:center}#maincontent .top-box__images{position:relative;z-index:5}#maincontent .top-box__img-icon{position:absolute;z-index:6;top:60%;left:7.36%;right:78.84%;-webkit-transform:translateY(-40%);-ms-transform:translateY(-40%);-o-transform:translateY(-40%);transform:translateY(-40%)}#maincontent .philips__box-text{padding:30px 10px;max-width:1186px;margin:0 auto}#maincontent .philips__box-content{position:relative;z-index:5;width:100%}#maincontent .philips__box-cols{position:absolute;z-index:6;top:50%;left:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);width:100%}#maincontent .cols-box__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;padding:0 60px}#maincontent .cols-box__col{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .cols-box__col p{font-size:22px;line-height:1.2;color:#fff;text-align:left}#maincontent .col-box__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;align-items:center;margin-bottom:72px}#maincontent .col-box__item:last-child{margin-bottom:0}#maincontent .col-box__img{margin-right:20px;-webkit-box-flex:0;-webkit-flex:0 1 20%;-moz-box-flex:0;-ms-flex:0 1 20%;flex:0 1 20%}#maincontent .col-box__text{padding:10px;-webkit-box-flex:0;-webkit-flex:0 1 80%;-moz-box-flex:0;-ms-flex:0 1 80%;flex:0 1 80%;max-width:430px}#maincontent .img-box{position:relative;z-index:5}#maincontent .img-box::before{content:"";position:absolute;z-index:6;width:100%;height:100%;top:0;left:0;background:-webkit-gradient(linear, left top, right top, color-stop(-2.91%, rgba(0, 0, 0, 0.6)), color-stop(69.54%, rgba(0, 0, 0, 0)));background:-webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) -2.91%, rgba(0, 0, 0, 0) 69.54%);background:-o-linear-gradient(left, rgba(0, 0, 0, 0.6) -2.91%, rgba(0, 0, 0, 0) 69.54%);background:linear-gradient(90deg, rgba(0, 0, 0, 0.6) -2.91%, rgba(0, 0, 0, 0) 69.54%)}#maincontent .col-philips__inner{display:grid;grid-template-columns:repeat(3, 1fr);gap:10px}#maincontent .col-philips__text{padding:0 10px}#maincontent .row-philips__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:50px;padding:0 10px}#maincontent .row-philips__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-philips__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips__text{padding:10px 20px;max-width:649px;margin-left:auto}#maincontent .row-philips__text_rev{margin-right:auto;margin-left:0}#maincontent .row-philips__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips__image_rev img{margin-left:auto}#maincontent .box-table__cells{display:grid;grid-template-columns:repeat(6, 1fr);-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;gap:2px}#maincontent .box-table__cell{min-width:165px;min-height:100%;padding:0 5px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .box-table__cell_top{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .box-table__cell p{color:#fff;text-align:center}#maincontent .box-table__cell_bg{background-color:#0a7896}#maincontent .box-table__cell_bg02{background-color:#91c2d0}#maincontent .box-table__cell_bg03{background-color:rgba(10,120,150,.81)}#maincontent .box-table__cell_bg04{background-color:#6caec0}#maincontent .box-table__cell_span4{grid-column:span 4}#maincontent .box-table__cell_span5{grid-column:span 5}#maincontent .box-table__cell_span3{grid-column:span 3}#maincontent .box-table__cell_span2{grid-column:span 2}#maincontent .box-table__text{padding:10px}#maincontent .box-table__text p{font-size:16px;margin-top:10px;text-align:center}#maincontent .box-table__text ul,#maincontent .box-table__text li{list-style:disc;font-size:16px;color:#fff;margin-left:10px}#maincontent .box-table__text_bl p{color:#000}#maincontent .bottom-box{padding:30px 20px}#maincontent .bottom-box__list ul,#maincontent .bottom-box__list li{font-size:12px;line-height:1.16}@media screen and (max-width: 1380px){#maincontent .col-box__item{margin-bottom:60px}}@media screen and (max-width: 1300px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 26*(100vw - 320px)/980);font-size:calc(22px + 26*(100vw - 320px)/980)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 18*(100vw - 320px)/980);font-size:calc(18px + 18*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 10*(100vw - 320px)/980);font-size:calc(14px + 10*(100vw - 320px)/980)}#maincontent .top-box__text p{font-size:-webkit-calc(16px + 16*(100vw - 320px)/980);font-size:calc(16px + 16*(100vw - 320px)/980)}#maincontent .cols-box__col p{font-size:-webkit-calc(13px + 9*(100vw - 320px)/980);font-size:calc(13px + 9*(100vw - 320px)/980)}#maincontent .box-table__text p{font-size:-webkit-calc(12px + 4*(100vw - 320px)/980);font-size:calc(12px + 4*(100vw - 320px)/980)}#maincontent .bottom-box__list ul,#maincontent .bottom-box__list li{font-size:-webkit-calc(10px + 2*(100vw - 320px)/980);font-size:calc(10px + 2*(100vw - 320px)/980)}}@media screen and (max-width: 1350.98px){#maincontent .col-box__item{margin-bottom:30px}}@media screen and (max-width: 1200px){#maincontent .cols-box__inner{padding:0 15px}#maincontent .col-box__item{margin-bottom:15px}}@media screen and (max-width: 1100px){#maincontent .col-box__item{margin-bottom:10px}#maincontent .col-box__img{margin-right:10px}#maincontent .box-table__cells{overflow-x:scroll}}@media screen and (max-width: 1024.98px){#maincontent .col-philips__inner{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 991.98px){#maincontent .top-box__text{padding:20px}#maincontent .philips__box-text{padding:20px 10px}#maincontent .philips__box-cols{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .cols-box__col p{color:#000}#maincontent .img-box{margin-bottom:40px}}@media screen and (max-width: 767.98px){#maincontent .top-box__text{padding:0 5px}#maincontent .philips__box-text{padding:0 5px}#maincontent .cols-box__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-right:0}#maincontent .cols-box__col{margin-bottom:10px}#maincontent .img-box{margin-bottom:15px}#maincontent .col-box__text{padding:0 7px}#maincontent .col-philips__inner{grid-template-columns:1fr;gap:0}#maincontent .col-philips__image img{margin:0 auto}#maincontent .col-philips__text h3,#maincontent .col-philips__text p{text-align:center}#maincontent .col-philips__text h3{margin:10px 0}#maincontent .row-philips__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:0;padding:0}#maincontent .row-philips__text h3,#maincontent .row-philips__text p{text-align:center}#maincontent .row-philips__text h3{margin:10px 0}#maincontent .bottom-box{padding:10px 5px}}@media screen and (max-width: 479.98px){#maincontent .cols-box__inner{padding-left:5px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__inner">
+<div class="top-box__text">
+<h2>Самый производительный и быстрый беспроводной пылесос</h2>
+<p>Ручной пылесос Philips Aqua серии 8000 XC8057/01</p>
+</div>
+<div class="top-box__images">
+<div class="top-box__img-banner"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img01.png" /></div>
+<div class="top-box__img-icon"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon01_ru.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Безупречная чистота с большим количеством аксессуаров</h2>
+</div>
+<div class="philips__box-img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img02_ru.png" /></div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Основные преимущества Philips Aqua серии 8000</h2>
+</div>
+<div class="philips__box-content">
+<div class="philips__box-img img-box"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img03.png" /></div>
+<div class="philips__box-cols cols-box">
+<div class="cols-box__inner">
+<div class="cols-box__col col-box">
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_1.png" /></div>
+<div class="col-box__text">
+<p><b>PowerCyclone12</b></p>
+<p>Технология, которая удаляет мельчайшую пыль</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_2.png" /></div>
+<div class="col-box__text">
+<p><b>Щетка Aqua Plus</b></p>
+<p>Адаптивная моющая щетка, которая пылесосит и моет одним движением</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_3.png" /></div>
+<div class="col-box__text">
+<p><b>PowerBlade</b></p>
+<p>Мощный мотор, выдающий до 1100 л/мин и обеспечивающий наилучший уровень сбора</p>
+</div>
+</div>
+</div>
+<div class="cols-box__col col-box">
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_4.png" /></div>
+<div class="col-box__text">
+<p><b>PrecisionPower Smart</b></p>
+<p>Щетка, эффективно убирающая пыль, грязь и главное — 99% бактерий</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_5.png" /></div>
+<div class="col-box__text">
+<p><b>Система фильтрации</b></p>
+<p>5 уровней фильтрации, которые задерживают до 99,9% мельчайшей пыли и                                             аллергенов</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/icon03_6.png" /></div>
+<div class="col-box__text">
+<p><b>Литий-ионный аккумулятор</b></p>
+<p>Долговременная автономная работа: до 80 мин в экорежиме, до 30 мин в режиме                                             турбо</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Инновационная технология насадки для мойки</h2>
+</div>
+<div class="maincontent__col col-philips">
+<div class="col-philips__inner">
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img04_1.png" /></div>
+<div class="col-philips__text">
+<h3>Уникальная адаптивная насадка</h3>
+<p>Она адаптируется к вашим движениям, чтобы поток воздуха направлялся именно на тот                                     канал, в сторону которого вы убираете.</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img04_2.png" /></div>
+<div class="col-philips__text">
+<h3>Удобная система распределения воды и зигзагообразный дизайн</h3>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img04_3.png" /></div>
+<div class="col-philips__text">
+<h3>Удаляет любые пятна</h3>
+<p>Насадки из микрофибры убирают до 99% бактерий и помогают избавиться от любых пятен.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Одно движение — два действия. Пылесосит и моет за один раз</h2>
+</div>
+<div class="philips__box-video"><video width="100%"> <source src="https://cdn.comfy.ua/media/video/2663114/video01.mp4" type="video/mp4"></source> </video></div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Быстрая турбощетка</h2>
+</div>
+<div class="maincontent__col col-philips">
+<div class="col-philips__inner">
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img06_1.png" /></div>
+<div class="col-philips__text">
+<h3>Найдет все</h3>
+<p>Благодаря LED подсветке вы увидите даже мельчайшую пыль в темных углах и под мебелью.                                     Турбощетка собирает до 99,9% пыли с любого типа пола!</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img06_2.png" /></div>
+<div class="col-philips__text">
+<h3>Высокая скорость вращения</h3>
+<p>До 4200 об/мин обеспечивают быструю уборку шерсти, крошек, песка и другой грязи даже                                     с ковров, что уж говорить о ламинате.</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img06_3.png" /></div>
+<div class="col-philips__text">
+<h3>Всасывание на 360°</h3>
+<p>Теперь вблизи плинтусов и углов тоже будет безупречно чисто!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-philips">
+<div class="philips__box-text">
+<h2>Умная уборка с множеством технологий</h2>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img07.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>PrecisionPower Smart</h3>
+<p>Технология автоматически регулирует скорость вращения и поток воздуха для максимальной                                 работы на твердых поверхностях и коврах.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_rev"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img08.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text row-philips__text_rev">
+<h3>Аксессуары с подсветкой</h3>
+<p>Согласитесь, убирать легче, когда поверхность уборки подсвечивается. Так, вы замечаете                                 мельчайшую пыль и можете тщательно очистить дом от разной грязи.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img09.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Цифровой дисплей</h3>
+<p>Цветной цифровой дисплей показывает всю нужную информацию: уровень заряда, выбранный                                 режим, уровень подсветки, использование Smart-режима и потребность в замене фильтра.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-philips">
+<div class="philips__box-text">
+<h2>Автономность и качество</h2>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_rev"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img10.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text row-philips__text_rev">
+<h3>Литий-ионный аккумулятор</h3>
+<p>Благодаря такому аккумулятору можно убирать до 80 мин в обычном режиме и до 30 мин в                                 режиме Turbo — убирайте до 135 м² на максимальной мощности за один заряд!</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img11.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>PowerCyclone 12</h3>
+<p>Сверхбыстрый поток воздуха создается благодаря разумной конструкции пылесоса. Таким                                 образом, обеспечивается максимальная сила всасывания с минимальным использованием                                 заряда.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_rev"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img12.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text row-philips__text_rev">
+<h3>5 уровней системы фильтрации</h3>
+<p>Задерживает до 99,9% мельчайшей пыли, аллергенов и бактерий. Дышите свободно в своем                                 доме!</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img13.png" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Гарантия на мотор</h3>
+<p>При регистрации на сайте изготовителя вы получаете 5 лет дополнительной гарантии на                                 мотор.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Аксессуары для любых ситуаций</h2>
+</div>
+<div class="maincontent__col col-philips">
+<div class="col-philips__inner">
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img13_1.png" /></div>
+<div class="col-philips__text">
+<h3>Компактный пылесос</h3>
+<p>Легкий и удобный мини пылесос, которым вы можете убирать пыль с мебели или грязь в                                     автомобиле. Практично и эффективно!</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img13_2.png" /></div>
+<div class="col-philips__text">
+<h3>Мини турбощетка</h3>
+<p>Забудьте о волосах и шерсти благодаря щетке с LED-подсветкой. Быстро убирает грязь с                                     дивана, матраса или сиденья автомобиля.</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img13_3.png" /></div>
+<div class="col-philips__text">
+<h3>Длинная щелевая насадка и мягкая щетка</h3>
+<p>Эти щетки помогут вам легко добраться до труднодоступных уголков и получить                                     безупречную чистоту.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips__box">
+<div class="philips__box-text">
+<h2>Уборка до 135 м² в режиме Turbo без подзарядки</h2>
+</div>
+<div class="philips__box-video"><video width="100%"> <source src="https://cdn.comfy.ua/media/video/2663114/video2_14.mp4" type="video/mp4"></source> </video></div>
+</div>
+<div class="maincontent__box philips__box box-table">
+<div class="philips__inner ">
+<div class="box-table__header">
+<h2>Выберите свой беспроводной пылесос Philips</h2>
+</div>
+<div class="box-table__cells">
+<div class="box-table__cell box-table__cell_top"></div>
+<div class="box-table__cell box-table__cell_top">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img15_1.png" /></div>
+<div class="box-table__text box-table__text_bl">
+<p><b>XC8057/01</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_top">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img15_2.png" /></div>
+<div class="box-table__text box-table__text_bl">
+<p><b>XC7055/01</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_top">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img15_3.png" /></div>
+<div class="box-table__text box-table__text_bl">
+<p><b>XC3133/01</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_top">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img15_4.png" /></div>
+<div class="box-table__text box-table__text_bl">
+<p><b>XC3131/01</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_top">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2663114/img15_5.png" /></div>
+<div class="box-table__text box-table__text_bl">
+<p><b>XC3031/01</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Время работы</b><br /> Экорежим /                                     турборежим</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p>до 80 мин / до 30 мин</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span4">
+<div class="box-table__text">
+<p>до 60 мин /до 15 мин</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Аккумулятор</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span5">
+<div class="box-table__text">
+<p>Сменный литий-ионный аккумулятор 25,2 В</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Влажная уборка</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p>Адаптивная моющая насадка AquaPlus</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span3">
+<div class="box-table__text">
+<p>Модуль Aqua</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg02">
+<div class="box-table__text">
+<p>-</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Сухая уборка</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span2">
+<div class="box-table__text">
+<p>Высокоскоростная турбо щетка PrecisionPower Smart для всех типов жестких и мягких                                     поверхностей, с конструкцией щетки для всасывания на 360 градусов</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span3">
+<div class="box-table__text">
+<p>Турбощетка с LED подсветкой</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Технология</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span2">
+<div class="box-table__text">
+<p>Power Cyclone 12</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span3">
+<div class="box-table__text">
+<p>Power Cyclone 8</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Количество скоростных режимов</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span2">
+<div class="box-table__text">
+<p>3 (эко, стандарт, турбо)</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span3">
+<div class="box-table__text">
+<p>2 (эко, турбо)</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Дополнительные аксессуары</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<ul>
+<li>Насадка для мебели с LED подсветкой</li>
+<li>Щелевая насадка с LED подсветкой</li>
+<li>Комбинированная насадка с LED подсветкой</li>
+<li>Мягкая щетка с LED подсветкой</li>
+<li>Мини турбощетка</li>
+<li>2 дополнительные накладки из микрофибры</li>
+<li>Дополнительный фильтр</li>
+</ul>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03">
+<div class="box-table__text">
+<ul>
+<li>Насадка для мебели с LED подсветкой</li>
+<li>Щелевая насадка с LED подсветкой</li>
+<li>Комбинированная насадка с LED подсветкой</li>
+<li>Мини турбощетка</li>
+</ul>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg04">
+<div class="box-table__text">
+<ul>
+<li>Щелевая насадка</li>
+<li>Комбинированная насадка</li>
+</ul>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg02">
+<div class="box-table__text">
+<p>-</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg04">
+<div class="box-table__text">
+<p>-</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Компактный пылесос</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span5">
+<div class="box-table__text">
+<p>Да</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Система фильтрации</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span2">
+<div class="box-table__text">
+<p>5-ступенчатая фильтрация</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg03 box-table__cell_span3">
+<div class="box-table__text">
+<p>3-ступенчатая фильтрация</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg">
+<div class="box-table__text">
+<p><b>Гарантия на мотор</b></p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_bg box-table__cell_span5">
+<div class="box-table__text">
+<p>5 лет при регистрации на сайте philips.ua</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<ul class="bottom-box__list">
+<li><sup>1</sup>Внутренний технический тест по сравнению с другими пылесосами, представленными в                         Украине, 2022 г. По                         среднему значению результатов, по разным типам грязи, пола и, если применимо, аксессуар для                         входящей в                         комплект воды благодаря комбинированным свойствам продукта. </li>
+<li><sup>2</sup> На твердых полах в турборежиме. </li>
+<li><sup>3</sup> Режим Eco, только насадка. </li>
+<li><sup>4</sup> На твердых полах в турборежиме.</li>
+<li><sup>5</sup>Благодаря уборке с моющим средством.</li>
+</ul>
+</div>
+</div>
+</div>
