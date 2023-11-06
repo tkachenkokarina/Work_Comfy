@@ -1,0 +1,718 @@
+<style>
+    #rowentakarl .bc-description__content p {
+        margin-bottom: 0
+    }
+
+    #rowentakarl .bc-description__content h3 {
+        text-align: left
+    }
+
+    #rowentakarl h1,
+    #rowentakarl h2,
+    #rowentakarl h3,
+    #rowentakarl h4,
+    #rowentakarl h5,
+    #rowentakarl h6 {
+        text-transform: none;
+        font-weight: bold
+    }
+
+    #rowentakarl {
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #fff
+    }
+
+    #rowentakarl h1,
+    #rowentakarl h2,
+    #rowentakarl h3,
+    #rowentakarl h4,
+    #rowentakarl h5,
+    #rowentakarl h6,
+    #rowentakarl p {
+        margin: 0;
+        padding: 0;
+        text-align: left
+    }
+
+    #rowentakarl p::first-letter {
+        padding-left: 0
+    }
+
+    #rowentakarl img {
+        opacity: 1;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto
+    }
+
+    #rowentakarl img:hover {
+        opacity: 1
+    }
+
+    #rowentakarl .rowentakarl__container {
+        max-width: 1570px;
+        margin: 0 auto;
+        padding: 0 15px
+    }
+
+    #rowentakarl .row-rowentakarl {
+        max-width: 1520px;
+        margin: 0 auto
+    }
+
+    #rowentakarl .row-rowentakarl__inner {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 40px
+    }
+
+    #rowentakarl .row-rowentakarl__inner_rev {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse
+    }
+
+    #rowentakarl .row-rowentakarl__item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 54%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 1 54%;
+        flex: 0 1 54%
+    }
+
+    #rowentakarl .row-rowentakarl__text h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .row-rowentakarl__text h2 {
+            font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 1250));
+            font-size: calc(18px + 22 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .row-rowentakarl__text p {
+        font-size: 26px;
+        line-height: 1.2
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .row-rowentakarl__text p {
+            font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1250));
+            font-size: calc(16px + 10 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .row-rowentakarl__image {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 46%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 1 46%;
+        flex: 0 1 46%
+    }
+
+    #rowentakarl .column-rowentakarl {
+        padding: 40px 0
+    }
+
+    #rowentakarl .column-rowentakarl__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px 10px
+    }
+
+    #rowentakarl .column-rowentakarl__text {
+        padding: 30px 15px 0
+    }
+
+    #rowentakarl .column-rowentakarl__text h2 {
+        font-size: 35px;
+        line-height: 1.2;
+        margin-bottom: 15px
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .column-rowentakarl__text h2 {
+            font-size: -webkit-calc(18px + 17 * ((100vw - 320px) / 1250));
+            font-size: calc(18px + 17 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .column-rowentakarl__text p {
+        font-size: 24px;
+        line-height: 1.2
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .column-rowentakarl__text p {
+            font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1250));
+            font-size: calc(16px + 8 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .box-rowentakarl {
+        padding-top: 20px
+    }
+
+    #rowentakarl .box-rowentakarl__text {
+        width: 80%;
+        margin: 0 auto 20px
+    }
+
+    #rowentakarl .box-rowentakarl__text h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .box-rowentakarl__text h2 {
+            font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 1250));
+            font-size: calc(18px + 22 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .box-rowentakarl__text p {
+        font-size: 26px;
+        line-height: 1.2;
+        text-align: center
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .box-rowentakarl__text p {
+            font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1250));
+            font-size: calc(16px + 10 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .stylist-rowentakarl {
+        padding-top: 40px
+    }
+
+    #rowentakarl .stylist-rowentakarl__box {
+        width: 80%;
+        margin: 0 auto 20px
+    }
+
+    #rowentakarl .stylist-rowentakarl__box h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .stylist-rowentakarl__box h2 {
+            font-size: -webkit-calc(18px + 22 * ((100vw - 320px) / 1250));
+            font-size: calc(18px + 22 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .stylist-rowentakarl__box p {
+        font-size: 26px;
+        line-height: 1.2;
+        text-align: center
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .stylist-rowentakarl__box p {
+            font-size: -webkit-calc(16px + 10 * ((100vw - 320px) / 1250));
+            font-size: calc(16px + 10 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .stylist-rowentakarl__media {
+        position: relative;
+        z-index: 2;
+        max-width: 1520px;
+        margin: 0 auto
+    }
+
+    #rowentakarl .stylist-rowentakarl__text {
+        position: absolute;
+        z-index: 5
+    }
+
+    #rowentakarl .stylist-rowentakarl__text h2 {
+        font-size: 26px;
+        line-height: 1.2
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .stylist-rowentakarl__text h2 {
+            font-size: -webkit-calc(10px + 16 * ((100vw - 320px) / 1250));
+            font-size: calc(10px + 16 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .stylist-rowentakarl__text p {
+        font-size: 18px;
+        line-height: 1.2
+    }
+
+    @media(max-width: 1570px) {
+        #rowentakarl .stylist-rowentakarl__text p {
+            font-size: -webkit-calc(10px + 8 * ((100vw - 320px) / 1250));
+            font-size: calc(10px + 8 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_1 {
+        top: 14.9277688604%;
+        right: 78.9473684211%
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_2 {
+        top: 40.1284109149%;
+        right: 72.3684210526%
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_3 {
+        top: 64.2054574639%;
+        right: 72.3684210526%
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_4 {
+        top: 14.9277688604%;
+        left: 75.6578947368%
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_5 {
+        top: 40.1284109149%;
+        left: 75.6578947368%
+    }
+
+    #rowentakarl .stylist-rowentakarl__text_6 {
+        top: 64.2054574639%;
+        left: 65.7894736842%
+    }
+
+    @media screen and (max-width: 991.98px) {
+        #rowentakarl .row-rowentakarl__inner {
+            gap: 20px
+        }
+    }
+
+    @media screen and (min-width: 767.98px) {
+        #rowentakarl .row-rowentakarl {
+            padding-top: 100px
+        }
+    }
+
+    @media screen and (min-width: 767.98px)and (max-width: 1570px) {
+        #rowentakarl .row-rowentakarl {
+            padding-top: -webkit-calc(20px + 80 * ((100vw - 320px) / 1250));
+            padding-top: calc(20px + 80 * ((100vw - 320px) / 1250))
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        #rowentakarl .row-rowentakarl__inner {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -moz-box-orient: vertical;
+            -moz-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        #rowentakarl .row-rowentakarl__text {
+            padding: 15px 0 10px;
+            width: 90%;
+            margin: 0 auto
+        }
+
+        #rowentakarl .row-rowentakarl__text h2,
+        #rowentakarl .row-rowentakarl__text p {
+            text-align: center
+        }
+
+        #rowentakarl .box-rowentakarl__text,
+        #rowentakarl .stylist-rowentakarl__box {
+            width: auto
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_1 {
+            top: 10%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_2 {
+            top: 38%
+        }
+    }
+
+    @media screen and (max-width: 668px) {
+        #rowentakarl .stylist-rowentakarl__text_4 {
+            top: 8%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_5 {
+            top: 35%
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        #rowentakarl .stylist-rowentakarl__text_5 {
+            top: 32%;
+            left: 70%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_4 {
+            top: 4%;
+            left: 70%
+        }
+
+        #rowentakarl .column-rowentakarl__text {
+            padding-top: 15px
+        }
+
+        #rowentakarl .column-rowentakarl__text h2 {
+            font-size: 22px;
+            text-align: center
+        }
+
+        #rowentakarl .column-rowentakarl__text p {
+            text-align: center
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_1 {
+            right: auto;
+            left: 0;
+            top: 6%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_2 {
+            top: 28%;
+            right: 70%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_3 {
+            top: 60%
+        }
+    }
+
+    @media screen and (max-width: 479.98px) {
+        #rowentakarl .row-rowentakarl__text {
+            width: auto
+        }
+
+        #rowentakarl .row-rowentakarl__text h2 {
+            margin-bottom: 10px
+        }
+
+        #rowentakarl .column-rowentakarl__text {
+            padding: 15px 0 0
+        }
+
+        #rowentakarl .column-rowentakarl {
+            padding-bottom: 0
+        }
+
+        #rowentakarl .stylist-rowentakarl__text h2 {
+            font-size: 10px
+        }
+
+        #rowentakarl .stylist-rowentakarl__text p {
+            font-size: 10px
+        }
+    }
+
+    @media screen and (max-width: 406px) {
+        #rowentakarl .stylist-rowentakarl__text_4 {
+            top: 0%;
+            left: 69%
+        }
+    }
+
+    @media screen and (max-width: 401px) {
+        #rowentakarl .stylist-rowentakarl__text_2 {
+            right: 66%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_3 {
+            /* right: 66%; */
+            top: 65%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_6 {
+            top: 67%;
+            left: 62%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_5 {
+            left: 66%
+        }
+
+        #rowentakarl .stylist-rowentakarl__text_4 {
+            left: 66%
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        #rowentakarl .stylist-rowentakarl__text h2 {
+            font-size: 8px
+        }
+
+        #rowentakarl .stylist-rowentakarl__text p {
+            font-size: 8px
+        }
+    }
+</style>
+
+<div id="rowentakarl">
+    <div class="rowentakarl__container">
+        <div class="rowentakarl__header header-rowentakarl">
+            <div class="header-rowentakarl__banner">
+                <img src="https://cdn.comfy.ua/media/x/img3/2659385/img1ua.png" alt="">
+            </div>
+        </div>
+        <div class="rowentakarl__row row-rowentakarl">
+            <div class="row-rowentakarl__inner row-rowentakarl__inner_rev">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>Гнучкі налаштування</h2>
+                        <p><b>Rowenta GLOW ADDICT CV613LF0</b> - це універсальний фен, що має 6 режимів
+                            швидкості та температури. Це гарантує швидке сушіння та ефективне укладання
+                            будь-якої складності. Незалежно від довжини та особливостей волосся ви точно
+                            будете задоволенні результатом.
+                        </p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img2.png" alt="">
+                </div>
+            </div>
+            <div class="row-rowentakarl__inner">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>Легкий та зручний</h2>
+                        <p>Завдяки гібридному мотору та ергономічному дизайну, конструктори зуміли
+                            досягти надлегкої ваги фену - усього 840 гр. Навіть при тривалому використанні
+                            ви не відчуваєте втоми чи напруги. Сміливо беріть його у ваші мандрівки, адже
+                            через свою компактність він не завдасть вам жодних незручностей.</p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rowentakarl__column column-rowentakarl">
+            <div class="column-rowentakarl__row">
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img5.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Універсальні
+                            аксесуари</h2>
+                        <p>Відкрийте для себе концентратори
+                            діаметром 6 та 9 мм для стандартного
+                            та спрямованого сушіння</p>
+                    </div>
+                </div>
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img6.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Режим подачі
+                            холодного повітря</h2>
+                        <p>Включайте подачу холодного повітря для
+                            ідеального результату, фіксації зачіски та
+                            відмінного вигляду протягом дня</p>
+                    </div>
+                </div>
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img7.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Легкий та
+                            потужний</h2>
+                        <p>Мотор потужністю 2400 Вт, компактні
+                            розміри та невелика вага Rowenta GLOW
+                            ADDICT ставлять його у одну лінійку з
+                            професійними фенами</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rowentakarl__box box-rowentakarl">
+            <div class="box-rowentakarl__text">
+                <h2>Ваш вишуканий образ наче на подіумі</h2>
+                <p>Фен Rowenta x KARL LAGERFELD − досконалий інструмент для створення різноманітних образів. Завдяки
+                    дифузору та двом
+                    насадкам можна з легкістю як вирівняти волосся, так і створити розкішні локони. Система Air-to-Care
+                    в тандемі з покриттям
+                    Keratin & Glow зробить волосся максимально еластичним, з вишуканим блиском, що притягує погляди та
+                    захоплює.</p>
+            </div>
+            <div class="box-rowentakarl__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2659385/img8.png" alt="">
+            </div>
+        </div>
+        <div class="rowentakarl__row row-rowentakarl">
+            <div class="row-rowentakarl__inner row-rowentakarl__inner_rev">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>Знімна задня решітка</h2>
+                        <p>Легкий догляд за феном та надійна робота без перегріву завдяки сітці,
+                            що знімається й дає змогу почистити фен. Це важливо для збереження
+                            працездатності фена протягом усього терміну експлуатації.</p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img9.png" alt="">
+                </div>
+            </div>
+            <div class="row-rowentakarl__inner">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>Елегантний
+                            мінімалістичний дизайн</h2>
+                        <p>Відмінна ергономіка фену Rowenta x KARL LAGERFELD − це свобода рухів для
+                            комфортного укладання щодня. Компактні розміри та невелика вага дозволяють
+                            носити фен навіть у дамській сумочці</p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img10.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rowentakarl__column column-rowentakarl">
+            <div class="column-rowentakarl__row">
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img11.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Різноманіття режимів</h2>
+                        <p>3 швидкості та 3 температурні режими
+                            надають змогу доглядати за волоссям
+                            на професійному рівні, не гірше, ніж в
+                            салонах краси</p>
+                    </div>
+                </div>
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img12ua.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Енергоощадна
+                            технологія Effiwatts</h2>
+                        <p>Ефективне та швидке сушіння з економним
+                            споживанням електроенергії досягається
+                            завдяки широкому спектру інтелектуальних
+                            функцій та компактному дизайну</p>
+                    </div>
+                </div>
+                <div class="column-rowentakarl__item">
+                    <div class="column-rowentakarl__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2659385/img13.png" alt="">
+                    </div>
+                    <div class="column-rowentakarl__text">
+                        <h2>Комфортна
+                            довжина шнура</h2>
+                        <p>Користуйтесь феном в зручних умовах без
+                            обмежень завдяки шнуру живлення
+                            довжиною 1.8 метрів</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rowentakarl__row row-rowentakarl">
+            <div class="row-rowentakarl__inner row-rowentakarl__inner_rev">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>Air-to-Care и
+                            Keratin & Glow</h2>
+                        <p>Завдяки новітній технології Air-to-Care та покриттю Keratin & Glow
+                            відчуйте силу іонів, що сприяє відновленню природного блиску та
+                            шовковистості волосся.</p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img14.png" alt="">
+                </div>
+            </div>
+            <div class="row-rowentakarl__inner">
+                <div class="row-rowentakarl__item">
+                    <div class="row-rowentakarl__text">
+                        <h2>All-In-One</h2>
+                        <p>З Rowenta x KARL LAGERFELD немає потреби у витратах на інші прилади
+                            для догляду за волоссям та укладання. Цей фен має все необхідне для
+                            легкого створення різних зачісок без відвідування професійного перукаря.</p>
+                    </div>
+                </div>
+                <div class="row-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img16_.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rowentakarl__stylist stylist-rowentakarl">
+            <div class="stylist-rowentakarl__box">
+                <h2>Rowenta x KARL LAGERFELD — ваш
+                    персональний стиліст</h2>
+                <p>Rowenta x KARL LAGERFELD − потужний фен для професійного стайлінгу. Він підійде навіть для тих, хто
+                    не має навичок
+                    різноманітного укладання волосся. Легкий та ефективний у використанні, цей прилад допомагає
+                    створювати нові образи майже
+                    на ходу, без зайвих витрат на стиліста.</p>
+            </div>
+            <div class="stylist-rowentakarl__media">
+                <div class="stylist-rowentakarl__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2659385/img18.png" alt="">
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_1">
+                    <h2>Бездоганне укладання</h2>
+                    <p>Концентратор 8 мм</p>
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_2">
+                    <h2>Фіксація холодним повітрям</h2>
+                    <p>Стійке укладання надовго</p>
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_3">
+                    <h2>Об'єм чи ідеальні локони</h2>
+                    <p>Все завдяки дифузору</p>
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_4">
+                    <h2>Легкий та ефективний</h2>
+                    <p>Потужний двигун 2400 Вт</p>
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_5">
+                    <h2>Технологія Air-to-Care</h2>
+                    <p>Додає сили та блиску
+                        вашому волоссю</p>
+                </div>
+                <div class="stylist-rowentakarl__text stylist-rowentakarl__text_6">
+                    <h2>Зручні налаштування</h2>
+                    <p>6 режимів швидкості та
+                        температури</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,923 @@
+#vestfrostbdw .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#vestfrostbdw .bc-description__content h3 {
+  text-align: left;
+}
+
+#vestfrostbdw h1, #vestfrostbdw h2, #vestfrostbdw h3, #vestfrostbdw h4, #vestfrostbdw h5, #vestfrostbdw h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#vestfrostbdw {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#vestfrostbdw h1, #vestfrostbdw h2, #vestfrostbdw h3, #vestfrostbdw h4, #vestfrostbdw h5, #vestfrostbdw h6, #vestfrostbdw p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#vestfrostbdw p::first-letter {
+  padding-left: 0;
+}
+
+#vestfrostbdw img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#vestfrostbdw img:hover {
+  opacity: 1;
+}
+
+#vestfrostbdw .vestfrostbdw__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#vestfrostbdw .header-vestfrostbdw__bg {
+  position: relative;
+  z-index: 2;
+}
+#vestfrostbdw .header-vestfrostbdw__logo {
+  position: absolute;
+  z-index: 5;
+  top: 4%;
+  right: 6%;
+  left: 72%;
+}
+#vestfrostbdw .header-vestfrostbdw__snoska {
+  position: absolute;
+  z-index: 5;
+  top: 17%;
+  right: 6%;
+  left: 44%;
+  width: 50%;
+}
+#vestfrostbdw .header-vestfrostbdw__snoska p {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #002C5C;
+  text-align: right;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .header-vestfrostbdw__snoska p {
+    font-size: -webkit-calc(14px + 10 * ((100vw - 320px) / 1120));
+    font-size: calc(14px + 10 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .header-vestfrostbdw__text {
+  position: absolute;
+  z-index: 5;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 55%;
+  right: 6%;
+  width: 40%;
+}
+#vestfrostbdw .header-vestfrostbdw__text p {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #002C5C;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .header-vestfrostbdw__text p {
+    font-size: -webkit-calc(14px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(14px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .header-vestfrostbdw__serv {
+  position: absolute;
+  z-index: 5;
+  bottom: 0%;
+  right: 6%;
+  left: 78%;
+}
+#vestfrostbdw .designe-vestfrostbdw__bg {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-left: 90px;
+  padding-right: 90px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__bg {
+    padding-top: -webkit-calc(20px + 70 * ((100vw - 320px) / 1120));
+    padding-top: calc(20px + 70 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__bg {
+    padding-bottom: -webkit-calc(20px + 70 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(20px + 70 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__bg {
+    padding-left: -webkit-calc(15px + 75 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 75 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__bg {
+    padding-right: -webkit-calc(15px + 75 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 75 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .designe-vestfrostbdw__box {
+  position: absolute;
+  z-index: 5;
+  top: 14%;
+  left: 6%;
+  width: 32%;
+}
+#vestfrostbdw .designe-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #002C5C;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .designe-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .designe-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .designe-vestfrostbdw__image img {
+  margin-right: 0;
+  padding-left: 100px;
+}
+
+#vestfrostbdw .energy-vestfrostbdw__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2196719/img10.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#vestfrostbdw .energy-vestfrostbdw__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+#vestfrostbdw .energy-vestfrostbdw__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .energy-vestfrostbdw__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .energy-vestfrostbdw__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#vestfrostbdw .energy-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .energy-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .energy-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .energy-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .eco-vestfrostbdw__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2196719/img11.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: 450px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#vestfrostbdw .eco-vestfrostbdw__box {
+  width: 70%;
+  padding: 0 15px;
+}
+#vestfrostbdw .eco-vestfrostbdw__icon {
+  margin-bottom: 20px;
+}
+#vestfrostbdw .eco-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .eco-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .eco-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .eco-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .sushka-vestfrostbdw__bg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__bg {
+    padding-top: -webkit-calc(20px + 30 * ((100vw - 320px) / 1120));
+    padding-top: calc(20px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__bg {
+    padding-bottom: -webkit-calc(20px + 30 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(20px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__bg {
+    padding-left: -webkit-calc(15px + 55 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 55 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__bg {
+    padding-right: -webkit-calc(15px + 35 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 35 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .sushka-vestfrostbdw__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#vestfrostbdw .sushka-vestfrostbdw__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .sushka-vestfrostbdw__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .sushka-vestfrostbdw__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#vestfrostbdw .sushka-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #002C5C;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .sushka-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .sushka-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .led-vestfrostbdw__title {
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__title {
+    padding-left: -webkit-calc(15px + 75 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 75 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__title {
+    padding-right: -webkit-calc(15px + 75 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 75 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .led-vestfrostbdw__title h2 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #002C5C;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__title h2 {
+    font-size: -webkit-calc(20px + 30 * ((100vw - 320px) / 1120));
+    font-size: calc(20px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .led-vestfrostbdw__bg {
+  position: relative;
+  z-index: 2;
+}
+#vestfrostbdw .led-vestfrostbdw__bg::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("https://cdn.comfy.ua/media/x/img3/2196719/img14.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: 500px;
+}
+#vestfrostbdw .led-vestfrostbdw__row {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+}
+#vestfrostbdw .led-vestfrostbdw__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .led-vestfrostbdw__box {
+  width: 80%;
+  margin: 0 auto;
+}
+#vestfrostbdw .led-vestfrostbdw__box h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__box h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .led-vestfrostbdw__box p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__box p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .led-vestfrostbdw__media {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  z-index: 2;
+  max-width: 489px;
+  margin: 0 auto;
+}
+#vestfrostbdw .led-vestfrostbdw__text {
+  position: absolute;
+  z-index: 5;
+  bottom: 5%;
+  left: 10%;
+  width: 80%;
+}
+#vestfrostbdw .led-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .led-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #002C5C;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .led-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .program-vestfrostbdw {
+  padding-left: 30px;
+  padding-right: 70px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw {
+    padding-left: -webkit-calc(15px + 15 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 15 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw {
+    padding-right: -webkit-calc(15px + 55 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 55 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw {
+    padding-top: -webkit-calc(20px + 70 * ((100vw - 320px) / 1120));
+    padding-top: calc(20px + 70 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw {
+    padding-bottom: -webkit-calc(20px + 70 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(20px + 70 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .program-vestfrostbdw__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+#vestfrostbdw .program-vestfrostbdw__media {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  position: relative;
+  z-index: 2;
+}
+#vestfrostbdw .program-vestfrostbdw__icon {
+  position: absolute;
+  z-index: 5;
+  top: 3%;
+  left: 3%;
+  right: 40%;
+}
+#vestfrostbdw .program-vestfrostbdw__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#vestfrostbdw .program-vestfrostbdw__list p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #002C5C;
+  padding-left: 20px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw__list p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .program-vestfrostbdw__list p::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 15px;
+  left: 0;
+  background-color: #002C5C;
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+#vestfrostbdw .program-vestfrostbdw__list p:not(:last-child) {
+  margin-bottom: 30px;
+}
+#vestfrostbdw .program-vestfrostbdw__list p span {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .program-vestfrostbdw__list p span {
+    font-size: -webkit-calc(18px + 14 * ((100vw - 320px) / 1120));
+    font-size: calc(18px + 14 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .safe-vestfrostbdw__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2196719/img18.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#vestfrostbdw .safe-vestfrostbdw__box {
+  width: 70%;
+  padding: 0 15px;
+}
+#vestfrostbdw .safe-vestfrostbdw__icon {
+  margin-bottom: 15px;
+}
+#vestfrostbdw .safe-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .safe-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .safe-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .safe-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+#vestfrostbdw .safeone-vestfrostbdw__bg {
+  background: url("https://cdn.comfy.ua/media/x/img3/2196719/img20.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#vestfrostbdw .safeone-vestfrostbdw__box {
+  width: 70%;
+  padding: 0 15px;
+}
+#vestfrostbdw .safeone-vestfrostbdw__icon {
+  margin-bottom: 15px;
+}
+#vestfrostbdw .safeone-vestfrostbdw__text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #00AFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .safeone-vestfrostbdw__text h2 {
+    font-size: -webkit-calc(16px + 16 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+#vestfrostbdw .safeone-vestfrostbdw__text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #vestfrostbdw .safeone-vestfrostbdw__text p {
+    font-size: -webkit-calc(16px + 8 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #vestfrostbdw .designe-vestfrostbdw__box {
+    width: 35%;
+  }
+  #vestfrostbdw .sushka-vestfrostbdw__text {
+    width: 90%;
+  }
+  #vestfrostbdw .led-vestfrostbdw__bg::after {
+    min-height: 449px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #vestfrostbdw .program-vestfrostbdw {
+    padding: 20px 15px;
+  }
+  #vestfrostbdw .program-vestfrostbdw__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #vestfrostbdw .header-vestfrostbdw__serv {
+    right: 2%;
+    left: 83%;
+  }
+  #vestfrostbdw .header-vestfrostbdw__text {
+    right: 2%;
+    width: 44%;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__box {
+    top: 10%;
+    left: 3%;
+    width: 40%;
+  }
+  #vestfrostbdw .energy-vestfrostbdw__text {
+    width: 90%;
+  }
+  #vestfrostbdw .sushka-vestfrostbdw__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #vestfrostbdw .sushka-vestfrostbdw__text {
+    width: auto;
+  }
+  #vestfrostbdw .sushka-vestfrostbdw__text h2, #vestfrostbdw .sushka-vestfrostbdw__text p {
+    text-align: center;
+  }
+  #vestfrostbdw .led-vestfrostbdw__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  #vestfrostbdw .led-vestfrostbdw__bg {
+    background: url("https://cdn.comfy.ua/media/x/img3/2196719/img14.png") 40% 0 no-repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    min-height: 500px;
+    padding: 40px 0;
+  }
+  #vestfrostbdw .led-vestfrostbdw__bg::after {
+    display: none;
+  }
+  #vestfrostbdw .led-vestfrostbdw__box {
+    width: auto;
+  }
+  #vestfrostbdw .led-vestfrostbdw__box h2, #vestfrostbdw .led-vestfrostbdw__box p {
+    text-align: center;
+  }
+  #vestfrostbdw .led-vestfrostbdw__text {
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #vestfrostbdw .sushka-vestfrostbdw__bg {
+    padding: 20px 15px;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__box {
+    position: unset;
+    width: auto;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__text {
+    margin-bottom: 20px;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__text h2, #vestfrostbdw .designe-vestfrostbdw__text p {
+    text-align: center;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__image img {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  #vestfrostbdw .designe-vestfrostbdw__bg {
+    padding: 20px 15px;
+  }
+  #vestfrostbdw .energy-vestfrostbdw__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 20px 15px;
+  }
+  #vestfrostbdw .energy-vestfrostbdw__text,
+  #vestfrostbdw .safe-vestfrostbdw__box,
+  #vestfrostbdw .safeone-vestfrostbdw__box {
+    width: auto;
+  }
+  #vestfrostbdw .energy-vestfrostbdw__text h2, #vestfrostbdw .energy-vestfrostbdw__text p,
+  #vestfrostbdw .safe-vestfrostbdw__box h2,
+  #vestfrostbdw .safe-vestfrostbdw__box p,
+  #vestfrostbdw .safeone-vestfrostbdw__box h2,
+  #vestfrostbdw .safeone-vestfrostbdw__box p {
+    text-align: center;
+  }
+  #vestfrostbdw .eco-vestfrostbdw__bg,
+  #vestfrostbdw .safe-vestfrostbdw__bg,
+  #vestfrostbdw .safeone-vestfrostbdw__bg {
+    min-height: 300px;
+  }
+  #vestfrostbdw .eco-vestfrostbdw__icon,
+  #vestfrostbdw .safe-vestfrostbdw__icon,
+  #vestfrostbdw .safeone-vestfrostbdw__icon {
+    margin-bottom: 10px;
+  }
+  #vestfrostbdw .eco-vestfrostbdw__icon img,
+  #vestfrostbdw .safe-vestfrostbdw__icon img,
+  #vestfrostbdw .safeone-vestfrostbdw__icon img {
+    width: 50px;
+  }
+  #vestfrostbdw .eco-vestfrostbdw__box {
+    width: auto;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #vestfrostbdw .header-vestfrostbdw__snoska {
+    right: 2%;
+    left: 38%;
+    width: 60%;
+  }
+  #vestfrostbdw .header-vestfrostbdw__text {
+    width: 47%;
+    top: 58%;
+  }
+  #vestfrostbdw .program-vestfrostbdw__list p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  #vestfrostbdw .led-vestfrostbdw__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 417px) {
+  #vestfrostbdw .header-vestfrostbdw__text {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    top: auto;
+    bottom: 2%;
+    left: 2%;
+    width: 80%;
+  }
+  #vestfrostbdw .led-vestfrostbdw__text {
+    bottom: 4%;
+  }
+}/*# sourceMappingURL=style.css.map */
