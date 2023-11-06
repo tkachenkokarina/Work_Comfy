@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+#layout-template
+   width: 100%
+   height: auto
+   position: relative
+   overflow: hidden
+   background: #fff
+   font-family: 'Roboto', sans-serif
+   h2, h3, h4, h5, h6, p, img
+      padding: 0
+      margin: 0
+      display: block
+   img
+      max-width: 100%
+      margin: 0 auto
+   h2
+      font-size: 35px
+      line-height: 1.2
+   h3
+      font-size: 25px
+      line-height: 1.2
+      font-weight: 600
+   p
+      font-size: 25px
+      line-height: 1.2
+      
+.main-container.page
+   padding-left: 0
+   padding-right: 0
+.bc-description__content p:first-letter
+   padding-left: 0 !important
+//end default styles
+
+// Тут пишем sass стили
+body 
+   margin: 0
+.rowenta__container
+   max-width: 1440px
+   margin: 0 auto
+   padding: 0 15px
+.profile
+   position: relative
+.profile .profile-image
+   height: 810px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2659379/img_1.jpg')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+.profile2 .profile-image
+   height: 726px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2659379/img_7.jpg')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+.profile3 .profile-image
+   height: 726px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2659379/img_8.jpg')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+.profile .image-h 
+   height: auto
+.profile__title
+   position: absolute
+   top: 25%
+   right: 50%
+   z-index: 10
+.prof-title__h3
+   padding: 10px 0
+.prof-title__h2
+   border-bottom: 1px solid #fff
+.prof-title__p
+   max-width: 480px
+   padding: 10px 20px 
+   background: #fff
+   border-radius: 20px
+#layout-template .prof-title__h3 h3
+   color: #fff
+   text-align: center
+#layout-template .prof-title__h2 h2
+   color: #fff
+   text-align: center
+#layout-template .prof-title__p p
+   text-align: center
+.trimmer.trimmer-items
+   align-items: flex-start
+   
+.trimmer__content
+   max-width: 480px
+   display: flex
+   flex-direction: column
+   align-items: center
+   padding: 10px
+.content__images
+   width: 300px
+.content__text
+.text__p
+   padding: 10px 0
+#layout-template .text__p p 
+   text-align: center
+.profile__h2
+   width: 90%
+   margin: 20px auto
+#layout-template  .profile__h2 h2
+   text-align: center
+.profile__p
+   width: 90%
+   margin: 0 auto
+   padding-bottom: 20px
+#layout-template  .profile__p p
+   text-align: center
+.trimmer
+   margin-bottom: 20px
+   display: flex
+   flex-direction: row
+   align-items: center
+   justify-content: center
+   padding-top: 20px 
+.trimmer__image
+   width: 50%
+.trimmer__title
+   padding: 0 20px
+   width: 50%
+.title-color 
+   background: #343d4c
+   height: auto
+.title__h2
+   margin: 20px 0
+.title__p
+   margin-bottom: 20px
+.trimmer-revers
+   flex-direction: row-reverse
+#layout-template  .title-before p
+   color: #b6b6b6
+   font-size: 20px
+.profile2 
+   position: relative
+.profile2 .profile__title
+   position: absolute
+   right: 2% 
+   z-index: 10
+.profile2 .prof-title__h2
+   border-bottom: 0
+   padding: 0 10px 50px 10px
+.profile2 .prof-title__p
+   background: none
+#layout-template .profile2 .prof-title__p p
+   color: #fff
+.profile3 
+   position: relative
+.profile3 .profile__title
+   position: absolute
+   top: 5%
+   z-index: 10px
+.profile3 .prof-title__h2
+   border-bottom: 0
+   padding: 0 10px 10px 10px
+.profile3 .prof-title__p
+   background: none
+   max-width: 768px  
+#layout-template .profile3 .prof-title__p p
+   color: #fff
+//media*******************
+// @media (min-width: 1920px)
+// @media (max-width: 1440px)
+@media (max-width: 1024px)
+   #layout-template h2
+      font-size: 30px
+   #layout-template p
+      font-size: 20px
+   #layout-template  .title-before p
+      font-size: 16px
+   .trimmer.trimmer-items
+      flex-wrap: wrap
+   .profile2 .prof-title__h2
+      padding: 0 10px 20px 10px
+   .profile3 .profile__title
+      top: 2%
+      right: 30%
+   .profile .profile-image
+      height: 576px
+   .profile2 .profile-image
+      height: 576px
+   .profile3 .profile-image
+      height: 576px
+@media (max-width: 768px)
+   #layout-template  .profile__p p
+      text-align: left
+   #layout-template  .profile__h2 h2
+      text-align: left
+   .profile .profile-image
+      height: 432px
+   .profile2 .profile-image
+      height: 432px
+   .profile3 .profile-image
+      height: 432px
+   .trimmer
+      flex-direction: column-reverse
+   .trimmer.trimmer-items
+      align-items: center
+   .trimmer__content
+      max-width: 100%
+   .trimmer__image
+      width: 100%
+   .prof-title__p
+      padding: 10px 
+   .trimmer__title
+      padding: 0
+      width: 100%
+   .profile__title
+      top: 20%
+      right: 40%
+   #layout-template .prof-title__h3 h3
+      font-size: 20px
+   #layout-template .prof-title__p p
+      font-size: 16px
+   .profile2 .profile__title
+      top: 3%
+   .profile3 .profile__title
+      top: 0%
+      right: 0
+   .profile3 .prof-title__p
+      padding: 0 10px
+@media (max-width: 480px)
+   #layout-template h2
+      font-size: 20px
+   #layout-template p
+      font-size: 16px
+   #layout-template  .title-before p
+      font-size: 14px
+   #layout-template .prof-title__h3 h3
+      font-size: 16px
+   #layout-template .prof-title__h2 h2
+      font-size: 20px
+   #layout-template .prof-title__p p
+      font-size: 14px
+   .profile__p
+      width: 100%
+   .profile__h2
+      width: 100%
+   .profile .profile-image
+      height: 400px
+   .profile2 .profile-image
+      height: 400px
+   .profile3 .profile-image
+      height: 400px
+   .profile__title
+      position: absolute
+      top: 20%
+      right: 0
+      left: 0
+      padding: 10px 0
+   .prof-title__h2
+      border: 0
+   .prof-title__p
+      max-width: 320px
+      margin: 0 auto
+   .content__images
+      width: auto
+      max-width: 300px
+   .profile2 .profile__title
+      position: absolute
+      top: 5%  
+      right: 0
+   .profile2 .prof-title__h2
+      padding: 0 10px 
+   .profile3 .profile__title
+      position: absolute
+      top: 5%
+      right: 0
+// @media (max-width: 320px)
+// @media (max-width: 812px) and (orientation: landscape)
