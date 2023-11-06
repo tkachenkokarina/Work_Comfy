@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+#layout-template
+   width: 100%
+   height: auto
+   position: relative
+   overflow: hidden
+   background: #fff
+   font-family: 'Roboto', sans-serif
+   h2, h3, h4, h5, h6, p, img
+      padding: 0
+      margin: 0
+      display: block
+   img
+      max-width: 100%
+      margin: 0 auto
+   h2
+      font-size: 30px
+      line-height: 1.2
+      text-align: left
+      color: #1A2E45
+   h3
+      font-size: 30px
+      line-height: 1.2
+      text-align: left
+      color: #1A2E45
+      font-weight: 600
+   p
+      font-size: 20px
+      line-height: 1.2
+      text-align: left
+      color: #1A2E45
+   // И так далее
+.main-container.page
+   padding-left: 0
+   padding-right: 0
+.bc-description__content p:first-letter
+   padding-left: 0 !important
+//end default styles
+
+// Тут пишем sass стили
+body
+   margin: 0
+.grifon__container
+   max-width: 1300px 
+   margin: 0 auto
+   background: #F1F7FA
+.grifon__namebg
+   height: 600px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_1.png')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center   
+   display: flex
+   justify-content: center
+   align-items: center
+.grifon__flex
+   display: flex
+   flex-direction: row
+   align-items: center
+   position: relative
+.item__title
+   width: 50%
+.title__h3
+   padding: 20px 0
+.title__h2
+#layout-template .h3-color h3
+   font-size: 35px
+   text-align: center
+   color: #fff
+#layout-template .h2-color h2
+   font-size: 40px
+   text-align: center
+   color: #215586
+   letter-spacing: 20px
+.item__images
+   width: 50%
+.grifon__content
+   background: #F1F7FA
+.content-padd
+   padding: 50px 0
+.grifon__content  .title__h3
+   padding: 20px 50px  
+.title__p 
+   padding: 0 50px
+.flex-revers
+   flex-direction: row-reverse
+.title__icons
+   display: flex
+   flex-direction: row
+   align-items: center
+   position: absolute
+   top: 35%
+   right: 55%
+   z-index: 10
+.icons__icon
+.icons__text
+   max-width: 240px
+   padding-left: 20px
+.grifon__safebg
+   height: 804px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_5.png')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center   
+.safe__content
+   position: relative
+   top: 20%
+   max-width: 480px
+   background: #021E2AC7
+   padding: 50px
+.safe__content .title__icons
+   position: relative
+   top: 0
+   right: 0
+.content__h3
+   padding: 20px 0
+.content__p
+   padding-bottom: 20px
+#layout-template .content__h3 h3
+   color: #DCE9F8
+#layout-template .content__p p
+   color: #fff
+#layout-template .grifon__safebg .icons__text p
+   color: #fff
+.grifon__freezbg
+   height: 655px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_6.png')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+   position: relative
+.grifon__freezbg .grifon__flex
+   position: absolute
+   bottom: 20%
+   align-items: center
+   z-index: 10
+.grifon__freezbg .title__icons
+   position: relative
+   top: 0
+   right: 0
+   padding: 0 50px
+.grifon__freezbg  .title__h3
+   padding: 20px 50px
+   max-width: 450px
+.content-padd-top
+   padding-top: 50px
+.volumebg
+   height: 504px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_9.png')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+   position: relative
+.volumebg
+   &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 50%
+      width: 500px
+      height: 320px
+      background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_10.png')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+.volumebg .safe__content
+   position: absolute
+   right: 0
+   z-index: 10
+.safe__p
+   padding: 50px 0
+   max-width: 55% 
+#layout-template .safe__p p
+   font-size: 30px
+   color: #fff
+   text-align: center
+.namebg-darkblue
+   background: #00202D
+   height: auto
+.namebg-darkblue .title__h3
+   padding: 20px 50px
+#layout-template .namebg-darkblue .title__h3 h3
+   color: #DCE9F8
+#layout-template .namebg-darkblue .title__p p
+   color: #fff
+//media*******************
+// @media (min-width: 1920px)
+// @media (max-width: 1200px)
+@media (max-width: 1024px)
+   #layout-template .h3-color h3
+      font-size: 25px
+   #layout-template .h2-color h2
+      font-size: 30px
+      letter-spacing: normal
+   #layout-template h3
+      font-size: 20px
+      text-align: center
+   #layout-template p
+      font-size: 20px
+      text-align: center
+   .grifon__namebg
+      height: 544px
+      background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_14.png')
+      align-items: flex-start
+   .grifon__flex
+      flex-direction: column
+   .item__title
+      width: auto
+      max-width: 380px
+   .item__images
+      width: 100%
+   .grifon__namebg .title__h2
+      padding-bottom: 30px
+   .grifon__content .title__h3
+      padding: 20px 15px
+   .title__p
+      padding: 0 15px 20px 15px 
+   .title__icons
+      top: 40%
+      right: 0
+      left: 0
+      justify-content: center
+   .grifon__safebg
+      height: 586px
+      background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_16.png')
+   .safe__content
+      top: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+      padding: 0 20px
+   .grifon__freezbg
+      height: 821px
+   .grifon__freezbg .grifon__flex
+      position: relative
+      bottom: 0
+   .content-padd
+      padding: 0
+   .grifon__freezbg .title__h3
+      padding: 20px 15px
+   .grifon__freezbg .title__icons
+      padding: 0 15px
+   .volumebg
+      height: 550px
+      background-image: url('https://cdn.comfy.ua/media/x/img3/2467503/img_18.png')
+   .safe__p
+      max-width: 100%   
+      padding-top: 190px
+      padding-bottom: 0
+   .volumebg::after
+      width: 390px
+      height: 250px
+      background-size: contain
+      right: 28%    
+   .grifon__namebg.namebg-darkblue
+      background: #00202D
+      height: auto
+   .namebg-darkblue .title__h3
+      padding: 20px 15px
+// @media (max-width: 900px)
+   
+// @media (max-width: 768px)
+   
+@media (max-width: 480px)
+   #layout-template h2
+      font-size: 20px
+   #layout-template p
+      font-size: 16px
+   #layout-template .h3-color h3
+      font-size: 20px
+   #layout-template .h2-color h2
+      font-size: 20px
+   .title__icons
+      top: 50%
+   .icons__text
+      padding-left: 10px
+   .grifon__freezbg
+      height: auto
+   .safe__p
+      padding-top: 220px
+   .volumebg::after
+      right: 0
+@media (max-width: 321px)
+// @media (max-width: 812px) and (orientation: landscape)
