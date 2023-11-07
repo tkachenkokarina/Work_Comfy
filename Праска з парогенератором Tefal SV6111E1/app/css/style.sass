@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+#layout-template
+   width: 100%
+   height: auto
+   position: relative
+   overflow: hidden
+   background: #fff
+   font-family: 'Roboto', sans-serif
+   h2, h3, h4, h5, h6, p, img
+      padding: 0
+      margin: 0
+      display: block
+   img
+      max-width: 100%
+      margin: 0 auto
+   h2
+      font-size: 35px
+      line-height: 1.2
+      text-align: left
+   h3
+      font-size: 25px
+      line-height: 1.2
+      font-weight: 600
+   p
+      font-size: 25px
+      line-height: 1.2
+      text-align: left
+      
+.main-container.page
+   padding-left: 0
+   padding-right: 0
+.bc-description__content p:first-letter
+   padding-left: 0 !important
+//end default styles
+
+// Тут пишем sass стили
+body 
+   margin: 0
+.tefal__container
+   max-width: 1536px
+   margin: 0 auto
+   padding: 0 15px
+.tefal__content
+   display: flex
+   flex-direction: row
+   align-items: center
+   padding-bottom: 20px
+.content-revers
+   flex-direction: row-reverse
+.content__column 
+   flex-direction: column
+.tefal__content .content__images
+   width: 100%
+.tefal__content .content__title
+   width: 100%
+#layout-template .title-center .title__h2 h2
+   text-align: center
+#layout-template .title-center .title__p p
+   text-align: center
+.content__images
+   width: 40%
+.content__title
+   width: 60%
+   padding: 0 15px
+.title__h2
+   padding: 20px 0 
+.title__p
+   padding-bottom: 20px
+//media*******************
+// @media (min-width: 1920px)
+// @media (max-width: 1440px)
+@media (max-width: 1024px)
+   #layout-template h2
+      font-size: 30px
+   #layout-template p
+      font-size: 20px
+@media (max-width: 768px)
+   .tefal__content
+      flex-direction: column-reverse
+   .content__images
+      width: 100%
+   .content__title
+      width: 100%
+@media (max-width: 480px)
+   #layout-template h2
+      font-size: 20px
+   #layout-template p
+      font-size: 16px
+   
+// @media (max-width: 320px)
+// @media (max-width: 812px) and (orientation: landscape)
