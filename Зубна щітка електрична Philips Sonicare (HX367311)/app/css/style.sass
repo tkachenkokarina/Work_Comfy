@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+#layout-template
+   width: 100%
+   height: auto
+   position: relative
+   overflow: hidden
+   background: #fff
+   font-family: 'Roboto', sans-serif
+   h2, h3, h4, h5, h6, p, img
+      padding: 0
+      margin: 0
+      display: block
+   img
+      max-width: 100%
+      margin: 0 auto
+   h2
+      font-size: 36px
+      line-height: 120%
+      text-align: center
+      font-weight: 700
+   h3
+      // Стили с макета
+   p
+      font-size: 24px
+      line-height: 120%
+      font-weight: 400
+      text-align: center
+   // И так далее
+.main-container.page
+   padding-left: 0
+   padding-right: 0
+.bc-description__content p:first-letter
+   padding-left: 0 !important
+//end default styles
+
+// Тут пишем sass стили
+body
+   margin: 0
+.philips__container
+   max-width: 1536px
+   margin: 0 auto
+   padding: 0 15px 
+.coffee
+   padding: 20px 0
+.coffee__h2
+   margin: 20px 0
+.coffee__p
+   margin-bottom: 40px
+.machine__icons
+   display: flex
+   flex-direction: row
+   justify-content: space-evenly
+   flex-wrap: wrap
+.item__icons
+   max-width: 320px
+.icons__image
+   min-width: 30%  
+.icons__name
+   padding: 20px 15px
+.option__name
+.lists__function
+   padding-bottom: 20px
+   display: flex
+   flex-direction: row
+   align-items: center
+.item__lists
+   max-width: 35%
+#layout-template   .item__lists ul
+   margin: 10px 0
+   padding-left: 40px
+#layout-template   .item__lists ul li
+   list-style-type: disc
+   font-size: 24px
+   line-height: 1.4
+.item__images
+   min-width: 30% 
+.item__trimmer
+   display: flex
+   flex-direction: row
+   align-items: flex-end
+.trimmer__icons
+   padding: 0 10px
+.icon__p-up
+.icon__images
+   min-width: 130px
+.icon__p-down
+.item__attachments
+   display: flex
+   flex-direction: column
+   align-items: flex-start
+.attachments__column
+   display: flex
+   flex-direction: row
+   align-items: center
+   justify-content: space-between
+.attachments__icons
+   padding-right: 15px
+.icons__icon
+#layout-template .function__flex p
+   font-size: 16px
+   color: #fff
+#layout-template  .icons__text-list p
+   text-align: left
+#layout-template   .attachments__lists ul
+   margin: 10px 0
+   padding-left: 40px
+#layout-template   .attachments__lists ul li
+   list-style-type: disc
+   color: #fff
+   font-size: 16px
+   line-height: 120%
+.desc
+   display: flex
+   flex-direction: row
+   align-items: center
+   margin-bottom: 50px
+.item__image
+   width: 50%
+.item__text
+   width: 50%
+.text__h2
+   margin: 15px 20px
+.text__p
+   max-width: 649px
+   margin: 0 20px
+#layout-template  .text__h2 h2
+   text-align: left
+#layout-template  .text__p p
+   text-align: left
+.desc-revers
+   flex-direction: row-reverse
+.machine
+.machine__h2
+   margin: 20px 0
+.machine__flex
+   display: flex
+   flex-direction: column
+.item__option
+   display: flex
+   flex-direction: row
+   justify-content: space-between
+   align-items: center
+.option__image
+   min-width: 296px
+   max-width: 370px
+.option__name
+   min-width: 296px
+   margin: 30px 0
+   padding: 20px 0
+   max-width: 320px
+.option__p
+   padding: 20px 0
+   position: sticky 
+   left: 15px
+#layout-template  .option__p p 
+   text-align: left
+   padding-left: 15px
+.option__drinks
+   min-width: 296px
+   padding: 20px 0
+   max-width: 370px
+#layout-template .drinks__lists ul
+   margin: 0
+   padding-left: 30px
+#layout-template .drinks__lists ul li
+   list-style-type: disc
+   line-height: 120%
+   font-size: 22px
+.machine__p
+   width: 90%
+   margin: 0 auto
+   padding-top: 50px
+#layout-template .machine__p p
+   font-size: 16px
+   font-weight: 300
+   line-height: 120%
+   text-align: left
+.option-bg
+   min-width: 1480px
+   background: rgba(38, 154, 145, 0.15)
+//media*******************
+// @media (min-width: 1920px)
+@media (max-width: 1480px) 
+   .machine__flex
+      overflow-x: auto
+@media (max-width: 1024px) 
+   #layout-template h2
+      font-size: 30px
+   #layout-template p
+      font-size: 25px
+   #layout-template .care__lists ul li
+      font-size: 23px
+   #layout-template   .item__lists ul li
+      font-size: 23px 
+   .lists__function
+      flex-direction: column
+   .item__lists
+      max-width: 100%   
+   .item__images
+      min-width: auto
+@media (max-width: 768px)
+   .function__flex
+      flex-direction: column
+   .attachments__column
+      flex-wrap: wrap
+      justify-content: center
+   .attachments__icons
+      padding: 0 15px
+   #layout-template .title__h2 h2
+      text-align: center
+   #layout-template .title__p p
+      text-align: center
+   .item__icons
+      margin-left: 0
+   .item__title
+      margin-left: 0
+   .desc
+      flex-direction: column
+   .item__image
+      width: 100%
+   .item__text
+      width: 100%
+   .text__h2
+      margin: 20px 0
+   .text__p
+      margin: 0
+   #layout-template .text__h2 h2
+      text-align: center
+   #layout-template .text__p p
+      text-align: center
+@media (max-width: 480px)
+   #layout-template h2
+      font-size: 20px
+   #layout-template p
+      font-size: 16px
+   #layout-template .care__lists ul li
+      font-size: 14px 
+      line-height: 20px
+   #layout-template   .attachments__lists ul li
+      font-size: 16px
+   #layout-template .drinks__lists ul li
+      font-size: 16px
+   #layout-template   .item__lists ul li
+      font-size: 16px
+   .machine__p
+      width: 100%
+      padding-bottom: 10px
+   #layout-template .machine__p p
+      font-size: 14px
+// @media (max-width: 321px)
+// @media (max-width: 812px) and (orientation: landscape)
