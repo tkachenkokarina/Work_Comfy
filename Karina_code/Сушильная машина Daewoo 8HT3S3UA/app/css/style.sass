@@ -1,0 +1,491 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #daewoocn a
+//     color: inherit
+//     text-decoration: none
+
+// #daewoocn
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#daewoocn .bc-description__content p
+    margin-bottom: 0
+
+#daewoocn .bc-description__content h3
+    text-align: left
+
+#daewoocn
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#daewoocn
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    //box-sizing: border-box
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#daewoocn p::first-letter
+    padding-left: 0
+
+#daewoocn img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#daewoocn img:hover
+    opacity: 1
+
+#daewoocn .daewoocn__container
+    max-width: 1440px
+    margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+#daewoocn
+    h2
+        @include adaptiv-value("font-size", 32, 20, 1)
+        font-weight: 800
+        line-height: 1.2
+        text-transform: uppercase
+        margin-bottom: 10px
+    p
+        @include adaptiv-value("font-size", 24, 16, 1)
+        font-weight: 300
+        line-height: 1.2
+
+#daewoocn .header-daewoocn
+    &__bg
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: calc(75 / 800 * 100%)
+        left: calc(867 / 1440 * 100%)
+        right: calc(90 / 1440 * 100%)
+    &__image
+
+#daewoocn .shafa-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img3.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 505px
+        display: flex
+        align-items: center
+    &__text
+        width: 80%
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            color: #A8741A
+            text-align: center
+        p
+            color: #FFFFFF
+            text-align: center
+
+#daewoocn .pump-daewoocn
+    padding-top: 70px
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            color: #A8741A
+    &__image
+        flex: 0 1 50%
+
+#daewoocn .praska-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img5.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 680px
+        position: relative
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: calc(90 / 1440 * 100%)
+        width: 40%
+        h2,p
+            color: #FFFFFF
+
+#daewoocn .sushka-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img12.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 680px
+        position: relative
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: calc(90 / 1440 * 100%)
+        width: 40%
+        h2,p
+            color: #FFFFFF
+        p
+            &:not(:last-child)
+                margin-bottom: 15px
+
+#daewoocn .vovna-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img13.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 540px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            z-index: 1
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #7070705d
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: calc(760 / 1440 * 100%)
+        right: calc(116 / 1440 * 100%)
+        // width: 40%
+        h2,p
+            color: #FFFFFF
+
+#daewoocn .energy-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img14.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 500px
+        display: flex
+        align-items: center
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            color: #A8741A
+        p
+            color: #FFFFFF
+    &__image
+        flex: 0 1 50%
+
+#daewoocn .column-daewoocn
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2556643/img7.png') 0 0 no-repeat
+        background-size: cover
+        //min-height: 500px
+        padding-top: 37px
+        position: relative
+        z-index: 2
+    &__line
+        position: absolute
+        z-index: 3
+        &_1
+            top: calc(134 / 541 * 100%)
+            right: calc(500 / 1440 * 100%)
+            left: calc(480 / 1440 * 100%)
+            //left: 32%
+            //right: 34%
+        &_2
+            top: calc(231 / 541 * 100%)
+            right: calc(449 / 1440 * 100%)
+            left: calc(515 / 1440 * 100%)
+        &_3
+            top: calc(231 / 541 * 100%)
+            right: calc(449 / 1440 * 100%)
+            left: calc(460 / 1440 * 100%)
+    &__row
+        // position: relative
+        display: flex
+        flex-direction: row-reverse
+        justify-content: start
+        //align-items: center
+        //justify-content: space-between
+        //gap: 40px
+    &__item
+        // flex: 0 1 520px
+        //padding-right: 30px
+        @include adaptiv-value("padding-right", 30, 15, 1)
+        //@include adaptiv-value("padding-right", 96, 15, 1)
+        @include adaptiv-value("padding-top", 80, 10, 1)
+        //padding-top: 80px
+        flex: 0 1 30%
+        box-sizing: border-box
+    &__inner
+        position: relative
+        z-index: 7
+        display: flex
+        align-items: center
+        gap: 30px
+        &:not(:last-child)
+            //margin-bottom: 40px
+            @include adaptiv-value("margin-bottom", 40, 10, 1)
+    &__icon
+        flex: 0 0 76px
+        position: relative
+        z-index: 6
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            background: url('https://cdn.comfy.ua/media/x/img3/2556643/img11.png') 0 0 no-repeat
+            background-size: cover
+            width: 77px
+            height: 77px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    &__text
+    &__image
+        flex: 0 1 70%
+
+//===========MEDIA=============================================================================================================================================
+
+// @media screen and (max-width: 1397px)
+//     #daewoocn .column-daewoocn__line_2
+//         left: 37%
+//     #daewoocn .column-daewoocn__line_3
+//         left: 34%
+
+// @media screen and (max-width: 1337px)
+//     #daewoocn .column-daewoocn__line_3
+//         left: 36%
+//     #daewoocn .column-daewoocn__line_2
+//         left: 39%
+//     #daewoocn .column-daewoocn__line_1
+//         left: 35%
+
+// @media screen and (max-width: 1237px)
+//     #daewoocn .column-daewoocn__line_2
+//         top: 42%
+//         right: 30%
+//         left: 43%
+//     #daewoocn .column-daewoocn__line_3
+//         top: 42%
+//         //right: 30%
+//         left: 38%
+//     // #daewoocn .column-daewoocn__item
+//     //     padding-top: 80px
+//     //     padding-right: 20px
+//     #daewoocn .column-daewoocn__line_1
+//         left: 39%
+//         top: 27%
+//         right: 31%
+
+@media screen and (max-width: 1409px)
+    #daewoocn .column-daewoocn__inner
+        gap: 20px
+    #daewoocn .column-daewoocn__item
+        padding-right: 10px
+        //padding-top: 29px
+// @media screen and (max-width: 1205px)
+//     #daewoocn .column-daewoocn__inner:not(:last-child)
+//         margin-bottom: 24px
+
+@media screen and (max-width: 1270px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 32px
+
+@media screen and (max-width: 1139px)
+    #daewoocn .column-daewoocn__item
+        flex: 0 1 40%
+        padding-top: 47px
+    #daewoocn .column-daewoocn__image
+        flex: 0 1 60%
+    #daewoocn .column-daewoocn__icon
+        flex: 0 0 40px
+    #daewoocn .column-daewoocn__icon::after
+        width: 63px
+        height: 63px
+    #daewoocn .column-daewoocn__inner
+        gap: 30px
+
+// @media screen and (max-width: 1125px)
+//     #daewoocn .column-daewoocn__row
+//         // flex-direction: column
+//         // align-items: flex-start
+//         align-items: center
+//         gap: 20px
+//     #daewoocn .column-daewoocn__line
+//         display: none
+//     // #daewoocn .column-daewoocn__item
+//     //     flex: 0 1 auto
+//     //     padding: 0 20px 0 0
+//         //margin-left: auto
+//     #daewoocn .column-daewoocn__inner:not(:last-child)
+//         margin-bottom: 40px
+
+// @media screen and (max-width: 1147px)
+//     #daewoocn .column-daewoocn__inner:not(:last-child)
+//         margin-bottom: 23px
+//     #daewoocn .column-daewoocn__line_2
+//         top: 37%
+//     #daewoocn .column-daewoocn__line_3
+//         top: 38%
+    //@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 30px
+//     #daewoocn .column-daewoocn__inner
+//         gap: 15px
+
+@media screen and (max-width: 916px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 8px
+
+@media screen and (max-width: 854px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 30px
+    #daewoocn .column-daewoocn__icon::after
+        width: 53px
+        height: 53px
+    #daewoocn .column-daewoocn__icon
+        flex: 0 0 30px
+    #daewoocn .column-daewoocn__inner
+        gap: 20px
+
+@media screen and (max-width: 834px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 10px
+
+@media screen and (max-width: 794px)
+    #daewoocn .column-daewoocn__item
+        padding-top: 0px
+    #daewoocn .column-daewoocn__inner:not(:last-child)
+        margin-bottom: 12px
+
+@media screen and (max-width: 767.98px)
+    #daewoocn .column-daewoocn__inner:not(:last-child)
+        margin-bottom: 40px
+    #daewoocn .column-daewoocn__icon::after
+        width: 75px
+        height: 75px
+    #daewoocn .column-daewoocn__icon
+        flex: 0 0 70px
+    #daewoocn .column-daewoocn__item
+        padding: 0 15px 0
+    #daewoocn .column-daewoocn__row
+        flex-direction: column
+        align-items: start
+        gap: 20px
+    #daewoocn .energy-daewoocn__text
+        h2,p
+            text-align: center
+    #daewoocn .energy-daewoocn__row
+        padding: 0 15px
+        flex-direction: column
+        gap: 20px
+    #daewoocn .vovna-daewoocn__bg
+        min-height: 460px
+    #daewoocn .praska-daewoocn__text,
+    #daewoocn .sushka-daewoocn__text,
+    #daewoocn .vovna-daewoocn__text
+        width: 80%
+        left: 50%
+        transform: translate(-50%, -50%)
+        //padding: 0 15px
+        h2,p
+            text-align: center
+    #daewoocn .praska-daewoocn__bg,
+    #daewoocn .sushka-daewoocn__bg
+        min-height: 488px
+    #daewoocn .pump-daewoocn__row
+        flex-direction: column
+        gap: 20px
+    #daewoocn .shafa-daewoocn__bg
+        min-height: 400px
+    #daewoocn .pump-daewoocn
+        //padding-top: 20px
+        padding: 20px 15px 0
+    #daewoocn .pump-daewoocn__text
+        width: auto
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 479.98px)
+    #daewoocn .shafa-daewoocn__text
+        width: auto
+    #daewoocn .shafa-daewoocn__bg
+        min-height: 380px
+    #daewoocn .praska-daewoocn__bg
+        min-height: 430px
+        background-position-x: 50%
+    #daewoocn .praska-daewoocn__text,
+    #daewoocn .sushka-daewoocn__text,
+    #daewoocn .vovna-daewoocn__text,
+    #daewoocn .energy-daewoocn__text
+        width: 90%
+    #daewoocn .sushka-daewoocn__bg
+        min-height: 430px
+        background-position-x: 70%
+    #daewoocn .vovna-daewoocn__bg
+        min-height: 330px
