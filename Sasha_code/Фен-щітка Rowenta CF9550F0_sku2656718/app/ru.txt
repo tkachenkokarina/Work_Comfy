@@ -1,0 +1,121 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:50px;line-height:1.2;text-align:center;color:#00061a}#maincontent .maincontent__container h3{font-size:37px;line-height:1.2;color:#00061a}#maincontent .maincontent__container p{font-size:25px;line-height:1.2;color:#00061a;margin-bottom:10px}#maincontent .maincontent__row{padding:85px 0}#maincontent .top-box__inner{position:relative;z-index:5}#maincontent .top-box__title{position:absolute;z-index:6;top:2.5em;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}#maincontent .top-box__text{position:absolute;z-index:6;top:50%;left:75px;right:60%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .top-box__text h3{margin-bottom:40px}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;padding:0 20px}#maincontent .row-maincontent__text{padding:25px 20px 25px 40px;border-left:1px solid #00061a;margin-bottom:80px}#maincontent .row-maincontent__text:last-child{margin-bottom:0}#maincontent .row-maincontent__text h3{margin-bottom:40px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;margin-right:45px}#maincontent .box-bg__inner{position:relative;z-index:5;margin-bottom:10px}#maincontent .box-bg__text{position:absolute;z-index:6}#maincontent .box-bg__text_01{top:20%;left:6%;right:66%}#maincontent .box-bg__text_02{top:31%;left:17%;right:60%}#maincontent .box-bg__text_03{top:40%;left:8%;right:65%}#maincontent .box-bg__text_04{top:64%;left:7%;right:60%}#maincontent .box-bg__text_05{top:25%;left:73%;right:10%}#maincontent .box-bg__text_06{top:56%;left:66%;right:13%}#maincontent .col-maincontent__inner{display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;padding:0 40px}#maincontent .col-maincontent__item p{margin-top:30px;padding:30px 10px 30px 0;border-top:1px solid #00061a;max-width:307px}#maincontent .bottom-box__inner{padding:20px}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(23px + 27*(100vw - 320px)/1220);font-size:calc(23px + 27*(100vw - 320px)/1220)}#maincontent .maincontent__container h3{font-size:-webkit-calc(19px + 18*(100vw - 320px)/1220);font-size:calc(19px + 18*(100vw - 320px)/1220)}#maincontent .maincontent__container p{font-size:-webkit-calc(15px + 10*(100vw - 320px)/1220);font-size:calc(15px + 10*(100vw - 320px)/1220)}}@media screen and (max-width: 1430.98px){#maincontent .box-bg__text_01{right:66%}}@media screen and (max-width: 1300px){#maincontent .top-box__title{top:1.85em}#maincontent .top-box__text{left:35px}#maincontent .box-bg__text_01{right:60%}}@media screen and (max-width: 1200px){#maincontent .maincontent__row{padding:55px 0}#maincontent .box-bg__text_01{left:4%}#maincontent .box-bg__text_02{left:15%}#maincontent .box-bg__text_03{left:7%}#maincontent .box-bg__text_04{left:5%}}@media screen and (max-width: 1100.98px){#maincontent .top-box__title{top:1.55em}#maincontent .box-bg__text_01{left:12%;right:63%;top:15%}#maincontent .box-bg__text_04{left:12%;right:67%}#maincontent .row-maincontent__text h3{margin-bottom:20px}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__row{padding:10px 0}#maincontent .row-maincontent__image{margin-right:20px}}@media screen and (max-width: 991.98px){#maincontent .top-box__title{top:1.25em}#maincontent .top-box__text{right:52%}#maincontent .top-box__text h3{margin-bottom:30px}#maincontent .row-maincontent__image{margin-right:15px}#maincontent .row-maincontent__text{margin-bottom:40px;padding:15px 20px}#maincontent .box-bg__text_01{left:10%}#maincontent .box-bg__text_02{left:13%}#maincontent .box-bg__text_03{left:14%}#maincontent .box-bg__text_04{left:15%}}@media screen and (max-width: 767.98px){#maincontent .top-box__title{top:.85em}#maincontent .top-box__text h3{margin-bottom:20px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}#maincontent .row-maincontent__image{margin-right:0;margin-bottom:10px}#maincontent .row-maincontent__item{margin-bottom:10px}#maincontent .row-maincontent__text{margin-bottom:20px}#maincontent .row-maincontent__text h3{margin-bottom:15px}#maincontent .box-bg__text_01{left:6%}#maincontent .box-bg__text_02{left:10%}#maincontent .box-bg__text_03{left:10%}#maincontent .box-bg__text_04{left:11%;right:65%}#maincontent .col-maincontent__inner{grid-template-columns:repeat(2, 1fr)}#maincontent .bottom-box__inner{padding:15px 10px}}@media screen and (max-width: 730.98px){#maincontent .box-bg__text_02{left:8%}#maincontent .box-bg__text_03{left:10%}}@media screen and (max-width: 678.98px){#maincontent .top-box__text{left:20px}}@media screen and (max-width: 649.98px){#maincontent .maincontent__row{padding:0}#maincontent .top-box__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .top-box__bg{position:relative;z-index:5;margin-bottom:10px}#maincontent .top-box__bg::after{content:"";position:absolute;z-index:6;background-image:url("https://cdn.comfy.ua/media/x/img3/2656718/icon01.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:75px;height:75px;bottom:10px;left:20px}#maincontent .top-box__title{position:unset;-webkit-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);margin-right:0;padding:10px 5px;-webkit-box-ordinal-group:0;-webkit-order:-1;-moz-box-ordinal-group:0;-ms-flex-order:-1;order:-1}#maincontent .top-box__text{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding:0 5px}#maincontent .top-box__text h3{margin-bottom:10px}#maincontent .top-box__text h3,#maincontent .top-box__text p{text-align:center}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__image{margin-bottom:10px}#maincontent .row-maincontent__text{padding:10px 15px}#maincontent .box-bg__text_01{left:2%}#maincontent .box-bg__text_03{left:6%}#maincontent .box-bg__text_04{left:8%}}@media screen and (max-width: 600.98px){#maincontent .box-bg__text p{font-size:12px;font-weight:700}#maincontent .box-bg__text_01{left:10%;right:64%}#maincontent .box-bg__text_02{left:14%}#maincontent .box-bg__text_03{left:8%}}@media screen and (max-width: 560.98px){#maincontent .box-bg__text_02{left:12%}#maincontent .box-bg__text_03{left:4%}#maincontent .box-bg__text_04{left:7%}}@media screen and (max-width: 520.98px){#maincontent .box-bg__text_01{left:5%;right:67%}#maincontent .box-bg__text_03{left:11%;right:66%}}@media screen and (max-width: 500.98px){#maincontent .box-bg__text_02{left:8%}#maincontent .box-bg__text_04{left:5%}}@media screen and (max-width: 479.98px){#maincontent .top-box__bg::after{width:40px;height:40px}#maincontent .box-bg__text_01{right:60%}#maincontent .box-bg__text_03{left:8%;right:60%}#maincontent .box-bg__text_04{left:3%}#maincontent .col-maincontent__inner{grid-template-columns:1fr}#maincontent .col-maincontent__item p{margin-top:15px;padding:15px 10px 10px 0}}@media screen and (max-width: 430.98px){#maincontent .box-bg__text p{font-size:10px}#maincontent .box-bg__text_03{right:63%}}@media screen and (max-width: 377.98px){#maincontent .box-bg__text_01{top:9%;left:2%;right:61%}#maincontent .box-bg__text_02{left:2%;top:30%}#maincontent .box-bg__text_03{left:2%}#maincontent .box-bg__text_04{left:2%;right:67%}}@media screen and (max-width: 377.98px){#maincontent .box-bg__text p{font-size:9px}#maincontent .box-bg__text_02{top:28%}#maincontent .box-bg__text_03{top:39%}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__inner">
+<picture class="top-box__bg"> <source media="(max-width: 649.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2656718/img01_mob.jpg"></source> <source media="(min-width: 650px)" srcset="https://cdn.comfy.ua/media/x/img3/2656718/img01.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2656718/img01.jpg" /> </picture>
+<div class="top-box__title">
+<h2>Фен-щетка Rowenta Activ Dry &amp; Style</h2>
+</div>
+<div class="top-box__text">
+<h3>Совершенный объем и блеск                             как после салона</h3>
+<p><b>Профессиональный уход</b> и <b>сушение волос</b> без лишних усилий</p>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img02.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h3>3 настройки</h3>
+<p><b>скорости/температуры </b> для полного контроля                                 при укладке</p>
+</div>
+<div class="row-maincontent__text">
+<h3>Функция COOL AIR</h3>
+<p><b>финальное закрепление</b> прически</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img03.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h3>Для всех типов волос</h3>
+<p><b>40 мм</b> для волос средней длины и коротких</p>
+<p><b>50 мм</b> для длинных, густых волос</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img04.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h3>Автоматическое вращение</h3>
+<p><b>Brush Activ</b> одновременно быстро сушит                                 и профессионально укладывает</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img05.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h3>Насадка для предварительной сушки</h3>
+<p>Для воспроизведения <b>профессиональных</b> парикмахерских техник и придания <b>объема</b></p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img06.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h3>Идеальный блеск</h3>
+<p><b>2 ионные бустеры</b> уменьшают статическое                                 электричество и пушистость</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box box-bg">
+<div class="box-bg__inner">
+<div class="bog-bg__image"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img07.jpg" /></div>
+<div class="box-bg__text box-bg__text_01">
+<p>Щетки с натуральной щетиной</p>
+</div>
+<div class="box-bg__text box-bg__text_02">
+<p>2 ионные бустеры</p>
+</div>
+<div class="box-bg__text box-bg__text_03">
+<p>Автоматическое вращение                             (влево/вправо)</p>
+</div>
+<div class="box-bg__text box-bg__text_04">
+<p>2 режима +                             Холодный воздух</p>
+</div>
+<div class="box-bg__text box-bg__text_05">
+<p>Защитные чехлы</p>
+</div>
+<div class="box-bg__text box-bg__text_06">
+<p>Насадка для                             предварительной сушки</p>
+</div>
+</div>
+</div>
+<div class="maincontent__col col-maincontent">
+<div class="col-maincontent__inner">
+<div class="col-maincontent__item"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img08_1.png" />
+<p>Для <b>безопасной сушки</b> без повреждений</p>
+</div>
+<div class="col-maincontent__item"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img08_2.png" />
+<p>Легкие волны за <b>5 минут</b></p>
+</div>
+<div class="col-maincontent__item"><img src="https://cdn.comfy.ua/media/x/img3/2656718/img08_3.png" />
+<p>Идеально <b>гладкие</b> волосы</p>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="bottom-box__inner">
+<p>Совершенный объем и блеск как после салона с фен-щеткой <strong>ROWENTA Activ Dry &amp; Style                             CF9550F0.</strong></p>
+<p><strong>ИДЕАЛЬНАЯ УКЛАДКА</strong> Щетка оснащена насадкой для предварительной сушки.                         Автоматическая вращающаяся щетка с горячим воздухом воссоздает профессиональные парикмахерские                         техники для сушки, придает объем и великолепный вид волосам.</p>
+<p><strong>НЕПРЕВЗОЙДЕННЫЙ БЛЕСК</strong> Керамическое покрытие обеспечивает безупречное скольжение,                         а двойной ионный усилитель уменьшает статическое электричество и пушистость.</p>
+<p><strong>ВСЕ ТИПЫ ВОЛОС </strong>2 керамические щетки (50 мм и 40 мм) обеспечивают индивидуальную                         сушку для всех типов волос — длинных, густых, средних и коротких волос.</p>
+<p><strong>ЛЕГКО ИСПОЛЬЗОВАТЬ</strong> Интуитивно понятная щетка для фена вращается в обоих                         направлениях, что обеспечивает максимальное удобство при сушке и укладке, а также обеспечивает                         салонный результат в домашних условиях.</p>
+<p><strong>МОЩНОСТЬ</strong> 1000 Вт Мощность 1000 Вт обеспечивает достаточно тепла, не повреждая                         волосы, для быстрой и эффективной сушки.</p>
+<p><strong>РЕГУЛИРУЕМЫЕ НАСТРОЙКИ </strong>3 настройки скорости/температуры для полного контроля во                         время укладки.</p>
+<p><strong>ФУНКЦИЯ COOL AIR </strong> Функция Cool Air позволит финально закрепить укладку.</p>
+<p><strong>ЛЕГКОЕ ХРАНЕНИЕ </strong>Защитные чехлы для щеток позволяют удобно хранить щетки и                         продлят их срок службы.</p>
+<p><strong>15-ЛЕТНЯЯ РЕМОНТОПРИГОДНОСТЬ</strong> 15-летний ремонтопригодный продукт — с недорогой и                         быстрой доставкой из 6500 ремонтных центров по всему миру.</p>
+</div>
+</div>
+</div>
+</div>
