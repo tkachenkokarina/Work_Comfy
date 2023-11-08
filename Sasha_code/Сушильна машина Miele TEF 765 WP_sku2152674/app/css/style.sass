@@ -1,0 +1,154 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+    
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1600px
+        margin: 0 auto
+        padding: 0 15px
+        color: #484848
+        h2
+            @include fonts($fontSize: 37px, $lineHeight: 1.2)
+            text-transform: uppercase
+            margin: 20px 0px
+            text-align: center
+        p
+            @include fonts($fontSize: 25px, $lineHeight: 1.2)
+            margin-bottom: 15px
+            text-align: center
+    
+
+#maincontent .row-maincontent
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin-bottom: 35px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+
+#maincontent .bottom-box
+    &__inner
+        padding: 5px 20px 0
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1540px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 23px + (37 - 23) * ((100vw - 320px)/(1540 - 320)))
+            p
+                font-size: calc( 15px + (25 - 15) * ((100vw - 320px)/(1540 - 320)))
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #maincontent .row-maincontent
+        &__inner
+            margin-bottom: 0
+    #maincontent .bottom-box
+        &__inner
+            padding: 5px 5px 0
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2, p
+                margin: 10px 0            
+    #maincontent .row-maincontent
+        &__inner
+            flex-direction: column
+            margin-bottom: 5px
+        &__text
+            padding: 0 5px
+//@media screen and (max-width: 479.98px)
