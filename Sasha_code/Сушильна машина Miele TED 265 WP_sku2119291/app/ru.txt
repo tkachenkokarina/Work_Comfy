@@ -1,0 +1,184 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px;color:#484848}#maincontent .maincontent__container h2{font-size:37px;line-height:1.2;text-transform:uppercase;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:25px;line-height:1.2;margin-bottom:15px;text-align:center}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:35px}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 20px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .bottom-box__inner{padding:5px 20px 0}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(21px + 16*(100vw - 320px)/1220);font-size:calc(21px + 16*(100vw - 320px)/1220)}#maincontent .maincontent__container p{font-size:-webkit-calc(15px + 10*(100vw - 320px)/1220);font-size:calc(15px + 10*(100vw - 320px)/1220)}}@media screen and (max-width: 991.98px){#maincontent .row-maincontent__inner{margin-bottom:0}#maincontent .bottom-box__inner{padding:5px 5px 0}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:5px}#maincontent .row-maincontent__text{padding:0 5px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img01.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>MIELE</h2>
+<p><b>Бренд с большой историей</b></p>
+<p>Немецкий бренд, который начал свою историю в 1899 году и сегодня имеет 12 заводов в                                 разных странах. Именно они впервые разработали стиральную машину с электрическим                                 приводом и умело поддерживают тенденцию к качественной бытовой технике. Старейший и                                 крупнейший завод Miele, построенный в 1907 году в Гютерсло, все еще работает и                                 производит технику с известной немецкой точностью и щепетильностью.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img02.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ЗАЩИТА ОТ КОНДЕНСАЦИИ</h2>
+<p><b>Никакой плесени в ванной</b></p>
+<p>Одним из важнейших критериев любой сушильной машины является герметичность. Модель Miele                                 TED 265 WP оснащена лучшей защитой от конденсации, что положительно влияет на эстетичный                                 вид помещения и на ваше здоровье.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img03.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ВЫСОКАЯ ЭНЕРГОЭФФЕКТИВНОСТЬ</h2>
+<p><b>Деликатно и экономно одновременно</b></p>
+<p>Сушильная машина Miele TED 265 WP обладает тепловым насосом, который известен своей                                 энергоэффективностью. Низкие температуры, которые используются при сушке, не только                                 берегут вашу электроэнергию, но и защищают волокна самых деликатных тканей.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img04.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>МОЩНЫЙ МОТОР</h2>
+<p><b>Забудьте о дополнительном обслуживании</b></p>
+<p>В этой сушильной машине используется высокоэффективный двигатель с постоянными магнитами.                                 Он обеспечивает высокую экономичность и отсутствие дополнительного обслуживания.                                 Наслаждайтесь идеальной сушкой с долговечным мотором ProfiEco.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img05.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>УНИКАЛЬНЫЙ БАРАБАН</h2>
+<p><b>Максимальный уход за бельем</b></p>
+<p>Благодаря уникальной структуре барабана, состоящей из шестиугольников, уход за бельем                                 становится еще более бережным. При вращении барабана белье подбрасывается выше, а значит                                 оно дольше находится под воздействием теплых потоков воздуха и сушится равномерно. А                                 шестиугольники образуют воздушную подушку, смягчающую механическое воздействие и                                 обеспечивающую уменьшенное смятие.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img06.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>НИЗКИЙ УРОВЕНЬ ПОТРЕБЛЕНИЯ ЭНЕРГИИ</h2>
+<p><b>Технология EcoDry</b></p>
+<p>Эффективное взаимодействие системы фильтров и теплообменника гарантирует отсутствие                                 засорения системы ворсом, низкий уровень потребления энергии и повышение                                 производительности. Именно благодаря технологии EcoDry сушильная машина Miele TED 265 WP                                 работает экономно в течение всего срока использования.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img07.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ОТСУТСТВИЕ ДОПОЛНИТЕЛЬНОГО ОБСЛУЖИВАНИЯ</h2>
+<p><b>Надежная сушильная машина</b></p>
+<p>Эта модель оснащена теплообменником, который защищен мощной системой фильтрации и не                                 требует очистки. Больше свободного времени и более низкий уровень потребления энергии в                                 течение всего срока эксплуатации.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img08.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ФИЛЬТР ДЛЯ ВОРСА</h2>
+<p><b>Удобный и гладкий</b></p>
+<p>Специальный фильтр для ворса удобный и легкий в очистке. Как только вы увидите текстовый                                 индикатор “Очистить воздушные каналы”, можете смело извлекать фильтр из передней части                                 сушильной машины. Благодаря его гладкой поверхности его очистка занимает считанные                                 минуты.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img09.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ЗАБУДЬТЕ ОБ УТЮГЕ</h2>
+<p><b>Автоматическое “разрыхление” белья</b></p>
+<p>Сушильная машина Miele TED 265 WP имеет функцию антискладок, благодаря которой вы будете                                 тратить гораздо меньше времени на глажку или даже вообще не заниматься этим!</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img10.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ЗАГРУЖАЙТЕ БЕЛЬЕ КОГДА-УГОДНО</h2>
+<p><b>Гибкая загрузка</b></p>
+<p>Функция AddLoad создана для того, чтобы вы могли добавить забытое белье в сушилку в любой                                 период программы. Просто нажимаете кнопку “Старт / Добавить белье” и программа                                 моментально останавливается.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img11.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ОТВОД КОНДЕНСАТА</h2>
+<p><b>Забудьте о сливе конденсата вручную</b></p>
+<p>Сушильная машина Miele TED 265 WP оснащена встроенной системой отвода конденсата с                                 механизмом намотки шланга. Таким образом вы можете сливать воду прямо в раковину или                                 сифон, экономя силы и время.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img12.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>PERFECT DRY</h2>
+<p><b>Минеральные датчики</b></p>
+<p>Даже если вода содержит большое количество кальция, сушилка будет работать на все 100%.                                 Все благодаря запатентованной системе Perfect Dry, управляющей процессом высушивания в                                 соответствии с содержанием кальция в воде. Результаты всегда идеальны!</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img13.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>СВЕЖИЙ АРОМАТ БЕЛЬЯ</h2>
+<p><b>Fragrancedos</b></p>
+<p>Сушильная машина Miele TED 265 WP оснащена картриджами с ароматизаторами, которые придают                                 вашему белью приятный и свежий аромат. Ароматизаторы создаются на семейной ферме на юге                                 Франции с 1871 года. Они используют уникальный алгоритм, гарантирующий сохранение всех                                 ароматических эссенций. Свежий аромат держится до 4-х недель.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img14.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ПОДСТРАИВАЙТЕ СУШКУ ПОД СОБСТВЕННЫЕ ПЛАНЫ</h2>
+<p><b>С отсрочкой старта</b></p>
+<p>Машинка обладает удобной функцией отсрочки старта, благодаря которой вы можете                                 устанавливать время начала программы. Хотите высушить вещи ночью по пониженному тарифу                                 на электроэнергию? Или нужно, чтобы вещи были сухие до вашего возвращения с работы?                                 Устанавливайте запуск программы до 24 часов и наслаждайтесь своими делами!</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img15.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>РЕВЕРС БАРАБАНА</h2>
+<p><b>Равномерная сушка</b></p>
+<p>Как машина Miele TED 265 WP так идеально сушит ваши вещи? Она имеет отличительную черту —                                 способность менять направление вращения барабана через нерегулярные интервалы. Такая                                 особенность обеспечивает не только равномерную сушку, но и отсутствие путаницы белья и                                 уменьшение количества складок.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img16.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>WASH2DRY</h2>
+<p><b>Работают в паре</b></p>
+<p>Сушильная машина Miele TED 265 WP может легко и быстро связаться с вашей стиральной                                 машиной Miele и настроиться на ее программу.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2119291/img17.png" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>ИНТЕЛЛЕКТУАЛЬНАЯ СЕТЬ</h2>
+<p><b>Miele@home</b></p>
+<p>Благодаря системе Miele@home вы можете следить за состоянием бытовой техники, а в                                 приложении Miele@mobile — управлять программами.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row bottom-box">
+<div class="bottom-box__inner">
+<p>Купить сушильную машину <b>Miele TED 265 WP</b> в Украине можно на сайте или в фирменных магазинах Comfy!</p>
+</div>
+</div>
+</div>
+</div>
