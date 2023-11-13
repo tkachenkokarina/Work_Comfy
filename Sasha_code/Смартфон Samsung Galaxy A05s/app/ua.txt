@@ -1,0 +1,103 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:48px;line-height:1.2;margin:20px 0px;text-align:center}#maincontent .maincontent__container h3{font-size:24px;line-height:1.2;margin:20px 0px}#maincontent .maincontent__container p{font-size:22px;line-height:1.2;margin-bottom:10px;text-align:center}#maincontent .maincontent__text{max-width:1024px;padding:80px 88px;margin:0 auto}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:42px 25px 42px 45px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:left}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .col-maincontent__title{padding:0 88px 80px}#maincontent .col-maincontent__inner{display:grid;grid-template-columns:repeat(3, 1fr)}#maincontent .col-maincontent__item{padding:0 12px}#maincontent .col-maincontent__text{padding:38px 30px}#maincontent .col-maincontent__text h3,#maincontent .col-maincontent__text p{text-align:left}#maincontent .bottom-box__inner{padding:10px 40px}@media screen and (max-width: 1300px){#maincontent .maincontent__container h2{font-size:-webkit-calc(24px + 24*(100vw - 320px)/980);font-size:calc(24px + 24*(100vw - 320px)/980)}#maincontent .maincontent__container h3{font-size:-webkit-calc(18px + 6*(100vw - 320px)/980);font-size:calc(18px + 6*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/980);font-size:calc(16px + 6*(100vw - 320px)/980)}#maincontent .maincontent__text{padding:40px 80px}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__text{padding:20px 30px}#maincontent .row-maincontent__text{padding:20px}#maincontent .col-maincontent__title{padding:0 30px 20px}#maincontent .col-maincontent__text{padding:20px 17px}}@media screen and (max-width: 991.98px){#maincontent .col-maincontent__text h3{margin:15px 0}#maincontent .col-maincontent__inner{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__text{padding:0 5px}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .col-maincontent__title{padding:0 7px 20px}#maincontent .col-maincontent__text{padding:10px}#maincontent .bottom-box__inner{padding:10px 20px}}@media screen and (max-width: 479.98px){#maincontent .col-maincontent__inner{grid-template-columns:1fr;padding:0}#maincontent .col-maincontent__text{padding:0 7px 10px}#maincontent .bottom-box__inner{padding:10px 7px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Дивовижна якість та ефект занурення</h2>
+<p>Samsung Galaxy A05s 4 gb оснащений великим 6,7-дюймовим дисплеєм з роздільною здатністю FHD+. З ним                     ви можете зануритися в улюблену гру, фільм чи серіал, і насолоджуватися якісним деталізованим                     зображенням.</p>
+</div>
+<picture class="maincontent__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img01_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img01_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img01_desc.jpg" /> </picture></div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Обирайте свій стиль</h2>
+<p>Смартфон Galaxy A05s 4gb створювався з думкою про унікальний і водночас універсальний стиль. Він                     доступний у трьох кольорах: світло-зеленому, сріблястому та чорному. Обирайте свій варіант і                     насолоджуйтеся яскравим дизайном!</p>
+</div>
+<picture class="maincontent__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img02_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img02_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img02_desc.jpg" /> </picture></div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Більше камер — більше знімків</h2>
+<p>Samsung Galaxy A05s 4 gb — це ваш помічник не тільки в роботі та відпочинку, але й у творчості. Він                     має 4 камери на передній та задній панелі: фронтальну камеру на 13 Мп, макрокамеру на 2 Мп,                     ширококутну камеру на 50 Мп та камеру глибини на 2 Мп.</p>
+</div>
+<picture class="maincontent__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img03_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img03_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img03_desc.jpg" /> </picture></div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Відкрийте новий світ!</h2>
+<p>Пейзажі в нових ракурсах, портрети з максимальною глибиною, звичайні речі в деталях, а також якісні і                     чіткі селфі з близькими — все це можливо зі смартфоном Galaxy A05s 4 gb!</p>
+</div>
+<picture class="maincontent__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img04_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img04_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img04_desc.jpg" /> </picture></div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Ефективність та багатозадачність</h2>
+<p>Смартфон здатен підвищити вашу продуктивність завдяки потужному процесору Snapdragon 680,                             оперативній пам’яті на 4 Гб і вбудованій пам’яті на 64/128 Гб. Робота, хобі або відпочинок —                             не важливо, Galaxy A05s 4 gb буде працювати максимально швидко!</p>
+</div>
+</div>
+<picture class="row-maincontent__image"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img05_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img05_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img05_desc.jpg" /> </picture></div>
+</div>
+<div class="maincontent__box">
+<div class="maincontent__text">
+<h2>Більше акумулятор — більше часу</h2>
+<p>Galaxy A05s 4 gb оснащений містким акумулятором на 5000 мАг, який забезпечить зв’язок 24/7. Грайте,                     працюйте, спілкуйтеся і будьте впевнені, що смартфон не розрядиться.</p>
+<p>А коли треба буде швиденько поповнити запас акумулятора перед виходом, можете увімкнути швидку                     зарядку Super Fast Charging. Завдяки потужності до 25 Вт телефон зарядиться, поки ви будете                     збиратися.</p>
+</div>
+<picture class="maincontent__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img06_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2691323/img06_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2691323/img06_desc.jpg" /> </picture></div>
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Безпека понад усе</h2>
+<p>Додайте відбиток свого пальця, щоб всі ваші дані були під надійним захистом.</p>
+</div>
+</div>
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2691323/img07.jpg" /></div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Додатковий роз’єм</h2>
+<p>Якщо ваші Bluetooth навушники розрядилися, ви можете продовжити слухати музику чи                             спілкуватися з дротовими навушниками. Просто під’єднайте їх через 3,5-мм роз’єм і                             насолоджуйтеся надійним з’єднанням.</p>
+</div>
+</div>
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2691323/img08.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__col col-maincontent">
+<div class="col-maincontent__title">
+<h2>Унікальний досвід з Samsung Galaxy</h2>
+</div>
+<div class="col-maincontent__inner">
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2691323/img09.jpg" /></div>
+<div class="col-maincontent__text">
+<h3>Smart Switch</h3>
+<p>Легке і просте перенесення всіх даних з одного смартфона на інший. Почніть там, де                             зупинилися.</p>
+</div>
+</div>
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2691323/img10.jpg" /></div>
+<div class="col-maincontent__text">
+<h3>One UI</h3>
+<p>З допомогою One UI ви можете персоналізувати свій смартфон і налаштувати його роботу саме                             так, як зручно вам.</p>
+</div>
+</div>
+<div class="col-maincontent__item">
+<div class="col-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2691323/img11.jpg" /></div>
+<div class="col-maincontent__text">
+<h3>Samsung Members</h3>
+<p>Поради та підказки в одному місці, які допоможуть розкрити весь потенціал Samsung Galaxy A05s.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="bottom-box__inner">
+<div class="bottom-box__text">
+<p>Купити смартфон <b>Galaxy A05s 4gb</b> в Україні можна на сайті або у фірмових магазинах <b>COMFY</b>!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
