@@ -1,0 +1,372 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #samsungbuds a
+//     color: inherit
+//     text-decoration: none
+
+// #samsungbuds
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#samsungbuds .bc-description__content p
+    margin-bottom: 0
+
+#samsungbuds .bc-description__content h3
+    text-align: left
+
+#samsungbuds
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#samsungbuds
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    //box-sizing: border-box
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#samsungbuds p::first-letter
+    padding-left: 0
+
+#samsungbuds img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#samsungbuds img:hover
+    opacity: 1
+
+#samsungbuds .samsungbuds__container
+    max-width: 1440px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#samsungbuds
+    h2
+        @include adaptiv-value("font-size", 45, 20, 1)
+        line-height: 1.2
+        margin-bottom: 10px
+    p
+        @include adaptiv-value("font-size", 30, 16, 1)
+        line-height: 1.2
+
+#samsungbuds .header-samsungbuds
+    padding: 50px 0 0
+    &__row
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        gap: 20px
+        padding: 0 15px
+    &__item
+        flex: 0 1 33.3333%
+        padding-bottom: 20px
+        &:nth-child(2)
+            position: relative
+            z-index: 2
+            &::after, &::before
+                content: ''
+                position: absolute
+                z-index: 5
+                top: 0
+                height: 100%
+                width: 1px
+                background-color: #ccc
+            &::after
+                right: -5px
+            &::before
+                left: -5px
+    &__icon
+        margin-bottom: 10px
+        img
+            width: 64px
+    &__text
+        p
+            @include adaptiv-value("font-size", 25, 16, 1)
+            text-align: center
+    &__image
+
+#samsungbuds .box-samsungbuds
+    &__text
+        padding: 40px 15px
+        h2,p
+            text-align: center
+    &__image
+
+#samsungbuds .box-samsungbuds
+    &__text
+    &__slider
+        padding-bottom: 40px
+    &__wrapper
+    &__slide
+    &__media
+    &__video
+        video
+            max-width: 100%
+
+#samsungbuds .swiper
+    &-wrapper
+    &-slide
+    &-pagination
+    &-button-prev
+    &-button-next
+
+#samsungbuds .swiper-pagination-bullet-active
+    background: #000 !important
+
+#samsungbuds .swiper-pagination-bullet
+    background-color: #757575
+    opacity: .8
+
+#samsungbuds .swiper-button-next:after, #samsungbuds .swiper-button-prev:after
+    content: ''
+    background: url('https://cdn.comfy.ua/media/x/img3/2646236/white-arrow.png') 0 0 no-repeat
+    background-size: cover
+    width: 25px
+    height: 25px
+
+// #samsungbuds .swiper-button-next:active,
+// #samsungbuds .swiper-button-prev:active
+//     border: 2px dashed #000
+//     padding: 2px
+
+// #samsungbuds .swiper-button-next:before, #samsungbuds .swiper-button-prev:before
+//     content: ""
+//     position: absolute
+//     z-index: 5
+//     border: 2px dashed #000
+//     top: 0
+//     left: 0
+//     width: 47px
+//     height: 47px
+//     border-radius: 50%
+    // opacity: 0
+    // @media (any-hover: hover)
+    //     &:hover
+    //         opacity: 1
+
+#samsungbuds .swiper-button-prev:after
+    transform: rotate(-180deg)
+
+#samsungbuds .swiper-button-next, #samsungbuds .swiper-button-prev
+    background-color: #757575
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    &:active
+        background-color: #000
+    @media (any-hover: hover)
+        &:hover
+            background-color: #000
+
+#samsungbuds .click-samsungbuds
+    padding-top: 40px
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+    &__media
+        flex: 0 1 50%
+        video
+            max-width: 100%
+
+#samsungbuds .sound-samsungbuds
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__text
+        position: absolute
+        z-index: 5
+        top: 3%
+        right: 3%
+        width: 50%
+        h2,p
+            text-align: right
+
+#samsungbuds .time-samsungbuds
+    padding-top: 40px
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+    &__image
+        flex: 0 1 50%
+
+#samsungbuds .column-samsungbuds
+    &__title
+        padding: 40px 15px
+        h2
+            text-align: center
+            margin-bottom: 0
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr))
+        gap: 20px 15px
+    &__item
+    &__image
+        img
+            border-radius: 15px
+    &__text
+        width: 85%
+        margin: 0 auto
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 30, 18, 1)
+        p
+            @include adaptiv-value("font-size", 20, 16, 1)
+
+#samsungbuds .acces-samsungbuds
+    &__row
+        display: flex
+        align-items: center
+        padding-top: 20px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 85%
+        margin: 0 auto
+    &__image
+        flex: 0 1 50%
+
+#samsungbuds .snoska-samsungbuds
+    &__text
+        p
+            padding: 20px 15px
+            text-align: center
+
+//===========MEDIA=============================================================================================================================================
+
+    //@media screen and (max-width: 1300px)
+    //@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #samsungbuds .click-samsungbuds__text,
+    #samsungbuds .time-samsungbuds__text
+        width: 90%
+    #samsungbuds .column-samsungbuds__title
+        padding: 30px 15px 20px
+    #samsungbuds .column-samsungbuds__text
+        width: 90%
+
+@media screen and (max-width: 767.98px)
+    #samsungbuds .swiper-button-next:after, #samsungbuds .swiper-button-prev:after
+        width: 17px
+        height: 17px
+    #samsungbuds .swiper-button-next, .swiper-button-prev
+        display: none
+        // top: 40%
+        // width: 30px
+        // height: 30px
+    // #samsungbuds .swiper-button-prev
+    //     right: 6%
+    //     left: auto
+    #samsungbuds .box-samsungbuds__text
+        padding: 30px 15px 20px
+    #samsungbuds .click-samsungbuds__row,
+    #samsungbuds .time-samsungbuds__row,
+    #samsungbuds .acces-samsungbuds__row
+        flex-direction: column
+    #samsungbuds .click-samsungbuds__text,
+    #samsungbuds .time-samsungbuds__text
+        width: auto
+        padding: 0 15px 0
+        h2,p
+            text-align: center
+    #samsungbuds .sound-samsungbuds__text
+        width: 70%
+    #samsungbuds .time-samsungbuds__row
+        gap: 20px
+    #samsungbuds .acces-samsungbuds__text
+        width: auto
+        padding: 20px 15px 10px
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 479.98px)
+    #samsungbuds .header-samsungbuds__row
+        flex-direction: column
+        margin-bottom: 20px
+    #samsungbuds .header-samsungbuds__item:nth-child(2)::after, #samsungbuds .header-samsungbuds__item:nth-child(2)::before
+        display: none
+    #samsungbuds .header-samsungbuds__item
+        padding-bottom: 0
+    #samsungbuds .header-samsungbuds
+        padding-top: 30px
+    #samsungbuds .box-samsungbuds__slider
+        padding-bottom: 32px
+    #samsungbuds .column-samsungbuds__text
+        width: auto
+        padding: 15px 15px 0
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 377px)
+    #samsungbuds .sound-samsungbuds__text
+        width: 80%

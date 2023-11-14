@@ -1,0 +1,448 @@
+#samsungbuds .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#samsungbuds .bc-description__content h3 {
+  text-align: left;
+}
+
+#samsungbuds h1, #samsungbuds h2, #samsungbuds h3, #samsungbuds h4, #samsungbuds h5, #samsungbuds h6 {
+  text-transform: none;
+  font-weight: bold;
+}
+
+#samsungbuds {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+#samsungbuds h1, #samsungbuds h2, #samsungbuds h3, #samsungbuds h4, #samsungbuds h5, #samsungbuds h6, #samsungbuds p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#samsungbuds p::first-letter {
+  padding-left: 0;
+}
+
+#samsungbuds img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#samsungbuds img:hover {
+  opacity: 1;
+}
+
+#samsungbuds .samsungbuds__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#samsungbuds h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1440px) {
+  #samsungbuds h2 {
+    font-size: -webkit-calc(20px + 25 * ((100vw - 320px) / 1120));
+    font-size: calc(20px + 25 * ((100vw - 320px) / 1120));
+  }
+}
+#samsungbuds p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+@media (max-width: 1440px) {
+  #samsungbuds p {
+    font-size: -webkit-calc(16px + 14 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 14 * ((100vw - 320px) / 1120));
+  }
+}
+
+#samsungbuds .header-samsungbuds {
+  padding: 50px 0 0;
+}
+#samsungbuds .header-samsungbuds__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 20px;
+  padding: 0 15px;
+}
+#samsungbuds .header-samsungbuds__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 33.3333%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 33.3333%;
+          flex: 0 1 33.3333%;
+  padding-bottom: 20px;
+}
+#samsungbuds .header-samsungbuds__item:nth-child(2) {
+  position: relative;
+  z-index: 2;
+}
+#samsungbuds .header-samsungbuds__item:nth-child(2)::after, #samsungbuds .header-samsungbuds__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+}
+#samsungbuds .header-samsungbuds__item:nth-child(2)::after {
+  right: -5px;
+}
+#samsungbuds .header-samsungbuds__item:nth-child(2)::before {
+  left: -5px;
+}
+#samsungbuds .header-samsungbuds__icon {
+  margin-bottom: 10px;
+}
+#samsungbuds .header-samsungbuds__icon img {
+  width: 64px;
+}
+#samsungbuds .header-samsungbuds__text p {
+  font-size: 25px;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  #samsungbuds .header-samsungbuds__text p {
+    font-size: -webkit-calc(16px + 9 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 9 * ((100vw - 320px) / 1120));
+  }
+}
+#samsungbuds .box-samsungbuds__text {
+  padding: 40px 15px;
+}
+#samsungbuds .box-samsungbuds__text h2, #samsungbuds .box-samsungbuds__text p {
+  text-align: center;
+}
+#samsungbuds .box-samsungbuds__slider {
+  padding-bottom: 40px;
+}
+#samsungbuds .box-samsungbuds__video video {
+  max-width: 100%;
+}
+
+#samsungbuds .swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+#samsungbuds .swiper-pagination-bullet {
+  background-color: #757575;
+  opacity: 0.8;
+}
+
+#samsungbuds .swiper-button-next:after, #samsungbuds .swiper-button-prev:after {
+  content: "";
+  background: url("https://cdn.comfy.ua/media/x/img3/2646236/white-arrow.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+#samsungbuds .swiper-button-prev:after {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+#samsungbuds .swiper-button-next, #samsungbuds .swiper-button-prev {
+  background-color: #757575;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#samsungbuds .swiper-button-next:active, #samsungbuds .swiper-button-prev:active {
+  background-color: #000;
+}
+@media (any-hover: hover) {
+  #samsungbuds .swiper-button-next:hover, #samsungbuds .swiper-button-prev:hover {
+    background-color: #000;
+  }
+}
+
+#samsungbuds .click-samsungbuds {
+  padding-top: 40px;
+}
+#samsungbuds .click-samsungbuds__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#samsungbuds .click-samsungbuds__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#samsungbuds .click-samsungbuds__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#samsungbuds .click-samsungbuds__media {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#samsungbuds .click-samsungbuds__media video {
+  max-width: 100%;
+}
+
+#samsungbuds .sound-samsungbuds__bg {
+  position: relative;
+  z-index: 2;
+}
+#samsungbuds .sound-samsungbuds__text {
+  position: absolute;
+  z-index: 5;
+  top: 3%;
+  right: 3%;
+  width: 50%;
+}
+#samsungbuds .sound-samsungbuds__text h2, #samsungbuds .sound-samsungbuds__text p {
+  text-align: right;
+}
+
+#samsungbuds .time-samsungbuds {
+  padding-top: 40px;
+}
+#samsungbuds .time-samsungbuds__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#samsungbuds .time-samsungbuds__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#samsungbuds .time-samsungbuds__text {
+  width: 80%;
+  margin: 0 auto;
+}
+#samsungbuds .time-samsungbuds__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#samsungbuds .column-samsungbuds__title {
+  padding: 40px 15px;
+}
+#samsungbuds .column-samsungbuds__title h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+#samsungbuds .column-samsungbuds__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px 15px;
+}
+#samsungbuds .column-samsungbuds__image img {
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+}
+#samsungbuds .column-samsungbuds__text {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#samsungbuds .column-samsungbuds__text h2 {
+  font-size: 30px;
+}
+@media (max-width: 1440px) {
+  #samsungbuds .column-samsungbuds__text h2 {
+    font-size: -webkit-calc(18px + 12 * ((100vw - 320px) / 1120));
+    font-size: calc(18px + 12 * ((100vw - 320px) / 1120));
+  }
+}
+#samsungbuds .column-samsungbuds__text p {
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  #samsungbuds .column-samsungbuds__text p {
+    font-size: -webkit-calc(16px + 4 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
+  }
+}
+
+#samsungbuds .acces-samsungbuds__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+#samsungbuds .acces-samsungbuds__row_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#samsungbuds .acces-samsungbuds__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#samsungbuds .acces-samsungbuds__text {
+  width: 85%;
+  margin: 0 auto;
+}
+#samsungbuds .acces-samsungbuds__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#samsungbuds .snoska-samsungbuds__text p {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  #samsungbuds .click-samsungbuds__text,
+  #samsungbuds .time-samsungbuds__text {
+    width: 90%;
+  }
+  #samsungbuds .column-samsungbuds__title {
+    padding: 30px 15px 20px;
+  }
+  #samsungbuds .column-samsungbuds__text {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #samsungbuds .swiper-button-next:after, #samsungbuds .swiper-button-prev:after {
+    width: 17px;
+    height: 17px;
+  }
+  #samsungbuds .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+  #samsungbuds .box-samsungbuds__text {
+    padding: 30px 15px 20px;
+  }
+  #samsungbuds .click-samsungbuds__row,
+  #samsungbuds .time-samsungbuds__row,
+  #samsungbuds .acces-samsungbuds__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #samsungbuds .click-samsungbuds__text,
+  #samsungbuds .time-samsungbuds__text {
+    width: auto;
+    padding: 0 15px 0;
+  }
+  #samsungbuds .click-samsungbuds__text h2, #samsungbuds .click-samsungbuds__text p,
+  #samsungbuds .time-samsungbuds__text h2,
+  #samsungbuds .time-samsungbuds__text p {
+    text-align: center;
+  }
+  #samsungbuds .sound-samsungbuds__text {
+    width: 70%;
+  }
+  #samsungbuds .time-samsungbuds__row {
+    gap: 20px;
+  }
+  #samsungbuds .acces-samsungbuds__text {
+    width: auto;
+    padding: 20px 15px 10px;
+  }
+  #samsungbuds .acces-samsungbuds__text h2, #samsungbuds .acces-samsungbuds__text p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #samsungbuds .header-samsungbuds__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #samsungbuds .header-samsungbuds__item:nth-child(2)::after, #samsungbuds .header-samsungbuds__item:nth-child(2)::before {
+    display: none;
+  }
+  #samsungbuds .header-samsungbuds__item {
+    padding-bottom: 0;
+  }
+  #samsungbuds .header-samsungbuds {
+    padding-top: 30px;
+  }
+  #samsungbuds .box-samsungbuds__slider {
+    padding-bottom: 32px;
+  }
+  #samsungbuds .column-samsungbuds__text {
+    width: auto;
+    padding: 15px 15px 0;
+  }
+  #samsungbuds .column-samsungbuds__text h2, #samsungbuds .column-samsungbuds__text p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 377px) {
+  #samsungbuds .sound-samsungbuds__text {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #samsungbuds .bc-description__content p{margin-bottom:0}#samsungbuds .bc-description__content h3{text-align:left}#samsungbuds h1,#samsungbuds h2,#samsungbuds h3,#samsungbuds h4,#samsungbuds h5,#samsungbuds h6{text-transform:none;font-weight:bold}#samsungbuds{margin:0 auto;overflow:hidden;background-color:#fff}#samsungbuds h1,#samsungbuds h2,#samsungbuds h3,#samsungbuds h4,#samsungbuds h5,#samsungbuds h6,#samsungbuds p{margin:0;padding:0;text-align:left}#samsungbuds p::first-letter{padding-left:0}#samsungbuds img{opacity:1;max-width:100%;display:block;margin:0 auto}#samsungbuds img:hover{opacity:1}#samsungbuds .samsungbuds__container{max-width:1440px;margin:0 auto}#samsungbuds h2{font-size:45px;line-height:1.2;margin-bottom:10px}@media(max-width: 1440px){#samsungbuds h2{font-size:-webkit-calc(20px + 25 * ((100vw - 320px) / 1120));font-size:calc(20px + 25 * ((100vw - 320px) / 1120))}}#samsungbuds p{font-size:30px;line-height:1.2}@media(max-width: 1440px){#samsungbuds p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1120));font-size:calc(16px + 14 * ((100vw - 320px) / 1120))}}#samsungbuds .header-samsungbuds{padding:50px 0 0}#samsungbuds .header-samsungbuds__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:50px;gap:20px;padding:0 15px}#samsungbuds .header-samsungbuds__item{-webkit-box-flex:0;-webkit-flex:0 1 33.3333%;-moz-box-flex:0;-ms-flex:0 1 33.3333%;flex:0 1 33.3333%;padding-bottom:20px}#samsungbuds .header-samsungbuds__item:nth-child(2){position:relative;z-index:2}#samsungbuds .header-samsungbuds__item:nth-child(2)::after,#samsungbuds .header-samsungbuds__item:nth-child(2)::before{content:"";position:absolute;z-index:5;top:0;height:100%;width:1px;background-color:#ccc}#samsungbuds .header-samsungbuds__item:nth-child(2)::after{right:-5px}#samsungbuds .header-samsungbuds__item:nth-child(2)::before{left:-5px}#samsungbuds .header-samsungbuds__icon{margin-bottom:10px}#samsungbuds .header-samsungbuds__icon img{width:64px}#samsungbuds .header-samsungbuds__text p{font-size:25px;text-align:center}@media(max-width: 1440px){#samsungbuds .header-samsungbuds__text p{font-size:-webkit-calc(16px + 9 * ((100vw - 320px) / 1120));font-size:calc(16px + 9 * ((100vw - 320px) / 1120))}}#samsungbuds .box-samsungbuds__text{padding:40px 15px}#samsungbuds .box-samsungbuds__text h2,#samsungbuds .box-samsungbuds__text p{text-align:center}#samsungbuds .box-samsungbuds__slider{padding-bottom:40px}#samsungbuds .box-samsungbuds__video video{max-width:100%}#samsungbuds .swiper-pagination-bullet-active{background:#000 !important}#samsungbuds .swiper-pagination-bullet{background-color:#757575;opacity:.8}#samsungbuds .swiper-button-next:after,#samsungbuds .swiper-button-prev:after{content:"";background:url("https://cdn.comfy.ua/media/x/img3/2646236/white-arrow.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:25px;height:25px}#samsungbuds .swiper-button-prev:after{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg)}#samsungbuds .swiper-button-next,#samsungbuds .swiper-button-prev{background-color:#757575;-webkit-border-radius:50%;border-radius:50%;width:50px;height:50px}#samsungbuds .swiper-button-next:active,#samsungbuds .swiper-button-prev:active{background-color:#000}@media(any-hover: hover){#samsungbuds .swiper-button-next:hover,#samsungbuds .swiper-button-prev:hover{background-color:#000}}#samsungbuds .click-samsungbuds{padding-top:40px}#samsungbuds .click-samsungbuds__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#samsungbuds .click-samsungbuds__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .click-samsungbuds__text{width:80%;margin:0 auto}#samsungbuds .click-samsungbuds__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .click-samsungbuds__media video{max-width:100%}#samsungbuds .sound-samsungbuds__bg{position:relative;z-index:2}#samsungbuds .sound-samsungbuds__text{position:absolute;z-index:5;top:3%;right:3%;width:50%}#samsungbuds .sound-samsungbuds__text h2,#samsungbuds .sound-samsungbuds__text p{text-align:right}#samsungbuds .time-samsungbuds{padding-top:40px}#samsungbuds .time-samsungbuds__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#samsungbuds .time-samsungbuds__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .time-samsungbuds__text{width:80%;margin:0 auto}#samsungbuds .time-samsungbuds__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .column-samsungbuds__title{padding:40px 15px}#samsungbuds .column-samsungbuds__title h2{text-align:center;margin-bottom:0}#samsungbuds .column-samsungbuds__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px 15px}#samsungbuds .column-samsungbuds__image img{-webkit-border-radius:15px;border-radius:15px}#samsungbuds .column-samsungbuds__text{width:85%;margin:0 auto;padding-top:20px}#samsungbuds .column-samsungbuds__text h2{font-size:30px}@media(max-width: 1440px){#samsungbuds .column-samsungbuds__text h2{font-size:-webkit-calc(18px + 12 * ((100vw - 320px) / 1120));font-size:calc(18px + 12 * ((100vw - 320px) / 1120))}}#samsungbuds .column-samsungbuds__text p{font-size:20px}@media(max-width: 1440px){#samsungbuds .column-samsungbuds__text p{font-size:-webkit-calc(16px + 4 * ((100vw - 320px) / 1120));font-size:calc(16px + 4 * ((100vw - 320px) / 1120))}}#samsungbuds .acces-samsungbuds__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding-top:20px}#samsungbuds .acces-samsungbuds__row_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#samsungbuds .acces-samsungbuds__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .acces-samsungbuds__text{width:85%;margin:0 auto}#samsungbuds .acces-samsungbuds__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#samsungbuds .snoska-samsungbuds__text p{padding:20px 15px;text-align:center}@media screen and (max-width: 991.98px){#samsungbuds .click-samsungbuds__text,#samsungbuds .time-samsungbuds__text{width:90%}#samsungbuds .column-samsungbuds__title{padding:30px 15px 20px}#samsungbuds .column-samsungbuds__text{width:90%}}@media screen and (max-width: 767.98px){#samsungbuds .swiper-button-next:after,#samsungbuds .swiper-button-prev:after{width:17px;height:17px}#samsungbuds .swiper-button-next,.swiper-button-prev{display:none}#samsungbuds .box-samsungbuds__text{padding:30px 15px 20px}#samsungbuds .click-samsungbuds__row,#samsungbuds .time-samsungbuds__row,#samsungbuds .acces-samsungbuds__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#samsungbuds .click-samsungbuds__text,#samsungbuds .time-samsungbuds__text{width:auto;padding:0 15px 0}#samsungbuds .click-samsungbuds__text h2,#samsungbuds .click-samsungbuds__text p,#samsungbuds .time-samsungbuds__text h2,#samsungbuds .time-samsungbuds__text p{text-align:center}#samsungbuds .sound-samsungbuds__text{width:70%}#samsungbuds .time-samsungbuds__row{gap:20px}#samsungbuds .acces-samsungbuds__text{width:auto;padding:20px 15px 10px}#samsungbuds .acces-samsungbuds__text h2,#samsungbuds .acces-samsungbuds__text p{text-align:center}}@media screen and (max-width: 479.98px){#samsungbuds .header-samsungbuds__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:20px}#samsungbuds .header-samsungbuds__item:nth-child(2)::after,#samsungbuds .header-samsungbuds__item:nth-child(2)::before{display:none}#samsungbuds .header-samsungbuds__item{padding-bottom:0}#samsungbuds .header-samsungbuds{padding-top:30px}#samsungbuds .box-samsungbuds__slider{padding-bottom:32px}#samsungbuds .column-samsungbuds__text{width:auto;padding:15px 15px 0}#samsungbuds .column-samsungbuds__text h2,#samsungbuds .column-samsungbuds__text p{text-align:center}}@media screen and (max-width: 377px){#samsungbuds .sound-samsungbuds__text{width:80%}}
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <div id="samsungbuds">
+        <div class="samsungbuds__container">
+            <div class="samsungbuds__header header-samsungbuds">
+                <div class="header-samsungbuds__row">
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img1.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>Функция активного шумоподавления</p>
+                        </div>
+                    </div>
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img2.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>Насыщенные низкие частоты</p>
+                        </div>
+                    </div>
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img3.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>30 часов автономной работы</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img4.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Ваш аудио компаньон на каждый день</h2>
+                    <p>Наушники вкладыши TWS Samsung Buds FE — это новое измерение прослушивания музыки, просмотра
+                        контента и разговоров с коллегами и родными. Они идеально размещаются в ушах, блокируют шумы с
+                        улицы и быстро синхронизируются со всеми устройствами Samsung Galaxy. Что бы вы ни делали и где
+                        бы ни были — TWS Samsung Buds FE подарят вам самый лучший аудио опыт!</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img5.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__slider swiper">
+                    <div class="box-samsungbuds__wrapper swiper-wrapper">
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Актуальные и универсальные цвета</h2>
+                                <p>Белый и графит — идеальные оттенки, подходящие к любому образу, смартфону и они
+                                    всегда останутся актуальными. Выбирайте свой вариант и радуйтесь не только
+                                    функционалом этих наушников, но и стилем.</p>
+                            </div>
+                            <div class="box-samsungbuds__media">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2646236/img6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Эргономичный дизайн</h2>
+                                <p>Galaxy Buds FE — это совсем небольшие наушники, дизайн которых создан с учетом
+                                    структуры уха. Они комфортны и удобны, потому что тесно прилегают к ушной раковине и
+                                    не меняют своего положения в течение длительного времени. Выбирайте разные амбушюры
+                                    и насадки, чтобы настроить наушники под себя на 100%.</p>
+                            </div>
+                            <div class="box-samsungbuds__media">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2646236/img7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Легкое управление</h2>
+                                <p>Наушники TWS Samsung Buds FE имеют точное отделение сенсорной зоны и держателя.
+                                    Благодаря этому можно спокойно управлять наушниками, не волнуясь за их положение.
+                                </p>
+                            </div>
+                            <div class="box-samsungbuds__video">
+                                <video controls autoplay muted>
+                                    <source src="https://cdn.comfy.ua/media/video/2646236/video1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Концентрируйтесь только на том, что нужно</h2>
+                    <p>Благодаря функции активного шумоподавления вы можете в прямом смысле отключить окружающий мир и
+                        сфокусироваться только на том, что вам нужно. На музыке, работе, просмотре фильма или чем-либо
+                        другом.</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img8.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__click click-samsungbuds">
+                <div class="click-samsungbuds__row">
+                    <div class="click-samsungbuds__item">
+                        <div class="click-samsungbuds__text">
+                            <h2>Одно прикосновение — и окружающий мир снова включен</h2>
+                            <p>Чтобы включить или отключить функцию активного шумоподавления, вам всего лишь нужно
+                                коснуться и задержать палец на сенсорной области. Так вы, например, можете услышать
+                                своего друга или коллегу, не снимая наушников или быстро убрать шум улицы, когда у вас
+                                важный звонок.</p>
+                        </div>
+                    </div>
+                    <div class="click-samsungbuds__media">
+                        <video controls autoplay muted>
+                            <source src="https://cdn.comfy.ua/media/video/2646236/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__sound sound-samsungbuds">
+                <div class="sound-samsungbuds__bg">
+                    <div class="sound-samsungbuds__image">
+                        <picture>
+                            <source media="(min-width: 650px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2646236/img10.jpg">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2646236/img10m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img10.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="sound-samsungbuds__text">
+                        <h2>Мощный насыщенный звук</h2>
+                        <p>С этими наушниками неважно что вы слушаете — в любом случае вы насладитесь мощным и глубоким
+                            звучанием и басами нового 1-полосного динамика.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__time time-samsungbuds">
+                <div class="time-samsungbuds__row">
+                    <div class="time-samsungbuds__item">
+                        <div class="time-samsungbuds__text">
+                            <h2>30 часов прослушивания</h2>
+                            <p>Galaxy Buds FE оснащен усиленным и компактным по размеру аккумулятором. От полного заряда
+                                он работает до 30 часов, поэтому можете смело брать их в долгие поездки и не
+                                беспокоиться, что на половине дороги вы останетесь без любимых исполнителей или
+                                подкастов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="time-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__column column-samsungbuds">
+                <div class="column-samsungbuds__title">
+                    <h2>Четкие вызовы</h2>
+                </div>
+                <div class="column-samsungbuds__row">
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img12.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Голос, передаваемый с максимально четко</h2>
+                            <p>Три встроенных микрофона TWS Samsung Buds FE передают ваш голос кристально чисто и без
+                                лишних шумов. Абсолютный баланс работы основного, дополнительного и внутреннего
+                                микрофона для комфортных звонков как для вас, так и для собеседника!</p>
+                        </div>
+                    </div>
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img13.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Персонализированные наушники</h2>
+                            <p>Технология персонализированного формирования луча — то, что делает использование
+                                наушников еще более комфортным и надежным. Наушники подстраиваются под вас,
+                                автоматически определяя ваш голос.</p>
+                        </div>
+                    </div>
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img14.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Фильтрация шума</h2>
+                            <p>Где бы вы ни были, даже если это самое ветреное место или шумная улица, наушники быстро и
+                                качественно разделяют ваш голос от фонового шума — все благодаря DNN-решению.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Звук, который всегда с вами</h2>
+                    <p>Функция Auto Switch поможет вам легко и быстро объединиться с устройствами Samsung Galaxy и
+                        непрерывно переключаться между ними. Со смартфона на планшет или телевизор и обратно — так вы не
+                        упустите ни одной детали фильма или песни. Вы также можете подключиться с помощью прикосновения
+                        или Bixby.</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img15.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Наушники потерялись? Не проблема!</h2>
+                    <p>Используя местонахождение наушников, вы можете легко отследить их. Когда они найдутся на другом
+                        смартфоне, ваша контактная информация будет отправлена вместе с сообщением "Lost and found".</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img16.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Напоминание не оставить наушники дома</h2>
+                    <p>Galaxy Buds FE настолько умны, что сообщат вам, если вы соберетесь выйти из дома без них. Все для
+                        того, чтобы они всегда были рядом, когда это нужно!</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img17.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__acces acces-samsungbuds">
+                <div class="acces-samsungbuds__row acces-samsungbuds__row_rev">
+                    <div class="acces-samsungbuds__item">
+                        <div class="acces-samsungbuds__text">
+                            <h2>Персонализированные настройки звука</h2>
+                            <p>От эквалайзера до голосового пробуждения Bixby — всем этим можно управлять в программе
+                                Galaxy Wearable прямо с вашего устройства. Настройки просты в использовании, поэтому вы
+                                быстро сделаете звук именно таким, каким вам нужно!</p>
+                        </div>
+                    </div>
+                    <div class="acces-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="acces-samsungbuds__row">
+                    <div class="acces-samsungbuds__item">
+                        <div class="acces-samsungbuds__text">
+                            <h2>Не расставайтесь с любимым чехлом</h2>
+                            <p>Наушники Galaxy Buds FE совместимы с чехлами на Galaxy Buds2, Galaxy Buds2 Pro и Galaxy
+                                Buds Live. Поэтому вам не нужно расставаться с любимым чехлом от старых наушников!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="acces-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img19.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__snoska snoska-samsungbuds">
+                <div class="snoska-samsungbuds__text">
+                    <p>Купить наушники Samsung Galaxy Buds FE можно на сайте или в фирменных магазинах Comfy!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.box-samsungbuds__slider', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+    UA
+
+    <div id="samsungbuds">
+        <div class="samsungbuds__container">
+            <div class="samsungbuds__header header-samsungbuds">
+                <div class="header-samsungbuds__row">
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img1.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>Функція активного шумозаглушення</p>
+                        </div>
+                    </div>
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img2.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>Насичені низькі частоти</p>
+                        </div>
+                    </div>
+                    <div class="header-samsungbuds__item">
+                        <div class="header-samsungbuds__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img3.png" alt="">
+                        </div>
+                        <div class="header-samsungbuds__text">
+                            <p>30 годин автономної роботи</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img4.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Ваш аудіокомпаньйон на кожен день</h2>
+                    <p>Навушники вкладиші TWS Samsung Buds FE — це новий вимір прослуховування музики, переглядання
+                        контенту та розмов з колегами та рідними. Вони ідеально розміщуються у вухах, блокують небажані
+                        шуми з вулиці та швидко синхронізуються з усіма пристроями Samsung Galaxy. Що б ви не робили та
+                        де б не були — TWS Samsung Buds FE подарують вам найкращий аудіодосвід!</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img5.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__slider swiper">
+                    <div class="box-samsungbuds__wrapper swiper-wrapper">
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Актуальні та універсальні кольори</h2>
+                                <p>Білий та графіт — ідеальні відтінки, які пасуватимуть до будь-якого образу, смартфону
+                                    та вони
+                                    завжди залишаться актуальними. Обирайте свій варіант і насолоджуйтеся не тільки
+                                    функціоналом цих
+                                    навушників, але й стилем.</p>
+                            </div>
+                            <div class="box-samsungbuds__media">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2646236/img6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Ергономічний дизайн</h2>
+                                <p>Galaxy Buds FE — це зовсім невеликі навушники, дизайн яких створений з урахуванням
+                                    структури вуха. Вони комфортні та зручні, бо тісно прилягають до вушної раковини і
+                                    не змінюють свого положення протягом довгого часу. Обирайте різні амбушури та
+                                    насадки, щоб налаштувати навушники під себе на 100%.</p>
+                            </div>
+                            <div class="box-samsungbuds__media">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2646236/img7.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="box-samsungbuds__slide swiper-slide">
+                            <div class="box-samsungbuds__text">
+                                <h2>Легке керування</h2>
+                                <p>Навушники TWS Samsung Buds FE мають чітке відділення сенсорної зони та зони тримання.
+                                    Завдяки цьому ви можете спокійно керувати навушниками, не хвилюючись за їх
+                                    положення. </p>
+                            </div>
+                            <div class="box-samsungbuds__video">
+                                <video controls autoplay muted>
+                                    <source src="https://cdn.comfy.ua/media/video/2646236/video1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Концентруйтеся тільки на тому, що потрібно</h2>
+                    <p>Завдяки функції активного шумозаглушення ви можете в прямому сенсі відключити навколишній світ і
+                        сфокусуватися тільки на тому, що потрібно. На музиці, роботі, перегляді фільму чи будь-чому
+                        іншому.</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img8.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__click click-samsungbuds">
+                <div class="click-samsungbuds__row">
+                    <div class="click-samsungbuds__item">
+                        <div class="click-samsungbuds__text">
+                            <h2>Один дотик — і навколишній світ знову увімкнено</h2>
+                            <p>Щоб увімкнути або вимкнути функцію активного шумозаглушення, вам всього лише треба
+                                торкнутися й утримати палець на сенсорній області. Так ви, наприклад, можете почути
+                                свого друга або колегу, не знімаючи навушників або швидко прибрати шум вулиці, коли у
+                                вас важливий дзвінок.</p>
+                        </div>
+                    </div>
+                    <div class="click-samsungbuds__media">
+                        <video controls autoplay muted>
+                            <source src="https://cdn.comfy.ua/media/video/2646236/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__sound sound-samsungbuds">
+                <div class="sound-samsungbuds__bg">
+                    <div class="sound-samsungbuds__image">
+                        <picture>
+                            <source media="(min-width: 650px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2646236/img10.jpg">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2646236/img10m.jpg">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img10.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="sound-samsungbuds__text">
+                        <h2>Потужний насичений звук</h2>
+                        <p>З цими навушниками неважливо що ви слухаєте — в будь-якому випадку ви насолодитеся потужним і
+                            глибоким звучанням і басами нового 1-смугового динаміка.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__time time-samsungbuds">
+                <div class="time-samsungbuds__row">
+                    <div class="time-samsungbuds__item">
+                        <div class="time-samsungbuds__text">
+                            <h2>30 годин прослуховування</h2>
+                            <p>Galaxy Buds FE оснащені потужним і компактним за розміром акумулятором. Від повного
+                                заряду він працює до 30 годин, тому можете сміливо брати їх у довгі поїздки та не
+                                хвилюватися, що на половині дорозі ви залишитеся без улюблених виконавців або подкастів.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="time-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__column column-samsungbuds">
+                <div class="column-samsungbuds__title">
+                    <h2>Чіткі виклики</h2>
+                </div>
+                <div class="column-samsungbuds__row">
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img12.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Голос, який передається з максимально чітко</h2>
+                            <p>Три вбудовані мікрофони TWS Samsung Buds FE передають ваш голос кришталево чисто і без
+                                зайвих шумів. Абсолютний баланс роботи основного, додатково і внутрішнього мікрофона для
+                                комфортних дзвінків як для вас, так і для співрозмовника!</p>
+                        </div>
+                    </div>
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img13.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Персоналізовані навушники</h2>
+                            <p>Технологія персоналізованого формування променя — те, що робить використання навушників
+                                ще комфортнішим та надійнішим. Навушники підлаштовуються під вас, автоматично визначаючи
+                                ваш голос.</p>
+                        </div>
+                    </div>
+                    <div class="column-samsungbuds__item">
+                        <div class="column-samsungbuds__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2646236/img14.jpg" alt="">
+                        </div>
+                        <div class="column-samsungbuds__text">
+                            <h2>Фільтрація шуму </h2>
+                            <p>Де б ви не були, навіть якщо це найгаласливіше або найвітряніше місце, навушники швидко
+                                та якісно розділяє ваш голос від фонового шуму — все завдяки DNN-рішенню.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Звук, який завжди з вами</h2>
+                    <p>Функція Auto Switch допоможе вам легко та швидко об’єднатися з пристроями Samsung Galaxy і
+                        безперервно перемикатися між ними. Зі смартфона на планшет або телевізор і назад — так ви не
+                        пропустите жодної деталі фільму або пісні. Ви також можете під’єднатися за допомогою дотику чи
+                        Bixby.</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img15.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Навушники загубилися? Не проблема!</h2>
+                    <p>Користуючись місцеперебуванням навушників, ви можете легко відстежити їх. Коли вони знайдуться на
+                        іншому смартфоні, ваша контактна інформація буде надіслана разом з повідомленням “Lost and
+                        found”.</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img16.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__box box-samsungbuds">
+                <div class="box-samsungbuds__text">
+                    <h2>Нагадування не забути навушники вдома</h2>
+                    <p>Galaxy Buds FE настільки розумні, що повідомлять вам, якщо ви зберетеся вийти з дому без них. Все
+                        для того, щоб вони завжди були поряд, коли це потрібно!</p>
+                </div>
+                <div class="box-samsungbuds__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2646236/img17.jpg" alt="">
+                </div>
+            </div>
+            <div class="samsungbuds__acces acces-samsungbuds">
+                <div class="acces-samsungbuds__row acces-samsungbuds__row_rev">
+                    <div class="acces-samsungbuds__item">
+                        <div class="acces-samsungbuds__text">
+                            <h2>Персоналізовані налаштування звуку</h2>
+                            <p>Від еквалайзера до голосового пробудження Bixby — всим цим можна керувати в програмі
+                                Galaxy Wearable прямо з вашого пристрою. Налаштування прості у використанні, тому ви
+                                швидко зробите звук саме таким, яким вам треба!</p>
+                        </div>
+                    </div>
+                    <div class="acces-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="acces-samsungbuds__row">
+                    <div class="acces-samsungbuds__item">
+                        <div class="acces-samsungbuds__text">
+                            <h2>Не розлучайтеся з улюбленим чохлом</h2>
+                            <p>Навушники Galaxy Buds FE сумісні з чохлами на Galaxy Buds2, Galaxy Buds2 Pro та Galaxy
+                                Buds Live. Тому вам не потрібно розлучатися з улюбленим чохлом від старих навушників!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="acces-samsungbuds__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2646236/img19.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="samsungbuds__snoska snoska-samsungbuds">
+                <div class="snoska-samsungbuds__text">
+                    <p>Купити навушники Samsung Galaxy Buds FE в Україні можна на сайті або у фірмових магазинах Comfy!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
