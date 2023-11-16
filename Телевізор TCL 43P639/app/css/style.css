@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#layout-template {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+}
+#layout-template h2, #layout-template h3, #layout-template h4, #layout-template h5, #layout-template h6, #layout-template p, #layout-template img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+#layout-template img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+#layout-template h2 {
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  font-weight: 700;
+}
+#layout-template p {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main-container.page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bc-description__content p:first-letter {
+  padding-left: 0 !important;
+}
+
+body {
+  margin: 0;
+}
+
+.tcl__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.tcl__content {
+  padding: 20px 0;
+}
+
+.content__title {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.title__h2 {
+  padding: 20px 0;
+}
+
+.title__p {
+  padding-bottom: 20px;
+}
+
+.content-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-flex .content__images {
+  width: 50%;
+}
+
+.content-flex .content__title {
+  width: 50%;
+  padding: 0 20px;
+}
+
+#layout-template .content-flex .content__title .title__h2 h2 {
+  text-align: left;
+}
+
+#layout-template .content-flex .content__title .title__p p {
+  text-align: left;
+}
+
+.p-size {
+  padding-bottom: 20px;
+}
+
+#layout-template .p-size p {
+  font-size: 20px;
+}
+
+.p-left {
+  padding-top: 20px;
+}
+
+#layout-template .p-left p {
+  text-align: left;
+}
+
+.tcl__flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tcl__flex .tcl__content {
+  width: 480px;
+}
+
+.p-padd {
+  padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .content-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content-flex .content__images {
+    width: 100%;
+  }
+  .content-flex .content__title {
+    width: 100%;
+    padding: 0;
+  }
+  .tcl__flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tcl__flex .tcl__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content__title {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #layout-template h2 {
+    font-size: 20px;
+  }
+  #layout-template p {
+    font-size: 16px;
+  }
+}
