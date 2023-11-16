@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+#layout-template
+   width: 100%
+   height: auto
+   position: relative
+   overflow: hidden
+   background: #fff
+   font-family: 'Roboto', sans-serif
+   h2, h3, h4, h5, h6, p, img
+      padding: 0
+      margin: 0
+      display: block
+   img
+      max-width: 100%
+      margin: 0 auto
+   h2
+      font-size: 36px
+      line-height: 120%
+      text-align: center
+      font-weight: 700
+   h3
+      // Стили с макета
+   p
+      font-size: 24px
+      line-height: 120%
+      font-weight: 400
+      text-align: center
+   // И так далее
+.main-container.page
+   padding-left: 0
+   padding-right: 0
+.bc-description__content p:first-letter
+   padding-left: 0 !important
+//end default styles
+
+// Тут пишем sass стили
+body
+   margin: 0
+
+.tcl__container
+   max-width: 1522px
+   margin: 0 auto
+   padding: 0 15px
+.tcl__content
+   padding: 20px 0
+.content__images
+.content__title
+   max-width: 90%
+   margin: 0 auto
+.title__h2
+   padding: 20px 0
+.title__p
+   padding-bottom: 20px
+.content-flex
+   display: flex
+   flex-direction: row
+   align-items: center
+.flex-revers
+   flex-direction: row-reverse
+.content-flex .content__images 
+   width: 50%  
+.content-flex .content__title
+   width: 50%  
+   padding: 0 20px
+#layout-template .content-flex .content__title .title__h2 h2
+   text-align: left
+#layout-template .content-flex .content__title .title__p p
+   text-align: left
+.p-size
+   padding-bottom: 20px
+#layout-template .p-size p
+   font-size: 20px
+.p-left
+   padding-top: 20px
+#layout-template  .p-left p
+   text-align: left
+#layout-template  .title-left h2
+   text-align: left
+#layout-template  .title-left p
+   text-align: left
+.tcl__flex
+   display: flex
+   flex-direction: row
+   align-items: stretch
+   justify-content: space-between
+.tcl__flex  .tcl__content
+   width: 485px
+#layout-template  .p-iden p
+   text-indent: 10px
+   padding: 10px 0
+.p-padd
+   padding-top: 20px
+.tcl__content
+.content-bg
+   height: 710px
+   background-image: url('https://cdn.comfy.ua/media/x/img3/2679214/img_4.png')
+   background-repeat: no-repeat
+   background-size: cover
+   background-position: center
+   position: relative
+.content-bg .content__images  
+   width: 60%
+.content-bg .content__title
+   padding: 0 20px
+   width: 40%
+   position: absolute
+   top: 50%
+   left: 20px
+.title__icon
+   padding: 20px 0
+#layout-template  .title__icon img
+   margin: 0 auto 0 0
+#layout-template  .content-bg .title__h2 h2
+   text-align: left
+   color: #fff
+#layout-template  .content-bg .title__p p
+   text-align: left
+   color: #fff
+//media*******************
+// @media (min-width: 1920px)
+// @media (max-width: 1480px) 
+@media (max-width: 1024px)
+   .content-flex
+      flex-direction: column
+   .content-flex .content__images 
+      width: 100%  
+   .content-flex .content__title
+      width: 100%  
+      padding: 0
+   .tcl__flex
+      flex-wrap: wrap
+      justify-content: center
+   .tcl__flex  .tcl__content
+      max-width: 600px
+      display: flex
+      flex-direction: column-reverse
+   .content__title
+      max-width: 100%
+   .content-bg
+      height: 510px
+   .content-bg .content__title
+      top: 20% 
+@media (max-width: 768px)
+   .content-bg
+      flex-direction: column-reverse
+   .content-bg .content__images
+      width: 100% 
+   .content-bg .content__title
+      width: 90%
+   .content-bg .content__title
+      top: 20%
+      left: 0
+@media (max-width: 480px)
+   #layout-template h2
+      font-size: 20px
+   #layout-template p
+      font-size: 16px
+      text-align: left
+   .content-bg
+      height: auto
+      min-height: 240px
+   .content-bg .content__title
+      top: 10%
+      left: 0
+      background: #00000045
+   
+// @media (max-width: 321px)
+// @media (max-width: 812px) and (orientation: landscape)
