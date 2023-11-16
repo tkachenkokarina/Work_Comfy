@@ -1,0 +1,206 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1920px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:50px;line-height:1.2;margin:20px 0px}#maincontent .maincontent__container h3{font-size:28px;line-height:1.2;margin:20px 0px 40px}#maincontent .maincontent__container p{font-size:22px;line-height:1.6;margin-bottom:10px}#maincontent .top-box__inner{max-width:1750px;margin:0 auto;padding:80px 20px 160px}#maincontent .top-box__img{margin-bottom:60px}#maincontent .top-box__img img{margin:0 auto}#maincontent .top-box__header p{font-size:55px;text-align:center}#maincontent .row-box__inner{position:relative;z-index:5}#maincontent .row-box__content{position:absolute;z-index:6}#maincontent .row-box__content-item:last-child{margin-bottom:0}#maincontent .jvc-apps__content{top:50%;left:260px;right:60%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .jvc-apps__content-item{max-width:531px;margin-bottom:65px}#maincontent .jvc-apps__content-text{margin-top:20px}#maincontent .col-box__inner{position:relative;z-index:6}#maincontent .col-box__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;position:absolute;z-index:7}#maincontent .col-box__text{color:#fff}#maincontent .jvc-video__items{padding:0 25px;top:110px;left:0;right:0}#maincontent .jvc-video__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:0;-webkit-flex:0 1 30%;-moz-box-flex:0;-ms-flex:0 1 30%;flex:0 1 30%}#maincontent .jvc-video__item_rev{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .jvc-video__img{margin-left:85px;margin-bottom:45px}#maincontent .jvc-video__img_r{margin-right:85px;margin-left:0}#maincontent .jvc-video__text{width:420px;margin-right:auto;margin-bottom:25px}#maincontent .jvc-video__text_l{margin-left:auto;margin-right:0}#maincontent .jvc-contrast__content{left:145px;right:60%;top:126px;max-width:480px}#maincontent .jvc-uhd__content{top:120px;left:65%;right:150px;max-width:520px}#maincontent .jvc-uhd__content-text h2,#maincontent .jvc-uhd__content-text p{color:#fff}#maincontent .jvc-sound__content{left:145px;right:60%;top:126px;max-width:470px}#maincontent .jvc-design__content{top:120px;left:70%;right:200px;max-width:385px}#maincontent .jvc-design__content-text h2,#maincontent .jvc-design__content-text p{color:#fff}#maincontent .jvc-support__content{left:50%;margin-right:-50%;top:69%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:100%}#maincontent .jvc-support__content-inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;padding:0 90px}#maincontent .jvc-support__content-item{-webkit-box-flex:0;-webkit-flex:0 1 22%;-moz-box-flex:0;-ms-flex:0 1 22%;flex:0 1 22%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;width:110px;height:137px}#maincontent .jvc-support__content-item:first-child{-webkit-box-flex:0;-webkit-flex:0 1 34%;-moz-box-flex:0;-ms-flex:0 1 34%;flex:0 1 34%;width:100%;height:100%}#maincontent .jvc-support__content-item:first-child p{text-align:left}#maincontent .jvc-support__content-text{padding:5px 15px}#maincontent .jvc-support__content-text p{text-align:center;margin-top:25px}#maincontent .jvc-support__content-img{max-width:100%;max-height:100%}#maincontent .jvc-history__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2707048/img09_desc.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:100%}#maincontent .jvc-history__inner{padding-top:110px}#maincontent .jvc-history__banner{display:none}#maincontent .jvc-history__logo{margin-left:155px;max-width:280px;width:100%}#maincontent .jvc-history__logo p{font-size:62px;text-align:center;color:#fff}#maincontent .jvc-history__content{top:0;left:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#maincontent .jvc-history__img{padding-bottom:300px}#maincontent .jvc-history__content-item{color:#fff;position:absolute;z-index:9;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;right:30px}#maincontent .jvc-history__content-item h3,#maincontent .jvc-history__content-item p{text-align:center}#maincontent .jvc-history__content-item img{margin:0 auto}#maincontent .jvc-history__content-item_01{top:572px;left:35px;width:295px}#maincontent .jvc-history__content-item_02{top:530px;left:380px;width:290px}#maincontent .jvc-history__content-item_03{top:473px;left:751px;width:250px}#maincontent .jvc-history__content-item_04{top:398px;left:1076px;width:300px}#maincontent .jvc-history__content-item_05{top:296px;left:1433px;right:30px;width:410px}#maincontent .jvc-history__content-title{margin-bottom:40px}#maincontent .jvc-history__content-text{padding:35px 10px 10px}@media screen and (max-width: 1919.98px){#maincontent .jvc-history__content-item_01{left:-webkit-calc(-35px + 70*(100vw - 320px)/1599);left:calc(-35px + 70*(100vw - 320px)/1599);width:-webkit-calc(220px + 75*(100vw - 320px)/1599);width:calc(220px + 75*(100vw - 320px)/1599)}#maincontent .jvc-history__content-item_02{left:-webkit-calc(215px + 165*(100vw - 320px)/1599);left:calc(215px + 165*(100vw - 320px)/1599);width:-webkit-calc(263px + 27*(100vw - 320px)/1599);width:calc(263px + 27*(100vw - 320px)/1599)}#maincontent .jvc-history__content-item_03{left:-webkit-calc(463px + 288*(100vw - 320px)/1599);left:calc(463px + 288*(100vw - 320px)/1599);width:-webkit-calc(175px + 75*(100vw - 320px)/1599);width:calc(175px + 75*(100vw - 320px)/1599)}#maincontent .jvc-history__content-item_04{left:-webkit-calc(682px + 394*(100vw - 320px)/1599);left:calc(682px + 394*(100vw - 320px)/1599);width:-webkit-calc(160px + 140*(100vw - 320px)/1599);width:calc(160px + 140*(100vw - 320px)/1599)}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 560*(100vw - 320px)/1599);left:calc(873px + 560*(100vw - 320px)/1599);width:-webkit-calc(250px + 160*(100vw - 320px)/1599);width:calc(250px + 160*(100vw - 320px)/1599)}}@media screen and (max-width: 1875px){#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 488*(100vw - 320px)/1555);left:calc(873px + 488*(100vw - 320px)/1555)}}@media screen and (max-width: 1830px){#maincontent .jvc-history__content-item_04{left:-webkit-calc(682px + 334*(100vw - 320px)/1510);left:calc(682px + 334*(100vw - 320px)/1510)}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 471*(100vw - 320px)/1510);left:calc(873px + 471*(100vw - 320px)/1510)}}@media screen and (max-width: 1800px){#maincontent .jvc-support__content{top:68%}#maincontent .jvc-history__content-item_01{top:551px}#maincontent .jvc-history__content-item_02{top:508px}#maincontent .jvc-history__content-item_03{top:455px}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 419*(100vw - 320px)/1480);left:calc(873px + 419*(100vw - 320px)/1480)}}@media screen and (max-width: 1760px){#maincontent .jvc-history__content-item_03{left:-webkit-calc(463px + 209*(100vw - 320px)/1440);left:calc(463px + 209*(100vw - 320px)/1440)}#maincontent .jvc-history__content-item_04{left:-webkit-calc(682px + 293*(100vw - 320px)/1440);left:calc(682px + 293*(100vw - 320px)/1440)}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 427*(100vw - 320px)/1440);left:calc(873px + 427*(100vw - 320px)/1440);width:-webkit-calc(250px + 120*(100vw - 320px)/1600);width:calc(250px + 120*(100vw - 320px)/1600)}}@media screen and (max-width: 1700px){#maincontent .maincontent__container h2{font-size:-webkit-calc(26px + 24*(100vw - 320px)/1380);font-size:calc(26px + 24*(100vw - 320px)/1380)}#maincontent .maincontent__container h3{font-size:-webkit-calc(16px + 12*(100vw - 320px)/1380);font-size:calc(16px + 12*(100vw - 320px)/1380)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/1380);font-size:calc(16px + 6*(100vw - 320px)/1380)}#maincontent .top-box__inner{padding:60px 20px 140px}#maincontent .top-box__header p{font-size:-webkit-calc(18px + 37*(100vw - 320px)/1380);font-size:calc(18px + 37*(100vw - 320px)/1380)}#maincontent .jvc-apps__content{left:220px}#maincontent .jvc-video__items{top:60px}#maincontent .jvc-uhd__content{left:62%}#maincontent .jvc-support__content{top:66%}#maincontent .jvc-history__logo p{font-size:-webkit-calc(18px + 44*(100vw - 320px)/1380);font-size:calc(18px + 44*(100vw - 320px)/1380)}#maincontent .jvc-history__content-item_02{left:-webkit-calc(215px + 105*(100vw - 320px)/1380);left:calc(215px + 105*(100vw - 320px)/1380)}#maincontent .jvc-history__content-item_03{left:-webkit-calc(463px + 187*(100vw - 320px)/1380);left:calc(463px + 187*(100vw - 320px)/1380)}#maincontent .jvc-history__content-item_04{left:-webkit-calc(682px + 246*(100vw - 320px)/1380);left:calc(682px + 246*(100vw - 320px)/1380)}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 386*(100vw - 320px)/1380);left:calc(873px + 386*(100vw - 320px)/1380)}}@media screen and (max-width: 1640px){#maincontent .jvc-design__content{right:130px}#maincontent .jvc-support__content-inner{padding:0 50px}#maincontent .jvc-history__content-item_01{top:529px}#maincontent .jvc-history__content-item_02{top:488px}#maincontent .jvc-history__content-item_03{top:436px}#maincontent .jvc-history__content-item_04{top:377px}#maincontent .jvc-history__content-item_05{top:283px;left:-webkit-calc(873px + 340*(100vw - 320px)/1320);left:calc(873px + 340*(100vw - 320px)/1320)}}@media screen and (max-width: 1570px){#maincontent .jvc-video__img img{width:80%}#maincontent .jvc-video__img_r{margin-right:50px}#maincontent .jvc-support__content-img img{width:80%}#maincontent .jvc-history__content-item_01{top:507px}#maincontent .jvc-history__content-item_02{top:462px;left:-webkit-calc(215px + 72*(100vw - 320px)/1250);left:calc(215px + 72*(100vw - 320px)/1250)}#maincontent .jvc-history__content-item_03{top:418px;left:-webkit-calc(463px + 126*(100vw - 320px)/1250);left:calc(463px + 126*(100vw - 320px)/1250)}#maincontent .jvc-history__content-item_04{top:357px;left:-webkit-calc(682px + 178*(100vw - 320px)/1250);left:calc(682px + 178*(100vw - 320px)/1250)}#maincontent .jvc-history__content-item_05{top:271px;left:-webkit-calc(873px + 281*(100vw - 320px)/1250);left:calc(873px + 281*(100vw - 320px)/1250)}}@media screen and (max-width: 1540px){#maincontent .maincontent__container p{line-height:1.3}#maincontent .top-box__inner{padding:50px 20px 130px}#maincontent .jvc-apps__content-item{margin-bottom:45px}#maincontent .jvc-contrast__content,#maincontent .jvc-sound__content{left:135px;top:65px}#maincontent .jvc-uhd__content{right:100px}#maincontent .jvc-support__content-text h2{margin:10px 0}#maincontent .jvc-support__content-text p{margin-top:10px}}@media screen and (max-width: 1510px){#maincontent .jvc-history__content-item_01{top:480px;width:-webkit-calc(220px + 10*(100vw - 320px)/1190);width:calc(220px + 10*(100vw - 320px)/1190)}#maincontent .jvc-history__content-item_02{top:421px;left:-webkit-calc(215px + 51*(100vw - 320px)/1190);left:calc(215px + 51*(100vw - 320px)/1190)}#maincontent .jvc-history__content-item_03{top:396px;left:-webkit-calc(463px + 101*(100vw - 320px)/1190);left:calc(463px + 101*(100vw - 320px)/1190)}#maincontent .jvc-history__content-item_04{top:337px;left:-webkit-calc(682px + 138*(100vw - 320px)/1190);left:calc(682px + 138*(100vw - 320px)/1190)}#maincontent .jvc-history__content-item_05{top:251px;left:-webkit-calc(873px + 235*(100vw - 320px)/1190);left:calc(873px + 235*(100vw - 320px)/1190)}}@media screen and (max-width: 1470px){#maincontent .jvc-video__img{margin-left:70px}#maincontent .jvc-video__img_r{margin-left:0;margin-right:20px}#maincontent .jvc-support__content-inner{padding:0 40px}#maincontent .jvc-history__content-item_05{width:-webkit-calc(250px + 20*(100vw - 320px)/1150);width:calc(250px + 20*(100vw - 320px)/1150)}}@media screen and (max-width: 1440px){#maincontent .jvc-support__content-inner{padding:0 30px}#maincontent .jvc-history__content-item_01{top:453px}#maincontent .jvc-history__content-item_02{top:413px;width:-webkit-calc(250px + 10*(100vw - 320px)/1120);width:calc(250px + 10*(100vw - 320px)/1120)}#maincontent .jvc-history__content-item_03{top:378px;left:-webkit-calc(463px + 68*(100vw - 320px)/1120);left:calc(463px + 68*(100vw - 320px)/1120)}#maincontent .jvc-history__content-item_04{top:324px;left:-webkit-calc(682px + 93*(100vw - 320px)/1120);left:calc(682px + 93*(100vw - 320px)/1120)}#maincontent .jvc-history__content-item_05{top:241px;left:-webkit-calc(873px + 206*(100vw - 320px)/1120);left:calc(873px + 206*(100vw - 320px)/1120)}}@media screen and (max-width: 1400px){#maincontent .jvc-support__content-item{-webkit-box-flex:0;-webkit-flex:0 1 20%;-moz-box-flex:0;-ms-flex:0 1 20%;flex:0 1 20%}#maincontent .jvc-support__content-item:first-child{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .jvc-support__content-img img{width:80%;margin:0 auto}#maincontent .jvc-history__content-item_02{width:-webkit-calc(150px + 80*(100vw - 320px)/1080);width:calc(150px + 80*(100vw - 320px)/1080)}#maincontent .jvc-history__content-item_03{left:-webkit-calc(463px + 44*(100vw - 320px)/1080);left:calc(463px + 44*(100vw - 320px)/1080)}#maincontent .jvc-history__content-item_04{left:-webkit-calc(682px + 63*(100vw - 320px)/1080);left:calc(682px + 63*(100vw - 320px)/1080);width:-webkit-calc(160px + 78*(100vw - 320px)/1080);width:calc(160px + 78*(100vw - 320px)/1080)}#maincontent .jvc-history__content-item_05{left:-webkit-calc(873px + 173*(100vw - 320px)/1080);left:calc(873px + 173*(100vw - 320px)/1080)}}@media screen and (max-width: 1350px){#maincontent .jvc-apps__content{left:190px}#maincontent .jvc-video__items{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .jvc-history__content-item_05{width:-webkit-calc(210px + 52*(100vw - 320px)/1030);width:calc(210px + 52*(100vw - 320px)/1030);left:-webkit-calc(873px + 143*(100vw - 320px)/1080);left:calc(873px + 143*(100vw - 320px)/1080)}}@media screen and (max-width: 1300px){#maincontent .top-box__inner{padding:30px 20px 110px}#maincontent .top-box__img img{width:200px}#maincontent .jvc-apps__content{left:150px}#maincontent .jvc-apps__content-item{margin-bottom:30px}#maincontent .jvc-video__img img{width:70%}#maincontent .jvc-video__img_r{margin-right:0}#maincontent .jvc-uhd__content{right:60px;top:70px}#maincontent .jvc-design__content{left:68%;right:90px}#maincontent .jvc-support__content-img img{width:60%}#maincontent .jvc-history__bg{background-image:none;background-color:#122544}#maincontent .jvc-history__inner{padding-top:0}#maincontent .jvc-history__images{position:relative;z-index:6}#maincontent .jvc-history__banner{display:block}#maincontent .jvc-history__content{position:unset;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .jvc-history__content-item{position:unset;width:auto}#maincontent .jvc-history__img{display:none}#maincontent .jvc-history__logo{position:absolute;z-index:8;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);margin-left:0}#maincontent .jvc-history__content-title{margin-bottom:0}#maincontent .jvc-history__content-title h3{margin:20px 0 15px}#maincontent .jvc-history__content-text{padding:15px 40px 50px}}@media screen and (max-width: 1200px){#maincontent .jvc-apps__content{left:145px;right:58%}#maincontent .jvc-apps__content-item{margin-bottom:20px}#maincontent .jvc-apps__content-text{margin-top:15px}#maincontent .jvc-video__img img{width:60%}#maincontent .jvc-video__text_l{width:360px}#maincontent .jvc-sound__content{right:55%}#maincontent .jvc-design__content{top:70px;right:65px}}@media screen and (max-width: 1100px){#maincontent .maincontent__container p{line-height:1.2}#maincontent .top-box__inner{padding:30px 20px 70px}#maincontent .jvc-support__content-inner{padding:0 12px}#maincontent .jvc-apps__content{left:120px}#maincontent .jvc-contrast__content,#maincontent .jvc-sound__content{left:60px}#maincontent .jvc-uhd__content{right:40px}}@media screen and (max-width: 1024.98px){#maincontent .top-box__inner{padding:30px 20px}#maincontent .top-box__img{margin-bottom:30px}#maincontent .jvc-apps__content{right:56%}#maincontent .jvc-apps__content-img img{width:80%}#maincontent .jvc-video__text{width:320px}#maincontent .jvc-video__img{margin-bottom:25px}#maincontent .jvc-video__img_r{margin-left:50px}#maincontent .jvc-contrast__content,#maincontent .jvc-sound__content{top:50px}#maincontent .jvc-design__content{left:65%;right:40px}#maincontent .jvc-support__content{top:65%}#maincontent .jvc-support__content-img img{width:50%}}@media screen and (max-width: 991.98px){#maincontent .top-box__inner{padding:20px 10px 10px}#maincontent .top-box__img img{width:170px}#maincontent .row-box__inner{margin-bottom:50px}#maincontent .jvc-apps__content{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);margin-top:20px}#maincontent .jvc-apps__content-item{max-width:100%;margin-bottom:30px}#maincontent .jvc-apps__content-text{margin-top:20px;padding:0 10px}#maincontent .jvc-apps__content-text h2,#maincontent .jvc-apps__content-text p{text-align:center}#maincontent .jvc-apps__content-img img{width:40%;margin:0 auto}#maincontent .col-box__inner{background:#000}#maincontent .col-box__items{position:unset;margin-top:20px}#maincontent .col-box__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .jvc-video__items{-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .jvc-video__img_r{margin-right:70px;margin-left:0}#maincontent .jvc-contrast__inner,#maincontent .jvc-sound__inner{margin-bottom:0}#maincontent .jvc-contrast__content,#maincontent .jvc-sound__content{left:40px}#maincontent .jvc-uhd__inner{margin-bottom:0}#maincontent .jvc-uhd__content{top:50px;right:20px}#maincontent .jvc-sound__content{right:50%}#maincontent .jvc-design__inner{margin-bottom:0}#maincontent .jvc-design__content{top:50px;right:20px}#maincontent .jvc-support__inner{margin-bottom:0}#maincontent .jvc-support__content{position:unset;-webkit-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}#maincontent .jvc-support__content-inner{padding:40px 20px}}@media screen and (max-width: 767.98px){#maincontent .top-box__inner{padding:10px 5px 20px}#maincontent .top-box__img{margin-bottom:15px}#maincontent .row-box__inner{margin-bottom:40px}#maincontent .col-box__items{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .jvc-video__items{padding:0 40px}#maincontent .jvc-video__item_rev{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .jvc-video__img{margin:0 auto}#maincontent .jvc-video__img img{margin:0 auto}#maincontent .jvc-video__text{width:auto;margin-bottom:40px}#maincontent .jvc-video__text h2,#maincontent .jvc-video__text p{text-align:center}#maincontent .jvc-contrast__content,#maincontent .jvc-sound__content,#maincontent .jvc-design__content{position:unset;max-width:100%;margin:0 auto}#maincontent .jvc-contrast__content-text,#maincontent .jvc-sound__content-text,#maincontent .jvc-design__content-text{padding:0 20px}#maincontent .jvc-contrast__content-text h2,#maincontent .jvc-contrast__content-text p,#maincontent .jvc-sound__content-text h2,#maincontent .jvc-sound__content-text p,#maincontent .jvc-design__content-text h2,#maincontent .jvc-design__content-text p{text-align:center}#maincontent .jvc-uhd__inner{background-color:#242728;margin-bottom:0}#maincontent .jvc-uhd__content{position:unset;max-width:100%;margin:0 auto}#maincontent .jvc-uhd__content-text{padding:0 20px 40px}#maincontent .jvc-uhd__content-text h2,#maincontent .jvc-uhd__content-text p{text-align:center}#maincontent .jvc-design__inner{background-color:#001f0c;margin-bottom:0}#maincontent .jvc-design__content-text{padding:0 20px 40px}#maincontent .jvc-support__content-inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:10px}#maincontent .jvc-support__content-item{width:auto;margin-bottom:25px}#maincontent .jvc-support__content-text h2,#maincontent .jvc-support__content-text p{text-align:center}#maincontent .jvc-support__content-text:first-child p{text-align:center}#maincontent .jvc-support__content-img img{width:80%}#maincontent .jvc-history__logo img{width:80%;margin:0 auto}}@media screen and (max-width: 479.98px){#maincontent .top-box__inner{padding:5px 5px 15px}#maincontent .top-box__img img{width:165px}#maincontent .jvc-history__logo img{width:50%}}@media screen and (max-width: 359.98px){#maincontent .jvc-video__inner{padding-bottom:30%}#maincontent .jvc-video__items{position:absolute;z-index:8;top:230px;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}#maincontent .jvc-uhd__content,#maincontent .jvc-design__content{position:absolute;z-index:8;top:75%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}#maincontent .jvc-history__bg{padding-bottom:40%}#maincontent .jvc-history__logo{top:12%}#maincontent .jvc-history__content{position:absolute;z-index:8;top:22%;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}#maincontent .jvc-history__content-text{padding:15px}#maincontent .jvc-history__content-text p{margin-bottom:0}}@media screen and (max-width: 350.98px){#maincontent .jvc-history__bg{padding-bottom:50%}}@media screen and (max-width: 340.98px){#maincontent .jvc-video__inner{padding-bottom:40%}#maincontent .jvc-video__items{top:220px;padding:0 35px}#maincontent .jvc-history__bg{padding-bottom:80%}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__inner">
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/logo.png" /></div>
+<div class="top-box__header">
+<p>Качество проверенное временем – подтверждено историей JVC</p>
+</div>
+</div>
+<picture class="top-box__banner"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img01_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img01_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img01_desc.png" /> </picture></div>
+<div class="maincontent__box row-box jvc-apps">
+<div class="row-box__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img02_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img02_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img02_desc.png" /> </picture>
+<div class="row-box__content jvc-apps__content">
+<div class="row-box__content-item jvc-apps__content-item">
+<picture class="row-box__content-img jvc-apps__content-img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon01_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon01.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/icon01.png" /> </picture>
+<div class="row-box__content-text jvc-apps__content-text">
+<p>Управляйте устройствами с помощью голоса, благодаря встроенному Google Assistant</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-apps__content-item">
+<picture class="row-box__content-img jvc-apps__content-img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon02_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon02.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/icon02.png" /> </picture>
+<div class="row-box__content-text jvc-apps__content-text">
+<p>Смотрите тысячи фильмов, шоу и игр благодаря Android TV</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-apps__content-item">
+<picture class="row-box__content-img jvc-apps__content-img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon03_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/icon03.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/icon03.png" /> </picture>
+<div class="row-box__content-text jvc-apps__content-text">
+<p>Подключайте все гаджеты и аксессуары к телевизору с помощью функции Bluetooth</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box col-box jvc-video">
+<div class="col-box__inner jvc-video__inner">
+<picture class="col-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img03_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img03_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img03_desc.png" /> </picture>
+<div class="col-box__items jvc-video__items">
+<div class="col-box__item jvc-video__item">
+<div class="col-box__img jvc-video__img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/img03_1.png" /></div>
+<div class="col-box__text jvc-video__text">
+<h2>MEMC</h2>
+<p>С технологией сглаживания динамических сцен вы получите четкое изображение <b>без                                         рывков                                         и размытия.</b></p>
+</div>
+</div>
+<div class="col-box__item jvc-video__item jvc-video__item_rev">
+<div class="col-box__img jvc-video__img jvc-video__img_r"><img src="https://cdn.comfy.ua/media/x/img3/2707048/img03_2.png" /></div>
+<div class="col-box__text jvc-video__text jvc-video__text_l">
+<h2>Upscaling</h2>
+<p>Технология улучшения изображения оптимизирует фильм или сереал любого качества до                                     идеального <b>формата 4K.</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-contrast">
+<div class="row-box__inner jvc-contrast__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img04_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img04_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img04_desc.png" /> </picture>
+<div class="row-box__content jvc-contrast__content">
+<div class="row-box__content-item jvc-contrast__content-item">
+<div class="row-box__content-text jvc-contrast__content-text">
+<h2>Contrast control</h2>
+<p>Технология контроля контрастности гарантирует вам насыщенную и яркую картинку. Больше                                     никаких черных пустот, погружайтесь в мир контента с <b>четкими деталями</b> и                                     <b>широким                                         диапазоном теней.</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-uhd">
+<div class="row-box__inner jvc-uhd__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img05_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img05_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img05_desc.png" /> </picture>
+<div class="row-box__content jvc-uhd__content">
+<div class="row-box__content-item jvc-uhd__content-item">
+<div class="row-box__content-text jvc-uhd__content-text">
+<h2>UHD</h2>
+<p>С разрешением UHD вам откроется полный спектр цветов и четкая детализация в каждом                                     уголке экрана. Наслаждайтесь <b>изображением необыкновенного качества</b>, о котором                                     вы                                     мечтали.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-sound">
+<div class="row-box__inner jvc-sound__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img06_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img06_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img06_desc.png" /> </picture>
+<div class="row-box__content jvc-sound__content">
+<div class="row-box__content-item jvc-sound__content-item">
+<div class="row-box__content-text jvc-sound__content-text">
+<h2>Автоматический контроль громкости</h2>
+<p>Технология контроля громкости автоматически калибрует аудиосигнал на телевизоре,                                     создавая равномерный <b>кинематографический звук.</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-design">
+<div class="row-box__inner jvc-design__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img07_mob.png"></source> <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img07_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img07_desc.png" /> </picture>
+<div class="row-box__content jvc-design__content">
+<div class="row-box__content-item jvc-design__content-item">
+<div class="row-box__content-text jvc-design__content-text">
+<h2>Frameless Design</h2>
+<p>Безрамочный дизайн телевизора позволит полностью сосредоточиться на просмотре фильма                                     и <b>почувствовать себя героем</b> киносюжета.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-support">
+<div class="row-box__inner jvc-support__inner">
+<picture class="row-box__img"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img08_mob.png"></source> <source media="(min-width: 360px) and (max-width: 991.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img08_laptop.png"></source> <source media="(min-width: 992px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img08_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img08_desc.png" /> </picture>
+<div class="row-box__content jvc-support__content">
+<div class="row-box__content-inner jvc-support__content-inner">
+<div class="row-box__content-item jvc-support__content-item">
+<div class="row-box__content-text jvc-support__content-text">
+<h2>Служба                                         поддержки</h2>
+<p>Служба поддержки готова помочь вам с любым запросом, который касается нашей                                         продукции.</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-support__content-item">
+<div class="row-box__content-img jvc-support__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon08_1.png" /></div>
+<div class="row-box__content-text jvc-support__content-text">
+<p>Удобные <b>каналы связи</b></p>
+</div>
+</div>
+<div class="row-box__content-item jvc-support__content-item">
+<div class="row-box__content-img jvc-support__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon08_2.png" /></div>
+<div class="row-box__content-text jvc-support__content-text">
+<p><b>3 года</b> гарантии на дисплей</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-support__content-item">
+<div class="row-box__content-img jvc-support__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon08_3.png" /></div>
+<div class="row-box__content-text jvc-support__content-text">
+<p><b>Есть вопросы</b> — сканируй QR-код</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box row-box jvc-history">
+<div class="row-box__bg jvc-history__bg">
+<div class="row-box__inner jvc-history__inner">
+<div class="row-box__images jvc-history__images">
+<picture class="row-box__banner jvc-history__banner"> <source media="(max-width: 359.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img09_mob.png"></source> <source media="(min-width: 360px) and (max-width: 1299.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2707048/img09_desc.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2707048/img09_desc.png" /> </picture>
+<div class="jvc-history__logo"><img src="https://cdn.comfy.ua/media/x/img3/2707048/logo_02.png" />
+<p>История</p>
+</div>
+<div class="jvc-history__img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/line.png" /></div>
+</div>
+<div class="row-box__content jvc-history__content">
+<div class="row-box__content-item jvc-history__content-item jvc-history__content-item_01">
+<div class="row-box__content-title jvc-history__content-title">
+<h3>1927 год</h3>
+</div>
+<div class="row-box__content-img  jvc-history__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon09_1.png" /></div>
+<div class="row-box__content-text jvc-history__content-text">
+<p>Основание компании JVC в Японии.</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-history__content-item jvc-history__content-item_02">
+<div class="row-box__content-title jvc-history__content-title">
+<h3>1939 год</h3>
+</div>
+<div class="row-box__content-img  jvc-history__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon09_2.png" /></div>
+<div class="row-box__content-text jvc-history__content-text">
+<p>Компания JVC выпустила первый телевизор.</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-history__content-item jvc-history__content-item_03">
+<div class="row-box__content-title jvc-history__content-title">
+<h3>Середина                                         1950-х</h3>
+</div>
+<div class="row-box__content-img  jvc-history__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon09_3.png" /></div>
+<div class="row-box__content-text jvc-history__content-text">
+<p>На японском рынке появился первый массовый телевизор.</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-history__content-item jvc-history__content-item_04">
+<div class="row-box__content-title jvc-history__content-title">
+<h3>1958 год</h3>
+</div>
+<div class="row-box__content-img  jvc-history__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon09_4.png" /></div>
+<div class="row-box__content-text jvc-history__content-text">
+<p>Появился первый цветной телевизор JVC.</p>
+</div>
+</div>
+<div class="row-box__content-item jvc-history__content-item jvc-history__content-item_05">
+<div class="row-box__content-title jvc-history__content-title">
+<h3>Настоящее</h3>
+</div>
+<div class="row-box__content-img  jvc-history__content-img"><img src="https://cdn.comfy.ua/media/x/img3/2707048/icon09_5.png" /></div>
+<div class="row-box__content-text jvc-history__content-text">
+<p>Продукция JVC успешно представлена на рынках                                         <b>Азии</b>, <b>США</b> и <b>ЕС</b>.                                         Триумф компании подтверждается ежегодными продажами в размере                                         <b>1,5 миллиона</b> телевизоров.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
