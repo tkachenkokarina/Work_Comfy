@@ -1,0 +1,689 @@
+@import"https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+#layout-template {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    font-family: "Roboto", sans-serif
+}
+
+#layout-template h2,
+#layout-template h3,
+#layout-template h4,
+#layout-template h5,
+#layout-template h6,
+#layout-template p,
+#layout-template img {
+    padding: 0;
+    margin: 0;
+    display: block
+}
+
+#layout-template img {
+    max-width: 100%;
+    margin: 0 auto
+}
+
+#layout-template h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff
+}
+
+#layout-template h3 {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 600
+}
+
+#layout-template p {
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center
+}
+
+.main-container.page {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.bc-description__content p:first-letter {
+    padding-left: 0 !important
+}
+
+body {
+    margin: 0
+}
+
+.tefal__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.images-marleft {
+    padding: 20px 0
+}
+
+#layout-template .images-marleft img {
+    margin: 0 auto 0 0
+}
+
+.content__bgnew {
+    height: auto;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_3.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0
+}
+
+.bgnew__images {
+    width: 50%
+}
+
+.bgnew__disc {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px 0
+}
+
+.disc__text {
+    max-width: 480px
+}
+
+.h2-bordred {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #da161f;
+    -webkit-border-radius: 20px 0 20px 0;
+    border-radius: 20px 0 20px 0
+}
+
+.title__h2 {
+    padding: 20px 0
+}
+
+#layout-template .h2-colblack h2 {
+    color: #000
+}
+
+.title__p {
+    padding-bottom: 20px
+}
+
+.content__bgshef {
+    height: auto;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_4.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    padding: 50px 0
+}
+
+.bgshef__flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 60%;
+    padding: 0 20px
+}
+
+.item__images {
+    padding-right: 20px
+}
+
+.bgshef__disc {
+    width: 40%
+}
+
+.bgshef__disc .disc__text {
+    max-width: 340px;
+    margin: 0 auto
+}
+
+.bgshef__disc .h2-bordred {
+    background: none;
+    position: relative
+}
+
+.bgshef__disc .h2-bordred::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 80px;
+    background: #da161f;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-border-radius: 30px 0 0 0;
+    border-radius: 30px 0 0 0
+}
+
+.bgshef__disc .h2-bordred::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    background: #da161f;
+    left: 0;
+    top: 10px;
+    z-index: 10;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0
+}
+
+.bgshef__disc .h2-bordred span::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 80px;
+    background: #da161f;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    -webkit-border-radius: 0 0 30px 0;
+    border-radius: 0 0 30px 0
+}
+
+.bgshef__disc .h2-bordred span::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 5px;
+    background: #da161f;
+    right: 0;
+    bottom: 10px;
+    z-index: 10;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0
+}
+
+.content__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.content__bggrill {
+    height: 640px;
+    width: 50%;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_9.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    position: relative
+}
+
+.bgtext__p {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    left: 40px;
+    padding: 15px 20px;
+    background: #da161f;
+    -webkit-border-radius: 30px 0 30px 0;
+    border-radius: 30px 0 30px 0
+}
+
+#layout-template .bgtext__p p {
+    color: #fff;
+    text-transform: uppercase
+}
+
+.content__row .content__title {
+    width: 50%;
+    padding: 0 20px
+}
+
+.content-revers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.content__bgbbq {
+    height: 640px;
+    width: 50%;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_10.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    position: relative
+}
+
+.content__bgbbq .bgtext__p {
+    left: auto;
+    right: 40px
+}
+
+.content__bgbaking {
+    height: 659px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_11.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    position: relative
+}
+
+.content__bgstewing {
+    height: 659px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_12.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50px 0 50px 0;
+    border-radius: 50px 0 50px 0;
+    position: relative
+}
+
+.content__bgstewing .bgtext__p {
+    left: auto;
+    top: 80%;
+    right: 40px
+}
+
+.content-bgbbq {
+    height: auto;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_13.png");
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 50px 0
+}
+
+.content-bgauto {
+    height: auto;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_16.png");
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0
+}
+
+.content-bgauto .bgnew__images {
+    width: auto;
+    max-width: 212px;
+    padding: 10px 20px
+}
+
+.images-pos {
+    position: relative
+}
+
+.images-rel1::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_26.png")
+}
+
+.images-rel2::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_27.png")
+}
+
+.images-rel3::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_28.png")
+}
+
+.images-rel4::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 99px;
+    width: 100px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_29.png")
+}
+
+.images-rel4::before {
+    position: absolute;
+    content: "новинка";
+    right: 5px;
+    top: 99px;
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: #da161f;
+    color: #fff;
+    z-index: 10
+}
+
+.images-rel5::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_30.png")
+}
+
+.images-rel6::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_31.png")
+}
+
+.images-rel7::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 105px;
+    width: 105px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_32.png")
+}
+
+.images-rel8::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 81px;
+    width: 81px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_33.png")
+}
+
+.images-rel7::before {
+    position: absolute;
+    content: "новинка";
+    right: 5px;
+    top: 99px;
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: #da161f;
+    color: #fff;
+    z-index: 10
+}
+
+.images-rel9::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 99px;
+    width: 99px;
+    background-image: url("https://cdn.comfy.ua/media/x/img3/2342917/img_34.png")
+}
+
+.images-rel9::before {
+    position: absolute;
+    content: "новинка";
+    right: 5px;
+    top: 99px;
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
+    background: #da161f;
+    color: #fff;
+    z-index: 10
+}
+
+@media(max-width: 1024px) {
+    #layout-template h2 {
+        font-size: 30px
+    }
+    #layout-template p {
+        font-size: 20px
+    }
+}
+
+@media(max-width: 768px) {
+    .content__bgnew {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-box-orient: vertical;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-border-radius: 30px 0 30px 0;
+        border-radius: 30px 0 30px 0
+    }
+    .bgnew__images {
+        width: 100%
+    }
+    .bgnew__disc {
+        width: 100%
+    }
+    .content__bgshef {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-box-orient: vertical;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-border-radius: 30px 0 30px 0;
+        border-radius: 30px 0 30px 0
+    }
+    .bgshef__images {
+        width: 100%
+    }
+    .bgshef__flex {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 0
+    }
+    .bgshef__disc {
+        width: 100%
+    }
+    .bgshef__disc .disc__text {
+        max-width: 380px
+    }
+    .content__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-box-orient: vertical;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
+    }
+    .content__bggrill {
+        width: 100%
+    }
+    .content__row .content__title {
+        width: 100%
+    }
+    .content__bgbbq {
+        width: 100%
+    }
+    .content-bgbbq .bgnew__images {
+        width: 90%
+    }
+    .content__bgnew.content-bgauto {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+    .content-bgauto .bgnew__images {
+        max-width: 260px
+    }
+}
+
+@media(max-width: 480px) {
+    #layout-template h2 {
+        font-size: 20px
+    }
+    #layout-template p {
+        font-size: 16px
+    }
+    .disc__text {
+        padding: 0 15px
+    }
+    .content__bggrill {
+        height: 480px
+    }
+    .content__bgbbq {
+        height: 480px
+    }
+    .content__bgbaking {
+        height: 480px
+    }
+    .content__bgstewing {
+        height: 480px
+    }
+}
