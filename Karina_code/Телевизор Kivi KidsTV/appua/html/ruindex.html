@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #kivikidstv .bc-description__content p{margin-bottom:0}#kivikidstv .bc-description__content h3{text-align:left}#kivikidstv h1,#kivikidstv h2,#kivikidstv h3,#kivikidstv h4,#kivikidstv h5,#kivikidstv h6{text-transform:none;font-weight:bold}#kivikidstv{max-width:1920px;margin:0 auto;overflow:hidden;background-color:#fff}#kivikidstv h1,#kivikidstv h2,#kivikidstv h3,#kivikidstv h4,#kivikidstv h5,#kivikidstv h6,#kivikidstv p{margin:0;padding:0;text-align:left}#kivikidstv p::first-letter{padding-left:0}#kivikidstv img{opacity:1;max-width:100%;display:block;margin:0}#kivikidstv img:hover{opacity:1}#kivikidstv h2{font-size:70px;line-height:1.2;text-transform:uppercase;margin-bottom:30px;color:#242424}@media(max-width: 1500px){#kivikidstv h2{font-size:-webkit-calc(18px + 52 * ((100vw - 320px) / 1180));font-size:calc(18px + 52 * ((100vw - 320px) / 1180))}}#kivikidstv p{font-size:30px;line-height:1.2;color:#242424}@media(max-width: 1500px){#kivikidstv p{font-size:-webkit-calc(16px + 14 * ((100vw - 320px) / 1180));font-size:calc(16px + 14 * ((100vw - 320px) / 1180))}}#kivikidstv span{text-transform:none;color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text;background-image:-webkit-gradient(linear, left top, right top, color-stop(36%, rgb(227, 93, 133)), color-stop(52%, rgb(197, 102, 217)));background-image:-webkit-linear-gradient(left, rgb(227, 93, 133) 36%, rgb(197, 102, 217) 52%);background-image:-o-linear-gradient(left, rgb(227, 93, 133) 36%, rgb(197, 102, 217) 52%);background-image:linear-gradient(90deg, rgb(227, 93, 133) 36%, rgb(197, 102, 217) 52%)}#kivikidstv .header-kivikidstv__bg{position:relative;z-index:5;padding-top:360px;padding-bottom:413px}@media(max-width: 1500px){#kivikidstv .header-kivikidstv__bg{padding-top:-webkit-calc(80px + 280 * ((100vw - 320px) / 1180));padding-top:calc(80px + 280 * ((100vw - 320px) / 1180))}}@media(max-width: 1500px){#kivikidstv .header-kivikidstv__bg{padding-bottom:-webkit-calc(50px + 363 * ((100vw - 320px) / 1180));padding-bottom:calc(50px + 363 * ((100vw - 320px) / 1180))}}#kivikidstv .header-kivikidstv__icon{position:absolute}#kivikidstv .header-kivikidstv__icon_1{z-index:2;top:0;left:87.9166666667%}#kivikidstv .header-kivikidstv__icon_2{z-index:2;top:0;right:45%;left:28%}#kivikidstv .header-kivikidstv__icon_3{z-index:2;top:0;right:84.8958333333%}#kivikidstv .header-kivikidstv__icon_4{z-index:2;bottom:0;right:85.4166666667%}#kivikidstv .header-kivikidstv__icon_5{z-index:-1;top:0;left:0}#kivikidstv .header-kivikidstv__icon_6{z-index:-1;top:0;left:0}#kivikidstv .header-kivikidstv__icon_7{display:none}#kivikidstv .header-kivikidstv__row{max-width:1690px;margin:0 auto;padding:0 20px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;position:relative;z-index:10}#kivikidstv .header-kivikidstv__item{-webkit-box-flex:0;-webkit-flex:0 1 45%;-moz-box-flex:0;-ms-flex:0 1 45%;flex:0 1 45%}#kivikidstv .header-kivikidstv__text h2{text-transform:none}#kivikidstv .header-kivikidstv__image{-webkit-box-flex:0;-webkit-flex:0 1 55%;-moz-box-flex:0;-ms-flex:0 1 55%;flex:0 1 55%}#kivikidstv .spec-kivikidstv__bg{position:relative;z-index:6;padding-bottom:318px}@media(max-width: 1500px){#kivikidstv .spec-kivikidstv__bg{padding-bottom:-webkit-calc(10px + 308 * ((100vw - 320px) / 1180));padding-bottom:calc(10px + 308 * ((100vw - 320px) / 1180))}}#kivikidstv .spec-kivikidstv__title{padding:0 15px}#kivikidstv .spec-kivikidstv__title h2{text-align:center;margin-bottom:70px}#kivikidstv .spec-kivikidstv__row{max-width:1420px;margin:0 auto;padding:0 15px;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:5px 10px;position:relative;z-index:6}#kivikidstv .spec-kivikidstv__icon{position:absolute}#kivikidstv .spec-kivikidstv__icon_1{z-index:3;bottom:0;right:92.7083333333%}#kivikidstv .spec-kivikidstv__icon_2{z-index:3;bottom:0;left:55%;right:25%}#kivikidstv .spec-kivikidstv__icon_3{display:none}#kivikidstv .spec-kivikidstv__icon_4{z-index:-2;top:0;right:0}#kivikidstv .spec-kivikidstv__icon_5{z-index:-1;bottom:0;right:0;left:0}#kivikidstv .play-kivikidstv__bg{position:relative;z-index:10;background-color:#fff;padding-top:200px;padding-bottom:270px}@media(max-width: 1500px){#kivikidstv .play-kivikidstv__bg{padding-top:-webkit-calc(10px + 190 * ((100vw - 320px) / 1180));padding-top:calc(10px + 190 * ((100vw - 320px) / 1180))}}@media(max-width: 1500px){#kivikidstv .play-kivikidstv__bg{padding-bottom:-webkit-calc(80px + 190 * ((100vw - 320px) / 1180));padding-bottom:calc(80px + 190 * ((100vw - 320px) / 1180))}}#kivikidstv .play-kivikidstv__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;gap:20px;max-width:1560px;padding:0 15px;margin:0 auto;position:relative;z-index:4}#kivikidstv .play-kivikidstv__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#kivikidstv .play-kivikidstv__text h2{font-size:60px}@media(max-width: 1500px){#kivikidstv .play-kivikidstv__text h2{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1180));font-size:calc(20px + 40 * ((100vw - 320px) / 1180))}}#kivikidstv .play-kivikidstv__text h2 span{font-size:60px;display:inline-block}@media(max-width: 1500px){#kivikidstv .play-kivikidstv__text h2 span{font-size:-webkit-calc(20px + 40 * ((100vw - 320px) / 1180));font-size:calc(20px + 40 * ((100vw - 320px) / 1180))}}#kivikidstv .play-kivikidstv__text span{font-size:40px;display:block;line-height:1.2}@media(max-width: 1500px){#kivikidstv .play-kivikidstv__text span{font-size:-webkit-calc(16px + 24 * ((100vw - 320px) / 1180));font-size:calc(16px + 24 * ((100vw - 320px) / 1180))}}#kivikidstv .play-kivikidstv__text p{padding-top:15px}#kivikidstv .play-kivikidstv__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#kivikidstv .play-kivikidstv__icon{position:absolute;z-index:3}#kivikidstv .play-kivikidstv__icon_1{top:-50px;left:20%;right:60%}#kivikidstv .play-kivikidstv__icon_2{bottom:0;right:8%;left:70%}#kivikidstv .play-kivikidstv__icon_3{bottom:0;left:6%;right:80%}#kivikidstv .designed-kivikidstv__bg{position:relative;z-index:2}#kivikidstv .designed-kivikidstv__icon{position:absolute;z-index:5;top:0;left:0}#kivikidstv .swiper-button-prev{width:61px;height:122px;top:55%;-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);-o-transform:rotate(-180deg);transform:rotate(-180deg);left:4%}#kivikidstv .swiper-button-next{width:61px;height:122px;top:55%;right:4%}#kivikidstv .swiper-button-next:after,#kivikidstv .swiper-button-prev:after{content:"";background:url("https://cdn.comfy.ua/media/x/img3/2719842/arrow.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:61px;height:102px}#kivikidstv .nightlight-kivikidstv__top{position:relative;z-index:2;background-color:#2d3b4c}#kivikidstv .nightlight-kivikidstv__top::after{content:"";position:absolute;z-index:1;background-color:rgba(0,0,0,.3019607843);top:0;left:0;width:100%;height:100%}#kivikidstv .nightlight-kivikidstv__box{padding:0 15px;position:absolute;z-index:5;top:5%;left:0;right:0;width:90%;margin:0 auto}#kivikidstv .nightlight-kivikidstv__box h2{font-size:70px}@media(max-width: 1500px){#kivikidstv .nightlight-kivikidstv__box h2{font-size:-webkit-calc(16px + 54 * ((100vw - 320px) / 1180));font-size:calc(16px + 54 * ((100vw - 320px) / 1180))}}#kivikidstv .nightlight-kivikidstv__box h2,#kivikidstv .nightlight-kivikidstv__box p{text-align:center;color:#fff}#kivikidstv .nightlight-kivikidstv__box_2{top:15%}#kivikidstv .nightlight-kivikidstv__image-sm{padding-top:20px;width:clamp(400px,60%,1049px);margin:0 auto}#kivikidstv .nightlight-kivikidstv__image-sm img{margin:0 auto}#kivikidstv .nightlight-kivikidstv__bottom{position:relative;z-index:10;margin-top:-150px;background:url("https://cdn.comfy.ua/media/x/img3/2719842/img22.png") center no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:1227px}#kivikidstv .standart-kivikidstv__bg{padding-top:137px;padding-bottom:140px;position:relative;z-index:4}@media(max-width: 1500px){#kivikidstv .standart-kivikidstv__bg{padding-top:-webkit-calc(20px + 117 * ((100vw - 320px) / 1180));padding-top:calc(20px + 117 * ((100vw - 320px) / 1180))}}@media(max-width: 1500px){#kivikidstv .standart-kivikidstv__bg{padding-bottom:-webkit-calc(50px + 90 * ((100vw - 320px) / 1180));padding-bottom:calc(50px + 90 * ((100vw - 320px) / 1180))}}#kivikidstv .standart-kivikidstv__title{max-width:1300px;margin:0 auto 80px;padding:0 15px}#kivikidstv .standart-kivikidstv__title h2{text-align:center;margin-bottom:0}#kivikidstv .standart-kivikidstv__icon{position:absolute;z-index:1}#kivikidstv .standart-kivikidstv__icon_1{top:10%;right:86.4583333333%}#kivikidstv .standart-kivikidstv__icon_2{bottom:0;left:87.5%}#kivikidstv .standart-kivikidstv__icon_3{top:-500px;right:0;z-index:-1}#kivikidstv .standart-kivikidstv__row{max-width:1345px;margin:0 auto;padding:0 15px;position:relative;z-index:3;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;gap:20px}#kivikidstv .standart-kivikidstv__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#kivikidstv .standart-kivikidstv__text{width:80%;margin:0 auto}#kivikidstv .standart-kivikidstv__text span{font-size:40px;line-height:1.2;display:block;font-weight:bold}@media(max-width: 1500px){#kivikidstv .standart-kivikidstv__text span{font-size:-webkit-calc(16px + 24 * ((100vw - 320px) / 1180));font-size:calc(16px + 24 * ((100vw - 320px) / 1180))}}#kivikidstv .standart-kivikidstv__list{padding-top:30px}#kivikidstv .standart-kivikidstv__list p{position:relative;z-index:2;padding-left:50px}#kivikidstv .standart-kivikidstv__list p:not(:last-child){margin-bottom:20px}#kivikidstv .standart-kivikidstv__list p::before{content:"";position:absolute;z-index:5;top:10px;left:0;width:21px;height:22px;background:url("https://cdn.comfy.ua/media/x/img3/2719842/check-mark.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#kivikidstv .standart-kivikidstv__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#kivikidstv .visual-kivikidstv__bg{position:relative;z-index:10}#kivikidstv .visual-kivikidstv__title{max-width:1400px;margin:0 auto;padding:0 15px}#kivikidstv .visual-kivikidstv__title h2,#kivikidstv .visual-kivikidstv__title p{text-align:center}#kivikidstv .visual-kivikidstv__title p{font-weight:bold}#kivikidstv .visual-kivikidstv__row{max-width:1600px;margin:0 auto;padding:0 15px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px;padding-top:20px;position:relative;z-index:5}#kivikidstv .visual-kivikidstv__item{-webkit-box-flex:0;-webkit-flex:0 1 33.33333%;-moz-box-flex:0;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}#kivikidstv .visual-kivikidstv__text{width:90%;margin:0 auto}#kivikidstv .visual-kivikidstv__text span{font-size:40px;line-height:1.2;display:block;font-weight:bold;margin-bottom:10px}@media(max-width: 1500px){#kivikidstv .visual-kivikidstv__text span{font-size:-webkit-calc(16px + 24 * ((100vw - 320px) / 1180));font-size:calc(16px + 24 * ((100vw - 320px) / 1180))}}#kivikidstv .visual-kivikidstv__image{margin-top:-250px}#kivikidstv .visual-kivikidstv__image img{margin:0 auto}#kivikidstv .visual-kivikidstv__icon{position:absolute;z-index:2;bottom:0;right:90.1041666667%}#kivikidstv .prosmotr-kivikidstv__bg{position:relative;z-index:12}#kivikidstv .prosmotr-kivikidstv__icon_1{position:absolute;z-index:5;top:0;left:84.8958333333%}#kivikidstv .prosmotr-kivikidstv__text{max-width:1000px;margin:0 auto 100px;padding:0 15px;position:relative;z-index:10}#kivikidstv .prosmotr-kivikidstv__text h2,#kivikidstv .prosmotr-kivikidstv__text p{text-align:center}#kivikidstv .prosmotr-kivikidstv__media{position:relative;z-index:2}#kivikidstv .prosmotr-kivikidstv__icon_2{position:absolute;z-index:5;top:0;left:0}#kivikidstv .column-kivikidstv__bg{position:relative;z-index:10;padding-top:137px;padding-bottom:130px}#kivikidstv .column-kivikidstv__icon{position:absolute}#kivikidstv .column-kivikidstv__icon_1{z-index:4;top:15%;right:78.125%}#kivikidstv .column-kivikidstv__icon_2{z-index:-1;top:0;left:0}#kivikidstv .column-kivikidstv__row{position:relative;z-index:11;max-width:1480px;margin:0 auto;padding:0 15px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px 20px}#kivikidstv .column-kivikidstv__item{height:409px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}@media(max-width: 1500px){#kivikidstv .column-kivikidstv__item{height:-webkit-calc(100px + 309 * ((100vw - 320px) / 1180));height:calc(100px + 309 * ((100vw - 320px) / 1180))}}#kivikidstv .column-kivikidstv__item:nth-child(1),#kivikidstv .column-kivikidstv__item:nth-child(3),#kivikidstv .column-kivikidstv__item:nth-child(5){background:url("https://cdn.comfy.ua/media/x/img3/2719842/img32-1.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#kivikidstv .column-kivikidstv__item:nth-child(2),#kivikidstv .column-kivikidstv__item:nth-child(4),#kivikidstv .column-kivikidstv__item:nth-child(6){background:url("https://cdn.comfy.ua/media/x/img3/2719842/img33-1.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#kivikidstv .column-kivikidstv__image{margin-bottom:30px}#kivikidstv .column-kivikidstv__image img{margin:0 auto}#kivikidstv .column-kivikidstv__image_nb{margin-bottom:0}#kivikidstv .column-kivikidstv__text{width:80%;margin:0 auto}#kivikidstv .column-kivikidstv__text p{text-align:center}#kivikidstv .column-kivikidstv__text_1 p{color:#715ed8}#kivikidstv .column-kivikidstv__text_2{width:auto;margin:0}#kivikidstv .column-kivikidstv__text_2 p{color:#715ed8;text-align:left;text-transform:uppercase}#kivikidstv .column-kivikidstv__text_3 p{color:#da4983}#kivikidstv .column-kivikidstv__text_4 p{color:#715ed8}#kivikidstv .column-kivikidstv__text_5 p{color:#da4983}#kivikidstv .column-kivikidstv__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:15px;width:80%;margin:0 auto}#kivikidstv .control-kivikidstv__bg{position:relative;z-index:15}#kivikidstv .control-kivikidstv__icon{position:absolute;z-index:5;top:40%;right:90.8854166667%}#kivikidstv .control-kivikidstv__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#kivikidstv .control-kivikidstv__row_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#kivikidstv .control-kivikidstv__item{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#kivikidstv .control-kivikidstv__text{padding:0 15px;position:relative;z-index:5}#kivikidstv .control-kivikidstv__text h2{font-size:50px}@media(max-width: 1500px){#kivikidstv .control-kivikidstv__text h2{font-size:-webkit-calc(20px + 30 * ((100vw - 320px) / 1180));font-size:calc(20px + 30 * ((100vw - 320px) / 1180))}}#kivikidstv .control-kivikidstv__text_1{left:130px}#kivikidstv .control-kivikidstv__text_2{right:130px}#kivikidstv .control-kivikidstv__media{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;position:relative;z-index:2}@media screen and (max-width: 1300px){#kivikidstv .nightlight-kivikidstv__bottom{min-height:1000px}}@media screen and (max-width: 1169px){#kivikidstv .nightlight-kivikidstv__bottom{min-height:900px}}@media screen and (max-width: 1024.98px){#kivikidstv .nightlight-kivikidstv__top::after{display:none}#kivikidstv .nightlight-kivikidstv__box_1{position:unset;padding:20px 15px}#kivikidstv .control-kivikidstv__text_1{left:80px}#kivikidstv .control-kivikidstv__text_2{right:80px}}@media screen and (max-width: 991.98px){#kivikidstv .control-kivikidstv__text_1{left:50px}#kivikidstv .control-kivikidstv__text_2{right:50px}#kivikidstv .column-kivikidstv__item:nth-child(3){grid-column:2/3;grid-row:2/3}#kivikidstv .prosmotr-kivikidstv__text{margin-bottom:80px}#kivikidstv .visual-kivikidstv__image{margin-top:-204px}#kivikidstv .nightlight-kivikidstv__bottom{min-height:700px}#kivikidstv .swiper-button-next:after,#kivikidstv .swiper-button-prev:after,#kivikidstv .swiper-button-next,#kivikidstv .swiper-button-prev{width:31px;height:51px}#kivikidstv .column-kivikidstv__row{grid-template-columns:1fr 1fr}#kivikidstv .column-kivikidstv__item{height:-webkit-calc(100px + 309*(100vw - 320px)/671.98);height:calc(100px + 309*(100vw - 320px)/671.98)}}@media screen and (max-width: 767.98px){#kivikidstv .column-kivikidstv__android img{width:200px}#kivikidstv .control-kivikidstv__text_1{left:0}#kivikidstv .control-kivikidstv__text_2{right:0}#kivikidstv .control-kivikidstv__text h2,#kivikidstv .control-kivikidstv__text p{text-align:center}#kivikidstv .control-kivikidstv__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#kivikidstv .column-kivikidstv__image{margin-bottom:15px}#kivikidstv .column-kivikidstv__image img{width:70%}#kivikidstv .visual-kivikidstv__image{margin-top:-144px}#kivikidstv .standart-kivikidstv__list p::before{top:2px}#kivikidstv .standart-kivikidstv__bg{padding-bottom:0}#kivikidstv .standart-kivikidstv__icon_2{top:25%;bottom:auto}#kivikidstv .standart-kivikidstv__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#kivikidstv .nightlight-kivikidstv__bottom{min-height:600px;margin-top:-77px}#kivikidstv .header-kivikidstv__row,#kivikidstv .play-kivikidstv__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#kivikidstv .header-kivikidstv__text h2,#kivikidstv .header-kivikidstv__text p{text-align:center}#kivikidstv .header-kivikidstv__text h2{font-size:40px}#kivikidstv .play-kivikidstv__text h2,#kivikidstv .play-kivikidstv__text span,#kivikidstv .play-kivikidstv__text p{text-align:center}#kivikidstv .play-kivikidstv__text h2{margin-bottom:5px}}@media screen and (max-width: 649px){#kivikidstv .visual-kivikidstv__icon{top:25%}#kivikidstv .visual-kivikidstv__image{margin-top:-110px}#kivikidstv .visual-kivikidstv__text span,#kivikidstv .visual-kivikidstv__text p{text-align:center}#kivikidstv .visual-kivikidstv__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#kivikidstv .spec-kivikidstv__icon_5{display:none}#kivikidstv .spec-kivikidstv__icon_4{bottom:0;left:0}#kivikidstv .spec-kivikidstv__icon_2{top:20%;right:0;left:50%}#kivikidstv .spec-kivikidstv__icon_1{top:10%;right:78%}#kivikidstv .spec-kivikidstv__bg{padding-bottom:0}#kivikidstv .header-kivikidstv__icon_7{display:block;position:absolute;z-index:2;bottom:0;left:72%}#kivikidstv .header-kivikidstv__bg{padding-bottom:200px}}@media screen and (max-width: 566px){#kivikidstv .column-kivikidstv__android img{width:170px}}@media screen and (max-width: 479.98px){#kivikidstv .column-kivikidstv__number{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#kivikidstv .column-kivikidstv__number img{width:60px}#kivikidstv .column-kivikidstv__text p{font-size:15px}#kivikidstv .column-kivikidstv__icon_2{display:none}#kivikidstv .column-kivikidstv__bg{padding:50px 0}#kivikidstv .column-kivikidstv__icon_1{right:30%;top:-120px}#kivikidstv .column-kivikidstv__inner{gap:5px}#kivikidstv .column-kivikidstv__text_2 p{font-size:14px}#kivikidstv .column-kivikidstv__image{margin-bottom:10px}#kivikidstv .column-kivikidstv__image img{width:50%}#kivikidstv .column-kivikidstv__item{background-color:#fff !important;height:auto;-webkit-border-radius:30px;border-radius:30px;padding:15px;-webkit-box-shadow:5px 7px 23px 0px rgba(0,0,0,.51);box-shadow:5px 7px 23px 0px rgba(0,0,0,.51)}#kivikidstv .column-kivikidstv__item:nth-child(1),#kivikidstv .column-kivikidstv__item:nth-child(3),#kivikidstv .column-kivikidstv__item:nth-child(5),#kivikidstv .column-kivikidstv__item:nth-child(2),#kivikidstv .column-kivikidstv__item:nth-child(4),#kivikidstv .column-kivikidstv__item:nth-child(6){background:none}#kivikidstv .prosmotr-kivikidstv__text{margin-bottom:20px}#kivikidstv .visual-kivikidstv__title p{font-weight:normal}#kivikidstv .visual-kivikidstv__bg::after{content:"";position:absolute;z-index:-1;background:url("https://cdn.comfy.ua/media/x/img3/2719842/img29-1.png") 0 0 no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;height:938px;top:-250px;right:0}#kivikidstv .visual-kivikidstv__image{margin-top:-80px}#kivikidstv .standart-kivikidstv__list p{padding-left:35px}#kivikidstv .standart-kivikidstv__title{margin-bottom:50px}#kivikidstv .nightlight-kivikidstv__image-sm{width:auto}#kivikidstv .header-kivikidstv__text h2{margin-bottom:10px}#kivikidstv .header-kivikidstv__icon_3{right:82%}#kivikidstv .header-kivikidstv__icon_2{left:auto;right:70%;z-index:10}#kivikidstv .header-kivikidstv__bg{padding-top:60px}#kivikidstv .header-kivikidstv__row{gap:20px}#kivikidstv .spec-kivikidstv__row{grid-template-columns:repeat(auto-fit, minmax(160px, 1fr))}#kivikidstv .spec-kivikidstv__title h2{margin-bottom:20px}#kivikidstv .spec-kivikidstv__title h2{font-size:25px}#kivikidstv .header-kivikidstv__icon_7{left:64%}#kivikidstv .header-kivikidstv__icon_4{right:73%}#kivikidstv .play-kivikidstv__bg{padding-bottom:20px}#kivikidstv .play-kivikidstv__icon_2,#kivikidstv .play-kivikidstv__icon_3{display:none}#kivikidstv .play-kivikidstv__image{position:relative;z-index:2;padding-bottom:60px}#kivikidstv .play-kivikidstv__image::after{position:absolute;z-index:-1;content:"";background:url("https://cdn.comfy.ua/media/x/img3/2719842/img12-1.png") center no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;bottom:10px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:345px;height:105px}#kivikidstv .swiper-button-next:after,#kivikidstv .swiper-button-prev:after,#kivikidstv .swiper-button-next,#kivikidstv .swiper-button-prev{width:15px;height:24px}#kivikidstv .swiper-button-next,#kivikidstv .swiper-button-prev{top:40%}#kivikidstv h2{margin-bottom:20px}#kivikidstv .nightlight-kivikidstv__box{width:auto}#kivikidstv .nightlight-kivikidstv__box_1{padding:50px 15px 50px}#kivikidstv .play-kivikidstv__text h2{font-weight:bold}#kivikidstv .standart-kivikidstv__title h2,#kivikidstv .visual-kivikidstv__title h2,#kivikidstv .nightlight-kivikidstv__box h2,#kivikidstv .prosmotr-kivikidstv__text h2,#kivikidstv .control-kivikidstv__text h2,#kivikidstv .play-kivikidstv__text h2,#kivikidstv .play-kivikidstv__text h2 span{font-size:25px}}@media screen and (max-width: 359px){#kivikidstv .column-kivikidstv__number{-webkit-box-flex:0;-webkit-flex:0 0 40px;-moz-box-flex:0;-ms-flex:0 0 40px;flex:0 0 40px}#kivikidstv .column-kivikidstv__number img{width:40px}#kivikidstv .column-kivikidstv__text{width:auto}#kivikidstv .column-kivikidstv__item{padding:15px 5px}#kivikidstv .column-kivikidstv__text p{font-size:14px}#kivikidstv .prosmotr-kivikidstv__icon_2{display:none}#kivikidstv .standart-kivikidstv__list p::before{top:5px;width:13px;height:14px}#kivikidstv .standart-kivikidstv__list p{padding-left:20px}#kivikidstv .standart-kivikidstv__image{position:relative;z-index:1}#kivikidstv .standart-kivikidstv__icon_1{right:auto;left:77.7777777778%;top:45%;z-index:10}#kivikidstv .standart-kivikidstv__list{padding-top:15px}#kivikidstv .standart-kivikidstv__text{width:auto}#kivikidstv .standart-kivikidstv__text span{text-align:center;font-size:20px}#kivikidstv .standart-kivikidstv__title{margin-bottom:30px}#kivikidstv .standart-kivikidstv__icon_2{display:none}#kivikidstv .nightlight-kivikidstv__image-sm{padding-top:40px}#kivikidstv .nightlight-kivikidstv__box_2{top:25%}#kivikidstv .nightlight-kivikidstv__bottom{background:url("https://cdn.comfy.ua/media/x/img3/2719842/img22-1.png") center no-repeat;min-height:600px}#kivikidstv .spec-kivikidstv__icon_2{top:auto;left:12%}#kivikidstv .spec-kivikidstv__icon_1{right:60%}#kivikidstv .header-kivikidstv__bg{padding-bottom:149px}#kivikidstv .designed-kivikidstv__image{height:596px;position:relative;z-index:2}#kivikidstv .designed-kivikidstv__image img{position:absolute;z-index:5;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}}
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <div id="kivikidstv">
+        <div class="kivikidstv__header header-kivikidstv">
+            <div class="header-kivikidstv__bg">
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_1">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img2.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img2-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img2.png" alt="">
+                    </picture>
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_2">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img3.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img3-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img3.png" alt="">
+                    </picture>
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_3">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img4.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img4-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img4.png" alt="">
+                    </picture>
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_4">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img5.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img5-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img5.png" alt="">
+                    </picture>
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_5">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img01.png" alt="">
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_6">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img02.png" alt="">
+                </div>
+                <div class="header-kivikidstv__icon header-kivikidstv__icon_7">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img13-m.png" alt="">
+                </div>
+                <div class="header-kivikidstv__row">
+                    <div class="header-kivikidstv__item">
+                        <div class="header-kivikidstv__text">
+                            <h2>KIVI KidsTV —
+                                <br><span>змінює</span>
+                                <br><span>уявлення</span>
+                                <br>про розваги
+                            </h2>
+                            <p>Продукт, що об'єднав новітні технології та любов до дітей</p>
+                        </div>
+                    </div>
+                    <div class="header-kivikidstv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__spec spec-kivikidstv">
+            <div class="spec-kivikidstv__bg">
+                <div class="spec-kivikidstv__title">
+                    <h2>ГОЛОВНІ <span>ОСОБЛИВОСТІ</span></h2>
+                </div>
+                <div class="spec-kivikidstv__row">
+                    <div class="spec-kivikidstv__item">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img8.png" alt="">
+                    </div>
+                    <div class="spec-kivikidstv__item">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img9.png" alt="">
+                    </div>
+                    <div class="spec-kivikidstv__item">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img10.png" alt="">
+                    </div>
+                </div>
+                <div class="spec-kivikidstv__icon spec-kivikidstv__icon_1">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="https://cdn.comfy.ua/media/x/img3/2719842/img6.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img6-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img6.png" alt="">
+                    </picture>
+                </div>
+                <div class="spec-kivikidstv__icon spec-kivikidstv__icon_2">
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="https://cdn.comfy.ua/media/x/img3/2719842/img7.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img7-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img7.png" alt="">
+                    </picture>
+                </div>
+                <div class="spec-kivikidstv__icon spec-kivikidstv__icon_3">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img13.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img13-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img13.png" alt="">
+                    </picture>
+                </div>
+                <div class="spec-kivikidstv__icon spec-kivikidstv__icon_4">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img11.png" alt="">
+                </div>
+                <div class="spec-kivikidstv__icon spec-kivikidstv__icon_5">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img11-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__play play-kivikidstv">
+            <div class="play-kivikidstv__bg">
+                <div class="play-kivikidstv__row">
+                    <div class="play-kivikidstv__item">
+                        <div class="play-kivikidstv__text">
+                            <h2>БУДУЙ. <span>ГРАЙ.</span> ДИВИСЬ.</h2>
+                            <span>РОЗКРИВАЙТЕ КРЕАТИВНІСТЬ ВАШОЇ</span>
+                            <span>ДИТИНИ З KidsTV!</span>
+                            <p>Створюйте власну персоналізовану рамку ТВ за допомогою дитячого конструктора.
+                                Приготуйтеся до натхнення та безкінечних веселощів щодня!</p>
+                        </div>
+                    </div>
+                    <div class="play-kivikidstv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img12.png" alt="">
+                    </div>
+                </div>
+                <div class="play-kivikidstv__icon play-kivikidstv__icon_1">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img13.png" alt="">
+                </div>
+                <div class="play-kivikidstv__icon play-kivikidstv__icon_2">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img14.png" alt="">
+                </div>
+                <div class="play-kivikidstv__icon play-kivikidstv__icon_3">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img15.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__designed designed-kivikidstv">
+            <div class="designed-kivikidstv__bg">
+                <div class="designed-kivikidstv__icon">
+                    <picture>
+                        <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2719842/img20.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img20-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img20.png" alt="">
+                    </picture>
+                </div>
+                <div class="designed-kivikidstv__slider swiper">
+                    <div class="designed-kivikidstv__wrapper swiper-wrapper">
+                        <div class="designed-kivikidstv__slide swiper-slide">
+                            <div class="designed-kivikidstv__image">
+                                <picture>
+                                    <source media="(min-width: 360px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img16.png">
+                                    <source media="(min-width: 320px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img16-m.png">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img16.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="designed-kivikidstv__slide swiper-slide">
+                            <div class="designed-kivikidstv__image">
+                                <picture>
+                                    <source media="(min-width: 360px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img17.png">
+                                    <source media="(min-width: 320px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img17-m.png">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img17.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="designed-kivikidstv__slide swiper-slide">
+                            <div class="designed-kivikidstv__image">
+                                <picture>
+                                    <source media="(min-width: 360px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img18.png">
+                                    <source media="(min-width: 320px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img18-m.png">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img18.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="designed-kivikidstv__slide swiper-slide">
+                            <div class="designed-kivikidstv__image">
+                                <picture>
+                                    <source media="(min-width: 360px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img19.png">
+                                    <source media="(min-width: 320px)"
+                                        srcset="https://cdn.comfy.ua/media/x/img3/2719842/img19-m.png">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img19.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__nightlight nightlight-kivikidstv">
+            <div class="nightlight-kivikidstv__bg">
+                <div class="nightlight-kivikidstv__top">
+                    <div class="nightlight-kivikidstv__box nightlight-kivikidstv__box_1">
+                        <h2>ГОТУЄМОСЯ ДО СНУ З НІЧНИКОМ <span>ALUMIGLOW</span></h2>
+                        <p>Вбудований нічник AlumiGlow випромінює м'яке і заспокійливе світло, яке створює в дитячій
+                            кімнаті
+                            спокійну та затишну атмосферу, допомагаючи поліпшити режим сну</p>
+                    </div>
+                    <div class="nightlight-kivikidstv__image">
+                        <picture>
+                            <source media="(min-width: 360px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2719842/img21.png">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2719842/img21-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img21.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="nightlight-kivikidstv__bottom">
+                    <div class="nightlight-kivikidstv__box nightlight-kivikidstv__box_2">
+                        <h2>БЕЗШОВНА <span>ІНТЕГРАЦІЯ</span> З ТЕЛЕВІЗОРОМ</h2>
+                        <p>Управляйте нічником за допомогою пульта. Насолоджуйтеся світлом, навіть коли телевізор
+                            вимкнений, та
+                            регулюйте яскравість під свій настрій.</p>
+                        <div class="nightlight-kivikidstv__image-sm">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img23.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__standart standart-kivikidstv">
+            <div class="standart-kivikidstv__bg">
+                <div class="standart-kivikidstv__title">
+                    <h2>НОВИЙ СТАНДАРТ <span>ДОВГОВІЧНОСТІ</span> ТА БЕЗПЕКИ</h2>
+                </div>
+                <div class="standart-kivikidstv__icon standart-kivikidstv__icon_1">
+                    <picture>
+                        <source media="(min-width: 360px)" srcset="https://cdn.comfy.ua/media/x/img3/2719842/img25.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img25-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img25.png" alt="">
+                    </picture>
+                </div>
+                <div class="standart-kivikidstv__icon standart-kivikidstv__icon_2">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img26.png" alt="">
+                </div>
+                <div class="standart-kivikidstv__icon standart-kivikidstv__icon_3">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img27.png" alt="">
+                </div>
+                <div class="standart-kivikidstv__row">
+                    <div class="standart-kivikidstv__item">
+                        <div class="standart-kivikidstv__text">
+                            <span>ЗАГАРТОВАНЕ СКЛО:</span>
+                            <span>НАЙМІЦНІШЕ СКЛО</span>
+                            <div class="standart-kivikidstv__list">
+                                <p>Міцність: загартоване скло в 4 рази міцніше ніж «звичайне» скло</p>
+                                <p>100% ударостійкість</p>
+                                <p>Стійкість до подряпин</p>
+                                <p>Стійкість до високих температур</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standart-kivikidstv__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img24.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__visual visual-kivikidstv">
+            <div class="visual-kivikidstv__bg">
+                <div class="visual-kivikidstv__title">
+                    <h2>НЕПЕРЕВЕРШЕНИЙ ДОСВІД <span>ПЕРЕГЛЯДУ</span></h2>
+                    <p>Full HD екран створений транслювати природню картинку для комфортного перегляду</p>
+                </div>
+                <div class="visual-kivikidstv__row">
+                    <div class="visual-kivikidstv__item">
+                        <div class="visual-kivikidstv__text">
+                            <span>HD ДИСПЛЕЙ</span>
+                            <p>32-дюймовий Full HD дисплей</p>
+                        </div>
+                    </div>
+                    <div class="visual-kivikidstv__item">
+                        <div class="visual-kivikidstv__text">
+                            <span>КОЛЬОРИ</span>
+                            <p>Яскраві кольори та чітке зображення</p>
+                        </div>
+                    </div>
+                    <div class="visual-kivikidstv__item">
+                        <div class="visual-kivikidstv__text">
+                            <span>ДОСВІД</span>
+                            <p>Захоплюючий досвід перегляду</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-kivikidstv__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img28.png" alt="">
+                </div>
+                <div class="visual-kivikidstv__icon">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img29.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__prosmotr prosmotr-kivikidstv">
+            <div class="prosmotr-kivikidstv__bg">
+                <div class="prosmotr-kivikidstv__icon prosmotr-kivikidstv__icon_1">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img31.png" alt="">
+                </div>
+                <div class="prosmotr-kivikidstv__text">
+                    <h2>ПЕРЕГЛЯД <span>БЕЗ ТУРБОТ</span></h2>
+                    <p>Комфортний перегляд завдяки технології <span>Low Blue Light</span> для захисту очей вашої дитини.
+                        Насолоджуйтесь переглядом без втрати якості зображення!</p>
+                </div>
+                <div class="prosmotr-kivikidstv__media">
+                    <div class="prosmotr-kivikidstv__icon prosmotr-kivikidstv__icon_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img30-2.png" alt="">
+                    </div>
+                    <div class="prosmotr-kivikidstv__image">
+                        <picture>
+                            <source media="(min-width: 360px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2719842/img30.png">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2719842/img30-m.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img30.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__column column-kivikidstv">
+            <div class="column-kivikidstv__bg">
+                <div class="column-kivikidstv__icon column-kivikidstv__icon_1">
+                    <picture>
+                        <source media="(min-width: 479.98px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img38.png">
+                        <source media="(min-width: 320px)"
+                            srcset="https://cdn.comfy.ua/media/x/img3/2719842/img38-m.png">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719842/img38.png" alt="">
+                    </picture>
+                </div>
+                <div class="column-kivikidstv__icon column-kivikidstv__icon_2">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img39.png" alt="">
+                </div>
+                <div class="column-kivikidstv__row">
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img32.png" alt="">
+                        </div>
+                        <div class="column-kivikidstv__text column-kivikidstv__text_1">
+                            <p>32" Full HD</p>
+                        </div>
+                    </div>
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__android">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img33.png" alt="">
+                        </div>
+                    </div>
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__inner">
+                            <div class="column-kivikidstv__number">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2719842/img34.png" alt="">
+                            </div>
+                            <div class="column-kivikidstv__text column-kivikidstv__text_2">
+                                <p>РОКИ<br>ГАРАНТІЇ<br>на дисплей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img35.png" alt="">
+                        </div>
+                        <div class="column-kivikidstv__text column-kivikidstv__text_3">
+                            <p>Пульт з голосовим
+                                управлінням</p>
+                        </div>
+                    </div>
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img36.png" alt="">
+                        </div>
+                        <div class="column-kivikidstv__text column-kivikidstv__text_4">
+                            <p>Батьківський
+                                контроль</p>
+                        </div>
+                    </div>
+                    <div class="column-kivikidstv__item">
+                        <div class="column-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img37.png" alt="">
+                        </div>
+                        <div class="column-kivikidstv__text column-kivikidstv__text_5">
+                            <p>Технологія
+                                Low Blue Light</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kivikidstv__control control-kivikidstv">
+            <div class="control-kivikidstv__bg">
+                <div class="control-kivikidstv__icon">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2719842/img44.png" alt="">
+                </div>
+                <div class="control-kivikidstv__row">
+                    <div class="control-kivikidstv__item">
+                        <div class="control-kivikidstv__text control-kivikidstv__text_1">
+                            <h2><span>ГОЛОСОВЕ</span> УПРАВЛІННЯ</h2>
+                            <p>Зручний пульт з опцією голосового управління дає дітям можливість легкої навігації по
+                                улюбленому
+                                контенту</p>
+                        </div>
+                    </div>
+                    <div class="control-kivikidstv__media">
+                        <div class="control-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img40-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="control-kivikidstv__row control-kivikidstv__row_rev">
+                    <div class="control-kivikidstv__item">
+                        <div class="control-kivikidstv__text control-kivikidstv__text_2">
+                            <h2>БАТЬКІВСЬКИЙ <span>КОНТРОЛЬ</span>
+                            </h2>
+                            <p>Вдосконалений батьківський контроль дозволяє батькам встановлювати обмеження на час
+                                перегляду ТВ та
+                                слідкувати за глядацькими звичками своєї дитини.</p>
+                        </div>
+                    </div>
+                    <div class="control-kivikidstv__media">
+                        <div class="control-kivikidstv__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719842/img42-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper('.swiper', {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

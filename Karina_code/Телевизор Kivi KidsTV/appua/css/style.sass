@@ -1,0 +1,950 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1500
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #kivikidstv a
+//     color: inherit
+//     text-decoration: none
+
+// #kivikidstv
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#kivikidstv .bc-description__content p
+    margin-bottom: 0
+
+#kivikidstv .bc-description__content h3
+    text-align: left
+
+#kivikidstv
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#kivikidstv
+    max-width: 1920px
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    //font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#kivikidstv p::first-letter
+    padding-left: 0
+
+#kivikidstv img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+
+#kivikidstv img:hover
+    opacity: 1
+
+//#kivikidstv .kivikidstv__container
+    //max-width: 1300px
+    //margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+#kivikidstv
+    h2
+        @include adaptiv-value("font-size", 70, 18, 1)
+        line-height: 1.2
+        text-transform: uppercase
+        margin-bottom: 30px
+        color: #242424
+    p
+        @include adaptiv-value("font-size", 30, 16, 1)
+        line-height: 1.2
+        color: #242424
+    span
+        text-transform: none
+        color: transparent
+        -webkit-background-clip: text
+        background-clip: text
+        background-image: linear-gradient(90deg, rgba(227,93,133,1) 36%, rgba(197,102,217,1) 52%)
+
+#kivikidstv .header-kivikidstv
+    &__bg
+        position: relative
+        z-index: 5
+        //padding-top: 360px
+        //padding-bottom: 413px
+        @include adaptiv-value("padding-top", 360, 80, 1)
+        @include adaptiv-value("padding-bottom", 413, 50, 1)
+    &__icon
+        position: absolute
+        &_1
+            z-index: 2
+            top: 0
+            //right: 0
+            left: calc(1688 / 1920 * 100%)
+        &_2
+            z-index: 2
+            top: 0
+            right: 45%
+            left: 28%
+        &_3
+            z-index: 2
+            top: 0
+            right: calc(1630 / 1920 * 100%)
+        &_4
+            z-index: 2
+            bottom: 0
+            right: calc(1640 / 1920 * 100%)
+        &_5
+            z-index: -1
+            top: 0
+            left: 0
+        &_6
+            z-index: -1
+            top: 0
+            left: 0
+        &_7
+            display: none
+    &__row
+        max-width: 1690px
+        margin: 0 auto
+        padding: 0 20px
+        display: flex
+        align-items: center
+        gap: 40px
+        position: relative
+        z-index: 10
+    &__item
+        flex: 0 1 45%
+    &__text
+        h2
+            text-transform: none
+    &__image
+        flex: 0 1 55%
+
+#kivikidstv .spec-kivikidstv
+    &__bg
+        position: relative
+        z-index: 6
+        //padding-bottom: 318px
+        @include adaptiv-value("padding-bottom", 318, 10, 1)
+    &__title
+        padding: 0 15px
+        h2
+            text-align: center
+            margin-bottom: 70px
+    &__row
+        max-width: 1420px
+        margin: 0 auto
+        padding: 0 15px
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr))
+        gap: 5px 10px
+        position: relative
+        z-index: 6
+    &__item
+    &__icon
+        position: absolute
+        &_1
+            z-index: 3
+            bottom: 0
+            right: calc(1780 / 1920 * 100%)
+        &_2
+            z-index: 3
+            bottom: 0
+            left: 55%
+            right: 25%
+        &_3
+            // z-index: 3
+            // bottom: 0
+            // left: 25%
+            display: none
+        &_4
+            z-index: -2
+            top: 0
+            right: 0
+        &_5
+            z-index: -1
+            bottom: 0
+            right: 0
+            left: 0
+
+#kivikidstv .play-kivikidstv
+    &__bg
+        position: relative
+        z-index: 10
+        background-color: #fff
+        //padding-top: 200px
+        //padding-bottom: 270px
+        @include adaptiv-value("padding-top", 200, 10, 1)
+        @include adaptiv-value("padding-bottom", 270, 80, 1)
+    &__row
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        gap: 20px
+        max-width: 1560px
+        padding: 0 15px
+        margin: 0 auto
+        position: relative
+        z-index: 4
+    &__item
+        flex: 0 1 50%
+    &__text
+        h2
+            @include adaptiv-value("font-size", 60, 20, 1)
+            span
+                @include adaptiv-value("font-size", 60, 20, 1)
+                display: inline-block
+        span
+            @include adaptiv-value("font-size", 40, 16, 1)
+            display: block
+            line-height: 1.2
+        p
+            padding-top: 15px
+    &__image
+        flex: 0 1 50%
+    &__icon
+        position: absolute
+        z-index: 3
+        &_1
+            top: -50px
+            left: 20%
+            right: 60%
+        &_2
+            bottom: 0
+            right: 8%
+            left: 70%
+        &_3
+            bottom: 0
+            left: 6%
+            right: 80%
+
+#kivikidstv .designed-kivikidstv
+    &__bg
+        position: relative
+        z-index: 2
+    &__icon
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 0
+    &__slider
+    &__wrapper
+    &__slide
+    &__image
+
+#kivikidstv .swiper
+    &-wrapper
+    &-slide
+    &-button-prev
+        width: 61px
+        height: 122px
+        top: 55%
+        transform: rotate(-180deg)
+        left: 4%
+    &-button-next
+        width: 61px
+        height: 122px
+        top: 55%
+        right: 4%
+
+#kivikidstv .swiper-button-next:after,
+#kivikidstv .swiper-button-prev:after
+    content: ""
+    background: url('https://cdn.comfy.ua/media/x/img3/2719842/arrow.png') 0 0 no-repeat
+    background-size: cover
+    width: 61px
+    height: 102px
+
+#kivikidstv .nightlight-kivikidstv
+    &__bg
+    &__top
+        position: relative
+        z-index: 2
+        background-color: #2d3b4c
+        &::after
+            content: ''
+            position: absolute
+            z-index: 1
+            background-color: #0000004d
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__box
+        padding: 0 15px
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 0
+        right: 0
+        width: 90%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 70, 16, 1)
+        h2,p
+            text-align: center
+            color: #ffffff
+        &_2
+            top: 15%
+    &__image-sm
+        padding-top: 20px
+        width: clamp(400px, 60%, 1049px)
+        margin: 0 auto
+        img
+            margin: 0 auto
+    &__image
+    &__bottom
+        position: relative
+        z-index: 10
+        margin-top: -150px
+        background: url('https://cdn.comfy.ua/media/x/img3/2719842/img22.png') center no-repeat
+        background-size: cover
+        min-height: 1227px
+
+#kivikidstv .standart-kivikidstv
+    &__bg
+        //padding-top: 137px
+        @include adaptiv-value("padding-top", 137, 20, 1)
+        @include adaptiv-value("padding-bottom", 140, 50, 1)
+        //padding-bottom: 140px
+        position: relative
+        z-index: 4
+    &__title
+        //width: 70%
+        // position: relative
+        // z-index: 6
+        max-width: 1300px
+        margin: 0 auto 80px
+        padding: 0 15px
+        h2
+            text-align: center
+            margin-bottom: 0
+    &__icon
+        position: absolute
+        z-index: 1
+        &_1
+            top: 10%
+            right: calc(1660 / 1920 * 100%)
+        &_2
+            //top: 30%
+            bottom: 0
+            left: calc(1680 / 1920 * 100%)
+        &_3
+            top: -500px
+            right: 0
+            z-index: -1
+    &__row
+        max-width: 1345px
+        margin: 0 auto
+        padding: 0 15px
+        position: relative
+        z-index: 3
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        gap: 20px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        span
+            @include adaptiv-value("font-size", 40, 16, 1)
+            line-height: 1.2
+            display: block
+            font-weight: bold
+    &__list
+        padding-top: 30px
+        p
+            position: relative
+            z-index: 2
+            padding-left: 50px
+            &:not(:last-child)
+                margin-bottom: 20px
+            &::before
+                content: ''
+                position: absolute
+                z-index: 5
+                top: 10px
+                left: 0
+                width: 21px
+                height: 22px
+                background: url('https://cdn.comfy.ua/media/x/img3/2719842/check-mark.png') 0 0 no-repeat
+                background-size: cover
+    &__image
+        flex: 0 1 50%
+
+#kivikidstv .visual-kivikidstv
+    &__bg
+        position: relative
+        z-index: 10
+    &__title
+        max-width: 1400px
+        margin: 0 auto
+        padding: 0 15px
+        h2,p
+            text-align: center
+        p
+            font-weight: bold
+    &__row
+        max-width: 1600px
+        margin: 0 auto
+        padding: 0 15px
+        display: flex
+        gap: 20px
+        padding-top: 20px
+        position: relative
+        z-index: 5
+    &__item
+        flex: 0 1 33.33333%
+    &__text
+        width: 90%
+        margin: 0 auto
+        span
+            @include adaptiv-value("font-size", 40, 16, 1)
+            line-height: 1.2
+            display: block
+            font-weight: bold
+            margin-bottom: 10px
+    &__image
+        margin-top: -250px
+        img
+            margin: 0 auto
+    &__icon
+        position: absolute
+        z-index: 2
+        bottom: 0
+        right: calc(1730 / 1920 * 100%)
+
+#kivikidstv .prosmotr-kivikidstv
+    &__bg
+        position: relative
+        z-index: 12
+    &__icon
+        &_1
+            position: absolute
+            z-index: 5
+            top: 0
+            left: calc(1630 / 1920 * 100%)
+    &__text
+        max-width: 1000px
+        margin: 0 auto 100px
+        padding: 0 15px
+        position: relative
+        z-index: 10
+        h2,p
+            text-align: center
+    &__media
+        position: relative
+        z-index: 2
+    &__image
+    &__icon_2
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 0
+
+#kivikidstv .column-kivikidstv
+    &__bg
+        position: relative
+        z-index: 10
+        padding-top: 137px
+        padding-bottom: 130px
+    &__icon
+        position: absolute
+        &_1
+            z-index: 4
+            top: 15%
+            right: calc(1500 / 1920 * 100%)
+        &_2
+            z-index: -1
+            top: 0
+            left: 0
+    &__row
+        position: relative
+        z-index: 11
+        max-width: 1480px
+        margin: 0 auto
+        padding: 0 15px
+        display: grid
+        // grid-template-columns: minmax(250px,459px) minmax(250px,459px) minmax(250px,459px)
+        grid-template-columns: 1fr 1fr 1fr
+        // grid-template-rows: 409px 409px 409px
+        gap: 30px 20px
+    &__item
+        @include adaptiv-value("height", 409, 100, 1)
+        //height: 409px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5)
+            background: url('https://cdn.comfy.ua/media/x/img3/2719842/img32-1.png') 0 0 no-repeat
+            background-size: cover
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6)
+            background: url('https://cdn.comfy.ua/media/x/img3/2719842/img33-1.png') 0 0 no-repeat
+            background-size: cover
+    &__image
+        margin-bottom: 30px
+        img
+            margin: 0 auto
+        &_nb
+            margin-bottom: 0
+    &__text
+        width: 80%
+        margin: 0 auto
+        p
+            text-align: center
+        &_1
+            p
+                color: #715ed8
+        &_2
+            width: auto
+            margin: 0
+            p
+                color: #715ed8
+                text-align: left
+                text-transform: uppercase
+        &_3
+            p
+                color: #da4983
+        &_4
+            p
+                color: #715ed8
+        &_5
+            p
+                color: #da4983
+    &__inner
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 15px
+        width: 80%
+        margin: 0 auto
+
+#kivikidstv .control-kivikidstv
+    &__bg
+        position: relative
+        z-index: 15
+    &__icon
+        position: absolute
+        z-index: 5
+        top: 40%
+        right: calc(1745 / 1920 * 100%)
+    &__row
+        //padding: 0 15px
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 40%
+    &__text
+        // width: 90%
+        // margin: 0 auto
+        padding: 0 15px
+        position: relative
+        z-index: 5
+        h2
+            @include adaptiv-value("font-size", 50, 20, 1)
+        &_1
+            left: 130px
+        &_2
+            right: 130px
+    &__media
+        flex: 0 1 60%
+        position: relative
+        z-index: 2
+    &__image
+    // &__image-bg
+    //     position: absolute
+    //     z-index: -1
+    //     top: 0
+    //     left: 0
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1300px)
+    #kivikidstv .nightlight-kivikidstv__bottom
+        min-height: 1000px
+
+@media screen and (max-width: 1169px)
+    #kivikidstv .nightlight-kivikidstv__bottom
+        min-height: 900px
+
+@media screen and (max-width: 1024.98px)
+    #kivikidstv .nightlight-kivikidstv__top::after
+        display: none
+    #kivikidstv .nightlight-kivikidstv__box_1
+        position: unset
+        padding: 20px 15px
+    #kivikidstv .control-kivikidstv__text_1
+        left: 80px
+    #kivikidstv .control-kivikidstv__text_2
+        right: 80px
+
+@media screen and (max-width: 991.98px)
+    #kivikidstv .control-kivikidstv__text_1
+        left: 50px
+    #kivikidstv .control-kivikidstv__text_2
+        right: 50px
+    #kivikidstv .column-kivikidstv__item:nth-child(3)
+        grid-column: 2 / 3
+        grid-row: 2 / 3
+    #kivikidstv .prosmotr-kivikidstv__text
+        margin-bottom: 80px
+    #kivikidstv .visual-kivikidstv__image
+        margin-top: -204px
+    #kivikidstv .nightlight-kivikidstv__bottom
+        min-height: 700px
+    #kivikidstv .swiper-button-next:after,
+    #kivikidstv .swiper-button-prev:after,
+    #kivikidstv .swiper-button-next,
+    #kivikidstv .swiper-button-prev
+        width: 31px
+        height: 51px
+    #kivikidstv .column-kivikidstv__row
+        grid-template-columns: 1fr 1fr
+    #kivikidstv .column-kivikidstv__item
+        height: calc(100px + (409 - 100) * ((100vw - 320px) / (991.98 - 320)))
+
+@media screen and (max-width: 767.98px)
+    #kivikidstv .column-kivikidstv__android
+        img
+            width: 200px
+    #kivikidstv .control-kivikidstv__text_1
+        left: 0
+    #kivikidstv .control-kivikidstv__text_2
+        right: 0
+    #kivikidstv .control-kivikidstv__text
+        h2,p
+            text-align: center
+    #kivikidstv .control-kivikidstv__row
+        flex-direction: column
+    #kivikidstv .column-kivikidstv__image
+        margin-bottom: 15px
+        img
+            width: 70%
+    #kivikidstv .visual-kivikidstv__image
+        margin-top: -144px
+    #kivikidstv .standart-kivikidstv__list p::before
+        top: 2px
+    #kivikidstv .standart-kivikidstv__bg
+        padding-bottom: 0
+    #kivikidstv .standart-kivikidstv__icon_2
+        top: 25%
+        bottom: auto
+    #kivikidstv .standart-kivikidstv__row
+        flex-direction: column
+    #kivikidstv .nightlight-kivikidstv__bottom
+        min-height: 600px
+        margin-top: -77px
+    #kivikidstv .header-kivikidstv__row,
+    #kivikidstv .play-kivikidstv__row
+        flex-direction: column
+    #kivikidstv .header-kivikidstv__text
+        h2,p
+            text-align: center
+        h2
+            font-size: 40px
+    #kivikidstv .play-kivikidstv__text
+        h2,span,p
+            text-align: center
+        h2
+            margin-bottom: 5px
+
+@media screen and (max-width: 649px)
+    #kivikidstv .visual-kivikidstv__icon
+        top: 25%
+    #kivikidstv .visual-kivikidstv__image
+        margin-top: -110px
+    #kivikidstv .visual-kivikidstv__text
+        span,p
+            text-align: center
+    #kivikidstv .visual-kivikidstv__row
+        flex-direction: column
+    #kivikidstv .spec-kivikidstv__icon_5
+        display: none
+    #kivikidstv .spec-kivikidstv__icon_4
+        bottom: 0
+        left: 0
+    #kivikidstv .spec-kivikidstv__icon_2
+        top: 20%
+        right: 0
+        left: 50%
+    #kivikidstv .spec-kivikidstv__icon_1
+        top: 10%
+        right: 78%
+    #kivikidstv .spec-kivikidstv__bg
+        padding-bottom: 0
+    #kivikidstv .header-kivikidstv__icon_7
+        display: block
+        position: absolute
+        z-index: 2
+        bottom: 0
+        left: 72%
+    #kivikidstv .header-kivikidstv__bg
+        padding-bottom: 200px
+
+@media screen and (max-width: 566px)
+    #kivikidstv .column-kivikidstv__android img
+        width: 170px
+
+@media screen and (max-width: 479.98px)
+    #kivikidstv .column-kivikidstv__number
+        flex: 0 0 60px
+        img
+            width: 60px
+    #kivikidstv .column-kivikidstv__text p
+        font-size: 15px
+    #kivikidstv .column-kivikidstv__icon_2
+        display: none
+    #kivikidstv .column-kivikidstv__bg
+        padding: 50px 0
+    #kivikidstv .column-kivikidstv__icon_1
+        right: 30%
+        top: -120px
+    #kivikidstv .column-kivikidstv__inner
+        gap: 5px
+    #kivikidstv .column-kivikidstv__text_2 p
+        font-size: 14px
+    #kivikidstv .column-kivikidstv__image
+        margin-bottom: 10px
+        img
+            width: 50%
+    #kivikidstv .column-kivikidstv__item
+        background-color: #fff !important
+        height: auto
+        border-radius: 30px
+        padding: 15px
+        box-shadow: 5px 7px 23px 0px rgba(0,0,0,0.51)
+    #kivikidstv .column-kivikidstv__item:nth-child(1),
+    #kivikidstv .column-kivikidstv__item:nth-child(3),
+    #kivikidstv .column-kivikidstv__item:nth-child(5),
+    #kivikidstv .column-kivikidstv__item:nth-child(2),
+    #kivikidstv .column-kivikidstv__item:nth-child(4),
+    #kivikidstv .column-kivikidstv__item:nth-child(6)
+        background: none
+    #kivikidstv .prosmotr-kivikidstv__text
+        margin-bottom: 20px
+    #kivikidstv .visual-kivikidstv__title p
+        font-weight: normal
+    #kivikidstv .visual-kivikidstv__bg::after
+        content: ''
+        position: absolute
+        z-index: -1
+        background: url('https://cdn.comfy.ua/media/x/img3/2719842/img29-1.png') 0 0 no-repeat
+        background-size: cover
+        width: 100%
+        height: 938px
+        top: -250px
+        right: 0
+    #kivikidstv .visual-kivikidstv__image
+        margin-top: -80px
+    #kivikidstv .standart-kivikidstv__list p
+        padding-left: 35px
+    #kivikidstv .standart-kivikidstv__title
+        margin-bottom: 50px
+    #kivikidstv .nightlight-kivikidstv__image-sm
+        width: auto
+    #kivikidstv .header-kivikidstv__text
+        h2
+            // font-size: 30px
+            margin-bottom: 10px
+    #kivikidstv .header-kivikidstv__icon_3
+        right: 82%
+    #kivikidstv .header-kivikidstv__icon_2
+        left: auto
+        right: 70%
+        z-index: 10
+    #kivikidstv .header-kivikidstv__bg
+        padding-top: 60px
+        //padding-bottom: 60px
+    #kivikidstv .header-kivikidstv__row
+        gap: 20px
+    #kivikidstv .spec-kivikidstv__row
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))
+    #kivikidstv .spec-kivikidstv__title h2
+        margin-bottom: 20px
+    #kivikidstv .spec-kivikidstv__title h2
+        font-size: 25px
+    #kivikidstv .header-kivikidstv__icon_7
+        left: 64%
+    #kivikidstv .header-kivikidstv__icon_4
+        right: 73%
+    #kivikidstv .play-kivikidstv__bg
+        padding-bottom: 20px
+    #kivikidstv .play-kivikidstv__icon_2,
+    #kivikidstv .play-kivikidstv__icon_3
+        display: none
+    #kivikidstv .play-kivikidstv__image
+        position: relative
+        z-index: 2
+        padding-bottom: 60px
+        &::after
+            position: absolute
+            z-index: -1
+            content: ''
+            background: url('https://cdn.comfy.ua/media/x/img3/2719842/img12-1.png') center no-repeat
+            background-size: cover
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 345px
+            height: 105px
+    #kivikidstv .swiper-button-next:after,
+    #kivikidstv .swiper-button-prev:after,
+    #kivikidstv .swiper-button-next,
+    #kivikidstv .swiper-button-prev
+        width: 15px
+        height: 24px
+    #kivikidstv .swiper-button-next,
+    #kivikidstv .swiper-button-prev
+        top: 40%
+    #kivikidstv h2
+        margin-bottom: 20px
+    #kivikidstv .nightlight-kivikidstv__box
+        width: auto
+    #kivikidstv .nightlight-kivikidstv__box_1
+        padding: 50px 15px 50px
+    #kivikidstv .play-kivikidstv__text h2
+        font-weight: bold
+    #kivikidstv .standart-kivikidstv__title h2,
+    #kivikidstv .visual-kivikidstv__title h2,
+    #kivikidstv .nightlight-kivikidstv__box h2,
+    #kivikidstv .prosmotr-kivikidstv__text h2,
+    #kivikidstv .control-kivikidstv__text h2,
+    #kivikidstv .play-kivikidstv__text h2,
+    #kivikidstv .play-kivikidstv__text h2 span
+        font-size: 25px
+
+@media screen and (max-width: 359px)
+    #kivikidstv .column-kivikidstv__number
+        flex: 0 0 40px
+        img
+            width: 40px
+    #kivikidstv .column-kivikidstv__text
+        width: auto
+    #kivikidstv .column-kivikidstv__item
+        padding: 15px 5px
+    #kivikidstv .column-kivikidstv__text p
+        font-size: 14px
+    #kivikidstv .prosmotr-kivikidstv__icon_2
+        display: none
+    #kivikidstv .standart-kivikidstv__list p::before
+        top: 5px
+        width: 13px
+        height: 14px
+    #kivikidstv .standart-kivikidstv__list p
+        padding-left: 20px
+    #kivikidstv .standart-kivikidstv__image
+        position: relative
+        z-index: 1
+    #kivikidstv .standart-kivikidstv__icon_1
+        right: auto
+        left: calc(280 / 360 * 100%)
+        top: 45%
+        z-index: 10
+    #kivikidstv .standart-kivikidstv__list
+        padding-top: 15px
+    #kivikidstv .standart-kivikidstv__text
+        width: auto
+        span
+            text-align: center
+            font-size: 20px
+    #kivikidstv .standart-kivikidstv__title
+        margin-bottom: 30px
+    #kivikidstv .standart-kivikidstv__icon_2
+        display: none
+    #kivikidstv .nightlight-kivikidstv__image-sm
+        padding-top: 40px
+    #kivikidstv .nightlight-kivikidstv__box_2
+        top: 25%
+    #kivikidstv .nightlight-kivikidstv__bottom
+        background: url('https://cdn.comfy.ua/media/x/img3/2719842/img22-1.png') center no-repeat
+        min-height: 600px
+    #kivikidstv .spec-kivikidstv__icon_2
+        top: auto
+        left: 12%
+    #kivikidstv .spec-kivikidstv__icon_1
+        right: 60%
+    #kivikidstv .header-kivikidstv__bg
+        padding-bottom: 149px
+    #kivikidstv .designed-kivikidstv__image
+        height: 596px
+        position: relative
+        z-index: 2
+        img
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+// @media (max-width: 812px) and (orientation: landscape)
