@@ -1,0 +1,376 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+    
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1520px
+        margin: 0 auto
+        padding: 0 15px
+    
+
+        
+#maincontent .philips-content
+    &__header
+        padding: 50px 60px 30px
+        h2
+            @include fonts($fontSize: 50px, $lineHeight: 1.2)
+            margin-bottom: 20px
+            text-align: center
+            color: #92265a  
+        p
+            @include fonts($fontSize: 33px, $lineHeight: 1.2)
+            text-align: center
+            margin-bottom: 10px    
+    &__media
+        @include position($position: relative, $zIndex: 6)
+    &__text
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        align-items: center
+        justify-items: center
+        padding: 35px 60px 70px
+        gap: 25px
+        p
+            @include fonts($fontSize: 33px, $lineHeight: 1.2)
+            margin-bottom: 10px
+            text-align: center
+    &__text-item
+        padding: 10px 15px
+        max-width: 434px
+    &__subinfo-inner
+        padding: 50px 60px
+    &__subinfo-list
+        ul, li
+            font-size: 20px
+
+#maincontent .top-box
+    &__header
+        p
+            @include fonts($fontSize: 35px, $lineHeight: 1.869)
+        text-align: center
+
+#maincontent .text
+    &__item
+        &_01, &_02, &_03
+            grid-column: span 2
+        &_04, &_05
+            grid-column: span 3
+
+#maincontent .pos-box
+    margin-top: 85px
+    &__header
+        @include position($position: absolute, $zIndex: 9)
+        max-width: 700px
+        h2, p
+            color: #fff
+        &_left
+            bottom: 80px
+            left: 0
+            right: 50%
+            h2, p
+                text-align: left            
+        &_right
+            top: 0
+            left: 53%
+            h2, p
+                text-align: right
+
+#maincontent .box-table    
+    &__cells
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+    &__cell
+        min-width: 160px
+    &__img
+        display: flex
+        align-items: stretch
+        // height: 299px
+        margin-bottom: 20px
+        img
+            height: 299px
+            width: 100%
+            // object-fit: cover
+    &__cell_text
+        grid-column: 1/-1
+        background-color: #e1ceec
+        h3
+            padding: 10px 0 10px 15px
+            margin: 0
+            text-align: left
+            @include fonts($fontSize: 30px, $lineHeight: 1.2)
+            
+    &__text
+        p
+            margin: 10px 0
+            text-align: center  
+            @include fonts($fontSize: 27px, $lineHeight: 1.2) 
+
+#maincontent .bottom-box
+    &__header
+        top: 20px
+        right: 50%
+        p
+            text-align: left
+            span
+                font-size: 63px
+                font-weight: bold
+
+     
+            
+    
+            
+
+    
+
+
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1485px)
+    // #maincontent .pos-box
+    //     &__header
+    //         &_right
+    //             top: 10px
+    //             left: 44%
+
+@media screen and (max-width: 1400px)
+    #maincontent .philips-content
+        &__header
+            h2
+                font-size: calc( 22px + (50 - 22) * ((100vw - 320px)/(1400 - 320)))
+            p
+                font-size: calc( 16px + (33 - 16) * ((100vw - 320px)/(1400 - 320)))  
+        &__text
+            p
+                font-size: calc( 16px + (33 - 16) * ((100vw - 320px)/(1400 - 320)))
+        &__subinfo-list
+            ul, li
+                font-size: calc( 10px + (20 - 10) * ((100vw - 320px)/(1400 - 320)))
+    #maincontent .top-box
+        &__header
+            p
+                font-size: calc( 18px + (35 - 18) * ((100vw - 320px)/(1400 - 320)))
+    #maincontent .pos-box
+        &__header
+            &_right
+                top: -15px
+    #maincontent .box-table  
+        &__cell_text
+            h3
+                font-size: calc( 15px + (30 - 15) * ((100vw - 320px)/(1400 - 320)))
+        &__text
+            p
+                font-size: calc( 15px + (27 - 13) * ((100vw - 320px)/(1400 - 320)))
+    #maincontent .bottom-box
+        &__header
+            p
+                span
+                    font-size: calc( 30px + (63 - 30) * ((100vw - 320px)/(1400 - 320)))
+
+@media screen and (max-width: 1370.98px)
+    #maincontent .philips-content
+        &__text
+            padding: 35px 40px 70px
+            gap: 20px
+    #maincontent .pos-box
+        &__header
+            &_left
+                bottom: 40px
+                right: 40%
+    #maincontent .pos-box
+        &__header
+            &_right
+                left: 44%
+@media screen and (max-width: 1200.98px)
+    #maincontent .philips-content
+        &__text
+            padding: 35px 25px 70px
+            gap: 15px
+    #maincontent .pos-box
+        &__header
+            &_right
+                top: -30px
+    #maincontent .box-table 
+        &__img
+            img
+                height: 270px
+@media screen and (max-width: 1105.98px)
+    #maincontent .pos-box
+        margin-top: 50px
+        &__header
+            &_right
+                top: -35px
+    #maincontent .box-table 
+        &__img
+            img
+                height: 240px
+@media screen and (max-width: 1024.98px)
+    #maincontent .philips-content
+        &__text
+            padding: 20px 20px 40px
+        &__subinfo-inner
+            padding: 20px 10px
+    #maincontent .pos-box
+        &__header
+            &_left
+                right: 35%
+            &_right
+                top: -40px
+    #maincontent .box-table 
+        &__img
+            img
+                height: 220px
+    #maincontent .bottom-box
+        &__header
+            right: 45%
+
+@media screen and (max-width: 991.98px)
+    #maincontent .philips-content
+        &__header
+            padding: 25px 30px 10px
+    #maincontent .text
+        &__item
+            &_01, &_02
+                grid-column: span 3
+            &_03, &_04, &_05
+                grid-column: span 2
+    #maincontent .pos-box
+        margin-top: 0
+        &__header
+            position: unset
+            max-width: 100%            
+            h2, p
+                text-align: center
+            h2
+                color: #92265a    
+            p                
+                color: #000
+    #maincontent .box-table 
+        &__img
+            img
+                height: 200px
+    #maincontent .bottom-box
+        &__header
+            p
+                span   
+                    color: #92265a
+@media screen and (max-width: 870.98px)
+    #maincontent .box-table 
+        &__img
+            img
+                height: 175px
+@media screen and (max-width: 767.98px)
+    #maincontent .philips-content
+        &__header
+            padding: 10px
+            h2
+                margin-bottom: 0
+        &__text
+            grid-template-columns: 1fr
+            padding: 0 10px
+            gap: 0
+        &__text-item
+            max-width: 100%
+            padding: 10px 0 0
+        &__subinfo-inner
+            padding: 15px 10px
+    #maincontent .text
+        &__item
+            &_01, &_02, &_03, &_04, &_05
+                grid-column: span 1
+    #maincontent .box-table 
+        &__img
+            img
+                height: 150px
+    #maincontent .box-table
+        &__cells
+            overflow-x: scroll
+//@media screen and (max-width: 479.98px)
