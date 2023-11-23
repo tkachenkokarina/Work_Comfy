@@ -1,0 +1,413 @@
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #daewoofkm a
+//     color: inherit
+//     text-decoration: none
+
+// #daewoofkm
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#daewoofkm .bc-description__content p
+    margin-bottom: 0
+
+#daewoofkm .bc-description__content h3
+    text-align: left
+
+#daewoofkm
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#daewoofkm
+    // display: flex
+    // flex-direction: column
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#daewoofkm p::first-letter
+    padding-left: 0
+
+#daewoofkm img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#daewoofkm img:hover
+    opacity: 1
+
+#daewoofkm .daewoofkm__container
+    max-width: 1440px
+    margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+
+#daewoofkm .header-daewoofkm
+    &__bg
+        position: relative
+        z-index: 2
+    &__body
+        position: absolute
+        z-index: 5
+        top: calc(235 / 844 * 100%)
+        left: calc(111 / 1440 * 100%)
+        right: calc(846 / 1440 * 100%)
+    &__logo
+        // position: absolute
+        // z-index: 5
+        // top: 7%
+        // left: 8%
+        // right: 60%
+        margin-bottom: 24px
+    &__image
+    &__row
+        // position: absolute
+        // z-index: 5
+        // bottom: 2%
+        // left: 0
+        // right: 0
+        // padding: 0 40px
+        // display: flex
+        // align-items: center
+        // justify-content: center
+        // gap: 80px
+    &__item-image
+        // flex: 0 0 144px
+        img
+            margin: 0
+    &__text
+        margin-bottom: 29px
+        p
+            @include adaptiv-value("font-size", 26, 16, 1)
+            font-weight: 300
+            line-height: 1.2
+        span
+            color: #A8741A
+            font-weight: 600
+
+#daewoofkm .krasa-daewoofkm
+    &__bg
+        position: relative
+        z-index: 2
+    &__image
+    &__icon
+        position: absolute
+        z-index: 5
+        top: 16%
+        right: 7%
+        left: 71%
+    &__text
+        position: absolute
+        z-index: 5
+        transform: translateY(-50%)
+        top: 50%
+        left: 9%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 32, 15, 1)
+            font-weight: 800
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #A8741A
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            font-weight: 300
+            line-height: 1.2
+
+#daewoofkm .frost-daewoofkm
+    &__row
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 15, 1)
+            font-weight: 800
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #A8741A
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            font-weight: 300
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#daewoofkm .glass-daewoofkm
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2367638/img6.png') 0 0 no-repeat
+        background-size: cover
+        min-height: 800px
+        display: flex
+        align-items: center
+        justify-content: center
+        @include adaptiv-value("padding-right", 80, 15, 1)
+        @include adaptiv-value("padding-left", 100, 15, 1)
+    &__row
+        display: flex
+        align-items: center
+    &__image
+        flex: 0 1 50%
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 15, 1)
+            font-weight: 800
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #A8741A
+            text-transform: uppercase
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            font-weight: 300
+            line-height: 1.2
+
+#daewoofkm .zone-daewoofkm
+    &__box
+    &__text
+        max-width: 800px
+        margin: 0 auto
+        padding: 50px 15px 40px
+        h2
+            @include adaptiv-value("font-size", 32, 15, 1)
+            font-weight: 800
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #A8741A
+            text-transform: uppercase
+            text-align: center
+        p
+            @include adaptiv-value("font-size", 24, 15, 1)
+            font-weight: 300
+            line-height: 1.2
+            text-align: center
+    &__image
+
+//===========MEDIA=============================================================================================================================================
+
+@media screen and (max-width: 1200px)
+    #daewoofkm .multi-daewoofkm__line_6
+        top: 19.6%
+
+@media screen and (max-width: 1100px)
+    #daewoofkm .multi-daewoofkm__text_1,
+    #daewoofkm .multi-daewoofkm__text_2
+        width: 30%
+    #daewoofkm .multi-daewoofkm__text_1,
+    #daewoofkm .multi-daewoofkm__text_2
+        left: -30px
+    #daewoofkm .multi-daewoofkm__line_1,
+    #daewoofkm .multi-daewoofkm__line_4
+        left: -30px
+    #daewoofkm .header-daewoofkm__body
+        top: 15%
+
+@media screen and (max-width: 1024.98px)
+    #daewoofkm .multi-daewoofkm__line_6
+        top: 18.6%
+    #daewoofkm .multi-daewoofkm__line_3
+        top: 49%
+
+@media screen and (max-width: 991.98px)
+    // #daewoofkm .header-daewoofkm__row
+    //     gap: 40px
+    #daewoofkm .glass-daewoofkm__bg
+        min-height: 600px
+    #daewoofkm .header-daewoofkm__item-image img
+        width: 120px
+
+@media screen and (max-width: 900px)
+    // #daewoofkm .multi-daewoofkm__image-mob
+    //     display: block
+    // #daewoofkm .multi-daewoofkm__image
+    //     display: none
+    #daewoofkm .multi-daewoofkm__text
+        position: unset
+        width: auto
+        padding: 10px 0px 10px
+        h2,p
+            text-align: center
+    #daewoofkm .multi-daewoofkm__line
+        display: none
+    #daewoofkm .multi-daewoofkm
+        padding-top: 0
+    #daewoofkm .multi-daewoofkm__image
+        flex: 1 1 auto
+
+@media screen and (max-width: 767.98px)
+    #daewoofkm .header-daewoofkm__logo
+        margin-bottom: 15px
+    #daewoofkm .header-daewoofkm__text
+        margin-bottom: 12px
+    #daewoofkm .header-daewoofkm__body
+        top: 7%
+        left: 3%
+        right: 50%
+    // #daewoofkm .header-daewoofkm__row
+    //     position: unset
+    //     display: block
+    //     padding: 20px 15px
+    // #daewoofkm .header-daewoofkm__item-image
+    //     position: absolute
+    //     z-index: 5
+    //     bottom: 20%
+    //     transform: translateY(-50%)
+    //     left: 5%
+    //     right: 75%
+    // #daewoofkm .header-daewoofkm__item
+    //     p
+    //         text-align: center
+    #daewoofkm .krasa-daewoofkm__text
+        left: 4%
+        width: 55%
+    #daewoofkm .glass-daewoofkm__bg
+        padding-left: 30px
+    #daewoofkm .glass-daewoofkm__bg
+        min-height: 400px
+
+// @media screen and (max-width: 670px)
+//     #daewoofkm .header-daewoofkm__item-image
+//         bottom: 25%
+
+// @media screen and (max-width: 553px)
+//     #daewoofkm .header-daewoofkm__item-image
+//         bottom: 30%
+//     #daewoofkm .header-daewoofkm__logo
+//         top: 5%
+//         left: 6%
+//         right: 64%
+
+@media screen and (max-width: 690px)
+    #daewoofkm .frost-daewoofkm__row
+        flex-direction: column
+    #daewoofkm .frost-daewoofkm__text
+        width: auto
+        padding: 20px 15px 10px
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 591px)
+    #daewoofkm .header-daewoofkm__item-image img
+        width: 80px
+    #daewoofkm .header-daewoofkm__body
+        top: 7%
+        left: 2%
+        right: 46%
+    #daewoofkm .header-daewoofkm__logo
+        img
+            width: 200px
+            margin: 0
+
+@media screen and (max-width: 479.98px)
+    // #daewoofkm .header-daewoofkm__item-image
+    //     bottom: 40%
+    #daewoofkm .zone-daewoofkm__text
+        padding: 20px 15px 10px
+    #daewoofkm .glass-daewoofkm__row
+        flex-direction: column-reverse
+    #daewoofkm .glass-daewoofkm__bg
+        padding: 30px 15px
+    #daewoofkm .glass-daewoofkm__text
+        width: auto
+        margin-bottom: 10px
+        h2,p
+            text-align: center
+    #daewoofkm .header-daewoofkm__logo
+        img
+            width: 120px
+    #daewoofkm .header-daewoofkm__text p
+        font-size: 14px
+    #daewoofkm .header-daewoofkm__item-image img
+        width: 55px
+    #daewoofkm .krasa-daewoofkm__text p
+        font-size: 13px
+
+@media screen and (max-width: 401px)
+    #daewoofkm .krasa-daewoofkm__text
+        width: 62%
+    #daewoofkm .krasa-daewoofkm__text p
+        font-size: 11px
+
+@media screen and (max-width: 380px)
+    #daewoofkm .header-daewoofkm__body
+        top: 4%
+        left: 2%
+        right: 41%
+    #daewoofkm .header-daewoofkm__text
+        margin-bottom: 8px
+    #daewoofkm .header-daewoofkm__logo
+        margin-bottom: 8px
+
+// @media screen and (max-width: 400px)
+//     #daewoofkm .header-daewoofkm__item-image
+//         bottom: 45%
+
+// @media screen and (max-width: 357px)
+//     #daewoofkm .header-daewoofkm__item-image
+//         bottom: 50%
