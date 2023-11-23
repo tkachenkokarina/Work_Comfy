@@ -1,0 +1,597 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1600px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 50px, $lineHeight: 1.2)
+            margin: 20px 0px
+        h3
+            @include fonts($fontSize: 33px, $lineHeight: 1.2)
+            color: #4e3827
+            margin-bottom: 10px
+        h4
+            @include fonts($fontSize: 30px, $lineHeight: 1.2)
+            margin-bottom: 10px
+        p, ul, li
+            @include fonts($fontSize: 28px, $lineHeight: 1.2)
+            margin-bottom: 10px
+    &__box
+        padding: 0 25px
+    &__header
+        padding: 138px 10px 50px
+        h2
+            color: #e23232
+            text-align: center
+        p
+            color: #4e3827
+            text-align: center
+
+#maincontent .top-box
+    &__logo
+        max-width: 1320px
+        padding: 60px 10px
+        margin: 0 auto
+    &__content
+        @include position($position: relative, $zIndex: 5)
+    &__inner
+        @include position($position: absolute, $zIndex: 6)
+        @include flex-box($justifyContent: space-around, $alignItems: flex-start)
+        flex-direction: column
+        height: 100%
+        top: 10px
+        left: 58px
+        right: 50%
+        color: #fff
+        max-width: 585px
+    &__header
+        padding: 15px 5px
+
+#maincontent .bg-box
+    &__background
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2492617/bg01_2.png"))
+        width: 100%
+        height: 100%
+    &__items
+        @include flex-box($justifyContent: space-between, $alignItems: stretch)
+        padding: 0 60px
+    &__item
+        padding-top: 90px
+        max-width: 470px
+        p
+            padding: 25px 10px
+            color: #fff
+
+#maincontent .col-box
+    &__inner
+        margin-top: 135px
+        @include position($position: relative, $zIndex: 5)
+    &__content
+        @include position($position: absolute, $zIndex: 6)
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        margin: 0 auto
+        width: 100%
+    &__content-inner
+        padding: 50px 60px
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+    &__items
+        max-width: 710px
+        &_left
+            p
+                text-align: left
+        &_right
+            p
+                text-align: right
+    &__item
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        margin-bottom: 180px
+        &:last-child
+            margin-bottom: 0
+        &_rev
+            flex-direction: row-reverse
+    &__img
+        flex: 0 1 35%
+        &_left
+            margin-right: 50px
+        &_right
+            margin-left: 50px
+    &__text
+        // width: 380px
+        width: 420px
+        padding: 10px 15px
+        flex: 0 1 65%
+        p
+            color: #fff
+            span
+                color: #e23232
+                text-transform: uppercase
+
+#maincontent .row-maincontent
+    padding: 200px 25px
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin-bottom: 100px
+        &:last-child
+            margin-bottom: 0
+        &_rev
+            flex-direction: row-reverse
+            img
+                margin-left: auto
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+    &__image
+        flex: 0 1 50%
+
+#maincontent .pos-box
+    margin-bottom: 191px
+    &_nomb
+        margin-bottom: 0
+    &__media
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        top: 50%
+        left: 70px
+        right: 50%
+        width: 500px
+        h4, p, ul, li
+            color: #fff
+        h4
+            text-transform: uppercase
+        ul
+            padding: 20px
+        ul, li
+            list-style: disc
+        p
+            @include position($position: relative, $zIndex: 6)
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 7)
+                top: 17px
+                left: -70px
+                width: 50px
+                height: 3px
+                background-color: #fff
+            &::after
+                content: ""
+                @include position($position: absolute, $zIndex: 7)
+                top: 14px
+                left: -25px
+                width: 9px
+                height: 9px
+                border-radius: 50%
+                background-color: #fff
+
+#maincontent .img-box
+    &__content
+        @include position($position: relative, $zIndex: 5)
+    &__item
+        @include position($position: absolute, $zIndex: 6)
+        @include flex-box($justifyContent: flex-start, $alignItems: center)
+        top: 85px
+        left: 95px
+        right: 50%
+    &__item-img
+        margin-right: 35px
+    &__item-text
+        width: 215px
+        p
+            color: #fff
+
+#maincontent .bottom-box
+    &__inner
+        padding: 50px 60px
+        p
+            text-align: justify
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1540px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 24px + (50 - 24) * ((100vw - 320px)/(1540 - 320)))
+            h3
+                font-size: calc( 20px + (33 - 20) * ((100vw - 320px)/(1540 - 320)))
+            h4
+                font-size: calc( 18px + (30 - 18) * ((100vw - 320px)/(1540 - 320)))
+            p, ul, li
+                font-size: calc( 16px + (28 - 16) * ((100vw - 320px)/(1540 - 320)))
+    #maincontent .col-box
+        &__item
+            margin-bottom: 150px
+@media screen and (max-width: 1480.98px)
+    #maincontent .col-box
+        &__item
+            margin-bottom: 140px
+        &__img
+            &_left
+                margin-right: 30px
+            &_right
+                margin-left: 30px
+@media screen and (max-width: 1400px)
+    #maincontent .col-box
+        &__content-inner
+            padding: 25px 45px
+        &__item
+            margin-bottom: 115px
+        &__img
+            &_left
+                margin-right: 5px
+            &_right
+                margin-left: 5px
+        &__text
+            padding: 10px
+
+@media screen and (max-width: 1300px)
+    #maincontent .maincontent
+        &__header
+            padding: 90px 10px 50px
+    #maincontent .col-box
+        &__content-inner
+            padding: 10px 25px
+        &__item
+            margin-bottom: 100px
+        &__img
+            &_left
+                margin-right: 20px
+            &_right
+                margin-left: 20px
+        &__text
+            padding: 10px 5px
+    #maincontent .pos-box
+        &__text
+            width: 450px
+            top: 42%
+            left: 50px
+    #maincontent .img-box
+        &__item
+            left: 75px
+@media screen and (max-width: 1200px)
+    #maincontent .col-box
+        &__item
+            margin-bottom: 65px
+@media screen and (max-width: 1150.98px)
+    #maincontent .col-box
+        &__inner
+            margin-top: 75px
+        &__content
+            position: unset
+            transform: translateY(0)
+        &__content-inner
+            padding: 50px 20px
+        &__items
+            flex: 0 1 50%
+        &__item
+            margin-bottom: 50px
+        &__text
+            padding: 10px 20px
+            p
+                color: #4e3827
+    #maincontent .row-maincontent
+        padding: 100px 25px
+        &__inner
+            margin-bottom: 50px
+    #maincontent .pos-box
+        margin-bottom: 100px
+        &_nomb
+            margin-bottom: 0
+        &__text
+            top: 29%
+            p
+                &::before
+                    top: 15px
+                &::after
+                    top: 12px
+    #maincontent .img-box
+        &__item
+            left: 55px
+@media screen and (max-width: 1100px)
+    #maincontent .maincontent
+        &__header
+            padding: 50px 10px
+    #maincontent .bg-box
+        &__item
+            img
+                width: 40%
+    #maincontent .row-maincontent
+        padding: 50px 0px
+@media screen and (max-width: 1024.98px)
+    #maincontent .maincontent
+        &__box
+            padding: 0
+        &__header
+            padding: 20px 10px
+    #maincontent .col-box
+        &__inner
+            margin-top: 35px
+        &__content-inner
+            padding: 35px 10px
+        &__item
+            margin-bottom: 35px
+        &__text
+            padding: 10px 20px
+        &__img
+            &_left
+                margin-right: 15px
+            &_right
+                margin-left: 15px
+    #maincontent .row-maincontent
+        padding: 35px 0px
+        &__inner
+            margin-bottom: 30px
+    #maincontent .pos-box
+        margin-bottom: 35px
+    #maincontent .img-box
+        &__item
+            top: 50px
+        &__item-img
+            margin-right: 20px
+    #maincontent .bottom-box
+        &__inner
+            padding: 20px 30px
+@media screen and (max-width: 991.98px)
+    #maincontent .top-box
+        &__inner
+            left: 35px
+    #maincontent .col-box
+        &__content-inner
+            display: block
+        &__items
+            max-width: 100%
+            margin-bottom: 20px
+            &_right
+                p
+                    text-align: left
+        &__item
+            margin-bottom: 20px
+            justify-content: start
+            &_rev
+                flex-direction: row
+        &__text
+            width: auto
+            padding: 0 10px
+        &__img
+            &_left
+                margin-right: 0
+            &_right
+                margin-left: 0
+                margin-right: 0
+            img
+                width: 80%
+    #maincontent .pos-box
+        &__text
+            left: 35px
+            top: 50%
+            transform: translateY(-50%)
+            ul, li
+                margin-bottom: 0
+            p
+                &::before
+                    top: 13px
+                    left: -35px
+                    width: 25px
+                &::after
+                    top: 10px
+                    left: -16px
+    #maincontent .img-box
+        &__item
+            left: 25px
+@media screen and (max-width: 767.98px)
+    #maincontent .maincontent
+        &__container
+            h2
+                margin: 10px 0
+        &__header
+            padding: 0 10px
+    #maincontent .top-box
+        &__logo
+            padding: 20px 10px
+        &__inner
+            top: 0
+        &__header
+            padding: 0 5px
+    #maincontent .bg-box
+        &__items
+            padding: 0 20px
+            align-items: center
+        &__item
+            padding-top: 15px
+            img
+                width: 50%
+    #maincontent .col-box
+        &__inner
+            margin-top: 10px
+            display: flex
+            flex-direction: column-reverse
+        &__content-inner
+            padding: 10px
+        &__items
+            margin-bottom: 10px
+        &__item
+            margin-bottom: 10px
+    #maincontent .row-maincontent
+        padding: 10px 0
+        &__inner
+            flex-direction: column-reverse
+            margin-bottom: 10px
+        &__text
+            h3, p
+                text-align: center
+    #maincontent .pos-box
+        margin-bottom: 10px
+        &__media
+            display: flex
+            flex-direction: column-reverse
+        &__text
+            position: unset
+            transform: translateY(0)
+            width: auto
+            padding: 0 10px
+            h4, p, ul, li
+                color: #4e3827
+            h4
+                text-align: center
+            ul
+                padding: 0 10px
+                margin-left: 20px
+            li
+                margin-bottom: 10px
+            p
+                text-align: center
+                &::before
+                    display: none
+                &::after
+                    display: none
+    #maincontent .img-box
+        &__item-img
+            margin-right: 0
+            img
+                width: 80%
+    #maincontent .bottom-box
+        &__inner
+            padding: 10px
+@media screen and (max-width: 655.98px)
+    #maincontent .top-box
+        &__inner
+            left: 20px
+            right: 30%
+        &__header
+            padding-bottom: 0
+        &__series
+            h2
+                margin-top: 5px
+    #maincontent .bg-box
+        &__item
+            flex: 0 1 50%
+            p
+                padding: 10px 5px
+        &__img
+            flex: 0 1 50%
+    #maincontent .img-box
+        &__item
+            top: 30px
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__inner
+            position: unset
+            align-items: center
+            h2
+                color: #e23232
+                text-align: center
+            p
+                color: #4e3827
+                text-align: center
+    #maincontent .bg-box
+        &__items
+            padding: 0 10px
+    #maincontent .pos-box
+        &__text
+            ul
+                margin-left: 0px
+    #maincontent .img-box
+        &__item
+            left: 10px
+            top: 15px
+            display: block
+        &__item-img
+            img
+                width: 38%
+        &__item-text
+            padding: 10px 5px
+            width: 140px
+            p
+                font-size: 12px
