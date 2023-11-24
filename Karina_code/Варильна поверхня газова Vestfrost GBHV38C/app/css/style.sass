@@ -1,0 +1,409 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #maincontent a
+//     color: inherit
+//     text-decoration: none
+
+// #maincontent
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        // font-weight: bold
+
+#maincontent
+    //height: auto
+    margin: 0 auto
+    overflow: hidden
+    //background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+
+#maincontent img:hover
+    opacity: 1
+
+#maincontent .maincontent__container
+    max-width: 1440px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#maincontent .header-maincontent
+    position: relative
+    z-index: 2
+    &__top
+        position: absolute
+        z-index: 5
+        top: calc(40 / 810 * 100%)
+        left: calc(465 / 1440 * 100%)
+        right: calc(475 / 1440 * 100%)
+    &__logo
+        // position: absolute
+        // z-index: 5
+        // top: calc(40 / 810 * 100%)
+        // left: calc(465 / 1440 * 100%)
+        // right: calc(475 / 1440 * 100%)
+        img
+            margin: 0 auto 10px
+    &__text
+        // position: absolute
+        // z-index: 5
+        // top: calc(125 / 810 * 100%)
+        // left: 0
+        // right: 0
+        // width: 50%
+        // margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 22, 16, 1)
+            line-height: 1
+            text-align: center
+            color: #ffffff
+    &__title
+        position: absolute
+        z-index: 5
+        top: calc(590 / 810 * 100%)
+        left: calc(80 / 1440 * 100%)
+        right: calc(490 / 1440 * 100%)
+        h2
+            @include adaptiv-value("font-size", 64, 13, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: 700
+            text-transform: uppercase
+    &__image
+
+#maincontent .cook-maincontent
+    margin-bottom: 40px
+    position: relative
+    z-index: 2
+    &__bg
+    &__title
+        position: absolute
+        z-index: 5
+        top: calc(108 / 660 * 100%)
+        left: calc(80 / 1440 * 100%)
+        right: calc(739 / 1440 * 100%)
+        h2
+            @include adaptiv-value("font-size", 40, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: 700
+    &__row
+        position: absolute
+        z-index: 5
+        bottom: 0
+        display: flex
+        align-items: flex-end
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#maincontent .control-maincontent
+    padding-top: 40px
+    &__row
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        max-width: 1310px
+        margin: 0 auto
+        padding: 0 15px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 90%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            line-height: 1.2
+            color: #002E5D
+            text-transform: uppercase
+            font-weight: 700
+            @include adaptiv-value("margin-bottom", 40, 10, 1)
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__media
+        flex: 0 1 50%
+        position: relative
+        z-index: 2
+    &__image
+    &__icon
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 0
+        right: calc(1260 / 1440 * 100%)
+
+#maincontent .spec-maincontent
+    padding-top: 50px
+    &__row
+        display: flex
+        max-width: 1310px
+        margin: 0 auto
+        padding: 0 15px
+    &__item
+        flex: 0 1 50%
+    &__inner
+        display: flex
+        gap: 20px
+        &:not(:last-child)
+            margin-bottom: 30px
+    &__icon
+        flex: 0 0 60px
+    &__text
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__media
+        flex: 0 1 50%
+        position: relative
+        z-index: 2
+        padding-bottom: 78px
+    &__image
+        img
+            margin: 0 auto
+    &__image-small
+        position: absolute
+        z-index: 5
+        bottom: 0
+        right: 0
+        left: calc(273 / 640 * 100%)
+
+#maincontent .speed-maincontent
+    padding-top: 40px
+    margin-bottom: 70px
+    &__row
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        max-width: 1310px
+        margin: 0 auto
+        padding: 0 15px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 90%
+        margin: 0 auto
+        h2
+            @include adaptiv-value("font-size", 32, 16, 1)
+            line-height: 1.2
+            color: #002E5D
+            text-transform: uppercase
+            font-weight: 700
+            @include adaptiv-value("margin-bottom", 40, 10, 1)
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#maincontent .foot-maincontent
+    padding-top: 80px
+    position: relative
+    z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 0
+        right: calc(80 / 1440 * 100%)
+        left: calc(410 / 1440 * 100%)
+        width: 60%
+        margin-left: auto
+        p
+            @include adaptiv-value("font-size", 36, 16, 1)
+            line-height: 1.2
+            text-align: right
+    &__icon
+        position: absolute
+        z-index: 5
+        top: calc(90 / 889 * 100%)
+        left: calc(378 / 1440 * 100%)
+        right: calc(984 / 1440 * 100%)
+    &__image
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+@media screen and (max-width: 1100px)
+    #maincontent .cook-maincontent
+        padding-bottom: 100px
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .foot-maincontent__text
+        right: 3%
+        width: 70%
+    #maincontent .foot-maincontent__icon
+        left: 10%
+        right: 80%
+        top: 5%
+
+@media screen and (max-width: 991.98px)
+    #maincontent .spec-maincontent__row,
+    #maincontent .speed-maincontent__row
+        flex-direction: column
+        gap: 10px
+    #maincontent .spec-maincontent__item,
+    #maincontent .speed-maincontent__text
+        width: 80%
+        margin: 0 auto
+    #maincontent .speed-maincontent__text
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 767.98px)
+    #maincontent .control-maincontent__row
+        flex-direction: column
+        gap: 20px
+    #maincontent .control-maincontent__text
+        width: auto
+        h2,p
+            text-align: center
+    #maincontent .spec-maincontent__item,
+    #maincontent .speed-maincontent__text
+        width: auto
+    #maincontent .foot-maincontent__text
+        position: unset
+        width: auto
+        padding: 0 15px
+        p
+            text-align: center
+    #maincontent .foot-maincontent__icon
+        top: 38%
+        right: 5%
+        left: 85%
+    #maincontent .foot-maincontent
+        padding-top: 0
+
+@media screen and (max-width: 705px)
+    #maincontent .cook-maincontent__title
+        right: 5%
+        left: 5%
+        top: 5%
+    #maincontent .cook-maincontent
+        padding-bottom: 150px
+    #maincontent .cook-maincontent__text
+        width: 90%
+    #maincontent .cook-maincontent
+        margin-bottom: 0
+    // #maincontent .header-maincontent__top
+    //     top: 3%
+    //     left: 3%
+    //     right: 50%
+    // #maincontent .header-maincontent__logo img
+    //     margin: 0 0 5px
+    // #maincontent .header-maincontent__text p
+    //     text-align: left
+
+@media screen and (max-width: 479.98px)
+    #maincontent .header-maincontent__logo img
+        width: 100px
+    #maincontent .header-maincontent__top
+        top: 3%
+        left: 10%
+        right: 10%
+    #maincontent .cook-maincontent__row
+        flex-direction: column
+        position: unset
+    #maincontent .cook-maincontent
+        padding-bottom: 0
+    #maincontent .cook-maincontent__text
+        width: auto
+        padding: 0 15px
+        p
+            text-align: center
+    #maincontent .cook-maincontent__title h2
+        text-align: center
+    #maincontent .spec-maincontent__media
+        padding-bottom: 30px
+    #maincontent .foot-maincontent__icon
+        top: 48%
+    #maincontent .speed-maincontent
+        margin-bottom: 20px
+    #maincontent .spec-maincontent,
+    #maincontent .control-maincontent
+        padding-top: 20px
+// @media (max-width: 812px) and (orientation: landscape)

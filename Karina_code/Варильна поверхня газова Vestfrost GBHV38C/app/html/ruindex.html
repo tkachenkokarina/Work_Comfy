@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none}#maincontent{margin:0 auto;overflow:hidden;font-family:"Roboto",sans-serif}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto}#maincontent .header-maincontent{position:relative;z-index:2}#maincontent .header-maincontent__top{position:absolute;z-index:5;top:4.9382716049%;left:32.2916666667%;right:32.9861111111%}#maincontent .header-maincontent__logo img{margin:0 auto 10px}#maincontent .header-maincontent__text p{font-size:22px;line-height:1;text-align:center;color:#fff}@media(max-width: 1440px){#maincontent .header-maincontent__text p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/1120);font-size:calc(16px + 6*(100vw - 320px)/1120)}}#maincontent .header-maincontent__title{position:absolute;z-index:5;top:72.8395061728%;left:5.5555555556%;right:34.0277777778%}#maincontent .header-maincontent__title h2{font-size:64px;line-height:1.2;color:#fff;font-weight:700;text-transform:uppercase}@media(max-width: 1440px){#maincontent .header-maincontent__title h2{font-size:-webkit-calc(13px + 51*(100vw - 320px)/1120);font-size:calc(13px + 51*(100vw - 320px)/1120)}}#maincontent .cook-maincontent{margin-bottom:40px;position:relative;z-index:2}#maincontent .cook-maincontent__title{position:absolute;z-index:5;top:16.3636363636%;left:5.5555555556%;right:51.3194444444%}#maincontent .cook-maincontent__title h2{font-size:40px;line-height:1.2;color:#fff;font-weight:700}@media(max-width: 1440px){#maincontent .cook-maincontent__title h2{font-size:-webkit-calc(16px + 24*(100vw - 320px)/1120);font-size:calc(16px + 24*(100vw - 320px)/1120)}}#maincontent .cook-maincontent__row{position:absolute;z-index:5;bottom:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-moz-box-align:end;-ms-flex-align:end;align-items:flex-end}#maincontent .cook-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .cook-maincontent__text{width:80%;margin:0 auto}#maincontent .cook-maincontent__text p{font-size:24px;line-height:1.2}@media(max-width: 1440px){#maincontent .cook-maincontent__text p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1120);font-size:calc(16px + 8*(100vw - 320px)/1120)}}#maincontent .cook-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .control-maincontent{padding-top:40px}#maincontent .control-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;max-width:1310px;margin:0 auto;padding:0 15px}#maincontent .control-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .control-maincontent__text{width:90%;margin:0 auto}#maincontent .control-maincontent__text h2{font-size:32px;line-height:1.2;color:#002e5d;text-transform:uppercase;font-weight:700;margin-bottom:40px}@media(max-width: 1440px){#maincontent .control-maincontent__text h2{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}@media(max-width: 1440px){#maincontent .control-maincontent__text h2{margin-bottom:-webkit-calc(10px + 30*(100vw - 320px)/1120);margin-bottom:calc(10px + 30*(100vw - 320px)/1120)}}#maincontent .control-maincontent__text p{font-size:24px;line-height:1.2}@media(max-width: 1440px){#maincontent .control-maincontent__text p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1120);font-size:calc(16px + 8*(100vw - 320px)/1120)}}#maincontent .control-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:2}#maincontent .control-maincontent__icon{position:absolute;z-index:5;top:0;left:0;right:87.5%}#maincontent .spec-maincontent{padding-top:50px}#maincontent .spec-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;max-width:1310px;margin:0 auto;padding:0 15px}#maincontent .spec-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .spec-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px}#maincontent .spec-maincontent__inner:not(:last-child){margin-bottom:30px}#maincontent .spec-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#maincontent .spec-maincontent__text p{font-size:24px;line-height:1.2}@media(max-width: 1440px){#maincontent .spec-maincontent__text p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1120);font-size:calc(16px + 8*(100vw - 320px)/1120)}}#maincontent .spec-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:2;padding-bottom:78px}#maincontent .spec-maincontent__image img{margin:0 auto}#maincontent .spec-maincontent__image-small{position:absolute;z-index:5;bottom:0;right:0;left:42.65625%}#maincontent .speed-maincontent{padding-top:40px;margin-bottom:70px}#maincontent .speed-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;max-width:1310px;margin:0 auto;padding:0 15px}#maincontent .speed-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .speed-maincontent__text{width:90%;margin:0 auto}#maincontent .speed-maincontent__text h2{font-size:32px;line-height:1.2;color:#002e5d;text-transform:uppercase;font-weight:700;margin-bottom:40px}@media(max-width: 1440px){#maincontent .speed-maincontent__text h2{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}@media(max-width: 1440px){#maincontent .speed-maincontent__text h2{margin-bottom:-webkit-calc(10px + 30*(100vw - 320px)/1120);margin-bottom:calc(10px + 30*(100vw - 320px)/1120)}}#maincontent .speed-maincontent__text p{font-size:24px;line-height:1.2}@media(max-width: 1440px){#maincontent .speed-maincontent__text p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1120);font-size:calc(16px + 8*(100vw - 320px)/1120)}}#maincontent .speed-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .foot-maincontent{padding-top:80px;position:relative;z-index:2}#maincontent .foot-maincontent__text{position:absolute;z-index:5;top:0;right:5.5555555556%;left:28.4722222222%;width:60%;margin-left:auto}#maincontent .foot-maincontent__text p{font-size:36px;line-height:1.2;text-align:right}@media(max-width: 1440px){#maincontent .foot-maincontent__text p{font-size:-webkit-calc(16px + 20*(100vw - 320px)/1120);font-size:calc(16px + 20*(100vw - 320px)/1120)}}#maincontent .foot-maincontent__icon{position:absolute;z-index:5;top:10.1237345332%;left:26.25%;right:68.3333333333%}@media screen and (max-width: 1100px){#maincontent .cook-maincontent{padding-bottom:100px}}@media screen and (max-width: 1024.98px){#maincontent .foot-maincontent__text{right:3%;width:70%}#maincontent .foot-maincontent__icon{left:10%;right:80%;top:5%}}@media screen and (max-width: 991.98px){#maincontent .spec-maincontent__row,#maincontent .speed-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px}#maincontent .spec-maincontent__item,#maincontent .speed-maincontent__text{width:80%;margin:0 auto}#maincontent .speed-maincontent__text h2,#maincontent .speed-maincontent__text p{text-align:center}}@media screen and (max-width: 767.98px){#maincontent .control-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#maincontent .control-maincontent__text{width:auto}#maincontent .control-maincontent__text h2,#maincontent .control-maincontent__text p{text-align:center}#maincontent .spec-maincontent__item,#maincontent .speed-maincontent__text{width:auto}#maincontent .foot-maincontent__text{position:unset;width:auto;padding:0 15px}#maincontent .foot-maincontent__text p{text-align:center}#maincontent .foot-maincontent__icon{top:38%;right:5%;left:85%}#maincontent .foot-maincontent{padding-top:0}}@media screen and (max-width: 705px){#maincontent .cook-maincontent__title{right:5%;left:5%;top:5%}#maincontent .cook-maincontent{padding-bottom:150px}#maincontent .cook-maincontent__text{width:90%}#maincontent .cook-maincontent{margin-bottom:0}}@media screen and (max-width: 479.98px){#maincontent .header-maincontent__logo img{width:100px}#maincontent .header-maincontent__top{top:3%;left:10%;right:10%}#maincontent .cook-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:unset}#maincontent .cook-maincontent{padding-bottom:0}#maincontent .cook-maincontent__text{width:auto;padding:0 15px}#maincontent .cook-maincontent__text p{text-align:center}#maincontent .cook-maincontent__title h2{text-align:center}#maincontent .spec-maincontent__media{padding-bottom:30px}#maincontent .foot-maincontent__icon{top:48%}#maincontent .speed-maincontent{margin-bottom:20px}#maincontent .spec-maincontent,#maincontent .control-maincontent{padding-top:20px}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__header header-maincontent">
+                <div class="header-maincontent__top">
+                    <div class="header-maincontent__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1582806/img2.png" alt="">
+                    </div>
+                    <div class="header-maincontent__text">
+                        <p>Нехай життя стане простішим і комфортнішим!</p>
+                    </div>
+                </div>
+                <div class="header-maincontent__title">
+                    <h2>Гармонія <br>традицій та сучасності</h2>
+                </div>
+                <div class="header-maincontent__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1582806/img1.png" alt="">
+                </div>
+            </div>
+            <div class="maincontent__cook cook-maincontent">
+                <div class="cook-maincontent__bg">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1582806/img3.png" alt="">
+                </div>
+                <div class="cook-maincontent__title">
+                    <h2>Варильна поверхня GBHV 38 C
+                        - це розумний вибір для вашої кухні.</h2>
+                </div>
+                <div class="cook-maincontent__row">
+                    <div class="cook-maincontent__item">
+                        <div class="cook-maincontent__text">
+                            <p>Дозволяє не тільки <b>готувати з комфортом та безпекою</b>, але й надає вашій кухні
+                                <b>стильний і
+                                    сучасний вигляд.</b> Будучи надійною та зручною у використанні, вона стане відмінним
+                                доповненням до вашого кулінарного простору.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cook-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1582806/img4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__control control-maincontent">
+                <div class="control-maincontent__row">
+                    <div class="control-maincontent__item">
+                        <div class="control-maincontent__text">
+                            <h2>Фронтальна панель керування</h2>
+                            <p>Фронтальна панель керування робить налаштування і керування газовою плитою <b>GBHV 38
+                                    C</b> легким і зручним. Ви можете легко регулювати температуру і контролювати процес
+                                приготування.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="control-maincontent__media">
+                        <div class="control-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1582806/img5.png" alt="">
+                        </div>
+                        <div class="control-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1582806/img6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__spec spec-maincontent">
+                <div class="spec-maincontent__row">
+                    <div class="spec-maincontent__item">
+                        <div class="spec-maincontent__inner">
+                            <div class="spec-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1582806/img9.png" alt="">
+                            </div>
+                            <div class="spec-maincontent__text">
+                                <p><b>Чавунні решітки:</b> Вони стійкі до найвищих температур і здатні витримувати
+                                    великі
+                                    навантаження. Це означає, що ви можете використовувати великі та важкі каструлі і
+                                    сковороди без жодних страхів.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-maincontent__inner">
+                            <div class="spec-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1582806/img10.png" alt="">
+                            </div>
+                            <div class="spec-maincontent__text">
+                                <p><b>Газ-контроль:</b> Функція газ-контролю гарантує безпеку використання газового
+                                    побутового приладу. У разі випадкового загасання полум'я, газ автоматично
+                                    вимикається, що зменшує ризик аварії.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spec-maincontent__inner">
+                            <div class="spec-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1582806/img11.png" alt="">
+                            </div>
+                            <div class="spec-maincontent__text">
+                                <p><b>Функція автопідпалу:</b> Автопідпал дозволяє безпечно запалювати газову плиту,
+                                    захищаючи користувачів від ризику опіків. Просто оберніть ручку на панелі
+                                    управління, і іскра автоматично подається для підпалу.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-maincontent__media">
+                        <div class="spec-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1582806/img7.png" alt="">
+                        </div>
+                        <div class="spec-maincontent__image-small">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1582806/img8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__speed speed-maincontent">
+                <div class="speed-maincontent__row">
+                    <div class="speed-maincontent__item">
+                        <div class="speed-maincontent__text">
+                            <h2>конфорка швидкого нагріву</h2>
+                            <p>Це інноваційний і високопродуктивний вид газового пальника, який дозволяє швидше та
+                                ефективніше готувати їжу на газовій варильній панелі.
+                                <b>Основна перевага</b> посиленої конфорки полягає в <b>високій потужності</b>, завдяки
+                                чому вона
+                                нагріває каструлі і сковороди за мить. Це ідеально підходить для швидкого доведення їжі
+                                до кипіння або обсмажування, має рівномірний розподіл тепла, що допомагає уникнути
+                                "гарячих точок" і досягти кращих результатів приготування їжі.
+                                <b>Посилена конфорка допомагає заощадити час при готуванні і споживає менше газу, що
+                                    робить
+                                    її економнішою і ефективнішою, ніж звичайні конфорки.</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speed-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1582806/img12.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__foot foot-maincontent">
+                <div class="foot-maincontent__text">
+                    <p>Варильна газова поверхня Vestfrost <b>GBHV 38 C</b> стане чудовим доповненням до <b>духової шафи
+                            BOV 67 BE.</b>
+                        Маючи в арсеналі <b>8 програм приготування їжі та потужний електричний гриль</b>, цей тандем
+                        стане
+                        незамінним рішенням для вашої кухні.</p>
+                </div>
+                <div class="foot-maincontent__icon">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1582806/img14.png" alt="">
+                </div>
+                <div class="foot-maincontent__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1582806/img13.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
