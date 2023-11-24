@@ -1,0 +1,100 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.5;margin:20px 0px;text-transform:uppercase}#maincontent .maincontent__container p{font-size:20px;line-height:1.2;margin-bottom:10px}#maincontent .top-box__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/1686916/bg01.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;height:100%}#maincontent .top-box__inner{padding:40px 0 50px}#maincontent .top-box__content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .top-box__header{margin-left:200px;padding:10px 12px;-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .top-box__header p:nth-child(1){font-size:16px;line-height:1.3;text-transform:uppercase;color:#fff;margin-bottom:20px}#maincontent .top-box__header p:nth-child(2){font-size:54px;line-height:1.2;color:#fff}#maincontent .top-box__header p:nth-child(2) span{text-transform:uppercase;color:#ef4b81}#maincontent .top-box__img{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .col-box__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/1686916/bg02.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;margin-top:-1px;padding-bottom:290px}#maincontent .col-box__header{padding:80px 20px 30px}#maincontent .col-box__header h2{color:#fff;text-align:center}#maincontent .col-box__content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;padding:0 100px}#maincontent .col-box__text{padding:40px 15px 35px}#maincontent .col-box__text p{color:#fff;text-align:center}#maincontent .pos-box__inner{position:relative;z-index:5;margin:0 20px 0 200px;padding-bottom:480px}#maincontent .pos-box__content{position:absolute;z-index:6;top:-195px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .pos-box__text{-webkit-box-flex:0;-webkit-flex:0 1 45%;-moz-box-flex:0;-ms-flex:0 1 45%;flex:0 1 45%;padding:10px 20px;max-width:446px}#maincontent .pos-box__text h2{color:#ef4b81;margin-bottom:60px}#maincontent .pos-box__img{-webkit-box-flex:0;-webkit-flex:0 1 55%;-moz-box-flex:0;-ms-flex:0 1 55%;flex:0 1 55%}#maincontent .kenwood-characteristicks__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;margin-right:20px}#maincontent .kenwood-characteristicks__item:last-child{margin-right:0}#maincontent .kenwood-characteristicks__img{margin-bottom:10px}#maincontent .kenwood-characteristicks__text p{color:#000;text-align:left}#maincontent .kenwood-characteristicks__text p span{color:#ef4b81;font-weight:700}#maincontent .row-box__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1318px;margin:0 auto}#maincontent .row-box__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-box__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;margin-right:15px;margin-bottom:20px}#maincontent .row-box__header{padding:10px 20px}#maincontent .row-box__header h2{text-align:center}#maincontent .row-box__text{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;padding:10px 20px}#maincontent .bottom-box__inner{max-width:1318px;margin:0 auto}#maincontent .bottom-box__text{padding:30px 20px}#maincontent .bottom-box__text p{text-align:center}@media screen and (max-width: 1400px){#maincontent .maincontent__container h2{font-size:-webkit-calc(20px + 12*(100vw - 320px)/1080);font-size:calc(20px + 12*(100vw - 320px)/1080)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 4*(100vw - 320px)/1080);font-size:calc(16px + 4*(100vw - 320px)/1080)}#maincontent .top-box__header p:nth-child(1){font-size:-webkit-calc(12px + 4*(100vw - 320px)/1080);font-size:calc(12px + 4*(100vw - 320px)/1080)}#maincontent .top-box__header p:nth-child(2){font-size:-webkit-calc(24px + 30*(100vw - 320px)/1080);font-size:calc(24px + 30*(100vw - 320px)/1080)}}@media screen and (max-width: 1360.98px){#maincontent .pos-box__inner{padding-bottom:440px}#maincontent .pos-box__content{top:-175px}}@media screen and (max-width: 1300px){#maincontent .col-box__header{padding:50px 20px 20px}#maincontent .col-box__content{padding:0 70px}#maincontent .pos-box__inner{margin-left:150px}}@media screen and (max-width: 1250px){#maincontent .pos-box__inner{margin-left:110px;padding-bottom:390px}}@media screen and (max-width: 1200px){#maincontent .pos-box__inner{margin-left:105px;padding-bottom:350px}#maincontent .pos-box__content{top:-160px}}@media screen and (max-width: 1150px){#maincontent .pos-box__inner{margin-left:80px;padding-bottom:330px}}@media screen and (max-width: 1100px){#maincontent .top-box__header{margin-left:120px}#maincontent .col-box__bg{padding-bottom:240px}#maincontent .col-box__header{padding-top:35px}#maincontent .col-box__content{padding:0 50px}#maincontent .pos-box__inner{margin-left:60px;padding-bottom:300px}#maincontent .pos-box__content{top:-150px}}@media screen and (max-width: 1050px){#maincontent .col-box__bg{padding-bottom:205px}#maincontent .pos-box__content{top:-140px}}@media screen and (max-width: 1024.98px){#maincontent .top-box__header{margin-left:80px}#maincontent .col-box__header{padding:20px 20px 10px}#maincontent .col-box__content{padding:0 30px}#maincontent .col-box__text{padding-bottom:15px}}@media screen and (max-width: 991.98px){#maincontent .top-box__header{margin-left:60px}#maincontent .col-box__header{padding:10px 20px}#maincontent .col-box__text{padding:25px 15px 20px}#maincontent .bottom-box__text{padding:15px 10px}}@media screen and (max-width: 850.98px){#maincontent .col-box__bg{padding-bottom:180px}#maincontent .pos-box__inner{margin-left:50px}#maincontent .row-box__item{margin-right:0}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .top-box__header{margin-left:40px}#maincontent .top-box__inner{padding-bottom:20px}#maincontent .col-box__bg{padding-bottom:0}#maincontent .col-box__content{padding:0 10px}#maincontent .pos-box__inner{margin:0 auto 10px;padding-bottom:0}#maincontent .pos-box__content{position:unset;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .pos-box__text{max-width:100%;padding:0 10px}#maincontent .pos-box__text h2,#maincontent .pos-box__text p{text-align:center}#maincontent .kenwood-characteristicks__content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .kenwood-characteristicks__item{margin-right:0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .kenwood-characteristicks__img img{margin:0 auto}#maincontent .kenwood-characteristicks__text{padding:0 10px}#maincontent .kenwood-characteristicks__text p{text-align:center}#maincontent .row-box__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-box__item{margin-bottom:0}#maincontent .row-box__header{padding:0 10px}#maincontent .row-box__text{padding:0 10px}#maincontent .row-box__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .top-box__inner{padding:15px 0}#maincontent .top-box__content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .top-box__header{margin-left:0}#maincontent .top-box__header p{text-align:center}#maincontent .top-box__header p:nth-child(1){margin-bottom:10px}#maincontent .col-box__header{padding:10px 10px 0}#maincontent .col-box__content{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0 65px}#maincontent .col-box__text{padding:15px 5px 10px}#maincontent .kenwood-characteristicks__content{padding:0}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__bg">
+<div class="top-box__inner">
+<div class="top-box__content">
+<div class="top-box__header">
+<p>KMIX</p>
+<p><span>Яркий,</span> <br />мощный и <i>умный</i></p>
+</div>
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img01.png" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box col-box">
+<div class="col-box__bg">
+<div class="col-box__inner">
+<div class="col-box__header">
+<h2>Насадки для лучших рецептов</h2>
+</div>
+<div class="col-box__content">
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img02_1.png" /></div>
+<div class="col-box__text">
+<p>K-образная насадка</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img02_2.png" /></div>
+<div class="col-box__text">
+<p>Венчик</p>
+</div>
+</div>
+<div class="col-box__item">
+<div class="col-box__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img02_3.png" /></div>
+<div class="col-box__text">
+<p>Крюк для теста</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box pos-box">
+<div class="pos-box__inner">
+<div class="pos-box__content">
+<div class="pos-box__text">
+<h2>Скорость под контролем</h2>
+<p>Больше никаких туч муки во время приготовления! С кухонной машиной Kenwood KMX750WH можно                                 максимально четко контролировать скорость вращения и избежать беспорядка на кухне.                                 Медленно увеличивайте или сбавляйте скорость и наслаждайтесь превосходными результатами.</p>
+</div>
+<div class="pos-box__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img03.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box col-box kenwood-characteristicks">
+<div class="col-box__inner">
+<div class="col-box__content kenwood-characteristicks__content">
+<div class="col-box__item kenwood-characteristicks__item">
+<div class="col-box__img kenwood-characteristicks__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img04_1.png" /></div>
+<div class="col-box__text kenwood-characteristicks__text">
+<p><span>Высокая мощность</span></p>
+<p>Что бы вы ни делали — смешивали, месили или сбивали — кухонная машина делает все на                                     100%! Ее двигатель имеет мощность 1000 Вт и отлично справляется с любыми задачами!</p>
+</div>
+</div>
+<div class="col-box__item kenwood-characteristicks__item">
+<div class="col-box__img kenwood-characteristicks__img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img04_2.png" /></div>
+<div class="col-box__text kenwood-characteristicks__text">
+<p><span>Идеальная смесь</span></p>
+<p>Кухонная машина Kenwood KMX750WH не пропускает ни одного миллиграмма смеси.                                     Уникальная система планетарного смешивания обеспечивает охват всего: боков, центра и                                     дна чаши. В результате — идеальная смесь без комочков.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-box">
+<div class="row-box__inner">
+<div class="row-box__item">
+<div class="row-box__header">
+<h2>Создавайте и экспериментируйте</h2>
+</div>
+</div>
+<div class="row-box__text">
+<p>Легко расширить свой потенциал при приготовлении пищи с дополнительными насадками. Они могут                             натирать, спирализовать, измельчать, раскатывать пасту, выжимать сок и многое другое!</p>
+</div>
+</div>
+<div class="maincontent__row-img"><img src="https://cdn.comfy.ua/media/x/img3/1686916/img05.png" /></div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="bottom-box__inner">
+<div class="bottom-box__text">
+<p>Купить кухонную машину <b>Kenwood KMX750WH</b> в Украине можно на сайте или в фирменных магазинах                             Comfy!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
