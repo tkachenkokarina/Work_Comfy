@@ -1,0 +1,102 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .philips-content__header{padding:25px 60px 30px}#maincontent .philips-content__header h2{font-size:50px;line-height:1.2;margin-bottom:20px;text-align:center;color:#92265a}#maincontent .philips-content__header p{font-size:33px;line-height:1.2;text-align:center;margin-bottom:10px}#maincontent .philips-content__media{position:relative;z-index:6}#maincontent .philips-content__text{display:grid;grid-template-columns:repeat(6, 1fr);grid-template-rows:repeat(2, 1fr);-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;justify-items:center;padding:35px 60px 70px;gap:25px}#maincontent .philips-content__text p{font-size:33px;line-height:1.2;margin-bottom:10px;text-align:center}#maincontent .philips-content__text-item{padding:10px 15px;max-width:434px}#maincontent .philips-content__subinfo-inner{padding:50px 60px}#maincontent .philips-content__subinfo-list ul,#maincontent .philips-content__subinfo-list li{font-size:20px}#maincontent .top-box__header{text-align:center}#maincontent .top-box__header p{font-size:35px;line-height:1.869}#maincontent .text__item_01,#maincontent .text__item_02,#maincontent .text__item_03{grid-column:span 2}#maincontent .text__item_04,#maincontent .text__item_05{grid-column:span 3}#maincontent .pos-box{margin-top:85px}#maincontent .pos-box__header{position:absolute;z-index:9;max-width:700px}#maincontent .pos-box__header h2,#maincontent .pos-box__header p{color:#fff}#maincontent .pos-box__header_left{bottom:80px;left:0;right:50%}#maincontent .pos-box__header_left h2,#maincontent .pos-box__header_left p{text-align:left}#maincontent .pos-box__header_right{top:0;left:53%}#maincontent .pos-box__header_right h2,#maincontent .pos-box__header_right p{text-align:right}#maincontent .box-table__cells{display:grid;grid-template-columns:repeat(4, 1fr)}#maincontent .box-table__cell{min-width:160px}#maincontent .box-table__img{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin-bottom:20px}#maincontent .box-table__img img{height:299px;width:100%}#maincontent .box-table__cell_text{grid-column:1/-1;background-color:#e1ceec}#maincontent .box-table__cell_text h3{padding:10px 0 10px 15px;margin:0;text-align:left;font-size:30px;line-height:1.2}#maincontent .box-table__text p{margin:10px 0;text-align:center;font-size:27px;line-height:1.2}#maincontent .bottom-box__header{top:20px;right:50%}#maincontent .bottom-box__header p{text-align:left}#maincontent .bottom-box__header p span{font-size:63px;font-weight:bold}@media screen and (max-width: 1485px){#maincontent .pos-box__header_right{top:-10px}}@media screen and (max-width: 1400px){#maincontent .philips-content__header h2{font-size:-webkit-calc(22px + 28*(100vw - 320px)/1080);font-size:calc(22px + 28*(100vw - 320px)/1080)}#maincontent .philips-content__header p{font-size:-webkit-calc(16px + 17*(100vw - 320px)/1080);font-size:calc(16px + 17*(100vw - 320px)/1080)}#maincontent .philips-content__text p{font-size:-webkit-calc(16px + 17*(100vw - 320px)/1080);font-size:calc(16px + 17*(100vw - 320px)/1080)}#maincontent .philips-content__subinfo-list ul,#maincontent .philips-content__subinfo-list li{font-size:-webkit-calc(10px + 10*(100vw - 320px)/1080);font-size:calc(10px + 10*(100vw - 320px)/1080)}#maincontent .top-box__header p{font-size:-webkit-calc(18px + 17*(100vw - 320px)/1080);font-size:calc(18px + 17*(100vw - 320px)/1080)}#maincontent .pos-box__header_right{top:-15px;left:44%}#maincontent .box-table__cell_text h3{font-size:-webkit-calc(15px + 15*(100vw - 320px)/1080);font-size:calc(15px + 15*(100vw - 320px)/1080)}#maincontent .box-table__text p{font-size:-webkit-calc(15px + 14*(100vw - 320px)/1080);font-size:calc(15px + 14*(100vw - 320px)/1080)}#maincontent .bottom-box__header p span{font-size:-webkit-calc(30px + 33*(100vw - 320px)/1080);font-size:calc(30px + 33*(100vw - 320px)/1080)}}@media screen and (max-width: 1370.98px){#maincontent .philips-content__text{padding:35px 40px 70px;gap:20px}#maincontent .pos-box__header_left{bottom:40px;right:40%}}@media screen and (max-width: 1200.98px){#maincontent .philips-content__text{padding:35px 25px 70px;gap:15px}#maincontent .pos-box__header_right{top:-20px}#maincontent .pos-box__header_right h2{line-height:1}#maincontent .box-table__img img{height:270px}}@media screen and (max-width: 1105.98px){#maincontent .pos-box{margin-top:50px}#maincontent .box-table__img img{height:240px}}@media screen and (max-width: 1024.98px){#maincontent .philips-content__text{padding:20px 20px 40px}#maincontent .philips-content__subinfo-inner{padding:20px 10px}#maincontent .pos-box__header_left{right:35%}#maincontent .box-table__img img{height:220px}#maincontent .bottom-box__header{right:45%}}@media screen and (max-width: 991.98px){#maincontent .philips-content__header{padding:25px 30px 10px}#maincontent .text__item_01,#maincontent .text__item_02{grid-column:span 3}#maincontent .text__item_03,#maincontent .text__item_04,#maincontent .text__item_05{grid-column:span 2}#maincontent .pos-box{margin-top:0}#maincontent .pos-box__header{position:unset;max-width:100%}#maincontent .pos-box__header h2,#maincontent .pos-box__header p{text-align:center}#maincontent .pos-box__header h2{color:#92265a;line-height:1.2}#maincontent .pos-box__header p{color:#000}#maincontent .box-table__img img{height:200px}#maincontent .bottom-box__header p span{color:#92265a}}@media screen and (max-width: 870.98px){#maincontent .box-table__img img{height:175px}}@media screen and (max-width: 767.98px){#maincontent .philips-content__header{padding:10px}#maincontent .philips-content__header h2{margin-bottom:0}#maincontent .philips-content__text{grid-template-columns:1fr;padding:0 10px;gap:0}#maincontent .philips-content__text-item{max-width:100%;padding:10px 0 0}#maincontent .philips-content__subinfo-inner{padding:15px 10px}#maincontent .text__item_01,#maincontent .text__item_02,#maincontent .text__item_03,#maincontent .text__item_04,#maincontent .text__item_05{grid-column:span 1}#maincontent .box-table__img img{height:150px}#maincontent .box-table__cells{overflow-x:scroll}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box philips-content top-box">
+<div class="philips-content__header top-box__header">
+<h2>Утюг на каждый день</h2>
+<p>Паровой утюг Philips DST5030/20</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img01.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Особенности утюга Philips</h2>
+</div>
+<div class="philips-content__text">
+<div class="philips-content__text-item text__item_01">
+<p><b>Высокая мощность</b></p>
+<p>Нагрев и глажка с молниеносной скоростью обеспечивает мощность 2400 Вт</p>
+</div>
+<div class="philips-content__text-item text__item_02">
+<p><b>Паровой удар</b></p>
+<p>Забудьте о любых складках, даже самых тяжелых</p>
+</div>
+<div class="philips-content__text-item  text__item_03">
+<p><b>Очистка от накипи</b></p>
+</div>
+<div class="philips-content__text-item text__item_04">
+<p><b>Подошва, которая идеально скользит</b></p>
+<p>SteamGlide Plus</p>
+</div>
+<div class="philips-content__text-item text__item_05">
+<p><b>Вертикальное отпаривание</b></p>
+</div>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img02.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Идеальное скольжение</h2>
+<p>Утюг имеет подошву SteamGlide Plus, которая гарантирует легкое скольжение по всем видам тканей.                         Материал обладает антипригарным покрытием, защитой от повреждений и особенно легкой очисткой.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img03.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Забудьте о складках</h2>
+<p>Даже тяжелые складки исчезнут под мощностью парового удара до 180 г. Пар глубже проникает в                         волокна и лучше устраняет складки.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img04.png" /></div>
+</div>
+<div class="maincontent__box philips-content pos-box">
+<div class="philips-content__media">
+<div class="philips-content__header pos-box__header pos-box__header_left">
+<h2>Быстрая работа</h2>
+<p>С утюгом Philips DST5030/20 вы будете тратить меньше времени на глажку — все благодаря подаче                             пара до 45 г/мин. Быстрая и уверенная работа с равномерным паром гарантирована!</p>
+</div>
+<picture class="philips-content__img"> <source srcset="https://cdn.comfy.ua/media/x/img3/1742530/img05_mob.png" media="(max-width: 991.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/1742530/img05.png" media="(min-width: 992px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/1742530/img05.png" /> </picture></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Никаких пятен во время глажки</h2>
+<p>Система "капля-стоп" отвечает за отсутствие капель воды на тканях. Смело гладьте даже деликатные                         ткани на низких температурах и получайте идеальные результаты!</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img06.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Очистка от накипи</h2>
+<p>Утюг Philips DST5030/20 оснащен встроенным переключателем для очистки от накипи. Эта функция                         удаления кальция и накипи поддерживает максимальную эффективность утюга на протяжении долгого                         времени. И также благодаря этому вы можете смело использовать обычную воду из-под крана.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img07.png" /></div>
+</div>
+<div class="maincontent__box philips-content pos-box">
+<div class="philips-content__media">
+<div class="philips-content__header pos-box__header pos-box__header_right">
+<h2>Безопасность на первом месте</h2>
+<p>Если вы не используете утюг в течение определенного периода времени, он автоматически                             выключается.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/1742530/img08.png" /></div>
+</div>
+</div>
+<div class="maincontent__box philips-content pos-box bottom-box">
+<div class="philips-content__media">
+<div class="philips-content__header pos-box__header bottom-box__header">
+<p><span>Philips –                                 бренд по глажению                                 №1 в мире**</span></p>
+</div>
+<picture class="philips-content__img"> <img src="https://cdn.comfy.ua/media/x/img3/1742530/img09.png" /> </picture></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__subinfo-inner">
+<div class="philips-content__subinfo-list">
+<ul>
+<li><sup>*СтимГлайд Плюс.</sup></li>
+<li><sup>**Источник Euromonitor International Ltd; по определению утюгов; розничные продажи по                                 количеству единиц, данные в 2022 году.</sup></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
