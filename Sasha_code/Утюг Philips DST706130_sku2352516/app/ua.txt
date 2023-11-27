@@ -1,0 +1,113 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .philips-content__header{padding:50px 60px 30px}#maincontent .philips-content__header h2{font-size:47px;line-height:1.2;margin-bottom:10px;text-align:center;color:#099}#maincontent .philips-content__header h3{font-size:40px;line-height:1.2;margin-bottom:10px;text-align:center;color:#099}#maincontent .philips-content__header p{font-size:33px;line-height:1.2;text-align:center;margin-bottom:10px}#maincontent .philips-content__media{position:relative;z-index:6}#maincontent .philips-content__text{display:grid;grid-template-columns:repeat(6, 1fr);grid-template-rows:repeat(2, 1fr);-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;justify-items:center;padding:35px 60px 70px;gap:25px}#maincontent .philips-content__text p{font-size:33px;line-height:1.2;margin-bottom:10px;text-align:center}#maincontent .philips-content__text-item{padding:10px 15px;max-width:434px}#maincontent .philips-content__subinfo-inner{padding:50px 60px}#maincontent .philips-content__subinfo-list ul,#maincontent .philips-content__subinfo-list li{font-size:20px}#maincontent .top-box__header{text-align:center}#maincontent .top-box__header p{font-size:35px;line-height:1.869}#maincontent .philips-properties__media{position:relative;z-index:5}#maincontent .philips-properties__items{position:absolute;z-index:6;left:705px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .philips-properties__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .philips-properties__item-img{position:relative;z-index:6;-webkit-box-flex:0;-webkit-flex:0 1 15%;-moz-box-flex:0;-ms-flex:0 1 15%;flex:0 1 15%}#maincontent .philips-properties__item-img::after{content:"";position:absolute;z-index:-1;width:75px;height:75px;background-color:#fff;top:9px;left:5px;bottom:0;right:0;-webkit-border-radius:50%;border-radius:50%}#maincontent .philips-properties__item-img img{-o-object-fit:cover;object-fit:cover}#maincontent .philips-properties__item-text{-webkit-box-flex:0;-webkit-flex:0 1 85%;-moz-box-flex:0;-ms-flex:0 1 85%;flex:0 1 85%;padding:10px 20px}#maincontent .philips-properties__item-text p{font-size:24px;line-height:1.2}#maincontent .pos-box{margin-top:85px}#maincontent .pos-box__header{position:absolute;z-index:9;max-width:700px}#maincontent .pos-box__header p span{font-size:28px}#maincontent .pos-box__header_left{bottom:100px;left:0;right:50%}#maincontent .pos-box__header_left h2,#maincontent .pos-box__header_left p{text-align:left}#maincontent .pos-box__header_right{top:0;left:53%}#maincontent .pos-box__header_right h2,#maincontent .pos-box__header_right p{text-align:right}#maincontent .box-table__cells{display:grid;grid-template-columns:repeat(4, 1fr)}#maincontent .box-table__cell{min-width:160px}#maincontent .box-table__img{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin-bottom:20px}#maincontent .box-table__img img{height:299px;width:100%}#maincontent .box-table__cell_text{grid-column:1/-1;background-color:#e1ceec}#maincontent .box-table__cell_text h3{padding:10px 0 10px 15px;margin:0;text-align:left;font-size:30px;line-height:1.2}#maincontent .box-table__text p{margin:10px 0;text-align:center;font-size:27px;line-height:1.2}#maincontent .bottom-box__header{top:20px;right:50%}#maincontent .bottom-box__header p{text-align:left}#maincontent .bottom-box__header p span{font-size:63px;font-weight:bold;color:#fff}@media screen and (max-width: 1485px){#maincontent .philips-properties__items{left:-webkit-calc(200px + 505*(100vw - 320px)/1165);left:calc(200px + 505*(100vw - 320px)/1165)}}@media screen and (max-width: 1400px){#maincontent .philips-content__header h2{font-size:-webkit-calc(22px + 25*(100vw - 320px)/1080);font-size:calc(22px + 25*(100vw - 320px)/1080)}#maincontent .philips-content__header h3{font-size:-webkit-calc(20px + 20*(100vw - 320px)/1080);font-size:calc(20px + 20*(100vw - 320px)/1080)}#maincontent .philips-content__header p{font-size:-webkit-calc(16px + 17*(100vw - 320px)/1080);font-size:calc(16px + 17*(100vw - 320px)/1080)}#maincontent .philips-content__text p{font-size:-webkit-calc(16px + 17*(100vw - 320px)/1080);font-size:calc(16px + 17*(100vw - 320px)/1080)}#maincontent .philips-content__subinfo-list ul,#maincontent .philips-content__subinfo-list li{font-size:-webkit-calc(10px + 10*(100vw - 320px)/1080);font-size:calc(10px + 10*(100vw - 320px)/1080)}#maincontent .top-box__header p{font-size:-webkit-calc(18px + 17*(100vw - 320px)/1080);font-size:calc(18px + 17*(100vw - 320px)/1080)}#maincontent .philips-properties__item{margin-bottom:10px}#maincontent .philips-properties__item:last-child{margin-bottom:0}#maincontent .philips-properties__item-img::after{width:55px;height:80%;top:7px;left:11px}#maincontent .philips-properties__item-img img{width:80%}#maincontent .philips-properties__item-text p{font-size:-webkit-calc(14px + 10*(100vw - 320px)/1080);font-size:calc(14px + 10*(100vw - 320px)/1080)}#maincontent .pos-box__header p span{font-size:-webkit-calc(16px + 12*(100vw - 320px)/1080);font-size:calc(16px + 12*(100vw - 320px)/1080)}#maincontent .pos-box__header_right{top:-15px}#maincontent .box-table__cell_text h3{font-size:-webkit-calc(15px + 15*(100vw - 320px)/1080);font-size:calc(15px + 15*(100vw - 320px)/1080)}#maincontent .box-table__text p{font-size:-webkit-calc(15px + 14*(100vw - 320px)/1080);font-size:calc(15px + 14*(100vw - 320px)/1080)}#maincontent .bottom-box__header p span{font-size:-webkit-calc(30px + 33*(100vw - 320px)/1080);font-size:calc(30px + 33*(100vw - 320px)/1080)}}@media screen and (max-width: 1370.98px){#maincontent .philips-content__text{padding:35px 40px 70px;gap:20px}#maincontent .pos-box__header_left{bottom:40px}#maincontent .pos-box__header_right{left:44%}}@media screen and (max-width: 1280.98px){#maincontent .philips-properties__item-img::after{left:6px;top:5px}}@media screen and (max-width: 1230.98px){#maincontent .philips-properties__item-img::after{left:5px}}@media screen and (max-width: 1200.98px){#maincontent .philips-content__text{padding:35px 25px 70px;gap:15px}#maincontent .philips-properties__item-img::after{width:50px;left:6px}#maincontent .pos-box__header_right{top:-30px}#maincontent .box-table__img img{height:270px}}@media screen and (max-width: 1165.98px){#maincontent .philips-properties__item-img::after{width:45px;left:7px}}@media screen and (max-width: 1105.98px){#maincontent .philips-properties__item{margin-bottom:4px}#maincontent .philips-properties__item-img::after{width:40px;left:9px}#maincontent .pos-box{margin-top:50px}#maincontent .pos-box__header_right{top:-35px}#maincontent .box-table__img img{height:240px}}@media screen and (max-width: 1024.98px){#maincontent .philips-content__text{padding:20px 20px 40px}#maincontent .philips-content__subinfo-inner{padding:20px 10px}#maincontent .philips-properties__items{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding:0 50px 20px}#maincontent .philips-properties__item-img::after{width:100%;height:100%;left:0;top:0}#maincontent .philips-properties__img img{margin:0 auto}#maincontent .pos-box__header_right{top:-40px}#maincontent .box-table__img img{height:220px}#maincontent .bottom-box__header{right:45%}}@media screen and (max-width: 991.98px){#maincontent .philips-content__header{padding:25px 30px 10px}#maincontent .pos-box__header_left{bottom:20px}#maincontent .box-table__img img{height:200px}}@media screen and (max-width: 870.98px){#maincontent .pos-box__header_left{bottom:5px}#maincontent .box-table__img img{height:175px}}@media screen and (max-width: 767.98px){#maincontent .philips-content__header{padding:10px}#maincontent .philips-content__header h2{margin-bottom:0}#maincontent .philips-content__text{grid-template-columns:1fr;padding:0 10px;gap:0}#maincontent .philips-content__text-item{max-width:100%;padding:10px 0 0}#maincontent .philips-content__subinfo-inner{padding:15px 10px}#maincontent .philips-properties__items{padding:0 5px 10px}#maincontent .philips-properties__item{margin-bottom:0}#maincontent .philips-properties__item-img{-webkit-box-flex:0;-webkit-flex:0 1 30%;-moz-box-flex:0;-ms-flex:0 1 30%;flex:0 1 30%}#maincontent .philips-properties__item-img img{margin:0 auto;width:60%}#maincontent .philips-properties__item-text{-webkit-box-flex:0;-webkit-flex:0 1 70%;-moz-box-flex:0;-ms-flex:0 1 70%;flex:0 1 70%;padding:10px 5px}#maincontent .pos-box{margin-top:0}#maincontent .pos-box__header{position:unset;max-width:100%}#maincontent .pos-box__header h2,#maincontent .pos-box__header p{text-align:center}#maincontent .pos-box__header p{color:#000}#maincontent .box-table__img img{height:150px}#maincontent .box-table__cells{overflow-x:scroll}#maincontent .bottom-box__header p span{color:#099}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box philips-content top-box">
+<div class="philips-content__header top-box__header">
+<h2>Ефективне щоденне прасування</h2>
+<h3>Спеціальна підошва, яка гарантує легке ковзання</h3>
+<p>Парова праска Philips DST7061/30</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/img01.png" /></div>
+</div>
+<div class="maincontent__box philips-content philips-properties">
+<div class="philips-content__header">
+<h2>Особливості праски Philips</h2>
+</div>
+<div class="philips-properties__media">
+<div class="philips-properties__items">
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_1.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Нагрівання і прасування з потужністю 3000 Вт</b></p>
+</div>
+</div>
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_2.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Забудьте про складки з паровим ударом до 250 г</b></p>
+</div>
+</div>
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_3.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Підошва, яка гарантує ідеальне ковзання</b></p>
+</div>
+</div>
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_4.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Функція видалення накипу</b></p>
+</div>
+</div>
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_5.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Можливість вертикального відпарювання</b></p>
+</div>
+</div>
+<div class="philips-properties__item">
+<div class="philips-properties__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/icon02_6.png" /></div>
+<div class="philips-properties__item-text">
+<p><b>Автоматичне вимкнення</b></p>
+</div>
+</div>
+</div>
+<picture class="philips-properties__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2352516/img02_mob.png"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2352516/img02.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2352516/img02.png" /> </picture></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Найкраща підошва для найкращого ефекту</h2>
+<p>SteamGlide Elite — це спеціальна підошва, якою оснащена парова праска Philips DST7061/30. Вона                     відрізняється відмінним ковзанням, максимальним захистом від пошкоджень та легким очищенням. Підошва                     міцна і довговічна.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/img03.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Усунення складок з першого разу</h2>
+<p>Завдяки тому, що паровий удар має значення до 250 г, а подача пари — до 50 г/хв, праска моментально                     усуває найважчі складки. Рівномірна подача пари та висока потужність дозволяють збільшити кількість                     пари, яка проходить через тканину, на 50%.</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/img04.png" /></div>
+</div>
+<div class="maincontent__box philips-content pos-box">
+<div class="philips-content__media">
+<div class="philips-content__header pos-box__header pos-box__header_left">
+<p><b>Відмінні результати з будь-якими тканинами</b></p>
+<p><span>Ви можете легко керувати температурою та змінними налаштуваннями для того, щоб отримати                             ідеальні результати. Потужність в 3000 Вт гарантує швидке нагрівання праски та саму роботу. </span></p>
+</div>
+<img class="philips-content__img" /> <img src="https://cdn.comfy.ua/media/x/img3/2352516/img05.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Забудьте про плями під час прасування</h2>
+<p>Система “крапля-стоп” створена для того, щоб ви більше не стикалися з плямами води на вашій                     випрасуваній тканині. Не важливо при яких температурах ви прасуєте, вона працює постійно!</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/img06.png" /></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__header">
+<h2>Система видалення накипу</h2>
+<p>За тривалу ефективність праски та легкий догляд відповідає система видаленні накипу. Пару хвилин — і                     праска Philips DST7061/30 знову готова до роботи!</p>
+</div>
+<div class="philips-content__img"><img src="https://cdn.comfy.ua/media/x/img3/2352516/img07.png" /></div>
+</div>
+<div class="maincontent__box philips-content pos-box bottom-box">
+<div class="philips-content__media">
+<div class="philips-content__header pos-box__header bottom-box__header">
+<p><span>Philips –                             бренд прасування                             №1 у світі**</span></p>
+</div>
+<picture class="philips-content__img"> <img src="https://cdn.comfy.ua/media/x/img3/2352516/img08.png" /> </picture></div>
+</div>
+<div class="maincontent__box philips-content">
+<div class="philips-content__subinfo-inner">
+<div class="philips-content__subinfo-list">
+<ul>
+<li><sup>*СтімГлайд Еліт.</sup></li>
+<li><sup>**Джерело Euromonitor International Ltd; за визначенням прасок; роздрібні продажі за                                 кількістю одиниць, дані 2022 року.</sup></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
