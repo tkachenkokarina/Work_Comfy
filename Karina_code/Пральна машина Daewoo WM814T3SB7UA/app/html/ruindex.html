@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+
+    <style>
+        #maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none}#maincontent{height:auto;margin:0 auto;overflow:hidden;background-color:#fff;font-family:"Roboto",sans-serif}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1440px;margin:0 auto}#maincontent .header-maincontent{position:relative;z-index:2}#maincontent .header-maincontent__logo{position:absolute;z-index:5;top:0;left:0;right:0}#maincontent .header-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:80px;position:absolute;z-index:5;bottom:0;left:0;right:0;width:85%;margin:0 auto}#maincontent .header-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 277px;-moz-box-flex:0;-ms-flex:0 0 277px;flex:0 0 277px}#maincontent .header-maincontent__text p{font-size:48px;line-height:1.2;color:#fff;font-weight:400}@media(max-width: 1440px){#maincontent .header-maincontent__text p{font-size:-webkit-calc(15px + 33*(100vw - 320px)/1120);font-size:calc(15px + 33*(100vw - 320px)/1120)}}#maincontent .header-maincontent__text p span{color:#bd9400;font-weight:400}#maincontent .steam-maincontent{padding-top:100px}@media(max-width: 1440px){#maincontent .steam-maincontent{padding-top:-webkit-calc(20px + 80*(100vw - 320px)/1120);padding-top:calc(20px + 80*(100vw - 320px)/1120)}}#maincontent .steam-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;gap:27px;max-width:1290px;margin:0 auto;padding:0 15px;position:relative;z-index:2}#maincontent .steam-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;padding-top:100px;position:relative;z-index:10}#maincontent .steam-maincontent__text p{font-size:32px;line-height:1.2;font-weight:400}@media(max-width: 1440px){#maincontent .steam-maincontent__text p{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}#maincontent .steam-maincontent__text p:not(:last-child){margin-bottom:60px}#maincontent .steam-maincontent__text p span{color:#bd9400;font-weight:400}#maincontent .steam-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .steam-maincontent__icon{position:absolute;z-index:5;bottom:0;left:32.380952381%;right:39.2857142857%}#maincontent .allergy-maincontent{padding-top:67px}#maincontent .allergy-maincontent__bg{position:relative;z-index:2}#maincontent .allergy-maincontent__icon{position:absolute;z-index:5}#maincontent .allergy-maincontent__icon_1{top:-60px;left:6.25%;right:76.875%}#maincontent .allergy-maincontent__icon_2{top:10%;right:8.9583333333%;left:70.4861111111%}#maincontent .allergy-maincontent__icon_3{top:25.3649635036%;right:35.2083333333%;left:61.1111111111%}#maincontent .allergy-maincontent__icon_4{top:55.2919708029%;right:33.5416666667%;left:64.7222222222%}#maincontent .allergy-maincontent__icon_5{top:62.7737226277%;right:37.2916666667%;left:58.0555555556%}#maincontent .allergy-maincontent__icon_6{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:29.3055555556%;left:70.4861111111%}#maincontent .allergy-maincontent__text{position:absolute;z-index:5;top:40%;left:8.3333333333%;width:50%}#maincontent .allergy-maincontent__text h2{font-size:50px;line-height:1.2;text-transform:uppercase;font-weight:bold;padding:15px 0}@media(max-width: 1440px){#maincontent .allergy-maincontent__text h2{font-size:-webkit-calc(14px + 36*(100vw - 320px)/1120);font-size:calc(14px + 36*(100vw - 320px)/1120)}}#maincontent .allergy-maincontent__text p{font-size:30px;line-height:1.2}@media(max-width: 1440px){#maincontent .allergy-maincontent__text p{font-size:-webkit-calc(13px + 17*(100vw - 320px)/1120);font-size:calc(13px + 17*(100vw - 320px)/1120)}}#maincontent .allergy-maincontent__text img{margin:0;width:clamp(150px,31vw,453px)}#maincontent .eco-maincontent__bg{position:relative;z-index:2}#maincontent .eco-maincontent__text{position:absolute;z-index:5;width:80%;margin:0 auto;left:0;right:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .eco-maincontent__text h2{font-size:35px;line-height:1.2;margin-bottom:15px;text-align:center;color:#bd9400;font-weight:bold}@media(max-width: 1440px){#maincontent .eco-maincontent__text h2{font-size:-webkit-calc(16px + 19*(100vw - 320px)/1120);font-size:calc(16px + 19*(100vw - 320px)/1120)}}#maincontent .eco-maincontent__text p{font-size:30px;line-height:1.2;text-align:center;color:#fff;font-weight:400}@media(max-width: 1440px){#maincontent .eco-maincontent__text p{font-size:-webkit-calc(14px + 16*(100vw - 320px)/1120);font-size:calc(14px + 16*(100vw - 320px)/1120)}}#maincontent .inducator-maincontent{padding-top:90px;padding-bottom:90px}@media(max-width: 1440px){#maincontent .inducator-maincontent{padding-top:-webkit-calc(20px + 70*(100vw - 320px)/1120);padding-top:calc(20px + 70*(100vw - 320px)/1120)}}@media(max-width: 1440px){#maincontent .inducator-maincontent{padding-bottom:-webkit-calc(20px + 70*(100vw - 320px)/1120);padding-bottom:calc(20px + 70*(100vw - 320px)/1120)}}#maincontent .inducator-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .inducator-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .inducator-maincontent__text{width:80%}#maincontent .inducator-maincontent__text h2{font-size:30px;line-height:1.2;margin-bottom:10px;font-weight:bold}@media(max-width: 1440px){#maincontent .inducator-maincontent__text h2{font-size:-webkit-calc(14px + 16*(100vw - 320px)/1120);font-size:calc(14px + 16*(100vw - 320px)/1120)}}#maincontent .inducator-maincontent__text p{font-size:30px;line-height:1.2;font-weight:400}@media(max-width: 1440px){#maincontent .inducator-maincontent__text p{font-size:-webkit-calc(14px + 16*(100vw - 320px)/1120);font-size:calc(14px + 16*(100vw - 320px)/1120)}}#maincontent .inducator-maincontent__text p span{color:#bd9400}#maincontent .inducator-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .energy-maincontent__bg{background:url("https://cdn.comfy.ua/media/x/img3/2708599/img17.png") center no-repeat;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;min-height:505px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#maincontent .energy-maincontent__title h2{font-size:32px;line-height:1.2;text-transform:uppercase;color:#bd9400;margin-bottom:40px}@media(max-width: 1440px){#maincontent .energy-maincontent__title h2{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}#maincontent .energy-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1230px;padding:0 15px;margin:0 auto}#maincontent .energy-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .energy-maincontent__text p{font-size:32px;line-height:1.2;color:#fff}@media(max-width: 1440px){#maincontent .energy-maincontent__text p{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}#maincontent .energy-maincontent__text p span{color:#bd9400}#maincontent .energy-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .function-maincontent{padding-top:90px}@media(max-width: 1440px){#maincontent .function-maincontent{padding-top:-webkit-calc(20px + 70*(100vw - 320px)/1120);padding-top:calc(20px + 70*(100vw - 320px)/1120)}}#maincontent .function-maincontent__box{width:90%;margin:0 auto 30px}#maincontent .function-maincontent__box h2{font-size:32px;line-height:1.2;margin-bottom:15px;color:#bd9400;text-align:center;text-transform:uppercase}@media(max-width: 1440px){#maincontent .function-maincontent__box h2{font-size:-webkit-calc(18px + 14*(100vw - 320px)/1120);font-size:calc(18px + 14*(100vw - 320px)/1120)}}#maincontent .function-maincontent__box p{font-size:32px;line-height:1.2;text-align:center}@media(max-width: 1440px){#maincontent .function-maincontent__box p{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1120);font-size:calc(16px + 16*(100vw - 320px)/1120)}}#maincontent .function-maincontent__bg{background:url("https://cdn.comfy.ua/media/x/img3/2708599/img20.png") center/cover no-repeat;padding:45px;position:relative;z-index:2}#maincontent .function-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .function-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;position:relative;z-index:6;margin-left:-50px}#maincontent .function-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px}#maincontent .function-maincontent__inner:not(:last-child){margin-bottom:25px}#maincontent .function-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 60px;-moz-box-flex:0;-ms-flex:0 0 60px;flex:0 0 60px}#maincontent .function-maincontent__text p{font-size:24px;line-height:1.2;font-weight:400}@media(max-width: 1440px){#maincontent .function-maincontent__text p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1120);font-size:calc(16px + 8*(100vw - 320px)/1120)}}#maincontent .function-maincontent__text p span{font-weight:bold}#maincontent .function-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .footer-maincontent{padding-top:90px}@media(max-width: 1440px){#maincontent .footer-maincontent{padding-top:-webkit-calc(10px + 80*(100vw - 320px)/1120);padding-top:calc(10px + 80*(100vw - 320px)/1120)}}#maincontent .footer-maincontent__bg{position:relative;z-index:2;padding-top:200px}#maincontent .footer-maincontent__text{position:absolute;z-index:5}#maincontent .footer-maincontent__text p{font-size:32px;line-height:1.2;font-weight:400}@media(max-width: 1440px){#maincontent .footer-maincontent__text p{font-size:-webkit-calc(14px + 18*(100vw - 320px)/1120);font-size:calc(14px + 18*(100vw - 320px)/1120)}}#maincontent .footer-maincontent__text p span{font-weight:700;color:#bd9400}#maincontent .footer-maincontent__text_1{top:0%;right:6.25%;width:53%}#maincontent .footer-maincontent__text_1 p{text-align:right}#maincontent .footer-maincontent__text_2{top:27%;right:6.25%;width:30%}#maincontent .footer-maincontent__text_2 p{text-align:right}#maincontent .footer-maincontent__text_3{top:43%;right:6.25%;width:20%}#maincontent .footer-maincontent__text_3 p{text-align:right}#maincontent .footer-maincontent__text_4{top:21%;left:6.9444444444%;width:50%}#maincontent .footer-maincontent__text_5{top:33%;left:21.5277777778%;width:40%}#maincontent .footer-maincontent__image{position:relative;z-index:10}#maincontent .footer-maincontent__image-small{position:absolute;z-index:3;top:2.7347310848%;left:0;right:47.2222222222%}@media screen and (max-width: 1331px){#maincontent .footer-maincontent__image-small{top:4%}}@media screen and (max-width: 1234px){#maincontent .footer-maincontent__image-small{top:6.2%}}@media screen and (max-width: 1200px){#maincontent .function-maincontent__item{margin-left:0}#maincontent .function-maincontent__row{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}}@media screen and (max-width: 1126px){#maincontent .footer-maincontent__image-small{top:8%}#maincontent .footer-maincontent__text_2{top:30%}#maincontent .footer-maincontent__text_1{top:2%}#maincontent .footer-maincontent__text_4{top:25%}#maincontent .footer-maincontent__text_5{top:37%}}@media screen and (max-width: 1024.98px){#maincontent .steam-maincontent__item{padding-top:50px}#maincontent .footer-maincontent__image-small{right:40%;top:3%}}@media screen and (max-width: 991.98px){#maincontent .header-maincontent__row{gap:30px}#maincontent .header-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 200px;-moz-box-flex:0;-ms-flex:0 0 200px;flex:0 0 200px}#maincontent .allergy-maincontent__text{left:3%}#maincontent .allergy-maincontent__icon_1{left:3%}#maincontent .function-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}@media screen and (max-width: 950px){#maincontent .footer-maincontent__image-small{top:5%}}@media screen and (max-width: 880px){#maincontent .footer-maincontent__image-small{top:7%}#maincontent .footer-maincontent__text_5{top:41%}#maincontent .footer-maincontent__text_4{top:30%}#maincontent .footer-maincontent__text_2{top:33%}#maincontent .footer-maincontent__text_3{top:45%}#maincontent .footer-maincontent__text_1{top:5%}}@media screen and (max-width: 798px){#maincontent .footer-maincontent__image-small{top:9%}}@media screen and (max-width: 767.98px){#maincontent .footer-maincontent__bg{padding:0 15px}#maincontent .footer-maincontent__text{position:unset}#maincontent .footer-maincontent__text:not(:last-child){margin-bottom:15px}#maincontent .footer-maincontent__text_1,#maincontent .footer-maincontent__text_2,#maincontent .footer-maincontent__text_3,#maincontent .footer-maincontent__text_4,#maincontent .footer-maincontent__text_5,#maincontent .footer-maincontent__text_6{width:auto}#maincontent .footer-maincontent__text_1 p,#maincontent .footer-maincontent__text_2 p,#maincontent .footer-maincontent__text_3 p,#maincontent .footer-maincontent__text_4 p,#maincontent .footer-maincontent__text_5 p,#maincontent .footer-maincontent__text_6 p{text-align:center}#maincontent .footer-maincontent__image-small{display:none}#maincontent .header-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 150px;-moz-box-flex:0;-ms-flex:0 0 150px;flex:0 0 150px}#maincontent .steam-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .steam-maincontent__item{padding-top:0}#maincontent .steam-maincontent__text p{text-align:center}#maincontent .steam-maincontent__text p:not(:last-child){margin-bottom:15px}#maincontent .steam-maincontent__icon{right:0%;left:50%}#maincontent .allergy-maincontent__text{top:35%;width:55%}#maincontent .allergy-maincontent__text h2{padding:10px 0}#maincontent .inducator-maincontent__text{width:90%}#maincontent .energy-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#maincontent .energy-maincontent__text p{text-align:center}#maincontent .energy-maincontent__title h2{margin-bottom:15px}}@media screen and (max-width: 600px){#maincontent .allergy-maincontent__text{top:27%}}@media screen and (max-width: 479.98px){#maincontent .header-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 90px;-moz-box-flex:0;-ms-flex:0 0 90px;flex:0 0 90px}#maincontent .header-maincontent__row{gap:15px}#maincontent .steam-maincontent__icon{left:40%}#maincontent .steam-maincontent__row{gap:15px}#maincontent .allergy-maincontent__text{top:19%}#maincontent .allergy-maincontent__text h2{padding:5px 0}#maincontent .eco-maincontent__text{width:95%}#maincontent .eco-maincontent__text h2{margin-bottom:10px}#maincontent .inducator-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#maincontent .inducator-maincontent__text{width:auto;padding:0 15px}#maincontent .inducator-maincontent__text h2,#maincontent .inducator-maincontent__text p{text-align:center}#maincontent .function-maincontent__bg{padding:40px 15px}#maincontent .footer-maincontent__text p{font-size:16px}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__header header-maincontent">
+                <div class="header-maincontent__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img2.png" alt="">
+                </div>
+                <div class="header-maincontent__row">
+                    <div class="header-maincontent__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img3.png" alt="">
+                    </div>
+                    <div class="header-maincontent__text">
+                        <p>Кожна пральна машина <b>DAEWOO</b> обладнана міцним серцем - <span>інверторним
+                                двигуном</span></p>
+                    </div>
+                </div>
+                <div class="header-maincontent__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="maincontent__steam steam-maincontent">
+                <div class="steam-maincontent__row">
+                    <div class="steam-maincontent__item">
+                        <div class="steam-maincontent__text">
+                            <p><span>INTENSTEAM - </span>система генерування пари. Завдяки цьому прасування стає швидким
+                                і простим.</p>
+                            <p>Пара, що використовується для прання, проникає у волокна й розпушує їх, усуває складки й
+                                забезпечує м'якість і ніжність одягу.</p>
+                        </div>
+                    </div>
+                    <div class="steam-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img4.png" alt="">
+                    </div>
+                    <div class="steam-maincontent__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__allergy allergy-maincontent">
+                <div class="allergy-maincontent__bg">
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img7.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img8.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_3">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img9.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_4">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img10.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_5">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img11.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__icon allergy-maincontent__icon_6">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img12.png" alt="">
+                    </div>
+                    <div class="allergy-maincontent__text">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img33.png" alt="">
+                        <h2>Видалення до 99,9% алергенів</h2>
+                        <p>Обробка парою знищує до 99,9% побутових алергенів.</p>
+                    </div>
+                    <div class="allergy-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img6.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__eco eco-maincontent">
+                <div class="eco-maincontent__bg">
+                    <div class="eco-maincontent__text">
+                        <h2>ЕКО-прання</h2>
+                        <p>Функція збільшує тривалість прання пральної машини WM814T3SB7UA, але зменшує використання
+                            енергії та води.</p>
+                    </div>
+                    <div class="eco-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img13.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__inducator inducator-maincontent">
+                <div class="inducator-maincontent__row">
+                    <div class="inducator-maincontent__item">
+                        <div class="inducator-maincontent__text">
+                            <h2>Спеціальні індикатори</h2>
+                            <p>Завдяки <span>спеціальним індикаторам</span> Ви самі можете корегувати використання води
+                                та
+                                електроенергії.</p>
+                        </div>
+                    </div>
+                    <div class="inducator-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img14-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__energy energy-maincontent">
+                <div class="energy-maincontent__bg">
+                    <div class="energy-maincontent__title">
+                        <h2>Вища Енергоефективність</h2>
+                    </div>
+                    <div class="energy-maincontent__row">
+                        <div class="energy-maincontent__item">
+                            <div class="energy-maincontent__text">
+                                <p><span>Економічність</span> - це перша перевага інверторного двигуна, завдяки цьому,
+                                    пральна машина WM814T3SB7UA має клас енергоефективності А+++</p>
+                            </div>
+                        </div>
+                        <div class="energy-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2708599/img18.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__function function-maincontent">
+                <div class="function-maincontent__box">
+                    <h2>Додаткові функії</h2>
+                    <p>Вибір температури прання, швидкості обертання барабана, кількості та тривалості ополіскувань
+                        пральна машина WM814T3SB7UA здійснює залежно від вибраного типу забруднення.</p>
+                </div>
+                <div class="function-maincontent__bg">
+                    <div class="function-maincontent__row">
+                        <div class="function-maincontent__item">
+                            <div class="function-maincontent__inner">
+                                <div class="function-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img21.png" alt="">
+                                </div>
+                                <div class="function-maincontent__text">
+                                    <p><span>плями від поту:</span> функція дозволяє замочити білизну холодною водою,
+                                        щоб очистити плями від поту перед початком обраної програми прання.</p>
+                                </div>
+                            </div>
+                            <div class="function-maincontent__inner">
+                                <div class="function-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img22.png" alt="">
+                                </div>
+                                <div class="function-maincontent__text">
+                                    <p><span>плями від кави:</span> функція збільшує тривалість прання та застосовує
+                                        спеціальний алгоритм, щоб видалити пляму якнайкраще.</p>
+                                </div>
+                            </div>
+                            <div class="function-maincontent__inner">
+                                <div class="function-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img23.png" alt="">
+                                </div>
+                                <div class="function-maincontent__text">
+                                    <p><span>масляні плями:</span> функція додає холодне полоскання перед обраною
+                                        програмою та нові етапи прання для більш ефективного виведення плям.масляні
+                                        плями: функція додає холодне полоскання перед обраною програмою та нові етапи
+                                        прання для більш ефективного виведення плям.</p>
+                                </div>
+                            </div>
+                            <div class="function-maincontent__inner">
+                                <div class="function-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2708599/img24.png" alt="">
+                                </div>
+                                <div class="function-maincontent__text">
+                                    <p><span>змішані типи плям:</span> функція дозволяє розмочити білизну теплою водою,
+                                        для кращого розчинення плям перед початком обраної програми прання.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="function-maincontent__image">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="https://cdn.comfy.ua/media/x/img3/2708599/img19-1.png">
+                                <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2708599/img19.png">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2708599/img19.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__footer footer-maincontent">
+                <div class="footer-maincontent__bg">
+                    <div class="footer-maincontent__text footer-maincontent__text_1">
+                        <p><span>Функція відстрочення старту</span> дозволяє відкладати момент запуску прання на зручний
+                            для користувача час (від 1 до 23 годин) – за допомогою сенсорної панелі можна швидко вказати
+                            потрібні параметри.</p>
+                    </div>
+                    <div class="footer-maincontent__text footer-maincontent__text_2">
+                        <p><span>Функція вибору рівня забруднення</span></p>
+                    </div>
+                    <div class="footer-maincontent__text footer-maincontent__text_3">
+                        <p><span>Функція вибору типу забруднення</span></p>
+                    </div>
+                    <div class="footer-maincontent__text footer-maincontent__text_4">
+                        <p>Режим <span>Ковдра</span> забезпечує догляд за покривалами та ковдрами різного типу</p>
+                    </div>
+                    <div class="footer-maincontent__text footer-maincontent__text_5">
+                        <p>Програми <span>Швидке прання: 15 хвилин та 60 хвилин</span></p>
+                    </div>
+                    <div class="footer-maincontent__image">
+                        <picture>
+                            <source media="(min-width: 767px)" srcset="https://cdn.comfy.ua/media/x/img3/2708599/img30.png">
+                            <source media="(min-width: 320px)" srcset="https://cdn.comfy.ua/media/x/img3/2708599/img28.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2708599/img28.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="footer-maincontent__image-small">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2708599/img29.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
