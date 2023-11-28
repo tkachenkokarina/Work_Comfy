@@ -1,0 +1,237 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #maincontent a
+//     color: inherit
+//     text-decoration: none
+
+// #maincontent
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        // font-weight: bold
+
+#maincontent
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+#maincontent .maincontent__container
+    max-width: 1440px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#maincontent
+    h2
+        @include adaptiv-value("font-size", 32, 18, 1)
+        font-weight: 700
+        line-height: 1.2
+        text-transform: uppercase
+        color: #A8741A
+        margin-bottom: 15px
+    p
+        @include adaptiv-value("font-size", 24, 16, 1)
+        font-weight: 300
+        line-height: 1.2
+        color: #000000
+        span
+            font-weight: 700
+
+#maincontent .header-maincontent
+    position: relative
+    z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: calc(63 / 882 * 100%)
+        left: calc(111 / 1440 * 100%)
+        right: calc(846 / 1440 * 100%)
+    &__waran
+        position: absolute
+        z-index: 5
+        bottom: 0
+        left: calc(111 / 1440 * 100%)
+        right: calc(1147 / 1440 * 100%)
+    &__image
+
+#maincontent .comfort-maincontent
+    position: relative
+    z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: calc(111 / 1440 * 100%)
+        width: 45%
+        p
+            &:not(:last-child)
+                margin-bottom: 15px
+        h2
+            @include adaptiv-value("font-size", 32, 12, 1)
+        p
+            @include adaptiv-value("font-size", 24, 12, 1)
+    &__image
+
+#maincontent .door-maincontent
+    &__text
+        padding: 70px 15px 0
+        margin: 0 auto
+        max-width: 1180px
+        h2,p
+            text-align: center
+    &__image
+
+#maincontent .column-maincontent
+    &__row
+        display: flex
+        align-items: center
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+    &__image
+        flex: 0 1 50%
+
+#maincontent .energy-maincontent
+    background: url('https://cdn.comfy.ua/media/x/img3/2693816/img10.png') center/cover no-repeat
+    padding: 100px 15px
+    &__row
+        display: flex
+        align-items: center
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        p
+            color: #ffffff
+    &__image
+        flex: 0 1 50%
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+//@media screen and (max-width: 991.98px)
+@media screen and (max-width: 767.98px)
+    #maincontent .comfort-maincontent__text
+        width: 58%
+        left: 3%
+    #maincontent .door-maincontent__text
+        padding: 20px 15px 0
+    #maincontent .column-maincontent__row,
+    #maincontent .energy-maincontent__row
+        flex-direction: column
+    #maincontent .column-maincontent__text
+        width: auto
+        padding: 20px 15px 10px
+        h2,p
+            text-align: center
+    #maincontent .energy-maincontent__text
+        width: auto
+        padding: 0 15px 10px
+        h2,p
+            text-align: center
+    #maincontent .energy-maincontent
+        padding: 50px 0px
+
+@media screen and (max-width: 479.98px)
+    #maincontent h2
+        margin-bottom: 10px
+
+@media screen and (max-width: 405px)
+    #maincontent .comfort-maincontent__text
+        width: 80%
+    #maincontent .comfort-maincontent__text p:not(:last-child)
+        margin-bottom: 8px
+
+// @media (max-width: 812px) and (orientation: landscape)
