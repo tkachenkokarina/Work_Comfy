@@ -1,0 +1,371 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:42px;line-height:1.2;margin:20px 0px}#maincontent .maincontent__container h3{font-size:30px;line-height:1.2;margin:10px 0}#maincontent .maincontent__container h4{font-size:23px;line-height:1.2;margin:10px 0}#maincontent .maincontent__container p{font-size:16px;line-height:1.2;margin-bottom:10px}#maincontent .top-box__inner{position:relative;z-index:5;background-color:#283054}#maincontent .top-box__content{position:absolute;z-index:8;top:250px;left:200px;width:300px}#maincontent .top-box__content p{font-size:19px;line-height:1.2}#maincontent .top-box__content p span{font-weight:300}#maincontent .top-box__img{position:relative;z-index:4}#maincontent .top-box__img::before{content:"";position:absolute;z-index:9;background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/logo.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;top:180px;left:200px;width:270px;height:46px}#maincontent .poco-table__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/bg02_1.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;height:100%}#maincontent .poco-table__inner{padding:100px 250px}#maincontent .poco-table__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .poco-table__item-wrapper{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;gap:20px;margin-bottom:20px}#maincontent .poco-table__item{position:relative;z-index:6}#maincontent .poco-table__item-text{position:absolute;z-index:7;padding:10px 5px}#maincontent .poco-table__item-text_01{top:50px;left:60px}#maincontent .poco-table__item-text_02{top:50%;left:60px;right:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .poco-table__item-text_03{top:50px;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);max-width:240px}#maincontent .poco-table__item-text_03 p{margin-bottom:30px}#maincontent .poco-table__item-text_03 p:last-child{margin-bottom:0}#maincontent .poco-table__item-text_04{top:50%;left:60px;right:60%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .poco-table__item_01{margin-bottom:20px}#maincontent .poco-bg__inner{position:relative;z-index:6;margin-top:-2px;background:-webkit-gradient(linear, left top, right top, from(#ffe010), color-stop(#ffd109), to(#ffcb04));background:-webkit-linear-gradient(left, #ffe010, #ffd109, #ffcb04);background:-o-linear-gradient(left, #ffe010, #ffd109, #ffcb04);background:linear-gradient(0.25turn, #ffe010, #ffd109, #ffcb04)}#maincontent .poco-bg__content{position:absolute;z-index:7;top:0;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);padding:50px 250px 150px}#maincontent .poco-bg__content h2,#maincontent .poco-bg__content p{color:#fff}#maincontent .poco-bg__content h2 span,#maincontent .poco-bg__content p span{color:#000;position:relative;z-index:8;display:block;margin-bottom:30px;padding-left:47px}#maincontent .poco-bg__content h2 span::before,#maincontent .poco-bg__content p span::before{content:"";position:absolute;z-index:-1;background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/icon-folder-yel.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:157px;height:38px;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .poco-bg__content-text_01{margin-bottom:50px}#maincontent .yellow-box__content{top:-15px}#maincontent .yellow-box__content h2,#maincontent .yellow-box__content p{color:#000}#maincontent .black-box__inner{background:#1f1f1f}#maincontent .black-box__content{top:50%;left:0;right:50%;-webkit-transform:translate(0, -50%);-ms-transform:translate(0, -50%);-o-transform:translate(0, -50%);transform:translate(0, -50%);margin-right:0;padding:50px 20px 50px 250px}#maincontent .black-box__content h2:nth-child(1){color:#ffad01}#maincontent .black-box__content h2 span{color:#ffad01;font-size:72px;padding-left:0}#maincontent .black-box__content h2 span::before{display:none}#maincontent .black-box__content img{margin-top:50px}#maincontent .poco-camera__content{top:120px;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .poco-camera__media{position:relative;z-index:4}#maincontent .poco-camera__text{position:absolute;z-index:5;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;left:56%;right:15%;top:230px}#maincontent .poco-camera__text p{font-size:21px;font-weight:700;color:#fff;position:relative;z-index:5}#maincontent .poco-camera__text p::before{content:"";position:absolute;z-index:6;top:65px;left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:1px;height:228px;background-color:#fff}#maincontent .poco-camera__text p:nth-child(1){width:130px;text-align:right;margin-right:50px}#maincontent .poco-camera__text p:nth-child(2){text-align:left;width:230px}#maincontent .poco-macro__bg{padding-bottom:100px}#maincontent .poco-box__bg{background:#000;padding-top:130px;margin-top:-2px}#maincontent .poco-box__bg_nopt{padding-top:0px}#maincontent .poco-box__inner{max-width:980px;margin:0 auto}#maincontent .poco-box__text{margin-bottom:50px;max-width:700px}#maincontent .poco-box__text h2,#maincontent .poco-box__text h3,#maincontent .poco-box__text p{color:#fff}#maincontent .poco-box__text_flex{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;max-width:1000px;margin-right:50px}#maincontent .poco-box__text_flex h3{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%;margin-right:50px}#maincontent .poco-box__text_flex p{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .poco-box__text_c{margin:0 auto;padding:50px 20px}#maincontent .poco-box__text_c h2{text-align:center}#maincontent .poco-box__text_ml{margin-left:250px}#maincontent .poco-box__text-header h2{margin:0}#maincontent .poco-box__text-header h2:nth-child(1){color:#ffcb05}#maincontent .poco-box__img{max-width:1280px}#maincontent .poco-box__img_r{margin-left:auto}#maincontent .poco-box__img_c{margin:0 auto;max-width:980px}#maincontent .poco-box__media{position:relative;z-index:6}#maincontent .poco-box__media-content{position:absolute;z-index:7;left:0;right:0;bottom:70px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:970px;margin:0 auto}#maincontent .poco-box__media-header{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;padding:10px 40px}#maincontent .poco-box__media-text{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;padding:10px 40px}#maincontent .poco-row__bg{background:#000;margin-top:-2px}#maincontent .poco-row__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:100px 20px 50px 230px}#maincontent .poco-row__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .poco-row__item{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%;margin-top:195px;margin-right:50px}#maincontent .poco-row__text{padding:10px 20px;color:#fff}#maincontent .poco-row__text h2{color:#ffad01}#maincontent .poco-row__image{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .poco-performance__inner{padding-top:100px;background:#d4dadf}#maincontent .poco-performance__content{padding-top:75px}#maincontent .poco-performance__content-text h2,#maincontent .poco-performance__content-text p{color:#000;text-align:center}#maincontent .poco-performance__content-text p span{color:#ffcb05;padding-left:0}#maincontent .poco-performance__content-text p span::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/icon-folder-bl.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;left:50%;top:-57%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}#maincontent .poco-memory__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/bg14_1.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:100%;height:100%;padding:100px 0;margin-top:-2px}#maincontent .poco-memory__content{padding:0 50px 70px}#maincontent .poco-memory__content h2,#maincontent .poco-memory__content p{text-align:center;color:#fff}#maincontent .poco-memory__content h2:nth-child(1){color:#ffcb05}#maincontent .poco-storage__bg{background:-webkit-gradient(linear, left top, right top, from(#1a1a1a), color-stop(#0a0a0a), to(#020202));background:-webkit-linear-gradient(left, #1a1a1a, #0a0a0a, #020202);background:-o-linear-gradient(left, #1a1a1a, #0a0a0a, #020202);background:linear-gradient(0.25turn, #1a1a1a, #0a0a0a, #020202);padding-top:0;position:relative;z-index:5}#maincontent .poco-storage__text{margin:0 auto;position:absolute;z-index:6;top:10px;left:0;right:0;margin:0 250px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .poco-storage__text p{padding:15px 20px;-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .poco-storage__text-header{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;padding:0 20px}#maincontent .poco-storage__img{max-width:100%;margin:0 auto}#maincontent .poco-battery__bg{padding-top:65px;position:relative;z-index:5}#maincontent .poco-battery__text{margin:0 250px;position:absolute;z-index:6;left:0;right:0;top:10px}#maincontent .poco-battery__text-header{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;margin-right:120px}#maincontent .poco-battery__text-content{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .poco-battery__text-content h4,#maincontent .poco-battery__text-content p{color:#fff}#maincontent .poco-battery__text-items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#maincontent .poco-battery__items{width:200px}#maincontent .poco-battery__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .poco-battery__item-num{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:5}#maincontent .poco-battery__item-num p{text-align:center;margin-bottom:0;font-weight:700;color:#ffcb05}#maincontent .poco-battery__item-num::before{content:"";position:absolute;z-index:6;background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/icon16.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:40px;height:38px;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}#maincontent .poco-battery__item-text{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;padding:10px}#maincontent .poco-design__inner{background:-webkit-gradient(linear, left top, right top, from(#ccd4ea), color-stop(#b4bed8), to(#8e98b7));background:-webkit-linear-gradient(left, #ccd4ea, #b4bed8, #8e98b7);background:-o-linear-gradient(left, #ccd4ea, #b4bed8, #8e98b7);background:linear-gradient(0.25turn, #ccd4ea, #b4bed8, #8e98b7)}#maincontent .poco-design__content{width:877px;padding:50px 250px 150px 20px}#maincontent .poco-design__content h2,#maincontent .poco-design__content p{color:#000}#maincontent .poco-design__content p span{color:#fff}#maincontent .poco-design__content p span::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/icon-folder-bl.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .poco-sensor__bg{background:-webkit-gradient(linear, left top, right top, from(#4c5783), color-stop(#46517d), to(#424d7a));background:-webkit-linear-gradient(left, #4c5783, #46517d, #424d7a);background:-o-linear-gradient(left, #4c5783, #46517d, #424d7a);background:linear-gradient(0.25turn, #4c5783, #46517d, #424d7a);padding-top:0;position:relative;z-index:5}#maincontent .poco-sensor__text{margin:0 auto;position:absolute;z-index:6;top:90px;left:0;right:0;margin:0 250px;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .poco-sensor__text p{padding:15px 20px;-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .poco-sensor__text-header{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%;padding:0 20px}#maincontent .poco-sensor__text-header h2:nth-child(1){color:#fff}#maincontent .poco-sensor__img{max-width:100%;margin:0 auto}#maincontent .poco-slider__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2756141/bg19_1.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;margin-top:-2px}#maincontent .poco-slider__inner{max-width:980px;margin:0 auto;padding:50px 40px 70px}#maincontent .poco-slider__title{padding-top:22px;margin-bottom:50px}#maincontent .poco-slider__title h2{color:#fff}#maincontent .poco-slider__card-inner{position:relative;z-index:5}#maincontent .poco-slider__card-inner_line::after{content:"";position:absolute;z-index:6;width:2px;height:310px;background:#4c5783;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}#maincontent .poco-slider__card-text{position:absolute;z-index:6;top:50%;left:0;right:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);max-width:390px;padding:0px 60px}#maincontent .poco-slider__card-items{position:absolute;z-index:6;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 30px}#maincontent .poco-slider__card-item{padding:0 30px;-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .poco-slider__card-item img{margin:0 auto 30px}#maincontent .poco-slider__card-item h3{text-align:center}#maincontent .poco-slider__subtitle{padding:35px 20px 10px}#maincontent .poco-slider__subtitle p{font-size:24px;color:#fff;text-align:center}#maincontent .swiper-wrapper{padding-bottom:70px}#maincontent .swiper-pagination{color:#a8aec4;margin-left:auto;text-align:right}#maincontent .swiper-pagination-bullet-active{background-color:#fff}@media screen and (max-width: 1400px){#maincontent .maincontent__container h2{font-size:-webkit-calc(24px + 18*(100vw - 320px)/1080);font-size:calc(24px + 18*(100vw - 320px)/1080)}#maincontent .maincontent__container h3{font-size:-webkit-calc(20px + 10*(100vw - 320px)/1080);font-size:calc(20px + 10*(100vw - 320px)/1080)}#maincontent .maincontent__container h4{font-size:-webkit-calc(17px + 6*(100vw - 320px)/1080);font-size:calc(17px + 6*(100vw - 320px)/1080)}#maincontent .maincontent__container p{font-size:-webkit-calc(14px + 2*(100vw - 320px)/1080);font-size:calc(14px + 2*(100vw - 320px)/1080)}#maincontent .top-box__content{top:200px;left:-webkit-calc(20px + 130*(100vw - 320px)/1080);left:calc(20px + 130*(100vw - 320px)/1080)}#maincontent .top-box__content p{font-size:-webkit-calc(17px + 2*(100vw - 320px)/1080);font-size:calc(17px + 2*(100vw - 320px)/1080)}#maincontent .top-box__img::before{top:140px;left:-webkit-calc(20px + 130*(100vw - 320px)/1080);left:calc(20px + 130*(100vw - 320px)/1080)}#maincontent .poco-table__item-text_01,#maincontent .poco-table__item-text_03{top:35px}#maincontent .black-box__content h2 span{font-size:-webkit-calc(26px + 46*(100vw - 320px)/1080);font-size:calc(26px + 46*(100vw - 320px)/1080)}#maincontent .poco-camera__text p{font-size:-webkit-calc(16px + 5*(100vw - 320px)/1080);font-size:calc(16px + 5*(100vw - 320px)/1080)}#maincontent .poco-camera__text p::before{height:200px}#maincontent .poco-camera__text p:nth-child(1){width:150px}#maincontent .poco-camera__text p:nth-child(2){width:295px}#maincontent .poco-row__item{margin-top:165px}#maincontent .poco-bg__content-text_01{margin-bottom:25px}#maincontent .poco-performance__content{padding-top:50px}#maincontent .poco-sensor__text{top:70px}#maincontent .poco-slider__subtitle p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1080);font-size:calc(16px + 8*(100vw - 320px)/1080)}}@media screen and (max-width: 1300.98px){#maincontent .top-box__content{top:175px}#maincontent .top-box__img::before{top:115px}#maincontent .poco-table__inner{padding:100px 220px}#maincontent .poco-bg__inner{padding-bottom:100px}#maincontent .poco-bg__content{padding:40px 220px 150px;top:-65px}#maincontent .yellow-box__inner{padding-bottom:0}#maincontent .yellow-box__content{top:-85px}#maincontent .black-box__inner{padding-bottom:0}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 220px}#maincontent .poco-camera__content{top:110px}#maincontent .poco-camera__text p::before{top:85px;height:150px}#maincontent .poco-box__text_ml{margin-left:220px}#maincontent .poco-box__text_c{margin:0 auto}#maincontent .poco-row__inner{padding:100px 20px 50px 200px}#maincontent .poco-performance__inner{padding-bottom:0}#maincontent .poco-performance__content{top:35px}#maincontent .poco-storage__text{margin:0 220px;top:0}#maincontent .poco-battery__bg{padding-top:115px}#maincontent .poco-design__inner{padding-bottom:0}#maincontent .poco-design__content{top:0;padding:50px 250px 150px 20px}#maincontent .poco-sensor__text{margin:0 220px}}@media screen and (max-width: 1250.98px){#maincontent .poco-table__item-text_01{left:40px;top:25px}#maincontent .poco-table__item-text_02{left:40px}#maincontent .poco-table__item-text_03{top:25px}#maincontent .poco-table__item-text_04{left:40px}#maincontent .poco-camera__text{top:200px}}@media screen and (max-width: 1200.98px){#maincontent .top-box__content{top:150px}#maincontent .top-box__img::before{top:90px}#maincontent .poco-table__inner{padding:100px 150px}#maincontent .poco-bg__content{padding:40px 150px 150px;top:-30px}#maincontent .yellow-box__content{top:-95px}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 150px}#maincontent .poco-camera__content{top:75px}#maincontent .poco-camera__text{top:180px}#maincontent .poco-box__text_ml{margin-left:150px}#maincontent .poco-box__text_c{margin:0 auto}#maincontent .poco-row__inner{padding:100px 20px 50px 120px}#maincontent .poco-performance__content{top:35px}#maincontent .poco-storage__text{top:-10px;margin:0 150px}#maincontent .poco-design__inner{padding-bottom:0}#maincontent .poco-design__content{top:25px}#maincontent .poco-sensor__text{top:55px;margin:0 150px}}@media screen and (max-width: 1100.98px){#maincontent .top-box__content{top:120px;width:265px}#maincontent .top-box__img::before{top:60px}#maincontent .poco-table__bg{padding-bottom:100px}#maincontent .poco-table__inner{padding:80px 125px}#maincontent .poco-bg__content{padding:40px 125px 150px;top:-75px}#maincontent .yellow-box__content{top:-100px}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 125px}#maincontent .poco-camera__content{top:50px}#maincontent .poco-camera__text{top:150px}#maincontent .poco-camera__text p::before{height:140px}#maincontent .poco-box__text{margin-left:25px}#maincontent .poco-box__text_ml{margin-left:125px}#maincontent .poco-box__text_c{margin:0 auto}#maincontent .poco-row__inner{padding:100px 20px 50px 105px}#maincontent .poco-performance__content{top:35px}#maincontent .poco-storage__text{margin:0 125px;top:-20px}#maincontent .poco-battery__text{margin:0 125px}#maincontent .poco-design__content{top:25px}#maincontent .poco-sensor__text{top:45px;margin:0 125px}}@media screen and (max-width: 1040.98px){#maincontent .poco-box__text_ml{margin-left:125px}#maincontent .poco-storage__text{margin:0 125px}#maincontent .poco-battery__text{margin:0 250px}#maincontent .poco-sensor__text{margin:0 125px}}@media screen and (max-width: 1024.98px){#maincontent .top-box__content{top:90px}#maincontent .top-box__img::before{top:30px}#maincontent .poco-table__inner{padding:65px 100px}#maincontent .poco-bg__content{padding:40px 100px 150px}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 100px}#maincontent .black-box__content img{margin-top:20px}#maincontent .poco-safety__content{right:40%;max-width:500px}#maincontent .poco-camera__content{top:30px}#maincontent .poco-camera__text{top:125px;right:14%}#maincontent .poco-box__bg{padding-top:80px}#maincontent .poco-box__bg_nopt{padding-top:0}#maincontent .poco-box__text{margin-left:100px}#maincontent .poco-box__text_flex h3{margin-right:25px}#maincontent .poco-box__media-content{bottom:50px}#maincontent .poco-box__media-content{padding:10px 20px 10px 40px}#maincontent .poco-row__inner{padding:50px 20px 50px 85px}#maincontent .poco-row__item{margin-top:118px}#maincontent .poco-memory__bg{padding:70px 0}#maincontent .poco-storage__bg{padding-top:0}#maincontent .poco-storage__text{margin:0 100px}#maincontent .poco-battery__bg{padding-top:125px}#maincontent .poco-battery__text{margin:0 100px}#maincontent .poco-battery__text-header{margin-right:70px}#maincontent .poco-design__content{top:5px}#maincontent .poco-sensor__text{top:45px;margin:0 100px}}@media screen and (max-width: 991.98px){#maincontent .top-box__content{top:50%;left:-webkit-calc(20px + 30*(100vw - 320px)/672);left:calc(20px + 30*(100vw - 320px)/672);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .top-box__img::before{left:-webkit-calc(20px + 30*(100vw - 320px)/672);left:calc(20px + 30*(100vw - 320px)/672)}#maincontent .poco-table__inner{padding:45px 70px}#maincontent .poco-bg__content{padding:40px 70px 100px}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 70px}#maincontent .poco-camera__content{top:25px}#maincontent .poco-camera__text{top:125px;right:14%}#maincontent .poco-camera__text p::before{height:125px}#maincontent .poco-box__bg{padding-top:50px}#maincontent .poco-box__bg_nopt{padding-top:0}#maincontent .poco-box__text{margin-left:70px}#maincontent .poco-box__text_c{padding:30px 20px}#maincontent .poco-box__media-content{bottom:30px}#maincontent .poco-row__inner{padding:50px 20px 50px 65px}#maincontent .poco-row__item{margin-right:20px}#maincontent .poco-performance__content{top:15px}#maincontent .poco-memory__bg{padding:50px 0 25px}#maincontent .poco-memory__content{padding:0 30px 40px}#maincontent .poco-storage__text{margin:0 30px;top:30px}#maincontent .poco-battery__bg{padding-top:125px}#maincontent .poco-battery__text{margin:0 50px}#maincontent .poco-battery__text-header{margin-right:50px}#maincontent .poco-design__inner{padding-top:100px}#maincontent .poco-design__content{width:650px}#maincontent .poco-sensor__text{margin:0 30px}#maincontent .poco-slider__card-text{padding:0 40px}#maincontent .poco-slider__card-items{padding:20px 15px}#maincontent .poco-slider__card-item{padding:0 15px}#maincontent .poco-slider__card-inner_line::after{height:275px}}@media screen and (max-width: 900.98px){#maincontent .poco-camera__text p::before{height:105px}#maincontent .poco-performance__content{top:0}#maincontent .poco-performance__content-text_01{margin-bottom:10px}#maincontent .poco-storage__bg{padding-top:100px}}@media screen and (max-width: 850.98px){#maincontent .poco-table__inner{padding:35px 55px}#maincontent .poco-table__item-text_01{left:25px;top:15px}#maincontent .poco-table__item-text_02,#maincontent .poco-table__item-text_04{left:25px}#maincontent .poco-table__item-text_03{top:15px}#maincontent .poco-table__item-text_04{right:60%}#maincontent .poco-bg__content{padding:40px 55px 75px;top:-95px}#maincontent .yellow-box__content{top:-115px}#maincontent .black-box__content{top:50%;padding:50px 20px 50px 55px}#maincontent .poco-safety__inner{padding-bottom:50px}#maincontent .poco-safety__content{right:35%}#maincontent .poco-safety__content img{width:80%}#maincontent .poco-camera__content{top:15px}#maincontent .poco-camera__text{top:95px}#maincontent .poco-box__text{margin-left:55px}#maincontent .poco-box__text_c{margin:0 auto;padding:10px 20px}#maincontent .poco-box__media-content{bottom:25px}#maincontent .poco-row__item{margin-right:0;margin-top:65px}#maincontent .poco-row__inner{padding:40px 20px 40px 45px}#maincontent .poco-performance__content{top:0}#maincontent .poco-performance__content-text h2{margin-bottom:10px}#maincontent .poco-storage__text{margin:0 25px;top:55px}#maincontent .poco-battery__bg{padding-top:140px}#maincontent .poco-design__content{top:5px}#maincontent .poco-sensor__text{margin:0 30px}#maincontent .poco-slider__card-inner_line::after{height:250px}}@media screen and (max-width: 767.98px){#maincontent .top-box__content{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);width:auto;padding:20px 10px}#maincontent .top-box__content p{text-align:center;color:#fff}#maincontent .top-box__content p span{font-weight:400}#maincontent .top-box__img::before{top:55px;width:210px;height:36px}#maincontent .poco-table__bg{margin-top:-2px;padding-bottom:180px}#maincontent .poco-table__item-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .poco-table__inner{padding:10px 40px}#maincontent .poco-table__item-text_01{top:50px}#maincontent .poco-table__item-text_03{max-width:100%;top:50px;left:50px;margin-right:0;-webkit-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}#maincontent .poco-table__item-img img{margin:0 auto}#maincontent .poco-bg__inner{padding-bottom:160px}#maincontent .poco-bg__content{padding:40px 40px 50px;top:-170px}#maincontent .yellow-box__inner{padding-bottom:0}#maincontent .black-box__inner{padding-bottom:0}#maincontent .black-box__content{top:50%;padding:20px 20px 20px 40px}#maincontent .black-box__content h2{margin:10px 0}#maincontent .black-box__content h2 span{margin-bottom:15px}#maincontent .poco-safety__content{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);max-width:100%}#maincontent .poco-safety__content img{width:60%;margin:20px auto}#maincontent .poco-camera__content{top:25px}#maincontent .poco-camera__text{top:70px}#maincontent .poco-camera__text p::before{top:100px;height:90px}#maincontent .poco-box__bg{padding-top:30px}#maincontent .poco-box__bg_nopt{padding-top:15px}#maincontent .poco-box__text{margin:0 20px 30px 40px}#maincontent .poco-box__text_flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .poco-box__text_flex h3{margin-right:0}#maincontent .poco-box__text_c{margin:0 auto;padding:0 20px}#maincontent .poco-box__media-content{bottom:15px;padding:10px 20px}#maincontent .poco-box__media-header{padding:10px 20px 10px 30px}#maincontent .poco-box__media-text{padding:10px 20px}#maincontent .poco-row__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:20px 25px}#maincontent .poco-row__item{margin:0 0 20px}#maincontent .poco-performance__inner{padding-top:150px;padding-bottom:0}#maincontent .poco-performance__content{top:0}#maincontent .poco-memory__bg{padding:30px 0}#maincontent .poco-storage__bg{padding-top:150px}#maincontent .poco-storage__text{margin:0 40px;top:55px}#maincontent .poco-storage__text h2{text-align:center}#maincontent .poco-storage__text p{text-align:center;padding:10px 0 0}#maincontent .poco-battery__bg{padding-top:250px}#maincontent .poco-battery__text{margin:0 40px}#maincontent .poco-battery__text-header{margin:0 auto 30px}#maincontent .poco-battery__text-header h2{text-align:center}#maincontent .poco-battery__text-header p{text-align:center;padding:10px 0 0}#maincontent .poco-battery__text-content{margin:0 auto}#maincontent .poco-battery__text-content p{text-align:center}#maincontent .poco-battery__text-items{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#maincontent .poco-battery__item-text p{text-align:left}#maincontent .poco-design__inner{padding-bottom:0}#maincontent .poco-design__content{top:5px;width:auto}#maincontent .poco-sensor__text{margin:0 40px;top:25px}#maincontent .poco-sensor__text p{text-align:center}#maincontent .poco-sensor__text-header h2{text-align:center}#maincontent .poco-slider__inner{padding:20px 25px 25px}#maincontent .poco-slider__title{margin-bottom:15px}#maincontent .poco-slider__card-inner_line::after{height:200px}#maincontent .poco-slider__card-item h3{font-size:19px}#maincontent .poco-slider__card-item img{width:30%;max-height:70px}#maincontent .poco-macro__bg{padding-bottom:30px}}@media screen and (max-width: 700.98px){#maincontent .poco-camera__text{top:50px;left:53%}#maincontent .poco-camera__text p::before{top:100px;height:85px}#maincontent .poco-camera__text p:nth-child(1){margin-right:40px}#maincontent .poco-box__media-content{bottom:10px}#maincontent .poco-box__media-header{padding:10px 20px}}@media screen and (max-width: 650.98px){#maincontent .poco-table__bg{padding-bottom:250px}#maincontent .poco-table__item-text_03{left:25px}#maincontent .poco-table__item-text_04{right:52%}#maincontent .poco-bg__inner{padding-bottom:220px}#maincontent .poco-bg__content{top:-230px}#maincontent .yellow-box__inner{padding-bottom:0}#maincontent .black-box__inner{padding-bottom:150px}#maincontent .black-box__content{top:50%}#maincontent .black-box__inner{padding-bottom:0}#maincontent .black-box__content{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding:40px 50px 0px;max-width:100%}#maincontent .poco-camera__content{background:-webkit-gradient(linear, left top, right top, from(#414246), color-stop(#2f2f2f), to(#292929));background:-webkit-linear-gradient(left, #414246, #2f2f2f, #292929);background:-o-linear-gradient(left, #414246, #2f2f2f, #292929);background:linear-gradient(0.25turn, #414246, #2f2f2f, #292929);padding-bottom:15px}#maincontent .poco-camera__text{top:38px}#maincontent .poco-box__text_c h2{margin:10px 0}#maincontent .poco-box__media{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .poco-box__media-content{position:unset;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start}#maincontent .poco-box__media-content h4,#maincontent .poco-box__media-content p{color:#fff}#maincontent .poco-performance__inner{padding-top:200px;padding-bottom:0}#maincontent .poco-performance__content{top:0}#maincontent .poco-memory__bg{padding:20px 0}#maincontent .poco-memory__content{padding:0 30px 30px}#maincontent .poco-storage__text{margin:0 30px}#maincontent .poco-battery__bg{padding-top:300px}#maincontent .poco-design__inner{padding-bottom:0;padding-top:150px}#maincontent .poco-design__content{top:5px}#maincontent .poco-sensor__text{margin:0 30px;top:15px}#maincontent .poco-slider__card-inner_line::after{height:150px}#maincontent .poco-slider__card-text{padding:0 25px}#maincontent .poco-slider__card-item h3{font-size:16px}}@media screen and (max-width: 600.98px){#maincontent .top-box__content{padding:15px 10px}#maincontent .top-box__img::before{top:47px;width:152px;height:26px}#maincontent .poco-table__item-wrapper{margin-bottom:0}#maincontent .poco-table__item-text{padding:10px}#maincontent .poco-table__item-text_01,#maincontent .poco-table__item-text_03{top:25px}#maincontent .poco-table__item-text_03 p{margin-bottom:18px}#maincontent .poco-table__item-text_04{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .poco-table__item-text_04 h4,#maincontent .poco-table__item-text_04 p{text-align:center;color:#fff}#maincontent .poco-camera__text{top:18px}#maincontent .poco-slider__card-text{padding:0 10px 0 20px}#maincontent .poco-slider__card-items{padding:20px 0}}@media screen and (max-width: 550.98px){#maincontent .poco-camera__text{top:5px}#maincontent .poco-camera__text p:nth-child(1){margin-right:20px}#maincontent .poco-performance__inner{padding-top:250px}#maincontent .poco-performance__content{top:0}#maincontent .poco-storage__text{top:40px}#maincontent .poco-battery__bg{padding-top:350px}#maincontent .poco-battery__text{margin:0 30px}#maincontent .poco-sensor__bg{padding-top:100px}#maincontent .poco-sensor__text{top:30px}#maincontent .poco-slider__card-text h3{font-size:18px}#maincontent .poco-slider__card-text p{font-size:12px}#maincontent .poco-slider__card-item h3{font-size:14px}}@media screen and (max-width: 500.98px){#maincontent .poco-table__inner{padding:10px 30px}#maincontent .poco-table__item-text_01{top:15px;left:15px}#maincontent .poco-table__item-text_02,#maincontent .poco-table__item-text_03{left:15px}#maincontent .poco-table__item-text_03{top:15px}#maincontent .poco-camera__text{top:-5px}#maincontent .poco-camera__text p::before{height:65px}#maincontent .poco-battery__items{width:100%}#maincontent .poco-design__inner{padding-top:200px}#maincontent .poco-slider__card-inner_line::after{height:125px}#maincontent .poco-slider__card-item h3{font-size:12px}}@media screen and (max-width: 479.98px){#maincontent .top-box__img::before{top:31px;width:94px;height:16px}#maincontent .poco-table__inner{padding:10px 0px}#maincontent .poco-table__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;margin-bottom:0}#maincontent .poco-table__item-wrapper{gap:0}#maincontent .poco-table__item-text{position:unset;padding:10px 15px}#maincontent .poco-table__item-text h4,#maincontent .poco-table__item-text p{text-align:center;color:#fff}#maincontent .poco-table__item-text_02{-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .poco-table__item-text_03{margin-bottom:10px}#maincontent .poco-bg__inner{padding-bottom:190px}#maincontent .poco-bg__content{top:-265px;padding:40px 25px 50px}#maincontent .poco-bg__content p span{margin-bottom:25px}#maincontent .poco-bg__content h2{margin:10px 0}#maincontent .yellow-box__inner{padding-bottom:0}#maincontent .yellow-box__content{top:-205px}#maincontent .black-box__inner{padding-bottom:0}#maincontent .black-box__content{padding-bottom:0}#maincontent .poco-safety__content{padding-top:10px}#maincontent .poco-camera__content{padding-bottom:15px}#maincontent .poco-camera__text{top:0}#maincontent .poco-camera__text p::before{top:90px;height:67px}#maincontent .poco-box__text{margin:0 25px 30px 25px}#maincontent .poco-box__text_c{margin-bottom:10px;padding:0}#maincontent .poco-box__text_c h2{text-align:left}#maincontent .poco-box__media-content{padding:0}#maincontent .poco-row__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:10px 5px}#maincontent .poco-performance__inner{padding-bottom:0}#maincontent .poco-performance__content{top:0}#maincontent .poco-performance__content-text p span::before{top:-60%}#maincontent .poco-memory__bg{padding:15px 0}#maincontent .poco-memory__content{padding:0 30px 25px}#maincontent .poco-memory__content h2{margin:10px 0}#maincontent .poco-storage__text{top:20px}#maincontent .poco-design__inner{padding-bottom:0}#maincontent .poco-design__content{top:5px}#maincontent .poco-sensor__text{margin:0 25px}#maincontent .poco-slider__card-inner_line::after{height:110px}#maincontent .poco-slider__card-text h3{font-size:16px;line-height:1}#maincontent .poco-slider__card-text p{font-size:10px}#maincontent .poco-slider__card-item h3{font-size:10px}#maincontent .poco-slider__subtitle{padding:30px 10px 10px}}@media screen and (max-width: 430.98px){#maincontent .poco-camera__text{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0 25px;left:0}#maincontent .poco-camera__text p{width:90%}#maincontent .poco-camera__text p::before{display:none}#maincontent .poco-camera__text p:nth-child(1){width:auto}#maincontent .poco-camera__text p:nth-child(2){width:230px}#maincontent .poco-performance__inner{padding-top:300px}#maincontent .poco-performance__content{top:0}#maincontent .poco-storage__bg{padding-top:200px}#maincontent .poco-storage__text{top:20px}#maincontent .poco-battery__bg{padding-top:400px}#maincontent .poco-sensor__bg{padding-top:130px}#maincontent .poco-slider__card-text h3{font-size:14px}#maincontent .poco-slider__card-text p{font-size:9px}}@media screen and (max-width: 368.98px){#maincontent .poco-table__bg{padding-bottom:300px}#maincontent .poco-bg__content{top:-327px;padding:40px 17px 50px}#maincontent .poco-bg__content p span{padding-left:35px}#maincontent .poco-bg__content p span::before{width:120px;height:34px}#maincontent .yellow-box__content{top:-220px}#maincontent .black-box__content{padding-bottom:0}#maincontent .poco-camera__content{padding-bottom:15px}#maincontent .poco-camera__text{padding:0 17px}#maincontent .poco-box__text{margin:0 17px 20px 17px}#maincontent .poco-performance__content{top:0}#maincontent .poco-performance__content-text p span{padding-left:0}#maincontent .poco-memory__content{padding:0 17px 20px}#maincontent .poco-storage__text{top:10px}#maincontent .poco-battery__bg{padding-top:450px}#maincontent .poco-design__inner{padding-top:230px}#maincontent .poco-design__content{top:5px}#maincontent .poco-sensor__bg{padding-top:155px}#maincontent .poco-sensor__text{margin:0 17px;top:22px}#maincontent .poco-slider__title h2{margin:10px 0}#maincontent .poco-slider__inner{padding:10px 15px 15px}#maincontent .poco-slider__card-inner_line::after{height:90px}#maincontent .poco-slider__card-text{padding:0 5px 0 10px}#maincontent .poco-slider__card-text h3{font-size:13px}#maincontent .poco-slider__card-text p{font-size:8px}#maincontent .poco-slider__card-item{padding:0 5px}#maincontent .poco-slider__card-item h3{font-size:9px}#maincontent .poco-slider__card-item img{margin-bottom:10px}}@media screen and (max-width: 335.98px){#maincontent .poco-bg__content{top:-325px}#maincontent .yellow-box__content{top:-230px}#maincontent .poco-performance__inner{padding-top:340px}#maincontent .poco-performance__content{top:0}#maincontent .poco-storage__text{top:0}#maincontent .poco-design__content{top:5px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__inner">
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img01.png" /></div>
+<div class="top-box__content">
+<p><span>Мощный и быстрый процессор MediaTek Helio G85</span></p>
+<p><span>Тройная камера 50 МП с искусственным интеллектом</span></p>
+<p><span>Вместительная батарея и возможность быстрой зарядки на 18 Вт</span></p>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-table">
+<div class="poco-table__bg">
+<div class="poco-table__inner">
+<div class="poco-table__items">
+<div class="poco-table__item-wrapper">
+<div class="poco-table__item-inner">
+<div class="poco-table__item poco-table__item_01">
+<div class="poco-table__item-text poco-table__item-text_01">
+<h4>Тройная камера с ИИ на 50 МП</h4>
+<p>Новые фильтры прямо как на пленочной камере</p>
+</div>
+<div class="poco-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img02_1.png" /></div>
+</div>
+<div class="poco-table__item poco-table__item_02">
+<div class="poco-table__item-text poco-table__item-text_02">
+<h4>Плавный дисплей 6,74 дюйма с 90 Гц</h4>
+<p>Сохранит ваши глаза от усталости</p>
+</div>
+<div class="poco-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img02_2.png" /></div>
+</div>
+</div>
+<div class="poco-table__item poco-table__item_03">
+<div class="poco-table__item-text poco-table__item-text_03">
+<h4>Мощный аккумулятор на 5000 мАч</h4>
+<p>Смотрите до 23 часов потокового видео</p>
+<h4>Поддержка быстрой зарядки на 18 Вт</h4>
+<p>Заряжайте POCO C65 5 минут и 5 часов слушайте музыку</p>
+</div>
+<picture class="poco-table__item-img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2756141/img02_3_mob.png"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2756141/img02_3.png"></source> <img src="https://cdn.comfy.ua/media/x/img3/2756141/img02_3.png" /> </picture></div>
+</div>
+<div class="poco-table__item poco-table__item_04">
+<div class="poco-table__item-text poco-table__item-text_04">
+<h4>Быстрый и мощный процессор MediaTek Helio G85</h4>
+<p>Расширение оперативной памяти до 16 ГБ</p>
+</div>
+<div class="poco-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img02_4.png" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-bg">
+<div class="poco-bg__inner">
+<div class="poco-bg__content">
+<p><span>Display</span></p>
+<h2>Имерсивный большой дисплей на 6,74"</h2>
+<h2>Поражающее качество</h2>
+<p>POCO C65 обладает большим HD+ экраном, который обеспечит качественное, насыщенное и                             детализированное изображение. Смотрите любимый контент, играйте в игры или просматривайте                             новостную ленту с максимальным комфортом и наслаждением!</p>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img03.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-bg yellow-box">
+<div class="poco-bg__inner yellow-box__inner">
+<div class="poco-bg__content yellow-box__content">
+<h2>Экран Corning Gorilla Glass</h2>
+<h2>Максимальная защита</h2>
+<p>Смартфон POCO C65 оснащен закаленным стеклом повышенного противодействия к ударам и царапинам                             Corning Gorilla Glass. Более сильная защита — улучшенная безопасность.</p>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img04.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-bg black-box">
+<div class="poco-bg__inner black-box__inner">
+<div class="poco-bg__content black-box__content">
+<h2><span>90 Гц</span></h2>
+<h2>Высокая частота обновления</h2>
+<p>Плавное изображение, что бы вы ни делали. POCO C65 — это ваш надежный помощник во всем:                             работе, отдыхе и творчестве. Он не заставит вас ждать загрузки чего-либо — все благодаря                             высокой частоте обновления до 90 Гц.</p>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img05.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-bg black-box poco-safety">
+<div class="poco-bg__inner black-box__inner poco-safety__inner">
+<div class="poco-bg__content black-box__content poco-safety__content">
+<h2>Безопасность превыше всего</h2>
+<h2>Дополнительная защита ваших глаз от усталости</h2>
+<p>Смартфон POCO C65 имеет сертификаты TÜV Low Blue Light и TÜV Flicker-Free — это гарантия                             безопасности здоровья ваших глаз. Пользуйтесь телефоном как днем, так и ночью, и не                             чувствуйте больше сильной зрительной усталости.</p>
+<img src="https://cdn.comfy.ua/media/x/img3/2756141/icon06.png" /></div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img06.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-bg black-box poco-camera">
+<div class="poco-bg__inner black-box__inner poco-camera__inner">
+<div class="poco-bg__content black-box__content poco-camera__content">
+<p><span>Camera</span></p>
+<h2>Лучшие снимки</h2>
+<h2>На камеру 50 МП</h2>
+</div>
+<div class="poco-camera__media">
+<div class="poco-camera__text">
+<p>Макро камера 2 Мп</p>
+<p>Сверхчеткая основная камера на 50 Мп</p>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img07.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-box">
+<div class="poco-box__bg">
+<div class="poco-box__text poco-box__text_ml">
+<h3>Максимальная детализированность и насыщенный природный цвет с основной камерой на 50 МП</h3>
+</div>
+<div class="poco-box__img poco-box__img_r"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img08.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-box">
+<div class="poco-box__bg">
+<div class="poco-box__text poco-box__text_ml poco-box__text_flex">
+<h3>Портретный режим</h3>
+<p>На 79% выросла скорость портретной съемки, так что теперь вы можете делать глубокие                             профессиональные портреты своим родным и друзьям. Кроме того, вам доступна ночная съемка,                             скорость которой выросла на 19,5%.</p>
+</div>
+<div class="poco-box__img poco-box__img_l"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img09.png" /></div>
+</div>
+</div>
+<div class="maincontent__row poco-row">
+<div class="poco-row__bg">
+<div class="poco-row__inner">
+<div class="poco-row__item">
+<div class="poco-row__text">
+<h2>Селфи, которые поразят всех</h2>
+<h3>Фронтальная камера с кольцом мягкого света</h3>
+<p>Смартфон POCO C65 оснащен передней камерой на 8 Мп, которая имеет обновленное кольцо                                     мягкого                                     освещения. Теперь вы можете легко делать селфи профессионального уровня даже в                                     темноте.</p>
+</div>
+</div>
+<div class="poco-row__image"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img10.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-box">
+<div class="poco-box__bg">
+<div class="poco-box__inner">
+<div class="poco-box__text">
+<h2>Пленочная камера в смартфоне</h2>
+</div>
+<div class="poco-box__media">
+<div class="poco-box__img poco-box__img_c"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img11.png" /></div>
+<div class="poco-box__media-content">
+<div class="poco-box__media-header">
+<p>Пленочный фотоаппарат C-50D</p>
+<h4>Пленка с дневным светом</h4>
+</div>
+<div class="poco-box__media-text">
+<p>Этот режим отлично подходит для художественных портретных снимков в относительно                                         освещенной среде.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-box poco-macro">
+<div class="poco-box__bg poco-macro__bg">
+<div class="poco-box__inner">
+<div class="poco-box__text">
+<h3>Режим макро</h3>
+<p>Откройте для себя мир деталей! Создавайте уникальные кадры и замечайте то, что раньше                                 скрывалось.</p>
+</div>
+<div class="poco-box__media">
+<div class="poco-box__img poco-box__img_c"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img12.png" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-bg poco-performance">
+<div class="poco-bg__inner poco-performance__inner">
+<div class="poco-bg__content poco-performance__content">
+<div class="poco-bg__content-text poco-bg__content-text_01 poco-performance__content-text">
+<p><span>Performance</span></p>
+<h2>Процессор на 8 ядер</h2>
+<h2>Высокая производительность</h2>
+<p>Обладая быстрым и мощным процессором MediaTek Helio G85, со смартфоном POCO C65 вы можете                                 наслаждаться бесперебойной и плавной работой. Чипсет в смартфоне обеспечивает идеальный                                 баланс между производительностью и эффективностью.</p>
+</div>
+<div class="poco-bg__content-text poco-performance__content-text">
+<h2>До 2,0 ГГц</h2>
+<p>скорость процессора</p>
+</div>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img13.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-box poco-memory">
+<div class="poco-memory__bg">
+<div class="poco-box__inner poco-memory__inner">
+<div class="poco-box__content poco-memory__content">
+<h2>До 16 ГБ</h2>
+<h2>Увеличивайте оперативную память</h2>
+<p>Смартфон имеет несколько конфигураций оперативной памяти — 6 Гб и 8 Гб. Но благодаря                                 технологии расширения памяти можно увеличить последнюю версию (на 8 Гб) до 16 Гб и                                 наслаждаться многозадачностью и бесперебойной работой различных программ.</p>
+</div>
+<div class="poco-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img14.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box poco-box poco-storage">
+<div class="poco-box__bg poco-storage__bg">
+<div class="poco-box__text poco-box__text_flex poco-storage__text">
+<div class="poco-box__text-header poco-storage__text-header">
+<h2>Расширение памяти на 1 ТБ</h2>
+<h2>Храните все, что нужно</h2>
+</div>
+<p>Вы можете легко и быстро расширить память до 1 ТБ и хранить все, что нужно: книги, фильмы,                             игры, фотографии, документы. И забыть о том, что есть такое уведомление на экране:                             "Недостаточно места".</p>
+</div>
+<div class="poco-box__img poco-storage__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img15.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-box poco-battery">
+<div class="poco-box__bg poco-battery__bg">
+<div class="poco-box__text poco-box__text_flex poco-battery__text">
+<div class="poco-box__text-header poco-battery__text-header">
+<h2>Мощный аккумулятор на 5000 мАч</h2>
+<h2>Быстрая зарядка на 18 Вт</h2>
+</div>
+<div class="poco-box__text-content poco-battery__text-content">
+<p>Вы всегда будете на связи благодаря емкой батарее на 5000 мАч. Она обеспечивает работу                                 смартфона в течение целого дня, как много бы вы ни делали. А если нужно быстро пополнить                                 заряд аккумулятора, смело используйте быструю зарядку Type-C PD на 18 Вт.</p>
+<div class="poco-battery__text-items">
+<div class="poco-battery__items">
+<div class="poco-battery__item">
+<div class="poco-battery__item-num">
+<p>25</p>
+</div>
+<div class="poco-battery__item-text">
+<h4>дней</h4>
+<p>Режима ожидания</p>
+</div>
+</div>
+<div class="poco-battery__item">
+<div class="poco-battery__item-num">
+<p>31</p>
+</div>
+<div class="poco-battery__item-text">
+<h4>час</h4>
+<p>Звонков</p>
+</div>
+</div>
+</div>
+<div class="poco-battery__items">
+<div class="poco-battery__item">
+<div class="poco-battery__item-num">
+<p>23</p>
+</div>
+<div class="poco-battery__item-text">
+<h4>часа</h4>
+<p>Потокового видео</p>
+</div>
+</div>
+<div class="poco-battery__item">
+<div class="poco-battery__item-num">
+<p>114</p>
+</div>
+<div class="poco-battery__item-text">
+<h4>часов</h4>
+<p>Музыки</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="poco-box__img poco-battery__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img16.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-bg poco-design">
+<div class="poco-bg__inner poco-design__inner">
+<div class="poco-bg__content poco-design__content">
+<p><span>Design</span></p>
+<h2>Трендовый дизайн</h2>
+<p>Каждый несомненно найдет свой идеальный вариант POCO C65. Он выполнен в трех различных                             дизайнах, но у них есть уникальные общие особенности: выразительное оформление основных                             камер, инновационный обтекаемый дизайн и эстетический стиль. Элегантность прямо в вашем                             кармане!</p>
+</div>
+<div class="poco-bg__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img17.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-box poco-sensor">
+<div class="poco-box__bg poco-sensor__bg">
+<div class="poco-box__text poco-box__text_flex poco-sensor__text">
+<div class="poco-box__text-header poco-sensor__text-header">
+<h2>Доступ только у вас</h2>
+</div>
+<p>Быстрое, и главное — безопасное разблокирование одним касанием с помощью бокового датчика                             отпечатков пальцев.</p>
+</div>
+<div class="poco-box__img poco-sensor__img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img18.png" /></div>
+</div>
+</div>
+<div class="maincontent__box poco-slider">
+<div class="poco-slider__bg">
+<div class="poco-slider__inner">
+<div class="poco-slider__title">
+<h2>Больше полезных функций</h2>
+</div>
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="slider__card poco-slider__card">
+<div class="poco-slider__card-inner">
+<div class="poco-slider__card-text">
+<h3>3,5 мм разъем для наушников</h3>
+<p>Bluetooth наушники разрядились? Не беда, смартфон имеет надежный                                                     разъем на 3,5 мм для проводных наушников и других устройств.</p>
+</div>
+<div class="poco-slider__card-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img19_1.png" /></div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slider__card poco-slider__card">
+<div class="poco-slider__card-inner">
+<div class="poco-slider__card-text">
+<h3>Удобная ОС</h3>
+<p>MIUI 14 — это удобная и быстрая операционная система, благодаря                                                     которой пользоваться смартфоном становится еще комфортнее и                                                     эффективнее.</p>
+</div>
+<div class="poco-slider__card-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img19_2.png" /></div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="slider__card poco-slider__card">
+<div class="poco-slider__card-inner poco-slider__card-inner_line">
+<div class="poco-slider__card-items">
+<div class="poco-slider__card-item"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img19_31.png" />
+<h3>Многофункциональный NFC</h3>
+</div>
+<div class="poco-slider__card-item"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img19_32.png" />
+<h3>Type-C</h3>
+</div>
+</div>
+<div class="poco-slider__card-img"><img src="https://cdn.comfy.ua/media/x/img3/2756141/img19_3.png" /></div>
+</div>
+</div>
+</div>
+...</div>
+<div class="swiper-pagination"></div>
+</div>
+<div class="poco-slider__subtitle">
+<p>Купить смартфон <b>POCO C65</b> в Украине можно на сайте или фирменных магазинах COMFY!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+        document.addEventListener("DOMContentLoaded", function () {
+const swiper = new Swiper('.swiper', {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplayDelay: 2500,
+    autoplayDisableOnInteraction: false,   
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    
+});
+        });
+// ]]></script>
