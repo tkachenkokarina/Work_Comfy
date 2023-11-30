@@ -1,0 +1,1359 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1240
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #smarthuaweigt a
+//     color: inherit
+//     text-decoration: none
+
+// #smarthuaweigt
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#smarthuaweigt .bc-description__content p
+    margin-bottom: 0
+
+#smarthuaweigt .bc-description__content h3
+    text-align: left
+
+#smarthuaweigt
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#smarthuaweigt
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    max-width: 1920px
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#smarthuaweigt p::first-letter
+    padding-left: 0
+
+#smarthuaweigt img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#smarthuaweigt img:hover
+    opacity: 1
+
+#smarthuaweigt .smarthuaweigt__container
+    max-width: 1280px
+    margin: 0 auto
+    padding: 0 20px
+
+//========================================================================================================================================================
+
+#smarthuaweigt .fashion-smarthuaweigt
+    &__row
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+    &__item
+        flex: 0 1 43%
+    &__text
+        width: 90%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 70, 20, 1)
+            font-size: 70px
+            line-height: 1.2
+            font-weight: bold
+            text-align: center
+            margin-bottom: 20px
+        h4
+            @include adaptiv-value("font-size", 30, 20, 1)
+            line-height: 1.2
+            text-align: center
+            text-transform: uppercase
+            font-weight: normal
+            margin-bottom: 15px
+            span
+                font-weight: bold
+        p
+            @include adaptiv-value("font-size", 16, 14, 1)
+            line-height: 1.2
+            text-align: center
+    &__image
+        flex: 0 1 57%
+
+#smarthuaweigt .classic-smarthuaweigt
+    &__bg
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/bg1.jpg') 80% 0/cover no-repeat
+        min-height: 100vh
+        display: flex
+        align-items: center
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            position: absolute
+            z-index: 5
+            background-color: #0000009a
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__text
+        position: relative
+        z-index: 8
+        padding: 0 15px
+        width: 80%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 50, 16, 1)
+            line-height: 1.3
+            text-align: center
+            color: #ffffff
+
+#smarthuaweigt .short-smarthuaweigt
+    @include adaptiv-value("margin-top", 90, 30, 1)
+    @include adaptiv-value("margin-bottom", 90, 30, 1)
+    &__row
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        //grid-template-rows: 392px 392px 392px
+        // grid-template-rows: repeat(3, minmax(249px, 392px))
+        gap: 30px
+    &__item
+        position: relative
+        z-index: 2
+        &:nth-child(1)
+            grid-column: 1 / 3
+        &:nth-child(2)
+            grid-column: 3 / 4
+        &:nth-child(3)
+            grid-column: 1 / 2
+        &:nth-child(4)
+            grid-column: 2 / 4
+        &:nth-child(5)
+            grid-column: 1 / 3
+        &:nth-child(6)
+            grid-column: 3 / 4
+    &__text
+        position: absolute
+        z-index: 5
+        p
+            @include adaptiv-value("font-size", 20, 15, 1)
+            line-height: 1.2
+            font-weight: bold
+        &_1
+            top: 50%
+            transform: translateY(-50%)
+            left: 3%
+            width: 20%
+        &_2
+            bottom: 10%
+            left: 0
+            right: 0
+            width: 60%
+            margin: 0 auto
+            p
+                text-align: center
+        &_3
+            top: 50%
+            transform: translateY(-50%)
+            left: 3%
+            width: 20%
+        &_4
+            bottom: 10%
+            left: 0
+            right: 0
+            width: 60%
+            margin: 0 auto
+            p
+                text-align: center
+                color: #ffffff
+        &_5
+            top: 50%
+            transform: translateY(-50%)
+            right: 10%
+            width: 40%
+            margin: 0 auto
+            p
+                color: #ffffff
+        &_6
+            bottom: 10%
+            left: 0
+            right: 0
+            width: 60%
+            margin: 0 auto
+            p
+                text-align: center
+                color: #ffffff
+    &__image
+        position: relative
+        z-index: 2
+        width: 100%
+        height: 392px
+        overflow: hidden
+        img
+            position: absolute
+            z-index: 2
+            width: 100%
+            height: 100%
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            object-fit: cover
+
+#smarthuaweigt .designed-smarthuaweigt
+    &__box
+        @include adaptiv-value("margin-bottom", 100, 20, 1)
+        p
+            font-size: 15px
+            line-height: 1.2
+            color: #ffffff
+            background: #6c4411
+            display: inline-block
+            padding: 10px 15px
+            margin-bottom: 20px
+        h2
+            //font-size: 60px
+            @include adaptiv-value("font-size", 60, 30, 1)
+            line-height: 1.25
+            color: transparent
+            -webkit-background-clip: text
+            background-image: linear-gradient(to right, #673f0b 0%, #b89774 100%)
+            font-weight: bold
+    &__row
+        display: flex
+    &__item
+        flex: 0 1 50%
+        padding: 40px 0 60px
+        &:nth-child(1)
+            background-image: linear-gradient(to bottom, #e6e5e5 0%, #ffffff 100%)
+        &:nth-child(2)
+            background-image: linear-gradient(to bottom, #d9d1c9 0%, #ffffff 100%)
+    &__title
+        h4
+            @include adaptiv-value("font-size", 30, 18, 1)
+            line-height: 1.25
+            text-align: center
+            font-weight: bold
+            text-transform: uppercase
+            margin-bottom: 80px
+    &__inner
+        display: flex
+        justify-content: center
+        gap: 20px
+        &_1
+            padding: 0 20px
+        &_2
+            //max-width: 600px
+            width: 70%
+            margin: 0 auto
+            padding: 0 15px
+    &__media
+        flex: 0 1 calc(100% / 4)
+    &__col
+        flex: 0 1 calc(100% / 3)
+    &__image
+    &__color
+        margin-top: 30px
+        p
+            font-size: 18px
+            line-height: 1.2
+            text-align: center
+            font-weight: bold
+    &__text
+        width: 80%
+        padding: 100px 20px 0
+        h2
+            @include adaptiv-value("font-size", 25, 18, 1)
+            line-height: 1.2
+            margin-bottom: 15px
+        p
+            @include adaptiv-value("font-size", 20, 16, 1)
+            color: #86868b
+
+#smarthuaweigt .small-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 10, 1)
+    @include adaptiv-value("padding-bottom", 100, 30, 1)
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            text-align: center
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            text-align: center
+            color: #86868b
+    &__row
+        width: 60%
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        gap: 20px
+        padding: 50px 0
+    &__item
+        flex: 0 1 calc(100% / 3)
+        h4
+            @include adaptiv-value("font-size", 40, 18, 1)
+            line-height: 1.2
+            text-align: center
+            margin-bottom: 5px
+        p
+            @include adaptiv-value("font-size", 20, 13, 1)
+            line-height: 1.2
+            text-align: center
+            color: #86868b
+    &__image
+
+#smarthuaweigt .clockface-smarthuaweigt
+    @include adaptiv-value("padding-top", 50, 20, 1)
+    @include adaptiv-value("padding-bottom", 100, 20, 1)
+    &__bg
+        position: relative
+        z-index: 2
+        padding-top: 50px
+    &__row
+        padding: 0 20px
+        display: flex
+        align-items: center
+    &__image
+        flex: 0 0 25%
+    &__item
+    &__text
+        width: 70%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            text-align: center
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            text-align: center
+            color: #86868b
+    &__clock
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        right: 0
+        width: 50%
+        margin: 0 auto
+
+#smarthuaweigt .clockface-smarthuaweigt
+    &__slider
+        display: none
+    &__wrapper
+    &__slide
+    &__media
+        position: relative
+        z-index: 2
+    &__oclock
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        right: 0
+        width: 40%
+        margin: 0 auto
+    &__oclock-bg
+        // position: absolute
+        // z-index: -1
+        // top: 0
+        // left: 0
+        // right: 0
+        // width: 70%
+        // margin: 0 auto
+
+#smarthuaweigt .swiper
+    &-wrapper
+    &-slide
+    &-button-prev
+    &-button-next
+
+#smarthuaweigt .swiper-button-next:after,
+#smarthuaweigt .swiper-button-prev:after
+    content: ''
+
+#smarthuaweigt .swiper-button-next,
+#smarthuaweigt .swiper-button-prev
+    background: url('https://cdn.comfy.ua/media/x/img3/2726755/arrow.png') center no-repeat
+    background-size: 100% 100%
+    width: 60px
+    height: 60px
+
+#smarthuaweigt .swiper-button-prev
+    transform: rotate(-180deg)
+
+#smarthuaweigt .swiper-pagination-bullet-active
+    background: #000
+
+#smarthuaweigt .uniq-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 20, 1)
+    @include adaptiv-value("padding-bottom", 100, 20, 1)
+    &__row
+        display: flex
+        flex-direction: row-reverse
+    &__item
+        display: flex
+        align-items: center
+        background-image: linear-gradient(#f7ebd8 0%, #d3bd9e 100%)
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+    &__image
+        flex: 0 1 50%
+
+#smarthuaweigt .training-smarthuaweigt
+    &__title
+        @include adaptiv-value("margin-bottom", 100, 20, 1)
+        p
+            font-size: 15px
+            line-height: 1.2
+            color: #ffffff
+            background: #6c4411
+            display: inline-block
+            padding: 10px 15px
+            margin-bottom: 20px
+        h2
+            //font-size: 60px
+            @include adaptiv-value("font-size", 60, 30, 1)
+            line-height: 1.25
+            color: transparent
+            -webkit-background-clip: text
+            background-image: linear-gradient(to right, #673f0b 0%, #b89774 100%)
+            font-weight: bold
+    &__media
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/bg2.jpg') 40% 0/cover no-repeat
+        min-height: 100vh
+        &::after
+            content: ''
+            position: absolute
+            z-index: 2
+            background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 100%)
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__text
+        position: absolute
+        z-index: 8
+        width: 40%
+        margin: 0 auto
+        bottom: 10%
+        left: 10%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+            color: #ffffff
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #ffffff
+    &__image
+        display: none
+
+#smarthuaweigt .cando-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    &__row
+        display: flex
+        gap: 15px
+        margin-bottom: 50px
+    &__title
+        flex: 0 1 30%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+    &__text
+        flex: 0 1 70%
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #86868b
+    &__image
+
+#smarthuaweigt .mode-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/bg4.jpg') 40% 0/cover no-repeat
+        min-height: 100vh
+        &::after
+            content: ''
+            position: absolute
+            z-index: 2
+            background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 60%)
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__text
+        position: absolute
+        z-index: 8
+        width: 60%
+        margin: 0 auto
+        bottom: 10%
+        left: 10%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+            color: #ffffff
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #ffffff
+
+#smarthuaweigt .heart-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    @include adaptiv-value("padding-bottom", 100, 30, 1)
+    max-width: 1240px
+    margin: 0 auto
+    padding-left: 20px
+    padding-right: 20px
+    &__title
+        h2
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+            margin-bottom: 50px
+    &__row
+        display: flex
+        gap: 40px
+    &__item
+        flex: 0 1 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: #f5f5f7
+        &:nth-child(2)
+            background: #000
+    &__text
+        //margin-bottom: 80px
+        width: 80%
+        margin: 0 auto
+        padding: 80px 20px
+        h2
+            font-size: 26px
+            line-height: 1.25
+            margin-bottom: 15px
+        p
+            font-size: 16px
+            line-height: 1.5
+            color: #86868b
+        &_1
+            h2,p
+                color: #fff
+    &__image
+        &_1
+            max-width: 400px
+            margin: 0 auto
+
+#smarthuaweigt .health-smarthuaweigt
+    &__title
+        @include adaptiv-value("margin-bottom", 100, 20, 1)
+        p
+            font-size: 15px
+            line-height: 1.2
+            color: #ffffff
+            background: #6c4411
+            display: inline-block
+            padding: 10px 15px
+            margin-bottom: 20px
+        h2
+            //font-size: 60px
+            @include adaptiv-value("font-size", 60, 30, 1)
+            line-height: 1.25
+            color: transparent
+            -webkit-background-clip: text
+            background-image: linear-gradient(to right, #673f0b 0%, #b89774 100%)
+            font-weight: bold
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/img22.jpg') 50% 0/cover no-repeat
+        min-height: 100vh
+        &::after
+            content: ''
+            position: absolute
+            z-index: 2
+            background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 60%)
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__text
+        position: absolute
+        z-index: 8
+        width: 40%
+        margin: 0 auto
+        bottom: 10%
+        left: 10%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+            color: #ffffff
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #ffffff
+
+#smarthuaweigt .sleep-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/img23.jpg') 50% 0/cover no-repeat
+        min-height: 1000px
+        display: flex
+        align-items: flex-end
+        margin-bottom: 40px
+    &__row
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        padding: 0 20px 40px
+        gap: 40px
+    &__item
+        flex: 0 1 50%
+        &_1
+            // flex: 0 1 60%
+    &__text
+        width: 90%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #86868b
+        &_1
+            h2,p
+                color: #ffffff
+    &__image
+        flex: 0 1 50%
+        &_1
+            img
+                width: 70%
+        &_2
+            img
+                width: 70%
+                margin: 0 auto
+    &__items
+        background: #f5f5f7
+        &:not(:last-child)
+            margin-bottom: 40px
+        &_2
+            padding: 60px 0
+            position: relative
+            z-index: 2
+            &::after
+                content: ''
+                position: absolute
+                z-index: -1
+                top: 0
+                right: 0
+                width: 55%
+                height: 100%
+                background-image: linear-gradient(#f7ebd8 0%, #d3bd9e 100%)
+    &__inner
+        padding: 0 20px
+        display: flex
+        align-items: center
+        gap: 40px
+        &_rev
+            flex-direction: row-reverse
+    &__card
+        width: 90%
+    &__card-item
+        &:not(:last-child)
+            margin-bottom: 20px
+    &__card-title
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 40px
+            line-height: 1.25
+            margin-bottom: 15px
+    &__card-text
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 20px
+            line-height: 1.5
+            color: #86868b
+
+#smarthuaweigt .noproblem-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    &__title
+        @include adaptiv-value("margin-bottom", 100, 20, 1)
+        p
+            font-size: 15px
+            line-height: 1.2
+            color: #ffffff
+            background: #6c4411
+            display: inline-block
+            padding: 10px 15px
+            margin-bottom: 20px
+        h2
+            //font-size: 60px
+            @include adaptiv-value("font-size", 60, 30, 1)
+            line-height: 1.25
+            color: transparent
+            -webkit-background-clip: text
+            background-image: linear-gradient(to right, #673f0b 0%, #b89774 100%)
+            font-weight: bold
+    &__bg
+        position: relative
+        z-index: 2
+        background: url('https://cdn.comfy.ua/media/x/img3/2726755/img27.jpg') 50% 0/cover no-repeat
+        min-height: 100vh
+        &::after
+            content: ''
+            position: absolute
+            z-index: 2
+            background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 60%)
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__text
+        position: absolute
+        z-index: 8
+        width: 50%
+        margin: 0 auto
+        bottom: 10%
+        left: 9%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+            color: #ffffff
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #ffffff
+
+#smarthuaweigt .music-smarthuaweigt
+    @include adaptiv-value("padding-top", 100, 30, 1)
+    @include adaptiv-value("padding-bottom", 100, 30, 1)
+    &__row
+        background: #f5f5f7
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        gap: 40px
+        padding: 40px 20px 0
+        margin-bottom: 40px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 30px
+            line-height: 1.25
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 20px
+            line-height: 1.5
+            color: #86868b
+    &__image
+        flex: 0 1 50%
+        img
+            width: 80%
+    &__wrapper
+        display: flex
+        gap: 40px
+    &__inner
+        padding-top: 40px
+        background: #f5f5f7
+        flex: 0 1 50%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 40px
+    &__items
+    &__media
+        &_1
+            width: 60%
+            margin: 0 auto
+
+#smarthuaweigt .auto-smarthuaweigt
+    @include adaptiv-value("padding-bottom", 100, 30, 1)
+    &__row
+        display: flex
+        gap: 15px
+        margin-bottom: 50px
+    &__title
+        flex: 0 1 40%
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 50px
+            line-height: 1.25
+            margin-bottom: 15px
+    &__text
+        flex: 0 1 60%
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #86868b
+    &__bg
+        background: #f5f5f7
+        padding: 40px
+    &__wrapper
+        display: flex
+        align-items: center
+    &__body
+        flex: 0 1 50%
+        display: flex
+        flex-direction: column
+        gap: 40px
+    &__box
+        width: 70%
+        margin: 0 auto
+        padding: 15px 25px
+        border-radius: 20px
+        &:nth-child(1)
+            background: #835b43
+        &:nth-child(2)
+            background: #c3a88a
+    &__subtitle
+        h4
+            margin-bottom: 15px
+            font-size: 16px
+            line-height: 1.25
+            text-transform: uppercase
+            color: #ffffff
+    &__inner
+        display: flex
+        gap: 40px
+        margin-bottom: 15px
+    &__subtext
+        flex: 0 1 50%
+        h5
+            font-size: 30px
+            line-height: 1.25
+            color: #ffffff
+            span
+                font-size: 16px
+        p
+            font-size: 12px
+            line-height: 1.5
+            color: #ffffff
+    &__suptext
+        p
+            font-size: 12px
+            line-height: 1.5
+            color: #ffffff
+    &__media
+        flex: 0 1 50%
+
+#smarthuaweigt .compatibility-smarthuaweigt
+    &__row
+        background: #f5f5f7
+        display: flex
+        align-items: center
+        flex-direction: row-reverse
+        gap: 40px
+        padding: 60px 20px 0
+        margin-bottom: 20px
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        margin: 0 auto
+        h2
+            //@include adaptiv-value("font-size", 50, 20, 1)
+            font-size: 30px
+            line-height: 1.25
+            margin-bottom: 15px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 20px
+            line-height: 1.5
+            color: #86868b
+    &__image
+        flex: 0 1 50%
+    &__snoska
+        padding: 10px 20px 40px
+        p
+            //@include adaptiv-value("font-size", 28, 16, 1)
+            font-size: 28px
+            line-height: 1.5
+            color: #86868b
+            text-align: center
+
+//===========MEDIA=============================================================================================================================================
+
+// @media screen and (max-width: 1466px)
+//     #smarthuaweigt .designed-smarthuaweigt__inner_2
+//         overflow-x: scroll
+//     #smarthuaweigt .designed-smarthuaweigt__col
+//         min-width: 147px
+
+@media screen and (max-width: 1920px)
+    #smarthuaweigt .fashion-smarthuaweigt__text h2
+        font-size: clamp(50px, 4vw, 70px)
+    #smarthuaweigt .music-smarthuaweigt__text h2,
+    #smarthuaweigt .compatibility-smarthuaweigt__text h2
+        font-size: clamp(25px, 2vw, 30px)
+    #smarthuaweigt .sleep-smarthuaweigt__card-text p,
+    #smarthuaweigt .music-smarthuaweigt__text p,
+    #smarthuaweigt .compatibility-smarthuaweigt__text p
+        font-size: clamp(16px, 1.5vw, 20px)
+    #smarthuaweigt .sleep-smarthuaweigt__card-title h2
+        font-size: clamp(25px, 2.5vw, 40px)
+    #smarthuaweigt .clockface-smarthuaweigt__text h2,
+    #smarthuaweigt .small-smarthuaweigt__text h2,
+    #smarthuaweigt .uniq-smarthuaweigt__text h2,
+    #smarthuaweigt .training-smarthuaweigt__text h2,
+    #smarthuaweigt .cando-smarthuaweigt__title h2,
+    #smarthuaweigt .mode-smarthuaweigt__text h2,
+    #smarthuaweigt .heart-smarthuaweigt__title h2,
+    #smarthuaweigt .health-smarthuaweigt__text h2,
+    #smarthuaweigt .sleep-smarthuaweigt__text h2,
+    #smarthuaweigt .noproblem-smarthuaweigt__text h2,
+    #smarthuaweigt .auto-smarthuaweigt__title h2
+        font-size: clamp(25px, 3vw, 50px)
+    #smarthuaweigt .clockface-smarthuaweigt__text p,
+    #smarthuaweigt .small-smarthuaweigt__text p,
+    #smarthuaweigt .uniq-smarthuaweigt__text p,
+    #smarthuaweigt .training-smarthuaweigt__text p,
+    #smarthuaweigt .cando-smarthuaweigt__text p,
+    #smarthuaweigt .mode-smarthuaweigt__text p,
+    #smarthuaweigt .health-smarthuaweigt__text p,
+    #smarthuaweigt .sleep-smarthuaweigt__text p,
+    #smarthuaweigt .noproblem-smarthuaweigt__text p,
+    #smarthuaweigt .auto-smarthuaweigt__text p
+        font-size: clamp(16px, 1.5vw, 28px)
+
+@media screen and (max-width: 1205px)
+    #smarthuaweigt .clockface-smarthuaweigt__text
+        width: 80%
+
+@media screen and (max-width: 1105px)
+    #smarthuaweigt .designed-smarthuaweigt__row
+        flex-direction: column-reverse
+    #smarthuaweigt .designed-smarthuaweigt__text
+        margin: 0 auto
+        h2,p
+            text-align: center
+
+@media screen and (max-width: 1024.98px)
+    #smarthuaweigt .sleep-smarthuaweigt__bg,
+    #smarthuaweigt .sleep-smarthuaweigt__items:not(:last-child)
+        margin-bottom: 0
+    #smarthuaweigt .mode-smarthuaweigt,
+    #smarthuaweigt .sleep-smarthuaweigt,
+    #smarthuaweigt .music-smarthuaweigt
+        padding-top: 0
+    #smarthuaweigt .clockface-smarthuaweigt__text h2,
+    #smarthuaweigt .small-smarthuaweigt__text h2,
+    #smarthuaweigt .uniq-smarthuaweigt__text h2,
+    #smarthuaweigt .training-smarthuaweigt__text h2,
+    #smarthuaweigt .cando-smarthuaweigt__title h2,
+    #smarthuaweigt .mode-smarthuaweigt__text h2,
+    #smarthuaweigt .heart-smarthuaweigt__title h2,
+    #smarthuaweigt .heart-smarthuaweigt__text h2,
+    #smarthuaweigt .health-smarthuaweigt__text h2,
+    #smarthuaweigt .sleep-smarthuaweigt__text h2,
+    #smarthuaweigt .sleep-smarthuaweigt__card-title h2,
+    #smarthuaweigt .designed-smarthuaweigt__text h2,
+    #smarthuaweigt .noproblem-smarthuaweigt__text h2,
+    #smarthuaweigt .music-smarthuaweigt__text h2,
+    #smarthuaweigt .auto-smarthuaweigt__title h2,
+    #smarthuaweigt .compatibility-smarthuaweigt__text h2
+        font-size: clamp(20px, 5vw, 50px)
+    #smarthuaweigt .clockface-smarthuaweigt__text p,
+    #smarthuaweigt .small-smarthuaweigt__text p,
+    #smarthuaweigt .uniq-smarthuaweigt__text p,
+    #smarthuaweigt .training-smarthuaweigt__text p,
+    #smarthuaweigt .cando-smarthuaweigt__text p,
+    #smarthuaweigt .mode-smarthuaweigt__text p,
+    #smarthuaweigt .heart-smarthuaweigt__text p,
+    #smarthuaweigt .health-smarthuaweigt__text p,
+    #smarthuaweigt .sleep-smarthuaweigt__text p,
+    #smarthuaweigt .sleep-smarthuaweigt__card-text p,
+    #smarthuaweigt .designed-smarthuaweigt__text p,
+    #smarthuaweigt .noproblem-smarthuaweigt__text p,
+    #smarthuaweigt .music-smarthuaweigt__text p,
+    #smarthuaweigt .auto-smarthuaweigt__text p,
+    #smarthuaweigt .compatibility-smarthuaweigt__text p
+        font-size: clamp(16px, 3vw, 30px)
+    #smarthuaweigt .compatibility-smarthuaweigt__row
+        flex-direction: column
+    #smarthuaweigt .compatibility-smarthuaweigt__text
+        width: auto
+    #smarthuaweigt .auto-smarthuaweigt__row
+        flex-direction: column
+    #smarthuaweigt .music-smarthuaweigt__inner
+        padding: 60px 20px 0
+    #smarthuaweigt .music-smarthuaweigt__row
+        padding: 60px 20px 0
+    #smarthuaweigt .music-smarthuaweigt__wrapper
+        flex-direction: column
+        gap: 0
+    #smarthuaweigt .music-smarthuaweigt__text
+        width: auto
+    #smarthuaweigt .music-smarthuaweigt__row
+        flex-direction: column
+        margin-bottom: 0
+    #smarthuaweigt .sleep-smarthuaweigt__text
+        width: auto
+    #smarthuaweigt .short-smarthuaweigt__row,
+    #smarthuaweigt .designed-smarthuaweigt__box,
+    #smarthuaweigt .small-smarthuaweigt__text,
+    #smarthuaweigt .training-smarthuaweigt__title,
+    #smarthuaweigt .cando-smarthuaweigt__row,
+    #smarthuaweigt .health-smarthuaweigt__title,
+    #smarthuaweigt .noproblem-smarthuaweigt__title,
+    #smarthuaweigt .auto-smarthuaweigt__row
+        padding: 0 20px
+    #smarthuaweigt .smarthuaweigt__container
+        padding: 0
+    #smarthuaweigt .sleep-smarthuaweigt__items_2::after
+        height: 53%
+        width: 100%
+        bottom: 0
+        top: auto
+    #smarthuaweigt .sleep-smarthuaweigt__inner_rev
+        flex-direction: column-reverse !important
+    #smarthuaweigt .sleep-smarthuaweigt__items_2
+        padding: 0 0 30px
+    #smarthuaweigt .sleep-smarthuaweigt__image_1 img,
+    #smarthuaweigt .sleep-smarthuaweigt__image_2 img
+        margin: 0 auto !important
+    #smarthuaweigt .sleep-smarthuaweigt__inner
+        flex-direction: column
+        padding-top: 50px
+    #smarthuaweigt .sleep-smarthuaweigt__bg
+        background-position-x: 0
+        min-height: 1135px
+    #smarthuaweigt .sleep-smarthuaweigt__image
+        img
+            width: 60%
+            margin: 0
+    #smarthuaweigt .sleep-smarthuaweigt__row
+        flex-direction: column-reverse
+        align-items: start
+    #smarthuaweigt .health-smarthuaweigt__text
+        width: 80%
+        bottom: 4%
+        left: 4%
+    #smarthuaweigt .heart-smarthuaweigt__title
+        padding: 0 20px
+    #smarthuaweigt .heart-smarthuaweigt
+        padding-left: 0
+        padding-right: 0
+    #smarthuaweigt .heart-smarthuaweigt__text
+        width: auto
+    #smarthuaweigt .heart-smarthuaweigt__row
+        flex-direction: column
+        gap: 0
+    #smarthuaweigt .mode-smarthuaweigt__text
+        width: 80%
+        bottom: 4%
+        left: 4%
+    #smarthuaweigt .training-smarthuaweigt__text,
+    #smarthuaweigt .noproblem-smarthuaweigt__text
+        width: 80%
+        bottom: 4%
+        left: 4%
+    #smarthuaweigt .short-smarthuaweigt__image
+        height: 300px
+    #smarthuaweigt .clockface-smarthuaweigt__row
+        flex-direction: column
+    #smarthuaweigt .clockface-smarthuaweigt__text
+        width: auto
+        h2,p
+            text-align: left
+    #smarthuaweigt .clockface-smarthuaweigt__image,
+    #smarthuaweigt .clockface-smarthuaweigt__clock
+        display: none
+    #smarthuaweigt .clockface-smarthuaweigt__slider
+        display: block
+        padding: 0 20px
+    #smarthuaweigt .small-smarthuaweigt__text
+        width: auto
+        h2,p
+            text-align: left
+    #smarthuaweigt .small-smarthuaweigt__row
+        width: 80%
+    #smarthuaweigt .uniq-smarthuaweigt__row
+        flex-direction: column-reverse
+    #smarthuaweigt .uniq-smarthuaweigt__text
+        width: auto
+        padding: 0px 20px
+    #smarthuaweigt .uniq-smarthuaweigt__item
+        min-height: 600px
+    #smarthuaweigt .cando-smarthuaweigt__row
+        flex-direction: column
+
+@media screen and (max-width: 991.98px)
+    #smarthuaweigt .compatibility-smarthuaweigt__snoska p
+        font-size: clamp(16px, 3vw, 28px)
+    #smarthuaweigt .auto-smarthuaweigt__body
+        gap: 20px
+    #smarthuaweigt .auto-smarthuaweigt__box
+        width: 80%
+        padding: 40px 30px
+    #smarthuaweigt .auto-smarthuaweigt__suptext p
+        font-size: clamp(12px, 3vw, 20px)
+    #smarthuaweigt .auto-smarthuaweigt__subtext p
+        font-size: clamp(12px, 3vw, 20px)
+    #smarthuaweigt .auto-smarthuaweigt__subtext h5 span
+        font-size: clamp(15px, 3vw, 22px)
+    #smarthuaweigt .auto-smarthuaweigt__subtext h5
+        font-size: clamp(25px, 5.2vw, 50px)
+    #smarthuaweigt .auto-smarthuaweigt__subtitle h4
+        font-size: clamp(16px, 5vw, 35px)
+    #smarthuaweigt .auto-smarthuaweigt__media
+        img
+            width: 70%
+    #smarthuaweigt .auto-smarthuaweigt__wrapper
+        flex-direction: column-reverse
+        align-items: stretch
+        gap: 40px
+    #smarthuaweigt .fashion-smarthuaweigt__row
+        flex-direction: column-reverse
+    #smarthuaweigt .fashion-smarthuaweigt__text
+        width: auto
+        padding: 20px 15px 30px
+    #smarthuaweigt .short-smarthuaweigt__row
+        grid-template-columns: repeat(2, 1fr)
+        gap: 15px
+    #smarthuaweigt .short-smarthuaweigt__item:nth-child(2),
+    #smarthuaweigt .short-smarthuaweigt__item:nth-child(5)
+        grid-column: 1 / 2
+    #smarthuaweigt .short-smarthuaweigt__item:nth-child(3),
+    #smarthuaweigt .short-smarthuaweigt__item:nth-child(6)
+        grid-column: 2 / 3
+    #smarthuaweigt .short-smarthuaweigt__item:nth-child(4)
+        grid-column: 1 / 3
+    #smarthuaweigt .short-smarthuaweigt__image
+        height: 450px
+    #smarthuaweigt .short-smarthuaweigt__text p
+        font-size: 25px
+    #smarthuaweigt .short-smarthuaweigt__text_5
+        top: auto
+        transform: translateY(0)
+        bottom: 10%
+        left: 0
+        right: 0
+        width: 80%
+        margin: 0 auto
+        p
+            text-align: center
+    #smarthuaweigt .short-smarthuaweigt__text_3
+        top: auto
+        transform: translateY(0)
+        bottom: 8%
+        left: 0
+        right: 0
+        width: 60%
+        margin: 0 auto
+        p
+            text-align: center
+
+@media screen and (max-width: 767.98px)
+    #smarthuaweigt .sleep-smarthuaweigt__bg
+        min-height: 935px
+    #smarthuaweigt .uniq-smarthuaweigt__item
+        min-height: 430px
+    #smarthuaweigt .short-smarthuaweigt__image
+        //height: 390px
+        height: clamp(140px, 40vw, 390px)
+    #smarthuaweigt .short-smarthuaweigt__text p
+        // font-size: 20px
+        font-size: clamp(10px, 3vw, 20px)
+    #smarthuaweigt .short-smarthuaweigt__text_3
+        bottom: 2%
+        width: 80%
+    #smarthuaweigt .short-smarthuaweigt__text_2
+        bottom: 5%
+        width: 80%
+    #smarthuaweigt .short-smarthuaweigt__row
+        gap: 8px
+    #smarthuaweigt .designed-smarthuaweigt__inner_2
+        width: 83%
+    #smarthuaweigt .designed-smarthuaweigt__text
+        width: auto
+    // #smarthuaweigt .small-smarthuaweigt__row
+    //     width: 80%
+
+@media screen and (max-width: 600px)
+    #smarthuaweigt .fashion-smarthuaweigt__text h2
+        font-size: 35px
+        margin-bottom: 15px
+    #smarthuaweigt .sleep-smarthuaweigt__bg
+        min-height: 762px
+    #smarthuaweigt .auto-smarthuaweigt
+        padding-bottom: 0
+    #smarthuaweigt .designed-smarthuaweigt__text
+        padding-top: 50px
+
+@media screen and (max-width: 535px)
+    #smarthuaweigt .designed-smarthuaweigt__inner
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 40px 20px
+        &_2
+            width: auto
+    #smarthuaweigt .clockface-smarthuaweigt__oclock
+        width: 50%
+
+@media screen and (max-width: 479.98px)
+    #smarthuaweigt .clockface-smarthuaweigt__bg
+        padding-top: 0px
+    // #smarthuaweigt .music-smarthuaweigt__wrapper
+    //     gap: 30px
+    #smarthuaweigt .auto-smarthuaweigt__row
+        margin-bottom: 30px
+    #smarthuaweigt .auto-smarthuaweigt__box
+        border-radius: 15px
+        padding: 20px
+    #smarthuaweigt .auto-smarthuaweigt__bg
+        padding: 40px 20px
+    #smarthuaweigt .auto-smarthuaweigt__media img
+        width: auto
+    #smarthuaweigt .auto-smarthuaweigt__box
+        width: auto
+    // #smarthuaweigt .sleep-smarthuaweigt__text
+    //     width: auto
+    #smarthuaweigt .sleep-smarthuaweigt__bg
+        min-height: 653px
+    #smarthuaweigt .sleep-smarthuaweigt__image img
+        width: 75%
+    #smarthuaweigt .cando-smarthuaweigt__row
+        margin-bottom: 20px
+    #smarthuaweigt .uniq-smarthuaweigt__item
+        min-height: 300px
+    #smarthuaweigt .designed-smarthuaweigt__title h4
+        margin-bottom: 30px
+    #smarthuaweigt .designed-smarthuaweigt__text
+        padding: 50px 20px 0
+    #smarthuaweigt .small-smarthuaweigt__row
+        width: auto
+        padding: 30px 15px 30px
+        gap: 10px
+    #smarthuaweigt .swiper-button-next, #smarthuaweigt .swiper-button-prev
+        width: 30px
+        height: 30px
+    #smarthuaweigt .heart-smarthuaweigt__text
+        padding: 50px 20px
+    #smarthuaweigt .heart-smarthuaweigt__title h2
+        margin-bottom: 30px
+    #smarthuaweigt .health-smarthuaweigt__text
+        width: auto
+        padding-right: 20px
+
+@media screen and (max-width: 390px)
+    #smarthuaweigt .sleep-smarthuaweigt__items_2::after
+        height: 60%
+
+@media screen and (max-width: 370px)
+    #smarthuaweigt .sleep-smarthuaweigt__bg
+        min-height: 547px
+
+// @media (max-width: 812px) and (orientation: landscape)
