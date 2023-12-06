@@ -1,0 +1,1024 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1800
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #maincontent a
+//     color: inherit
+//     text-decoration: none
+
+#maincontent
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#maincontent
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    max-width: 1920px
+    //background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+
+#maincontent img:hover
+    opacity: 1
+
+// #maincontent .maincontent__container
+//     max-width: 1300px
+//     margin: 0 auto
+//     padding: 0 15px
+
+//========================================================================================================================================================
+#maincontent
+    h2,h3,h4,p,span
+        color: #ffffff
+
+#maincontent .header-maincontent
+    &__bg
+        background-color: #0d0e0e
+        padding-top: 96px
+        //padding-left: 140px
+        @include adaptiv-value("padding-left", 140, 15, 1)
+        padding-bottom: 96px
+        padding-right: 0
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 6%
+        left: 7%
+        img
+            width: 30%
+    &__row
+        padding-top: 100px
+        display: flex
+        align-items: center
+        gap: 40px
+        position: relative
+        z-index: 2
+    &__snoska
+        position: absolute
+        z-index: 5
+        top: 20%
+        //right: 36%
+        right: 35%
+        left: 45%
+        background-color: #262727c6
+        width: 333px
+        padding: 25px 10px 25px 20px
+        border-radius: 15px 0 0 15px
+        p
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.25
+            color: #ffffff
+    &__item
+        flex: 0 1 50%
+    &__text
+        h2
+            @include adaptiv-value("font-size", 64, 30, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+            color: #ffffff
+        span
+            @include adaptiv-value("font-size", 105, 30, 1)
+            line-height: 1.2
+            font-weight: 300
+            color: #ffffff
+            display: block
+        p
+            padding-top: 80px
+            @include adaptiv-value("font-size", 30, 16, 1)
+            line-height: 1.25
+            color: #ffffff
+    &__image
+        flex: 0 1 50%
+        img
+            margin-left: auto
+
+#maincontent .technology-maincontent
+    &__bg
+        background-color: #0d0e0e
+        @include adaptiv-value("padding-left", 140, 10, 1)
+        padding-top: 160px
+        //padding-bottom: 160px
+        //@include adaptiv-value("padding-bottom", 160, 20, 1)
+        //padding-right: 90px
+        @include adaptiv-value("padding-right", 90, 10, 1)
+        position: relative
+        z-index: 2
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     z-index: 3
+        //     top: 0
+        //     left: 0
+        //     background: url('https://cdn.comfy.ua/media/x/img3/2666847/img6.png') 0 0/cover no-repeat
+        //     width: 100%
+        //     height: 100%
+    &__inner
+        display: flex
+        justify-content: space-between
+        gap: 40px
+    &__title
+        flex: 0 1 60%
+        h2
+            @include adaptiv-value("font-size", 60, 20, 1)
+            line-height: 1.2
+            text-transform: uppercase
+    &__items
+        flex: 0 1 40%
+        display: flex
+        align-items: center
+        gap: 40px
+        background-color: #ffffff
+        padding: 30px 50px
+        border-radius: 80px
+    &__number
+        p
+            @include adaptiv-value("font-size", 90, 20, 1)
+            line-height: 1.2
+            font-weight: bold
+            color: #ff0000
+    &__text
+        p
+            @include adaptiv-value("font-size", 26, 16, 1)
+            line-height: 1.2
+            color: #000000
+    &__row
+        display: flex
+        align-items: center
+    &__list
+        flex: 0 1 45%
+    &__list-item
+        padding-left: 70px
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img7.png') 0 0/cover no-repeat
+            width: 35px
+            height: 33px
+        &::after
+            content: ''
+            position: absolute
+            z-index: 5
+            top: 15px
+            height: 1px
+            background-color: #ffffff
+        &:nth-child(1)
+            &::after
+                right: -400px
+                width: 100%
+        &:nth-child(2)
+            &::after
+                right: -280px
+                width: 80%
+        &:nth-child(3)
+            &::after
+                right: -190px
+                width: 65%
+        &:nth-child(4)
+            &::after
+                right: -200px
+                width: 82%
+        &:not(:last-child)
+            margin-bottom: 30px
+        h4
+            @include adaptiv-value("font-size", 24, 18, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 18, 16, 1)
+            line-height: 1.2
+    &__image
+        //flex: 0 0 55%
+        flex: 0 0 929px
+        height: 875px
+        position: relative
+        z-index: 1
+        img
+            position: absolute
+            z-index: 3
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+#maincontent .complect-maincontent
+    &__bg
+        background-color: #0d0e0e
+        //padding-top: 20px
+        @include adaptiv-value("padding-top", 130, 20, 1)
+        @include adaptiv-value("padding-bottom", 130, 20, 1)
+        @include adaptiv-value("padding-left", 160, 20, 1)
+        @include adaptiv-value("padding-right", 160, 20, 1)
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 100%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img6.png') 0 0/cover no-repeat
+    &__inner
+        display: flex
+        align-items: center
+        gap: 40px
+        margin-bottom: 100px
+    &__item
+        flex: 0 1 1041px
+    &__item-text
+        p
+            @include adaptiv-value("font-size", 40, 18, 1)
+            line-height: 1.2
+            &:not(:last-child)
+                margin-bottom: 60px
+    &__item-image
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr))
+        gap: 40px
+        // justify-content: space-between
+        // align-items: stretch
+    &__col
+    &__media
+    &__image
+        img
+            margin: 0 auto
+    &__items
+        display: flex
+        align-items: center
+        gap: 40px
+        margin-top: -5px
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: 5
+            bottom: 2px
+            right: 0
+            width: 90%
+            border-bottom: 1px solid rgba(255, 255, 255, 0.48)
+    &__icon
+        flex: 0 0 130px
+        position: relative
+        z-index: 10
+    &__title
+        h4
+            @include adaptiv-value("font-size", 32, 16, 1)
+            line-height: 1.2
+    &__text
+        padding-top: 30px
+        width: 90%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 28, 16, 1)
+            line-height: 1.2
+            text-align: center
+
+#maincontent .spec-maincontent
+    &__bg
+        background-color: #0d0e0e
+        //padding-top: 20px
+        @include adaptiv-value("padding-top", 130, 20, 1)
+        @include adaptiv-value("padding-bottom", 130, 20, 1)
+        @include adaptiv-value("padding-left", 160, 20, 1)
+        @include adaptiv-value("padding-right", 120, 20, 1)
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 50%
+            left: 15%
+            transform: translate(0%, -50%)
+            width: 100%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png') 0 0 no-repeat
+    &__media
+        position: relative
+        z-index: 2
+        display: flex
+    &__line
+        position: absolute
+        z-index: 5
+        &_1
+            top: 4%
+            left: 24%
+            right: 60%
+        &_2
+            top: 23%
+            left: 24%
+            right: 60%
+        &_3
+            top: 52%
+            left: 26%
+            right: 60%
+        &_4
+            top: 4%
+            right: 30%
+            left: 58%
+        &_5
+            top: 30%
+            right: 30%
+            left: 58%
+        &_6
+            top: 60%
+            right: 30%
+            left: 58%
+    &__item
+        width: 90%
+        &:not(:last-child)
+            margin-bottom: 50px
+        h4
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            margin-bottom: 10px
+        p
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+    &__col
+        flex: 0 1 calc(100% / 3)
+        // display: flex
+        // flex-direction: column
+        // justify-content: space-between
+    &__image
+        // flex: 0 1 calc(100% / 3)
+
+#maincontent .comfort-maincontent
+    &__bg
+        background-color: #0d0e0e
+        @include adaptiv-value("padding-top", 130, 20, 1)
+        @include adaptiv-value("padding-bottom", 130, 20, 1)
+        @include adaptiv-value("padding-left", 50, 20, 1)
+        @include adaptiv-value("padding-right", 120, 20, 1)
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 100%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png') 0 0 no-repeat
+    &__row
+        display: flex
+        align-items: center
+        gap: 40px
+    &__media
+        flex: 0 1 50%
+    &__image
+        img
+            margin: 0 auto
+    &__item
+        flex: 0 1 50%
+    &__text
+        h2
+            @include adaptiv-value("font-size", 45, 18, 1)
+            line-height: 1.2
+            text-transform: uppercase
+            margin-bottom: 80px
+        p
+            @include adaptiv-value("font-size", 35, 16, 1)
+            line-height: 1.2
+
+#maincontent .trainy-maincontent
+    &__bg
+        background-color: #0d0e0e
+        @include adaptiv-value("padding-top", 130, 20, 1)
+        @include adaptiv-value("padding-bottom", 130, 20, 1)
+        @include adaptiv-value("padding-left", 100, 20, 1)
+        //@include adaptiv-value("padding-right", 120, 20, 1)
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            //transform: translate(-50%, -50%)
+            width: 60%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png') center/cover no-repeat
+    &__row
+        display: flex
+        align-items: center
+        position: relative
+        z-index: 2
+    &__item
+        flex: 0 1 50%
+    &__text
+        width: 80%
+        h2
+            @include adaptiv-value("font-size", 45, 18, 1)
+            line-height: 1.2
+            text-transform: uppercase
+            margin-bottom: 50px
+        p
+            @include adaptiv-value("font-size", 35, 16, 1)
+            line-height: 1.2
+    &__items
+        //width: 26%
+        width: 475px
+        position: absolute
+        z-index: 5
+        top: 0
+        //right: 30%
+        left: 45%
+    &__col
+        padding: 20px 30px
+        display: flex
+        align-items: center
+        gap: 40px
+        background-color: #ffffff50
+        border-radius: 20px
+        &:not(:last-child)
+            margin-bottom: 15px
+    &__icon
+        flex: 0 0 70px
+    &__texts
+        p
+            @include adaptiv-value("font-size", 25, 12, 1)
+            line-height: 1.2
+    &__image
+        flex: 0 1 50%
+
+#maincontent .touch-maincontent
+    &__bg
+        background-color: #0d0e0e
+        @include adaptiv-value("padding-top", 130, 20, 1)
+        @include adaptiv-value("padding-bottom", 130, 20, 1)
+        padding-left: 50px
+        padding-right: 50px
+        position: relative
+        z-index: 2
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            //transform: translate(-50%, -50%)
+            width: 60%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png') center/cover no-repeat
+    &__txt-gray
+        position: absolute
+        z-index: -1
+        top: 10%
+        left: 22%
+        background-color: #4e4f4f
+        padding: 30px 20px
+        border-radius: 20px
+        p
+            @include adaptiv-value("font-size", 22, 14, 1)
+            line-height: 1.2
+            span
+                @include adaptiv-value("font-size", 45, 16, 1)
+                line-height: 1
+    &__row
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+    &__item
+        flex: 0 1 60%
+    &__title
+        width: 73%
+        margin-left: auto
+        h2
+            @include adaptiv-value("font-size", 35, 18, 1)
+            line-height: 1.2
+            margin-bottom: 40px
+    &__col
+        position: relative
+        z-index: 2
+        display: flex
+        align-items: center
+        // padding-left: 20px
+        margin-left: 10px
+        border: 1px solid #ffffff88
+        border-radius: 35px
+        // border-top: 1px solid #ffffff88
+        // border-bottom: 1px solid #ffffff88
+        // border-right: 1px solid #ffffff88
+        gap: 40px
+        padding-right: 50px
+        &:not(:last-child)
+            margin-bottom: 20px
+        &::after
+            content: ''
+            position: absolute
+            z-index: 5
+            top: 50%
+            right: -30px
+            transform: translateY(-50%)
+            background: url('https://cdn.comfy.ua/media/x/img3/2666847/img35.png') center/cover no-repeat
+            width: 58px
+            height: 58px
+    &__media
+        position: relative
+        z-index: 2
+        flex: 0 0 240px
+    &__icon
+        // img
+        //     width: 215px
+    &__icons
+        position: absolute
+        z-index: 5
+        top: 0
+        left: -20px
+    &__col-inner
+        display: flex
+        align-items: center
+        gap: 20px
+    &__col-title
+        flex: 0 1 35%
+        h2
+            @include adaptiv-value("font-size", 35, 16, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+        span
+            @include adaptiv-value("font-size", 24, 15, 1)
+            line-height: 1.2
+            text-transform: uppercase
+    &__col-txt
+        flex: 0 1 65%
+        h4
+            @include adaptiv-value("font-size", 24, 16, 1)
+            line-height: 1.2
+            margin-bottom: 5px
+        p
+            @include adaptiv-value("font-size", 23, 15, 1)
+            line-height: 1.2
+    // &__item-image
+        // flex: 0 1 40%
+    &__image
+        flex: 0 1 40%
+        // position: relative
+        // z-index: 2
+        // img
+        //     position: absolute
+        //     z-index: 5
+        //     top: 0
+        //     left: 0
+        //     width: 100%
+        //     height: 100%
+        //     object-fit: cover
+
+#maincontent .snoska-maincontent
+    padding: 15px
+    p
+        font-size: 15px
+        line-height: 1.2
+        color: #000
+        &:not(:last-child)
+            margin-bottom: 10px
+//===========MEDIA=============================================================================================================================================
+
+// @media screen and (max-width: 1840px)
+//     #maincontent .spec-maincontent__line_4
+//         img
+//             width: clamp(132px, 11vw, 201px)
+
+@media screen and (max-width: 1580px)
+    #maincontent .header-maincontent__snoska
+        right: 0
+        left: auto
+        //top: 12%
+        top: calc(100px + 2%)
+        // left: 59%
+        // width: auto
+    #maincontent .technology-maincontent__image
+        flex: 0 0 819px
+        height: 765px
+
+@media screen and (max-width: 1550px)
+    #maincontent .spec-maincontent__line_4
+        right: 27%
+    #maincontent .spec-maincontent__line_5
+        right: 27%
+        top: 28%
+    #maincontent .spec-maincontent__line_6
+        top: 55%
+        right: 28%
+    #maincontent .spec-maincontent__item
+        width: auto
+
+@media screen and (max-width: 1472px)
+    #maincontent .technology-maincontent__image
+        flex: 0 0 716px
+        height: 820px
+
+@media screen and (max-width: 1427px)
+    #maincontent .spec-maincontent__bg
+        padding-left: 40px
+        padding-right: 40px
+
+@media screen and (max-width: 1372px)
+    #maincontent .technology-maincontent__image
+        flex: 0 0 606px
+        height: 776px
+    #maincontent .technology-maincontent__items
+        padding: 30px 15px
+        border-radius: 50px
+
+@media screen and (max-width: 1341px)
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 105px
+    #maincontent .complect-maincontent__items
+        gap: 20px
+    // #maincontent .complect-maincontent__row
+    //     grid-template-columns: repeat(auto-fit, minmax(343px, 1fr))
+
+@media screen and (max-width: 1275px)
+    #maincontent .touch-maincontent__media
+        flex: 0 0 165px
+    #maincontent .touch-maincontent__col
+        gap: 20px
+
+@media screen and (max-width: 1227px)
+    #maincontent .trainy-maincontent__bg::after
+        display: none
+    #maincontent .spec-maincontent__item:not(:last-child)
+        margin-bottom: 32px
+    #maincontent .trainy-maincontent__items
+        width: auto
+        top: 50%
+        transform: translateY(-50%)
+        left: 5%
+        right: 42%
+        // // top: 50%
+        // position: unset
+        // margin: 0 auto
+        // padding: 20px 20px
+    #maincontent .trainy-maincontent__row
+        flex-direction: column
+        align-items: stretch
+        // gap: 40px
+    #maincontent .trainy-maincontent__image
+        img
+            margin-left: auto
+    #maincontent .trainy-maincontent__text
+        margin: 0 auto
+        padding: 0 20px
+        h2,p
+            text-align: center
+    #maincontent .trainy-maincontent__bg
+        padding-left: 0
+        padding-bottom: 0
+    #maincontent .trainy-maincontent__text h2
+        margin-bottom: 20px
+
+@media screen and (max-width: 1206px)
+    #maincontent .technology-maincontent__bg
+        padding-bottom: 0
+    // #maincontent .trainy-maincontent__items
+    //     width: 400px
+    #maincontent .technology-maincontent__row
+        flex-direction: column
+    #maincontent .technology-maincontent__image
+        flex: 0 1 auto
+        height: auto
+        img
+            position: unset
+    #maincontent .technology-maincontent__inner
+        margin-bottom: 50px
+    #maincontent .technology-maincontent__list-item::after
+        display: none
+    #maincontent .technology-maincontent__items
+        gap: 15px
+        padding: 20px 15px
+    #maincontent .technology-maincontent__text p
+        font-size: 16px
+    #maincontent .spec-maincontent__line
+        display: none
+    #maincontent .spec-maincontent__media
+        flex-direction: column
+        align-items: center
+        gap: 20px
+    #maincontent .spec-maincontent__item
+        width: 80%
+        margin: 0 auto
+        h4,p
+            text-align: center
+    #maincontent .header-maincontent__snoska
+        top: 20%
+
+@media screen and (max-width: 1150px)
+    #maincontent .touch-maincontent__media
+        flex: 0 0 150px
+    #maincontent .touch-maincontent__col-title h2
+        font-size: 20px
+    #maincontent .touch-maincontent__col-txt h4
+        font-size: 16px
+    #maincontent .touch-maincontent__col-txt p
+        font-size: 16px
+
+@media screen and (max-width: 1103px)
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 86px
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .header-maincontent__text p
+        padding-top: 30px
+    // #maincontent .header-maincontent__snoska
+    //     top: 20%
+    #maincontent .technology-maincontent__inner
+        flex-direction: column
+        gap: 20px
+    #maincontent .technology-maincontent__bg
+        padding-top: 60px
+    #maincontent .technology-maincontent__title h2
+        text-align: center
+    #maincontent .technology-maincontent__items
+        width: 60%
+        margin: 0 auto
+
+@media screen and (max-width: 991.98px)
+    #maincontent .touch-maincontent__bg::after
+        display: none
+    #maincontent .spec-maincontent__item h4
+        font-size: 20px
+    #maincontent .trainy-maincontent__text
+        width: auto
+    #maincontent .touch-maincontent__media
+        flex: 0 0 160px
+    #maincontent .touch-maincontent__txt-gray
+        position: unset
+        padding: 15px
+        max-width: 400px
+        margin: 0 auto 20px
+        p
+            text-align: center
+    #maincontent .touch-maincontent__title
+        width: auto
+        h2
+            text-align: center
+    #maincontent .touch-maincontent__item
+        width: 80%
+        margin: 0 auto
+    #maincontent .touch-maincontent__bg
+        padding: 20px 20px 10px
+    #maincontent .touch-maincontent__row
+        flex-direction: column
+        gap: 40px
+    #maincontent .comfort-maincontent__bg
+        padding: 40px 20px
+    #maincontent .comfort-maincontent__text
+        h2,p
+            text-align: center
+    #maincontent .comfort-maincontent__text h2
+        margin-bottom: 20px
+    #maincontent .comfort-maincontent__row
+        flex-direction: column-reverse
+    #maincontent .spec-maincontent__bg
+        padding-left: 20px
+        padding-right: 20px
+    #maincontent .spec-maincontent__item
+        width: auto
+    #maincontent .complect-maincontent__item-text p:not(:last-child)
+        margin-bottom: 30px
+    #maincontent .complect-maincontent__row
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    #maincontent .complect-maincontent__bg
+        padding: 20px 20px
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 130px
+    #maincontent .technology-maincontent__bg
+        padding: 40px 20px 10px
+    #maincontent .header-maincontent__row
+        flex-direction: column
+    #maincontent .header-maincontent__snoska
+        top: 0
+    #maincontent .header-maincontent__bg
+        padding: 40px 20px
+    #maincontent .header-maincontent__snoska
+        position: unset
+        border-radius: 15px
+        padding: 20px
+        p
+            text-align: center
+        // top: 50%
+        // transform: translateY(-50%)
+        // left: 50%
+        //border-radius: 15px
+    #maincontent .header-maincontent__text
+        width: 90%
+        margin: 0 auto
+        h2,span,p
+            text-align: center
+    #maincontent .header-maincontent__logo
+        top: 3%
+        left: 3%
+
+@media screen and (max-width: 767.98px)
+    #maincontent .trainy-maincontent__items
+        position: unset
+        padding: 20px
+        transform: translateY(0)
+    #maincontent .touch-maincontent__col
+        padding-right: 12px
+    #maincontent .touch-maincontent__col::after
+        right: -16px
+        width: 28px
+        height: 28px
+    #maincontent .touch-maincontent__icons
+        img
+            width: 60px
+    #maincontent .touch-maincontent__item
+        width: auto
+    #maincontent .touch-maincontent__txt-gray
+        max-width: 300px
+    #maincontent .header-maincontent__row
+        gap: 20px
+        padding-top: 50px
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 100px
+    #maincontent .complect-maincontent__inner
+        flex-direction: column
+        margin-bottom: 50px
+    #maincontent .complect-maincontent__item
+        flex: 0 1 auto
+
+@media screen and (max-width: 680px)
+    #maincontent .complect-maincontent__row
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 65px
+
+@media screen and (max-width: 600px)
+    #maincontent .touch-maincontent__col-txt h4,
+    #maincontent .touch-maincontent__col-txt p
+        font-size: 14px
+    #maincontent .touch-maincontent__media
+        flex: 0 0 140px
+    #maincontent .touch-maincontent__col-title h2,
+    #maincontent .touch-maincontent__col-title span
+        font-size: 18px
+
+@media screen and (max-width: 522px)
+    #maincontent .technology-maincontent__items
+        width: auto
+        border-radius: 30px
+        padding: 20px 15px
+
+@media screen and (max-width: 479.98px)
+    #maincontent .touch-maincontent__col-txt h4,
+    #maincontent .touch-maincontent__col-txt p
+        font-size: 10px
+    #maincontent .touch-maincontent__col-title h2,
+    #maincontent .touch-maincontent__col-title span
+        font-size: 15px
+    #maincontent .touch-maincontent__icons img
+        width: 40px
+    #maincontent .touch-maincontent__media
+        flex: 0 0 100px
+    #maincontent .touch-maincontent__txt-gray p
+        font-size: 20px
+    #maincontent .header-maincontent__row
+        padding-top: 30px
+    #maincontent .header-maincontent__text
+        width: auto
+    #maincontent .technology-maincontent__list-item
+        padding-left: 45px
+    #maincontent .complect-maincontent__icon
+        flex: 0 0 100px
+    #maincontent .complect-maincontent__text
+        padding-top: 15px
+    #maincontent .spec-maincontent__item h4,
+    #maincontent .spec-maincontent__item p
+        text-align: left
+    #maincontent .trainy-maincontent__text
+        width: auto
+    #maincontent .trainy-maincontent__texts p
+        font-size: 16px
+    #maincontent .trainy-maincontent__items
+        width: auto
+    #maincontent .trainy-maincontent__col
+        gap: 20px
+    #maincontent .touch-maincontent__title h2
+        margin-bottom: 20px
+
+@media screen and (max-width: 400px)
+    #maincontent .header-maincontent__snoska
+        width: auto
+    #maincontent .touch-maincontent__col::after
+        display: none
+    #maincontent .touch-maincontent__col-inner
+        flex-direction: column
+        gap: 15px
+    #maincontent .touch-maincontent__col-title h2,
+    #maincontent .touch-maincontent__col-title span
+        text-align: center
+        display: block
+        font-size: 18px
+    #maincontent .touch-maincontent__col-txt h4,
+    #maincontent .touch-maincontent__col-txt p
+        text-align: center
+        display: block
+        font-size: 16px
+    #maincontent .touch-maincontent__col
+        flex-direction: column
+        gap: 15px
+        margin-left: 0
+        padding: 0 10px 10px
+        // border: none
+    #maincontent .touch-maincontent__icons img
+        width: 60%
+    #maincontent .touch-maincontent__icon img
+        width: 215px
+// @media (max-width: 812px) and (orientation: landscape)

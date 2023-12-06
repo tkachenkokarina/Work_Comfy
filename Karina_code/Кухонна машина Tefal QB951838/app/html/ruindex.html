@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,#maincontent ol,#maincontent li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none;font-weight:bold}#maincontent{height:auto;margin:0 auto;overflow:hidden;max-width:1920px;font-family:"Roboto",sans-serif}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent h2,#maincontent h3,#maincontent h4,#maincontent p,#maincontent span{color:#fff}#maincontent .header-maincontent__bg{background-color:#0d0e0e;padding-top:96px;padding-left:140px;padding-bottom:96px;padding-right:0;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .header-maincontent__bg{padding-left:-webkit-calc(15px + 125*(100vw - 320px)/1480);padding-left:calc(15px + 125*(100vw - 320px)/1480)}}#maincontent .header-maincontent__logo{position:absolute;z-index:5;top:6%;left:7%}#maincontent .header-maincontent__logo img{width:30%}#maincontent .header-maincontent__row{padding-top:100px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;position:relative;z-index:2}#maincontent .header-maincontent__snoska{position:absolute;z-index:5;top:20%;right:35%;left:45%;background-color:rgba(38,39,39,.7764705882);width:333px;padding:25px 10px 25px 20px;-webkit-border-radius:15px 0 0 15px;border-radius:15px 0 0 15px}#maincontent .header-maincontent__snoska p{font-size:30px;line-height:1.25;color:#fff}@media(max-width: 1800px){#maincontent .header-maincontent__snoska p{font-size:-webkit-calc(16px + 14*(100vw - 320px)/1480);font-size:calc(16px + 14*(100vw - 320px)/1480)}}#maincontent .header-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .header-maincontent__text h2{font-size:64px;line-height:1.2;margin-bottom:10px;color:#fff}@media(max-width: 1800px){#maincontent .header-maincontent__text h2{font-size:-webkit-calc(30px + 34*(100vw - 320px)/1480);font-size:calc(30px + 34*(100vw - 320px)/1480)}}#maincontent .header-maincontent__text span{font-size:105px;line-height:1.2;font-weight:300;color:#fff;display:block}@media(max-width: 1800px){#maincontent .header-maincontent__text span{font-size:-webkit-calc(30px + 75*(100vw - 320px)/1480);font-size:calc(30px + 75*(100vw - 320px)/1480)}}#maincontent .header-maincontent__text p{padding-top:80px;font-size:30px;line-height:1.25;color:#fff}@media(max-width: 1800px){#maincontent .header-maincontent__text p{font-size:-webkit-calc(16px + 14*(100vw - 320px)/1480);font-size:calc(16px + 14*(100vw - 320px)/1480)}}#maincontent .header-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .header-maincontent__image img{margin-left:auto}#maincontent .technology-maincontent__bg{background-color:#0d0e0e;padding-left:140px;padding-top:160px;padding-right:90px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .technology-maincontent__bg{padding-left:-webkit-calc(10px + 130*(100vw - 320px)/1480);padding-left:calc(10px + 130*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .technology-maincontent__bg{padding-right:-webkit-calc(10px + 80*(100vw - 320px)/1480);padding-right:calc(10px + 80*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:40px}#maincontent .technology-maincontent__title{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .technology-maincontent__title h2{font-size:60px;line-height:1.2;text-transform:uppercase}@media(max-width: 1800px){#maincontent .technology-maincontent__title h2{font-size:-webkit-calc(20px + 40*(100vw - 320px)/1480);font-size:calc(20px + 40*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__items{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;background-color:#fff;padding:30px 50px;-webkit-border-radius:80px;border-radius:80px}#maincontent .technology-maincontent__number p{font-size:90px;line-height:1.2;font-weight:bold;color:red}@media(max-width: 1800px){#maincontent .technology-maincontent__number p{font-size:-webkit-calc(20px + 70*(100vw - 320px)/1480);font-size:calc(20px + 70*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__text p{font-size:26px;line-height:1.2;color:#000}@media(max-width: 1800px){#maincontent .technology-maincontent__text p{font-size:-webkit-calc(16px + 10*(100vw - 320px)/1480);font-size:calc(16px + 10*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .technology-maincontent__list{-webkit-box-flex:0;-webkit-flex:0 1 45%;-moz-box-flex:0;-ms-flex:0 1 45%;flex:0 1 45%}#maincontent .technology-maincontent__list-item{padding-left:70px;position:relative;z-index:2}#maincontent .technology-maincontent__list-item::before{content:"";position:absolute;z-index:5;top:0;left:0;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img7.png") 0 0/cover no-repeat;width:35px;height:33px}#maincontent .technology-maincontent__list-item::after{content:"";position:absolute;z-index:5;top:15px;height:1px;background-color:#fff}#maincontent .technology-maincontent__list-item:nth-child(1)::after{right:-400px;width:100%}#maincontent .technology-maincontent__list-item:nth-child(2)::after{right:-280px;width:80%}#maincontent .technology-maincontent__list-item:nth-child(3)::after{right:-190px;width:65%}#maincontent .technology-maincontent__list-item:nth-child(4)::after{right:-200px;width:82%}#maincontent .technology-maincontent__list-item:not(:last-child){margin-bottom:30px}#maincontent .technology-maincontent__list-item h4{font-size:24px;line-height:1.2;margin-bottom:10px}@media(max-width: 1800px){#maincontent .technology-maincontent__list-item h4{font-size:-webkit-calc(18px + 6*(100vw - 320px)/1480);font-size:calc(18px + 6*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__list-item p{font-size:18px;line-height:1.2}@media(max-width: 1800px){#maincontent .technology-maincontent__list-item p{font-size:-webkit-calc(16px + 2*(100vw - 320px)/1480);font-size:calc(16px + 2*(100vw - 320px)/1480)}}#maincontent .technology-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 0 929px;-moz-box-flex:0;-ms-flex:0 0 929px;flex:0 0 929px;height:875px;position:relative;z-index:1}#maincontent .technology-maincontent__image img{position:absolute;z-index:3;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#maincontent .complect-maincontent__bg{background-color:#0d0e0e;padding-top:130px;padding-bottom:130px;padding-left:160px;padding-right:160px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .complect-maincontent__bg{padding-top:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-top:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .complect-maincontent__bg{padding-bottom:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-bottom:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .complect-maincontent__bg{padding-left:-webkit-calc(20px + 140*(100vw - 320px)/1480);padding-left:calc(20px + 140*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .complect-maincontent__bg{padding-right:-webkit-calc(20px + 140*(100vw - 320px)/1480);padding-right:calc(20px + 140*(100vw - 320px)/1480)}}#maincontent .complect-maincontent__bg::after{content:"";position:absolute;z-index:-1;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);width:100%;height:100%;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img6.png") 0 0/cover no-repeat}#maincontent .complect-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;margin-bottom:100px}#maincontent .complect-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 1041px;-moz-box-flex:0;-ms-flex:0 1 1041px;flex:0 1 1041px}#maincontent .complect-maincontent__item-text p{font-size:40px;line-height:1.2}@media(max-width: 1800px){#maincontent .complect-maincontent__item-text p{font-size:-webkit-calc(18px + 22*(100vw - 320px)/1480);font-size:calc(18px + 22*(100vw - 320px)/1480)}}#maincontent .complect-maincontent__item-text p:not(:last-child){margin-bottom:60px}#maincontent .complect-maincontent__row{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:40px}#maincontent .complect-maincontent__image img{margin:0 auto}#maincontent .complect-maincontent__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;margin-top:-5px;position:relative;z-index:2}#maincontent .complect-maincontent__items::after{content:"";position:absolute;z-index:5;bottom:2px;right:0;width:90%;border-bottom:1px solid rgba(255,255,255,.48)}#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 130px;-moz-box-flex:0;-ms-flex:0 0 130px;flex:0 0 130px;position:relative;z-index:10}#maincontent .complect-maincontent__title h4{font-size:32px;line-height:1.2}@media(max-width: 1800px){#maincontent .complect-maincontent__title h4{font-size:-webkit-calc(16px + 16*(100vw - 320px)/1480);font-size:calc(16px + 16*(100vw - 320px)/1480)}}#maincontent .complect-maincontent__text{padding-top:30px;width:90%;margin:0 auto}#maincontent .complect-maincontent__text p{font-size:28px;line-height:1.2;text-align:center}@media(max-width: 1800px){#maincontent .complect-maincontent__text p{font-size:-webkit-calc(16px + 12*(100vw - 320px)/1480);font-size:calc(16px + 12*(100vw - 320px)/1480)}}#maincontent .spec-maincontent__bg{background-color:#0d0e0e;padding-top:130px;padding-bottom:130px;padding-left:160px;padding-right:120px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .spec-maincontent__bg{padding-top:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-top:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .spec-maincontent__bg{padding-bottom:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-bottom:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .spec-maincontent__bg{padding-left:-webkit-calc(20px + 140*(100vw - 320px)/1480);padding-left:calc(20px + 140*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .spec-maincontent__bg{padding-right:-webkit-calc(20px + 100*(100vw - 320px)/1480);padding-right:calc(20px + 100*(100vw - 320px)/1480)}}#maincontent .spec-maincontent__bg::after{content:"";position:absolute;z-index:-1;top:50%;left:15%;-webkit-transform:translate(0%, -50%);-ms-transform:translate(0%, -50%);-o-transform:translate(0%, -50%);transform:translate(0%, -50%);width:100%;height:100%;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png") 0 0 no-repeat}#maincontent .spec-maincontent__media{position:relative;z-index:2;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#maincontent .spec-maincontent__line{position:absolute;z-index:5}#maincontent .spec-maincontent__line_1{top:4%;left:24%;right:60%}#maincontent .spec-maincontent__line_2{top:23%;left:24%;right:60%}#maincontent .spec-maincontent__line_3{top:52%;left:26%;right:60%}#maincontent .spec-maincontent__line_4{top:4%;right:30%;left:58%}#maincontent .spec-maincontent__line_5{top:30%;right:30%;left:58%}#maincontent .spec-maincontent__line_6{top:60%;right:30%;left:58%}#maincontent .spec-maincontent__item{width:90%}#maincontent .spec-maincontent__item:not(:last-child){margin-bottom:50px}#maincontent .spec-maincontent__item h4{font-size:24px;line-height:1.2;margin-bottom:10px}@media(max-width: 1800px){#maincontent .spec-maincontent__item h4{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1480);font-size:calc(16px + 8*(100vw - 320px)/1480)}}#maincontent .spec-maincontent__item p{font-size:24px;line-height:1.2}@media(max-width: 1800px){#maincontent .spec-maincontent__item p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1480);font-size:calc(16px + 8*(100vw - 320px)/1480)}}#maincontent .spec-maincontent__col{-webkit-box-flex:0;-webkit-flex:0 1 33.3333333333%;-moz-box-flex:0;-ms-flex:0 1 33.3333333333%;flex:0 1 33.3333333333%}#maincontent .comfort-maincontent__bg{background-color:#0d0e0e;padding-top:130px;padding-bottom:130px;padding-left:50px;padding-right:120px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .comfort-maincontent__bg{padding-top:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-top:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .comfort-maincontent__bg{padding-bottom:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-bottom:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .comfort-maincontent__bg{padding-left:-webkit-calc(20px + 30*(100vw - 320px)/1480);padding-left:calc(20px + 30*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .comfort-maincontent__bg{padding-right:-webkit-calc(20px + 100*(100vw - 320px)/1480);padding-right:calc(20px + 100*(100vw - 320px)/1480)}}#maincontent .comfort-maincontent__bg::after{content:"";position:absolute;z-index:-1;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);width:100%;height:100%;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png") 0 0 no-repeat}#maincontent .comfort-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px}#maincontent .comfort-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .comfort-maincontent__image img{margin:0 auto}#maincontent .comfort-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .comfort-maincontent__text h2{font-size:45px;line-height:1.2;text-transform:uppercase;margin-bottom:80px}@media(max-width: 1800px){#maincontent .comfort-maincontent__text h2{font-size:-webkit-calc(18px + 27*(100vw - 320px)/1480);font-size:calc(18px + 27*(100vw - 320px)/1480)}}#maincontent .comfort-maincontent__text p{font-size:35px;line-height:1.2}@media(max-width: 1800px){#maincontent .comfort-maincontent__text p{font-size:-webkit-calc(16px + 19*(100vw - 320px)/1480);font-size:calc(16px + 19*(100vw - 320px)/1480)}}#maincontent .trainy-maincontent__bg{background-color:#0d0e0e;padding-top:130px;padding-bottom:130px;padding-left:100px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .trainy-maincontent__bg{padding-top:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-top:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .trainy-maincontent__bg{padding-bottom:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-bottom:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .trainy-maincontent__bg{padding-left:-webkit-calc(20px + 80*(100vw - 320px)/1480);padding-left:calc(20px + 80*(100vw - 320px)/1480)}}#maincontent .trainy-maincontent__bg::after{content:"";position:absolute;z-index:-1;top:0;left:0;width:60%;height:100%;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png") center/cover no-repeat}#maincontent .trainy-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;position:relative;z-index:2}#maincontent .trainy-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .trainy-maincontent__text{width:80%}#maincontent .trainy-maincontent__text h2{font-size:45px;line-height:1.2;text-transform:uppercase;margin-bottom:50px}@media(max-width: 1800px){#maincontent .trainy-maincontent__text h2{font-size:-webkit-calc(18px + 27*(100vw - 320px)/1480);font-size:calc(18px + 27*(100vw - 320px)/1480)}}#maincontent .trainy-maincontent__text p{font-size:35px;line-height:1.2}@media(max-width: 1800px){#maincontent .trainy-maincontent__text p{font-size:-webkit-calc(16px + 19*(100vw - 320px)/1480);font-size:calc(16px + 19*(100vw - 320px)/1480)}}#maincontent .trainy-maincontent__items{width:475px;position:absolute;z-index:5;top:0;left:45%}#maincontent .trainy-maincontent__col{padding:20px 30px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;background-color:rgba(255,255,255,.3137254902);-webkit-border-radius:20px;border-radius:20px}#maincontent .trainy-maincontent__col:not(:last-child){margin-bottom:15px}#maincontent .trainy-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 70px;-moz-box-flex:0;-ms-flex:0 0 70px;flex:0 0 70px}#maincontent .trainy-maincontent__texts p{font-size:25px;line-height:1.2}@media(max-width: 1800px){#maincontent .trainy-maincontent__texts p{font-size:-webkit-calc(12px + 13*(100vw - 320px)/1480);font-size:calc(12px + 13*(100vw - 320px)/1480)}}#maincontent .trainy-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .touch-maincontent__bg{background-color:#0d0e0e;padding-top:130px;padding-bottom:130px;padding-left:50px;padding-right:50px;position:relative;z-index:2}@media(max-width: 1800px){#maincontent .touch-maincontent__bg{padding-top:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-top:calc(20px + 110*(100vw - 320px)/1480)}}@media(max-width: 1800px){#maincontent .touch-maincontent__bg{padding-bottom:-webkit-calc(20px + 110*(100vw - 320px)/1480);padding-bottom:calc(20px + 110*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__bg::after{content:"";position:absolute;z-index:-1;top:0;left:0;width:60%;height:100%;background:url("https://cdn.comfy.ua/media/x/img3/2666847/img15-1.png") center/cover no-repeat}#maincontent .touch-maincontent__txt-gray{position:absolute;z-index:-1;top:10%;left:22%;background-color:#4e4f4f;padding:30px 20px;-webkit-border-radius:20px;border-radius:20px}#maincontent .touch-maincontent__txt-gray p{font-size:22px;line-height:1.2}@media(max-width: 1800px){#maincontent .touch-maincontent__txt-gray p{font-size:-webkit-calc(14px + 8*(100vw - 320px)/1480);font-size:calc(14px + 8*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__txt-gray p span{font-size:45px;line-height:1}@media(max-width: 1800px){#maincontent .touch-maincontent__txt-gray p span{font-size:-webkit-calc(16px + 29*(100vw - 320px)/1480);font-size:calc(16px + 29*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .touch-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#maincontent .touch-maincontent__title{width:73%;margin-left:auto}#maincontent .touch-maincontent__title h2{font-size:35px;line-height:1.2;margin-bottom:40px}@media(max-width: 1800px){#maincontent .touch-maincontent__title h2{font-size:-webkit-calc(18px + 17*(100vw - 320px)/1480);font-size:calc(18px + 17*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__col{position:relative;z-index:2;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-left:10px;border:1px solid rgba(255,255,255,.5333333333);-webkit-border-radius:35px;border-radius:35px;gap:40px;padding-right:50px}#maincontent .touch-maincontent__col:not(:last-child){margin-bottom:20px}#maincontent .touch-maincontent__col::after{content:"";position:absolute;z-index:5;top:50%;right:-30px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);background:url("https://cdn.comfy.ua/media/x/img3/2666847/img35.png") center/cover no-repeat;width:58px;height:58px}#maincontent .touch-maincontent__media{position:relative;z-index:2;-webkit-box-flex:0;-webkit-flex:0 0 240px;-moz-box-flex:0;-ms-flex:0 0 240px;flex:0 0 240px}#maincontent .touch-maincontent__icons{position:absolute;z-index:5;top:0;left:-20px}#maincontent .touch-maincontent__col-inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}#maincontent .touch-maincontent__col-title{-webkit-box-flex:0;-webkit-flex:0 1 35%;-moz-box-flex:0;-ms-flex:0 1 35%;flex:0 1 35%}#maincontent .touch-maincontent__col-title h2{font-size:35px;line-height:1.2;margin-bottom:5px}@media(max-width: 1800px){#maincontent .touch-maincontent__col-title h2{font-size:-webkit-calc(16px + 19*(100vw - 320px)/1480);font-size:calc(16px + 19*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__col-title span{font-size:24px;line-height:1.2;text-transform:uppercase}@media(max-width: 1800px){#maincontent .touch-maincontent__col-title span{font-size:-webkit-calc(15px + 9*(100vw - 320px)/1480);font-size:calc(15px + 9*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__col-txt{-webkit-box-flex:0;-webkit-flex:0 1 65%;-moz-box-flex:0;-ms-flex:0 1 65%;flex:0 1 65%}#maincontent .touch-maincontent__col-txt h4{font-size:24px;line-height:1.2;margin-bottom:5px}@media(max-width: 1800px){#maincontent .touch-maincontent__col-txt h4{font-size:-webkit-calc(16px + 8*(100vw - 320px)/1480);font-size:calc(16px + 8*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__col-txt p{font-size:23px;line-height:1.2}@media(max-width: 1800px){#maincontent .touch-maincontent__col-txt p{font-size:-webkit-calc(15px + 8*(100vw - 320px)/1480);font-size:calc(15px + 8*(100vw - 320px)/1480)}}#maincontent .touch-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#maincontent .snoska-maincontent{padding:15px}#maincontent .snoska-maincontent p{font-size:15px;line-height:1.2;color:#000}#maincontent .snoska-maincontent p:not(:last-child){margin-bottom:10px}@media screen and (max-width: 1580px){#maincontent .header-maincontent__snoska{right:0;left:auto;top:-webkit-calc(100px + 2%);top:calc(100px + 2%)}#maincontent .technology-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 0 819px;-moz-box-flex:0;-ms-flex:0 0 819px;flex:0 0 819px;height:765px}}@media screen and (max-width: 1550px){#maincontent .spec-maincontent__line_4{right:27%}#maincontent .spec-maincontent__line_5{right:27%;top:28%}#maincontent .spec-maincontent__line_6{top:55%;right:28%}#maincontent .spec-maincontent__item{width:auto}}@media screen and (max-width: 1472px){#maincontent .technology-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 0 716px;-moz-box-flex:0;-ms-flex:0 0 716px;flex:0 0 716px;height:820px}}@media screen and (max-width: 1427px){#maincontent .spec-maincontent__bg{padding-left:40px;padding-right:40px}}@media screen and (max-width: 1372px){#maincontent .technology-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 0 606px;-moz-box-flex:0;-ms-flex:0 0 606px;flex:0 0 606px;height:776px}#maincontent .technology-maincontent__items{padding:30px 15px;-webkit-border-radius:50px;border-radius:50px}}@media screen and (max-width: 1341px){#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 105px;-moz-box-flex:0;-ms-flex:0 0 105px;flex:0 0 105px}#maincontent .complect-maincontent__items{gap:20px}}@media screen and (max-width: 1275px){#maincontent .touch-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 0 165px;-moz-box-flex:0;-ms-flex:0 0 165px;flex:0 0 165px}#maincontent .touch-maincontent__col{gap:20px}}@media screen and (max-width: 1227px){#maincontent .trainy-maincontent__bg::after{display:none}#maincontent .spec-maincontent__item:not(:last-child){margin-bottom:32px}#maincontent .trainy-maincontent__items{width:auto;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:5%;right:42%}#maincontent .trainy-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}#maincontent .trainy-maincontent__image img{margin-left:auto}#maincontent .trainy-maincontent__text{margin:0 auto;padding:0 20px}#maincontent .trainy-maincontent__text h2,#maincontent .trainy-maincontent__text p{text-align:center}#maincontent .trainy-maincontent__bg{padding-left:0;padding-bottom:0}#maincontent .trainy-maincontent__text h2{margin-bottom:20px}}@media screen and (max-width: 1206px){#maincontent .technology-maincontent__bg{padding-bottom:0}#maincontent .technology-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .technology-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 auto;-moz-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;height:auto}#maincontent .technology-maincontent__image img{position:unset}#maincontent .technology-maincontent__inner{margin-bottom:50px}#maincontent .technology-maincontent__list-item::after{display:none}#maincontent .technology-maincontent__items{gap:15px;padding:20px 15px}#maincontent .technology-maincontent__text p{font-size:16px}#maincontent .spec-maincontent__line{display:none}#maincontent .spec-maincontent__media{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}#maincontent .spec-maincontent__item{width:80%;margin:0 auto}#maincontent .spec-maincontent__item h4,#maincontent .spec-maincontent__item p{text-align:center}#maincontent .header-maincontent__snoska{top:20%}}@media screen and (max-width: 1150px){#maincontent .touch-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 0 150px;-moz-box-flex:0;-ms-flex:0 0 150px;flex:0 0 150px}#maincontent .touch-maincontent__col-title h2{font-size:20px}#maincontent .touch-maincontent__col-txt h4{font-size:16px}#maincontent .touch-maincontent__col-txt p{font-size:16px}}@media screen and (max-width: 1103px){#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 86px;-moz-box-flex:0;-ms-flex:0 0 86px;flex:0 0 86px}}@media screen and (max-width: 1024.98px){#maincontent .header-maincontent__text p{padding-top:30px}#maincontent .technology-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#maincontent .technology-maincontent__bg{padding-top:60px}#maincontent .technology-maincontent__title h2{text-align:center}#maincontent .technology-maincontent__items{width:60%;margin:0 auto}}@media screen and (max-width: 991.98px){#maincontent .touch-maincontent__bg::after{display:none}#maincontent .spec-maincontent__item h4{font-size:20px}#maincontent .trainy-maincontent__text{width:auto}#maincontent .touch-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 0 160px;-moz-box-flex:0;-ms-flex:0 0 160px;flex:0 0 160px}#maincontent .touch-maincontent__txt-gray{position:unset;padding:15px;max-width:400px;margin:0 auto 20px}#maincontent .touch-maincontent__txt-gray p{text-align:center}#maincontent .touch-maincontent__title{width:auto}#maincontent .touch-maincontent__title h2{text-align:center}#maincontent .touch-maincontent__item{width:80%;margin:0 auto}#maincontent .touch-maincontent__bg{padding:20px 20px 10px}#maincontent .touch-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:40px}#maincontent .comfort-maincontent__bg{padding:40px 20px}#maincontent .comfort-maincontent__text h2,#maincontent .comfort-maincontent__text p{text-align:center}#maincontent .comfort-maincontent__text h2{margin-bottom:20px}#maincontent .comfort-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .spec-maincontent__bg{padding-left:20px;padding-right:20px}#maincontent .spec-maincontent__item{width:auto}#maincontent .complect-maincontent__item-text p:not(:last-child){margin-bottom:30px}#maincontent .complect-maincontent__row{grid-template-columns:repeat(auto-fit, minmax(300px, 1fr))}#maincontent .complect-maincontent__bg{padding:20px 20px}#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 130px;-moz-box-flex:0;-ms-flex:0 0 130px;flex:0 0 130px}#maincontent .technology-maincontent__bg{padding:40px 20px 10px}#maincontent .header-maincontent__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .header-maincontent__snoska{top:0}#maincontent .header-maincontent__bg{padding:40px 20px}#maincontent .header-maincontent__snoska{position:unset;-webkit-border-radius:15px;border-radius:15px;padding:20px}#maincontent .header-maincontent__snoska p{text-align:center}#maincontent .header-maincontent__text{width:90%;margin:0 auto}#maincontent .header-maincontent__text h2,#maincontent .header-maincontent__text span,#maincontent .header-maincontent__text p{text-align:center}#maincontent .header-maincontent__logo{top:3%;left:3%}}@media screen and (max-width: 767.98px){#maincontent .trainy-maincontent__items{position:unset;padding:20px;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .touch-maincontent__col{padding-right:12px}#maincontent .touch-maincontent__col::after{right:-16px;width:28px;height:28px}#maincontent .touch-maincontent__icons img{width:60px}#maincontent .touch-maincontent__item{width:auto}#maincontent .touch-maincontent__txt-gray{max-width:300px}#maincontent .header-maincontent__row{gap:20px;padding-top:50px}#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#maincontent .complect-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:50px}#maincontent .complect-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 auto;-moz-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto}}@media screen and (max-width: 680px){#maincontent .complect-maincontent__row{grid-template-columns:repeat(auto-fit, minmax(200px, 1fr))}#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 65px;-moz-box-flex:0;-ms-flex:0 0 65px;flex:0 0 65px}}@media screen and (max-width: 600px){#maincontent .touch-maincontent__col-txt h4,#maincontent .touch-maincontent__col-txt p{font-size:14px}#maincontent .touch-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 0 140px;-moz-box-flex:0;-ms-flex:0 0 140px;flex:0 0 140px}#maincontent .touch-maincontent__col-title h2,#maincontent .touch-maincontent__col-title span{font-size:18px}}@media screen and (max-width: 522px){#maincontent .technology-maincontent__items{width:auto;-webkit-border-radius:30px;border-radius:30px;padding:20px 15px}}@media screen and (max-width: 479.98px){#maincontent .touch-maincontent__col-txt h4,#maincontent .touch-maincontent__col-txt p{font-size:10px}#maincontent .touch-maincontent__col-title h2,#maincontent .touch-maincontent__col-title span{font-size:15px}#maincontent .touch-maincontent__icons img{width:40px}#maincontent .touch-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#maincontent .touch-maincontent__txt-gray p{font-size:20px}#maincontent .header-maincontent__row{padding-top:30px}#maincontent .header-maincontent__text{width:auto}#maincontent .technology-maincontent__list-item{padding-left:45px}#maincontent .complect-maincontent__icon{-webkit-box-flex:0;-webkit-flex:0 0 100px;-moz-box-flex:0;-ms-flex:0 0 100px;flex:0 0 100px}#maincontent .complect-maincontent__text{padding-top:15px}#maincontent .spec-maincontent__item h4,#maincontent .spec-maincontent__item p{text-align:left}#maincontent .trainy-maincontent__text{width:auto}#maincontent .trainy-maincontent__texts p{font-size:16px}#maincontent .trainy-maincontent__items{width:auto}#maincontent .trainy-maincontent__col{gap:20px}#maincontent .touch-maincontent__title h2{margin-bottom:20px}}@media screen and (max-width: 400px){#maincontent .header-maincontent__snoska{width:auto}#maincontent .touch-maincontent__col::after{display:none}#maincontent .touch-maincontent__col-inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px}#maincontent .touch-maincontent__col-title h2,#maincontent .touch-maincontent__col-title span{text-align:center;display:block;font-size:18px}#maincontent .touch-maincontent__col-txt h4,#maincontent .touch-maincontent__col-txt p{text-align:center;display:block;font-size:16px}#maincontent .touch-maincontent__col{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:15px;margin-left:0;padding:0 10px 10px}#maincontent .touch-maincontent__icons img{width:60%}#maincontent .touch-maincontent__icon img{width:215px}}
+    </style>
+
+    <div id="maincontent">
+        <!-- <div class="maincontent__container"></div> -->
+        <div class="maincontent__header header-maincontent">
+            <div class="header-maincontent__bg">
+                <div class="header-maincontent__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img1.png" alt="">
+                </div>
+                <div class="header-maincontent__row">
+                    <div class="header-maincontent__snoska">
+                        <p>Твой персональный тренер по выпечке!</p>
+                    </div>
+                    <div class="header-maincontent__item">
+                        <div class="header-maincontent__text">
+                            <h2>Кухонная машина</h2>
+                            <span>I Coach Touch</span>
+                            <p>это ключ к большому количеству разнообразных рецептов независимо от того, новичок вы или
+                                профессионал
+                                <br>21 автоматическая программа с полным руководством
+                                <br>Более 100 пошаговых рецептов на 4.3" сенсорном
+                                экране и в приложении Tefal
+                                <br>Мощный двигатель 1200Вт
+                                <br>Удобные весы, которые подключаются к кухонной машине.
+                                <br>И все это – в стильном дизайне из нержавеющей стали.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-maincontent__image">
+                        <picture>
+                            <source media="(min-width: 991.98px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2666847/img2.png">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2666847/img2-1.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img2.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__box box-maincontent">
+            <div class="box-maincontent__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img3.jpg" alt="">
+            </div>
+            <div class="box-maincontent__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img4.jpg" alt="">
+            </div>
+        </div>
+        <div class="maincontent__technology technology-maincontent">
+            <div class="technology-maincontent__bg">
+                <div class="technology-maincontent__inner">
+                    <div class="technology-maincontent__title">
+                        <h2>Высокотехнологичный ПРОДУКТ</h2>
+                    </div>
+                    <div class="technology-maincontent__items">
+                        <div class="technology-maincontent__number">
+                            <p>12</p>
+                        </div>
+                        <div class="technology-maincontent__text">
+                            <p>эксклюзивных технологий и премиальная техническая платформа</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="technology-maincontent__row">
+                    <div class="technology-maincontent__list">
+                        <div class="technology-maincontent__list-item">
+                            <h4>Визуальная маркировка</h4>
+                            <p>Цветные разъемы для всех необходимых
+                                аксессуаров – блендера, мясорубки или фуд-процессора. Теперь вы точно ничего не
+                                напутаете.
+                            </p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Тихий и надежный</h4>
+                            <p>Взбивайте белки или замешивайте тесто даже в утренней тиши или когда спят дети, ведь
+                                Tefal I Couch Touch работает действительно очень тихо.</p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Улучшенная эргономика</h4>
+                            <p>Благодаря большому отверстию в чаше, вы в любой момент сможете добавить необходимые
+                                ингредиенты,
+                                не прерывая при этом работу устройства.</p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Долговечность</h4>
+                            <p>Полностью металлический внутренний механизм (вплоть до малейших деталей), обеспечивающий
+                                долговечную и бесперебойную работу кухонной машины.</p>
+                        </div>
+                    </div>
+                    <div class="technology-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__complect complect-maincontent">
+            <div class="complect-maincontent__bg">
+                <div class="complect-maincontent__inner">
+                    <div class="complect-maincontent__item">
+                        <div class="complect-maincontent__item-text">
+                            <p>В комплекте <b>Tefal I Coach Touch</b> есть разнообразные насадки для создания идеального
+                                теста
+                                и крема безупречной структуры.</p>
+                            <p>Достаточно подготовить ингредиенты, выбрать рецепт и необходимый аксессуар, а остальную
+                                работу доверить кухонному помощнику.</p>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__item-image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="complect-maincontent__row">
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img9.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img10.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Гибкий венчик</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>с силиконовыми насадками, которые достают до самого дна чаши</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img11.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img12.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Крюк</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>для замешивания густого теста, что позволит испечь хлеб с идеальной структурой и
+                                    плотностью
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img13.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img14.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Насадка для замешивания</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>поможет приготовить безупречную основу для выпекания тортов и пирожных</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__spec spec-maincontent">
+            <div class="spec-maincontent__bg">
+                <div class="spec-maincontent__media">
+                    <div class="spec-maincontent__line spec-maincontent__line_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img16.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img17.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_3">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img18.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_4">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img19.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_5">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img20.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_6">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img21.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__col">
+                        <div class="spec-maincontent__item">
+                            <h4>Высококачественный корпус</h4>
+                            <p>из полированной нержавеющей стали</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Большая чаша
+                                из нержавеющей стали</h4>
+                            <p>5.5 л чаша – возможность
+                                взбивать до 10 яиц или
+                                1.8 кг теста для хлеба</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Удобная эргономичная ручка</h4>
+                            <p>Позволяет надежно поднять чашу одной рукой, а другой выскрести все ее содержимое. Во
+                                время
+                                работы чаша надежно фиксируется и остается неподвижной, что обеспечивает чистоту и
+                                безопасность использования.</p>
+                        </div>
+                    </div>
+                    <div class="spec-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img15.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__col">
+                        <div class="spec-maincontent__item">
+                            <h4>4.3" сенсорный экран</h4>
+                            <p>Большой сенсорный экран
+                                с множеством рецептов</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Автоматическая регулировка
+                                времени и скорости</h4>
+                            <p>8 скоростей, импульсный режим и минимальная скорость для деликатного замешивания</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Удобная педаль</h4>
+                            <p>Обеспечивает легкий и комфортный доступ к чаше и аксессуарам. Достаточно одного нажатия,
+                                чтобы открыть или закрыть кухонную машину</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__comfort comfort-maincontent">
+            <div class="comfort-maincontent__bg">
+                <div class="comfort-maincontent__row">
+                    <div class="comfort-maincontent__media">
+                        <div class="comfort-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img22.png" alt="">
+                        </div>
+                        <div class="comfort-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img23.png" alt="">
+                        </div>
+                    </div>
+                    <div class="comfort-maincontent__item">
+                        <div class="comfort-maincontent__text">
+                            <h2>ДЛЯ ЕЩЕ БОЛЬШОГО КОМФОРТА,
+                                В КОМПЛЕКТ ВХОДЯТ УМНЫЕ КУХОННЫЕ ВЕСЫ С тЕХНОЛОГИЕЙ BLUETOOTH</h2>
+                            <p>Взвешивайте ингредиенты прямо в чаше или отдельно даже во время замешивания. Этим весам
+                                по силам все.
+                                Вы можете использовать их как при работе с кухонной машиной, так и отдельно, для ваших
+                                ежедневных кулинарных нужд.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__trainy trainy-maincontent">
+            <div class="trainy-maincontent__bg">
+                <div class="trainy-maincontent__row">
+                    <div class="trainy-maincontent__item">
+                        <div class="trainy-maincontent__text">
+                            <h2>Твой персональный тренер по выпечке!</h2>
+                            <p>Используйте готовые рецепты и создавайте кулинарные шедевры даже без опыта благодаря
+                                простым и понятным пошаговым инструкциям.
+                                Полезные опции и аксессуары сделают процесс выпечки комфортным и максимально быстрым вне
+                                зависимости от сложности рецепта и количества ингредиентов.</p>
+                        </div>
+                    </div>
+                    <div class="trainy-maincontent__items">
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img25.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Предложит видео лучших рецептов
+                                    идеальной выпечки</p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img26.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Рассчитает необходимое количество ингредиентов и размер формы для выпечки</p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img27.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Поможет
+                                    контролировать все
+                                    процессы подготовки</p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img28.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Настроит режим замешивания одним
+                                    прикосновением
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainy-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img24-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__touch touch-maincontent">
+            <div class="touch-maincontent__bg">
+                <div class="touch-maincontent__txt-gray">
+                    <p>QB951838 <span>I Coach Touch</span></p>
+                </div>
+                <div class="touch-maincontent__row">
+                    <div class="touch-maincontent__item">
+                        <div class="touch-maincontent__title">
+                            <h2>Дополнительно приобретайте наборы аксессуаров для любых кулинарных задач</h2>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img30.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Mix & drink box</h2>
+                                    <span>xg650038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>Блендер</h4>
+                                    <p>для смешивания, замешивания, нарезки, измельчения, измельчения льда</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img31.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Meat & pasta box</h2>
+                                    <span>xf651038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>Мясорубка</h4>
+                                    <p>Для приготовления фарша, пасты, сосисок, насадка для томатов, насадка для
+                                        формовки
+                                        печенья.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img32.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Fresh box</h2>
+                                    <span>xf652038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>Фуд-процессор</h4>
+                                    <p>Для шинковки, нарезки, измельчения, смешивания,
+                                        выжимания цитрусовых</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="touch-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img29.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__snoska snoska-maincontent">
+            <p>Независимо от того, новичок вы или опытный профессионал, <strong>Tefal i-Coach Touch QB951838</strong> —
+                это ключ к разнообразию приготовления любых рецептов и совершенных результатов разных блюд и выпечки изо
+                дня в день, идеальный помощник на кухне, оснащенный передовыми технологиями, большим тачскрином и
+                подключением с bluetooth.</p>
+            <p><strong>Новый уровень приготолвения идеальной выпечки</strong> 21 автоматическая программа с полными
+                инструкциями на большом удобном тачскрине, пошаговые рецепты, советы и рекомендации, этапы проверки и
+                видеоуроки помогут вам без труда готовить домашнюю выпечку.</p>
+            <p><strong>Тихая работа</strong> Откройте для себя самую тихую кухонную машину Tefal, позволяющую спокойно
+                работать на кухне без раздражающего шума.</p>
+            <p><strong>Мощность 1200 Вт </strong>Мощный мотор 1200 Вт справится с любыми задачами: от замески
+                ингредиентов для торта до тяжелого теста для хлеба.</p>
+            <p><strong>10 скоростей</strong> 10 скоростей подходят для любого приготовления, включая очень медленную
+                скорость включения для деликатного смешивания и импульсную функцию для быстрого увеличения мощности.</p>
+            <p><strong>Чаша 5.5 л </strong>Большая чаша из нержавеющей стали объемом 5,5 л идеально подходит для
+                приготовления больших порций — например, до 2,7 кг теста для тортов, а удобная ручка облегчает
+                управление и разливку.</p>
+            <p><strong>Удобно добавлять ингредиенты</strong> Большое отверстие в крышке позволяет легко добавлять
+                ингредиенты даже во время работы прибора — без необходимости открывать чашу.</p>
+            <p><strong>Качественный набор для выпечки</strong> Откройте для себя множество аксессуаров, которые помогут
+                сделать выпечку проще простого: запатентованный венчик Flex для оптимальных результатов взбивания,
+                венчик для однородного результата; крюк для теста идеальной формы для идеального замеса.</p>
+            <p><strong>Оптимальное смешивание</strong> Технология планетарного смешивание обеспечивает доступ ко всем
+                сторонам чаши и смешивание всех ингредиентов — для идеального и равномерного смешивания.</p>
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <!-- <div class="maincontent__container"></div> -->
+        <div class="maincontent__header header-maincontent">
+            <div class="header-maincontent__bg">
+                <div class="header-maincontent__logo">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img1.png" alt="">
+                </div>
+                <div class="header-maincontent__row">
+                    <div class="header-maincontent__snoska">
+                        <p>Твій персональний тренер з випічки!</p>
+                    </div>
+                    <div class="header-maincontent__item">
+                        <div class="header-maincontent__text">
+                            <h2>Кухонна машина</h2>
+                            <span>I Coach Touch</span>
+                            <p>це ключ до великої кількості різноманітних рецептів незалежно від того, початківець ви чи
+                                досвідчений професіонал.
+                                <br>21 автоматична програма з повним керівництвом
+                                <br>Більше ніж 100 покрокових рецептів через 4.3" сенсорний екран та додаток Tefal
+                                <br>Потужний двигун 1200Вт
+                                <br>Зручні ваги, що під’єднуються до кухонної машини
+                                <br>І все це - у стильному дизайні з нержавіючої сталі.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-maincontent__image">
+                        <picture>
+                            <source media="(min-width: 991.98px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2666847/img2.png">
+                            <source media="(min-width: 320px)"
+                                srcset="https://cdn.comfy.ua/media/x/img3/2666847/img2-1.png">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img2.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__box box-maincontent">
+            <div class="box-maincontent__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img3ua.jpg" alt="">
+            </div>
+            <div class="box-maincontent__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img4ua.jpg" alt="">
+            </div>
+        </div>
+        <div class="maincontent__technology technology-maincontent">
+            <div class="technology-maincontent__bg">
+                <div class="technology-maincontent__inner">
+                    <div class="technology-maincontent__title">
+                        <h2>Високотехнологічний ПРОДУКТ</h2>
+                    </div>
+                    <div class="technology-maincontent__items">
+                        <div class="technology-maincontent__number">
+                            <p>12</p>
+                        </div>
+                        <div class="technology-maincontent__text">
+                            <p>ексклюзивних технологій
+                                та преміальна технічна платформа</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="technology-maincontent__row">
+                    <div class="technology-maincontent__list">
+                        <div class="technology-maincontent__list-item">
+                            <h4>Візуальне маркування</h4>
+                            <p>Кольорові роз’єми для всіх необхідних
+                                аксесуарів – блендера, м'ясорубки чи фуд-процесора. Тепер ви точно нічого не сплутаєте.
+                            </p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Тихий та надійний</h4>
+                            <p>Збивайте білки чи замішуйте тісто навіть у вранішній тиші чи коли спить малеча, адже
+                                Tefal I Couch Touch працює дійсно надзвичайно тихо.</p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Покращена
+                                ергономіка</h4>
+                            <p>Завдяки великому отвору у чаші, ви в будь-який момент зможете додати необхідні
+                                інгредієнти, не перериваючи при цьому роботу приладу.</p>
+                        </div>
+                        <div class="technology-maincontent__list-item">
+                            <h4>Довговічність</h4>
+                            <p>Повністю металевий внутрішній механізм (аж до найменших деталей), що забезпечує
+                                довговічну та безперебійну роботу кухонної машини.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="technology-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__complect complect-maincontent">
+            <div class="complect-maincontent__bg">
+                <div class="complect-maincontent__inner">
+                    <div class="complect-maincontent__item">
+                        <div class="complect-maincontent__item-text">
+                            <p>У комплекті <b>Tefal I Coach Touch</b> є різноманітні насадки для створення тіста
+                                ідеального
+                                замісу
+                                та бездоганної структури крему.</p>
+                            <p>Достатньо підготувати інгредієнти, вибрати рецепт та необхідний аксесуар, а всю іншу
+                                роботу довірити кухонному помічнику.</p>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__item-image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img8.png" alt="">
+                    </div>
+                </div>
+                <div class="complect-maincontent__row">
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img9.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img10.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Гнучкий вінчик</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>із силіконовими насадками, що дістають до самого дна чаші</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img11.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img12.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Гак</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>для замішування густого тіста, дозволить спекти хліб з ідеальною структурою та
+                                    щільністю
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complect-maincontent__col">
+                        <div class="complect-maincontent__media">
+                            <div class="complect-maincontent__image">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img13.png" alt="">
+                            </div>
+                            <div class="complect-maincontent__items">
+                                <div class="complect-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img14.png" alt="">
+                                </div>
+                                <div class="complect-maincontent__title">
+                                    <h4>Насадка для замішування</h4>
+                                </div>
+                            </div>
+                            <div class="complect-maincontent__text">
+                                <p>допоможе приготувати бездоганну основу для випікання тортів та тістечок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__spec spec-maincontent">
+            <div class="spec-maincontent__bg">
+                <div class="spec-maincontent__media">
+                    <div class="spec-maincontent__line spec-maincontent__line_1">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img16.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_2">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img17.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_3">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img18.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_4">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img19.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_5">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img20.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__line spec-maincontent__line_6">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img21.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__col">
+                        <div class="spec-maincontent__item">
+                            <h4>Високоякісний корпус</h4>
+                            <p>з полірованої нержавіючої сталі</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Велика чаша з нержавіючої сталі</h4>
+                            <p>5.5 л чаша - можливість збивати до 10 яєць або 1.8 кг тіста для хліба</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Зручна ергономічна ручка</h4>
+                            <p>Дозволяє надійно підняти чашу однією рукою, а іншою вишкребти весь її вміст. Під час
+                                роботи чаша надійно фіксується і залишається нерухомою, що забезпечує чистоту та безпеку
+                                використання.</p>
+                        </div>
+                    </div>
+                    <div class="spec-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img15.png" alt="">
+                    </div>
+                    <div class="spec-maincontent__col">
+                        <div class="spec-maincontent__item">
+                            <h4>4.3" сенсорний екран</h4>
+                            <p>Великий сенсорний екран
+                                із безліччю рецептів</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Автоматичне регулювання
+                                часу та швидкості</h4>
+                            <p>8 швидкостей плюс імпульс
+                                та мінімальна швидкість
+                                для делікатного замішування</p>
+                        </div>
+                        <div class="spec-maincontent__item">
+                            <h4>Зручна педаль</h4>
+                            <p>Забезпечує легкий
+                                та комфортний доступ до чаші та аксесуарів. Достатньо одного натискання, щоб відкрити чи
+                                закрити кухонну машину
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__comfort comfort-maincontent">
+            <div class="comfort-maincontent__bg">
+                <div class="comfort-maincontent__row">
+                    <div class="comfort-maincontent__media">
+                        <div class="comfort-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img22.png" alt="">
+                        </div>
+                        <div class="comfort-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2666847/img23.png" alt="">
+                        </div>
+                    </div>
+                    <div class="comfort-maincontent__item">
+                        <div class="comfort-maincontent__text">
+                            <h2>Для ще більшого комфорту,
+                                у комплект входять розумні кухонні ваги
+                                з технологією Bluetooth
+                            </h2>
+                            <p>Зважуйте інгредієнти прямо в чаші
+                                або окремо навіть під час замішування.
+                                Цим вагам під силу все.
+                                Ви можете використовувати їх як під час роботи з кухонною машиною, так і окремо, для
+                                ваших щоденних кулінарних потреб.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__trainy trainy-maincontent">
+            <div class="trainy-maincontent__bg">
+                <div class="trainy-maincontent__row">
+                    <div class="trainy-maincontent__item">
+                        <div class="trainy-maincontent__text">
+                            <h2>Твій персональний тренер з випічки!</h2>
+                            <p>Використовуйте готові рецепти та створюйте кулінарні шедеври навіть без досвіду завдяки
+                                простим та зрозумілим покроковим інструкціям.
+                                Корисні опції та аксесуари зроблять процес випікання комфортним та максимально швидким,
+                                незалежно від складності рецепта
+                                та кількості інгредієнтів.</p>
+                        </div>
+                    </div>
+                    <div class="trainy-maincontent__items">
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img25.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Запропонує відео найкращих рецептів ідеальної випічки</p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img26.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Розрахує необхідну кількість інгредієнтів і розмір форми
+                                    для випікання
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img27.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Допоможе контролювати всі процеси підготовки</p>
+                            </div>
+                        </div>
+                        <div class="trainy-maincontent__col">
+                            <div class="trainy-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/2666847/img28.png" alt="">
+                            </div>
+                            <div class="trainy-maincontent__texts">
+                                <p>Налаштує режим замішування одним дотиком</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainy-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img24-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__touch touch-maincontent">
+            <div class="touch-maincontent__bg">
+                <div class="touch-maincontent__txt-gray">
+                    <p>QB951838 <span>I Coach Touch</span></p>
+                </div>
+                <div class="touch-maincontent__row">
+                    <div class="touch-maincontent__item">
+                        <div class="touch-maincontent__title">
+                            <h2>Додатково придбайте набори аксесуарів для будь-яких кулінарних задач</h2>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img30.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Mix & drink box</h2>
+                                    <span>xg650038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>Блендер</h4>
+                                    <p>для змішування, замішування, нарізки, подрібнення, подрібнення льоду</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img31.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Meat & pasta box</h2>
+                                    <span>xf651038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>М’ясорубка</h4>
+                                    <p>Для виготовлення фаршу, пасти, сосисок, насадка для томатів, насадка для
+                                        формування печива.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="touch-maincontent__col">
+                            <div class="touch-maincontent__media">
+                                <div class="touch-maincontent__icon">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img32.png" alt="">
+                                </div>
+                                <div class="touch-maincontent__icons">
+                                    <img src="https://cdn.comfy.ua/media/x/img3/2666847/img33.png" alt="">
+                                </div>
+                            </div>
+                            <div class="touch-maincontent__col-inner">
+                                <div class="touch-maincontent__col-title">
+                                    <h2>Fresh box</h2>
+                                    <span>xf652038</span>
+                                </div>
+                                <div class="touch-maincontent__col-txt">
+                                    <h4>Фуд-процесор</h4>
+                                    <p>Для шаткування, нарізки, подрібнення, змішування, тиску цитрусових</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="touch-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2666847/img29.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent__snoska snoska-maincontent">
+            <p>Незалежно від того, новачок ви або досвідчений професіонал, <strong>Tefal i-Coach Touch QB951838</strong>
+                - це ключ до різноманітності приготування будь-яких рецептів і досконалих результатів різних страв та
+                випічки з дня на день, ідеальний помічник на кухні, оснащений передовими технологіями, великим
+                тамскрином bluetooth.</p>
+            <p><strong>Новий рівень приготування ідеальної випічки</strong> 21 автоматична програма з повними
+                інструкціями на великому зручному тачскрині, покрокові рецепти, поради та рекомендації, етапи перевірки
+                та відеоуроки допоможуть вам легко готувати домашню випічку.</p>
+            <p><strong>Тиха робота</strong> Відкрийте для себе тиху кухонну машину Tefal, що дозволяє спокійно працювати
+                на кухні без дратівливого шуму.</p>
+            <p><strong>Потужність 1200 Вт</strong> Потужний мотор 1200 Вт подолає будь-які завдання: від заміски
+                інгредієнтів для торта до важкого тіста для хліба.</p>
+            <p><strong>10 швидкостей</strong> 10 швидкостей підходять для будь-якого приготування, включаючи дуже
+                повільну швидкість включення для делікатного змішування та імпульсну функцію швидкого збільшення
+                потужності.</p>
+            <p><strong>Чаша 5.5 л</strong> Велика чаша з нержавіючої сталі об'ємом 5,5 л ідеально підходить для
+                приготування великих порцій - наприклад, до 2,7 кг тіста для тортів, а зручна ручка полегшує керування
+                та розливання.</p>
+            <p><strong>Зручно додавати інгредієнти</strong> Великий отвір у кришці дозволяє легко додавати інгредієнти
+                навіть під час роботи приладу без необхідності відкривати чашу.</p>
+            <p><strong>Якісний набір для випічки</strong> Відкрийте для себе безліч аксесуарів, які допоможуть зробити
+                випічку простішим: запатентований вінчик Flex для оптимальних результатів збивання, вінчик для
+                однорідного результату; гак для тіста ідеальної форми для ідеального замісу.</p>
+            <p><strong>Оптимальне змішування</strong> Технологія планетарного змішування забезпечує доступ до всіх боків
+                чаші та змішування всіх інгредієнтів – для ідеального та рівномірного змішування.</p>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
