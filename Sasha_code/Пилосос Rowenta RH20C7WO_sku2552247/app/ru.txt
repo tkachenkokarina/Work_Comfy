@@ -1,0 +1,259 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1920px;margin:0 auto;padding:0 15px;color:#fff}#maincontent .maincontent__container h2{font-size:76px;line-height:1.2;margin:20px 0px;text-transform:uppercase}#maincontent .maincontent__container h3{font-size:51px;line-height:1.2;margin:20px 0px;text-transform:uppercase}#maincontent .maincontent__container p{font-size:31px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:45px;line-height:1.2;margin-bottom:10px}#maincontent .rowenta__bg{background-color:#0a131b;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg01.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .rowenta__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:120px 165px 70px;position:relative;z-index:5}#maincontent .rowenta__logo:nth-child(1) img{margin:0 auto 50px}#maincontent .rowenta__logo:nth-child(2) img{margin:0 auto 130px}#maincontent .rowenta__content{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .rowenta__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .rowenta__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}#maincontent .rowenta__item-text{width:385px;padding:20px 50px}#maincontent .rowenta__item-text p{font-size:21px;text-align:left}#maincontent .rowenta__item-text p span{font-size:78px}#maincontent .rowenta__item-text_01{border-right:1px solid #414c56;border-bottom:1px solid #414c56}#maincontent .rowenta__item-text_01 p{text-align:right}#maincontent .rowenta__item-text_02{border-left:1px solid #414c56;border-bottom:1px solid #414c56}#maincontent .rowenta__item-text_03{border-right:1px solid #414c56;border-top:1px solid #414c56}#maincontent .rowenta__item-text_03 p{text-align:right}#maincontent .rowenta__item-text_04{border-left:1px solid #414c56;border-top:1px solid #414c56}#maincontent .rowenta__image{position:absolute;z-index:6;left:39%;right:90px}#maincontent .rowenta-textBox__bg{background:#182631}#maincontent .rowenta-textBox__inner{position:relative;z-index:5}#maincontent .rowenta-textBox__text{position:absolute;z-index:6;padding:70px 750px 70px 135px}#maincontent .rowenta-textBox__text-title{max-width:855px;margin-bottom:115px}#maincontent .rowenta-textBox__text-list{max-width:702px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:40px}#maincontent .rowenta-rowBox__bg{background:#091118}#maincontent .rowenta-rowBox__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .rowenta-rowBox__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .rowenta-rowBox__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:99}#maincontent .rowenta-rowBox__text_left{padding:10px 200px 10px 40px}#maincontent .rowenta-rowBox__text_right{padding:10px 40px 10px 200px}#maincontent .rowenta-rowBox__text-header{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .rowenta-rowBox__text-header p{font-size:50px;padding:10px;margin-right:20px}#maincontent .rowenta-rowBox__text-header p span{font-size:162px}#maincontent .rowenta-rowBox__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:99}#maincontent .rowenta-rowBox__image_right img{margin-left:auto}#maincontent .rowBox-accessories__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg03.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;height:100%}#maincontent .rowBox-accessories__inner{padding:215px 0 215px 100px}#maincontent .rowBox-accessories__text p{margin-bottom:40px}#maincontent .rowBox-accessories__text p:last-child{margin-bottom:0}#maincontent .rowBox-accessories__text-header p{margin-bottom:0}#maincontent .rowBox-textShadow__inner{padding:0 180px 40px}#maincontent .rowBox-textShadow__item{padding:10px 20px}#maincontent .rowBox-textShadow__text{position:relative;z-index:6}#maincontent .rowBox-textShadow__text::before{content:"";position:absolute;z-index:-1;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg05.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:542px;height:604px;top:-208px;left:-147px}#maincontent .textBox-aquaAnimal__bg{background:#0d141a}#maincontent .textBox-aquaAnimal__text{left:50%;top:50%;right:140px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);padding:20px 40px}#maincontent .textBox-aquaAnimal__text h2{margin-bottom:120px}#maincontent .rowBox-brush__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg08.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .rowBox-brush__inner{padding:140px 60px 0}#maincontent .rowBox-brush__content{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:5}#maincontent .rowBox-brush__item{position:absolute;z-index:6;max-width:270px}#maincontent .rowBox-brush__item_01{top:0;left:0}#maincontent .rowBox-brush__item_01::before{content:"";position:absolute;z-index:6;border-left:2px solid #acafb1;border-bottom:2px solid #acafb1;width:100px;height:200px;top:90px;left:102px}#maincontent .rowBox-brush__item_02{top:0;right:0}#maincontent .rowBox-brush__item_02::before{content:"";position:absolute;z-index:6;border-left:2px solid #acafb1;border-top:2px solid #acafb1;width:50px;height:130px;top:15px;left:-75px}#maincontent .rowBox-brush__item_03{bottom:135px;left:0}#maincontent .rowBox-brush__item_03::before{content:"";position:absolute;z-index:6;border-left:2px solid #acafb1;border-top:2px solid #acafb1;width:90px;height:175px;top:-190px;left:102px}#maincontent .rowBox-brush__item_04{bottom:135px;right:0;max-width:240px}#maincontent .rowBox-brush__item_04::before{content:"";position:absolute;z-index:6;border-right:2px solid #acafb1;border-top:2px solid #acafb1;width:90px;height:245px;top:-282px;left:8px}#maincontent .rowBox-brush__image{padding-top:100px}#maincontent .rowBox-brush__image img{margin:0 auto}#maincontent .rowBox-imageShadow__inner{padding:50px 225px 0}#maincontent .rowBox-imageShadow__image{position:relative;z-index:5}#maincontent .rowBox-imageShadow__image::before{content:"";position:absolute;z-index:-1;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg13.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:615px;height:729px;top:0;left:-220px}#maincontent .rowBox-imageShadow__image_icon::after{content:"";position:absolute;z-index:7;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/icon01.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;top:-10px;left:-10px;width:193px;height:67px}#maincontent .rowBox-imageShadow__item{position:relative;z-index:99}#maincontent .rowBox-imageShadow__text{padding:10px 40px}#maincontent .rowBox-warranty__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg14.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .rowBox-warranty__inner{padding:45px 20px 45px 160px}#maincontent .rowBox-warranty__image{position:relative;z-index:5}#maincontent .rowBox-warranty__image::before{content:"";position:absolute;z-index:6;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/icon02.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;width:276px;height:276px;top:50%;left:120px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .rowBox-warranty__text h2{margin-bottom:100px}#maincontent .textBox-innovation__bg{background:#0e1821}#maincontent .textBox-innovation__text{width:685px;top:190px;right:135px;padding:10px 20px}#maincontent .rowenta-colBox__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg11.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;height:100%}#maincontent .rowenta-colBox__inner{max-width:1560px;margin:0 auto}#maincontent .rowenta-colBox__items{padding:145px 25px;display:grid;grid-template-columns:repeat(3, 1fr);-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#maincontent .rowenta-colBox__item{max-width:380px;margin:0 auto;padding:10px 20px;position:relative;z-index:4}#maincontent .rowenta-colBox__item-img{margin-bottom:60px}#maincontent .rowenta-colBox__item-img::before{content:"";position:absolute;z-index:-1;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg09.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;top:-70px;left:-33%;bottom:0;width:614px;height:614px}#maincontent .rowBox-animal__inner{-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#maincontent .rowBox-animal__content{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .rowBox-animal__item{padding:10px 40px;max-width:700px;margin:0 auto}#maincontent .rowBox-animal__text{margin-bottom:110px}#maincontent .rowBox-animal__images{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:relative;z-index:4}#maincontent .rowBox-animal__images::before{content:"";position:absolute;z-index:-1;background-image:url("https://cdn.comfy.ua/media/x/img3/2552247/bg12.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover;left:-180px;top:-210px;width:713px;height:534px}@media screen and (max-width: 1820px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 54*(100vw - 320px)/1500);font-size:calc(22px + 54*(100vw - 320px)/1500)}#maincontent .maincontent__container h3{font-size:-webkit-calc(19px + 32*(100vw - 320px)/1500);font-size:calc(19px + 32*(100vw - 320px)/1500)}#maincontent .maincontent__container p{font-size:-webkit-calc(15px + 16*(100vw - 320px)/1500);font-size:calc(15px + 16*(100vw - 320px)/1500)}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(17px + 28*(100vw - 320px)/1500);font-size:calc(17px + 28*(100vw - 320px)/1500)}#maincontent .rowenta__item-text p{font-size:-webkit-calc(11px + 10*(100vw - 320px)/1500);font-size:calc(11px + 10*(100vw - 320px)/1500)}#maincontent .rowenta__item-text p span{font-size:-webkit-calc(24px + 54*(100vw - 320px)/1500);font-size:calc(24px + 54*(100vw - 320px)/1500)}#maincontent .rowenta__image{left:44%;right:0}#maincontent .rowenta-textBox__text{padding-right:-webkit-calc(75px + 675*(100vw - 320px)/1500);padding-right:calc(75px + 675*(100vw - 320px)/1500)}#maincontent .rowenta-textBox__text-title{max-width:800px;margin-bottom:90px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:30px}#maincontent .rowenta-rowBox__text-header p{font-size:-webkit-calc(16px + 34*(100vw - 320px)/1500);font-size:calc(16px + 34*(100vw - 320px)/1500)}#maincontent .rowenta-rowBox__text-header p span{font-size:-webkit-calc(34px + 128*(100vw - 320px)/1500);font-size:calc(34px + 128*(100vw - 320px)/1500)}#maincontent .rowBox-textShadow__text::before{left:-37px}#maincontent .textBox-aquaAnimal__text{padding:20px 40px}#maincontent .rowBox-brush__item_04::before{left:40px}#maincontent .textBox-innovation__text{right:135px;padding:10px 20px}}@media screen and (max-width: 1700px){#maincontent .rowenta-textBox__text{padding-top:45px}#maincontent .rowenta-textBox__text-title{max-width:630px;margin-bottom:0}#maincontent .textBox-aquaAnimal__text{padding:20px 40px}#maincontent .textBox-innovation__text{padding-top:10px;left:50%}#maincontent .rowenta-colBox__item-img::before{width:514px;height:514px;left:-16%}}@media screen and (max-width: 1650px){#maincontent .rowenta-textBox__text{padding-top:35px}#maincontent .rowenta-textBox__text-list{max-width:600px}#maincontent .textBox-aquaAnimal__text h2{margin-bottom:70px}#maincontent .textBox-aquaAnimal__text{padding:20px 40px}#maincontent .rowBox-brush__item_04::before{left:75px;width:60px}#maincontent .textBox-innovation__text{padding-top:10px;width:620px}#maincontent .rowenta-colBox__item-img::before{left:-19%}}@media screen and (max-width: 1550px){#maincontent .rowenta__inner{padding:120px 60px 70px}#maincontent .rowenta__image{left:37%;right:0}#maincontent .rowenta-textBox__text-title{max-width:515px}#maincontent .rowenta-textBox__text{padding-left:90px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:25px}#maincontent .rowenta-rowBox__text_left{padding:10px 150px 10px 40px}#maincontent .rowenta-rowBox__text_right{padding:10px 40px 10px 150px}#maincontent .rowBox-accessories__inner{padding:150px 0 150px 100px}#maincontent .rowBox-textShadow__inner{padding:0 150px 40px}#maincontent .rowBox-textShadow__text::before{left:0}#maincontent .textBox-aquaAnimal__text{padding:20px 40px}#maincontent .rowBox-brush__item_01::before,#maincontent .rowBox-brush__item_03::before{left:50px;width:75px}#maincontent .rowBox-brush__item_04::before{left:95px;width:40px}#maincontent .rowBox-imageShadow__inner{padding:50px 150px 0}#maincontent .rowBox-imageShadow__image::before{left:-120px}#maincontent .rowBox-warranty__inner{padding:45px 20px 45px 150px}#maincontent .rowBox-warranty__image::before{width:220px;height:220px}#maincontent .textBox-innovation__text{top:130px}#maincontent .rowenta-colBox__item-img::before{top:-50px;left:-10%;width:450px;height:450px}}@media screen and (max-width: 1450px){#maincontent .rowenta__inner{padding:110px 150px 70px}#maincontent .rowenta__item-text{padding:20px 35px;width:220px}#maincontent .rowenta-textBox__text{padding-top:20px}#maincontent .rowenta-textBox__text-title{max-width:510px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:20px}#maincontent .textBox-innovation__text{width:500px}}@media screen and (max-width: 1350px){#maincontent .rowenta__inner{padding:90px 130px 70px}#maincontent .rowenta__item-text{padding:20px 25px;width:205px}#maincontent .rowenta-textBox__text{padding-top:20px}#maincontent .rowenta-textBox__text-list{max-width:450px}#maincontent .rowenta-rowBox__text_left{padding:10px 120px 10px 40px}#maincontent .rowenta-rowBox__text_right{padding:10px 40px 10px 120px}#maincontent .textBox-aquaAnimal__text{left:47%}#maincontent .rowBox-brush__item_01{max-width:210px}#maincontent .rowBox-brush__item_01::before,#maincontent .rowBox-brush__item_03::before{width:45px}#maincontent .rowBox-brush__item_02{max-width:210px}#maincontent .rowBox-brush__item_04{max-width:170px}#maincontent .rowBox-brush__item_04::before{left:70px;width:40px}#maincontent .rowBox-warranty__text h2{margin-bottom:50px}#maincontent .rowenta-colBox__item-img::before{display:none}#maincontent .rowBox-animal__text{margin-bottom:80px}#maincontent .rowBox-animal__images::before{width:513px;height:334px;left:-82px;top:-98px}}@media screen and (max-width: 1250px){#maincontent .rowenta__inner{padding:81px 25px 60px 95px}#maincontent .rowenta__item-text{padding:20px 15px;width:195px}#maincontent .rowenta__image{left:32%;right:-55px}#maincontent .rowenta-textBox__text{padding-left:70px;padding-top:10px}#maincontent .rowenta-textBox__text-title{max-width:455px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:17px}#maincontent .rowBox-accessories__inner{padding:120px 0 120px 100px}#maincontent .rowBox-textShadow__inner{padding:0 120px 40px}#maincontent .rowBox-textShadow__text::before{width:446px;height:394px;top:-148px}#maincontent .textBox-aquaAnimal__text{right:70px}#maincontent .textBox-aquaAnimal__text h2{margin-bottom:40px}#maincontent .rowBox-brush__inner{padding:100px 45px 0}#maincontent .rowBox-brush__item_01::before,#maincontent .rowBox-brush__item_03::before{left:20px}#maincontent .rowBox-brush__item_03{max-width:150px}#maincontent .rowBox-brush__item_03::before{top:-235px;height:200px}#maincontent .rowBox-brush__item_04::before{left:98px;width:20px}#maincontent .rowBox-imageShadow__inner{padding:50px 120px 0}#maincontent .rowBox-warranty__inner{padding:40px 20px 40px 120px}#maincontent .rowBox-warranty__image::before{width:200px;height:200px}#maincontent .textBox-innovation__text{width:450px;top:90px;padding-left:20px}#maincontent .rowenta-colBox__items{padding:90px 25px}#maincontent .rowBox-animal__text{margin-bottom:50px}#maincontent .rowBox-animal__images::before{width:313px;left:7px}}@media screen and (max-width: 1100px){#maincontent .rowenta-textBox__text{padding-top:0;padding-left:45px}#maincontent .rowenta-rowBox__text_left{padding:10px 90px 10px 40px}#maincontent .rowenta-rowBox__text_right{padding:10px 40px 10px 90px}#maincontent .rowBox-accessories__inner{padding:90px 0 90px 90px}#maincontent .rowBox-textShadow__inner{padding:0 90px 40px}#maincontent .textBox-aquaAnimal__text{right:50px}#maincontent .rowBox-brush__inner{padding:80px 35px 0}#maincontent .rowBox-brush__item_01::before,#maincontent .rowBox-brush__item_03::before{width:20px}#maincontent .rowBox-brush__item_02{max-width:135px}#maincontent .rowBox-brush__item_04{max-width:110px}#maincontent .rowBox-brush__item_04::before{left:43px}#maincontent .rowBox-imageShadow__inner{padding:50px 90px 0}#maincontent .rowBox-imageShadow__image::before{width:482px;height:549px;left:-85px}#maincontent .rowBox-imageShadow__text{padding:10px 20px}#maincontent .rowBox-warranty__inner{padding:40px 10px 40px 90px}#maincontent .rowBox-warranty__text{padding:10px 20px}#maincontent .rowBox-warranty__text h2{margin-bottom:35px}#maincontent .rowBox-warranty__image::before{width:180px;height:180px}#maincontent .textBox-innovation__text{width:410px;top:70px}}@media screen and (max-width: 1024.98px){#maincontent .rowenta__inner{padding:65px 25px 40px 75px}#maincontent .rowenta__item-text{width:165px}#maincontent .rowenta__image{left:30%;right:-85px}#maincontent .rowenta-textBox__text-title{max-width:450px}#maincontent .rowenta-rowBox__text_left{padding:10px 70px 10px 40px}#maincontent .rowenta-rowBox__text_right{padding:10px 40px 10px 70px}#maincontent .rowBox-accessories__inner{padding:70px 0 70px 40px}#maincontent .rowBox-textShadow__inner{padding:0 70px 40px}#maincontent .textBox-aquaAnimal__text{padding:20px}#maincontent .rowBox-warranty__image::before{left:80px;width:130px;height:130px}#maincontent .textBox-innovation__text{width:350px;top:50px}#maincontent .rowenta-colBox__items{padding:45px 25px}#maincontent .rowenta-colBox__item-img{margin-bottom:30px}}@media screen and (max-width: 991.98px){#maincontent .rowenta-textBox__text{padding-top:15px}#maincontent .rowenta-textBox__text-title{margin-bottom:70px}#maincontent .rowenta-textBox__text-title h2{font-size:-webkit-calc(17px + 20*(100vw - 320px)/671);font-size:calc(17px + 20*(100vw - 320px)/671)}#maincontent .rowenta-textBox__text-list{max-width:375px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{font-size:-webkit-calc(15px + 11*(100vw - 320px)/671);font-size:calc(15px + 11*(100vw - 320px)/671);margin-bottom:15px}#maincontent .rowenta-rowBox__text{padding:10px 40px}#maincontent .rowBox-accessories__inner{padding:40px 0 40px 40px}#maincontent .rowBox-textShadow__inner{padding:0 40px 40px}#maincontent .rowBox-textShadow__item{padding:10px 15px}#maincontent .rowBox-textShadow__text::before{width:331px;height:293px;top:-30px}#maincontent .textBox-aquaAnimal__text{right:30px;padding:10px 15px}#maincontent .textBox-aquaAnimal__text h2{margin-bottom:20px}#maincontent .rowBox-brush__inner{padding:60px 30px 0}#maincontent .rowBox-brush__item_01::before{top:65px;height:160px}#maincontent .rowBox-brush__item_03::before{top:-220px}#maincontent .rowBox-brush__item_04::before{left:68px;top:-260px}#maincontent .rowBox-imageShadow__inner{padding:30px 40px 0}#maincontent .rowBox-imageShadow__image::before{width:441px;height:513px;left:-27px}#maincontent .rowBox-imageShadow__text{padding:10px 20px}#maincontent .rowBox-warranty__inner{padding:25px 10px 25px 40px}#maincontent .rowBox-warranty__text{padding:10px 20px}#maincontent .rowBox-animal__text{margin-bottom:20px;padding:10px 25px}}@media screen and (max-width: 880.98px){#maincontent .rowenta__inner{padding:50px 25px 30px 50px}#maincontent .rowenta__item-text{width:150px;padding:15px}#maincontent .rowenta__image{left:30%;right:-85px}#maincontent .rowenta-textBox__text-title{margin-bottom:50px}#maincontent .textBox-aquaAnimal__text{right:20px}#maincontent .textBox-aquaAnimal__text h2{margin:10px 0;font-size:-webkit-calc(22px + 16*(100vw - 320px)/560);font-size:calc(22px + 16*(100vw - 320px)/560)}#maincontent .rowBox-brush__inner{padding:50px 30px 0}#maincontent .rowBox-brush__item_01{max-width:140px}#maincontent .rowBox-brush__item_01::before{height:125px;top:85px}#maincontent .rowBox-brush__item_02::before{width:30px;height:105px;left:-40px}#maincontent .rowBox-brush__item_03::before{top:-165px;height:145px}#maincontent .rowBox-brush__item_04::before{top:-200px;height:185px}#maincontent .rowBox-imageShadow__image::before{width:364px;height:401px}#maincontent .rowBox-warranty__image::before{width:90px;height:90px}#maincontent .textBox-innovation__text{top:20px;padding:10px 20px;left:45%}}@media screen and (max-width: 800.98px){#maincontent .rowenta-textBox__text-title{margin-bottom:40px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:10px}}@media screen and (max-width: 767.98px){#maincontent .rowenta__inner{padding:50px 25px 30px}#maincontent .rowenta__logo{padding:0 40px}#maincontent .rowenta__logo:nth-child(1) img{margin:0 auto 30px}#maincontent .rowenta__item-text{width:133px}#maincontent .rowenta-textBox__text{padding-left:40px}#maincontent .rowenta-textBox__text-list{max-width:250px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{font-size:-webkit-calc(15px + 5*(100vw - 320px)/447);font-size:calc(15px + 5*(100vw - 320px)/447);margin-bottom:15px}#maincontent .rowenta-rowBox__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .rowenta-rowBox__text{padding:10px 25px}#maincontent .rowenta-rowBox__text h3,#maincontent .rowenta-rowBox__text p{text-align:center}#maincontent .rowenta-rowBox__text-header{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center}#maincontent .rowenta-rowBox__text-header p{margin-right:0}#maincontent .rowBox-accessories__inner{padding:20px 25px}#maincontent .rowBox-accessories__text{margin-bottom:25px}#maincontent .rowBox-accessories__text p{margin-bottom:17px}#maincontent .rowBox-accessories__text-header p{margin-bottom:0}#maincontent .rowBox-textShadow__inner{padding:10px 25px 20px}#maincontent .rowBox-textShadow__item{padding:0}#maincontent .rowBox-textShadow__text::before{display:none}#maincontent .textBox-aquaAnimal__inner{margin-top:-2px}#maincontent .textBox-aquaAnimal__text{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding:20px 25px}#maincontent .textBox-aquaAnimal__text h2,#maincontent .textBox-aquaAnimal__text p{text-align:center}#maincontent .rowBox-brush__text{margin-bottom:40px}#maincontent .rowBox-brush__item_03::before{top:-246px;height:230px}#maincontent .rowBox-brush__item_04{max-width:135px}#maincontent .rowBox-brush__item_04::before{top:-317px;height:300px;left:90px}#maincontent .rowBox-imageShadow__inner{padding:20px 25px 0}#maincontent .rowBox-imageShadow__image::before{display:none}#maincontent .rowBox-imageShadow__text{padding-bottom:20px}#maincontent .rowBox-imageShadow__text h3{margin:10px 0}#maincontent .rowBox-warranty__inner{padding:10px 25px 20px}#maincontent .rowBox-warranty__text{padding:0 5px 15px}#maincontent .rowBox-warranty__text h2{margin:10px 0}#maincontent .rowBox-warranty__text h2,#maincontent .rowBox-warranty__text p{text-align:center}#maincontent .rowBox-warranty__image::before{width:180px;height:180px}#maincontent .textBox-innovation__text{position:unset;width:auto;padding:10px 20px}#maincontent .textBox-innovation__text p{text-align:center}#maincontent .rowenta-colBox__items{grid-template-columns:repeat(2, 1fr)}#maincontent .rowBox-animal__item{padding:10px 0 0}#maincontent .rowBox-animal__text{padding:0 25px;position:relative;z-index:99}#maincontent .rowBox-animal__text h3{margin:10px 0}#maincontent .rowBox-animal__images{-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 7px}#maincontent .rowBox-animal__images::before{left:50%;margin-right:-50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);top:auto;bottom:0}}@media screen and (max-width: 700.98px){#maincontent .rowenta-textBox__text-title{margin-bottom:30px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:7px}}@media screen and (max-width: 670.98px){#maincontent .rowenta__inner{padding:30px 25px}#maincontent .rowenta__logo:nth-child(1) img{margin:0 auto 25px}#maincontent .rowenta__item-text{width:122px}#maincontent .rowenta__image{left:40%;right:-70px}#maincontent .rowenta-textBox__text{padding-top:0}#maincontent .rowenta-textBox__text-title{max-width:255px;margin-bottom:56px}#maincontent .rowenta-textBox__text-title h2{font-size:-webkit-calc(17px + 7*(100vw - 320px)/350);font-size:calc(17px + 7*(100vw - 320px)/350)}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{font-size:-webkit-calc(12px + 4*(100vw - 320px)/350);font-size:calc(12px + 4*(100vw - 320px)/350)}#maincontent .textBox-aquaAnimal__inner{padding-top:20px}#maincontent .rowBox-warranty__image::before{width:140px;height:140px;left:50px}}@media screen and (max-width: 600.98px){#maincontent .rowenta__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .rowenta__content{margin-bottom:25px}#maincontent .rowenta__logo{max-width:320px}#maincontent .rowenta__item-text{width:160px}#maincontent .rowenta__image{position:unset}#maincontent .rowenta-textBox__text-title h2{margin:20px auto 10px}#maincontent .rowenta-textBox__text{padding-left:25px}#maincontent .rowenta-textBox__text-title{margin-bottom:40px}#maincontent .rowenta-textBox__text-list{max-width:190px}#maincontent .rowenta-textBox__text-list ul,#maincontent .rowenta-textBox__text-list li{margin-bottom:10px}#maincontent .rowenta-colBox__items{grid-template-columns:1fr;padding:20px 5px 5px}#maincontent .rowenta-colBox__item{max-width:100%;padding:0 15px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .rowenta-colBox__item img{margin:0 auto}#maincontent .rowenta-colBox__item p{text-align:center}#maincontent .rowenta-colBox__item-img{margin-bottom:10px}}@media screen and (max-width: 550.98px){#maincontent .rowenta-textBox__text-title{margin-bottom:21px}}@media screen and (max-width: 479.98px){#maincontent .rowenta-textBox__text{position:unset;padding:10px 15px}#maincontent .rowenta-textBox__text h2,#maincontent .rowenta-textBox__text p{text-align:center}#maincontent .rowenta-textBox__text h2{font-size:22px;margin:10px auto}#maincontent .rowenta-textBox__text p{font-size:17px}#maincontent .rowenta-textBox__text-title{max-width:100%}#maincontent .rowenta-textBox__text-list{max-width:100%}#maincontent .rowenta-rowBox__text{padding:10px 17px}#maincontent .rowBox-accessories__inner{padding:20px 10px}#maincontent .rowBox-textShadow__inner{padding:10px 5px 20px}#maincontent .textBox-aquaAnimal__inner{padding-top:0}#maincontent .rowBox-brush__inner{padding:30px 20px 20px}#maincontent .rowBox-brush__text{padding:0 5px;margin-bottom:25px}#maincontent .rowBox-brush__content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .rowBox-brush__items{padding:15px 5px 0}#maincontent .rowBox-brush__item{position:unset;max-width:100%}#maincontent .rowBox-brush__item p{text-align:center}#maincontent .rowBox-brush__item::before{display:none}#maincontent .rowBox-brush__image{padding-top:0}#maincontent .rowBox-imageShadow__inner{padding:10px 5px 0}#maincontent .rowBox-imageShadow__image::after{width:153px;height:53px;left:0}#maincontent .rowBox-warranty__inner{padding:10px 5px}#maincontent .rowBox-warranty__image::before{width:120px;height:120px;left:25px}#maincontent .rowBox-animal__images::before{width:213px;height:143px}#maincontent .rowBox-animal__images img{width:30%}}@media screen and (max-width: 379.98px){#maincontent .rowenta__inner{padding:30px 15px}#maincontent .rowenta__item-text{width:135px;padding:5px 15px}#maincontent .rowBox-imageShadow__image::after{width:116px;height:40px}#maincontent .rowBox-warranty__image::before{width:90px;height:90px}}/*# sourceMappingURL=style.min.css.map */
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box rowenta__bg">
+<div class="rowenta__inner">
+<div class="rowenta__content">
+<div class="rowenta__logo"><img src="https://cdn.comfy.ua/media/x/img3/2552247/logo.png" /> <img src="https://cdn.comfy.ua/media/x/img3/2552247/name.png" /></div>
+<div class="rowenta__items">
+<div class="rowenta__item">
+<div class="rowenta__item-text rowenta__item-text_01">
+<p><sup>до </sup><span>100</span><br />воздушных Вт</p>
+</div>
+<div class="rowenta__item-text rowenta__item-text_02">
+<p><sup>до </sup><span>45 мин</span> автономной работы</p>
+</div>
+</div>
+<div class="rowenta__item">
+<div class="rowenta__item-text rowenta__item-text_03">
+<p>Ручной блок весом<br /><span>1.1 кг</span></p>
+</div>
+<div class="rowenta__item-text rowenta__item-text_04">
+<p><span>99.9%</span><br />фильтрация от пыли и аллергенов</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rowenta__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img01.png" /></div>
+</div>
+</div>
+<div class="maincontent__box rowenta-textBox">
+<div class="rowenta-textBox__bg">
+<div class="rowenta-textBox__inner">
+<div class="rowenta-textBox__text">
+<div class="rowenta-textBox__text-title">
+<h2>Моет и пылесосит одновременно</h2>
+</div>
+<div class="rowenta-textBox__text-list">
+<ul>
+<li>Легкий и удобный</li>
+<li>Сверхлегкий ручной блок</li>
+<li>Насадка с автоматической регулировкой мощности </li>
+<li>Технология Aqua</li>
+</ul>
+</div>
+</div>
+<picture class="rowenta-textBox__img"> <source srcset="https://cdn.comfy.ua/media/x/img3/2552247/img02_mob_i.png" media="(max-width: 479.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2552247/img02_i.png" media="(min-width: 480px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2552247/img02_i.png" /> </picture></div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox">
+<div class="rowenta-rowBox__bg">
+<div class="rowenta-rowBox__inner">
+<div class="rowenta-rowBox__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img03.png" /></div>
+<div class="rowenta-rowBox__item">
+<div class="rowenta-rowBox__text rowenta-rowBox__text_left">
+<h3>Сверхлегкая конструкция</h3>
+<p>Вес ручного блока всего 1,1 кг, поэтому, несмотря на интенсивность, площадь или                                     частоту уборки, вы не будете чувствовать дискомфорт и чрезмерную усталость.</p>
+</div>
+</div>
+</div>
+<div class="rowenta-rowBox__inner rowenta-rowBox__inner_rev">
+<div class="rowenta-rowBox__image rowenta-rowBox__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img04.png" /></div>
+<div class="rowenta-rowBox__item">
+<div class="rowenta-rowBox__text rowenta-rowBox__text_right">
+<h3>Максимальная эффективность</h3>
+<p>Мощная сила всасывания до 100 Вт и емкий аккумулятор с автономной работой до 45 минут                                     обеспечивают эффективную уборку многокомнатных квартир и просторных домов</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-accessories">
+<div class="rowenta-rowBox__bg rowBox-accessories__bg">
+<div class="rowenta-rowBox__inner rowBox-accessories__inner">
+<div class="rowenta-rowBox__image rowBox-accessories__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img05.png" /></div>
+<div class="rowenta-rowBox__item">
+<div class="rowenta-rowBox__text rowenta-rowBox__text_left rowBox-accessories__text">
+<div class="rowenta-rowBox__text-header rowBox-accessories__text-header">
+<p><span>10+</span></p>
+<p>аксессуаров в комплекте</p>
+</div>
+<p>Для комфортной и эффективной уборки любых поверхностей.</p>
+<p>Гибкий стик для уборки в труднодоступных местах, насадки для уборки                                     мягкой мебели и моющие салфетки из микрофибры делают этот процесс                                     комфортным день за днем.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-textShadow">
+<div class="rowenta-rowBox__bg">
+<div class="rowenta-rowBox__inner rowBox-textShadow__inner">
+<div class="rowenta-rowBox__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img06_ru.png" /></div>
+<div class="rowenta-rowBox__item rowBox-textShadow__item">
+<div class="rowenta-rowBox__text rowBox-textShadow__text">
+<h3>Удобный блок управления</h3>
+<p>Дисплей Smart Control информирует об уровне заряда аккумулятора и сообщает о                                     необходимости очистить фильтр, а также позволяет выбрать 1 из 3 уровней мощности,                                     что обеспечивает максимально легкий                                     и беззаботный уход за домом.</p>
+</div>
+</div>
+</div>
+<div class="rowenta-rowBox__inner rowenta-rowBox__inner_rev rowBox-textShadow__inner">
+<div class="rowenta-rowBox__image rowenta-rowBox__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img07.png" /></div>
+<div class="rowenta-rowBox__item rowBox-textShadow__item">
+<div class="rowenta-rowBox__text rowBox-textShadow__text">
+<h3>Умная уборка</h3>
+<p>Rowenta X-Force 9.6 Aqua Animal улучшен передовой технологией, что позволяет                                     автоматически регулировать мощность всасывания в зависимости от типа покрытия пола.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-textBox textBox-aquaAnimal">
+<div class="rowenta-textBox__bg textBox-aquaAnimal__bg">
+<div class="rowenta-textBox__inner textBox-aquaAnimal__inner">
+<div class="rowenta-textBox__text textBox-aquaAnimal__text">
+<h2>Моет и пылесосит одновременно</h2>
+<p>Rowenta X-Force 9.6 Aqua Animal может одновременно всасывать пыль и грязь, а его моющий                                 блок позаботится о пятнах на вашем полу и подарит ему блеск чистоты. Безупречная и                                 быстрая уборка за один раз – ощутимая экономия времени и сил.</p>
+</div>
+<picture class="rowenta-textBox__img"> <source srcset="https://cdn.comfy.ua/media/x/img3/2552247/img08_mob_i.png" media="(max-width: 767.98px)"></source> <source srcset="https://cdn.comfy.ua/media/x/img3/2552247/img08_i.png" media="(min-width: 768px)"></source> <img src="https://cdn.comfy.ua/media/x/img3/2552247/img08_i.png" /> </picture></div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-brush">
+<div class="rowenta-rowBox__bg rowBox-brush__bg">
+<div class="rowenta-rowBox__inner rowBox-brush__inner">
+<div class="rowenta-rowBox__content rowBox-brush__content">
+<div class="rowBox-brush__items">
+<div class="rowBox-brush__item rowBox-brush__item_01">
+<p>Контроль уровня подачи воды</p>
+</div>
+<div class="rowBox-brush__item rowBox-brush__item_02">
+<p>Высокая мощность всасывания</p>
+</div>
+<div class="rowBox-brush__item rowBox-brush__item_03">
+<p>Салфетка из микрофибры</p>
+</div>
+<div class="rowBox-brush__item rowBox-brush__item_04">
+<p>Резервуар для воды</p>
+</div>
+</div>
+<div class="rowenta-rowBox__image rowBox-brush__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img09.png" /></div>
+</div>
+<div class="rowenta-rowBox__item">
+<div class="rowenta-rowBox__text rowBox-brush__text">
+<p>Пылесос Rowenta X-Force 9.6 Aqua Animal – это функциональное устройство для удобного                                     и быстрого ухода даже за самым просторным жильем. Благодаря высокой мощности и                                     объемному резервуару для воды вы сможете убрать большую квартиру или дом за один                                     раз.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-imageShadow">
+<div class="rowenta-rowBox__bg">
+<div class="rowenta-rowBox__inner rowBox-imageShadow__inner">
+<div class="rowenta-rowBox__image rowBox-imageShadow__image rowBox-imageShadow__image_icon"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img10.png" /></div>
+<div class="rowenta-rowBox__item rowBox-imageShadow__item">
+<div class="rowenta-rowBox__text rowBox-imageShadow__text">
+<h3>Для мягких покрытий</h3>
+<p>Деликатно очистит ковры с ворсом или без,                                     а также мебель и другие мягкие поверхности.</p>
+</div>
+</div>
+</div>
+<div class="rowenta-rowBox__inner rowenta-rowBox__inner_rev rowBox-imageShadow__inner">
+<div class="rowenta-rowBox__image rowenta-rowBox__image_right  rowBox-imageShadow__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img11.png" /></div>
+<div class="rowenta-rowBox__item rowBox-imageShadow__item">
+<div class="rowenta-rowBox__text rowBox-imageShadow__text">
+<h3>Для твердых поверхностей</h3>
+<p>Легко и непринужденно удалит грязь с кафеля, паркета, линолеума и ламината.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-warranty">
+<div class="rowenta-rowBox__bg rowBox-warranty__bg">
+<div class="rowenta-rowBox__inner rowenta-rowBox__inner_rev rowBox-warranty__inner">
+<div class="rowenta-rowBox__content rowBox-warranty__content">
+<div class="rowenta-rowBox__image rowBox-warranty__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img12.png" /></div>
+</div>
+<div class="rowenta-rowBox__item">
+<div class="rowenta-rowBox__text rowBox-warranty__text">
+<h2>Разработан                                     для долгой службы</h2>
+<p>Прочные, долговечные материалы и конструкция, которая позволяет легко починить                                     устройство, если возникнет такая необходимость.                                     ROWENTA дает возможность ремонта на протяжении 15-ти лет в более чем 6200 сервисных                                     центрах по всему миру.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-textBox textBox-innovation">
+<div class="rowenta-textBox__bg textBox-innovation__bg">
+<div class="rowenta-textBox__inner textBox-innovation__inner">
+<div class="rowenta-textBox__text textBox-innovation__text">
+<p>Современные инновационные технологии, повышенная мощность и компактный дизайн. Все это                                 ROWENTA X-FORCE 9.6 AQUA ANIMAL.</p>
+</div>
+<div class="rowenta-textBox__img"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img13_i.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-colBox">
+<div class="rowenta-colBox__bg">
+<div class="rowenta-colBox__inner">
+<div class="rowenta-colBox__items">
+<div class="rowenta-colBox__item">
+<div class="rowenta-colBox__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img14_1.png" /></div>
+<div class="rowenta-colBox__item-text">
+<p>Безупречная чистка мягкой мебели благодаря специальной насадке и удобному                                         дизайну.</p>
+</div>
+</div>
+<div class="rowenta-colBox__item">
+<div class="rowenta-colBox__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img14_2.png" /></div>
+<div class="rowenta-colBox__item-text">
+<p>Насадка для щелей легко удаляет пыль даже в самых труднодоступных местах</p>
+</div>
+</div>
+<div class="rowenta-colBox__item">
+<div class="rowenta-colBox__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img14_3.png" /></div>
+<div class="rowenta-colBox__item-text">
+<p>Идеальный уход за мелкими вещами, которые требуют особого внимания</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box rowenta-rowBox rowBox-animal">
+<div class="rowenta-rowBox__bg rowBox-animal__bg">
+<div class="rowenta-rowBox__inner rowBox-animal__inner">
+<div class="rowenta-rowBox__content rowBox-animal__content">
+<div class="rowenta-rowBox__image rowBox-animal__image"><img src="https://cdn.comfy.ua/media/x/img3/2552247/img15_i.png" /></div>
+</div>
+<div class="rowenta-rowBox__item rowBox-animal__item">
+<div class="rowenta-rowBox__text rowBox-animal__text">
+<h3>ROWENTA X-FORCE 9.6                                     AQUA ANIMAL</h3>
+<p>Это еще и идеальное решение для владельцев домашних животных. Турбощетка, которая                                     идет                                     в комплекте с пылесосом, тщательно уберет шерсть животных и очистит пол от следов                                     грязных лап.</p>
+</div>
+<div class="rowenta-rowBox__images rowBox-animal__images"><img src="https://cdn.comfy.ua/media/x/img3/2552247/icon03.png" /> <img src="https://cdn.comfy.ua/media/x/img3/2552247/icon04.png" /></div>
+</div>
+</div>
+</div>
+</div>
+<!--
+<div class="maincontent__box bottom-text">
+<div class="bottom-text__inner">
+<div class="bottom-text__text">
+<p>
+<ul>
+<li>Легкая, удобная и быстрая уборка - теперь реальность. С помощью Rowenta X-Force 9.6 Aqua Animal RH20C7WO  уход за домом будет в удовольствие. </li>
+<li><strong>Высокая эффективность</strong> Мощное всасывание до 100 аВт* для максимальной эффективности в течение длительного времени. Аккумулятор расчитан на время работы до 45 минут** для эффективной очистки любых покрытий. </li>
+<li><strong>Сверхлегкая конструкция</strong> Компактный беспроводной пылесос – всего 1,1 кг при использовании ручного блока – для легкой уборки и полного комфорта использования каждый день. </li>
+<li><strong>Моет и пылесосит одновременно</strong> Наслаждайтесь удобной уборкой и безупречными результатами с X-Force Flex 9.60 и его технологией Aqua, позволяющей мыть и пылесосить одновременно. Теперь он на 30% компактнее и на 10% легче предыдущих моделей для уборки без забот.</li>
+<li><strong>Умная уборка</strong> Исключительная производительность, улучшенная передовой технологией, с автоматической регулировкой мощности всасывания в зависимости от типа пола для оптимизации результатов уборки каждый раз. </li>
+<li><strong>Чрезвычайная маневренность</strong> Откройте для себя новый опыт легкой уборки благодаря интеллектуальному дизайну с гибкой трубкой Flex, чтобы пылесосить в любом месте, не наклоняясь, и системе Power LED для уборки пыли в местах со слабым освещением. </li>
+<li><strong>Эффективность у вас в руках</strong> Дисплей Smart Control показывает остаток заряда батареи и извещает о необходимости очистки фильтра, а также позволяет регулировать мощность в соответствии с вашими потребностями с помощью 3 разных уровней и триггера Boost. </li>
+<li><strong>Чрезвычайная гигиена и фильтрация</strong> Тщательная уборка без лишней пыли, благодаря уровню фильтрации 99,9% от мелких частиц, аллергенов и пылевых клещей.</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+--></div>
+</div>

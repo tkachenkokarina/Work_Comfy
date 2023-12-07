@@ -1,0 +1,1283 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1920px
+        margin: 0 auto
+        padding: 0 15px
+        color: #fff
+        h2
+            @include fonts($fontSize: 76px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-transform: uppercase
+        h3
+            @include fonts($fontSize: 51px, $lineHeight: 1.2)
+            margin: 20px 0px
+            text-transform: uppercase
+        p
+            @include fonts($fontSize: 31px, $lineHeight: 1.2)
+            margin-bottom: 10px
+        ul, li
+            @include fonts($fontSize: 45px, $lineHeight: 1.2)
+            margin-bottom: 10px
+
+#maincontent .rowenta
+    &__bg
+        background-color: #0a131b
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg01.png"))
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        padding: 120px 165px 70px
+        @include position($position: relative, $zIndex: 5)
+    &__logo
+        &:nth-child(1)
+            img
+                margin: 0 auto 50px
+        &:nth-child(2)
+            img
+                margin: 0 auto 130px
+    &__content
+        flex: 0 1 50%
+    &__items
+        @include flex-box($justifyContent: center, $alignItems: center)
+        flex-direction: column
+        flex: 0 1 50%
+    &__item
+        flex: 0 1 50%
+        @include flex-box($justifyContent: center, $alignItems: stretch)
+    &__item-text
+        width: 385px
+        padding: 20px 50px
+        p
+            font-size: 21px
+            text-align: left
+            span
+                font-size: 78px
+        &_01
+            border-right: 1px solid #414c56
+            border-bottom: 1px solid #414c56
+            p
+                text-align: right
+        &_02
+            border-left: 1px solid #414c56
+            border-bottom: 1px solid #414c56
+        &_03
+            border-right: 1px solid #414c56
+            border-top: 1px solid #414c56
+            p
+                text-align: right
+        &_04
+            border-left: 1px solid #414c56
+            border-top: 1px solid #414c56
+    &__image
+        @include position($position: absolute, $zIndex: 6)
+        left: 39%
+        right: 90px
+
+#maincontent .rowenta-textBox
+    &__bg
+        background: #182631
+    &__inner
+        @include position($position: relative, $zIndex: 5)
+    &__text
+        @include position($position: absolute, $zIndex: 6)
+        padding: 70px 750px 70px 135px
+    &__text-title
+        max-width: 855px
+        margin-bottom: 115px
+    &__text-list
+        max-width: 702px
+        ul, li
+            margin-bottom: 40px
+
+#maincontent .rowenta-rowBox
+    &__bg
+        background: #091118
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+        @include position($position: relative, $zIndex: 99)
+
+    &__text
+        &_left
+            padding: 10px 200px 10px 40px
+        &_right
+            padding: 10px 40px 10px 200px
+    &__text-header
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        p
+            font-size: 50px
+            padding: 10px
+            margin-right: 20px
+            span
+                font-size: 162px
+    &__image
+        flex: 0 1 50%
+        @include position($position: relative, $zIndex: 99)
+
+        &_right
+            img
+                margin-left: auto
+
+#maincontent .rowBox-accessories
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg03.png"))
+        height: 100%
+    &__inner
+        padding: 215px 0 215px 100px
+    &__text
+        p
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+    &__text-header
+        p
+            margin-bottom: 0
+
+#maincontent .rowBox-textShadow
+    &__inner
+        padding: 0 180px 40px
+    &__item
+        padding: 10px 20px
+    &__text
+        @include position($position: relative, $zIndex: 6)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: -1)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg05.png"))
+            width: 542px
+            height: 604px
+            top: -208px
+            left: -147px
+
+#maincontent .textBox-aquaAnimal
+    &__bg
+        background: #0d141a
+    &__text
+        left: 50%
+        top: 50%
+        right: 140px
+        transform: translateY(-50%)
+        padding: 20px 40px
+        h2
+            margin-bottom: 120px
+
+#maincontent .rowBox-brush
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg08.png"))
+    &__inner
+        padding: 140px 60px 0
+    &__content
+        flex: 0 1 50%
+        @include position($position: relative, $zIndex: 5)
+    &__item
+        @include position($position: absolute, $zIndex: 6)
+        max-width: 270px
+        &_01
+            top: 0
+            left: 0
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 6)
+                border-left: 2px solid #acafb1
+                border-bottom: 2px solid #acafb1
+                width: 100px
+                height: 200px
+                top: 90px
+                left: 102px
+        &_02
+            top: 0
+            right: 0
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 6)
+                border-left: 2px solid #acafb1
+                border-top: 2px solid #acafb1
+                width: 50px
+                height: 130px
+                top: 15px
+                left: -75px
+        &_03
+            bottom: 135px
+            left: 0
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 6)
+                border-left: 2px solid #acafb1
+                border-top: 2px solid #acafb1
+                width: 90px
+                height: 175px
+                top: -190px
+                left: 102px
+        &_04
+            bottom: 135px
+            right: 0
+            max-width: 240px
+            &::before
+                content: ""
+                @include position($position: absolute, $zIndex: 6)
+                border-right: 2px solid #acafb1
+                border-top: 2px solid #acafb1
+                width: 90px
+                height: 245px
+                top: -282px
+                left: 8px
+    &__image
+        padding-top: 100px
+        img
+            margin: 0 auto
+
+#maincontent .rowBox-imageShadow
+    &__inner
+        padding: 50px 225px 0
+    &__image
+        @include position($position: relative, $zIndex: 5)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: -1)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg13.png"))
+            width: 615px
+            height: 729px
+            top: 0
+            left: -220px
+        &_icon
+            &::after
+                content: ""
+                @include position($position: absolute, $zIndex: 7)
+                @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/icon01.png"))
+                top: -10px
+                left: -10px
+                width: 193px
+                height: 67px
+    &__item
+        @include position($position: relative, $zIndex: 99)
+    &__text
+        padding: 10px 40px
+
+#maincontent .rowBox-warranty
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg14.png"))
+    &__inner
+        padding: 45px 20px 45px 160px
+    &__image
+        @include position($position: relative, $zIndex: 5)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 6)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/icon02.png"))
+            width: 276px
+            height: 276px
+            top: 50%
+            left: 120px
+            transform: translateY(-50%)
+    &__text
+        h2
+            margin-bottom: 100px
+
+#maincontent .textBox-innovation
+    &__bg
+        background: #0e1821
+    &__text
+        width: 685px
+        top: 190px
+        right: 135px
+        padding: 10px 20px
+
+#maincontent .rowenta-colBox
+    &__bg
+        @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg11.png"))
+        height: 100%
+    &__inner
+        max-width: 1560px
+        margin: 0 auto
+    &__items
+        padding: 145px 25px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        justify-content: space-between
+    &__item
+        max-width: 380px
+        margin: 0 auto
+        padding: 10px 20px
+        @include position($position: relative, $zIndex: 4)
+    &__item-img
+        margin-bottom: 60px
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: -1)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg09.png"))
+            top: -70px
+            left: -33%
+            bottom: 0
+            width: 614px
+            height: 614px
+
+#maincontent .rowBox-animal
+    &__inner
+        justify-content: space-between
+    &__content
+        flex: 0 1 50%
+    &__item
+        padding: 10px 40px
+        max-width: 700px
+        margin: 0 auto
+    &__text
+        margin-bottom: 110px
+    &__images
+        display: flex
+        @include position($position: relative, $zIndex: 4)
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: -1)
+            @include bg-image($url: url("https://cdn.comfy.ua/media/x/img3/2552247/bg12.png"))
+            left: -180px
+            top: -210px
+            width: 713px
+            height: 534px
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1820px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (76 - 22) * ((100vw - 320px)/(1820 - 320)))
+            h3
+                font-size: calc( 19px + (51 - 19) * ((100vw - 320px)/(1820 - 320)))
+            p
+                font-size: calc( 15px + (31 - 15) * ((100vw - 320px)/(1820 - 320)))
+            ul, li
+                font-size: calc( 17px + (45 - 17) * ((100vw - 320px)/(1820 - 320)))
+    #maincontent .rowenta
+        &__item-text
+            p
+                font-size: calc( 11px + (21 - 11) * ((100vw - 320px)/(1820 - 320)))
+                span
+                    font-size: calc( 24px + (78 - 24) * ((100vw - 320px)/(1820 - 320)))
+        &__image
+            left: 44%
+            right: 0
+    #maincontent .rowenta-textBox
+        &__text
+            padding-right: calc( 75px + (750 - 75) * ((100vw - 320px)/(1820 - 320)))
+        &__text-title
+            max-width: 800px
+            margin-bottom: 90px
+        &__text-list
+            ul, li
+                margin-bottom: 30px
+    #maincontent .rowenta-rowBox
+        &__text-header
+            p
+                font-size: calc( 16px + (50 - 16) * ((100vw - 320px)/(1820 - 320)))
+                span
+                    font-size: calc( 34px + (162 - 34) * ((100vw - 320px)/(1820 - 320)))
+    #maincontent .rowBox-textShadow
+        &__text
+            &::before
+                left: -37px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            padding: 20px 40px
+    #maincontent .rowBox-brush
+        &__item
+            &_04
+                &::before
+                    left: 40px
+    #maincontent .textBox-innovation
+        &__text
+            right: 135px
+            padding: 10px 20px
+@media screen and (max-width: 1700px)
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 45px
+        &__text-title
+            // max-width: 630px //ru
+            max-width: 595px
+            margin-bottom: 0
+    #maincontent .textBox-aquaAnimal
+        &__text
+            padding: 20px 40px
+    #maincontent .textBox-innovation
+        &__text
+            padding-top: 10px
+            left: 50%
+    #maincontent .rowenta-colBox
+        &__item-img
+            &::before
+                width: 514px
+                height: 514px
+                left: -16%
+@media screen and (max-width: 1650px)
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 35px
+        &__text-title
+            max-width: 560px
+        &__text-list
+            max-width: 600px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            h2
+                margin-bottom: 70px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            padding: 20px 40px
+    #maincontent .rowBox-brush
+        &__item
+            &_04
+                &::before
+                    left: 75px
+                    width: 60px
+    #maincontent .textBox-innovation
+        &__text
+            padding-top: 10px
+            width: 620px
+    #maincontent .rowenta-colBox
+        &__item-img
+            &::before
+                left: -19%
+@media screen and (max-width: 1550px)
+    #maincontent .rowenta
+        &__inner
+            padding: 120px 60px 70px
+        &__image
+            left: 37%
+            right: 0
+    #maincontent .rowenta-textBox
+        &__text-title
+            max-width: 515px
+        &__text
+            padding-left: 90px
+        &__text-list
+            ul, li
+                margin-bottom: 25px
+    #maincontent .rowenta-rowBox
+        &__text
+            &_left
+                padding: 10px 150px 10px 40px
+            &_right
+                padding: 10px 40px 10px 150px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 150px 0 150px 100px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 0 150px 40px
+        &__text
+            &::before
+                left: 0
+    #maincontent .textBox-aquaAnimal
+        &__text
+            padding: 20px 40px
+    #maincontent .rowBox-brush
+        &__item
+            &_01, &_03
+                &::before
+                    left: 50px
+                    width: 75px
+            &_04
+                &::before
+                    left: 95px
+                    width: 40px
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 50px 150px 0
+        &__image
+            &::before
+                left: -120px
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 45px 20px 45px 150px
+        &__image
+            &::before
+                width: 220px
+                height: 220px
+    #maincontent .textBox-innovation
+        &__text
+            top: 130px
+    #maincontent .rowenta-colBox
+        &__item-img
+            &::before
+                top: -50px
+                left: -10%
+                width: 450px
+                height: 450px
+
+@media screen and (max-width: 1450px)
+    #maincontent .rowenta
+        &__inner
+            padding: 110px 150px 70px
+        &__item-text
+            padding: 20px 35px
+            width: 220px
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 20px
+        &__text-title
+            // max-width: 510px //ru
+            max-width: 450px
+        &__text-list
+            ul, li
+                margin-bottom: 20px
+    #maincontent .rowBox-brush
+        &__item
+            &_01
+                max-width: 210px
+    #maincontent .textBox-innovation
+        &__text
+            width: 500px
+@media screen and (max-width: 1350px)
+    #maincontent .rowenta
+        &__inner
+            padding: 90px 130px 70px
+        &__item-text
+            padding: 20px 25px
+            width: 205px
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 20px
+        &__text-list
+            max-width: 450px
+    #maincontent .rowenta-rowBox
+        &__text
+            &_left
+                padding: 10px 120px 10px 40px
+            &_right
+                padding: 10px 40px 10px 120px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            left: 47%
+    #maincontent .rowBox-brush
+        &__item
+            &_01
+                max-width: 210px
+            &_01, &_03
+                &::before
+                    width: 45px
+            &_02
+                max-width: 210px
+            &_03
+                max-width: 200px
+                &::before
+                    height: 225px
+                    top: -246px
+            &_04
+                max-width: 170px
+                &::before
+                    left: 70px
+                    width: 40px
+    #maincontent .rowBox-warranty
+        &__text
+            h2
+                margin-bottom: 50px
+    #maincontent .rowenta-colBox
+        &__item-img
+            &::before
+                display: none
+    #maincontent .rowBox-animal
+        &__text
+            margin-bottom: 80px
+        &__images
+            &::before
+                width: 513px
+                height: 334px
+                left: -82px
+                top: -98px
+@media screen and (max-width: 1250px)
+    #maincontent .rowenta
+        &__inner
+            padding: 81px 25px 60px 95px
+        &__item-text
+            padding: 20px 15px
+            width: 195px
+        &__image
+            left: 32%
+            right: -55px
+    #maincontent .rowenta-textBox
+        &__text
+            padding-left: 70px
+            padding-top: 10px
+        &__text-title
+            // max-width: 455px//ru
+            max-width: 370px
+        &__text-list
+            ul, li
+                margin-bottom: 17px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 120px 0 120px 100px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 0 120px 40px
+        &__text
+            &::before
+                width: 446px
+                height: 394px
+                top: -148px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            right: 70px
+            h2
+                margin-bottom: 40px
+    #maincontent .rowBox-brush
+        &__inner
+            padding: 100px 45px 0
+        &__item
+            &_01, &_03
+                &::before
+                    left: 20px
+            &_03
+                max-width: 150px
+                &::before
+                    top: -235px
+                    height: 200px
+            &_04
+                &::before
+                    left: 98px
+                    width: 20px
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 50px 120px 0
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 40px 20px 40px 120px
+        &__image
+            &::before
+                width: 200px
+                height: 200px
+    #maincontent .textBox-innovation
+        &__text
+            width: 450px
+            top: 90px
+            padding-left: 20px
+    #maincontent .rowenta-colBox
+        &__items
+            padding: 90px 25px
+    #maincontent .rowBox-animal
+        &__text
+            margin-bottom: 50px
+    #maincontent .rowBox-animal
+        &__images
+            &::before
+                width: 313px
+                left: 7px
+@media screen and (max-width: 1100px)
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 0
+            padding-left: 45px
+    #maincontent .rowenta-rowBox
+        &__text
+            &_left
+                padding: 10px 90px 10px 40px
+            &_right
+                padding: 10px 40px 10px 90px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 90px 0 90px 90px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 0 90px 40px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            right: 50px
+    #maincontent .rowBox-brush
+        &__inner
+            padding: 80px 35px 0
+        &__item
+            &_01, &_03
+                &::before
+                    width: 20px
+            &_02
+                max-width: 135px
+            &_04
+                max-width: 110px
+                &::before
+                    left: 43px
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 50px 90px 0
+        &__image
+            &::before
+                width: 482px
+                height: 549px
+                left: -85px
+        &__text
+            padding: 10px 20px
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 40px 10px 40px 90px
+        &__text
+            padding: 10px 20px
+            h2
+                margin-bottom: 35px
+        &__image
+            &::before
+                width: 180px
+                height: 180px
+    #maincontent .textBox-innovation
+        &__text
+            width: 410px
+            top: 70px
+@media screen and (max-width: 1024.98px)
+    #maincontent .rowenta
+        &__inner
+            padding: 65px 25px 40px 75px
+        &__item-text
+            width: 165px
+        &__image
+            left: 30%
+            right: -85px
+    #maincontent .rowenta-textBox
+        &__text-title
+            max-width: 390px
+    #maincontent .rowenta-rowBox
+        &__text
+            &_left
+                padding: 10px 70px 10px 40px
+            &_right
+                padding: 10px 40px 10px 70px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 70px 0 70px 40px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 0 70px 40px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            padding: 20px
+    #maincontent .rowBox-warranty
+        &__image
+            &::before
+                left: 80px
+                width: 130px
+                height: 130px
+    #maincontent .textBox-innovation
+        &__text
+            width: 350px
+            top: 50px
+    #maincontent .rowenta-colBox
+        &__items
+            padding: 45px 25px
+        &__item-img
+            margin-bottom: 30px
+@media screen and (max-width: 991.98px)
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 15px
+        &__text-title
+            margin-bottom: 70px
+            h2
+                font-size: calc( 17px + (37 - 17) * ((100vw - 320px)/(991 - 320)))
+        &__text-list
+            max-width: 375px
+            ul, li
+                font-size: calc( 15px + (26 - 15) * ((100vw - 320px)/(991 - 320)))
+                margin-bottom: 15px
+    #maincontent .rowenta-rowBox
+        &__text
+            padding: 10px 40px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 40px 0 40px 40px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 0 40px 40px
+        &__item
+            padding: 10px 15px
+        &__text
+            &::before
+                width: 331px
+                height: 293px
+                top: -30px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            right: 30px
+            padding: 10px 15px
+            h2
+                margin-bottom: 20px
+    #maincontent .rowBox-brush
+        &__inner
+            padding: 60px 30px 0
+        &__item
+            &_01
+                &::before
+                    top: 65px
+                    height: 160px
+            &_03
+                &::before
+                    top: -220px
+            &_04
+                &::before
+                    left: 68px
+                    top: -260px
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 30px 40px 0
+        &__image
+            &::before
+                width: 441px
+                height: 513px
+                left: -27px
+        &__text
+            padding: 10px 20px
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 25px 10px 25px 40px
+        &__text
+            padding: 10px 20px
+    #maincontent .rowBox-animal
+        &__text
+            margin-bottom: 20px
+            padding: 10px 25px
+@media screen and (max-width: 880.98px)
+    #maincontent .rowenta
+        &__inner
+            padding: 50px 25px 30px 50px
+        &__item-text
+            width: 150px
+            padding: 15px
+        &__image
+            left: 30%
+            right: -85px
+    #maincontent .rowenta-textBox
+        &__text-title
+            margin-bottom: 50px
+    #maincontent .textBox-aquaAnimal
+        &__text
+            right: 20px
+            h2
+                margin: 10px 0
+                font-size: calc( 22px + (38 - 22) * ((100vw - 320px)/(880 - 320)))
+    #maincontent .rowBox-brush
+        &__inner
+            padding: 50px 30px 0
+        &__item
+            &_01
+                max-width: 140px
+                &::before
+                    height: 125px
+                    top: 85px
+            &_02
+                &::before
+                    width: 30px
+                    height: 105px
+                    left: -40px
+            &_03
+                &::before
+                    top: -165px
+                    height: 145px
+            &_04
+                &::before
+                    top: -200px
+                    height: 185px
+    #maincontent .rowBox-imageShadow
+        &__image
+            &::before
+                width: 364px
+                height: 401px
+    #maincontent .rowBox-warranty
+        &__image
+            &::before
+                width: 90px
+                height: 90px
+    #maincontent .textBox-innovation
+        &__text
+            top: 20px
+            padding: 10px 20px
+            left: 45%
+@media screen and (max-width: 800.98px)
+    #maincontent .rowenta-textBox
+        &__text-title
+            margin-bottom: 40px
+        &__text-list
+            ul, li
+                margin-bottom: 10px
+
+@media screen and (max-width: 767.98px)
+    #maincontent .rowenta
+        &__inner
+            padding: 50px 25px 30px
+        &__logo
+            padding: 0 40px
+            &:nth-child(1)
+                img
+                    margin: 0 auto 30px
+        &__item-text
+            width: 133px
+    #maincontent .rowenta-textBox
+        &__text
+            padding-left: 40px
+        &__text-list
+            max-width: 250px
+            ul, li
+                font-size: calc( 15px + (20 - 15) * ((100vw - 320px)/(767 - 320)))
+                margin-bottom: 15px
+    #maincontent .rowenta-rowBox
+        &__inner
+            flex-direction: column-reverse
+        &__text
+            padding: 10px 25px
+            h3, p
+                text-align: center
+        &__text-header
+            justify-content: center
+            p
+                margin-right: 0
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 20px 25px
+        &__text
+            margin-bottom: 25px
+            p
+                margin-bottom: 17px
+        &__text-header
+            p
+                margin-bottom: 0
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 10px 25px 20px
+        &__item
+            padding: 0
+        &__text
+            &::before
+                display: none
+    #maincontent .textBox-aquaAnimal
+        &__inner
+            margin-top: -2px
+        &__text
+            position: unset
+            transform: translateY(0)
+            padding: 20px 25px
+            h2, p
+                text-align: center
+    #maincontent .rowBox-brush
+        &__text
+            margin-bottom: 40px
+        &__item
+            &_03
+                &::before
+                    top: -246px
+                    height: 230px
+            &_04
+                max-width: 135px
+                &::before
+                    top: -317px
+                    height: 300px
+                    left: 90px
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 20px 25px 0
+        &__image
+            &::before
+                display: none
+        &__text
+            padding-bottom: 20px
+            h3
+                margin: 10px 0
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 10px 25px 20px
+        &__text
+            padding: 0 5px 15px
+            h2
+                margin: 10px 0
+            h2, p
+                text-align: center
+        &__image
+            &::before
+                width: 180px
+                height: 180px
+    #maincontent .textBox-innovation
+        &__text
+            position: unset
+            width: auto
+            padding: 10px 20px
+            p
+                text-align: center
+    #maincontent .rowenta-colBox
+        &__items
+            grid-template-columns: repeat(2, 1fr)
+    #maincontent .rowBox-animal
+        &__item
+            padding: 10px 0 0
+        &__text
+            padding: 0 25px
+            @include position($position: relative, $zIndex: 99)
+            h3
+                margin: 10px 0
+        &__images
+            justify-content: center
+            padding: 0 7px
+            &::before
+                left: 50%
+                margin-right: -50%
+                transform: translateX(-50%)
+                top: auto
+                bottom: 0
+
+@media screen and (max-width: 700.98px)
+    #maincontent .rowenta-textBox
+        &__text-title
+            margin-bottom: 30px
+        &__text-list
+            ul, li
+                margin-bottom: 7px
+
+@media screen and (max-width: 670.98px)
+    #maincontent .rowenta
+        &__inner
+            padding: 30px 25px
+        &__logo
+            &:nth-child(1)
+                img
+                    margin: 0 auto 25px
+        &__item-text
+            width: 122px
+        &__image
+            left: 40%
+            right: -70px
+    #maincontent .rowenta-textBox
+        &__text
+            padding-top: 0
+        &__text-title
+            max-width: 255px
+            margin-bottom: 56px
+            h2
+                font-size: calc( 17px + (24 - 17) * ((100vw - 320px)/(670 - 320)))
+        &__text-list
+            ul, li
+                font-size: calc( 12px + (16 - 12) * ((100vw - 320px)/(670 - 320)))
+    #maincontent .textBox-aquaAnimal
+        &__inner
+            padding-top: 20px
+    #maincontent .rowBox-warranty
+        &__image
+            &::before
+                width: 140px
+                height: 140px
+                left: 50px
+@media screen and (max-width: 600.98px)
+    #maincontent .rowenta
+        &__inner
+            flex-direction: column
+        &__content
+            margin-bottom: 25px
+        &__logo
+            max-width: 320px
+        &__item-text
+            width: 160px
+        &__image
+            position: unset
+    #maincontent .rowenta-textBox
+        &__text-title
+            h2
+                margin: 20px auto 10px
+        &__text
+            padding-left: 25px
+        &__text-title
+            margin-bottom: 40px
+        &__text-list
+            max-width: 190px
+            ul, li
+                margin-bottom: 10px
+    #maincontent .rowenta-colBox
+        &__items
+            grid-template-columns: 1fr
+            padding: 20px 5px 5px
+        &__item
+            max-width: 100%
+            padding: 0 15px
+            display: flex
+            flex-direction: column-reverse
+            img
+                margin: 0 auto
+            p
+                text-align: center
+        &__item-img
+            margin-bottom: 10px
+@media screen and (max-width: 550.98px)
+    #maincontent .rowenta-textBox
+        &__text-title
+            margin-bottom: 30px
+
+@media screen and (max-width: 479.98px)
+    #maincontent .rowenta-textBox
+        &__text
+            position: unset
+            padding: 10px 15px
+            h2, p
+                text-align: center
+            h2
+                font-size: 22px
+                margin: 10px auto
+            p
+                font-size: 17px
+        &__text-title
+            max-width: 100%
+        &__text-list
+            max-width: 100%
+    #maincontent .rowenta-rowBox
+        &__text
+            padding: 10px 17px
+    #maincontent .rowBox-accessories
+        &__inner
+            padding: 20px 10px
+    #maincontent .rowBox-textShadow
+        &__inner
+            padding: 10px 5px 20px
+    #maincontent .textBox-aquaAnimal
+        &__inner
+            padding-top: 0
+    #maincontent .rowBox-brush
+        &__inner
+            padding: 30px 20px 20px
+        &__text
+            padding: 0 5px
+            margin-bottom: 25px
+        &__content
+            display: flex
+            flex-direction: column-reverse
+        &__items
+            padding: 15px 5px 0
+        &__item
+            position: unset
+            max-width: 100%
+            p
+                text-align: center
+            &::before
+                display: none
+        &__image
+            padding-top: 0
+    #maincontent .rowBox-imageShadow
+        &__inner
+            padding: 10px 5px 0
+        &__image
+            &::after
+                width: 153px
+                height: 53px
+                left: 0
+    #maincontent .rowBox-warranty
+        &__inner
+            padding: 10px 5px
+        &__image
+            &::before
+                width: 120px
+                height: 120px
+                left: 25px
+    #maincontent .rowBox-animal
+        &__images
+            &::before
+                width: 213px
+                height: 143px
+            img
+                width: 30%
+@media screen and (max-width: 379.98px)
+    #maincontent .rowenta
+        &__inner
+            padding: 30px 15px
+        &__item-text
+            width: 135px
+            padding: 5px 15px
+    #maincontent .rowBox-imageShadow
+        &__image
+            &::after
+                width: 116px
+                height: 40px
+    #maincontent .rowBox-warranty
+        &__image
+            &::before
+                width: 90px
+                height: 90px
