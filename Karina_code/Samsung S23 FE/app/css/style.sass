@@ -1,0 +1,264 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1440
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #samsung23fe a
+//     color: inherit
+//     text-decoration: none
+
+// #samsung23fe
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#samsung23fe .bc-description__content p
+    margin-bottom: 0
+
+#samsung23fe .bc-description__content h3
+    text-align: left
+
+#samsung23fe
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        // font-weight: bold
+
+#samsung23fe
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#samsung23fe p::first-letter
+    padding-left: 0
+
+#samsung23fe img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#samsung23fe img:hover
+    opacity: 1
+
+#samsung23fe .samsung23fe__container
+    max-width: 1440px
+    margin: 0 auto
+    //padding: 0 15px
+
+//========================================================================================================================================================
+#samsung23fe
+    h2
+        @include adaptiv-value("font-size", 45, 20, 1)
+        line-height: 1.2
+        margin-bottom: 15px
+        text-align: center
+    p
+        @include adaptiv-value("font-size", 30, 16, 1)
+        line-height: 1.25
+        text-align: center
+
+#samsung23fe .header-samsung23fe
+    &__image
+    &__text
+        padding: 50px 20px 40px
+
+#samsung23fe .design-samsung23fe
+    &__bg
+        background-color: #f5f6fa
+    &__text
+        padding: 100px 20px 100px
+    &__image
+
+#samsung23fe .coloros-samsung23fe
+    &__text
+        padding: 50px 20px
+    &__slider
+    &__wrapper
+    &__slide
+    &__image
+
+#samsung23fe .swiper
+    padding-bottom: 10px
+    &-wrapper
+    &-slide
+
+#samsung23fe .swiper-pagination-bullet
+    background-color: #000
+
+#samsung23fe .swiper-button-next:after,
+#samsung23fe .swiper-button-prev:after
+    content: ""
+    background: url('https://cdn.comfy.ua/media/x/img3/2756129/arrow.png') center/cover no-repeat
+    width: 40px
+    height: 67px
+#samsung23fe .swiper-button-prev:after
+    transform: rotate(-180deg)
+
+#samsung23fe .swiper-button-next,
+#samsung23fe .swiper-button-prev
+    background-color: #00000083
+    width: 90px
+    height: 90px
+    border-radius: 50%
+
+#samsung23fe .block-samsung23fe
+    &__text
+        padding: 50px 20px
+    &__image
+
+#samsung23fe .black-samsung23fe
+    &__bg
+        background-color: #000
+    &__box
+        &_ps
+            position: relative
+            z-index: 2
+    &__text
+        padding: 50px 20px
+        &_ps
+            position: absolute
+            z-index: 5
+            top: 0
+            left: 0
+            right: 0
+        h2,p
+            color: #ffffff
+    &__image
+
+#samsung23fe .grey-samsung23fe
+    // position: relative
+    // z-index: 2
+    background-color: #f4f5fa
+    &__text
+        // position: absolute
+        // z-index: 5
+        // width: 95%
+        //margin: 0 auto
+        padding: 50px 20px
+        // top: 0
+        // left: 0
+        // right: 0
+    &__image
+
+#samsung23fe .smart-samsung23fe
+    padding-bottom: 40px
+    &__title
+        padding: 50px 20px
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fit,minmax(230px, 1fr))
+        gap: 20px
+        padding: 0 20px
+    &__item
+    &__image
+    &__text
+        padding-top: 20px
+        h2
+            @include adaptiv-value("font-size", 25, 18, 1)
+            line-height: 1.2
+            margin-bottom: 15px
+    p
+        @include adaptiv-value("font-size", 20, 16, 1)
+        line-height: 1.25
+        text-align: left
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #samsung23fe .swiper-button-next,
+    #samsung23fe .swiper-button-prev
+        width: 50px
+        height: 50px
+    #samsung23fe .swiper-button-next:after,
+    #samsung23fe .swiper-button-prev:after
+        width: 16px
+        height: 27px
+//@media screen and (max-width: 767.98px)
+@media screen and (max-width: 479.98px)
+    #samsung23fe .smart-samsung23fe p
+        text-align: center
+    #samsung23fe .smart-samsung23fe__title,
+    #samsung23fe .block-samsung23fe__text,
+    #samsung23fe .grey-samsung23fe__text,
+    #samsung23fe .black-samsung23fe__text,
+    #samsung23fe .coloros-samsung23fe__text,
+    #samsung23fe .design-samsung23fe__text
+        padding: 30px 20px
+    #samsung23fe .swiper-button-next,
+    #samsung23fe .swiper-button-prev
+        display: none
+        // width: 30px
+        // height: 30px
+        // top: 10%
+    // #samsung23fe .swiper-button-prev
+    //     right: 10%
+    //     left: auto
+    #samsung23fe .swiper-pagination
+        bottom: 0
+    // #samsung23fe .swiper-button-next:after,
+    // #samsung23fe .swiper-button-prev:after
+    //     width: 10px
+    //     height: 17px
+
+// @media (max-width: 812px) and (orientation: landscape)
