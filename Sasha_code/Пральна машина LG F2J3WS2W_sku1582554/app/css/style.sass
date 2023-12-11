@@ -86,7 +86,6 @@ li
 @mixin position($position, $zIndex)
     position: $position
     z-index: $zIndex
-    
 
 //========================================================================================================================================================
 #maincontent .maincontent
@@ -97,7 +96,7 @@ li
         h2
             @include fonts($fontSize: 48px, $lineHeight: 1.04)
             font-weight: 600
-            margin: 20px 0px      
+            margin: 20px 0px
             text-align: center
         p
             @include fonts($fontSize: 20px, $lineHeight: 1.3)
@@ -109,15 +108,15 @@ li
         @include position($position: relative, $zIndex: 5)
     &__text
         @include position($position: absolute, $zIndex: 6)
-        max-width: 768px   
-        padding: 0 15px     
+        max-width: 768px
+        padding: 0 15px
         &_w
             h2, p
-                color: #fff   
+                color: #fff
     &__img
         &_mob
-            display: none    
-        
+            display: none
+
 #maincontent .lg-6motion
     &__text
         top: 12%
@@ -126,11 +125,16 @@ li
         transform: translate(-50%, -50%)
 
 #maincontent .lg-durability
+    &__box
+        background-color: #000
+        padding-top: 20px
     &__text
-        top: 80%
-        left: 50%
-        margin-right: -50%
-        transform: translate(-50%, -50%)
+        position: unset
+        margin: 0 auto
+        // top: 80%
+        // left: 50%
+        // margin-right: -50%
+        // transform: translate(-50%, -50%)
 
 #maincontent .lg-spasteam
     &__text
@@ -173,16 +177,12 @@ li
         h2, p
             text-align: left
 
-
-
-
-
 //===========MEDIA=============================================================================================================================================
 @media screen and (max-width: 1540px)
     #maincontent .maincontent
         &__container
             h2
-                font-size: calc( 22px + (48 - 22) * ((100vw - 320px)/(1540 - 320)))            
+                font-size: calc( 22px + (48 - 22) * ((100vw - 320px)/(1540 - 320)))
             p
                 font-size: calc( 16px + (20 - 16) * ((100vw - 320px)/(1540 - 320)))
 @media screen and (max-width: 1360.98px)
@@ -231,7 +231,7 @@ li
     // #maincontent .lg-warranty
     //     &__text
     //         top: 25%
-@media screen and (max-width: 991.98px)   
+@media screen and (max-width: 991.98px)
     #maincontent .lg-spasteam
         &__text
             top: 25%
@@ -264,7 +264,7 @@ li
             position: unset
             width: auto
             margin: 0 auto
-            h2, p 
+            h2, p
                 text-align: center
     #maincontent .lg-diagnisis
         &__text
@@ -297,19 +297,19 @@ li
                 display: none
             &_mob
                 display: block
-    #maincontent .lg-6motion        
-        &__box        
+    #maincontent .lg-6motion
+        &__box
             background-color: #444444
         &__text
             h2
                 padding-top: 20px
     #maincontent .lg-durability
         &__box
-            background-color: #101010
+            // background-color: #101010
         &__text
             h2
                 margin-top: 0
-                padding-top: 20px
+                // padding-top: 20px
     #maincontent .lg-spasteam, #maincontent .lg-warranty, #maincontent .lg-diagnisis, #maincontent .lg-control
         &__text
             h2, p
