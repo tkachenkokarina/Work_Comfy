@@ -103,14 +103,13 @@ li {
           transform: translate(-50%, -50%);
 }
 
+#maincontent .lg-durability__box {
+  background-color: #000;
+  padding-top: 20px;
+}
 #maincontent .lg-durability__text {
-  top: 80%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-silence__text {
@@ -132,13 +131,8 @@ li {
 }
 
 #maincontent .lg-diagnisis__text {
-  top: 30%;
-  left: 48%;
-  right: 15px;
-  width: 50%;
-}
-#maincontent .lg-diagnisis__text h2, #maincontent .lg-diagnisis__text p {
-  text-align: left;
+  position: unset;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1540px) {
