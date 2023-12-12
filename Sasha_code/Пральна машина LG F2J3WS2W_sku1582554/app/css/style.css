@@ -106,14 +106,13 @@ li {
           transform: translate(-50%, -50%);
 }
 
+#maincontent .lg-durability__box {
+  background-color: #000;
+  padding-top: 20px;
+}
 #maincontent .lg-durability__text {
-  top: 80%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-spasteam__text {
@@ -282,12 +281,8 @@ li {
   #maincontent .lg-6motion__text h2 {
     padding-top: 20px;
   }
-  #maincontent .lg-durability__box {
-    background-color: #101010;
-  }
   #maincontent .lg-durability__text h2 {
     margin-top: 0;
-    padding-top: 20px;
   }
   #maincontent .lg-spasteam__text h2, #maincontent .lg-spasteam__text p, #maincontent .lg-warranty__text h2, #maincontent .lg-warranty__text p, #maincontent .lg-diagnisis__text h2, #maincontent .lg-diagnisis__text p, #maincontent .lg-control__text h2, #maincontent .lg-control__text p {
     text-align: center;
