@@ -1,0 +1,159 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:40px;line-height:1.2;margin:20px 0px;color:#009fe3}#maincontent .maincontent__container h5{font-size:23px;line-height:1.2;margin-bottom:10px;color:#009fe3}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:28px;line-height:1.2;margin-bottom:10px;color:#505456}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{list-style:disc}#maincontent .maincontent__container ul{margin-left:20px}#maincontent .banner-box{margin-bottom:30px}#maincontent .banner-box__bottom{margin-bottom:10px}#maincontent .banner-box__header h2{text-align:center}#maincontent .banner-box__images{display:grid;grid-template-columns:repeat(3, 1fr);-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;justify-items:center}#maincontent .candy-table__inner{padding:30px 100px}#maincontent .candy-table__items{display:grid;grid-template-columns:repeat(5, 1fr);-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-column-gap:50px;-moz-column-gap:50px;column-gap:50px;row-gap:50px}#maincontent .candy-table__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .candy-table__item-img{margin-bottom:20px}#maincontent .candy-table__item-text h5,#maincontent .candy-table__item-text p{text-align:center}#maincontent .candy-table__item-text p{font-size:22px}#maincontent .row-candy__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-candy__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-candy__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-candy__text_right{padding:10px 70px 10px 0}#maincontent .row-candy__text_left{padding:10px 0 10px 70px}#maincontent .row-candy__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-candy__image_left{margin-right:70px}#maincontent .row-candy__image_right{margin-left:70px}@media screen and (max-width: 1400px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 18*(100vw - 320px)/1080);font-size:calc(22px + 18*(100vw - 320px)/1080)}#maincontent .maincontent__container h5{font-size:-webkit-calc(15px + 8*(100vw - 320px)/1080);font-size:calc(15px + 8*(100vw - 320px)/1080)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(18px + 10*(100vw - 320px)/1080);font-size:calc(18px + 10*(100vw - 320px)/1080)}#maincontent .candy-table__item-text p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/1080);font-size:calc(16px + 6*(100vw - 320px)/1080)}}@media screen and (max-width: 1300px){#maincontent .candy-table__inner{padding:30px 70px}#maincontent .candy-table__items{grid-template-columns:repeat(4, 1fr)}#maincontent .row-candy__text_right{padding:10px 50px 10px 0}#maincontent .row-candy__text_left{padding:10px 0 10px 50px}#maincontent .row-candy__image_left{margin-right:50px}#maincontent .row-candy__image_right{margin-left:50px}}@media screen and (max-width: 1200px){#maincontent .candy-table__items{grid-template-columns:repeat(3, 1fr);row-gap:30px}#maincontent .row-candy__text_right{padding:10px 30px 10px 0}#maincontent .row-candy__text_left{padding:10px 0 10px 30px}#maincontent .row-candy__image_left{margin-right:30px}#maincontent .row-candy__image_right{margin-left:30px}}@media screen and (max-width: 1200px){#maincontent .candy-table__inner{padding:20px 50px 30px}#maincontent .candy-table__items{-webkit-column-gap:30px;-moz-column-gap:30px;column-gap:30px}}@media screen and (max-width: 1024.98px){#maincontent .candy-table__inner{padding:10px 25px}#maincontent .candy-table__items{grid-template-columns:repeat(2, 1fr)}#maincontent .row-candy__text_right{padding:10px 20px 10px 0}#maincontent .row-candy__text_left{padding:10px 0 10px 20px}#maincontent .row-candy__image_left{margin-right:20px}#maincontent .row-candy__image_right{margin-left:20px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .row-candy__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-candy__text{padding:10px}#maincontent .row-candy__text h2,#maincontent .row-candy__text p{text-align:center}#maincontent .row-candy__image_left{margin-right:0}#maincontent .row-candy__image_right{margin-left:0}}@media screen and (max-width: 479.98px){#maincontent .banner-box{margin-bottom:0}#maincontent .candy-table__inner{padding:10px 15px}#maincontent .candy-table__items{grid-template-columns:1fr;row-gap:10px}#maincontent .candy-table__item{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .candy-table__item-img{margin-bottom:0}#maincontent .row-candy__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box banner-box"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img01_ru.jpg" /></div>
+<div class="maincontent__box candy-table">
+<div class="candy-table__inner">
+<div class="candy-table__items">
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_1.png" /></div>
+<div class="candy-table__item-text">
+<h5>Стиль и функциональность</h5>
+<p>Безопасное хранение и отличный дизайн</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_2.png" /></div>
+<div class="candy-table__item-text">
+<h5>Фильтры UV</h5>
+<p>Дверца с УФ-фильтром защищает бутылки от света.</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_3.png" /></div>
+<div class="candy-table__item-text">
+<h5>Деревянные полки</h5>
+<p>Полки из экологичного бамбукового дерева</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_4.png" /></div>
+<div class="candy-table__item-text">
+<h5>Громкость: 39 дБ</h5>
+<p>Очень тихая работа</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_5.png" /></div>
+<div class="candy-table__item-text">
+<h5>Емкость: 41 бутылка</h5>
+<p>Холодильник для вина, вмещающий 41 бутылку</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_6.png" /></div>
+<div class="candy-table__item-text">
+<h5>LED освещение</h5>
+<p>Светодиодное освещение обеспечивает оптимальную видимость внутри холодильника,                                     красиво демонстрируя ваши вина.</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_7.png" /></div>
+<div class="candy-table__item-text">
+<h5>Низкий уровень вибрации</h5>
+<p>Вибрация и шум сведены к минимуму благодаря высококачественному компрессору.</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_8.png" /></div>
+<div class="candy-table__item-text">
+<h5>Панель управления</h5>
+<p>Точный контроль температуры благодаря электронной панели управления</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_9.png" /></div>
+<div class="candy-table__item-text">
+<h5>Дистанционное управление</h5>
+<p>Удаленное управление холодильником, мониторинг его настроек и много полезных советов                                     в приложении simply-Fi на вашем смартфоне</p>
+</div>
+</div>
+<div class="candy-table__item">
+<div class="candy-table__item-img"><img src="https://cdn.comfy.ua/media/x/img3/2719572/icon02_10.png" /></div>
+<div class="candy-table__item-text">
+<h5>Практичный размер</h5>
+<p>Размеры изделия составляют: 85 см высотой, 49 см в ширину и 55 см в глубину</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-candy">
+<div class="row-candy__inner">
+<div class="row-candy__image row-candy__image_left"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img02.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_right">
+<h2>Сочетание элегантности и практичности</h2>
+<p>Винный шкаф Candy — это небольшой агрегат, который прекрасно впишется в ваше                                 пространство. Он оснащен двойной стеклянной дверцей, через которую можно увидеть вино, и                                 LED-подсветкой, которая обеспечивает прекрасную видимость. Полки из натурального                                 бамбукового дерева не только придают стиль, но и надежно хранят бутылки любой формы и                                 размера.</p>
+</div>
+</div>
+</div>
+<div class="row-candy__inner row-candy__inner_rev">
+<div class="row-candy__image row-candy__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img03.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_left">
+<h2>Удобное управление</h2>
+<p>Винный шкаф Candy CWC154EEL/N имеет электронную панель управления, на которой вы можете:</p>
+<ul>
+<li>выбрать одну из автоматических программ для белого, красного или игристого вина с                                     идеальной температурой;</li>
+<li>установить температуру самостоятельно в диапазоне 7°C-18°C. </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row-candy__inner">
+<div class="row-candy__image row-candy__image_left"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img04.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_right">
+<h2>Выдвижные полочки</h2>
+<p>Деревянные выдвижные полочки — это максимальный комфорт и безопасный доступ к желаемым                                 напиткам. Они выполнены из экологичной бамбуковой древесины, которая придает                                 элегантности и снижает вибрации.</p>
+</div>
+</div>
+</div>
+<div class="row-candy__inner row-candy__inner_rev">
+<div class="row-candy__image row-candy__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img05.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_left">
+<h2>Отличная защита</h2>
+<p>Винный шкаф Candy имеет качественный компрессор, эффективно уменьшающий даже                                 микровибрации и другие звуки холодильника, которые могут вам мешать. Тихая работа и                                 максимальная безопасность гарантированы!</p>
+</div>
+</div>
+</div>
+<div class="row-candy__inner">
+<div class="row-candy__image row-candy__image_left"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img06.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_right">
+<h2>Дверь с UV-фильтром</h2>
+<p>Дверцы шкафа выполнены из стекла, имеющего UV-фильтр — они прекрасно защищают бутылки от                                 вредного излучения. Так, вкус вина дольше остается аутентичным и вы можете не переживать                                 за его хранение даже в солнечной комнате.</p>
+</div>
+</div>
+</div>
+<div class="row-candy__inner row-candy__inner_rev">
+<div class="row-candy__image row-candy__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img07.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_left">
+<h2>LED-освещение</h2>
+<p>Оптимальную видимость внутри винного шкафа обеспечивает LED освещение. Благодаря ему вы                                 будете быстро находить нужную бутылку уже перед тем, как открыть дверцу — температура                                 внутри холодильника не повышается, тем самым сохраняются идеальные условия.</p>
+</div>
+</div>
+</div>
+<div class="row-candy__inner">
+<div class="row-candy__image row-candy__image_left"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img08.jpg" /></div>
+<div class="row-candy__item">
+<div class="row-candy__text row-candy__text_right">
+<h2>Удаленное управление</h2>
+<p>Загружайте мобильное приложение hOn и наслаждайтесь управлением холодильника в любом                                 месте и в любое время. Там вы найдете не только контроль всех настроек, но и сможете                                 посмотреть ряд советов по идеальному хранению различных вин.                                 Там вы также можете узнать больше о бутылках, которые уже есть в вашем шкафу — просто                                 сфотографируйте этикетку в приложении и узнавайте информацию о винограднике, сорте                                 винограда, годе производства и отзывах пользователей портала Vivino об этом вине.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box banner-box banner-box__bottom">
+<div class="banner-box__header">
+<h2>Вдохновляйтесь!</h2>
+</div>
+<div class="banner-box__images"><img src="https://cdn.comfy.ua/media/x/img3/2719572/img09_1.jpg" /> <img src="https://cdn.comfy.ua/media/x/img3/2719572/img09_2_ru.jpg" /> <img src="https://cdn.comfy.ua/media/x/img3/2719572/img09_3.jpg" /></div>
+</div>
+</div>
+</div>
