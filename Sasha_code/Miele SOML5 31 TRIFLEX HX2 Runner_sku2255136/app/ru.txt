@@ -1,0 +1,114 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px;color:#484848}#maincontent .maincontent__container h2{font-size:37px;line-height:1.2;text-transform:uppercase;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:25px;line-height:1.2;margin-bottom:15px;text-align:center}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:25px;line-height:1.2;margin-bottom:10px;margin-left:15px;list-style:disc}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:30px}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 50px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .bottom-box__inner{padding:5px 20px 0}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(23px + 14*(100vw - 320px)/1220);font-size:calc(23px + 14*(100vw - 320px)/1220)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(15px + 10*(100vw - 320px)/1220);font-size:calc(15px + 10*(100vw - 320px)/1220)}}@media screen and (max-width: 1300px){#maincontent .row-maincontent__text{padding:10px 30px}}@media screen and (max-width: 991.98px){#maincontent .row-maincontent__inner{margin-bottom:0}#maincontent .row-maincontent__text{padding:10px 15px}#maincontent .bottom-box__inner{padding:5px 5px 0}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:5px}#maincontent .row-maincontent__text{padding:0 5px}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img01.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Стиль и универсальность</h2>
+<p><b>Дизайн 3 в 1</b></p>
+<p>Пылесос Miele SOML5 31 TRIFLEX HX2 Runner — это устройство, которое отличается                                 универсальностью и адаптируется под любые ваши потребности. Перемещайте пылесос в                                 удобное положение, используйте его отдельно и наслаждайтесь максимально комфортной                                 уборкой.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img02.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Comfort</h2>
+<p><b>Для больших помещений</b></p>
+<p>Блок PowerUnit можно разместить в нижней части пылесоса, что облегчает уборку больших                                 помещений. Центр тяжести смещается вниз — это уменьшает нагрузку на руку. А когда нужно                                 сделать перерыв, можете просто оставить пылесос в вертикальном положении.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img03.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Reach</h2>
+<p><b>Для труднодоступных мест</b></p>
+<p>Когда блок расположен в верхней части пылесоса, вы можете легко добраться до                                 труднодоступных мест в вашем доме, например под шкаф и кровать, или на потолок.                                 Идеальная чистота во всех уголках!</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img04.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Режим Compact</h2>
+<p><b>Для мебели и авто</b></p>
+<p>Вы можете использовать блок PowerUnit отдельно от пылесоса и удобно убирать мягкую мебель                                 или автомобильные сиденья. Компактный и легкий, он всегда готов к неожиданностям!</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img05.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Технология Vortex</h2>
+<p><b>Высокая мощность обеспечена</b></p>
+<p>Пылесос Miele SOML5 31 TRIFLEX HX2 Runner оснащен технологией Vortex — моноциклонной                                 технологией, предотвращающей потерю мощности. Она также отвечает за фильтрацию пыли:                                 мелкая пыль задерживается фильтром тонкой очистки, а грубая остается в пылесборнике.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img06.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Долговечный аккумулятор Varta</h2>
+<p><b>Продолжительная уборка от батареи</b></p>
+<p>Пылесос TRIFLEX оснащен литий-ионным аккумулятором, имеющим 7 высокопроизводительных                                 элементов — они обеспечивают высокую мощность, надежность и продолжают время работы                                 пылесоса.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img07.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Удобное хранение</h2>
+<p><b>Настенный кронштейн</b></p>
+<p>С практичным креплением вы можете сэкономить много места и надежно хранить не только                                 пылесос, но и все аксессуары к нему.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img08.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Очистка контейнера</h2>
+<p><b>Функция Twist2Open</b></p>
+<p>Очищайте контейнер всего одним движением — с помощью функции Twist2Open. Расположите                                 контейнер над мусорным ведром, нажмите одну кнопку — и вся пыль попадет в ведро через                                 открытое дно.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img09.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Фильтр с длительным сроком службы</h2>
+<p><b>Дышите свободно</b></p>
+<p>Фильтр HEPA Lifetime захватывает 99,99% аллергенов и мелкой дисперсной пыли, и помогает                                 поддерживать оптимальный микроклимат в вашем доме. Если вы или ваши близкие склонны к                                 аллергии, этот пылесос удалит большую часть пыли и пыльцы растений.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255136/img10.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Компактная электрощетка</h2>
+<p><b>Для очистки мягкой мебели</b></p>
+<p>ElectroCompact HX-SEB 23 — это компактная щетка, которая удаляет въевшуюся в диван или                                 ковер грязь, а также отлично справляется с шерстью домашних животных.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__row bottom-box">
+<div class="bottom-box__inner">
+<p>Купить пылесос <b>Miele SOML5 31 TRIFLEX HX2 Runner</b> в Украине можно на сайте или в фирменных магазинах COMFY!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
