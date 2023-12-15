@@ -1,0 +1,825 @@
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+#maincontent a
+    color: inherit
+    text-decoration: none
+
+#maincontent ul,
+ol,
+li
+    list-style: none
+    padding: 0
+    margin: 0
+
+#maincontent .bc-description__content p
+    margin-bottom: 0
+
+#maincontent .bc-description__content h3
+    text-align: left
+
+#maincontent p
+    margin: 0
+    padding: 0
+    text-align: left
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6
+    padding: 0
+    margin: 0
+    text-align: left
+    text-transform: none
+    font-weight: bold
+
+#maincontent
+    margin: 0 auto
+    overflow: hidden
+    background-color: #ffffff
+
+#maincontent p::first-letter
+    padding-left: 0
+
+#maincontent img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0
+    // margin: 0 auto
+
+#maincontent img:hover
+    opacity: 1
+
+@mixin fonts($fontSize, $lineHeight)
+    font:
+        size: $fontSize
+    line:
+        height: $lineHeight
+
+@mixin flex-box($justifyContent, $alignItems)
+    display: flex
+    justify-content: $justifyContent
+    align-items: $alignItems
+
+@mixin bg-image($url)
+    background:
+        image: $url
+    background:
+        repeat: no-repeat
+    background:
+        position: top center
+    background:
+        size: cover
+
+@mixin position($position, $zIndex)
+    position: $position
+    z-index: $zIndex
+
+//========================================================================================================================================================
+#maincontent .maincontent
+    &__container
+        max-width: 1536px
+        margin: 0 auto
+        padding: 0 15px
+        h2
+            @include fonts($fontSize: 48px, $lineHeight: 1.15)
+            margin: 10px 0px
+            text-align: center
+            color: #327896
+        h3
+            @include fonts($fontSize: 36px, $lineHeight: 1.05)
+            margin: 14px 0 19px
+        p, ul, li
+            @include fonts($fontSize: 24px, $lineHeight: 1.16)
+            margin-bottom: 10px
+        ul, li
+            list-style: disc
+        ul
+            margin-left: 20px
+
+#maincontent .top-box
+    &__text
+        max-width: 1031px
+        margin: 0 auto
+        padding: 40px 20px
+        p
+            @include fonts($fontSize: 32px, $lineHeight: 1.18)
+            text-align: center
+    &__images
+        @include position($position: relative, $zIndex: 5)
+    &__logo
+        @include position($position: absolute, $zIndex: 6)
+        top: 0
+        left: 70px
+    &__img-icon
+        @include position($position: absolute, $zIndex: 6)
+        top: 60%
+        left: 7.36%
+        right: 78.84%
+        transform: translateY(-40%)
+
+#maincontent .philips
+    &__box-text
+        padding: 30px 10px
+        max-width: 1186px
+        margin: 0 auto
+    &__box-content
+        @include position($position: relative, $zIndex: 5)
+        width: 100%
+    &__box-cols
+        @include position($position: absolute, $zIndex: 6)
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 100%
+    &__box-bg
+        background-color: #327896
+
+#maincontent .bg-box
+    &__inner
+        padding: 10px 60px
+    &__content
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        p
+            color: #fff
+            text-align: center
+            @include fonts($fontSize: 19px, $lineHeight: 1.1)
+            font-weight: 700
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+    &__main-item
+        @include position($position: relative, $zIndex: 6)
+        padding: 10px 100px 10px 0
+    &__main-text
+        @include position($position: absolute, $zIndex: 7)
+        width: 158px
+        &::before
+            content: ""
+            @include position($position: absolute, $zIndex: 9)
+            background: #fff
+        &::after
+            content: ""
+            @include position($position: absolute, $zIndex: 9)
+            background: #fff
+            width: 7px
+            height: 7px
+            border-radius: 50%
+        &_01
+            left: 110px
+            top: 84px
+            width: 127px
+            &::before
+                top: 28px
+                right: -15px
+                width: 39px
+                height: 2px
+                transform: rotate(206.317deg)
+            &::after
+                right: -15px
+                top: 33px
+        &_02
+            right: -35px
+            top: 92px
+            &::before
+                top: 0
+                right: 137px
+                width: 37px
+                height: 2px
+                transform: rotate(206.317deg)
+            &::after
+                right: 169px
+                top: -11px
+        &_03
+            right: 0
+            top: 209px
+            &::before
+                top: -14px
+                right: 143px
+                width: 39px
+                height: 2px
+                transform: rotate(221.317deg)
+            &::after
+                right: 176px
+                top: -31px
+        &_04
+            right: 100px
+            bottom: 110px
+            &::before
+                top: 69px
+                right: 142px
+                width: 82px
+                height: 2px
+                transform: rotate(135.317deg)
+            &::after
+                right: 210px
+                top: 97px
+    &__items
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        align-items: stretch
+        justify-items: center
+    &__item-img
+        height: 209px
+        display: flex
+        align-items: flex-end
+        img
+            margin: 0 auto
+    &__item-text
+        max-width: 220px
+        padding: 10px 20px
+
+#maincontent .cols-box
+    &__inner
+        @include flex-box($justifyContent: space-between, $alignItems: center)
+        padding: 0 60px
+    &__col
+        flex: 0 1 36%
+        p
+            @include fonts($fontSize: 22px, $lineHeight: 1.2)
+            color: #fff
+            text-align: left
+
+#maincontent .col-box
+    &__item
+        @include flex-box($justifyContent: flex-start, $alignItems: center)
+        align-items: center
+        margin-bottom: 50px
+        &:last-child
+            margin-bottom: 0
+    &__img
+        margin-right: 20px
+        flex: 0 1 25%
+    &__text
+        padding: 10px
+        flex: 0 1 75%
+        // max-width: 430px
+
+#maincontent .img-box
+    @include position($position: relative, $zIndex: 5)
+    &::before
+        content: ""
+        @include position($position: absolute, $zIndex: 6)
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: linear-gradient(-24deg, rgba(0, 0, 0, 0.60) -2.91%, rgba(0, 0, 0, 0.00) 69.54%)
+        mix-blend-mode: multiply
+
+#maincontent .col-philips
+    &__inner
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 10px
+    &__text
+        padding: 0 10px
+
+#maincontent .row-philips
+    &__inner
+        @include flex-box($justifyContent: center, $alignItems: center)
+        margin-bottom: 50px
+        padding: 0 10px
+        &_rev
+            flex-direction: row-reverse
+    &__item
+        flex: 0 1 50%
+    &__text
+        padding: 10px 20px
+        max-width: 649px
+        margin-left: auto
+        &_rev
+            margin-right: auto
+            margin-left: 0
+    &__image
+        flex: 0 1 50%
+        &_rev
+            img
+                margin-left: auto
+    &__images
+        @include position($position: relative, $zIndex: 6)
+        flex: 0 1 50%
+    &__image-warranty
+        @include position($position: absolute, $zIndex: 7)
+        bottom: 50px
+        right: 170px
+
+#maincontent .box-table
+    &__header
+        h2
+            margin: 38px 20px
+    &__cells
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        align-items: stretch
+        gap: 2px
+    &__cell
+        min-width: 165px
+        min-height: 100%
+        padding: 0 5px
+        @include flex-box($justifyContent: center, $alignItems: center)
+        &_top
+            flex-direction: column
+        p
+            color: #fff
+            text-align: center
+        &_bg
+            background-color: #0A7896
+        &_bg02
+            background-color: #91C2D0
+        &_bg03
+            background-color: rgba(10, 120, 150, 0.81)
+        &_bg04
+            background-color: #6CAEC0
+        &_span4
+            grid-column: span 4
+        &_span5
+            grid-column: span 5
+        &_span3
+            grid-column: span 3
+        &_span2
+            grid-column: span 2
+    &__text
+        padding: 10px
+        p
+            font-size: 16px
+            margin-top: 10px
+            text-align: center
+        ul, li
+            list-style: disc
+            font-size: 16px
+            color: #fff
+            margin-left: 10px
+        &_bl
+            p
+                color: #000
+
+#maincontent .bottom-box
+    padding: 30px 20px
+    ul
+        margin-left: 0
+    &__list
+        ul, li
+            @include fonts($fontSize: 12px, $lineHeight: 1.16)
+            list-style: none
+
+//===========MEDIA=============================================================================================================================================
+@media screen and (max-width: 1500px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 85px
+    #maincontent .row-philips
+        &__image-warranty
+            right: 130px
+@media screen and (max-width: 1450px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 75px
+            &_04
+                right: 55px
+    #maincontent .row-philips
+        &__image-warranty
+            right: 100px
+
+@media screen and (max-width: 1400px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 60px
+            &_02
+                top: 78px
+            &_03
+                top: 162px
+                right: -23px
+            &_04
+                right: 40px
+    #maincontent .cols-box
+        &__inner
+            padding: 0 50px
+    #maincontent .col-box
+        &__item
+            margin-bottom: 22px
+    #maincontent .row-philips
+        &__image-warranty
+            right: 50px
+// @media screen and (max-width: 1380px)
+//     #maincontent .col-box
+//         &__item
+//             margin-bottom: 60px
+@media screen and (max-width: 1350.98px)
+    #maincontent .cols-box
+        &__inner
+            padding: 0 30px
+        &__col
+            flex: 0 1 40%
+    #maincontent .col-box
+        &__item
+            margin-bottom: 30px
+@media screen and (max-width: 1300px)
+    #maincontent .maincontent
+        &__container
+            h2
+                font-size: calc( 22px + (48 - 22) * ((100vw - 320px)/(1300 - 320)))
+            h3
+                font-size: calc( 18px + (36 - 18) * ((100vw - 320px)/(1300 - 320)))
+            p, ul, li
+                font-size: calc( 14px + (24 - 14) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .top-box
+        &__text
+            p
+                font-size: calc( 16px + (32 - 16) * ((100vw - 320px)/(1300 - 320)))
+        &__logo
+            img
+                width: 80%
+    #maincontent .bg-box
+        &__content
+            p
+                font-size: calc( 10px + (19 - 10) * ((100vw - 320px)/(1300 - 320)))
+        &__main-text
+            &_01
+                top: 60px
+                left: 45px
+            &_03
+                width: 100px
+                right: 30px
+                &::before
+                    right: 95px
+                &::after
+                    right: 128px
+    #maincontent .cols-box
+        &__col
+            p
+                font-size: calc( 13px + (22 - 13) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .box-table
+        &__text
+            p, ul, li
+                font-size: calc( 12px + (16 - 12) * ((100vw - 320px)/(1300 - 320)))
+    #maincontent .bottom-box
+        &__list
+            ul, li
+                font-size: calc( 10px + (12 - 10) * ((100vw - 320px)/(1300 - 320)))
+@media screen and (max-width: 1250px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 35px
+            &_02
+                top: 67px
+                right: -49px
+            &_04
+                right: 12px
+                bottom: 95px
+    #maincontent .col-box
+        &__item
+            margin-bottom: 15px
+@media screen and (max-width: 1200px)
+    #maincontent .cols-box
+        &__inner
+            padding: 0 15px
+    #maincontent .col-box
+        &__item
+            margin-bottom: 15px
+@media screen and (max-width: 1150px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 12px
+            &_03
+                top: 136px
+    #maincontent .cols-box
+        &__inner
+            padding: 0 10px
+    #maincontent .col-box
+        &__item
+            margin-bottom: 5px
+        &__img
+            margin-right: 0
+            img
+                width: 80%
+    #maincontent .row-philips
+        &__image-warranty
+            right: 0
+            img
+                width: 80%
+@media screen and (max-width: 1100px)
+    // #maincontent .col-box
+    //     &__item
+    //         margin-bottom: 10px
+    //     &__img
+    //         margin-right: 10px
+    #maincontent .box-table
+        &__cells
+            overflow-x: scroll
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: -20px
+            &_01
+                top: 56px
+            &_03
+                top: 113px
+                right: 5px
+            &_04
+                right: 7px
+                bottom: 79px
+    // #maincontent .row-philips
+    //     &__image-warranty
+    //         img
+    //             width: 80%
+    //             margin-left: auto
+@media screen and (max-width: 1050px)
+    #maincontent .bg-box
+        &__content
+            p
+                font-size: calc( 10px + (15 - 10) * ((100vw - 320px)/(1050 - 320)))
+        &__main-text
+            &_04
+                width: 105px
+                right: 73px
+                &::before
+                    right: 86px
+                &::after
+                    right: 154px
+    // #maincontent .col-box
+    //     &__item
+    //         margin-bottom: 0
+    #maincontent .cols-box
+        &__col
+            flex: 0 1 45%
+
+@media screen and (max-width: 1024.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                width: 70px
+                left: 20px
+                &::before
+                    right: -48px
+                &::after
+                    right: -47px
+            &_02
+                top: 60px
+                right: -53px
+            &_03
+                top: 128px
+            &_04
+                right: 90px
+                bottom: 93px
+    #maincontent .col-philips
+        &__inner
+            grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width: 991.98px)
+    #maincontent .top-box
+        &__text
+            padding: 20px
+        &__logo
+            img
+                width: 65%
+    #maincontent .bg-box
+        &__content
+            flex-direction: column
+        &__main-text
+            &_01
+                left: 151px
+                // &::before
+                //     right: -48px
+                // &::after
+                //     right: -47px
+            &_02
+                top: 95px
+                right: -29px
+                // &::before
+                //     width: 23px
+                //     right: 129px
+                // &::after
+                //     right: 149px
+                //     top: -8px
+            &_03
+                top: 212px
+                right: 45px
+            &_04
+                right: 136px
+                bottom: 136px
+    #maincontent .philips
+        &__box-text
+            padding: 20px 10px
+        &__box-cols
+            position: unset
+            transform: translateY(0)
+    #maincontent .cols-box
+        &__col
+            p
+                color: #000
+    #maincontent .img-box
+        margin-bottom: 40px
+    #maincontent .row-philips
+        &__image-warranty
+            right: 25px
+            bottom: 25px
+            img
+                width: 60%
+                margin-left: auto
+
+@media screen and (max-width: 767.98px)
+    #maincontent .top-box
+        &__text
+            padding: 0 5px
+        &__logo
+            left: 45px
+            img
+                width: 50%
+    #maincontent .bg-box
+        &__inner
+            padding: 10px 20px
+    #maincontent .philips
+        &__box-text
+            padding: 0 5px
+    #maincontent .cols-box
+        &__inner
+            flex-direction: column
+            padding-right: 0
+        &__col
+            margin-bottom: 10px
+            width: 100%
+    #maincontent .img-box
+        margin-bottom: 15px
+    #maincontent .col-box
+        &__item
+            margin-bottom: 10px
+        &__text
+            padding: 0 7px
+    #maincontent .col-philips
+        &__inner
+            grid-template-columns: 1fr
+            gap: 0
+        &__image
+            img
+                margin: 0 auto
+        &__text
+            h3, p
+                text-align: center
+            h3
+                margin: 10px 0
+    #maincontent .row-philips
+        &__inner
+            flex-direction: column
+            margin-bottom: 0
+            padding: 0
+        &__text
+            h3, p
+                text-align: center
+            h3
+                margin: 10px 0
+    #maincontent .bottom-box
+        padding: 10px 5px
+@media screen and (max-width: 600.98px)
+    #maincontent .top-box
+        &__logo
+            img
+                width: 30%
+@media screen and (max-width: 565.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 116px
+            &_02
+                right: -19px
+                &::before
+                    top: -6px
+                    right: 119px
+                &::after
+                    right: 153px
+                    top: -18px
+            &_03
+                top: 192px
+                right: 32px
+            &_04
+                right: 121px
+    // #maincontent .row-philips
+    //     &__image-warranty
+    //         img
+    //             width: 50%
+@media screen and (max-width: 500.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 74px
+            &_02
+                right: -30px
+                top: 80px
+            &_03
+                top: 158px
+            &_04
+                right: 80px
+        &__items
+            grid-template-columns: repeat(3, 1fr)
+@media screen and (max-width: 479.98px)
+    #maincontent .top-box
+        &__logo
+            left: 20px
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 50px
+            &_03
+                right: 20px
+            &_04
+                right: 68px
+                bottom: 123px
+    #maincontent .cols-box
+        &__inner
+            padding-left: 5px
+@media screen and (max-width: 435.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 20px
+            &_02
+                right: -40px
+                top: 73px
+            &_03
+                right: 13px
+                top: 139px
+
+@media screen and (max-width: 400.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: 0
+            &_04
+                right: 38px
+                bottom: 94px
+                &::before
+                    right: 103px
+                    top: 48px
+                    width: 66px
+                &::after
+                    right: 155px
+                    top: 67px
+        &__items
+            grid-template-columns: repeat(2, 1fr)
+            align-items: end
+        &__item-img
+            height: auto
+    #maincontent .row-philips
+        &__image-warranty
+            img
+                width: 50%
+@media screen and (max-width: 375.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                &::before
+                    right: -32px
+                    top: 21px
+                &::after
+                    right: -36px
+                    top: 29px
+            &_02
+                top: 59px
+            &_03
+                right: 4px
+                top: 108px
+            &_04
+                bottom: 80px
+@media screen and (max-width: 355.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                top: 20px
+            &_02
+                right: -47px
+            &_04
+                right: 23px
+@media screen and (max-width: 337.98px)
+    #maincontent .bg-box
+        &__main-text
+            &_01
+                left: -11px
+            &_03
+                right: -4px
+                top: 102px
+            &_04
+                right: 12px
+                bottom: 51px
+                &::before
+                    width: 50px
+                    right: 104px
+                    top: 35px
+                    transform: rotate(152.317deg)
+                &::after
+                    right: 149px
+                    top: 45px
