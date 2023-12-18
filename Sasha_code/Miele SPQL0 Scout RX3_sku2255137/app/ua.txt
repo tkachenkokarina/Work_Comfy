@@ -1,0 +1,104 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1600px;margin:0 auto;padding:0 15px;color:#484848}#maincontent .maincontent__container h2{font-size:37px;line-height:1.2;text-transform:uppercase;margin:20px 0px;text-align:center}#maincontent .maincontent__container p{font-size:25px;line-height:1.2;margin-bottom:15px;text-align:center}#maincontent .maincontent__container ol,#maincontent .maincontent__container li{font-size:25px;line-height:1.2;margin-bottom:10px;margin-left:15px;list-style:decimal}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:30px}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 50px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .bottom-box__inner{padding:5px 20px 0}@media screen and (max-width: 1540px){#maincontent .maincontent__container h2{font-size:-webkit-calc(23px + 14*(100vw - 320px)/1220);font-size:calc(23px + 14*(100vw - 320px)/1220)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(15px + 10*(100vw - 320px)/1220);font-size:calc(15px + 10*(100vw - 320px)/1220)}}@media screen and (max-width: 1300px){#maincontent .row-maincontent__text{padding:10px 30px}}@media screen and (max-width: 991.98px){#maincontent .row-maincontent__inner{margin-bottom:0}#maincontent .row-maincontent__text{padding:10px 15px}#maincontent .bottom-box__inner{padding:5px 5px 0}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:5px}#maincontent .row-maincontent__text{padding:0 5px}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-maincontent">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img01.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Розумна навігація</h2>
+<p><b>3D-Smart-Navigation</b></p>
+<p>Робот-пилосос Miele SPQL0 Scout RX3 має дві передні камери, які з точністю розпізнають                             об’єкти в трьох вимірах. Розумна система визначає відстань до предметів та допомагає                             пилососу безпечно їх об’їжджати.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img02.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Першокласне прибирання</h2>
+<p><b>Продуктивна система</b></p>
+<p>Quattro Cleaning Power — це система прибирання, яка оснащена чотирма елементами для якісного                             результату:</p>
+<ol>
+<li>Бічні щітки, які забирають грубе сміття під пилосос.</li>
+<li>Щітковий валик, який збирає бруд і переносить його до всмоктувального отвору. </li>
+<li>Отвір, що старанно збирає малий пил.</li>
+<li>Вентилятор, який засмоктує бруд у пилозбірник.</li>
+</ol></div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img03.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Віртуальна карта у вас в смартфоні</h2>
+<p><b>Home Mapping</b></p>
+<p>Робот-пилосос Miele SPQL0 Scout RX3 створює віртуальну карту вашого будинку, коли                             переміщується кімнатами. Після першого прибирання він формує ідеальний маршрут для                             найефективнішого прибирання. В спеціальному додатку ви можете перевірити де знаходиться                             пилосос та де він вже встиг прибратися.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img04.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Фільтр AirClean Plus</h2>
+<p><b>Чисте повітря</b></p>
+<p>Цей фільтр — ваш гарант того, що пил залишиться в пилозбірнику. Саме завдяки ефективній                             фільтрації забезпечується чисте повітря у вашій оселі.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img05.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Чистота у віддалених куточках</h2>
+<p><b>Особлива конструкція пилососа</b></p>
+<p>Miele SPQL0 Scout RX3 — це компактний пристрій, який має плаский корпус і готовий                             переміщатися будь-де та під будь-чим. Його маневровість допоможе вам підтримувати чистоту                             навіть у важкодоступних місцях.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img06.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Легке управління</h2>
+<p><b>Сенсорний дисплей</b></p>
+<p>Робот-пилосос Miele SPQL0 Scout RX3 інтуїтивно зрозумілий в керування завдяки простому                             сенсорному дисплею. На ньому ви обираєте програму і запускаєте пилосос. Ви також можете                             управляти їм через пульт, який входить до комплекту.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img07.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Безпечний об’їзд перешкод</h2>
+<p><b>Та захист меблів</b></p>
+<p>Furniture Protection — це технологія, яка гарантує максимально безпечне прибирання. Пилосос                             оснащений 7 оптичними датчиками на передній панелі, які знаходять перешкоди на маршруті:</p>
+<ol>
+<li>Miele SPQL0 Scout RX3 обачливо наближається до меблів або інших перешкод, щоб очистити                                 підлогу перед ними;</li>
+<li>три датчики відповідають за виявлення сходинок і попереджають падіння пилососа.</li>
+</ol>
+<p>А потужний двигун та колеса, які не ковзають, забезпечують легкому переходу з підлоги на                             килим.</p>
+</div>
+</div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev">
+<div class="row-maincontent__image"><img src="https://cdn.comfy.ua/media/x/img3/2255137/img08.jpg" /></div>
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Додаток Miele Scout</h2>
+<p><b>Ще більше можливостей</b></p>
+<p>В додатку для смартфонів ви можете обрати для прибирання певну зону чи кімнату або                             заблокувати якусь зону, наприклад місце розташування килима. Робот-пилосос Miele SPQL0 Scout                             RX3 буде слухняно виконувати всі завдання.</p>
+</div>
+</div>
+</div>
+<div class="maincontent__row bottom-box">
+<div class="bottom-box__inner">
+<p>Купити робот-пилосос <b>Miele SPQL0 Scout RX3</b> в Україні можна на сайті або у фірмових магазинах                         COMFY!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
