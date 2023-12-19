@@ -106,14 +106,13 @@ li {
           transform: translate(-50%, -50%);
 }
 
+#maincontent .lg-durability__box {
+  background-color: #000;
+  padding-top: 20px;
+}
 #maincontent .lg-durability__text {
-  top: 80%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-spasteam__text {
@@ -135,13 +134,8 @@ li {
 }
 
 #maincontent .lg-diagnisis__text {
-  top: 30%;
-  left: 57%;
-  right: 15px;
-  width: 40%;
-}
-#maincontent .lg-diagnisis__text h2, #maincontent .lg-diagnisis__text p {
-  text-align: left;
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-control__text {
@@ -173,9 +167,6 @@ li {
   }
 }
 @media screen and (max-width: 1360.98px) {
-  #maincontent .lg-diagnisis__text {
-    top: 20%;
-  }
   #maincontent .lg-silence__text {
     top: 17%;
   }
@@ -187,9 +178,6 @@ li {
   #maincontent .lg-warranty__text {
     top: 18%;
   }
-  #maincontent .lg-diagnisis__text {
-    top: 15%;
-  }
 }
 @media screen and (max-width: 1100.98px) {
   #maincontent .lg-silence__text {
@@ -200,9 +188,6 @@ li {
   }
 }
 @media screen and (max-width: 1024.98px) {
-  #maincontent .lg-diagnisis__text {
-    top: 12%;
-  }
   #maincontent .lg-control__text {
     top: 25%;
   }
@@ -220,11 +205,6 @@ li {
   #maincontent .lg-warranty__text {
     top: 5%;
     left: 15px;
-  }
-  #maincontent .lg-diagnisis__text {
-    top: 10%;
-    left: 50%;
-    width: 45%;
   }
   #maincontent .lg-control__text {
     left: 15px;
@@ -281,9 +261,6 @@ li {
   }
   #maincontent .lg-6motion__text h2 {
     padding-top: 20px;
-  }
-  #maincontent .lg-durability__box {
-    background-color: #101010;
   }
   #maincontent .lg-durability__text h2 {
     margin-top: 0;
