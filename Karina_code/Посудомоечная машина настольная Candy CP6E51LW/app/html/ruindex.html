@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none}#maincontent{height:auto;margin:0 auto;overflow:hidden;background-color:#fff;font-family:"Roboto",sans-serif}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1500px;margin:0 auto}#maincontent h2{font-size:40px;line-height:1.2;color:#009fe3;margin-bottom:10px}@media(max-width: 1500px){#maincontent h2{font-size:-webkit-calc(20px + 20*(100vw - 320px)/1180);font-size:calc(20px + 20*(100vw - 320px)/1180)}}#maincontent p{font-size:28px;line-height:1.2;color:#505456}@media(max-width: 1500px){#maincontent p{font-size:-webkit-calc(16px + 12*(100vw - 320px)/1180);font-size:calc(16px + 12*(100vw - 320px)/1180)}}#maincontent .banner-maincontent p{text-align:center;width:90%;margin:0 auto;padding:20px 0}#maincontent .column-maincontent__row{padding:40px 20px;display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:40px}#maincontent .column-maincontent__text{padding-top:15px}#maincontent .column-maincontent__text h2{font-size:25px;line-height:1.2}@media(max-width: 1500px){#maincontent .column-maincontent__text h2{font-size:-webkit-calc(16px + 9*(100vw - 320px)/1180);font-size:calc(16px + 9*(100vw - 320px)/1180)}}#maincontent .column-maincontent__text p{font-size:25px;line-height:1.2}@media(max-width: 1500px){#maincontent .column-maincontent__text p{font-size:-webkit-calc(16px + 9*(100vw - 320px)/1180);font-size:calc(16px + 9*(100vw - 320px)/1180)}}#maincontent .column-maincontent__text h2,#maincontent .column-maincontent__text p{text-align:center}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{width:90%;margin:0 auto;padding:10px 0}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .col-maincontent{margin-bottom:10px}#maincontent .col-maincontent__title{padding:40px 15px}#maincontent .col-maincontent__title h2{text-align:center}#maincontent .col-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:20px}@media screen and (max-width: 991.98px){#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{width:auto;padding:20px 15px 10px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}}@media screen and (max-width: 767.98px){#maincontent .column-maincontent__row{grid-template-columns:repeat(auto-fit, minmax(200px, 1fr))}#maincontent .col-maincontent__inner{gap:10px}}@media screen and (max-width: 479.98px){#maincontent .column-maincontent__row{grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))}#maincontent .col-maincontent__title{padding:20px 15px}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2736496/img1.jpg" alt="">
+                <p>Candy Rapido’ — это посудомоечная машина, которая поможет вам разобраться с любым количеством грязной
+                    посуды. Она имеет компактные размеры, благодаря чему отлично впишется даже в маленькую кухню, но при
+                    этом она оснащена большим количеством различных программ и функций.
+                </p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Идеальна для маленьких кухонь </h2>
+                            <p>Даже если у вас ограниченное пространство на кухне, для этой настольной посудомоечной
+                                машины найдется свой уголок. Теперь быстрое мытье посуды доступно всем. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Адаптированные программы </h2>
+                            <p>Candy Rapido’ имеет 5 автоматических программ, которые адаптированы к различным видам
+                                загрязнений. К примеру, Интенсивная программа предназначена для мытья сильно
+                                загрязненной посуды и даже кастрюль; при программе Eco машина потребляет меньшее
+                                количество энергии и воды и отлично справляется со средней степенью загрязнения;
+                                программа Fast 35 обеспечивает мытье и сушку за 35 минут. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Сверхбыстрая программа </h2>
+                            <p>Всего 35 минут — и ваша посуда чистая и сухая. С этой программой вы можете не только
+                                быстро вымыть посуду, но и уменьшить потребление воды и электричества. Как? В этой
+                                программе доступна половинная загрузка. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Мойте до 6 комплектов посуды за раз </h2>
+                            <p>Хотя посудомоечная машина Candy Rapido' не слишком большая, она вмещает 6 комплектов
+                                посуды, а это 66 предметов. Теперь можно не стоять около раковины целый час после ужина
+                                с друзьями и близкими — за вас все сделает Candy CP6E51LW. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Специальный держатель для аксессуаров </h2>
+                            <p>Машина оснащена специальным дополнительным держателем для маленьких столовых приборов,
+                                например чайных ложек, половников и длинных ножей. Благодаря этому пространство внутри
+                                машины используется полностью и вся посуда моется за один цикл. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Энергопотребление с половинной загрузкой </h2>
+                            <p>Выбирайте функцию ½ загрузки и уменьшайте потребление воды и электричества. К тому же
+                                теперь не нужно ждать, пока наберется достаточное количество грязной посуды для запуска
+                                машины — загружайте половину и наслаждайтесь чистой посудой. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Таймер запуска </h2>
+                            <p>Удобная функция для любой посудомоечной машины — задержка запуска. У этой модели возможна
+                                задержка запуска на 3, 6 и 9 часов. Пользуйтесь ночным тарифом и запускайте
+                                посудомоечную машину на ночь с таймером, чтобы с утра иметь чистую и сухую посуду. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Минимум шума </h2>
+                            <p>Включайте посудомоечную машину даже ночью и не беспокойтесь за шум из кухни — его не
+                                будет. Эта модель имеет пониженный уровень шума, поэтому сон ваших родных будет крепким
+                                и спокойным. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Всегда в курсе когда мойка заканчивается </h2>
+                            <p>Candy Rapido' — это умная посудомоечная машина. Она издает звуковой сигнал, чем извещает
+                                вас об окончании цикла мойки и сушки. Потому после запуска программы вы можете спокойно
+                                заниматься своими делами и не бегать на кухню. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Вдохновляйтесь!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img24.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2736496/img1ua.jpg" alt="">
+                <p>Candy Rapido’ — це посудомийна машина, яка швидко допоможе вам розібратися з будь-якою кількістю
+                    брудного посуду. Вона має компактні розміри, завдяки чому чудово впишеться навіть в маленьку кухню,
+                    але при цьому вона оснащена великою кількістю різних програм та функцій. </p>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Ідеальна для маленьких кухонь </h2>
+                            <p>Навіть якщо ви маєте обмежений простір на кухні, для цієї настільної посудомийної машини
+                                знайдеться свій куточок. Тепер швидке миття посуду доступно всім. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Адаптовані програми </h2>
+                            <p>Candy Rapido’ має 5 автоматичних програм, які адаптовані до різного виду забруднень.
+                                Наприклад, Інтенсивна програма призначена для миття сильно забрудненого посуду і навіть
+                                каструль; при програмі Eco машина споживає меншу кількість енергії та води й чудово
+                                справляється з середнім ступенем забруднення; програма Fast 35 забезпечує миття і
+                                сушіння за 35 хвилин. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Надшвидка програма </h2>
+                            <p>Всього 35 хвилин — і ваш посуд чистий і сухий. З цією програмою ви можете не тільки
+                                швидко вимити посуд, але й зменшити споживання води та електрики. Як? В цій програмі
+                                доступне половинне завантаження. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Мийте до 6 комплектів посуду за раз </h2>
+                            <p>Хоч посудомийна машина Candy Rapido’ не занадто велика, вона вміщує в собі 6 комплектів
+                                посуду, а це 66 предметів. Тепер можна не стояти біля раковини годину після вечері з
+                                друзями й близькими — за вас все зробить Candy CP6E51LW. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Спеціальний тримач для аксесуарів </h2>
+                            <p>Машина оснащена спеціальним додатковим тримачем для маленького столового наряддя,
+                                наприклад чайних ложок, ополоників та довгих ножів. Завдяки цьому простір всередині
+                                машини використовується повністю і весь посуд миється за один цикл. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Енергоспоживання з половинним завантаженням </h2>
+                            <p>Обирайте функцію ½ завантаження і зменшуйте споживання води та електрики. До того ж тепер
+                                не треба чекати, поки набереться достатня кількість брудного посуду для запуску машини —
+                                завантажуйте половину і насолоджуйтеся чистим посудом. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Таймер запуску </h2>
+                            <p>Зручна функція для будь-якої посудомийної машини — затримка запуску. В цій моделі можлива
+                                затримка запуску на 3, 6 і 9 годин. Користуйтеся нічним тарифом і запускайте посудомийну
+                                машину на ніч з таймером, щоб зранку мати чистий і сухий посуд. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Мінімум шуму </h2>
+                            <p>Вмикайте посудомийну машину навіть вночі та не хвилюйтеся за шум з кухні — його не буде.
+                                Ця модель має знижений рівень шуму, тому сон ваших рідних буде міцним і спокійним. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Завжди в курсі коли миття закінчується </h2>
+                            <p>Candy Rapido’ — це розумна посудомийна машина. Вона видає звуковий сигнал, чим сповіщає
+                                вас про закінчення циклу миття і сушіння. Тому після запуску програми ви можете спокійно
+                                займатися своїми справами й не бігати на кухню. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Надихайтеся!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img24ua.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2736496/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

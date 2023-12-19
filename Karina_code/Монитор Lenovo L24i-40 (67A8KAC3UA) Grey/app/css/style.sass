@@ -1,0 +1,404 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1600
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #lenovol24 a
+//     color: inherit
+//     text-decoration: none
+
+// #lenovol24
+//     ul,
+//     ol,
+//     li
+//         list-style: none
+//         padding: 0
+//         margin: 0
+
+#lenovol24 .bc-description__content p
+    margin-bottom: 0
+
+#lenovol24 .bc-description__content h3
+    text-align: left
+
+#lenovol24
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#lenovol24
+    max-width: 1920px
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    background-color: #070129
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#lenovol24 p::first-letter
+    padding-left: 0
+
+#lenovol24 img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#lenovol24 img:hover
+    opacity: 1
+
+#lenovol24 .lenovol24__container
+    max-width: 1550px
+    margin: 0 auto
+    padding: 0 15px
+
+//========================================================================================================================================================
+#lenovol24
+    h2
+        @include adaptiv-value("font-size", 92, 28, 1)
+        font-weight: 400
+        line-height: 1.2
+        color: #FFFFFF
+        margin-bottom: 65px
+    p
+        @include adaptiv-value("font-size", 32, 16, 1)
+        font-weight: 325
+        line-height: 1.2
+
+#lenovol24 .header-lenovol24
+    position: relative
+    z-index: 5
+    &__bg
+        position: relative
+        z-index: 2
+        @include adaptiv-value("padding-top", 305, 100, 1)
+        //padding-top: 305px
+        &::before
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            width: 100%
+            height: 86%
+            background: url('https://cdn.comfy.ua/media/x/img3/2755815/img01.png') center/cover no-repeat
+            // background-size: cover
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 30%
+            background: url('https://cdn.comfy.ua/media/x/img3/2755815/img03.png') center/cover no-repeat
+    &__logo
+        position: absolute
+        z-index: 5
+        top: calc(119 / 1080 * 100%)
+        right: 0
+        left: 95.4%
+    &__text
+        position: absolute
+        z-index: 5
+        top: calc(119 / 1080 * 100%)
+        left: calc(127 / 1920 * 100%)
+        p
+            //font-size: 48px
+            @include adaptiv-value("font-size", 48, 18, 1)
+            font-weight: 325
+            line-height: 1.2
+            color: #FFFFFF
+    &__title
+        //width: 50%
+        max-width: 900px
+        margin: 0 auto
+        padding: 0 20px
+        h2
+            //font-size: 70px
+            @include adaptiv-value("font-size", 70, 30, 1)
+            font-weight: 400
+            line-height: 1.2
+            text-align: center
+            color: #FFFFFF
+    &__image
+        padding-bottom: 132px
+        padding-left: 20px
+        padding-right: 20px
+
+#lenovol24 .display-lenovol24
+    margin-top: -300px
+    position: relative
+    z-index: 3
+    &__bg
+        padding-top: 300px
+        position: relative
+        z-index: 2
+        //padding-bottom: 272px
+        @include adaptiv-value("padding-bottom", 272, 100, 1)
+        &::before
+            content: ''
+            position: absolute
+            z-index: -2
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2755815/img04.png') center/cover no-repeat
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 32%
+            background: url('https://cdn.comfy.ua/media/x/img3/2755815/img05.png') center/cover no-repeat
+    &__text
+        // max-width: 1500px
+        // width: 90%
+        // margin: 0 auto
+        // padding: 0 40px
+        @include adaptiv-value("padding-left", 186, 20, 1)
+        @include adaptiv-value("padding-right", 186, 20, 1)
+        p
+            @include adaptiv-value("font-size", 92, 20, 1)
+            font-weight: 400
+            line-height: 1.2
+            color: transparent
+            -webkit-background-clip: text
+            background-clip: text
+            //background-image: linear-gradient(90deg, rgba(241,100,170,1) 0%, rgba(231,194,255,1) 25%, rgba(114,128,255,1) 56%, rgba(98,171,231,1) 82%, rgba(237,241,255,1) 100%)
+            //background-image: linear-gradient(to right, red, fuchsia)
+            &:nth-child(1)
+                background-image: linear-gradient(176deg, rgba(241,100,170,1) 34%, rgba(231,194,255,1) 90%)
+            &:nth-child(2)
+                background-image: linear-gradient(180deg, rgba(231,194,255,1) 34%, rgba(114,128,255,1) 96%)
+            &:nth-child(3)
+                background-image: linear-gradient(180deg, rgba(114,128,255,1) 70%, rgba(98,171,231,1) 85%)
+            &:nth-child(4)
+                background-image: linear-gradient(180deg, rgba(98,171,231,1) 0%, rgba(98,171,231,1) 100%)
+            &:nth-child(5)
+                background-image: linear-gradient(143deg, rgba(98,171,231,1) 8%, rgba(237,241,255,1) 33%)
+
+#lenovol24 .play-lenovol24
+    margin-top: -200px
+    position: relative
+    z-index: 2
+    &__bg
+        position: relative
+        z-index: 2
+        //padding-top: 300px
+        @include adaptiv-value("padding-top", 300, 200, 1)
+        &::before
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: url('https://cdn.comfy.ua/media/x/img3/2755815/img06.png') center/cover no-repeat
+    &__image
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 20px
+    &__text
+        @include adaptiv-value("padding-left", 186, 20, 1)
+        @include adaptiv-value("padding-right", 186, 20, 1)
+        @include adaptiv-value("padding-top", 150, 30, 1)
+        @include adaptiv-value("padding-bottom", 150, 30, 1)
+        //padding-top: 150px
+        //padding-bottom: 150px
+        h2
+            // margin-bottom: 65px
+        p
+            // font-size: 32px
+            // font-weight: 325
+            // line-height: 1.2
+            color: #FEFEFE
+            &:not(:last-child)
+                margin-bottom: 30px
+
+#lenovol24 .designed-lenovol24
+    &__bg
+        @include adaptiv-value("padding-left", 186, 20, 1)
+        @include adaptiv-value("padding-right", 186, 20, 1)
+    &__row
+        background-color: #AAA7B9
+        padding: 60px 90px
+        border-radius: 100px
+    &__media
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        gap: 40px
+    &__image
+    &__text
+        padding-top: 70px
+        h2
+            color: #09032B
+            font-weight: bold
+        p
+            color: #272149
+            &:not(:last-child)
+                margin-bottom: 30px
+    &__inner
+        padding-top: 60px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+    &__item
+
+#lenovol24 .multi-lenovol24
+    @include adaptiv-value("padding-left", 186, 20, 1)
+    @include adaptiv-value("padding-right", 186, 20, 1)
+    @include adaptiv-value("padding-top", 150, 30, 1)
+    &__text
+        @include adaptiv-value("padding-bottom", 150, 30, 1)
+        p
+            color: #D9DBDC
+            &:not(:last-child)
+                margin-bottom: 30px
+    &__image
+
+#lenovol24 .game-lenovol24
+    &__bg
+    &__text
+        @include adaptiv-value("padding-left", 186, 20, 1)
+        @include adaptiv-value("padding-right", 186, 20, 1)
+        @include adaptiv-value("padding-top", 150, 20, 1)
+        @include adaptiv-value("padding-bottom", 150, 20, 1)
+        h2
+            // font-size: 92px
+            // font-weight: 400
+            // line-height: 1.2
+            // color: #FFFFFF
+            // margin-bottom: 65px
+        p
+            // font-size: 32px
+            // font-weight: 325
+            // line-height: 1.2
+            color: #D9DBDC
+            &:not(:last-child)
+                margin-bottom: 30px
+        span
+            @include adaptiv-value("font-size", 51, 20, 1)
+            font-weight: 700
+            line-height: 1.2
+            color: #A29EB9
+    &__snoska
+        background-color: #6F6990
+        min-height: 253px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        p
+            @include adaptiv-value("padding-left", 186, 20, 1)
+            @include adaptiv-value("padding-right", 186, 20, 1)
+            @include adaptiv-value("font-size", 32, 16, 1)
+            font-weight: 325
+            line-height: 1.2
+            color: #FFFFFF
+            &:not(:last-child)
+                margin-bottom: 15px
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+//@media screen and (max-width: 1024.98px)
+@media screen and (max-width: 991.98px)
+    #lenovol24 .designed-lenovol24__row
+        @include adaptiv-value("padding-left", 90, 20, 1)
+        @include adaptiv-value("padding-right", 90, 20, 1)
+    #lenovol24 .designed-lenovol24__bg
+        padding-left: 20px
+        padding-right: 20px
+    #lenovol24 .header-lenovol24__logo
+        top: 6%
+        left: 94%
+    #lenovol24 .header-lenovol24__text
+        top: 6%
+
+@media screen and (max-width: 767.98px)
+    #lenovol24 .play-lenovol24
+        margin-top: -100px
+    #lenovol24 .designed-lenovol24__text,
+    #lenovol24 .designed-lenovol24__inner
+        padding-top: 30px
+    #lenovol24 .designed-lenovol24__row
+        padding-top: 30px
+        padding-bottom: 30px
+        border-radius: 50px
+    #lenovol24
+        h2
+            margin-bottom: 30px
+
+@media screen and (max-width: 479.98px)
+    #lenovol24 .header-lenovol24__image
+        padding-bottom: 75px
+    #lenovol24 .designed-lenovol24__inner
+        gap: 10px
+    #lenovol24 .designed-lenovol24__media
+        gap: 20px
+    #lenovol24 .designed-lenovol24__row
+        border-radius: 20px
+    #lenovol24 .designed-lenovol24__bg
+        padding-left: 10px
+        padding-right: 10px
+// @media (max-width: 812px) and (orientation: landscape)

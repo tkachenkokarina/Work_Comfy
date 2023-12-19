@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none
+        }
+
+        #maincontent {
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff;
+            font-family: "Roboto", sans-serif
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1500px;
+            margin: 0 auto
+        }
+
+        #maincontent h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            color: #1b3255;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent h2 {
+                font-size: -webkit-calc(20px + 20*(100vw - 320px)/1180);
+                font-size: calc(20px + 20*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent p {
+            font-size: 28px;
+            line-height: 1.2;
+            color: #505456
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent p {
+                font-size: -webkit-calc(16px + 12*(100vw - 320px)/1180);
+                font-size: calc(16px + 12*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__row {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px
+        }
+
+        #maincontent .column-maincontent__text {
+            padding-top: 15px
+        }
+
+        #maincontent .column-maincontent__text h2 {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .column-maincontent__text h2 {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1180);
+                font-size: calc(16px + 9*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__text p {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .column-maincontent__text p {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1180);
+                font-size: calc(16px + 9*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__text h2,
+        #maincontent .column-maincontent__text p {
+            text-align: center
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 0
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .col-maincontent {
+            margin-bottom: 10px
+        }
+
+        #maincontent .col-maincontent__title {
+            padding: 40px 15px
+        }
+
+        #maincontent .col-maincontent__title h2 {
+            text-align: center
+        }
+
+        #maincontent .col-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                width: auto;
+                padding: 20px 15px 10px
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #maincontent .column-maincontent__row {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+            }
+
+            #maincontent .col-maincontent__inner {
+                gap: 10px
+            }
+        }
+
+        @media screen and (max-width: 479.98px) {
+            #maincontent .column-maincontent__row {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+            }
+
+            #maincontent .col-maincontent__title {
+                padding: 20px 15px
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2719533/img1.jpg" alt="">
+            </div>
+            <div class="maincontent__column column-maincontent">
+                <div class="column-maincontent__row">
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img2.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Количество бутылок в холодильнике: 247</h2>
+                            <p>Вмещает до 247 бутылок вина в холодильнике</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img3.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Система Natural Airflow</h2>
+                            <p>Идеальный уровень влажности благодаря запатентованной технологии</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img4.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Деревянные полки</h2>
+                            <p>Элегантные деревянные полки отлично уменьшают вибрации</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img5.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Монтаж дверей с обеих сторон</h2>
+                            <p>Свободная организация пространства</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img6.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Антивибрационная система</h2>
+                            <p>Вибрация и шум сведены к минимуму</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img7.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Мобильное приложение hOn</h2>
+                            <p>Дистанционное управление установкой и мониторинг его работы</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img8.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Сотрудничество с Vivino</h2>
+                            <p>Сотрудничество с крупнейшим в мире винным порталом</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img9.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Сканируйте свое вино</h2>
+                            <p>Сфотографируйте этикетку на бутылке и получите ценную информацию</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Храните любимое вино в идеальных условиях </h2>
+                            <p>Этот винный шкаф оснащен новейшей технологией Haier Natural Airflow System —
+                                антигравитационной системой воздушных потоков. Именно она гарантирует сбалансированную
+                                работу компрессора и вентилятора, благодаря чему держится идеальный уровень влажности —
+                                50-70% прямо как на профессиональных винодельнях. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Полный контроль </h2>
+                            <p>Винный шкаф Haier имеет удобную сенсорную панель управления, с которой вы можете легко
+                                контролировать идеальные условия хранения. Неважно, какие внешние условия и какая
+                                температура в помещении, шкаф и интуитивно понятный дисплей гарантируют полный контроль.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Защита от ультрафиолета </h2>
+                            <p>Элегантные дверцы — это не только об уникальном дизайне, но и об эффективной защите. В
+                                холодильнике ваши вина в полной безопасности, потому что он оборудован ультрафиолетовым
+                                фильтром. Теперь можно наслаждаться любимыми винами дольше, чем раньше!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Антивибрационная система </h2>
+                            <p>Что бы ни происходило вне, в винном шкафу ваши бутылки в полной безопасности.
+                                Антивибрационная система эффективно снижает шум и вибрацию до минимума.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Всегда есть свет </h2>
+                            <p>Haier HWS247FDU1 оснащена 3D-светодиодным точечным освещением теплого цвета, которое
+                                освещает ваши бутылки сверху и по бокам. При этом светодиоды выделяют минимальное
+                                количество тепла, потому они не влияют на температурный режим внутри холодильника.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Удобная дверь </h2>
+                            <p>В этой модели можно установить дверцу как с правой стороны, так и с левой. Просто найдите
+                                идеальное место для холодильника и не думайте о том, удобно ли вам будет открывать
+                                дверцу. Haier HWS247FDU1 — максимальная гибкость в организации пространства.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Система блокировки </h2>
+                            <p>Эффективная защита — еще одно преимущество этого холодильника. Благодаря дверному замку
+                                вы всегда можете быть уверены, что ваше вино находится там, где ему нужно быть.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Комфортный и быстрый доступ </h2>
+                            <p>Винный шкаф оборудован деревянными выдвижными полками, которые делают любую бутылку
+                                доступной. Комфорт и удобство — вот главные критерии Haier HWS247FDU1.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Элегантность и натуральность </h2>
+                            <p>Полки в этой модели шкафа изготовлены из настоящего бамбукового дерева. Этот материал не
+                                только элегантный и прочный, но он также позитивно влияет на защиту бутылок, а именно
+                                эффективно снижает вибрации.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Мобильное приложение hOn </h2>
+                            <p>Приложение hOn создано вместе с крупнейшим в мире винным сообществом Vivino. С ним вы
+                                можете узнать больше о бутылке вина в вашей руке, просто отсканировав этикетку, а также
+                                увидеть рейтинг от пользователей приложения.
+                                С помощью приложения также можно удаленно управлять настройками холодильника и
+                                просматривать советы по хранению вина.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img19.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Удаленное управление </h2>
+                            <p>Благодаря приложению hOn вы можете управлять своим винным холодильником неограниченное
+                                количество раз, и самое главное — делать это с помощью голоса. Все ваши предпочтения и
+                                советы сохраняются для дальнейшего удобного использования.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img20.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Высокий класс энергоэффективности D </h2>
+                            <p>Винный шкаф Haier HWS247FDU1 работает в классе энергопотребления D, поэтому можете не
+                                беспокоиться за большие счета за электроэнергию — их не будет. Кроме того, такой класс
+                                энергосбережения оказывает положительное влияние на состояние окружающей среды.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img21.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Бренд №1 в мире </h2>
+                            <p>С 2009 года бренд Haier крепко стоит на лидерских позициях в сфере бытовой техники. Он
+                                создает надежные приборы высочайшего качества. Компания всегда адаптируется к
+                                современному потребителю и его требованиям, предлагая инновационные и функциональные
+                                товары для повседневной жизни!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img22.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Вдохновляйтесь!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img24.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2719533/img26.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    UA
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2719533/img1ua.jpg" alt="">
+            </div>
+            <div class="maincontent__column column-maincontent">
+                <div class="column-maincontent__row">
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img2.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Кількість пляшок в холодильнику: 247</h2>
+                            <p>Вміщує до 247 пляшок вина в холодильнику</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img3.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Система Natural Airflow</h2>
+                            <p>Ідеальний рівень вологості завдяки запатентованій технології</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img4.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Дерев'яні полиці</h2>
+                            <p>Елегантні дерев'яні полиці чудово зменшують вібрації</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img5.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Монтаж дверей з обох боків</h2>
+                            <p>Вільна організація простору</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img6.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Антивібраційна система</h2>
+                            <p>Вібрація та шум зведені до мінімуму</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img7.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Мобільний застосунок hOn</h2>
+                            <p>Дистанційне керування установкою та моніторинг його роботи</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img8.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Співпраця з Vivino</h2>
+                            <p>Співпраця з найбільшим у світі винним порталом</p>
+                        </div>
+                    </div>
+                    <div class="column-maincontent__item">
+                        <div class="column-maincontent__icon">
+                            <img src="https://cdn.comfy.ua/media/x/img3/2719533/img9.png" alt="">
+                        </div>
+                        <div class="column-maincontent__text">
+                            <h2>Скануйте своє вино</h2>
+                            <p>Сфотографуйте етикетку на пляшці та отримайте цінну інформацію</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Зберігайте улюблене вино в ідеальних умовах </h2>
+                            <p>Ця винна шафа оснащена новітньою технологією Haier Natural Airflow System —
+                                антигравітаційною системою повітряних потоків. Саме вона гарантує збалансовану роботу
+                                компресора та вентилятора, завдяки чому тримається ідеальний рівень вологості — 50-70%,
+                                прямо як на професійних виноробнях.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Повний контроль </h2>
+                            <p>Винна шафа Haier має зручну сенсорну панель керування, з якою ви легко можете
+                                контролювати ідеальні умови зберігання. Неважливо які зовнішні умови і яка температура в
+                                приміщення, шафа та інтуїтивно зрозумілий дисплей гарантують повний контроль.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Захист від ультрафіолету </h2>
+                            <p>Елегантні дверцята — це не тільки про унікальний дизайн, але і про ефективний захист. В
+                                холодильнику ваші вина в повній безпеці, бо він обладнаний ультрафіолетовим фільтром.
+                                Тепер можна насолоджуватися улюбленими винами довше, ніж раніше!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Антивібраційна система </h2>
+                            <p>Що б не відбувалося ззовні, у винній шафі ваші пляшки в повній безпеці. Антивібраційна
+                                система ефективно знижує шум та вібрації до мінімуму.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Завжди світло </h2>
+                            <p>Haier HWS247FDU1 оснащена 3D-світлодіодним точковим освітленням теплого кольору, яке
+                                висвітлює ваші пляшки зверху та з боків. При цьому світлодіоди виділяють мінімальну
+                                кількість тепла, тому вони не впливають на температурний режим всередині холодильника.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Зручні двері </h2>
+                            <p>В цій моделі ви можете встановити дверцята як з правої сторони, так і з лівої. Просто
+                                знайдіть ідеальне місце для холодильника і не думайте про те, чи зручно вам буде
+                                відчиняти дверцята. Haier HWS247FDU1 — максимальна гнучкість в організації простору.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Система блокування </h2>
+                            <p>Ефективний захист — ще одна перевага цього холодильника. Завдяки дверному замку ви завжди
+                                можете бути впевненими, що ваше вино знаходиться там, де йому потрібно бути.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Комфортний та швидкий доступ </h2>
+                            <p>Винна шафа обладнана дерев’яними висувними полицями, які роблять будь-яку пляшку
+                                доступною. Комфорт та зручність — ось головні критерії Haier HWS247FDU1.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Елегантність та натуральність </h2>
+                            <p>Полиця в цій моделі шафи виготовлені зі справжнього бамбукового дерева. Цей матеріал не
+                                тільки елегантний і міцний, але він також позитивно впливає на захист пляшок, а саме
+                                ефективно знижує вібрації.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Мобільний застосунок hOn </h2>
+                            <p>Застосунок hOn створений разом з найбільшою у світі винною спільнотою Vivino. З ним ви
+                                можете дізнатися більше про пляшку вина в вашій руці, просто відсканувавши етикетку, а
+                                також побачити рейтинг від користувачів додатку.
+                                За допомогою застосунку ви також можете віддалено керувати налаштуваннями холодильника й
+                                переглядати поради щодо зберігання вина.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img19.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Дистанційне керування</h2>
+                            <p>Завдяки застосунку hOn ви можете керувати своїм винним холодильником необмежену кількість
+                                разів, і найголовніше — робити це за допомогою голосу. Також всі ваші уподобання та
+                                поради зберігаються для подальшого зручного використання.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img20.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Високий клас енергоефективності D </h2>
+                            <p>Винна шафа Haier HWS247FDU1 працює в класі енергоспоживання D, тому можете не хвилюватися
+                                за великі рахунки за електроенергію — їх не буде. Крім того, такий клас енергоощадження
+                                позитивно впливає на стан навколишнього середовища.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img21.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Бренд №1 у світі</h2>
+                            <p>З 2009 року бренд Haier міцно стоїть на лідерських позиціях у сфері побутової техніки.
+                                Він створює надійні прилади найвищої якості. Компанія завжди адаптується до сучасного
+                                споживача і його вимог, пропонуючи інноваційні та функціональні товари для повсякденного
+                                життя!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img22ua.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Надихайтеся!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img24ua.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2719533/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2719533/img26ua.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

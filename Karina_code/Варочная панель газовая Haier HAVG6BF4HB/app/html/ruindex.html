@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none
+        }
+
+        #maincontent {
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff;
+            font-family: "Roboto", sans-serif
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1500px;
+            margin: 0 auto
+        }
+
+        #maincontent h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            color: #1b3255;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent h2 {
+                font-size: -webkit-calc(20px + 20*(100vw - 320px)/1180);
+                font-size: calc(20px + 20*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent p {
+            font-size: 28px;
+            line-height: 1.2;
+            color: #505456
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent p {
+                font-size: -webkit-calc(16px + 12*(100vw - 320px)/1180);
+                font-size: calc(16px + 12*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__row {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px
+        }
+
+        #maincontent .column-maincontent__text {
+            padding-top: 15px
+        }
+
+        #maincontent .column-maincontent__text h2 {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .column-maincontent__text h2 {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1180);
+                font-size: calc(16px + 9*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__text p {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1500px) {
+            #maincontent .column-maincontent__text p {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1180);
+                font-size: calc(16px + 9*(100vw - 320px)/1180)
+            }
+        }
+
+        #maincontent .column-maincontent__text h2,
+        #maincontent .column-maincontent__text p {
+            text-align: center
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 0
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .col-maincontent {
+            margin-bottom: 10px
+        }
+
+        #maincontent .col-maincontent__title {
+            padding: 40px 15px
+        }
+
+        #maincontent .col-maincontent__title h2 {
+            text-align: center
+        }
+
+        #maincontent .col-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                width: auto;
+                padding: 20px 15px 10px
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+        }
+
+        @media screen and (max-width: 767.98px) {
+            #maincontent .column-maincontent__row {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+            }
+
+            #maincontent .col-maincontent__inner {
+                gap: 10px
+            }
+        }
+
+        @media screen and (max-width: 479.98px) {
+            #maincontent .column-maincontent__row {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+            }
+
+            #maincontent .col-maincontent__title {
+                padding: 20px 15px
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2561400/img1.jpg" alt="">
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Наслаждайтесь приготовлением каждый день </h2>
+                            <p>Кухня будущего в вашем доме — это о газовой варочной поверхности Haier HAVG6BF4HB.
+                                Завтраки, обеды, ужины, перекусы, перерывы на кофе с пирожным — все это станет для вас
+                                легко проведенным временем. Варочная поверхность оснащена искусственным интеллектом,
+                                который шаг за шагом проведет вас от идеи до готового блюда, а также предложит
+                                оптимальные настройки.
+                                Минималистичный дизайн, тщательно подобранные высококачественные материалы,
+                                обеспечивающие долговечность прибора и элегантная отделка создают идеальное сочетание с
+                                современным интерьером вашей кухни.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Gas On Glass Серия 4 </h2>
+                            <p>Элегантная серия сочетает стекло, черный чугун, стильные ручки и стеклянную поверхность.
+                                Уверяем вас, вы никогда еще не готовили с таким эстетическим удовольствием. А за
+                                функциональность и оптимизацию работы отвечает функция Preci Flame, которая дает 9
+                                точных настроек тепловой мощности для каждой конфорки.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Чугунные решетки </h2>
+                            <p>Такие решетки выдерживают самую тяжелую и самую большую посуду, можете быть уверенными.
+                                Чугунные решетки — это ваша гарантия безопасного и долговечного использования с
+                                минимальным уходом.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Прочность и надежность </h2>
+                            <p>Конструкция самой решетки — еще одно большое преимущество этой варочной поверхности. Она
+                                была разработана таким образом, чтобы повысить функциональность и при этом чтобы
+                                поверхность идеально вписалась в интерьер вашей кухни.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Газовый предохранитель </h2>
+                            <p>В случае, если конфорку зальет или произойдет другая ситуация, когда пламя погаснет, газ
+                                тоже сразу же выключится. Система отсечения газа гарантирует 100% безопасность при
+                                приготовлении пищи.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Preci Flame — регулируйте мощность пламени </h2>
+                            <p>Выбирайте идеальный уровень тепла, который вам нужен для приготовления того или иного
+                                блюда. Благодаря системе Preci Flame вам доступны 9 различных настроек пламени, чтобы
+                                можно было легко выбрать идеальную температуру.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Большое расстояние между конфорками </h2>
+                            <p>При изготовлении этой варочной поверхности компания подумала и о людях, любящих готовить
+                                4 блюда одновременно. Для них они сделали большое пространство и широкое расстояние
+                                между конфорками для максимального удобства. Теперь подготовка к званым вечерам будет
+                                проходить быстрее и комфортнее.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Защита от царапин </h2>
+                            <p>Под решетками расположены резиновые накладки — они предупреждают царапины, и благодаря
+                                этому варочная поверхность дольше остается как новая. Больше не нужно волноваться, что
+                                посуда скользит и может повредить варочную поверхность.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Двойная мощность</h2>
+                            <p>Конфорка XXL обеспечивает двойной нагрев и равномерное распределение тепла. Она оснащена
+                                двойным кольцом огня, а это означает только одно — постоянную равномерную температуру
+                                внутри посуды.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Бренд №1 в мире </h2>
+                            <p>С 2009 года бренд Haier крепко стоит на лидерских позициях в сфере бытовой техники. Он
+                                создает надежные приборы высочайшего качества. Компания всегда адаптируется к
+                                современному потребителю и его требованиям, предлагая инновационные и функциональные
+                                товары для повседневной жизни!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img22.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Вдохновляйтесь!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img24.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2561400/img26.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    UA
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2561400/img1ua.jpg" alt="">
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Насолоджуйтеся приготуванням кожного дня </h2>
+                            <p>Кухня майбутнього у вашій оселі — це про газову варильну поверхню Haier HAVG6BF4HB.
+                                Сніданки, обіди, вечері, перекуси, перерви на каву з тістечком — все це стане для вас
+                                легко проведеним часом. Варильна поверхня оснащена штучним інтелектом, який крок за
+                                кроком проведе вас від ідеї до готової страви, а також запропонує оптимальні
+                                налаштування.
+                                Мінімалістичний дизайн, ретельно підібрані високоякісні матеріали, які забезпечують
+                                довговічність приладу, та елегантна обробка створюють ідеальне поєднання з сучасним
+                                інтер’єром вашої кухні.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Gas On Glass Серія 4 </h2>
+                            <p>Елегантна серія поєднує в собі скло, чорний чавун, стильні ручки та скляну поверхню.
+                                Запевняємо вас, ви ще ніколи не готували з таким естетичним задоволенням. А за
+                                функціональність та оптимізацію роботи відповідає функція Preci Flame, яка надає 9
+                                точних налаштувань теплової потужності для кожної конфорки.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Чавунні решітки </h2>
+                            <p>Такі решітки витримають найважчий і найбільший посуд, можете бути впевненими. Чавунні
+                                решітки — це ваша гарантія безпечного та довговічного використання з мінімальним
+                                доглядом.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Міцність та надійність </h2>
+                            <p>Конструкція самої решітки — ще одна велика перевага цієї варильної поверхні. Вона була
+                                розроблена таким чином, щоб підвищити функціональність і при цьому, щоб поверхня
+                                ідеально вписалася в інтер’єр вашої кухні.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img13.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Газовий запобіжник </h2>
+                            <p>В разі, якщо конфорку або протяг заллє або станеться інша ситуація, коли полум’я згасне,
+                                газ теж одразу ж вимкнеться. Система відсікання газу гарантує 100% безпеку під час
+                                приготування їжі.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img14.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Preci Flame — регулюйте потужність полум’я </h2>
+                            <p>Обирайте ідеальний рівень тепла, який вам потрібен для приготування тієї чи іншої страви.
+                                Завдяки системі Preci Flame вам доступні 9 різних налаштувань полум’я, щоб можна було
+                                легко обрати ідеальну температуру.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Велика відстань між конфорками </h2>
+                            <p>При виготовлені цієї варильної поверхні компанія подумала і про людей, які полюбляють
+                                готувати 4 страви одночасно. Для них вони зробили великий простір та широку відстань між
+                                конфорками для максимальної зручності. Тепер підготовка до званих вечорів буде проходити
+                                швидше і комфортніше.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Захист від подряпин </h2>
+                            <p>Під решітками розташовані гумові накладки — вони попереджують подряпини, і завдяки цьому
+                                варильна поверхня довше залишається як новенька. Більше не потрібно хвилюватися за те,
+                                що посуд ковзає та може пошкодити варильну поверхню.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Подвійна потужність </h2>
+                            <p>Конфорка XXL забезпечує подвійний нагрів та рівномірний розподіл тепла. Вона оснащена
+                                подвійним кільцем вогню, а це означає тільки одне — постійну рівномірну температуру
+                                всередині посуду.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img18.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Бренд №1 у світі </h2>
+                            <p>З 2009 року бренд Haier міцно стоїть на лідерських позиціях у сфері побутової техніки.
+                                Він створює надійні прилади найвищої якості. Компанія завжди адаптується до сучасного
+                                споживача і його вимог, пропонуючи інноваційні та функціональні товари для повсякденного
+                                життя!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img22ua.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__col col-maincontent">
+                <div class="col-maincontent__title">
+                    <h2>Надихайтеся!</h2>
+                </div>
+                <div class="col-maincontent__inner">
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img23.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img24ua.jpg" alt="">
+                    </div>
+                    <div class="col-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2561400/img25.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__banner banner-maincontent">
+                <img src="https://cdn.comfy.ua/media/x/img3/2561400/img26ua.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
