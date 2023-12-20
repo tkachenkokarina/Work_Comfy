@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #acerneo16 ul,#acerneo16 ol,#acerneo16 li{list-style:none;padding:0;margin:0}#acerneo16 .bc-description__content p{margin-bottom:0}#acerneo16 .bc-description__content h3{text-align:left}#acerneo16 h1,#acerneo16 h2,#acerneo16 h3,#acerneo16 h4,#acerneo16 h5,#acerneo16 h6{text-transform:none}#acerneo16{max-width:1920px;height:auto;margin:0 auto;overflow:hidden;background-color:#000;font-family:"Roboto",sans-serif}#acerneo16 h1,#acerneo16 h2,#acerneo16 h3,#acerneo16 h4,#acerneo16 h5,#acerneo16 h6,#acerneo16 p{margin:0;padding:0;text-align:left}#acerneo16 p::first-letter{padding-left:0}#acerneo16 img{opacity:1;max-width:100%;display:block;margin:0 auto}#acerneo16 img:hover{opacity:1}#acerneo16 h2{font-size:50px;line-height:1.2;color:#fff}@media(max-width: 1700px){#acerneo16 h2{font-size:-webkit-calc(20px + 30*(100vw - 320px)/1380);font-size:calc(20px + 30*(100vw - 320px)/1380)}}#acerneo16 p{font-size:30px;line-height:1.2;color:#fff}@media(max-width: 1700px){#acerneo16 p{font-size:-webkit-calc(16px + 14*(100vw - 320px)/1380);font-size:calc(16px + 14*(100vw - 320px)/1380)}}#acerneo16 ul{padding-left:40px;padding-right:15px}#acerneo16 ul li{list-style:disc;font-size:30px;line-height:1.25;color:#fff}@media(max-width: 1700px){#acerneo16 ul li{font-size:-webkit-calc(16px + 14*(100vw - 320px)/1380);font-size:calc(16px + 14*(100vw - 320px)/1380)}}#acerneo16 .header-acerneo16__text{width:90%;margin:0 auto;padding:30px 15px}#acerneo16 .header-acerneo16__text p{text-align:center}#acerneo16 .header-acerneo16__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}#acerneo16 .spec-acerneo16{padding-top:30px}#acerneo16 .spec-acerneo16__text h2{text-align:center;margin-bottom:20px}#acerneo16 .spec-acerneo16__text ul{width:80%;margin:0 auto;padding-top:20px;padding-bottom:20px}#acerneo16 .display-acerneo16__text{padding:30px 15px 10px}#acerneo16 .display-acerneo16__text h2{margin-bottom:20px;text-align:center}#acerneo16 .display-acerneo16__text p{width:90%;margin:0 auto;text-align:center}#acerneo16 .display-acerneo16__inner{padding:30px 15px;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:40px}#acerneo16 .display-acerneo16__item{-webkit-box-flex:0;-webkit-flex:0 1 33.33333%;-moz-box-flex:0;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}#acerneo16 .display-acerneo16__item h4{font-size:40px;line-height:1.2;margin:10px 0;color:#4cabc9;text-align:center}@media(max-width: 1700px){#acerneo16 .display-acerneo16__item h4{font-size:-webkit-calc(20px + 20*(100vw - 320px)/1380);font-size:calc(20px + 20*(100vw - 320px)/1380)}}#acerneo16 .display-acerneo16__item p{color:#acacac;text-align:center}#acerneo16 .game-acerneo16__text{padding:30px 15px}#acerneo16 .game-acerneo16__text h2{text-align:center;margin-bottom:20px}#acerneo16 .game-acerneo16__text ul{width:80%;margin:0 auto;padding-top:20px;padding-bottom:20px}#acerneo16 .play-acerneo16__text{padding:30px 15px 10px}#acerneo16 .play-acerneo16__text h2{margin-bottom:20px;text-align:center}#acerneo16 .play-acerneo16__text p{width:90%;margin:0 auto;text-align:center}#acerneo16 .play-acerneo16__inner{padding:30px 15px;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:40px}#acerneo16 .play-acerneo16__item{-webkit-box-flex:0;-webkit-flex:0 1 33.33333%;-moz-box-flex:0;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}#acerneo16 .play-acerneo16__item h4{font-size:60px;line-height:1.2;margin:10px 0;color:#4cabc9;text-align:center}@media(max-width: 1700px){#acerneo16 .play-acerneo16__item h4{font-size:-webkit-calc(20px + 40*(100vw - 320px)/1380);font-size:calc(20px + 40*(100vw - 320px)/1380)}}#acerneo16 .play-acerneo16__item p{color:#acacac;text-align:center}#acerneo16 .grafic-acerneo16__text{padding:30px 15px}#acerneo16 .grafic-acerneo16__text h2{margin-bottom:20px;text-align:center}#acerneo16 .grafic-acerneo16__text p{width:90%;margin:0 auto;text-align:center}#acerneo16 .grafic-acerneo16__inner{padding:50px 15px 0;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-moz-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:40px}#acerneo16 .grafic-acerneo16__item{-webkit-box-flex:0;-webkit-flex:0 1 33.33333%;-moz-box-flex:0;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}#acerneo16 .grafic-acerneo16__box h4{font-size:30px;line-height:1.2;margin:15px 0;color:#4cabc9;text-align:center}@media(max-width: 1700px){#acerneo16 .grafic-acerneo16__box h4{font-size:-webkit-calc(18px + 12*(100vw - 320px)/1380);font-size:calc(18px + 12*(100vw - 320px)/1380)}}#acerneo16 .grafic-acerneo16__box p{font-size:22px;color:#acacac;text-align:center}@media(max-width: 1700px){#acerneo16 .grafic-acerneo16__box p{font-size:-webkit-calc(16px + 6*(100vw - 320px)/1380);font-size:calc(16px + 6*(100vw - 320px)/1380)}}#acerneo16 .grafic-acerneo16__snoska p{padding:50px 15px 10px;text-align:center}#acerneo16 .box-acerneo16__text{padding:30px 15px}#acerneo16 .box-acerneo16__text h2{margin-bottom:20px;text-align:center}#acerneo16 .box-acerneo16__text p{width:90%;margin:0 auto;text-align:center}@media screen and (max-width: 1024.98px){#acerneo16 .grafic-acerneo16__box h4{font-size:16px}#acerneo16 .grafic-acerneo16__box p{font-size:14px}#acerneo16 .grafic-acerneo16__inner{gap:10px}}@media screen and (max-width: 767.98px){#acerneo16 .display-acerneo16__inner,#acerneo16 .play-acerneo16__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#acerneo16 .grafic-acerneo16__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:20px}#acerneo16 .grafic-acerneo16__box h4{font-size:18px}#acerneo16 .grafic-acerneo16__box p{font-size:16px}}@media screen and (max-width: 479.98px){#acerneo16 .game-acerneo16__text{padding-top:0px}#acerneo16 .display-acerneo16__inner,#acerneo16 .play-acerneo16__inner{padding-top:15px}#acerneo16 .spec-acerneo16__text h2{margin-bottom:10px}#acerneo16 .grafic-acerneo16__inner{padding-top:20px}#acerneo16 .display-acerneo16__text p,#acerneo16 .header-acerneo16__text,#acerneo16 .spec-acerneo16__text ul,#acerneo16 .play-acerneo16__text p,#acerneo16 .game-acerneo16__text ul,#acerneo16 .grafic-acerneo16__box,#acerneo16 .box-acerneo16__text p,#acerneo16 .grafic-acerneo16__text p{width:auto}}
+    </style>
+
+    <div id="acerneo16">
+        <div class="acerneo16__header header-acerneo16">
+            <div class="header-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img1.jpg" alt="">
+            </div>
+            <div class="header-acerneo16__text">
+                <p>Побеждайте во всех битвах вместе с премиальным игровым ноутбуком Predator Helios Neo 16. С ним все
+                    активные игровые вечера будут проходить еще более комфортно благодаря технологии охлаждения,
+                    быстрому дисплею и большому количеству дополнительных функций, повышающих эффективность. Процессор
+                    Intel Core 13-го поколения и видеокарта NVIDIA GeForce RTX 40-й серии обеспечивают постоянную
+                    высокую производительность.
+                </p>
+            </div>
+            <div class="header-acerneo16__inner">
+                <div class="header-acerneo16__item">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2711614/img2.png" alt="">
+                </div>
+                <div class="header-acerneo16__item">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2711614/img3.png" alt="">
+                </div>
+                <div class="header-acerneo16__item">
+                    <img src="https://cdn.comfy.ua/media/x/img3/2711614/img4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="acerneo16__spec spec-acerneo16">
+            <div class="spec-acerneo16__text">
+                <h2>Основные характеристики:</h2>
+                <ul>
+                    <li>эргономичный игровой дизайн;</li>
+                    <li>мощный процессор Intel Core i7-13700HX (16 ядер/24 потока);</li>
+                    <li>быстрая оперативная память Dual-Channel DDR5 на 16 ГБ и SSD-накопитель PCle на 512 ГБ;</li>
+                    <li>эффективная система охлаждения с технологией AeroBlade 3D 5 поколения с двумя вентиляторами;
+                    </li>
+                    <li>полное управление системой благодаря интерфейсу PredatorSense;</li>
+                    <li>IPS-матрица с частотой обновления 165 Гц.</li>
+                </ul>
+            </div>
+            <div class="spec-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img5.jpg" alt="">
+            </div>
+        </div>
+        <div class="acerneo16__display display-acerneo16">
+            <div class="display-acerneo16__text">
+                <h2>Быстрый и плавный дисплей </h2>
+                <p>Ноутбук Predator Helios Neo 16 оснащен 16-дюймовым экраном с высокой частотой обновления в 165 Гц и
+                    низким временем отклика, что обеспечивает плавность и скорость. Эта модель ноутбука отлично подойдет
+                    как требовательным геймерам, так и творческим людям — он имеет 100% цветовой охват sRGB и пиковую
+                    яркость в 400 нит. Создавайте контент, редактируйте фотографии и видео, играйте и смотрите фильмы с
+                    максимальным визуальным удовольствием.
+                </p>
+            </div>
+            <div class="display-acerneo16__inner">
+                <div class="display-acerneo16__item">
+                    <h4>16 дюймов</h4>
+                    <p>16:9</p>
+                </div>
+                <div class="display-acerneo16__item">
+                    <h4>FHD</h4>
+                    <p>1920х1200</p>
+                </div>
+                <div class="display-acerneo16__item">
+                    <h4>165 Гц</h4>
+                    <p>Частота обновления</p>
+                </div>
+            </div>
+            <div class="display-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img6.jpg" alt="">
+            </div>
+            <div class="display-acerneo16__text">
+                <h2>Поражающая производительность </h2>
+                <p>Стильный корпус и плавный дисплей — это еще далеко не все преимущества ноутбука Predator Helios Neo
+                    16. Внутри него скрыты современные компоненты: процессор Intel Core i7-13700HX, видеокарта NVIDIA
+                    GeForce RTX 4060, память DDR 16 ГБ и PCle накопитель на 512 ГБ. И именно благодаря этим компонентам
+                    вы можете загружать даже самые требовательные игры и программы, и наслаждаться высокой
+                    производительностью.
+                </p>
+            </div>
+            <div class="display-acerneo16__inner">
+                <div class="display-acerneo16__item">
+                    <p>Intel 13-го поколения</p>
+                    <h4>Core i7-13700HX</h4>
+                    <p>Процессор</p>
+                </div>
+                <div class="display-acerneo16__item">
+                    <p>NVIDIA</p>
+                    <h4>GeForce RTX 4060</h4>
+                    <p>Графический процессор</p>
+                </div>
+                <div class="display-acerneo16__item">
+                    <p>ОЗУ / Хранилище</p>
+                    <h4>16 ГБ/512 ГБ</h4>
+                    <p>DDR5/SSD M.2</p>
+                </div>
+            </div>
+        </div>
+        <div class="acerneo16__game game-acerneo16">
+            <div class="game-acerneo16__text">
+                <h2>Средние показатели производительности в популярных играх, режим ультра: </h2>
+                <ul>
+                    <li>Assassin's Creed Mirage — 87 fps</li>
+                    <li>Cyberpunk 2077 2.0 — 79 fps</li>
+                    <li>Diablo IV — 148 fps</li>
+                    <li>Forza Horizon 5 — 88 fps</li>
+                </ul>
+            </div>
+            <div class="game-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img7.jpg" alt="">
+            </div>
+        </div>
+        <div class="acerneo16__play play-acerneo16">
+            <div class="play-acerneo16__text">
+                <h2>Создан для многозадачности</h2>
+                <p>И для самых требовательных игр нового поколения. Все благодаря инновационной архитектуре, позволяющей
+                    подобрать ядра под нужную нагрузку. С Predator Helios Neo 16 теперь можно не волноваться, что игра
+                    вылетит и все ваши достижения аннулируются — спокойно просматривайте фильмы, слушайте музыку,
+                    общайтесь с друзьями, редактируйте фото и играйте в игры одновременно и без задержек.
+                </p>
+            </div>
+            <div class="play-acerneo16__inner">
+                <div class="play-acerneo16__item">
+                    <h4>5 ГГц</h4>
+                    <p>Тактовая частота</p>
+                </div>
+                <div class="play-acerneo16__item">
+                    <h4>16</h4>
+                    <p>Ядер (8 Р-ядер + 8 Е-ядер)</p>
+                </div>
+                <div class="play-acerneo16__item">
+                    <h4>24</h4>
+                    <p>Потока</p>
+                </div>
+            </div>
+            <div class="play-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img8.jpg" alt="">
+            </div>
+        </div>
+        <div class="acerneo16__grafic grafic-acerneo16">
+            <div class="grafic-acerneo16__text">
+                <h2>Новый уровень производительности и графики </h2>
+                <p>Благодаря графическим процессорам NVIDIA GeForce RTX 40-й серии обеспечивается сверхвысокая скорость.
+                    Работая на основе архитектуры NVIDIA Ada Lovelace, ноутбук гарантирует новый уровень эффективности и
+                    качества графики на базе ИИ. Прирост производительности с трассировкой лучей также обеспечивают
+                    тензорные ядра и потоковые мультипроцессоры нового поколения. </p>
+            </div>
+            <div class="grafic-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img9.jpg" alt="">
+            </div>
+            <div class="grafic-acerneo16__inner">
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img10.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>NVIDIA DLSS 3 </h4>
+                        <p>Технология DLSS 3 использует ИИ для создания дополнительных кадров высокого качества
+                            благодаря тензорным ядрам 4 поколения и ускорителю оптического потока. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img11.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>ТРАССИРОВКА ЛУЧЕЙ </h4>
+                        <p>Благодаря архитектуре Ada Lovelace, перед вами открывается новый виртуальный мир с высоким
+                            уровнем детализации. Используются все возможности трассировки лучей, в результате
+                            имитирующих движение света в реальном мире. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img12.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>ТЕХНОЛОГИИ NVIDIA MAX-Q </h4>
+                        <p>Все аспекты ноутбука оптимизированы: микросхемы, ПО, конструкции печатной платы, подачи
+                            питания и тепловые характеристики. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acerneo16__grafic grafic-acerneo16">
+            <div class="grafic-acerneo16__text">
+                <h2>Технология охлаждения </h2>
+                <p>Производительность увеличена на максимум, как и охлаждение. Благодаря технологии вихревого потока и
+                    технологии вентиляции AeroBlade 3D 5-го поколения весь процесс циркуляции воздуха происходит без
+                    задержек и в полную силу. </p>
+            </div>
+            <div class="grafic-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img13.jpg" alt="">
+            </div>
+            <div class="grafic-acerneo16__inner">
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img14.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>БИОНИЧЕСКИЙ ДИЗАЙН </h4>
+                        <p>Зазубренные края вентиляторов, пропускающих еще большее количество воздуха, созданы по
+                            примеру бесшумного и одновременно мощного полета птиц. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img15.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>УЛЬТРАТОНКИЕ ЛОПАСТИ </h4>
+                        <p>89 бионических лопастей имеют толщину всего 0,08 мм. Все они выполнены из металла и имеют две
+                            стабилизационные канавки. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img16.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>ЖИДКИЙ МЕТАЛЛ </h4>
+                        <p>Оптимальные температуры и максимальная производительность в требовательных программах также
+                            возможны благодаря использованию жидкого металла в процессоре. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acerneo16__box box-acerneo16">
+            <div class="box-acerneo16__text">
+                <h2>Секрет, спрятанный в корпусе </h2>
+                <p>Изюминкой этой модели можно смело назвать код, скрытый прямо на корпусе ноутбука. Анализируйте,
+                    декодируйте и дешифруйте, чтобы узнать что же скрыто внутри. </p>
+            </div>
+            <div class="box-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img17.jpg" alt="">
+            </div>
+        </div>
+        <div class="acerneo16__grafic grafic-acerneo16">
+            <div class="grafic-acerneo16__text">
+                <h2>Удобная клавиатура</h2>
+                <p>Клавиатура Predator Helios Neo 16 предназначена для максимального комфорта. Она оснащена 4-зонной
+                    RGB подсветкой, которую можно настроить в зависимости от ваших предпочтений. Такая подсветка придает
+                    стиль и помогает во время работы и отдыха в условиях плохого освещения.
+                    Гравировка заводская: украинские, английские и кириллические символы клавиатуры.</p>
+            </div>
+            <div class="grafic-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img18.jpg" alt="">
+            </div>
+            <div class="grafic-acerneo16__inner">
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img19.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>RGB </h4>
+                        <p>4 зоны подсветки — выбирайте удобную для вас! </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img20.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>TURBO-кнопка </h4>
+                        <p>Нуждаетесь в режиме максимальной производительности? Просто нажмите на горячую клавишу. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img21.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>PredatorSense </h4>
+                        <p>Для быстрой активации фирменного приложения создана специально выделенная клавиша. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acerneo16__grafic grafic-acerneo16">
+            <div class="grafic-acerneo16__text">
+                <h2>Управляйте индивидуальными настройками </h2>
+                <p>Фирменное приложение PredatorSense позволяет настроить нужные параметры и на 100% управлять вашим
+                    игровым ноутбуком. Там вы также найдете оптимизированные под различные задачи режимы — игра,
+                    создание контента и рендеринг. </p>
+            </div>
+            <div class="grafic-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img22.jpg" alt="">
+            </div>
+            <div class="grafic-acerneo16__inner">
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img23.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>НИЗКАЯ ЗАДЕРЖКА </h4>
+                        <p>Intel Killer E2600 Ethernet и Intel Killer Wi-Fi 6 AX1650 — современные сетевые решения,
+                            обеспечивающие быструю работу без каких-либо ограничений. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img24.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>МНОГО ВАРИАНТОВ ПОДКЛЮЧЕНИЯ </h4>
+                        <p>Широкий выбор портов гарантирует максимальную мобильность: 2 порта USB 3.2 Gen 2, 1 порт USB
+                            3.2 Gen 1, 2 порта Thunderbolt™ 4 и HDMI 2.1. </p>
+                    </div>
+                </div>
+                <div class="grafic-acerneo16__item">
+                    <div class="grafic-acerneo16__icon">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2711614/img25.jpg" alt="">
+                    </div>
+                    <div class="grafic-acerneo16__box">
+                        <h4>ДОПОЛНИТЕЛЬНОЕ МЕСТО ХРАНЕНИЯ </h4>
+                        <p>Используйте порт Micro SD, чтобы загружать все необходимые материалы. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grafic-acerneo16__snoska">
+                <p>Купить ноутбук Predator Helios Neo 16 в Украине можно на сайте или в фирменных магазинах COMFY! </p>
+            </div>
+            <div class="grafic-acerneo16__image">
+                <img src="https://cdn.comfy.ua/media/x/img3/2711614/img26.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
