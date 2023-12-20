@@ -106,14 +106,13 @@ li {
           transform: translate(-50%, -50%);
 }
 
+#maincontent .lg-durability__box {
+  background-color: #000;
+  padding-top: 20px;
+}
 #maincontent .lg-durability__text {
-  top: 80%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-spasteam__text {
@@ -157,17 +156,8 @@ li {
 }
 
 #maincontent .lg-diagnisis__text {
-  top: 50%;
-  left: 57%;
-  right: 15px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-       -o-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 40%;
-}
-#maincontent .lg-diagnisis__text h2, #maincontent .lg-diagnisis__text p {
-  text-align: left;
+  position: unset;
+  margin: 0 auto;
 }
 
 #maincontent .lg-control__text {
@@ -237,10 +227,6 @@ li {
   #maincontent .lg-warranty__text {
     left: 15px;
   }
-  #maincontent .lg-diagnisis__text {
-    left: 50%;
-    width: 45%;
-  }
   #maincontent .lg-control__text {
     left: 15px;
   }
@@ -300,9 +286,6 @@ li {
   }
   #maincontent .lg-6motion__text h2 {
     padding-top: 20px;
-  }
-  #maincontent .lg-durability__box {
-    background-color: #101010;
   }
   #maincontent .lg-durability__text h2 {
     margin-top: 0;
