@@ -1,0 +1,488 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1520px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{margin:20px 0px}#maincontent .maincontent__container h3{font-size:35px;line-height:1.2;text-align:center}#maincontent .maincontent__container p{font-size:33px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:33px;line-height:1.2;margin-bottom:25px}#maincontent .maincontent__container ul:last-child,#maincontent .maincontent__container li:last-child{margin-bottom:0}#maincontent .maincontent__row{padding:105px 60px}#maincontent .maincontent__col{padding:0px 60px 105px}#maincontent .philips-box__header h2{font-size:44px;line-height:1.2;text-align:right}#maincontent .philips-box__header p{font-size:35px;line-height:1.2;text-align:right}#maincontent .philips-box__inner{position:relative;z-index:5}#maincontent .philips-box__text{position:absolute;z-index:6;max-width:701px;top:50%;right:40px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .philips-box__text p{width:430px;margin-left:auto;margin-bottom:25px;color:#fff}#maincontent .philips-box__text h2{width:560px;margin-left:auto;color:#fff}#maincontent .philips-box__subtitle{padding:35px 60px}#maincontent .philips-box__list{position:absolute;z-index:6;max-width:730px;top:50%;left:60px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .philips-box__list ul,#maincontent .philips-box__list li{color:#fff}#maincontent .skinIq-box__text{top:70px;left:60px;right:0;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}#maincontent .skinIq-box__text p{font-size:38px;color:#fff;text-align:left;width:auto}#maincontent .skinIq-box__text p:last-child{margin-bottom:0}#maincontent .row-philips__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-philips__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-philips__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips__text{padding:10px 60px}#maincontent .row-philips__text h3{margin-bottom:40px;text-align:left}#maincontent .row-philips__text p{margin-bottom:60px}#maincontent .row-philips__text p:last-child{margin-bottom:10px}#maincontent .row-philips__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips__image_right img{margin-left:auto}#maincontent .col-philips__inner{display:grid;grid-template-columns:repeat(3, 1fr);-webkit-column-gap:35px;-moz-column-gap:35px;column-gap:35px}#maincontent .col-philips__img{margin-bottom:50px}#maincontent .col-philips__subtitle p{margin-bottom:45px}#maincontent .col-philips__subtitle p:last-child{margin-bottom:10px}#maincontent .philips-content__inner{padding:0 60px}#maincontent .philips-content__header{margin-bottom:85px}#maincontent .box-table__cells{display:grid;grid-template-columns:repeat(4, 1fr);margin-bottom:30px}#maincontent .box-table__cell{min-width:170px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .box-table__cell_header{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0 7px}#maincontent .box-table__img{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-moz-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin-bottom:20px}#maincontent .box-table__img img{width:100%}#maincontent .box-table__text_subtitle{margin-bottom:35px}#maincontent .box-table__cell_text{grid-column:1/-1;background-color:#ccf;padding:15px 25px}#maincontent .box-table__text{width:100%}#maincontent .box-table__text p{margin:10px 0px;text-align:center}#maincontent .box-table__text_sm{max-width:210px;margin:0 auto;padding:0 5px}#maincontent .box-table__text_sm p{font-size:25px}#maincontent .bottom-box__text{padding:10px 20px}#maincontent .bottom-box__text p{text-align:center}@media screen and (max-width: 1450px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-bottom:15px}#maincontent .philips-box__list{left:40px;max-width:700px}#maincontent .skinIq-box__text{top:40px;left:40px}}@media screen and (max-width: 1400px){#maincontent .maincontent__container h3{font-size:-webkit-calc(17px + 18*(100vw - 320px)/1080);font-size:calc(17px + 18*(100vw - 320px)/1080)}#maincontent .maincontent__container p{font-size:-webkit-calc(15px + 18*(100vw - 320px)/1080);font-size:calc(15px + 18*(100vw - 320px)/1080)}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(15px + 18*(100vw - 320px)/1080);font-size:calc(15px + 18*(100vw - 320px)/1080);margin-bottom:10px}#maincontent .philips-box__header h2{font-size:-webkit-calc(22px + 22*(100vw - 320px)/1080);font-size:calc(22px + 22*(100vw - 320px)/1080)}#maincontent .philips-box__header p{font-size:-webkit-calc(17px + 18*(100vw - 320px)/1080);font-size:calc(17px + 18*(100vw - 320px)/1080)}#maincontent .skinIq-box__text{max-width:520px}#maincontent .skinIq-box__text p{font-size:-webkit-calc(18px + 20*(100vw - 320px)/1080);font-size:calc(18px + 20*(100vw - 320px)/1080)}#maincontent .box-table__text_sm p{font-size:-webkit-calc(11px + 14*(100vw - 320px)/1080);font-size:calc(11px + 14*(100vw - 320px)/1080)}}@media screen and (max-width: 1300px){#maincontent .maincontent__row{padding:85px 40px}#maincontent .maincontent__col{padding:0px 40px 85px}#maincontent .philips-box__list{max-width:620px}#maincontent .row-philips__text p{margin-bottom:40px}}@media screen and (max-width: 1200px){#maincontent .maincontent__row,#maincontent .maincontent__col{padding:65px 30px}#maincontent .maincontent__col{padding:0px 30px 65px}#maincontent .philips-box__text p{width:360px}#maincontent .philips-box__text h2{width:460px}#maincontent .philips-box__list{max-width:565px}#maincontent .skinIq-box__text{max-width:450px}#maincontent .skinIq-box__text p{width:auto}#maincontent .philips-content__header{margin-bottom:55px}}@media screen and (max-width: 1100px){#maincontent .maincontent__row,#maincontent .maincontent__col{padding:45px 30px}#maincontent .maincontent__col{padding:0px 30px 45px}#maincontent .philips-box__subtitle{padding:20px 40px}#maincontent .skinIq-box__text{max-width:400px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .row-philips__text h3,#maincontent .row-philips__text p{margin-bottom:20px}#maincontent .col-philips__img{margin-bottom:25px}#maincontent .col-philips__subtitle p{margin-bottom:20px}#maincontent .philips-content__inner{padding:0 40px}#maincontent .philips-content__header{margin-bottom:35px}}@media screen and (max-width: 1024.98px){#maincontent .maincontent__row,#maincontent .maincontent__col{padding:35px 15px}#maincontent .maincontent__col{padding:0px 15px 35px}#maincontent .philips-box__list{max-width:490px}#maincontent .philips-box__text p{width:260px}#maincontent .philips-box__text h2{width:370px}#maincontent .skinIq-box__text{max-width:380px}#maincontent .skinIq-box__text p{width:auto}#maincontent .row-philips__text{padding:10px 20px}#maincontent .philips-content__inner{padding:0 15px}}@media screen and (max-width: 991.98px){#maincontent .maincontent__row,#maincontent .maincontent__col{padding:35px 0px}#maincontent .maincontent__col{padding:0px 0px 35px}#maincontent .philips-box__list{left:20px}#maincontent .philips-box__text{right:30px}#maincontent .philips-box__text p{margin-bottom:10px}#maincontent .philips-box__subtitle{padding:10px 20px}#maincontent .philips-box__list{padding:10px 20px;max-width:450px}#maincontent .philips-box__list ul,#maincontent .philips-box__list li{font-size:-webkit-calc(15px + 8*(100vw - 320px)/671);font-size:calc(15px + 8*(100vw - 320px)/671)}#maincontent .philips-box__text{padding:10px 20px}#maincontent .skinIq-box__text{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);max-width:100%;padding:20px 40px}#maincontent .skinIq-box__text p{color:#000;text-align:center}#maincontent .col-philips__inner{-webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px}#maincontent .philips-content__inner{padding:0}#maincontent .philips-content__header{margin-bottom:20px}#maincontent .box-table__cell_text{padding:10px 20px 5px}}@media screen and (max-width: 850.98px){#maincontent .philips-box__list{max-width:400px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container h3{margin:10px 0}#maincontent .maincontent__row,#maincontent .maincontent__col{padding:15px 0}#maincontent .philips-box__header h2,#maincontent .philips-box__header p{text-align:center;width:auto;color:#000}#maincontent .philips-box__text{position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);margin:0 auto;padding:10px}#maincontent .philips-box__list{padding:0px 20px 20px;position:unset;-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);padding:10px 20px 30px;max-width:100%}#maincontent .philips-box__list ul,#maincontent .philips-box__list li{color:#000}#maincontent .skinIq-box__text{padding:0 10px 10px}#maincontent .row-philips__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-philips__text{padding:0 10px}#maincontent .row-philips__text h3,#maincontent .row-philips__text p{text-align:center}#maincontent .col-philips__inner{-webkit-column-gap:10px;-moz-column-gap:10px;column-gap:10px}#maincontent .col-philips__img{margin-bottom:10px}#maincontent .col-philips__subtitle p{margin-bottom:10px}#maincontent .box-table__cells{overflow-x:scroll}#maincontent .bottom-box__text{padding:10px}}@media screen and (max-width: 479.98px){#maincontent .philips-box__subtitle{padding:0 10px}#maincontent .philips-box__list{padding:10px 15px 15px}#maincontent .row-philips__text p{margin-bottom:10px}#maincontent .col-philips__inner{grid-template-columns:1fr}#maincontent .col-philips__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .col-philips__subtitle p{text-align:center}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box philips-box philips-box__header">
+<div class="philips-box__inner">
+<div class="philips-box__text">
+<p>Електробритва Philips Series 5000</p>
+<h2>Ретельне гоління, дбайливе до шкіри з технологією SkinIQ</h2>
+</div>
+<div class="philips-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img01.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__box philips-box">
+<div class="philips-box__subtitle">
+<h3>Переваги електробритви Philips S5886 / 38</h3>
+</div>
+<div class="philips-box__inner">
+<div class="philips-box__list">
+<ul>
+<li>Бритва самостійно визначає та підлаштовується до густоти волосся завдяки <b>технології                                 SkinIQ</b> </li>
+<li>Підходить <b>для сухого і вологого гоління</b></li>
+<li><b>Гнучкі головки 360-D,</b> які бездоганно повторюють контури вашого обличчя</li>
+<li><b>Контролер адаптації потужності</b></li>
+<li><b>Висувний тример</b></li>
+<li><b>Зарядна підставка</b></li>
+</ul>
+</div>
+<picture class="philips-box__img"> <source media="(max-width: 767.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2354221/img02_mob.jpg"></source> <source media="(min-width: 768px)" srcset="https://cdn.comfy.ua/media/x/img3/2354221/img02_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2354221/img02_desc.jpg" /> </picture></div>
+</div>
+<div class="maincontent__box philips-box skinIq-box">
+<div class="philips-box__subtitle">
+<h3>Технологія SkinIQ</h3>
+</div>
+<div class="philips-box__inner skinIq-box__inner">
+<div class="philips-box__text skinIq-box__text">
+<p>Інтелектуальна технологія, яка <b>розпізнає</b> густоту щетини та <b>адаптує</b> гоління до цього                         параметру.                         Таким чином забезпечується не тільки підвищена ефективність, але й кращий захист шкіри.</p>
+</div>
+<picture class="philips-box__img"> <source media="(max-width: 991.98px)" srcset="https://cdn.comfy.ua/media/x/img3/2354221/img03_mob.jpg"></source> <source media="(min-width: 992px)" srcset="https://cdn.comfy.ua/media/x/img3/2354221/img03_desc.jpg"></source> <img src="https://cdn.comfy.ua/media/x/img3/2354221/img03_desc.jpg" /> </picture></div>
+</div>
+<div class="maincontent__row row-philips">
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img04.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<p>Електробритва Philips S5886 / 38 оснащена 45 високоефективними лезами, які виготовлені за                             європейськими стандартами та <b>заточуються самостійно.</b> Спеціальні леза                             <b>SteelPrecision</b> відрізають більше волосся за один рух, роблячи 90 000 зрізів/хв.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img05.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Вдосконалені головки</h3>
+<p>Philips створили нову форму бритвенних головок, які мають спеціальні канали — вони                             спрямовують волосся в те положення, яке є більш ефективним для зрізування.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img06.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Контролер адаптації потужності</h3>
+<p>Розумний датчик моментально зчитує інформацію про густоту волосся — зі швидкістю 250 р/сек.                             На основі цієї інформації бритва підлаштовує потужність для легкого та гладкого гоління.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img07.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<p>Ця модель електробритви оснащена <b>новим мотором,</b> який містить на 66% більше паладію.                             Паладій —                             це матеріал, який гарантую більшу міцність і довший термін експлуатації.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img08.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<p>Електробритва Philips S5886 / 38 повністю повторює контури вашого обличчя. <b>Головки                                 обертаються на 360°,</b> завдяки чому створюється оптимальний контакт зі шкірою для                             комфортного                             гоління.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img09.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Додатковий догляд за вусами</h3>
+<p>Philips S5886 / 38 має висувний тример, за допомогою якого зручно доглядати за вусами та                             підстригати бакенбарди. Він вбудований в корпус, тому вам не потрібно докладати зусиль, щоб                             змінити насадку.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips-img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img10.jpg" /></div>
+<div class="maincontent__row row-philips">
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img11.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<p>Беріть із собою в відрядження або відпустку без зарядного пристрою. Після повного заряджання                             електробритва може працювати <b>протягом 60 хвилин.</b></p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner row-philips__inner_rev">
+<div class="row-philips__image row-philips__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img12.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>USB-A заряджання</h3>
+<p>Всього година — і літій-іонна батарея бритви повністю заряджена і готова до роботи.</p>
+<p>А якщо ви поспішаєте, поставте бритву на зарядку <b>на 5 хвилин</b> і цього вам вистачить на                             1 повне                             гоління.</p>
+</div>
+</div>
+</div>
+<div class="row-philips__inner">
+<div class="row-philips__image"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img13.jpg" /></div>
+<div class="row-philips__item">
+<div class="row-philips__text">
+<h3>Обирайте свій варіант</h3>
+<p>Електробритва Philips S5886 / 38 показує гладкі результати як при сухому, так і при вологому                             голінні. Можна також голитися з гелем або пінкою, і навіть в душі.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__col col-philips">
+<div class="col-philips__inner">
+<div class="col-philips__item">
+<div class="col-philips__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img14_1.jpg" /></div>
+<div class="col-philips__subtitle">
+<p><b>Насадка-стайлер </b></p>
+<p>5 налаштувань довжини для бороди</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img14_2.jpg" /></div>
+<div class="col-philips__subtitle">
+<p><b>Зарядний стенд </b></p>
+<p>Для зручної підзарядки</p>
+</div>
+</div>
+<div class="col-philips__item">
+<div class="col-philips__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img14_3.jpg" /></div>
+<div class="col-philips__subtitle">
+<p><b>Дорожній футляр </b></p>
+<p>Для транспортування                              та зберігання</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips-content box-table">
+<div class="philips-content__inner ">
+<div class="philips-content__header">
+<h3>Оберіть найкращу бритву для себе</h3>
+</div>
+<div class="box-table__cells">
+<div class="box-table__cell box-table__cell_header">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img15_1.jpg" /></div>
+<div class="box-table__text box-table__text_subtitle">
+<p>Philips cерії 5000</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_header">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img15_2.jpg" /></div>
+<div class="box-table__text box-table__text_subtitle">
+<p>Philips cерії 7000</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_header">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img15_3.jpg" /></div>
+<div class="box-table__text box-table__text_subtitle">
+<p>Philips cерії 9000</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_header">
+<div class="box-table__img"><img src="https://cdn.comfy.ua/media/x/img3/2354221/img15_4.jpg" /></div>
+<div class="box-table__text box-table__text_subtitle">
+<p>Philips cерії 9000 Prestige</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Технологія SkinIQ </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Леза </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>45 лез SteelPrecision</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>45 лез SteelPrecision</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>90 лез                                 Dual SteelPrecision</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>72 леза                                 NanoTech Dual Precision</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Датчик адаптації потужності </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так, 250 зчитувань                                 в секунду</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так, 250 зчитувань                                 в секунду</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так, 500 зчитувань                                 в секунду</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так, 500 зчитувань                                 в секунду</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Датчик натиску </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Захисне покриття </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так,                                 Nano SkinGlide</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так,                                 SkinGlide</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>так,                                 Hydro SkinGlide</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Гнучкі головки </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так, 360°</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так, 360°</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так, 360°</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так, Ultraflex</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Датчик керування рухами </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Вбудований тример </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>2 окремі насадки-тримери</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Мобільний застосунок GroomTribe </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>так</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>ні</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Акумулятор </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>Li-ion</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>Li-ion</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>Li-ion</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text">
+<p>Li-ion</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Автономність зарядка \ робота </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>USB-A заряджання                                 60 хв \ 60 хв</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>USB-A заряджання                                 60 хв \ 60 хв</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>USB-A заряджання                                 60 хв \ 60 хв</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>Бездротовий зарядний килимок Qi 180 хв \ 60 хв</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Швидка зарядка </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>5 хвилин                                 для 1 гоління</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>5 хвилин                                 для 1 гоління</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>5 хвилин                                 для 1 гоління</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>18 хвилин                                 для 1 гоління</p>
+</div>
+</div>
+<div class="box-table__cell box-table__cell_text">
+<p><b>Гоління </b></p>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>Вологе + сухе</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>Вологе + сухе</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>Вологе + сухе</p>
+</div>
+</div>
+<div class="box-table__cell">
+<div class="box-table__text box-table__text_sm">
+<p>Вологе + сухе</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="bottom-box__text">
+<p>Купити електробритву <b>Philips S5886 / 38</b> в Україні можна на сайті або у фірмовому магазині COMFY!</p>
+</div>
+</div>
+</div>
+</div>
