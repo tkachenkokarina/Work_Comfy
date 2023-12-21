@@ -1,0 +1,155 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1536px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:36px;line-height:1.05;margin:20px 0px}#maincontent .maincontent__container p{font-size:24px;line-height:1.05;margin-bottom:10px}#maincontent .top-box__text{max-width:1204px;margin:0 auto;padding:60px 10px}#maincontent .top-box__text h2{text-align:center}#maincontent .top-box__images{position:relative;z-index:5}#maincontent .top-box__logo{position:absolute;z-index:6;left:50px;top:0;right:75%}#maincontent .row-philips2167621__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:50px 58px 25px}#maincontent .row-philips2167621__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-philips2167621__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips2167621__text{padding:10px 0px 10px 131px}#maincontent .row-philips2167621__text_left{padding:10px 131px 10px 0px}#maincontent .row-philips2167621__images,#maincontent .row-philips2167621__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:5}#maincontent .row-philips2167621__image_pos{position:absolute;z-index:6;left:349px;right:112px;bottom:85px}#maincontent .row-philips2167621__image_right img{margin-left:auto}#maincontent .col-philips2167621__inner{padding:70px 10px 0;display:grid;grid-template-columns:repeat(3, 1fr);gap:14px}#maincontent .col-philips2167621__text{padding:0 32px 0 10px}#maincontent .philips2167621-bgbox__bg{background-color:#c0d000}#maincontent .philips2167621-bgbox__title{margin-bottom:50px;padding:0 10px}#maincontent .philips2167621-bgbox__title h2{text-align:center}#maincontent .philips2167621-bgbox__items{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}@media screen and (max-width: 1350px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 14*(100vw - 320px)/980);font-size:calc(22px + 14*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/980);font-size:calc(16px + 8*(100vw - 320px)/980)}#maincontent .top-box__text p{font-size:-webkit-calc(22px + 14*(100vw - 320px)/980);font-size:calc(22px + 14*(100vw - 320px)/980)}#maincontent .row-philips2167621__image_pos{left:55%;right:70px}}@media screen and (max-width: 1250px){#maincontent .row-philips2167621__text{padding:10px 0px 10px 100px}#maincontent .row-philips2167621__text_left{padding:10px 100px 10px 0px}}@media screen and (max-width: 1200px){#maincontent .top-box__text{padding:30px 10px}#maincontent .row-philips2167621__text{padding:10px 0px 10px 60px}#maincontent .row-philips2167621__text_left{padding:10px 60px 10px 0px}}@media screen and (max-width: 1100px){#maincontent .row-philips2167621__image_pos{right:40px}}@media screen and (max-width: 1024.98px){#maincontent .top-box__text{padding:15px 10px 5px}#maincontent .row-philips2167621__inner{padding:25px 28px 12px}#maincontent .col-philips2167621__inner{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 991.98px){#maincontent .top-box__logo{left:25px}#maincontent .row-philips2167621__text{padding:10px 0px 10px 30px}#maincontent .row-philips2167621__text_left{padding:10px 30px 10px 0px}#maincontent .col-philips2167621__inner{padding:35px 10px 0}#maincontent .philips2167621-bgbox__title{margin-bottom:25px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:15px 0}#maincontent .row-philips2167621__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;padding:0}#maincontent .row-philips2167621__text{padding:0 10px}#maincontent .row-philips2167621__text h2,#maincontent .row-philips2167621__text p{text-align:center}#maincontent .col-philips2167621__inner{grid-template-columns:1fr;padding:0;gap:0}#maincontent .col-philips2167621__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .col-philips2167621__text{padding:0 10px}#maincontent .col-philips2167621__text h2,#maincontent .col-philips2167621__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .top-box__logo{left:15px}#maincontent .row-philips2167621__image_pos{bottom:45px}#maincontent .philips2167621-bgbox__title{margin-bottom:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__text">
+<h2>Високий рівень комфорту під час гоління з електростанком <br />Philips OneBlade QP6551/15</h2>
+</div>
+<div class="top-box__images">
+<div class="top-box__banner"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img01.jpg" /></div>
+<div class="top-box__logo"><img src="https://cdn.comfy.ua/media/x/img3/2167621/logo.png" /></div>
+</div>
+</div>
+<div class="maincontent__col col-philips2167621">
+<div class="col-philips2167621__inner">
+<div class="col-philips2167621__item">
+<div class="col-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img02_1.jpg" /></div>
+<div class="col-philips2167621__text">
+<h2>Станок 2-в-1</h2>
+<p>Дотримуйтеся однакової довжини бороди, використовуючи точний гребінець з 14 варіантами                             фіксації, і експериментуйте з різними образами. Додатковий гребінець для тіла (3 мм), який                             швидко знімається, дозволяє легко коригувати довжину волосся.</p>
+</div>
+</div>
+<div class="col-philips2167621__item">
+<div class="col-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img02_2.jpg" /></div>
+<div class="col-philips2167621__text">
+<h2>Підрівнювання</h2>
+<p>Двостороннє лезо допомагає створити акуратні контури. З ним ви можете голити волосся у всіх                             напрямках і бачити кожну волосинку, яку треба прибрати. Мінімум часу — максимум комфорту та                             чіткого результату.</p>
+</div>
+</div>
+<div class="col-philips2167621__item">
+<div class="col-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img02_3.jpg" /></div>
+<div class="col-philips2167621__text">
+<h2>Гоління</h2>
+<p>Станок OneBlade голить безпечно та приємно, залишаючи відчуття комфорту на шкірі. У комплекті                             йдуть 2 леза, які видаляють волосся як на обличчі, так і на тілі.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-philips2167621">
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img03.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Універсальне рішення</h2>
+<p>Цей станок від Philips — ідеальний варіант для догляду за щетиною будь-якої довжини. Він може                             підстригати, голити та виправляти контури за декілька хвилин.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box philips2167621-bgbox">
+<div class="philips2167621-bgbox__title">
+<h2>В комплект входить 2 леза OneBlade для обличчя та тіла.</h2>
+</div>
+<div class="philips2167621-bgbox__bg">
+<div class="philips2167621-bgbox__items">
+<div class="philips2167621-bgbox__item"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img04_1.png" /></div>
+<div class="philips2167621-bgbox__item"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img04_2.png" /></div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-philips2167621">
+<div class="row-philips2167621__inner row-philips2167621__inner_rev">
+<div class="row-philips2167621__image row-philips2167621__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img05.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text row-philips2167621__text_left">
+<h2>Технологія OneBlade</h2>
+<p>12 000 рухів/хв — саме така швидкість ріжучого блоку Philips QP6551/15. При такій швидкості                             він забезпечує максимальний захист від подразнень і порізів на шкірі, бо лезо має ковзаюче                             покриття і закруглені кінці.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img06.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Адаптується під контури вашого обличчя</h2>
+<p>Унікальне плаваюче лезо One Blade 360 забезпечує ефективне та легке гоління волосків навіть                             на важких ділянках.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner row-philips2167621__inner_rev">
+<div class="row-philips2167621__image row-philips2167621__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img07.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text row-philips2167621__text_left">
+<h2>Гребінець з можливістю налаштування довжини</h2>
+<p>Щоб рівно підстригти бороду, використовуйте регульований гребінець. Він має точні                             налаштування довжини у 14 варіантах.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img08.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Максимальний контроль</h2>
+<p>З електростанком Philips OneBlade QP6551/15 ви маєте повний контроль над процесом гоління.                             Двостороннє лезо створює чіткі контури та дозволяє вам голити волосся в бажаному напрямку.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner row-philips2167621__inner_rev">
+<div class="row-philips2167621__image row-philips2167621__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img09.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text row-philips2167621__text_left">
+<h2>Комфорт для шкіри</h2>
+<p>OneBlade забезпечує комфортне гоління, не стикаючись близько зі шкірою. Дві додаткові насадки                             роблять його унікальним у використанні.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img10.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Довготривале використання</h2>
+<p>Леза OneBlade призначені для використання протягом довгого терміну, проте рекомендується                             міняти їх кожні 4 місяці для найкращих результатів.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner row-philips2167621__inner_rev">
+<div class="row-philips2167621__image row-philips2167621__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img11.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text row-philips2167621__text_left">
+<h2>Ефективний акумулятор</h2>
+<p>Акумулятор на основі літій-іонної технології забезпечить до 120 хвилин роботи та потребує                             лише 1 години для повного заряджання.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img12.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Захист від потрапляння вологи</h2>
+<p>Придатний для сухого та мокрого гоління, навіть в душі.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner row-philips2167621__inner_rev">
+<div class="row-philips2167621__image row-philips2167621__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img13.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text row-philips2167621__text_left">
+<h2>Чохол для зручного зберігання</h2>
+<p>М'який чохол для зручного та надійного зберігання вашого електростанка.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2167621__inner">
+<div class="row-philips2167621__image"><img src="https://cdn.comfy.ua/media/x/img3/2167621/img14.jpg" /></div>
+<div class="row-philips2167621__item">
+<div class="row-philips2167621__text">
+<h2>Індикатор зношення</h2>
+<p>Слідкуйте за станом леза за допомогою індикатора зношення.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
