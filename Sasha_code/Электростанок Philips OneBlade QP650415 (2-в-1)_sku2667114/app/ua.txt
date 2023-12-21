@@ -1,0 +1,115 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1536px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:36px;line-height:1.05;margin:20px 0px}#maincontent .maincontent__container p{font-size:24px;line-height:1.05;margin-bottom:10px}#maincontent .top-box__text{max-width:1204px;margin:0 auto;padding:60px 10px}#maincontent .top-box__text p{font-size:36px;line-height:1.05;text-align:center}#maincontent .row-philips2667114__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:50px 58px 25px}#maincontent .row-philips2667114__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-philips2667114__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-philips2667114__text{padding:10px 0px 10px 131px}#maincontent .row-philips2667114__text_left{padding:10px 131px 10px 0px}#maincontent .row-philips2667114__images,#maincontent .row-philips2667114__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:5}#maincontent .row-philips2667114__image_pos{position:absolute;z-index:6;left:349px;right:112px;bottom:85px}#maincontent .row-philips2667114__image_right img{margin-left:auto}#maincontent .col-philips2667114__inner{padding:25px 10px 0;display:grid;grid-template-columns:repeat(3, 1fr);gap:14px}#maincontent .col-philips2667114__text{padding:0 10px}#maincontent .bottom-box__inner{position:relative;z-index:4;margin-top:12px}#maincontent .bottom-box__logo{position:absolute;z-index:5;top:50%;left:119px;right:55%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#maincontent .bottom-box__logo img{margin-bottom:42px}#maincontent .bottom-box__logo img:last-child{margin-bottom:0}@media screen and (max-width: 1350px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 14*(100vw - 320px)/980);font-size:calc(22px + 14*(100vw - 320px)/980)}#maincontent .maincontent__container p{font-size:-webkit-calc(16px + 8*(100vw - 320px)/980);font-size:calc(16px + 8*(100vw - 320px)/980)}#maincontent .top-box__text p{font-size:-webkit-calc(22px + 14*(100vw - 320px)/980);font-size:calc(22px + 14*(100vw - 320px)/980)}#maincontent .row-philips2667114__image_pos{left:55%;right:70px}}@media screen and (max-width: 1250px){#maincontent .row-philips2667114__text{padding:10px 0px 10px 100px}#maincontent .row-philips2667114__text_left{padding:10px 100px 10px 0px}}@media screen and (max-width: 1200px){#maincontent .top-box__text{padding:30px 10px}#maincontent .row-philips2667114__text{padding:10px 0px 10px 60px}#maincontent .row-philips2667114__text_left{padding:10px 60px 10px 0px}}@media screen and (max-width: 1100px){#maincontent .row-philips2667114__image_pos{right:40px}}@media screen and (max-width: 1024.98px){#maincontent .top-box__text{padding:15px 10px 5px}#maincontent .row-philips2667114__inner{padding:25px 28px 12px}#maincontent .col-philips2667114__inner{grid-template-columns:repeat(2, 1fr)}#maincontent .bottom-box__logo{left:50px}}@media screen and (max-width: 991.98px){#maincontent .row-philips2667114__text{padding:10px 0px 10px 30px}#maincontent .row-philips2667114__text_left{padding:10px 30px 10px 0px}#maincontent .col-philips2667114__inner{padding:15px 10px 0}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:15px 0}#maincontent .row-philips2667114__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;padding:0}#maincontent .row-philips2667114__text{padding:0 10px}#maincontent .row-philips2667114__text h2,#maincontent .row-philips2667114__text p{text-align:center}#maincontent .col-philips2667114__inner{grid-template-columns:1fr;padding:0;gap:0}#maincontent .col-philips2667114__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .col-philips2667114__text h2,#maincontent .col-philips2667114__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .row-philips2667114__image_pos{bottom:45px}#maincontent .bottom-box__logo{left:25px}#maincontent .bottom-box__logo img{margin-bottom:20px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__text">
+<p><b>Голіться без порізів </b></p>
+<p>Електростанок Philips OneBlade з тримером (2-в-1) QP6504/15</p>
+</div>
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img01.jpg" /></div>
+</div>
+<div class="maincontent__row row-philips2667114">
+<div class="row-philips2667114__inner">
+<div class="row-philips2667114__images">
+<div class="row-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img02_1.jpg" /></div>
+<div class="row-philips2667114__image row-philips2667114__image_pos"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img02_2.png" /></div>
+</div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text">
+<h2>Універсальний станок від Philips</h2>
+<p>Тепер стрижка, гоління й створення чітких ліній стало ще простіше. З Philips OneBlade                             QP6504/15 можете забути про довгу стрижку та цілий вагон різних насадок у ванній — достатньо                             одного пристрою і він перед вами.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2667114__inner row-philips2667114__inner_rev">
+<div class="row-philips2667114__image row-philips2667114__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img03.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text row-philips2667114__text_left">
+<h2>Технологія One Blade</h2>
+<p>Блок, що ріже, робить 12 000 рухів/хв — ефективність підтверджена навіть з довгим волоссям.                             При цьому ваша шкіра повністю захищена від порізів і подразнень завдяки покриттю, що ковзає                             та заокругленим краям.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__col col-philips2667114">
+<div class="col-philips2667114__inner">
+<div class="col-philips2667114__item">
+<div class="col-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img05_1.jpg" /></div>
+<div class="col-philips2667114__text">
+<h2>Підстригання</h2>
+<p>Насадка для бездоганно рівної щетини та комфортного гоління — регульований гребінь 5-в-1 (1-5                             мм). Він створений у “відкритому” дизайні, завдяки чому його не потрібно чистити під час                             використання.</p>
+</div>
+</div>
+<div class="col-philips2667114__item">
+<div class="col-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img05_2.jpg" /></div>
+<div class="col-philips2667114__text">
+<h2>Підрівнювання</h2>
+<p>Двостороннє лезо створює чіткі контури і не дозволяє вам пропустити жодного волоска. Голіть                             як проти, так і за ростом волосся, і головне — не витрачайте на підрівнювання багато часу.</p>
+</div>
+</div>
+<div class="col-philips2667114__item">
+<div class="col-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img05_3.jpg" /></div>
+<div class="col-philips2667114__text">
+<h2>Гоління</h2>
+<p>Для OneBlade неважливо наскільки довге волосся і як ви його голите — по росту чи проти.                             Електростанок голить впритул до шкіри, як звичайне лезо.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-philips2667114">
+<div class="row-philips2667114__inner">
+<div class="row-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img06.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text">
+<h2>Довготривале використання</h2>
+<p>Леза в Philips OneBlade QP6504/15 створені для довгого терміну служби, тому їх не потрібно                             змінювати кожного місяця. <br /> Для хороших результатів виробник рекомендує змінювати лезо кожні 4 місяці.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2667114__inner row-philips2667114__inner_rev">
+<div class="row-philips2667114__image row-philips2667114__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img07.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text row-philips2667114__text_left">
+<h2>Не боїться води</h2>
+<p>Електростанок має водонепроникний корпус, тому його можна очищувати навіть під краном. Також                             завдяки цій особливості, його можна використовувати як для сухого, так і для вологого                             гоління.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2667114__inner">
+<div class="row-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img08.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text">
+<h2>Потужна батарея</h2>
+<p>Літій-іонний акумулятор відрізняється довговічністю і великою місткістю. Для того, щоб                             повністю оновити його заряд, потрібна лише 1 година. Автономна робота продовжується до 90                             хвилин.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2667114__inner row-philips2667114__inner_rev">
+<div class="row-philips2667114__image row-philips2667114__image_right"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img09.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text row-philips2667114__text_left">
+<h2>Контроль заряду</h2>
+<p>Корпус Philips OneBlade QP6504/15 оснащений світлодіодним індикатором, який вчасно повідомляє                             про те, що батарея скоро розрядиться. Він також показує рівень заряду акумулятора під час                             заряджання.</p>
+</div>
+</div>
+</div>
+<div class="row-philips2667114__inner">
+<div class="row-philips2667114__image"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img10.jpg" /></div>
+<div class="row-philips2667114__item">
+<div class="row-philips2667114__text">
+<h2>Індикатор зношення</h2>
+<p>Коли на лезі з’являється піктограма стану зношеності, це значить тільки одне — час замінити                             лезо на нове.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__box bottom-box">
+<div class="bottom-box__inner">
+<div class="bottom-box__banner"><img src="https://cdn.comfy.ua/media/x/img3/2667114/img11.jpg" /></div>
+<div class="bottom-box__logo"><img src="https://cdn.comfy.ua/media/x/img3/2667114/logo.png" /> <img src="https://cdn.comfy.ua/media/x/img3/2667114/logo_01.png" /></div>
+</div>
+</div>
+</div>
+</div>
