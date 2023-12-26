@@ -1,0 +1,91 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 10px 0px}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{list-style:disc;margin-left:15px}#maincontent .cosoricp158afrxr__box{max-width:1100px;margin:0 auto}#maincontent .cosoricp158afrxr__text{padding:0 20px}#maincontent .cosoricp158afrxr__text h2,#maincontent .cosoricp158afrxr__text p{text-align:center}#maincontent .row-cosoricp158afrxr__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1100px;margin:0 auto}#maincontent .row-cosoricp158afrxr__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-cosoricp158afrxr__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-cosoricp158afrxr__text{padding:10px 40px}#maincontent .row-cosoricp158afrxr__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/880);font-size:calc(22px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 8*(100vw - 320px)/880);font-size:calc(16px + 8*(100vw - 320px)/880)}}@media screen and (max-width: 1024.98px){#maincontent .row-cosoricp158afrxr__text{padding:10px 20px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__text{padding:0 5px}#maincontent .row-cosoricp158afrxr__inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-moz-box-orient:vertical;-moz-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#maincontent .row-cosoricp158afrxr__text{padding:0 5px}#maincontent .row-cosoricp158afrxr__text h2{text-align:center}#maincontent .row-cosoricp158afrxr__text p{text-align:justify}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:5px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<h2>Ваш багатофункціональний помічник для кухні</h2>
+<p>"Cosori Premium — це стильна мультипіч, яка буде допомагати вам день у день протягом довгих років.                     Соковите м’ясо та овочі без використання олії, хліб та десерти, картопелька і стейки — все що                     завгодно! Просте керування та повна безпека гарантовані.                     Для того, щоб отримати смачну страву, вам потрібно зробити три кроки: розмістити інгредієнти у чаші,                     обрати потрібну програму і трошки почекати.                     "</p>
+</div>
+</div>
+<div class="maincontent__row row-cosoricp158afrxr">
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Основні характеристики:</h2>
+<ul>
+<li>яскравий та стильний червоний корпус;</li>
+<li>сенсорна панель керування;</li>
+<li>11 автоматичних програм;</li>
+<li>температурний діапазон від 75 до 205°C;</li>
+<li>потужність 1700 Вт;</li>
+<li>містка чаша на 5,5 літрів;</li>
+<li>повний комплект потрібних аксесуарів. </li>
+</ul>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img01.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Велика чаша на велику компанію</h2>
+<p>Кошик мультипечі має об’єм 5,5 літрів, а це значить тільки одне — його вистачить на велику                             компанію близьких та рідних, які зібралися у вас в гостях, близько 5-6 людей. Кошик має                             антипригарне покриття, тому можете не хвилюватися за підгорілу картоплю-фрі. А завдяки                             потужності 1700 Вт ви значно зменшуєте час приготування страв і економите не тільки свої,                             але й енергетичні ресурси.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img02.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Кошик для смаження</h2>
+<p>Хрумкі овочі або картопля фрі — смажте улюблені страви разом з додатковим кошиком, який йде в                             комплекті. Він легко виймається, а завдяки зовнішній ручці ви точно не отримаєте опіків.                             Основний і додатковий кошик може митися як вручну, так і в посудомийній машині.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img03.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Легке керування</h2>
+<p>"Мультипіч Cosori Premium оснащений цифровим світлодіодним дисплеєм, завдяки якому ви можете                             легко обрати потрібну програму і в цілому керувати пристроєм. Окрім базових рецептів, на                             панелі керування ви знайдете і додаткові функції: розігрівання, збереження температури,                             розморожування.                             Якщо хочете поекспериментувати, встановлюйте температуру і час приготування самостійно, а                             таймер допоможе вам орієнтуватися в процесі.                             "</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img04.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Аксесуари в комплекті</h2>
+<p>В комплекті до мультипечі йдуть: антипригарний кошик, сітка та міні-шампури. Міні-шампури                             створені спеціально для любителів шашлику та овочів на мангалі — встановлюйте їх на сітку                             або використовуйте самостійно для ніжного результату.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img05.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Трендовий дизайн</h2>
+<p>Мультипіч виконана в стильному, глибокому червоному кольорі, який без сумнівів прикрасить                             будь-яку кухню. А спеціальний квадратний корпус забезпечує легке розміщення приладу в                             робочому куті.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img06.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Преміальна якість</h2>
+<p>Cosori Premium поєднує в собі безпеку, комфорт та бездоганний смак готових страв. Вона                             захищена від перегрівання і має функцію автоматичного вимкнення. А книга оригінальних                             рецептів, що йде у комплекті, допоможе вам урізноманітнити меню.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2504128/img07.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<p>Купити мультипіч <b>Cosori Premium 5.5-Litre CP158-AF-RXR</b> в Україні можна на сайті або у фірмових                     магазинах COMFY!</p>
+</div>
+</div>
+</div>
+</div>
