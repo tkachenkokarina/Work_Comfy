@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{text-transform:none;font-weight:bold}#maincontent{height:auto;margin:0 auto;overflow:hidden;background-color:#fff;font-family:"Roboto",sans-serif}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6,#maincontent p{margin:0;padding:0;text-align:left}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1316px;margin:0 auto}#maincontent .box-maincontent__title{padding:20px 15px}#maincontent .box-maincontent__title h2{font-size:36px;line-height:1.2;text-align:center}@media(max-width: 1316px){#maincontent .box-maincontent__title h2{font-size:-webkit-calc(20px + 16*(100vw - 320px)/996);font-size:calc(20px + 16*(100vw - 320px)/996)}}#maincontent .box-maincontent__bg{position:relative;z-index:2}#maincontent .box-maincontent__logo{position:absolute;z-index:5;bottom:5%;left:83%;right:3%}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{width:85%;margin:0 auto}#maincontent .row-maincontent__text h2{font-size:32px;line-height:1.2;margin-bottom:10px}@media(max-width: 1316px){#maincontent .row-maincontent__text h2{font-size:-webkit-calc(20px + 12*(100vw - 320px)/996);font-size:calc(20px + 12*(100vw - 320px)/996)}}#maincontent .row-maincontent__text p{font-size:26px;line-height:1.2}@media(max-width: 1316px){#maincontent .row-maincontent__text p{font-size:-webkit-calc(16px + 10*(100vw - 320px)/996);font-size:calc(16px + 10*(100vw - 320px)/996)}}#maincontent .row-maincontent__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:2}#maincontent .row-maincontent__icon{position:absolute;z-index:5;bottom:1%}#maincontent .row-maincontent__icon_1{right:1%;left:75%}#maincontent .row-maincontent__icon_2{left:1%;right:75%}#maincontent .column-maincontent{padding-top:50px}#maincontent .column-maincontent__bg{position:relative;z-index:2;padding-bottom:20px}#maincontent .column-maincontent__image{margin-bottom:20px}#maincontent .column-maincontent__line{position:absolute;z-index:-1;top:10%;left:6%;right:6%}#maincontent .column-maincontent__row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:20px;padding:0 15px}#maincontent .column-maincontent__item{border:2px solid #000;-webkit-border-radius:20px;border-radius:20px;background-color:#fff;padding:15px}#maincontent .column-maincontent__icon{min-height:84px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:25px}#maincontent .column-maincontent__text h2{font-size:20px;line-height:1.2;margin-bottom:10px}@media(max-width: 1316px){#maincontent .column-maincontent__text h2{font-size:-webkit-calc(15px + 5*(100vw - 320px)/996);font-size:calc(15px + 5*(100vw - 320px)/996)}}#maincontent .column-maincontent__text p{font-size:16px;line-height:1.2}@media(max-width: 1316px){#maincontent .column-maincontent__text p{font-size:-webkit-calc(13px + 3*(100vw - 320px)/996);font-size:calc(13px + 3*(100vw - 320px)/996)}}@media screen and (max-width: 1140px){#maincontent .column-maincontent__line{top:12%}}@media screen and (max-width: 1024.98px){#maincontent .column-maincontent__row{gap:10px}#maincontent .column-maincontent__line{top:14%}}@media screen and (max-width: 991.98px){#maincontent .column-maincontent__row{grid-template-columns:1fr 1fr 1fr}#maincontent .column-maincontent__line{top:11%}}@media screen and (max-width: 767.98px){#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-maincontent__text{width:auto;padding:20px 15px 10px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}}@media screen and (max-width: 651px){#maincontent .column-maincontent__line{display:none}#maincontent .column-maincontent__row{grid-template-columns:1fr 1fr}}@media screen and (max-width: 410px){#maincontent .column-maincontent__row{grid-template-columns:1fr}}
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__box box-maincontent">
+                <div class="box-maincontent__title">
+                    <h2>Микроволновая печь Hansa AMGF20E1GFBH</h2>
+                </div>
+                <div class="box-maincontent__bg">
+                    <div class="box-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1970952/img1.jpg" alt="">
+                    </div>
+                    <div class="box-maincontent__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1970952/logo-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Интеллектуальный дизайн FullFlat</h2>
+                            <p>Согласитесь, что подогреть большое блюдо в микроволновой печи практически невозможно
+                                из-за его размера. Эту проблему разрешит инновационный дизайн FullFlat. В этом дизайне
+                                отсутствуют вращающиеся элементы, что гарантирует удобство и эффективность в
+                                использовании. Технология распределения микроволн помогает добиться равномерного нагрева
+                                блюд.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img2-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Революционная система подогрева PowerWave</h2>
+                            <p>Почувствуйте истинную равномерность в нагревании благодаря системе PowerWave. Эта
+                                технология включает в себя особую внутреннюю геометрию и уникальную систему рассеивания
+                                микроволн. Благодаря этим факторам ваши блюда будут иметь одинаковую температуру как
+                                внутри, так и снаружи.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_2">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img3-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Размораживание по времени</h2>
+                            <p>Размораживание продуктов теперь еще проще и точнее. Система регулировки по времени
+                                позволяет выбрать оптимальное время для размораживания продуктов. Это обеспечит
+                                сохранение вкуса и полезных свойств ваших блюд.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img4-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Электронное управление</h2>
+                            <p>Установите время и мощность нагрева с помощью электронного управления. Эта система
+                                идеально подходит для готовых блюд, требующих точных настроек, предоставленных
+                                производителем.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_2">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img5-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Размораживание по весу</h2>
+                            <p>Установите вес блюда, а печь автоматически определит оптимальное время и мощность
+                                размораживания. Это не только быстро разморозит вашу пищу, но и предотвратит перегрев.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img6-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Предустановленные программы</h2>
+                            <p>Выбрав одну из программ, вы можете снизить время приготовления блюд. Микроволновая печь
+                                автоматически определит условия и время нагрева, а вам нужно только указать вес и объем
+                                блюда — идеальный результат гарантирован.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_2">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img7-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Непревзойденные возможности Combigrill</h2>
+                            <p>С Combigrill вы получите новые возможности приготовления блюд. Эта функция совмещает в
+                                себе эффективность микроволнового излучения и традиционного гриля. Всего несколько минут
+                                и ваши блюда станут не только идеально разогретыми, но и будут иметь хрустящую корочку.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img8-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Быстрый старт</h2>
+                            <p>Функция QuickStart позволяет быстро включить печь на полную мощность на 30 секунд. Каждое
+                                нажатие кнопки добавляет еще 30 секунд, обеспечивая равномерный нагрев вашего блюда.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_2">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img9-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Гриль</h2>
+                            <p>Сделайте приготовление вкусных блюд в любое время года проще с помощью функции Гриль.
+                                Просто выберите этот режим в микроволновой печи Hansa и ваши блюда получат неповторимый
+                                вкус и аппетитную хрустящую корочку.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img10-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Блокировка от детей</h2>
+                            <p>Обеспечьте стабильность и безопасность вашей микроволновой печи благодаря функции
+                                блокировки от детей. Это особенно важно, если у вас есть дети или вы хотите избежать
+                                изменения настроек. Легко активируйте или выключайте блокировку, выбрав соответствующую
+                                комбинацию кнопок на панели управления.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_2">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img11-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img11.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Галогенное освещение</h2>
+                            <p>Наблюдайте за процессом приготовления через прозрачное стекло благодаря галогенному
+                                освещению. Это позволит вам контролировать состояние блюда без необходимости открывать
+                                дверцу.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__media">
+                        <div class="row-maincontent__icon row-maincontent__icon_1">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img19-1.png" alt="">
+                        </div>
+                        <div class="row-maincontent__image">
+                            <img src="https://cdn.comfy.ua/media/x/img3/1970952/img19.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__column column-maincontent">
+                <div class="column-maincontent__bg">
+                    <div class="column-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1970952/img12.png" alt="">
+                    </div>
+                    <div class="column-maincontent__line">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1970952/img18.png" alt="">
+                    </div>
+                    <div class="column-maincontent__row">
+                        <div class="column-maincontent__item">
+                            <div class="column-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1970952/img13.png" alt="">
+                            </div>
+                            <div class="column-maincontent__text">
+                                <h2>1992</h2>
+                                <p>Появление бренда Amica. Несомненный лидер на рынке Польши доступен
+                                    в Западной Европе, в том числе и в Украине.</p>
+                            </div>
+                        </div>
+                        <div class="column-maincontent__item">
+                            <div class="column-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1970952/img14.png" alt="">
+                            </div>
+                            <div class="column-maincontent__text">
+                                <h2>1997</h2>
+                                <p>Создание бренда Hansa. Лучший выбор на рынках Восточной Европы.</p>
+                            </div>
+                        </div>
+                        <div class="column-maincontent__item">
+                            <div class="column-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1970952/img15.png" alt="">
+                            </div>
+                            <div class="column-maincontent__text">
+                                <h2>2001</h2>
+                                <p>Приобретение датского бренда Gram. Престижный датский бренд с более чем 100-летним
+                                    опытом.</p>
+                            </div>
+                        </div>
+                        <div class="column-maincontent__item">
+                            <div class="column-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1970952/img16.png" alt="">
+                            </div>
+                            <div class="column-maincontent__text">
+                                <h2>2015</h2>
+                                <p>Приобретение British CDA Group Ltd. Британский бренд, предлагающий
+                                    высококачественную кухонную технику, созданную с учетом потребительского стиля
+                                    жизни.</p>
+                            </div>
+                        </div>
+                        <div class="column-maincontent__item">
+                            <div class="column-maincontent__icon">
+                                <img src="https://cdn.comfy.ua/media/x/img3/1970952/img17.png" alt="">
+                            </div>
+                            <div class="column-maincontent__text">
+                                <h2>2019</h2>
+                                <p>Amica Group приветствует еще один бренд!
+                                    Fagor является одним из самых узнаваемых брендов бытовой техники в Испании.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
