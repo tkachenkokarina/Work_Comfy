@@ -1,0 +1,99 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 50px}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{list-style:disc;margin-left:15px}#maincontent .maincontent__img{margin-bottom:50px}#maincontent .maincontent__row{margin-bottom:50px}#maincontent .cosoricp158afrxr__box{max-width:1100px;margin:0 auto 50px}#maincontent .cosoricp158afrxr__text{padding:0 20px}#maincontent .cosoricp158afrxr__text h2,#maincontent .cosoricp158afrxr__text p{text-align:center}#maincontent .row-cosoricp158afrxr__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1100px;margin:0 auto}#maincontent .row-cosoricp158afrxr__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-cosoricp158afrxr__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-cosoricp158afrxr__text{padding:10px 40px}#maincontent .row-cosoricp158afrxr__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/880);font-size:calc(22px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 8*(100vw - 320px)/880);font-size:calc(16px + 8*(100vw - 320px)/880)}}@media screen and (max-width: 1024.98px){#maincontent .row-cosoricp158afrxr__text{padding:10px 20px}}@media screen and (max-width: 991.98px){#maincontent .maincontent__container h2{margin-bottom:20px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:30px}#maincontent .cosoricp158afrxr__box{margin-bottom:30px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__container p{text-align:justify}#maincontent .maincontent__text{padding:0 5px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:0}#maincontent .cosoricp158afrxr__box{margin-bottom:20px}#maincontent .cosoricp158afrxr__text_mt{margin-top:10px}#maincontent .row-cosoricp158afrxr__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-cosoricp158afrxr__text{padding:0 5px}#maincontent .row-cosoricp158afrxr__text h2{text-align:center}#maincontent .row-cosoricp158afrxr__text p{text-align:justify}#maincontent .bottom-box__text{margin-top:10px}#maincontent .bottom-box__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:5px}#maincontent .cosoricp158afrxr__box{margin-bottom:10px}}
+</style>
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 50px}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{list-style:disc;margin-left:15px}#maincontent .maincontent__img{margin-bottom:50px}#maincontent .maincontent__row{margin-bottom:50px}#maincontent .cosoricp158afrxr__box{max-width:1100px;margin:0 auto 50px}#maincontent .cosoricp158afrxr__text{padding:0 20px}#maincontent .cosoricp158afrxr__text h2,#maincontent .cosoricp158afrxr__text p{text-align:center}#maincontent .row-cosoricp158afrxr__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1100px;margin:0 auto}#maincontent .row-cosoricp158afrxr__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-cosoricp158afrxr__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-cosoricp158afrxr__text{padding:10px 40px}#maincontent .row-cosoricp158afrxr__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/880);font-size:calc(22px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 8*(100vw - 320px)/880);font-size:calc(16px + 8*(100vw - 320px)/880)}}@media screen and (max-width: 1024.98px){#maincontent .row-cosoricp158afrxr__text{padding:10px 20px}}@media screen and (max-width: 991.98px){#maincontent .maincontent__container h2{margin-bottom:20px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:30px}#maincontent .cosoricp158afrxr__box{margin-bottom:30px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__container p{text-align:justify}#maincontent .maincontent__text{padding:0 5px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:0}#maincontent .cosoricp158afrxr__box{margin-bottom:20px}#maincontent .cosoricp158afrxr__text_mt{margin-top:10px}#maincontent .row-cosoricp158afrxr__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-cosoricp158afrxr__text{padding:0 5px}#maincontent .row-cosoricp158afrxr__text h2{text-align:center}#maincontent .row-cosoricp158afrxr__text p{text-align:justify}#maincontent .bottom-box__text{margin-top:10px}#maincontent .bottom-box__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:5px}#maincontent .cosoricp158afrxr__box{margin-bottom:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__row row-cosoricp158afrxr">
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Потужна та містка мультипіч</h2>
+<p>Cosori Smart Dual Blaze Chef Edition — це пристрій, який збереже ваш час та сили. Ця модель                             мультипічі оснащена безліччю розумних функцій і технологій — наприклад, вам не потрібно                             перемішувати їжу під час приготування. А з сенсорною панеллю керувати цим пристроєм стає ще                             простіше.</p>
+<ul>
+<li>Зручна панель керування</li>
+<li>12 автоматичних режимів</li>
+<li>Можливість віддаленого керування</li>
+<li>Використовуйте на 85% менше олії</li>
+<li>Готує на 50% швидше за духовку</li>
+<li>Ніякого перемішування з ThermoIQ</li>
+<li>Система безпеки</li>
+<li>Антипригарний знімний кошик з алюмінію</li>
+<li>Книга з рецептами</li>
+</ul>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img01.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Забудьте про обертання і перемішування</h2>
+<p>Завдяки технології ThermoIQ, яка складається з подвійних нагрівальних елементів, вам більше                             не потрібно перемішувати та обертати їжу в процесі готування, і час приготування                             зменшується. Тому незалежно від вашого рівня кулінарного досвіду створення смачних страв                             буде простим і приємним процесом.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img02.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<h2>Автоматичні режими</h2>
+<p>В Cosori Smart Dual ви можете приготувати не просто картоплю фрі — ця мультипіч пропонує 12 різних                     режимів. Серед них:</p>
+<ul>
+<li>аерофритюр;</li>
+<li>випікання та запікання;</li>
+<li>смаження;</li>
+<li>підігрівання;</li>
+<li>приготування курятини, морепродуктів, овочів;</li>
+<li>стейки;</li>
+<li>заморожені продукти;</li>
+<li>підтримання тепла.</li>
+</ul>
+<p>Забудьте також про велику кількість олії, бо вона майже не потрібна. При цьому хрустка скоринка                     зберігається!</p>
+</div>
+</div>
+<div class="maincontent__img cosoricp158afrxr__img"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img03.png" /></div>
+<div class="maincontent__row row-cosoricp158afrxr">
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Віддалене користування</h2>
+<p>Завантажуйте додаток VeSync, щоб стежити за процесом приготування де б ви не були. Також                             можна під’єднати мультипіч до Google Assistant, щоб керувати нею за допомогою голосу і                             отримувати повідомлення про всі етапи процесу.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img04.png" /></div>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Багато їжі для великої компанії</h2>
+<p>Тепер не потрібно стояти за плитою довгі години перед зустріччю гостей — мультипіч настільки                         велика, що ви легко можете приготувати в ній велику порцію за один раз. Крильця, ребра, ковбаски                         — неважливо, все приготується швидко, смачно та у великій кількості в кошику на 6,4 літри.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img05.png" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Додаткові переваги мультипічі</h2>
+<p>Cosori Smart Dual Blaze Chef Edition — це потужний помічник, в якого все під контролем. Вона                         оснащена корисними захисними функціями: автовимкнення та запобігання перегріванню.                         Алюмінієвий кошик для їжі з антипригарним покриттям має багато переваг, серед яких:</p>
+<ul>
+<li>відсутність шкідливих речовин;</li>
+<li>легке очищення навіть в посудомийній машині;</li>
+<li>ефективне розподілення тепла.</li>
+</ul>
+<p>В книзі рецептів від шеф-кухаря, а також в мобільному додатку ви знайдете безліч ідей для ваших                         найсмачніших сніданків, обідів та вечорів.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432117/img06.jpg" /></div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box bottom-box">
+<div class="maincontent__text cosoricp158afrxr__text bottom-box__text">
+<p>Купити мультипіч <b>Cosori Smart Dual Blaze Chef Edition</b> в Україні можна на сайті або в фірмових                     магазинах COMFY!</p>
+</div>
+</div>
+</div>
+</div>
