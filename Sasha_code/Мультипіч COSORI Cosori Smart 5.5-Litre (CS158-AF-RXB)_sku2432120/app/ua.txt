@@ -1,0 +1,97 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0 auto}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1300px;margin:0 auto;padding:0 15px}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;margin:20px 0px 50px}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:24px;line-height:1.2;margin-bottom:10px}#maincontent .maincontent__container ul,#maincontent .maincontent__container li{list-style:disc;margin-left:15px}#maincontent .maincontent__img{margin-bottom:50px}#maincontent .maincontent__row{margin-bottom:50px}#maincontent .cosoricp158afrxr__box{max-width:1100px;margin:0 auto 50px}#maincontent .cosoricp158afrxr__text{padding:0 20px}#maincontent .cosoricp158afrxr__text h2,#maincontent .cosoricp158afrxr__text p{text-align:center}#maincontent .row-cosoricp158afrxr__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;max-width:1100px;margin:0 auto}#maincontent .row-cosoricp158afrxr__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-cosoricp158afrxr__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-cosoricp158afrxr__text{padding:10px 40px}#maincontent .row-cosoricp158afrxr__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/880);font-size:calc(22px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 8*(100vw - 320px)/880);font-size:calc(16px + 8*(100vw - 320px)/880)}}@media screen and (max-width: 1024.98px){#maincontent .row-cosoricp158afrxr__text{padding:10px 20px}}@media screen and (max-width: 991.98px){#maincontent .maincontent__container h2{margin-bottom:20px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:30px}#maincontent .cosoricp158afrxr__box{margin-bottom:30px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2{margin:10px 0}#maincontent .maincontent__container p{text-align:justify}#maincontent .maincontent__text{padding:0 5px}#maincontent .maincontent__img,#maincontent .maincontent__row{margin-bottom:0}#maincontent .cosoricp158afrxr__box{margin-bottom:20px}#maincontent .cosoricp158afrxr__text_mt{margin-top:10px}#maincontent .row-cosoricp158afrxr__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#maincontent .row-cosoricp158afrxr__text{padding:0 5px}#maincontent .row-cosoricp158afrxr__text h2{text-align:center}#maincontent .row-cosoricp158afrxr__text p{text-align:justify}#maincontent .bottom-box__text p{text-align:center}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:5px}#maincontent .cosoricp158afrxr__box{margin-bottom:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<h2>Ваш розумний помічник в готуванні</h2>
+<p>Cosori Smart — це пристрій, який перевершить ваші очікування. Ця розумна мультипіч може керуватися з                     додатка, відправляти повідомлення в режимі реального часу та виконувати голосові команди. Готувати                     ще ніколи не було так просто!                     Висока потужність і велика кількість функцій роблять її надзвичайно корисною та швидкою.</p>
+<ul>
+<li>Віддалене керування в додатку</li>
+<li>Сенсорна панель керування</li>
+<li>11 автоматичних режимів</li>
+<li>Можливість змінити температуру від 75 до 205°C</li>
+<li>Попереднє розігрівання</li>
+<li>Антипригарний кошик, що знімається</li>
+<li>Підтримання температури</li>
+<li>Система безпеки</li>
+<li>Нагадування про перемішування </li>
+</ul>
+</div>
+</div>
+<div class="maincontent__img cosoricp158afrxr__img"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img01.jpg" /></div>
+<div class="maincontent__row row-cosoricp158afrxr">
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Широкий функціонал</h2>
+<p>Просто завантажте додаток VeSync на свій смартфон і керуйте мультипіччю де б ви не були.                             Треба вийти в магазин? Нічого страшного, ви можете слідкувати за процесом приготування на                             екрані свого мобільного.                             Під’єднайте мультипіч до Google Assistant і отримуйте повідомлення про всі етапи обробки                             продуктів, а також керуйте мультипіччю за допомогою голосу.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img02.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Тільки великі порції</h2>
+<p>Виробники продумали все до дрібниць. Сюди ж можна віднести й квадратну форму самого корпуса,                             бо завдяки цьому в ньому вміщується велика кількість продуктів. І звісно ж завдяки об’єму                             5,5 літрів. Крильця, ребра, ковбаски, картопля-фрі — готуйте все що завгодно для великої                             компанії близьких.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img03.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Легке керування</h2>
+<p>Cosori Smart оснащена світлодіодною сенсорною панеллю, з якою дуже легко розібратися. На ній                             розташовані основні режими, додаткові функції та інші потрібні характеристики.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img04.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<h2>Автоматичні режими</h2>
+<p>Готуйте все, що заманеться: хліб, коренеплоди, десерти, овочі, морепродукти, стейки, бекон,                     заморожені продукти й багато чого іншого. І для всіх цих страв вам потрібна мінімальна кількість                     олії, а от хрустка скоринка при цьому залишається.</p>
+</div>
+</div>
+<div class="maincontent__img cosoricp158afrxr__img"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img05.jpg" /></div>
+<div class="maincontent__row row-cosoricp158afrxr">
+<div class="row-cosoricp158afrxr__inner row-cosoricp158afrxr__inner_rev">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Функція попереднього розігрівання</h2>
+<p>Така опція покращує текстуру їжі, збільшує швидкість обробки та не займає багато часу —                             всього 2-5 хвилин. Насолоджуйтеся швидким і корисним готуванням.</p>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img06.jpg" /></div>
+</div>
+<div class="row-cosoricp158afrxr__inner">
+<div class="row-cosoricp158afrxr__item">
+<div class="row-cosoricp158afrxr__text">
+<h2>Додаткові переваги</h2>
+<p>Мультипіч Cosori Smart оснащена додатковими функціями, такими як:</p>
+<ul>
+<li>захист від перегріву;</li>
+<li>автоматичне вимкнення;</li>
+<li>підтримання температури;</li>
+<li>нагадування про перемішування.</li>
+</ul>
+</div>
+</div>
+<div class="row-cosoricp158afrxr__image"><img src="https://cdn.comfy.ua/media/x/img3/2432120/img07.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box">
+<div class="maincontent__text cosoricp158afrxr__text">
+<p>Кошик з антипригарним покриттям забезпечує безтурботний процес приготування та легке очищення                     як вручну, так і в посудомийці. А книга з сотнею оригінальних рецептів допоможе вам                     урізноманітнити ваше домашнє меню.</p>
+</div>
+</div>
+<div class="maincontent__box cosoricp158afrxr__box bottom-box">
+<div class="maincontent__text cosoricp158afrxr__text bottom-box__text">
+<p>Купити мультипіч <b>Cosori Smart 5.5-Litre CS158-AF-RXB</b> в Україні можна на сайті або у фірмових                     магазинах COMFY!</p>
+</div>
+</div>
+</div>
+</div>
