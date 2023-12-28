@@ -1,0 +1,495 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+//Адаптивное свойство
+$maxWidth: 1920
+$maxWidthContainer: 1520
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type)
+    $addSize: $startSize - $minSize
+    @if $type==1
+        #{$property}: $startSize + px
+        @media (max-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+
+    @else if $type==2
+        #{$property}: $startSize + px
+        @media (min-width: #{$maxWidthContainer + px})
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+
+    @else
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}))
+//========================================================================================================================================================
+
+// html
+//     box-sizing: border-box
+// html,
+// body
+//     height: 100%
+//     min-width: 320px
+//     margin: 0 auto
+// *,
+// *::before,
+// *::after
+//     box-sizing: inherit
+
+// button
+//     cursor: pointer
+//     color: inherit
+//     background-color: inherit
+
+//========================================================================================================================================================
+
+// [class*="-ibg"]
+//     position: relative
+
+// [class*="-ibg"] img
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0
+//     left: 0
+//     -o-object-fit: cover
+//     object-fit: cover
+
+// [class*="-ibg_contain"] img
+//     -o-object-fit: contain
+//     object-fit: contain
+
+// #philipsbhd a
+//     color: inherit
+//     text-decoration: none
+
+#philipsbhd
+    ul,
+    ol,
+    li
+        list-style: none
+        padding: 0
+        margin: 0
+
+#philipsbhd .bc-description__content p
+    margin-bottom: 0
+
+#philipsbhd .bc-description__content h3
+    text-align: left
+
+#philipsbhd
+    h1, h2, h3, h4, h5, h6
+        text-transform: none
+        font-weight: bold
+
+#philipsbhd
+    height: auto
+    margin: 0 auto
+    overflow: hidden
+    // background-color: #ffffff
+    font-family: 'Roboto', sans-serif
+    h1, h2, h3, h4, h5, h6, p
+        margin: 0
+        padding: 0
+        text-align: left
+
+#philipsbhd p::first-letter
+    padding-left: 0
+
+#philipsbhd img
+    opacity: 1
+    max-width: 100%
+    display: block
+    margin: 0 auto
+
+#philipsbhd img:hover
+    opacity: 1
+
+#philipsbhd .philipsbhd__container
+    max-width: 1520px
+    margin: 0 auto
+    // padding: 0 15px
+
+//========================================================================================================================================================
+
+#philipsbhd .header-philipsbhd
+    &__bg
+        position: relative
+        z-index: 2
+    &__logo
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 5%
+        right: 75%
+    &__text
+        position: absolute
+        z-index: 5
+        bottom: 8%
+        left: 5%
+        width: 40%
+        h2
+            @include adaptiv-value("font-size", 34, 15, 1)
+            line-height: 1.2
+            font-weight: normal
+            color: #ffffff
+        span
+            @include adaptiv-value("font-size", 34, 15, 1)
+            line-height: 1.2
+            font-weight: normal
+            color: #ffffff
+        p
+            padding-top: 50px
+            @include adaptiv-value("font-size", 44, 16, 1)
+            line-height: 1.2
+            font-weight: bold
+            color: #ffffff
+    &__image
+
+#philipsbhd .spec-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__row
+        display: flex
+        align-items: center
+        padding: 20px 5%
+    &__item
+        flex: 0 1 50%
+    &__text
+        p
+            padding-left: 30px
+            position: relative
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            &:not(:last-child)
+                margin-bottom: 40px
+            span
+                color: #7e1363
+                font-weight: bold
+            &::before
+                content: ''
+                position: absolute
+                z-index: 5
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                width: 13px
+                height: 13px
+                background-color: #7e1363
+                border-radius: 50%
+    &__media
+        flex: 0 1 50%
+
+#philipsbhd .engine-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 5%
+        width: 40%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+    &__image
+
+#philipsbhd .ion-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        right: 5%
+        width: 34%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+            &:not(:last-child)
+                margin-bottom: 20px
+    &__image
+
+#philipsbhd .thermo-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        left: 5%
+        width: 32%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+    &__image
+
+#philipsbhd .speed-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__row
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        padding: 0 5%
+    &__item
+        flex: 0 1 60%
+    &__text
+        width: 80%
+        margin: 0 auto
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            &:not(:last-child)
+                margin-bottom: 40px
+            span
+                color: #7e1363
+                font-weight: bold
+    &__image
+
+#philipsbhd .cool-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 5%
+        right: 5%
+        width: 32%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+            &:not(:last-child)
+                margin-bottom: 40px
+    &__image
+
+#philipsbhd .narrow-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        bottom: 10%
+        left: 5%
+        width: 32%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+            &:not(:last-child)
+                margin-bottom: 40px
+    &__image
+
+#philipsbhd .diffuser-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 32%
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #ffffff
+            &:not(:last-child)
+                margin-bottom: 40px
+    &__image
+
+#philipsbhd .prof-philipsbhd
+    &__title
+        background-color: #7e1363
+        padding: 20px 20px 20px 5%
+        h2
+            @include adaptiv-value("font-size", 48, 20, 1)
+            line-height: 1.2
+            color: #ffffff
+            font-weight: normal
+    &__image
+
+#philipsbhd .footer-philipsbhd
+    &__bg
+        position: relative
+        z-index: 2
+    &__text
+        position: absolute
+        z-index: 5
+        top: 30%
+        left: 5%
+        width: 32%
+        h2
+            @include adaptiv-value("font-size", 50, 18, 1)
+            line-height: 1.2
+            margin-bottom: 20px
+            color: #7e1363
+        p
+            @include adaptiv-value("font-size", 34, 16, 1)
+            line-height: 1.2
+            color: #7e1363
+    &__image
+
+//===========MEDIA=============================================================================================================================================
+
+//@media screen and (max-width: 1300px)
+@media screen and (max-width: 1024.98px)
+    #philipsbhd .cool-philipsbhd__text
+        width: 40%
+        right: 2%
+    #philipsbhd .ion-philipsbhd__text
+        width: 40%
+
+@media screen and (max-width: 991.98px)
+    #philipsbhd .narrow-philipsbhd__text,
+    #philipsbhd .diffuser-philipsbhd__text
+        width: 40%
+    #philipsbhd .spec-philipsbhd__text p:not(:last-child)
+        margin-bottom: 20px
+    #philipsbhd .ion-philipsbhd__text
+        // left: 5%
+        right: 2%
+        width: 50%
+    #philipsbhd .thermo-philipsbhd__text
+        width: 50%
+
+@media screen and (max-width: 767.98px)
+    #philipsbhd .speed-philipsbhd__image
+        flex: 0 1 40%
+    // #philipsbhd .ion-philipsbhd__text
+    //     width: 90%
+    //     top: 2%
+    // #philipsbhd .engine-philipsbhd__text
+    //     width: 55%
+    #philipsbhd .header-philipsbhd__text
+        width: 50%
+        bottom: 5%
+    #philipsbhd .header-philipsbhd__text p
+        padding-top: 20px
+    #philipsbhd .ion-philipsbhd__text,
+    #philipsbhd .engine-philipsbhd__text,
+    #philipsbhd .cool-philipsbhd__text,
+    #philipsbhd .narrow-philipsbhd__text,
+    #philipsbhd .diffuser-philipsbhd__text
+        position: unset
+        width: auto
+        padding: 15px 5%
+        h2,p
+            color: #000
+    #philipsbhd .diffuser-philipsbhd__text
+        transform: translateY(0)
+
+@media screen and (max-width: 600px)
+    #philipsbhd .footer-philipsbhd__text
+        top: 12%
+        width: 50%
+    #philipsbhd .spec-philipsbhd__row
+        flex-direction: column
+
+@media screen and (max-width: 479.98px)
+    #philipsbhd .footer-philipsbhd__text
+        h2
+            margin-bottom: 10px
+    #philipsbhd .speed-philipsbhd__text p:not(:last-child)
+        margin-bottom: 20px
+    #philipsbhd .speed-philipsbhd__text
+        width: 90%
+    #philipsbhd .thermo-philipsbhd__text
+        //width: 75%
+        position: unset
+        width: auto
+        padding: 15px 5%
+        h2,p
+            color: #000
+    // #philipsbhd .ion-philipsbhd__text,
+    // #philipsbhd .engine-philipsbhd__text
+    //     position: unset
+    //     width: auto
+    //     padding: 15px
+    //     h2,p
+    //         color: #000
+    // #philipsbhd .engine-philipsbhd__text
+    //     width: 90%
+    #philipsbhd .spec-philipsbhd__text p
+        padding-left: 15px
+    #philipsbhd .spec-philipsbhd__text p::before
+        width: 7px
+        height: 7px
+    #philipsbhd .header-philipsbhd__text
+        width: 80%
+    #philipsbhd .cool-philipsbhd__text p:not(:last-child),
+    #philipsbhd .narrow-philipsbhd__text p:not(:last-child)
+        margin-bottom: 20px
+
+@media screen and (max-width: 400px)
+    #philipsbhd .speed-philipsbhd__text
+        width: auto
+        padding: 15px 0
+    #philipsbhd .speed-philipsbhd__row
+        flex-direction: column
+// @media (max-width: 812px) and (orientation: landscape)

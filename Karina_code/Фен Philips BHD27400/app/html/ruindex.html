@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #philipsbhd ul,#philipsbhd ol,#philipsbhd li{list-style:none;padding:0;margin:0}#philipsbhd .bc-description__content p{margin-bottom:0}#philipsbhd .bc-description__content h3{text-align:left}#philipsbhd h1,#philipsbhd h2,#philipsbhd h3,#philipsbhd h4,#philipsbhd h5,#philipsbhd h6{text-transform:none;font-weight:bold}#philipsbhd{height:auto;margin:0 auto;overflow:hidden;font-family:"Roboto",sans-serif}#philipsbhd h1,#philipsbhd h2,#philipsbhd h3,#philipsbhd h4,#philipsbhd h5,#philipsbhd h6,#philipsbhd p{margin:0;padding:0;text-align:left}#philipsbhd p::first-letter{padding-left:0}#philipsbhd img{opacity:1;max-width:100%;display:block;margin:0 auto}#philipsbhd img:hover{opacity:1}#philipsbhd .philipsbhd__container{max-width:1520px;margin:0 auto}#philipsbhd .header-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .header-philipsbhd__logo{position:absolute;z-index:5;top:0;left:5%;right:75%}#philipsbhd .header-philipsbhd__text{position:absolute;z-index:5;bottom:8%;left:5%;width:40%}#philipsbhd .header-philipsbhd__text h2{font-size:34px;line-height:1.2;font-weight:normal;color:#fff}@media(max-width: 1520px){#philipsbhd .header-philipsbhd__text h2{font-size:-webkit-calc(15px + 19*(100vw - 320px)/1200);font-size:calc(15px + 19*(100vw - 320px)/1200)}}#philipsbhd .header-philipsbhd__text span{font-size:34px;line-height:1.2;font-weight:normal;color:#fff}@media(max-width: 1520px){#philipsbhd .header-philipsbhd__text span{font-size:-webkit-calc(15px + 19*(100vw - 320px)/1200);font-size:calc(15px + 19*(100vw - 320px)/1200)}}#philipsbhd .header-philipsbhd__text p{padding-top:50px;font-size:44px;line-height:1.2;font-weight:bold;color:#fff}@media(max-width: 1520px){#philipsbhd .header-philipsbhd__text p{font-size:-webkit-calc(16px + 28*(100vw - 320px)/1200);font-size:calc(16px + 28*(100vw - 320px)/1200)}}#philipsbhd .spec-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .spec-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .spec-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .spec-philipsbhd__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:20px 5%}#philipsbhd .spec-philipsbhd__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipsbhd .spec-philipsbhd__text p{padding-left:30px;position:relative;font-size:34px;line-height:1.2}@media(max-width: 1520px){#philipsbhd .spec-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .spec-philipsbhd__text p:not(:last-child){margin-bottom:40px}#philipsbhd .spec-philipsbhd__text p span{color:#7e1363;font-weight:bold}#philipsbhd .spec-philipsbhd__text p::before{content:"";position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:0;width:13px;height:13px;background-color:#7e1363;-webkit-border-radius:50%;border-radius:50%}#philipsbhd .spec-philipsbhd__media{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#philipsbhd .engine-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .engine-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .engine-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .engine-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .engine-philipsbhd__text{position:absolute;z-index:5;top:5%;left:5%;width:40%}#philipsbhd .engine-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .engine-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .ion-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .ion-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .ion-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .ion-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .ion-philipsbhd__text{position:absolute;z-index:5;top:5%;right:5%;width:34%}#philipsbhd .ion-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .ion-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .ion-philipsbhd__text p:not(:last-child){margin-bottom:20px}#philipsbhd .thermo-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .thermo-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .thermo-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .thermo-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .thermo-philipsbhd__text{position:absolute;z-index:5;top:5%;left:5%;width:32%}#philipsbhd .thermo-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .thermo-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .speed-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .speed-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .speed-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .speed-philipsbhd__row{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;padding:0 5%}#philipsbhd .speed-philipsbhd__item{-webkit-box-flex:0;-webkit-flex:0 1 60%;-moz-box-flex:0;-ms-flex:0 1 60%;flex:0 1 60%}#philipsbhd .speed-philipsbhd__text{width:80%;margin:0 auto}#philipsbhd .speed-philipsbhd__text p{font-size:34px;line-height:1.2}@media(max-width: 1520px){#philipsbhd .speed-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .speed-philipsbhd__text p:not(:last-child){margin-bottom:40px}#philipsbhd .speed-philipsbhd__text p span{color:#7e1363;font-weight:bold}#philipsbhd .cool-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .cool-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .cool-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .cool-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .cool-philipsbhd__text{position:absolute;z-index:5;top:5%;right:5%;width:32%}#philipsbhd .cool-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .cool-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .cool-philipsbhd__text p:not(:last-child){margin-bottom:40px}#philipsbhd .narrow-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .narrow-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .narrow-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .narrow-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .narrow-philipsbhd__text{position:absolute;z-index:5;bottom:10%;left:5%;width:32%}#philipsbhd .narrow-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .narrow-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .narrow-philipsbhd__text p:not(:last-child){margin-bottom:40px}#philipsbhd .diffuser-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .diffuser-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .diffuser-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .diffuser-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .diffuser-philipsbhd__text{position:absolute;z-index:5;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:5%;width:32%}#philipsbhd .diffuser-philipsbhd__text p{font-size:34px;line-height:1.2;color:#fff}@media(max-width: 1520px){#philipsbhd .diffuser-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}#philipsbhd .diffuser-philipsbhd__text p:not(:last-child){margin-bottom:40px}#philipsbhd .prof-philipsbhd__title{background-color:#7e1363;padding:20px 20px 20px 5%}#philipsbhd .prof-philipsbhd__title h2{font-size:48px;line-height:1.2;color:#fff;font-weight:normal}@media(max-width: 1520px){#philipsbhd .prof-philipsbhd__title h2{font-size:-webkit-calc(20px + 28*(100vw - 320px)/1200);font-size:calc(20px + 28*(100vw - 320px)/1200)}}#philipsbhd .footer-philipsbhd__bg{position:relative;z-index:2}#philipsbhd .footer-philipsbhd__text{position:absolute;z-index:5;top:30%;left:5%;width:32%}#philipsbhd .footer-philipsbhd__text h2{font-size:50px;line-height:1.2;margin-bottom:20px;color:#7e1363}@media(max-width: 1520px){#philipsbhd .footer-philipsbhd__text h2{font-size:-webkit-calc(18px + 32*(100vw - 320px)/1200);font-size:calc(18px + 32*(100vw - 320px)/1200)}}#philipsbhd .footer-philipsbhd__text p{font-size:34px;line-height:1.2;color:#7e1363}@media(max-width: 1520px){#philipsbhd .footer-philipsbhd__text p{font-size:-webkit-calc(16px + 18*(100vw - 320px)/1200);font-size:calc(16px + 18*(100vw - 320px)/1200)}}@media screen and (max-width: 1024.98px){#philipsbhd .cool-philipsbhd__text{width:40%;right:2%}#philipsbhd .ion-philipsbhd__text{width:40%}}@media screen and (max-width: 991.98px){#philipsbhd .narrow-philipsbhd__text,#philipsbhd .diffuser-philipsbhd__text{width:40%}#philipsbhd .spec-philipsbhd__text p:not(:last-child){margin-bottom:20px}#philipsbhd .ion-philipsbhd__text{right:2%;width:50%}#philipsbhd .thermo-philipsbhd__text{width:50%}}@media screen and (max-width: 767.98px){#philipsbhd .speed-philipsbhd__image{-webkit-box-flex:0;-webkit-flex:0 1 40%;-moz-box-flex:0;-ms-flex:0 1 40%;flex:0 1 40%}#philipsbhd .header-philipsbhd__text{width:50%;bottom:5%}#philipsbhd .header-philipsbhd__text p{padding-top:20px}#philipsbhd .ion-philipsbhd__text,#philipsbhd .engine-philipsbhd__text,#philipsbhd .cool-philipsbhd__text,#philipsbhd .narrow-philipsbhd__text,#philipsbhd .diffuser-philipsbhd__text{position:unset;width:auto;padding:15px 5%}#philipsbhd .ion-philipsbhd__text h2,#philipsbhd .ion-philipsbhd__text p,#philipsbhd .engine-philipsbhd__text h2,#philipsbhd .engine-philipsbhd__text p,#philipsbhd .cool-philipsbhd__text h2,#philipsbhd .cool-philipsbhd__text p,#philipsbhd .narrow-philipsbhd__text h2,#philipsbhd .narrow-philipsbhd__text p,#philipsbhd .diffuser-philipsbhd__text h2,#philipsbhd .diffuser-philipsbhd__text p{color:#000}#philipsbhd .diffuser-philipsbhd__text{-webkit-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}}@media screen and (max-width: 600px){#philipsbhd .footer-philipsbhd__text{top:12%;width:50%}#philipsbhd .spec-philipsbhd__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}@media screen and (max-width: 479.98px){#philipsbhd .footer-philipsbhd__text h2{margin-bottom:10px}#philipsbhd .speed-philipsbhd__text p:not(:last-child){margin-bottom:20px}#philipsbhd .speed-philipsbhd__text{width:90%}#philipsbhd .thermo-philipsbhd__text{position:unset;width:auto;padding:15px 5%}#philipsbhd .thermo-philipsbhd__text h2,#philipsbhd .thermo-philipsbhd__text p{color:#000}#philipsbhd .spec-philipsbhd__text p{padding-left:15px}#philipsbhd .spec-philipsbhd__text p::before{width:7px;height:7px}#philipsbhd .header-philipsbhd__text{width:80%}#philipsbhd .cool-philipsbhd__text p:not(:last-child),#philipsbhd .narrow-philipsbhd__text p:not(:last-child){margin-bottom:20px}}@media screen and (max-width: 400px){#philipsbhd .speed-philipsbhd__text{width:auto;padding:15px 0}#philipsbhd .speed-philipsbhd__row{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}
+    </style>
+
+    <div id="philipsbhd">
+        <div class="philipsbhd__container">
+            <div class="philipsbhd__header header-philipsbhd">
+                <div class="header-philipsbhd__bg">
+                    <div class="header-philipsbhd__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img2.png" alt="">
+                    </div>
+                    <div class="header-philipsbhd__text">
+                        <h2>Профессиональный фен Philips Pro</h2>
+                        <span>BHD274/00</span>
+                        <p>Быстрая и эффективная
+                            профессиональная сушка волос</p>
+                    </div>
+                    <div class="header-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__spec spec-philipsbhd">
+                <div class="spec-philipsbhd__title">
+                    <h2>Основные характеристики</h2>
+                </div>
+                <div class="spec-philipsbhd__row">
+                    <div class="spec-philipsbhd__item">
+                        <div class="spec-philipsbhd__text">
+                            <p><span>Профессиональный АС-мотор</span></p>
+                            <p>Технология <span>ThermoProtect</span></p>
+                            <p>Высокая мощность <span>2200 Вт</span></p>
+                            <p>Скорость потока воздуха <span>до 130 км/год*</span></p>
+                            <p>В <span>2 раза больше ионов**</span></p>
+                        </div>
+                    </div>
+                    <div class="spec-philipsbhd__media">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__engine engine-philipsbhd">
+                <div class="engine-philipsbhd__title">
+                    <h2>Мощный профессиональный AC-мотор</h2>
+                </div>
+                <div class="engine-philipsbhd__bg">
+                    <div class="engine-philipsbhd__text">
+                        <p>Разработан для профессионального использования. Скорость потока воздуха до 130 км/ч* для
+                            быстрой и эффективной укладки.</p>
+                    </div>
+                    <div class="engine-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__ion ion-philipsbhd">
+                <div class="ion-philipsbhd__title">
+                    <h2>Усовершенствованный ионизатор</h2>
+                </div>
+                <div class="ion-philipsbhd__bg">
+                    <div class="ion-philipsbhd__text">
+                        <p>Теперь в два раза больше ионов**
+                            что позволяет снять статическое электричество, улучшить общее состояние волос, а также
+                            способствуют закрытию волосяных чешуек.</p>
+                        <p>Полноценная забота о каждом волоске от корней до кончиков.</p>
+                    </div>
+                    <div class="ion-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__thermo thermo-philipsbhd">
+                <div class="thermo-philipsbhd__title">
+                    <h2>Технология ThermoProtect</h2>
+                </div>
+                <div class="thermo-philipsbhd__bg">
+                    <div class="thermo-philipsbhd__text">
+                        <p>Оптимальная безопасная температура для сушки волос с дополнительной защитой от перегрева.</p>
+                    </div>
+                    <div class="thermo-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__speed speed-philipsbhd">
+                <div class="speed-philipsbhd__title">
+                    <h2>6 режимов скорости и нагрева</h2>
+                </div>
+                <div class="speed-philipsbhd__row">
+                    <div class="speed-philipsbhd__item">
+                        <div class="speed-philipsbhd__text">
+                            <p>Можно легко настроить необходимую <span>скорость и температуру</span> нагрева для
+                                создания
+                                идеальной
+                                прически.</p>
+                            <p><span>Шесть режимов обеспечивают оптимальный контроль</span> за процессом сушки волос</p>
+                        </div>
+                    </div>
+                    <div class="speed-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__cool cool-philipsbhd">
+                <div class="cool-philipsbhd__title">
+                    <h2>Холодный обдув</h2>
+                </div>
+                <div class="cool-philipsbhd__bg">
+                    <div class="cool-philipsbhd__text">
+                        <p>Функция холодного обдува используется <span>каждым профессиональным парикмахером</span>,
+                            обеспечивая
+                            подачу мощного потока холодного воздуха.</p>
+                        <p>Этот прием используется <span>для закрепления укладки.</span></p>
+                    </div>
+                    <div class="cool-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__narrow narrow-philipsbhd">
+                <div class="narrow-philipsbhd__title">
+                    <h2>Узкая насадка-концентратор 9 мм</h2>
+                </div>
+                <div class="narrow-philipsbhd__bg">
+                    <div class="narrow-philipsbhd__text">
+                        <p>Обеспечивает направленный поток воздуха для точной фиксации отдельных прядей.</p>
+                        <p>Незаменимая насадка при использовании щетки во время сушки и укладки.</p>
+                    </div>
+                    <div class="narrow-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__diffuser diffuser-philipsbhd">
+                <div class="diffuser-philipsbhd__title">
+                    <h2>Насадка-диффузор для придания объема</h2>
+                </div>
+                <div class="diffuser-philipsbhd__bg">
+                    <div class="diffuser-philipsbhd__text">
+                        <p>Равномерно распределяет воздушный поток, придает волосам дополнительный объем и уменьшает их
+                            спутывание.</p>
+                    </div>
+                    <div class="diffuser-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__prof prof-philipsbhd">
+                <div class="prof-philipsbhd__title">
+                    <h2>Быстрая и эффективная профессиональная сушка волос</h2>
+                </div>
+                <div class="prof-philipsbhd__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1508946/img11.jpg" alt="">
+                </div>
+            </div>
+            <div class="philipsbhd__footer footer-philipsbhd">
+                <div class="footer-philipsbhd__bg">
+                    <div class="footer-philipsbhd__text">
+                        <h2>Профессиональный фен Philips Pro</h2>
+                        <p>BHD274/00</p>
+                    </div>
+                    <div class="footer-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="philipsbhd">
+        <div class="philipsbhd__container">
+            <div class="philipsbhd__header header-philipsbhd">
+                <div class="header-philipsbhd__bg">
+                    <div class="header-philipsbhd__logo">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img2.png" alt="">
+                    </div>
+                    <div class="header-philipsbhd__text">
+                        <h2>Професійний фен Philips Pro</h2>
+                        <span>BHD274/00</span>
+                        <p>Швидке та потужне сушіння для професійних результатів</p>
+                    </div>
+                    <div class="header-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__spec spec-philipsbhd">
+                <div class="spec-philipsbhd__title">
+                    <h2>Основні характеристики</h2>
+                </div>
+                <div class="spec-philipsbhd__row">
+                    <div class="spec-philipsbhd__item">
+                        <div class="spec-philipsbhd__text">
+                            <p><span>Професійний двигун змінного струму</span></p>
+                            <p>Технологія <span>ThermoProtect</span></p>
+                            <p>Потужність сушіння <span>2200 Вт</span></p>
+                            <p>Висока швидкість повітря <span>до 130 км/год*</span></p>
+                            <p>В <span>2 рази більше іонів**</span></p>
+                        </div>
+                    </div>
+                    <div class="spec-philipsbhd__media">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__engine engine-philipsbhd">
+                <div class="engine-philipsbhd__title">
+                    <h2>Потужний двигун змінного струму</h2>
+                </div>
+                <div class="engine-philipsbhd__bg">
+                    <div class="engine-philipsbhd__text">
+                        <p>Створений для професійного ринку, він досягає швидкості повітря до 130 км/год.* для швидких
+                            та ефективних результатів
+                        </p>
+                    </div>
+                    <div class="engine-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__ion ion-philipsbhd">
+                <div class="ion-philipsbhd__title">
+                    <h2>Вдосконалений іонізатор</h2>
+                </div>
+                <div class="ion-philipsbhd__bg">
+                    <div class="ion-philipsbhd__text">
+                        <p>Тепер вдвічі більше іонів**, що запобігають сплутуванню, кондиціонують волосся та вирівнюють
+                            його кутикули.</p>
+                        <p>Результат – гладеньке, слухняне волосся з яскравим блиском.</p>
+                    </div>
+                    <div class="ion-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__thermo thermo-philipsbhd">
+                <div class="thermo-philipsbhd__title">
+                    <h2>Технологія ThermoProtect</h2>
+                </div>
+                <div class="thermo-philipsbhd__bg">
+                    <div class="thermo-philipsbhd__text">
+                        <p>Оптимальна безпечна температура сушіння волосся із додатковим захистом від перегрівання</p>
+                    </div>
+                    <div class="thermo-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__speed speed-philipsbhd">
+                <div class="speed-philipsbhd__title">
+                    <h2>6 налаштувань швидкості й нагрівання</h2>
+                </div>
+                <div class="speed-philipsbhd__row">
+                    <div class="speed-philipsbhd__item">
+                        <div class="speed-philipsbhd__text">
+                            <p>Можна легко налаштувати потрібну <span>швидкість і температуру</span> для створення
+                                ідеальної зачіски.</p>
+                            <p><span>Шість різних налаштувань</span> забезпечують <span>оптимальний контроль</span> для
+                                точної й найкращої укладки
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speed-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__cool cool-philipsbhd">
+                <div class="cool-philipsbhd__title">
+                    <h2>Холодний обдув</h2>
+                </div>
+                <div class="cool-philipsbhd__bg">
+                    <div class="cool-philipsbhd__text">
+                        <p>Кнопка холодного обдуву є <span>обов’язковою професійною функцією</span>, що забезпечує
+                            потужний струмінь
+                            холодного повітря.</p>
+                        <p>Вона використовується після укладки <span>для завершення і фіксації зачіски.</span></p>
+                    </div>
+                    <div class="cool-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__narrow narrow-philipsbhd">
+                <div class="narrow-philipsbhd__title">
+                    <h2>9-мм вузький концентратор</h2>
+                </div>
+                <div class="narrow-philipsbhd__bg">
+                    <div class="narrow-philipsbhd__text">
+                        <p>Скеровує потік повітря для точної укладки певних ділянок.</p>
+                        <p>Ідеальна насадка для розчісування під час сушіння та створення зачіски.</p>
+                    </div>
+                    <div class="narrow-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__diffuser diffuser-philipsbhd">
+                <div class="diffuser-philipsbhd__title">
+                    <h2>Дифузор для створення об’єму</h2>
+                </div>
+                <div class="diffuser-philipsbhd__bg">
+                    <div class="diffuser-philipsbhd__text">
+                        <p>Розподіляє потік повітря по волоссю, збільшуючи об’єм та зменшуючи скуйовдження під час
+                            сушіння.</p>
+                    </div>
+                    <div class="diffuser-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="philipsbhd__prof prof-philipsbhd">
+                <div class="prof-philipsbhd__title">
+                    <h2>Швидке та потужне сушіння для професійних результатів</h2>
+                </div>
+                <div class="prof-philipsbhd__image">
+                    <img src="https://cdn.comfy.ua/media/x/img3/1508946/img11.jpg" alt="">
+                </div>
+            </div>
+            <div class="philipsbhd__footer footer-philipsbhd">
+                <div class="footer-philipsbhd__bg">
+                    <div class="footer-philipsbhd__text">
+                        <h2>Професійний фен Philips Pro</h2>
+                        <p>BHD274/00</p>
+                    </div>
+                    <div class="footer-philipsbhd__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/1508946/img12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
