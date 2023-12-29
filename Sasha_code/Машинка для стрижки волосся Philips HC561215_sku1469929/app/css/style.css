@@ -1,0 +1,665 @@
+#maincontent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#maincontent ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#maincontent .bc-description__content p {
+  margin-bottom: 0;
+}
+
+#maincontent .bc-description__content h3 {
+  text-align: left;
+}
+
+#maincontent p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+#maincontent h1,
+#maincontent h2,
+#maincontent h3,
+#maincontent h4,
+#maincontent h5,
+#maincontent h6 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  font-weight: bold;
+}
+
+#maincontent {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#maincontent p::first-letter {
+  padding-left: 0;
+}
+
+#maincontent img {
+  opacity: 1;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
+
+#maincontent img:hover {
+  opacity: 1;
+}
+
+#maincontent .maincontent__container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#maincontent .maincontent__container h2 {
+  font-size: 44px;
+  line-height: 1.3;
+  margin: 20px 0px;
+}
+#maincontent .maincontent__container h3 {
+  font-size: 48px;
+  line-height: 1.3;
+}
+#maincontent .maincontent__container h4 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 45px;
+}
+#maincontent .maincontent__container p {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  color: #5d5d5d;
+}
+#maincontent .maincontent__container ul, #maincontent .maincontent__container li {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: #005a8c;
+}
+#maincontent .maincontent__title {
+  padding: 30px 20px 35px 80px;
+  color: #fff;
+  background: #013378;
+}
+
+#maincontent .banner-box__bg {
+  position: relative;
+  z-index: 5;
+}
+#maincontent .banner-box__logo {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 80px;
+  right: 80%;
+}
+#maincontent .banner-box__content {
+  position: absolute;
+  z-index: 6;
+  left: 80px;
+  right: 65%;
+  bottom: 65px;
+}
+#maincontent .banner-box__subtitle {
+  margin-top: auto;
+  margin-bottom: 70px;
+}
+#maincontent .banner-box__subtitle p {
+  font-size: 34px;
+  line-height: 1.3;
+  color: #fff;
+}
+#maincontent .banner-box__title {
+  margin-bottom: 70px;
+}
+#maincontent .banner-box__title h2 {
+  color: #fff;
+}
+
+#maincontent .row-maincontent__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#maincontent .row-maincontent__inner_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#maincontent .row-maincontent__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+#maincontent .row-maincontent__text {
+  padding: 10px 20px;
+}
+#maincontent .row-maincontent__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 50%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+#maincontent .philips1469929-peculiarities__inner {
+  padding: 70px 20px;
+}
+#maincontent .philips1469929-peculiarities__item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 55%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+}
+#maincontent .philips1469929-peculiarities__image {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 45%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+#maincontent .philips1469929-peculiarities__image img {
+  margin: 0 auto;
+}
+
+#maincontent .philips1469929-trimnflow__content {
+  top: 70px;
+  left: 65%;
+  right: 85px;
+}
+#maincontent .philips1469929-trimnflow__text h4 {
+  margin-bottom: 50px;
+}
+#maincontent .philips1469929-trimnflow__text h4, #maincontent .philips1469929-trimnflow__text p {
+  color: #fff;
+}
+
+#maincontent .philips1469929-dualcut__text h4, #maincontent .philips1469929-dualcut__text p {
+  color: #fff;
+}
+
+#maincontent .philips1469929-steel__content {
+  top: 30px;
+  left: 60%;
+  right: 85px;
+}
+#maincontent .philips1469929-steel__text h4 {
+  margin-bottom: 50px;
+}
+#maincontent .philips1469929-steel__text h4, #maincontent .philips1469929-steel__text p {
+  color: #fff;
+}
+
+#maincontent .philips1469929-row__inner {
+  background: #e4eefb;
+}
+#maincontent .philips1469929-row__text {
+  padding: 10px 80px 10px 45px;
+}
+#maincontent .philips1469929-row__text_left {
+  padding: 10px 45px 10px 80px;
+}
+#maincontent .philips1469929-row__text h4 {
+  color: #005a8c;
+}
+
+#maincontent .philips1469929-content__inner {
+  padding: 70px 80px;
+}
+
+#maincontent .box-table__cells {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 30px;
+}
+#maincontent .box-table__cells p {
+  font-size: 24px;
+}
+#maincontent .box-table__cell {
+  min-width: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#maincontent .box-table__cell:nth-child(odd) {
+  background-color: #b2c8e6;
+}
+#maincontent .box-table__cell:nth-child(even) {
+  background-color: #e4eefb;
+}
+#maincontent .box-table__cell_header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 7px;
+}
+#maincontent .box-table__img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+     -moz-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 20px;
+}
+#maincontent .box-table__img img {
+  width: 100%;
+}
+#maincontent .box-table__text_subtitle {
+  margin: 35px 0;
+}
+#maincontent .box-table__cell_text {
+  grid-column: 1/-1;
+  padding: 15px 25px;
+}
+#maincontent .box-table__cell_text:nth-child(even), #maincontent .box-table__cell_text:nth-child(odd) {
+  background-color: #fff;
+}
+#maincontent .box-table__cell_text p {
+  color: #023278;
+  font-size: 34px;
+}
+#maincontent .box-table__text {
+  width: 100%;
+  padding: 5px;
+}
+#maincontent .box-table__text p, #maincontent .box-table__text ul, #maincontent .box-table__text li {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+}
+#maincontent .box-table__suptext {
+  padding: 0 7px 10px;
+}
+#maincontent .box-table__suptext p {
+  line-height: 1;
+}
+
+#maincontent .video-box__inner {
+  padding: 0 80px 70px;
+}
+#maincontent .video-box__video {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+#maincontent .video-box__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#maincontent .philips1469929-logo__bg {
+  background-image: url("https://cdn.comfy.ua/media/x/img3/1469929/bg11.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#maincontent .philips1469929-logo__inner {
+  padding: 90px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  #maincontent .maincontent__container h2 {
+    font-size: -webkit-calc(24px + 20 * (100vw - 320px) / 1080);
+    font-size: calc(24px + 20 * (100vw - 320px) / 1080);
+  }
+  #maincontent .maincontent__container h3 {
+    font-size: -webkit-calc(20px + 28 * (100vw - 320px) / 1080);
+    font-size: calc(20px + 28 * (100vw - 320px) / 1080);
+  }
+  #maincontent .maincontent__container h4 {
+    font-size: -webkit-calc(16px + 12 * (100vw - 320px) / 1080);
+    font-size: calc(16px + 12 * (100vw - 320px) / 1080);
+  }
+  #maincontent .maincontent__container p {
+    font-size: -webkit-calc(16px + 12 * (100vw - 320px) / 1080);
+    font-size: calc(16px + 12 * (100vw - 320px) / 1080);
+  }
+  #maincontent .maincontent__container ul, #maincontent .maincontent__container li {
+    font-size: -webkit-calc(16px + 16 * (100vw - 320px) / 1080);
+    font-size: calc(16px + 16 * (100vw - 320px) / 1080);
+  }
+  #maincontent .banner-box__subtitle p {
+    font-size: -webkit-calc(18px + 16 * (100vw - 320px) / 1080);
+    font-size: calc(18px + 16 * (100vw - 320px) / 1080);
+  }
+  #maincontent .philips1469929-content__inner {
+    padding: 70px 50px;
+  }
+  #maincontent .philips1469929-steel__content {
+    top: 5px;
+  }
+  #maincontent .philips1469929-steel__text {
+    margin-bottom: 25px;
+  }
+  #maincontent .box-table__cell_text p {
+    font-size: -webkit-calc(18px + 16 * (100vw - 320px) / 1080);
+    font-size: calc(18px + 16 * (100vw - 320px) / 1080);
+  }
+  #maincontent .box-table__text p, #maincontent .box-table__text ul, #maincontent .box-table__text li {
+    font-size: -webkit-calc(12px + 12 * (100vw - 320px) / 1080);
+    font-size: calc(12px + 12 * (100vw - 320px) / 1080);
+  }
+  #maincontent .philips1469929-logo__img {
+    width: -webkit-calc(50px + 135 * (100vw - 320px) / 1080);
+    width: calc(50px + 135 * (100vw - 320px) / 1080);
+  }
+}
+@media screen and (max-width: 1300px) {
+  #maincontent .philips1469929-steel__content {
+    left: 58%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #maincontent .banner-box__subtitle {
+    margin-bottom: 40px;
+  }
+  #maincontent .banner-box__title {
+    margin-bottom: 25px;
+  }
+  #maincontent .philips1469929-peculiarities__inner {
+    padding: 45px 10px;
+  }
+  #maincontent .philips1469929-trimnflow__text h4, #maincontent .philips1469929-dualcut__text h4 {
+    margin-bottom: 30px;
+  }
+  #maincontent .philips1469929-steel__content {
+    right: 25px;
+  }
+  #maincontent .philips1469929-content__inner {
+    padding: 50px 30px;
+  }
+  #maincontent .video-box__inner {
+    padding: 0 30px 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #maincontent .banner-box__logo {
+    left: 50px;
+  }
+  #maincontent .banner-box__content {
+    left: 50px;
+  }
+  #maincontent .philips1469929-trimnflow__content {
+    left: 65%;
+    right: 25px;
+  }
+  #maincontent .philips1469929-steel__content {
+    left: 58%;
+    right: 25px;
+  }
+  #maincontent .philips1469929-steel__text h4 {
+    margin-bottom: 20px;
+  }
+  #maincontent .philips1469929-row__text {
+    padding: 10px 40px 10px 25px;
+  }
+  #maincontent .philips1469929-row__text_left {
+    padding: 10px 25px 10px 40px;
+  }
+  #maincontent .philips1469929-logo__inner {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  #maincontent .banner-box__content {
+    right: 60%;
+    bottom: 35px;
+  }
+  #maincontent .banner-box__subtitle {
+    margin-bottom: 25px;
+  }
+  #maincontent .philips1469929-peculiarities__inner {
+    padding: 25px 10px;
+  }
+  #maincontent .philips1469929-trimnflow__content {
+    right: 25px;
+  }
+  #maincontent .philips1469929-steel__content {
+    right: 25px;
+  }
+  #maincontent .philips1469929-content__inner {
+    padding: 20px 10px;
+  }
+  #maincontent .video-box__inner {
+    padding: 0 10px 20px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  #maincontent .philips1469929-trimnflow__content {
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  #maincontent .philips1469929-steel__content {
+    position: unset;
+  }
+  #maincontent .philips1469929-steel__text {
+    padding: 10px 20px;
+  }
+  #maincontent .philips1469929-steel__text h4 {
+    color: #005a8c;
+    text-align: center;
+  }
+  #maincontent .philips1469929-steel__text p {
+    color: #5d5d5d;
+    text-align: center;
+  }
+  #maincontent .philips1469929-row__text {
+    padding: 10px 20px;
+  }
+  #maincontent .philips1469929-row__text h4 {
+    margin-bottom: 20px;
+  }
+  #maincontent .philips1469929-content__inner {
+    padding: 20px 0px;
+  }
+  #maincontent .box-table__cell_text {
+    padding: 10px 25px 0;
+  }
+  #maincontent .video-box__inner {
+    padding: 0 0 10px;
+  }
+}
+@media screen and (max-width: 850.98px) {
+  #maincontent .banner-box__logo {
+    left: 20px;
+  }
+  #maincontent .banner-box__content {
+    left: 20px;
+    bottom: 15px;
+  }
+  #maincontent .philips1469929-trimnflow__content {
+    left: 65%;
+    bottom: auto;
+  }
+  #maincontent .philips1469929-trimnflow__text h4 {
+    margin-bottom: 10px;
+  }
+  #maincontent .philips1469929-dualcut__text h4 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #maincontent .maincontent__container h2 {
+    margin: 10px 0;
+  }
+  #maincontent .maincontent__title {
+    padding: 10px;
+  }
+  #maincontent .maincontent__title h3 {
+    text-align: center;
+  }
+  #maincontent .banner-box__content h2 {
+    line-height: 1.2;
+  }
+  #maincontent .row-maincontent__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #maincontent .philips1469929-peculiarities__inner {
+    padding: 25px 10px 0;
+  }
+  #maincontent .philips1469929-peculiarities__text {
+    padding: 40px 10px 20px;
+  }
+  #maincontent .philips1469929-trimnflow__content {
+    position: unset;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #maincontent .philips1469929-trimnflow__text {
+    padding: 10px 20px;
+  }
+  #maincontent .philips1469929-trimnflow__text h4 {
+    color: #005a8c;
+    text-align: center;
+  }
+  #maincontent .philips1469929-trimnflow__text p {
+    color: #5d5d5d;
+    text-align: center;
+  }
+  #maincontent .philips1469929-row__text {
+    padding: 10px;
+  }
+  #maincontent .philips1469929-row__text h4, #maincontent .philips1469929-row__text p {
+    text-align: center;
+  }
+  #maincontent .philips1469929-content__inner {
+    padding: 20px 0px 0px;
+  }
+  #maincontent .box-table__cells {
+    overflow-x: scroll;
+    margin-bottom: 10px;
+  }
+  #maincontent .video-box__inner {
+    padding: 0;
+  }
+  #maincontent .philips1469929-logo__inner {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 650.98px) {
+  #maincontent .banner-box__content {
+    bottom: 10px;
+  }
+  #maincontent .banner-box__subtitle {
+    margin-bottom: 15px;
+  }
+  #maincontent .banner-box__title {
+    margin-bottom: 10px;
+  }
+  #maincontent .philips1469929-dualcut__content {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 600.98px) {
+  #maincontent .banner-box__content {
+    position: unset;
+    padding: 0 10px;
+  }
+  #maincontent .banner-box__content h2, #maincontent .banner-box__content h4 {
+    color: #005a8c;
+    text-align: center;
+  }
+  #maincontent .banner-box__content p {
+    text-align: center;
+    color: #5d5d5d;
+    margin: 15px 0;
+  }
+  #maincontent .philips1469929-peculiarities__text {
+    padding: 40px 10px 0px;
+  }
+  #maincontent .philips1469929-trimnflow__text, #maincontent .philips1469929-dualcut__text, #maincontent .philips1469929-steel__text {
+    padding: 10px 0 0;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  #maincontent .banner-box__content p {
+    margin: 10px 0;
+  }
+  #maincontent .banner-box__subtitle {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
