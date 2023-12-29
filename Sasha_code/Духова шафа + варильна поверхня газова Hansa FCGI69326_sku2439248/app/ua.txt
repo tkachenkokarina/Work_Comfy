@@ -1,0 +1,322 @@
+<style>
+#maincontent a{color:inherit;text-decoration:none}#maincontent ul,ol,li{list-style:none;padding:0;margin:0}#maincontent .bc-description__content p{margin-bottom:0}#maincontent .bc-description__content h3{text-align:left}#maincontent p{margin:0;padding:0;text-align:left}#maincontent h1,#maincontent h2,#maincontent h3,#maincontent h4,#maincontent h5,#maincontent h6{padding:0;margin:0;text-align:left;text-transform:none;font-weight:bold}#maincontent{margin:0 auto;overflow:hidden;background-color:#fff}#maincontent p::first-letter{padding-left:0}#maincontent img{opacity:1;max-width:100%;display:block;margin:0}#maincontent img:hover{opacity:1}#maincontent .maincontent__container{max-width:1320px;margin:0 auto;padding:0 15px;color:#000}#maincontent .maincontent__container h2{font-size:32px;line-height:1.2;text-transform:uppercase;margin:20px 0px}#maincontent .maincontent__container h3{font-size:23px;line-height:1.2;margin-bottom:15px}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:26px;line-height:1.2;margin-bottom:15px}#maincontent .top-box__bg{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/bg01.jpg");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .top-box__inner{padding:20px 40px}#maincontent .top-box__content{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-webkit-align-items:flex-start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:25px 20px;position:relative;z-index:5}#maincontent .top-box__images{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;margin-bottom:120px}#maincontent .top-box__images img{margin-left:auto}#maincontent .top-box__img_pos{position:absolute;z-index:6;left:35%;top:50%}#maincontent .top-box__logo{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .top-box__logo img{margin-left:auto}#maincontent .row-maincontent__inner{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .row-maincontent__inner_rev{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-moz-box-orient:horizontal;-moz-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}#maincontent .row-maincontent__item{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%}#maincontent .row-maincontent__text{padding:10px 40px}#maincontent .row-maincontent__image{-webkit-box-flex:0;-webkit-flex:0 1 50%;-moz-box-flex:0;-ms-flex:0 1 50%;flex:0 1 50%;position:relative;z-index:5}#maincontent .row-maincontent__image::before{content:"";position:absolute;z-index:6;width:150px;height:150px;bottom:20px}#maincontent .row-maincontent__image_right::before{right:20px}#maincontent .row-maincontent__image_left::before{left:20px}#maincontent .hansa-sensor__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon02.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-volume__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon03.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-modes__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon04.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-switches__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon05.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-glass__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon06.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-chromeGuides__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon07.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-telescopicGuides__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon08.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-9levelsGuides__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon09.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-cleaning__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon10.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-reliability__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon11.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-quality__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon12.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-safety__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon13.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-largeBurner__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon14.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-automaticArson__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon15.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-quickHeating__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon16.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-defrosting__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon17.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-bbq__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon18.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-evenBaking__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon19.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-recipes__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon20.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-reflectiveGlass__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon21.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-easyClean__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon22.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-steamCleaning__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon23.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-bakery__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon24.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-lighting__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon25.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-doorCleaning__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon26.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-energyEfficiency__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon27.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-topBar__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon28.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .hansa-bakingTray__image::before{background-image:url("https://cdn.comfy.ua/media/x/img3/2439248/icon29.png");background-repeat:no-repeat;background-position:top center;-webkit-background-size:cover;-o-background-size:cover;background-size:cover}#maincontent .coll-maincontent__inner{padding:25px 20px}#maincontent .coll-maincontent__logo{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:20px}#maincontent .coll-maincontent__items{display:grid;grid-template-columns:repeat(5, 1fr);gap:25px}#maincontent .coll-maincontent__item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;border:1px solid #e41429;-webkit-border-radius:5px;border-radius:5px;padding:20px}#maincontent .coll-maincontent__img{height:85px;margin-bottom:20px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center}#maincontent .coll-maincontent__text p{font-size:19px;line-height:1.2}@media screen and (max-width: 1200px){#maincontent .maincontent__container h2{font-size:-webkit-calc(22px + 10*(100vw - 320px)/880);font-size:calc(22px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container h3{font-size:-webkit-calc(13px + 10*(100vw - 320px)/880);font-size:calc(13px + 10*(100vw - 320px)/880)}#maincontent .maincontent__container p,#maincontent .maincontent__container ul,#maincontent .maincontent__container li{font-size:-webkit-calc(16px + 10*(100vw - 320px)/880);font-size:calc(16px + 10*(100vw - 320px)/880)}#maincontent .coll-maincontent__text p{font-size:-webkit-calc(10px + 9*(100vw - 320px)/880);font-size:calc(10px + 9*(100vw - 320px)/880)}}@media screen and (max-width: 1024.98px){#maincontent .row-maincontent__image::before{width:120px;height:120px}#maincontent .coll-maincontent__items{gap:10px}#maincontent .coll-maincontent__item{padding:10px}}@media screen and (max-width: 991.98px){#maincontent .top-box__logo img{width:-webkit-calc(50px + 200*(100vw - 320px)/672);width:calc(50px + 200*(100vw - 320px)/672)}#maincontent .row-maincontent__inner{margin-bottom:0}#maincontent .row-maincontent__text{padding:10px 15px}#maincontent .coll-maincontent__inner{padding:20px 10px}}@media screen and (max-width: 767.98px){#maincontent .maincontent__container h2,#maincontent .maincontent__container p{margin:10px 0}#maincontent .row-maincontent__inner{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:5px}#maincontent .row-maincontent__text{padding:0 5px}#maincontent .row-maincontent__text h2,#maincontent .row-maincontent__text p{text-align:center}#maincontent .coll-maincontent__items{grid-template-columns:repeat(3, 1fr)}}@media screen and (max-width: 650.98px){#maincontent .top-box__images{margin-bottom:70px}}@media screen and (max-width: 479.98px){#maincontent .maincontent__container ul,#maincontent .maincontent__container li{margin-left:10px}#maincontent .top-box__inner{padding:10px 20px}#maincontent .top-box__content{padding:5px}#maincontent .top-box__images{margin-bottom:50px}#maincontent .row-maincontent__image::before{width:100px;height:100px}#maincontent .coll-maincontent__inner{padding:10px 5px}#maincontent .coll-maincontent__items{grid-template-columns:repeat(2, 1fr)}}@media screen and (max-width: 400.98px){#maincontent .row-maincontent__image::before{width:70px;height:70px;bottom:10px}#maincontent .row-maincontent__image_right::before{right:10px}#maincontent .row-maincontent__image_left::before{left:10px}}
+</style>
+<div id="maincontent">
+<div class="maincontent__container">
+<div class="maincontent__box top-box">
+<div class="top-box__bg">
+<div class="top-box__inner">
+<div class="top-box__content">
+<div class="top-box__images">
+<div class="top-box__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img01_2.png" /></div>
+<div class="top-box__img top-box__img_pos"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img01_1.png" /></div>
+</div>
+<div class="top-box__logo"><img src="https://cdn.comfy.ua/media/x/img3/2439248/logo.png" /></div>
+</div>
+</div>
+</div>
+</div>
+<div class="maincontent__row row-maincontent hansa-sensor">
+<div class="row-maincontent__inner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Зручне керування</h2>
+<p>Тепер можна легко та швидко встановити температуру та режим випічки завдяки ергономічним                             регуляторам, а час випікання — кількома натисканнями на сенсорному дисплеї. Коли прийде час                             дістати страву, духова шафа автоматично вимкнеться і подасть звуковий сигнал.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-sensor__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img02.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-volume">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Великий об’єм XXL</h2>
+<p>Духова шафа Hansa FCGI69326 має винятковий об’єм порожнини — до 77 літрів. Ця нова                             конструкція робочої камери гарантує не тільки збільшену кількість готових страв, але й                             рівномірне випікання навіть двох страв одночасно. Це можливо завдяки технології рівномірного                             розподілу тепла та збільшеному нагрівальному елементу.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-volume__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img03.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-modes">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>9 автоматичних режимів</h2>
+<p>Комфорт і легкість — ось синоніми цієї духової шафи Hansa! Вона має різноманітні функції                             та режими, такі як “Швидке розігрівання” та “Розморожування”. Тепер розморожування                             порції м’яса або приготування на грилі не викличе особливих труднощів.</p>
+<p><b>Режими нагрівів:</b> Швидке попереднє нагрівання, Верхній та нижній нагріви + конвекція,                             ЕКО верхній та нижній нагріви + конвекція + гриль, Гриль, Верхній нагрів + гриль                             (супергриль), Розморожування, Нижній нагрів, Верхній нагрів + гриль + конвекція, Верхній та                             нижній нагріви.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-modes__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img04.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-switches">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Стильні утопленні перемикачі</h2>
+<p>Такий вид перемикачей не тільки має стильний вигляд, але й полегшує прибирання. Вони не так                             сильно брудняться, тому панель завжди виглядає чистою та охайною!</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-switches__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img05.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-glass">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Потрійне скло — максимальний рівень безпеки</h2>
+<p>Дверцята Hansa FCGI69326 мають потрійне скло CoolDoor3, яке не нагрівається із зовнішньої                             сторони. Таким чином можна забути про обпікання і не хвилюватися за власну безпеку та                             безпеку сім’ї.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-glass__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img06.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-chromeGuides">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Хромовані напрямні</h2>
+<p>Це практичне рішення дозволить вам безпечно та легко витягнути й вставити деко. Це також                             зручно під час очищення духової шафи зсередини, бо ви можете просто зняти їх зі спеціальних                             гачків.                             Напрямні можна мити як вручну, так і в посудомийній машині.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-chromeGuides__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img07.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-telescopicGuides">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Висувні телескопічні напрямні</h2>
+<p>Вони гарантують безпеку та висунення більшої частини дека — цілих 75%. Зручний доступ до                             страви, щоб перевірити її на готовність. Навіть якщо воно сильно завантажене — можете не                             хвилюватися, воно не перевернеться.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-telescopicGuides__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img08.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-9levelsGuides">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>9 рівнів напрямних</h2>
+<p>Давно мріяли про те, щоб сушити вдома фрукти чи гриби? Або часто хочеться запікати чи смажити                             страви на багатьох рівнях одночасно? З духовою шафою Hansa FCGI69326 це можливо. Вона                             оснащена 9-ма рівнями напрямних, серед яких 6 рівнів випічки в бічних хромованих напрямних                             та 3 рівні за допомогою телескопічних напрямних. Насолоджуйтеся вільним часом та                             використовуйте робочий простір на максимум!</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-9levelsGuides__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img09.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-cleaning">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Легке очищення варильної поверхні</h2>
+<p>Газова варильна поверхня виготовлена з високоякісного загартованого скла, яке ідеально рівне.                             Більше не потрібно витрачати багато сил та часу, щоб очистити її від стійкого бруду.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-cleaning__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img10.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-reliability">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Міцність та надійність</h2>
+<p>У варильній поверхні Hansa використовуються стійкі та міцні чавунні решітки. Вони витримують                             великі навантаження, нікуди не зміщаються разом з каструлею чи сковорідкою, а також можуть                             митися в посудомийній машині.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-reliability__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img11.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-quality">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Конфорки італійської якості</h2>
+<p>Конфорки марки SOMIPRESS — це італійське виробництво, яке відрізняється безпечністю та                             ефективністю. Завдяки процесу лиття алюмінію під тиском створені високоякісні розсікачі, які                             роблять варильну поверхню довговічною і надійною.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-quality__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img12.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-safety">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Безпека понад усе</h2>
+<p>Варильна поверхня FCGI69326 оснащена спеціальним клапаном, який перекриває подачу газу. Тому,                             якщо конфорка випадково згасне, ви та ваші близькі будуть в повній безпеці.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-safety__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img13.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-largeBurner">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Велика конфорка для великих каструль</h2>
+<p>Ще простіша організація приготування великих порцій з великою конфоркою на 2,8 кВт. Вона має                             збільшену нагрівальну поверхню, що значить одне — приготування їжі у великих каструлях стане                             швидше та легше.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-largeBurner__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img14.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-automaticArson">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Забудьте про сірники</h2>
+<p>Ця варильна поверхня оснащена функцією автоматичного підпалу в ручці. Завдяки їй ви можете                             робити все однією рукою, просто натиснувши та повернувши ручку.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-automaticArson__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img15.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-quickHeating">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>3 хвилини — і духова шафа розігріта</h2>
+<p>Завдяки режиму “швидкий розігрів” ви можете підготувати духову шафу до роботи всього за 3                             хвилини. Під час цього режиму шафа Hansa FCGI69326 використовує повну потужність і                             нагрівається до 150°C за 3 хвилини.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-quickHeating__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img16.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-defrosting">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Швидке розморожування</h2>
+<p>Просто помістіть потрібну заморожену страву в духовку й увімкніть режим “Розморожування”. Він                             активує потік повітря, завдяки якому страва розморожується за невеликий проміжок часу.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-defrosting__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img17.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-bbq">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Барбекю навіть взимку</h2>
+<p>З духовою шафою Hansa FCGI69326 це можливо! Вона оснащена режимом “Супергриль”, під час якого                             працюють два нагрівальні елементи — вони забезпечують велику потужність та збільшують площі                             підсмажування. Навіть великі порції м’яса будуть хрусткими зовні та м’які всередині.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-bbq__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img18.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-evenBaking">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Рівномірне випікання</h2>
+<p>Покращена точність циркуляції гарячого повітря забезпечує рівномірне випікання та смаження                             ваших страв. По всій порожнині духової шафи завжди підтримується рівномірна температура,                             тому всі ваші тістечка та суфле будуть максимально ніжними.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-evenBaking__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img19.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-recipes">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Готові рецепти на дверцятах</h2>
+<p>Тепер не потрібно гортати посібник чи кулінарні книги, щоб знайти як приготувати якусь                             страву. Внутрішня сторона дверцят оснащена зручним практичним посібником, який підкаже                             правильну температуру та час випікання для певних страв.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-recipes__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img20.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-reflectiveGlass">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Рефлекторне скло</h2>
+<p>Внутрішня сторона дверцят має рефлекторне скло, яке знижує їх зовнішню температуру на 15%.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-reflectiveGlass__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img21.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-easyClean">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Легке очищення</h2>
+<p>EasyClean — це спеціальна емаль, якою покрита внутрішня поверхня шафи. З назви вже зрозуміло,                             що чистити духову шафу стане набагато легше. Це покриття не має пор і порожнин, в які                             зазвичай потрапляє бруд і жир. Менше часу на прибирання — більше часу для сім’ї та близьких</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-easyClean__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img22.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-steamCleaning">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Очищення парою</h2>
+<p>Просто налийте 0,5 л води у форму для запікання, поставте її у духову шафу та встановіть                             наступні характеристики:</p>
+<ul>
+<li>температура — 50°C;</li>
+<li>час — 30 хвилин.</li>
+</ul>
+<p>Пара пом’якшить весь бруд всередині шафи й ви зможете легко протерти поверхню вологою                             ганчіркою.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-steamCleaning__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img23.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-bakery">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Ідеальна випічка</h2>
+<p>Всі кекси та коржі завжди будуть пропечені всередині та не підгорілими з боків. Це можливо                             завдяки належній циркуляції повітря всередині шафи, яка забезпечує рівномірне випікання.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-bakery__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img24.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-lighting">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Галогенне освітлення</h2>
+<p>Забудьте про відчинення дверцят і випускання теплого повітря з духової шафи — просто                             увімкніть освітлення та подивіться наскільки ваша страва готова.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-lighting__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img25.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-doorCleaning">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Легке очищення дверцят</h2>
+<p>Виробники подумали про всі дрібниці, навіть про процес очищення дверцят і скла. Дверцята                             мають спеціальні петлі, які гарантують легке зняття дверей і їх чищення.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-doorCleaning__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img26.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-energyEfficiency">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Клас енергоефективності А</h2>
+<p>Використовуйте менше електроенергії з комплектом варильної поверхні й духової шафи Hansa                             FCGI69326. Вони мають підвищений клас енергоефективності, тому можете випікати та готувати                             скільки завгодно!</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-energyEfficiency__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img27.jpg" /></div>
+</div>
+<div class="row-maincontent__inner hansa-topBar">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Закрита верхня планка</h2>
+<p>Ніякого бруду та жиру в кутах! Закрита верхня планка захищає всі кути на дверцятах, яку дуже                             важко вимити до блиску. Вона також легко знімається за потреби.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_right hansa-topBar__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img28.jpg" /></div>
+</div>
+<div class="row-maincontent__inner row-maincontent__inner_rev hansa-bakingTray">
+<div class="row-maincontent__item">
+<div class="row-maincontent__text">
+<h2>Велике деко</h2>
+<p>В гості завітає велика компанія друзів? Сміливо використовуйте велике деко для всіх друзів та                             близьких, щоб по декілька разів не завантажувати духову шафу.</p>
+</div>
+</div>
+<div class="row-maincontent__image row-maincontent__image_left hansa-bakingTray__image"><img src="https://cdn.comfy.ua/media/x/img3/2439248/img29.jpg" /></div>
+</div>
+</div>
+<div class="maincontent__coll coll-maincontent">
+<div class="coll-maincontent__inner">
+<div class="coll-maincontent__logo"><img src="https://cdn.comfy.ua/media/x/img3/2439248/logo_ag.jpg" /></div>
+<div class="coll-maincontent__items">
+<div class="coll-maincontent__item">
+<div class="coll-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/amica.png" /></div>
+<div class="coll-maincontent__text">
+<h3>1992</h3>
+<p>Поява бренду Amica. Безсумнівний лідер на ринку Польщі доступний у Західній Європі, в                                 тому числі і в Україні.</p>
+</div>
+</div>
+<div class="coll-maincontent__item">
+<div class="coll-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/hansa.png" /></div>
+<div class="coll-maincontent__text">
+<h3>1997</h3>
+<p>Створення бренду Hansa. Кращий вибір на ринках Східної Європи.</p>
+</div>
+</div>
+<div class="coll-maincontent__item">
+<div class="coll-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/gram.png" /></div>
+<div class="coll-maincontent__text">
+<h3>2001</h3>
+<p>Придбання данського бренду Gram. Престижний датський бренд із понад 100-річним досвідом.</p>
+</div>
+</div>
+<div class="coll-maincontent__item">
+<div class="coll-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/cda.png" /></div>
+<div class="coll-maincontent__text">
+<h3>2015</h3>
+<p>Придбання British CDA Group Ltd. Британський бренд, що пропонує високоякісну кухонну                                 техніку, створену з урахуванням споживчого стилю життя.</p>
+</div>
+</div>
+<div class="coll-maincontent__item">
+<div class="coll-maincontent__img"><img src="https://cdn.comfy.ua/media/x/img3/2439248/fagor.png" /></div>
+<div class="coll-maincontent__text">
+<h3>2019</h3>
+<p>Amica Group вітає ще один бренд! Fagor є одним з найбільш впізнаваних брендів побутової                                 техніки в Іспанії.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
