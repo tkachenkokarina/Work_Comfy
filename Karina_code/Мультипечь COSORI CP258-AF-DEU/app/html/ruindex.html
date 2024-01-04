@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.scss"> -->
+    <link rel="stylesheet" href="../css/style.sass">
+</head>
+
+<body>
+
+    <style>
+        #maincontent ul,
+        #maincontent ol,
+        #maincontent li {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        #maincontent .bc-description__content p {
+            margin-bottom: 0
+        }
+
+        #maincontent .bc-description__content h3 {
+            text-align: left
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6 {
+            text-transform: none;
+            font-weight: bold
+        }
+
+        #maincontent {
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #fff;
+            font-family: "Roboto", sans-serif
+        }
+
+        #maincontent h1,
+        #maincontent h2,
+        #maincontent h3,
+        #maincontent h4,
+        #maincontent h5,
+        #maincontent h6,
+        #maincontent p {
+            margin: 0;
+            padding: 0;
+            text-align: left
+        }
+
+        #maincontent p::first-letter {
+            padding-left: 0
+        }
+
+        #maincontent img {
+            opacity: 1;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto
+        }
+
+        #maincontent img:hover {
+            opacity: 1
+        }
+
+        #maincontent .maincontent__container {
+            max-width: 1330px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        #maincontent .row-maincontent__inner {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #maincontent .row-maincontent__inner_rev {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -moz-box-orient: horizontal;
+            -moz-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse
+        }
+
+        #maincontent .row-maincontent__item {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .row-maincontent__text {
+            width: 90%;
+            margin: 0 auto auto;
+            padding: 15px 0
+        }
+
+        #maincontent .row-maincontent__text h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 15px
+        }
+
+        @media(max-width: 1330px) {
+            #maincontent .row-maincontent__text h2 {
+                font-size: -webkit-calc(20px + 12*(100vw - 320px)/1010);
+                font-size: calc(20px + 12*(100vw - 320px)/1010)
+            }
+        }
+
+        #maincontent .row-maincontent__text p {
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1330px) {
+            #maincontent .row-maincontent__text p {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1010);
+                font-size: calc(16px + 9*(100vw - 320px)/1010)
+            }
+        }
+
+        #maincontent .row-maincontent__image {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 50%;
+            -moz-box-flex: 0;
+            -ms-flex: 0 1 50%;
+            flex: 0 1 50%
+        }
+
+        #maincontent .list-maincontent {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 50px 15px
+        }
+
+        #maincontent .list-maincontent__text p {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 1330px) {
+            #maincontent .list-maincontent__text p {
+                font-size: -webkit-calc(18px + 12*(100vw - 320px)/1010);
+                font-size: calc(18px + 12*(100vw - 320px)/1010)
+            }
+        }
+
+        #maincontent .list-maincontent__body {
+            padding-left: 20px
+        }
+
+        #maincontent .list-maincontent__body li {
+            list-style-type: disc;
+            font-size: 25px;
+            line-height: 1.2
+        }
+
+        @media(max-width: 1330px) {
+            #maincontent .list-maincontent__body li {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1010);
+                font-size: calc(16px + 9*(100vw - 320px)/1010)
+            }
+        }
+
+        #maincontent .snoska-maincontent {
+            padding: 20px 0
+        }
+
+        #maincontent .snoska-maincontent p {
+            font-size: 25px;
+            line-height: 1.2;
+            text-align: center
+        }
+
+        @media(max-width: 1330px) {
+            #maincontent .snoska-maincontent p {
+                font-size: -webkit-calc(16px + 9*(100vw - 320px)/1010);
+                font-size: calc(16px + 9*(100vw - 320px)/1010)
+            }
+        }
+
+        @media screen and (max-width: 991.98px) {
+            #maincontent .list-maincontent {
+                padding: 40px 0 10px
+            }
+
+            #maincontent .row-maincontent__inner {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            #maincontent .row-maincontent__text {
+                width: auto;
+                padding: 20px 0 10px
+            }
+
+            #maincontent .row-maincontent__text h2,
+            #maincontent .row-maincontent__text p {
+                text-align: center
+            }
+        }
+    </style>
+
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Стильная и большая мультипечь </h2>
+                            <p>С Cosori Stainless вы можете готовить вдвое быстрее! Готовьте курицу, пирожные, картофель
+                                фри и все, что захочется, благодаря большому набору автоматических программ. С
+                                минимальным количеством масла вы также получаете хрустящую корочку и сочную серединку. А
+                                благодаря большой корзине на 5,5 л вы можете за один раз приготовить 2 стейка, 15
+                                куриных крылышек, пиццу 20 см или цыпленка 2,2 кг.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__list list-maincontent">
+                <ul class="list-maincontent__body">
+                    <li>11 автоматических режимов</li>
+                    <li>Напоминание о перемешивании</li>
+                    <li>Объемная корзина на 5,5 л</li>
+                    <li>Антипригарное алюминиевое покрытие</li>
+                    <li>Используйте на 85% меньше растительного масла</li>
+                    <li>Экономьте до 55% электричества</li>
+                    <li>2х скорость приготовления</li>
+                    <li>Решетка, шампуры и книга рецептов в комплекте</li>
+                    <li>Не содержит токсичных веществ</li>
+                </ul>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Экономия времени и энергии</h2>
+                            <p>С мультипечью Cosori Stainless вы будете экономить до 55% электроэнергии и много своего
+                                времени — все благодаря тому, что она работает вдвое быстрее.
+                                А благодаря технологии аэрофритюра вам не нужно много масла, чтобы получить хрустящую
+                                корочку — используйте на 85% меньше масла, чем обычно.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Автоматические программы + функция предварительного разогрева и дегидратации</h2>
+                            <p>Целых 9 автоматических программ гарантируют вам комфортное и быстрое приготовление
+                                множества блюд: десертов, овощей, морепродуктов, курятины, стейков, замороженной пищи,
+                                картофеля фри.
+                                Дополнительная функция дегидратации — это сохранение большого количества полезных
+                                витаминов в ваших блюдах, она имеет диапазон от 40ºС до 90ºС. А с функцией
+                                предварительного нагрева мультипечь моментально достигнет нужной температуры — больше
+                                никаких долгих минут ожидания.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img03.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Безопасность и удобство </h2>
+                            <p>Мультипечь изготовлена только из безопасных материалов и не содержит токсичных
+                                компонентов. Двойную антипригарную корзину можно мыть как под краном, так и в
+                                посудомоечной машине, а снимается она одним нажатием кнопки. </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Больше возможностей — больше блюд </h2>
+                            <p>Ароматные шашлыки, колбаски, мидии и сосиски — и в принципе все, что пожелаете! С 5
+                                шампурами в комплекте легко создать настроение пикника даже зимой. А специальная решетка
+                                поможет приготовить вкусные бедра, запеченную рыбу или просто разогреть пиццу.
+                                Идущая в комплекте книга рецептов гарантированно разнообразит ваше меню.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img05.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__snoska snoska-maincontent">
+                <p>Купить мультипечь Cosori Stainless CP258-AF-DEU в Украине можно на сайте или в фирменных
+                    магазинах COMFY!</p>
+            </div>
+        </div>
+    </div>
+
+    UA
+    <div id="maincontent">
+        <div class="maincontent__container">
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Стильна та велика мультипіч</h2>
+                            <p>З Cosori Stainless ви можете готувати вдвічі швидше! Готуйте гомілки, тістечка, картоплю
+                                фрі та все, що заманеться — завдяки великому набору автоматичних програм. З мінімальною
+                                кількістю олії ви так само отримуєте хрустку скоринку і соковиту серединку. А завдяки
+                                великому кошику на 5,5 л ви можете за один раз приготувати 2 стейки, 15 курячих крилець,
+                                піцу 20 см або курча 2,2 кг.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__list list-maincontent">
+                <ul class="list-maincontent__body">
+                    <li>11 автоматичних режимів</li>
+                    <li>Нагадування про перемішування</li>
+                    <li>Об’ємний кошик на 5,5 л</li>
+                    <li>Антипригарне алюмінієве покриття</li>
+                    <li>Використовуйте на 85% менше олії</li>
+                    <li>Економте до 55% електрики</li>
+                    <li>2х швидкість приготування</li>
+                    <li>Решітка, шампури та книга рецептів в комплекті</li>
+                    <li>Не містить токсичних речовин</li>
+                </ul>
+            </div>
+            <div class="maincontent__row row-maincontent">
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Економія часу та енергії</h2>
+                            <p>З мультипіччю Cosori Stainless ви будете економити до 55% електроенергії та багато свого
+                                часу — все завдяки тому, що вона працює вдвічі швидше.
+                                А завдяки технології аерофрітюра вам не потрібно багато олії, щоб отримати хрустку
+                                скоринку — використовуйте на 85% менше олії, ніж зазвичай.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Автоматичні програми + функція попереднього розігрівання та дегідратації</h2>
+                            <p>Цілих 9 автоматичних програм гарантують вам комфортне і швидке приготування безлічі
+                                страв: десертів, овочів, морепродуктів, курятини, стейків, замороженої їжі, картоплі
+                                фрі.
+                                Додаткова функція дегідратації — це збереження великої кількості корисних вітамінів у
+                                ваших стравах, має діапазон від 40ºС до 90ºС. А з функцією попереднього нагрівання
+                                мультипіч моментально досягне потрібної температури — більше ніяких довгих хвилин
+                                очікування.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img03.png" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Безпека та зручність</h2>
+                            <p>Мультипіч виготовлена тільки з безпечних матеріалів і не містить токсичних компонентів.
+                                Подвійний антипригарний кошик можна мити як під краном, так і в посудомийній машині, а
+                                знімається він одним натисканням кнопки.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-maincontent__inner row-maincontent__inner_rev">
+                    <div class="row-maincontent__item">
+                        <div class="row-maincontent__text">
+                            <h2>Більше можливостей — більше страв</h2>
+                            <p>Ароматні шашлики, ковбаски, мідії та сосиски — і в принципі все, що забажаєте! З 5-ма
+                                шампурами в комплекті легко створити настрій пікніку навіть взимку. А спеціальна решітка
+                                допоможе зготувати смачні стегна, запечену рибу або просто розігріти піцу.
+                                Книга рецептів, яка йде у комплекті, гарантовано урізноманітнить ваше меню.</p>
+                        </div>
+                    </div>
+                    <div class="row-maincontent__image">
+                        <img src="https://cdn.comfy.ua/media/x/img3/2797616/img05.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="maincontent__snoska snoska-maincontent">
+                <p>Купити мультипіч Cosori Stainless CP258-AF-DEU в Україні можна на сайті або у фірмових
+                    магазинах COMFY!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
