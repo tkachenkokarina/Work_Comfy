@@ -24,7 +24,6 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: #ffffff;
-  font-family: "Roboto", sans-serif;
 }
 #maincontent h1, #maincontent h2, #maincontent h3, #maincontent h4, #maincontent h5, #maincontent h6, #maincontent p {
   margin: 0;
@@ -53,25 +52,25 @@
 }
 
 #maincontent h2 {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.2;
   margin-bottom: 15px;
   color: #1b3155;
 }
 @media (max-width: 1520px) {
   #maincontent h2 {
-    font-size: -webkit-calc(20px + 30 * (100vw - 320px) / 1200);
-    font-size: calc(20px + 30 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(20px + 10 * (100vw - 320px) / 1200);
+    font-size: calc(20px + 10 * (100vw - 320px) / 1200);
   }
 }
 #maincontent p {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 1.2;
 }
 @media (max-width: 1520px) {
   #maincontent p {
-    font-size: -webkit-calc(16px + 14 * (100vw - 320px) / 1200);
-    font-size: calc(16px + 14 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(16px + 6 * (100vw - 320px) / 1200);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1200);
   }
 }
 
@@ -116,21 +115,21 @@
   padding: 10px 0;
 }
 #maincontent .row-maincontent__text h2 {
-  font-size: 35px;
+  font-size: 30px;
 }
 @media (max-width: 1520px) {
   #maincontent .row-maincontent__text h2 {
-    font-size: -webkit-calc(20px + 15 * (100vw - 320px) / 1200);
-    font-size: calc(20px + 15 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(20px + 10 * (100vw - 320px) / 1200);
+    font-size: calc(20px + 10 * (100vw - 320px) / 1200);
   }
 }
 #maincontent .row-maincontent__text p {
-  font-size: 25px;
+  font-size: 22px;
 }
 @media (max-width: 1520px) {
   #maincontent .row-maincontent__text p {
-    font-size: -webkit-calc(16px + 9 * (100vw - 320px) / 1200);
-    font-size: calc(16px + 9 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(16px + 6 * (100vw - 320px) / 1200);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1200);
   }
 }
 #maincontent .row-maincontent__text ul {
@@ -140,13 +139,13 @@
 }
 #maincontent .row-maincontent__text ul li {
   list-style-type: disc;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.2;
 }
 @media (max-width: 1520px) {
   #maincontent .row-maincontent__text ul li {
-    font-size: -webkit-calc(16px + 9 * (100vw - 320px) / 1200);
-    font-size: calc(16px + 9 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(16px + 6 * (100vw - 320px) / 1200);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1200);
   }
 }
 #maincontent .row-maincontent__text ul li:not(:last-child) {
