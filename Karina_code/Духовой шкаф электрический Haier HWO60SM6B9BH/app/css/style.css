@@ -53,25 +53,25 @@
 }
 
 #maincontent h2 {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.2;
   color: #1b3155;
   margin-bottom: 15px;
 }
 @media (max-width: 1520px) {
   #maincontent h2 {
-    font-size: -webkit-calc(20px + 30 * (100vw - 320px) / 1200);
-    font-size: calc(20px + 30 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(20px + 10 * (100vw - 320px) / 1200);
+    font-size: calc(20px + 10 * (100vw - 320px) / 1200);
   }
 }
 #maincontent p {
-  font-size: 30px;
+  font-size: 22px;
   line-height: 1.2;
 }
 @media (max-width: 1520px) {
   #maincontent p {
-    font-size: -webkit-calc(16px + 14 * (100vw - 320px) / 1200);
-    font-size: calc(16px + 14 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(16px + 6 * (100vw - 320px) / 1200);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1200);
   }
 }
 
@@ -116,25 +116,25 @@
   padding: 15px 0;
 }
 #maincontent .row-maincontent h2 {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.2;
   color: #1b3155;
   margin-bottom: 15px;
 }
 @media (max-width: 1520px) {
   #maincontent .row-maincontent h2 {
-    font-size: -webkit-calc(20px + 20 * (100vw - 320px) / 1200);
-    font-size: calc(20px + 20 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(20px + 10 * (100vw - 320px) / 1200);
+    font-size: calc(20px + 10 * (100vw - 320px) / 1200);
   }
 }
 #maincontent .row-maincontent p {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.2;
 }
 @media (max-width: 1520px) {
   #maincontent .row-maincontent p {
-    font-size: -webkit-calc(16px + 12 * (100vw - 320px) / 1200);
-    font-size: calc(16px + 12 * (100vw - 320px) / 1200);
+    font-size: -webkit-calc(16px + 6 * (100vw - 320px) / 1200);
+    font-size: calc(16px + 6 * (100vw - 320px) / 1200);
   }
 }
 #maincontent .row-maincontent__image {
